@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>MEF Trivia Battle Royale - ÉCRAN JEU</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* MODE SPECTATEUR : Pas de curseur, pas de clic */
+        body { cursor: none; user-select: none; overflow: hidden; }
+        button { display: none !important; } 
+        .bucket { cursor: default !important; } 
+        .wheel-container, .slot-machine, #hard-mode-btn { pointer-events: none; }
+        
+        /* Indicateur discret de connexion */
+        #connection-status {
+            position: fixed; bottom: 5px; right: 5px; 
+            width: 10px; height: 10px; border-radius: 50%; 
+            background: red; z-index: 9999; opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="connection-status"></div>
+
+    <audio id="sfx-intro" src="effets_sonores/intro.mp3" preload="auto"></audio>
+    <audio id="sfx-timer" src="effets_sonores/timer.mp3" preload="auto" loop></audio>
+    <audio id="sfx-reveal" src="effets_sonores/reveal.mp3" preload="auto"></audio>
+    <audio id="sfx-break" src="effets_sonores/break.mp3" preload="auto"></audio>
+    <audio id="sfx-spin" src="effets_sonores/spin.mp3" preload="auto"></audio>
+    <audio id="sfx-selected" src="effets_sonores/selected.mp3" preload="auto"></audio>
+    <audio id="sfx-drum" src="effets_sonores/roulement.mp3" preload="auto"></audio>
+    <audio id="sfx-quick-spin" src="effets_sonores/quick_game_selection.mp3" preload="auto"></audio>
+    <audio id="sfx-win" src="effets_sonores/win.mp3" preload="auto"></audio>
+    <audio id="sfx-f1" src="effets_sonores/F1.mp3" preload="auto"></audio>
+    <audio id="sfx-wrong" src="effets_sonores/wrong.mp3" preload="auto"></audio>
+    <audio id="sfx-nope" src="effets_sonores/nope.mp3" preload="auto"></audio>
+    <audio id="sfx-tmauvais" src="effets_sonores/t_mauvais.mp3" preload="auto"></audio>
+    <audio id="sfx-wasted" src="effets_sonores/wasted.mp3" preload="auto"></audio>
+    <audio id="sfx-ciao" src="effets_sonores/c_ciao.mp3" preload="auto"></audio>
+    <audio id="sfx-k" src="effets_sonores/k.mp3" preload="auto"></audio>    
+    <audio id="sfx-pavard" src="effets_sonores/pavard.mp3" preload="auto"></audio>
+    <audio id="sfx-ohlecon" src="effets_sonores/oh_le_con.mp3" preload="auto"></audio>
+    <audio id="sfx-souffrir" src="effets_sonores/souffrir_ok.mp3" preload="auto"></audio>
+
+    <div id="bg-game-marquee">
+        <div class="game-marquee-row">
+            <div class="game-marquee-content">
+                <span class="game-marquee-text">MEF'S TRIVIA BATTLE ROYAL - PREMIÈRE EDITION - </span>
+                <span class="game-marquee-text">MEF'S TRIVIA BATTLE ROYAL - PREMIÈRE EDITION - </span>
+                <span class="game-marquee-text">MEF'S TRIVIA BATTLE ROYAL - PREMIÈRE EDITION - </span>
+            </div>
+        </div>
+        <div class="game-marquee-row reverse">
+            <div class="game-marquee-content">
+                <span class="game-marquee-text">LE RISQUE TOUT - ÊTES VOUS PRÊTS ? - </span>
+                <span class="game-marquee-text">LE RISQUE TOUT - ÊTES VOUS PRÊTS ? - </span>
+                <span class="game-marquee-text">LE RISQUE TOUT - ÊTES VOUS PRÊTS ? - </span>
+            </div>
+        </div>
+        <div class="game-marquee-row">
+            <div class="game-marquee-content">
+                <span class="game-marquee-text">MEF'S TRIVIA BATTLE ROYAL - PREMIÈRE EDITION - </span>
+                <span class="game-marquee-text">MEF'S TRIVIA BATTLE ROYAL - PREMIÈRE EDITION - </span>
+                <span class="game-marquee-text">MEF'S TRIVIA BATTLE ROYAL - PREMIÈRE EDITION - </span>
+            </div>
+        </div>
+        <div class="game-marquee-row reverse">
+            <div class="game-marquee-content">
+                <span class="game-marquee-text">LE RISQUE TOUT - ÊTES VOUS PRÊTS ? - </span>
+                <span class="game-marquee-text">LE RISQUE TOUT - ÊTES VOUS PRÊTS ? - </span>
+                <span class="game-marquee-text">LE RISQUE TOUT - ÊTES VOUS PRÊTS ? - </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="retro-overlay">
+        <div class="press-space" id="waiting-text">EN ATTENTE DE LA RÉGIE...</div>
+    </div>
+
+    <div id="intro-curtains">
+        <div class="curtain-panel left" id="curtain-left">
+            <div class="strip-container strip-white">
+                <div class="strip-text-row-black">MEF'S TRIVIA NIGHT !</div>
+                <div class="strip-text-row-black rev">LE RISQUE TOUT SHOWTIME</div>
+                <div class="strip-text-row-black">BATTLE ROYALE EDITION</div>
+                <div class="strip-text-row-black rev">ARE YOU READY? JOIN US</div>
+                <div class="strip-text-row-black">LIVE EVENT TONIGHT!</div>
+                <div class="strip-text-row-black rev">QUIZ ET STRATEGIE</div>
+                <div class="strip-text-row-black">MEF'S TRIVIA NIGHT ! LE RISQUE TOUT</div>
+                <div class="strip-text-row-black rev">SHOWTIME BATTLE ROYALE</div>
+            </div>
+            <div class="strip-container strip-center-left">
+                <div class="strip-text-row-grey">LE RISQUE TOUT PREMIERE EDITION LE RISQUE TOUT PREMIERE EDITION</div>
+                <div class="strip-text-row-grey rev">MEF TRIVIA NIGHT EVENT MEF TRIVIA NIGHT EVENT</div>
+                <div class="strip-text-row-grey">PREPAREZ VOUS A TOUT PREPAREZ VOUS A TOUT</div>
+            </div>
+        </div>
+        <div class="curtain-panel right" id="curtain-right">
+             <div class="strip-container strip-center-right">
+                 <div class="strip-text-row-grey rev">LE RISQUE TOUT PREMIERE EDITION LE RISQUE TOUT PREMIERE EDITION</div>
+                <div class="strip-text-row-grey">WIN OR GO HOME WIN OR GO HOME</div>
+                <div class="strip-text-row-grey rev">MEF TRIVIA NIGHT EVENT MEF TRIVIA NIGHT EVENT</div>
+            </div>
+            <div class="strip-red"></div>
+        </div>
+    </div>
+
+    <div id="intro-overlay-content">
+        <div class="logo-comp-wrapper" id="intro-logo-wrapper">
+            <div class="logo-row-le">LE</div>
+            <div class="logo-row-risque">
+                <span class="letter-r-big">R</span>ISQUE
+            </div>
+            <div class="logo-row-tout">TOUT</div>
+        </div>
+        <div id="token-container"></div>
+    </div>
+
+    <div id="theme-selection-screen">
+        <div class="spotlight spot-left"></div>
+        <div class="spotlight spot-right"></div>
+        <div class="theme-select-title" id="theme-title">SÉLECTION DES THÈMES</div>
+        
+        <div class="wheel-container" id="wheel-container-el">
+            <div class="wheel-pointer"></div>
+            <canvas id="wheel-canvas" width="600" height="600"></canvas>
+            <div class="wheel-center">MEF</div>
+        </div>
+
+        <div id="quick-slots-container" style="display: none;">
+            <div class="slot-machine">
+                <div class="slot-window" id="slot-1"><img src="icons/mystere.png" class="slot-icon"></div>
+                <div class="slot-window" id="slot-2"><img src="icons/mystere.png" class="slot-icon"></div>
+                <div class="slot-window" id="slot-3"><img src="icons/mystere.png" class="slot-icon"></div>
+            </div>
+        </div>
+
+        <div id="hard-mode-btn">
+            <img src="icons/mystere.png" alt="Danger">
+        </div>
+
+        <button id="spin-btn">LANCER LA ROUE</button> 
+        <div class="selected-themes-area" id="selected-themes-container"></div>
+    </div>
+
+    <header id="game-header">
+        <div class="header-logo-wrapper">
+            <div class="logo-row-le">LE</div>
+            <div class="logo-row-risque">
+                <span class="letter-r-big">R</span>ISQUE
+            </div>
+            <div class="logo-row-tout">TOUT</div>
+        </div>
+    </header>
+
+    <div id="game-board"></div>
+    <button id="show-scores-btn">AFFICHER LES SCORES</button>
+
+    <div id="scoreboard-screen">
+        <div class="score-title">CLASSEMENT FINAL</div>
+        <div class="score-table-container" id="score-table"></div>
+        <div id="confetti-final-container"></div>
+    </div>
+
+    <div id="overlay">
+        <div id="timer-container"><div id="timer">30</div></div>
+        <div id="question-text">Question</div>
+        <div id="answer-text">Réponse</div>
+        <div style="position: absolute; bottom: 20px; color: #555; font-size: 14px; font-family: sans-serif; background: rgba(0,0,0,0.8); padding: 5px;">PILOTAGE VIA RÉGIE</div>
+    </div>
+
+    <div id="win-screen">
+        <div id="confetti-container"></div>
+        <img src="images_front/trompette.png" class="trumpet-corner tl" id="t-tl">
+        <img src="images_front/trompette.png" class="trumpet-corner tr" id="t-tr">
+        <img src="images_front/trompette.png" class="trumpet-corner bl" id="t-bl">
+        <img src="images_front/trompette.png" class="trumpet-corner br" id="t-br">
+        <div class="mega-gain-text" id="win-message">GG!</div>
+        <div class="points-gained" id="win-points">+1</div>
+    </div>
+
+    <div id="lose-screen">
+        <div id="rain-container" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none;"></div>
+        <div class="mega-loss-text" id="lose-message">PERDU !</div>
+        <div class="points-lost" id="lose-points">-4</div>
+    </div>
+
+    <div id="game-footer">
+        INSPIRÉ DE <img src="images_front/popcorn.png" alt="Popcorn">
+    </div>
+
+    <script src="data.js"></script>
+    <script src="scores.js"></script>
+    <script src="database.js"></script>
+    
+    <script>
+        // =================================================================
+        // CONNEXION RÉGIE (LE CERVEAU EST DÉPLACÉ ICI)
+        // =================================================================
+        const channel = new BroadcastChannel('buckets_channel');
+        
+        channel.onmessage = (event) => {
+            const data = event.data;
+            if(!data.type) return;
+            console.log("Reçu de la régie:", data.type);
+
+            switch(data.type) {
+                // 1. CONFIG & INTRO
+                case 'SET_MODE': setGameMode(data.mode); break;
+                case 'START_INTRO': runIntro(); break;
+                case 'SKIP_INTRO': skipIntro(); break;
+
+                // 2. SÉLECTION
+                case 'TRIGGER_SPIN': triggerSpinSequence(); break;
+                case 'FORCE_START_BOARD': startGame(); break;
+
+                // 3. JEU (OUVERTURE CASE)
+                case 'OPEN_BUCKET': 
+                    // Si une anim est en cours (win/lose), on la coupe pour ouvrir la question
+                    forceStopAnimation();
+                    const bucketBtn = document.getElementById(data.bucketId);
+                    if(bucketBtn) openQuestion(bucketBtn, bucketBtn._qData, bucketBtn._level);
+                    break;
+                
+                // 4. RÉPONSE & SCORE
+                case 'REVEAL_ANSWER': revealAnswer(); break;
+                case 'ANIM_WIN': triggerWin(data.points); break;
+                case 'ANIM_LOSE': triggerLose(data.points); break;
+                case 'CLOSE_QUESTION': resetQuestionState(); break; // Stop timer clean
+
+                // 5. FIN
+                case 'SHOW_SCORES_FINAL': 
+                    // On met à jour le tableau JS local avec les équipes reçues de la régie
+                    runScoreSequence(data.teams);
+                    // On affiche l'écran
+                    document.getElementById('game-board').style.display = 'none';
+                    document.getElementById('game-header').style.display = 'none';
+                    document.getElementById('scoreboard-screen').style.display = 'flex';
+                    state = 'SCORES';
+                    break;
+                
+                // 6. REROLL
+                case 'REROLL_BUCKET':
+                    doReroll(data.bucketId, data.theme, data.level);
+                    break;
+            }
+        };
+
+        // Indicateur visuel de connexion pour le debug
+        document.getElementById('connection-status').style.background = '#2ecc71';
+
+
+        // =================================================================
+        // TES SCRIPTS ORIGINAUX (NETTOYÉS DU CLAVIER)
+        // =================================================================
+        const tokenFiles = [
+            'Jetons/-1.png', 'Jetons/-1.1.png', 'Jetons/-2.png', 'Jetons/-2.2.png',
+            'Jetons/-3.png', 'Jetons/-4.png', 'Jetons/-5.png', 'Jetons/+1.png',
+            'Jetons/+2.png', 'Jetons/+3.png', 'Jetons/+5.png',
+        ];
+        const MAX_SPINS = 5;
+
+        // DOM Elements
+        const retroOverlay = document.getElementById('retro-overlay');
+        const introCurtains = document.getElementById('intro-curtains');
+        const curtainLeft = document.getElementById('curtain-left');
+        const curtainRight = document.getElementById('curtain-right');
+        const introOverlayContent = document.getElementById('intro-overlay-content');
+        const introLogoWrapper = document.getElementById('intro-logo-wrapper');
+        const tokenContainer = document.getElementById('token-container');
+        
+        const themeSelectScreen = document.getElementById('theme-selection-screen');
+        const canvas = document.getElementById('wheel-canvas');
+        const ctx = canvas.getContext('2d');
+        const spinBtn = document.getElementById('spin-btn');
+        const selectedContainer = document.getElementById('selected-themes-container');
+        
+        const board = document.getElementById('game-board');
+        const bgGameMarquee = document.getElementById('bg-game-marquee');
+        const gameHeader = document.getElementById('game-header');
+        const showScoresBtn = document.getElementById('show-scores-btn');
+        
+        const overlay = document.getElementById('overlay');
+        const winScreen = document.getElementById('win-screen');
+        const loseScreen = document.getElementById('lose-screen');
+        const timerEl = document.getElementById('timer');
+        const qText = document.getElementById('question-text');
+        const aText = document.getElementById('answer-text');
+        const winMessageEl = document.getElementById('win-message');
+        const confettiContainer = document.getElementById('confetti-container');
+        const confettiFinalContainer = document.getElementById('confetti-final-container');
+        const scoreboardScreen = document.getElementById('scoreboard-screen');
+        const scoreTable = document.getElementById('score-table');
+
+        // AUDIO
+        const audioIntro = document.getElementById('sfx-intro');
+        const audioTimer = document.getElementById('sfx-timer');
+        const audioReveal = document.getElementById('sfx-reveal');
+        const audioWin = document.getElementById('sfx-win');
+        const audioBreak = document.getElementById('sfx-break');
+        const audioSpin = document.getElementById('sfx-spin');
+        const audioSelected = document.getElementById('sfx-selected');
+        const audioDrum = document.getElementById('sfx-drum');
+        const audioQuickSpin = document.getElementById('sfx-quick-spin');
+
+        // VARIABLES GLOBALES
+        let state = 'WAITING';
+        let currentBucket = null, currentLevel = 0, timerInterval, timeLeft, tokenSpawnInterval, hardModeTimeout, winLoseTimeout;
+        let totalBuckets = 0, removedBuckets = 0;
+        let currentAudio = null;
+        let gameMode = 'NORMAL'; 
+        let spinsNeeded = 5;    
+
+        // VARIABLES ROUE
+        let currentRotation = 0, isSpinning = false;
+        let selectedThemesList = []; 
+        let activeWheelThemes = [...WHEEL_THEMES]; 
+        const wheelColors = ['#e74c3c', '#2c3e50', '#f1c40f', '#27ae60', '#8e44ad', '#d35400', '#2980b9'];
+
+        // --- GESTION AUDIO ROBUSTE ---
+        function playSound(idOrElement) {
+            let el = (typeof idOrElement === 'string') ? document.getElementById(idOrElement) : idOrElement;
+            if(el) { el.currentTime = 0; el.play().catch(e => {}); }
+        }
+        function stopSound(idOrElement) {
+            let el = (typeof idOrElement === 'string') ? document.getElementById(idOrElement) : idOrElement;
+            if(el) { el.pause(); el.currentTime = 0; }
+        }
+
+        // --- FONCTIONS UTILITAIRES ---
+        function normalizeId(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                      .toLowerCase().trim().replace(/\s+/g, '_').replace(/'/g, '');
+        }
+
+        // --- 1. INTRO ---
+        function generateIntroTokens() {
+            if (tokenFiles.length === 0) return;
+            tokenSpawnInterval = setInterval(() => {
+                const file = tokenFiles[Math.floor(Math.random() * tokenFiles.length)];
+                const img = document.createElement('img'); img.src = file; img.className = 'intro-token-img';
+                img.style.setProperty('--xPos', `${Math.random() * 90}vw`);
+                tokenContainer.appendChild(img);
+                requestAnimationFrame(() => { img.classList.add('launch'); });
+                setTimeout(() => { img.remove(); }, 3000);
+            }, 800);
+            setTimeout(() => { clearInterval(tokenSpawnInterval); }, 11000);
+        }
+
+        function runIntro() {
+            state = 'INTRO';
+            retroOverlay.style.display = 'none';
+            introCurtains.style.display = 'block';
+            introOverlayContent.style.display = 'flex';
+            bgGameMarquee.style.display = 'flex'; 
+            playSound(audioIntro);
+            generateIntroTokens();
+
+            setTimeout(() => { introLogoWrapper.classList.add('appear'); }, 11000);
+            setTimeout(() => { introLogoWrapper.classList.add('zoom-finish'); }, 13000);
+
+            setTimeout(() => {
+                introLogoWrapper.classList.add('fadeout');
+                curtainLeft.classList.add('open');
+                curtainRight.classList.add('open');
+                setTimeout(() => {
+                    document.getElementById('intro-overlay-content').style.display = 'none';
+                    document.getElementById('intro-curtains').style.display = 'none';
+                    startThemeSelection();
+                }, 1500);
+            }, 15000); 
+        }
+
+        function skipIntro() {
+            stopSound(audioIntro);
+            retroOverlay.style.display = 'none';
+            introCurtains.style.display = 'none';
+            introOverlayContent.style.display = 'none';
+            startThemeSelection();
+        }
+
+        // --- FONCTIONS DES MODES DE JEU ---
+        function setGameMode(mode) {
+            gameMode = mode;
+            document.body.className = ""; 
+            
+            // CORRECTION: Annuler démarrage Hard Mode si changement
+            if(hardModeTimeout) clearTimeout(hardModeTimeout);
+
+            // RESET AFFICHAGE
+            document.getElementById('game-board').style.display = 'none';
+            document.getElementById('game-header').style.display = 'none';
+            document.getElementById('scoreboard-screen').style.display = 'none';
+            document.getElementById('theme-selection-screen').style.display = 'flex'; // Force retour
+            state = 'THEME_SELECT';
+
+            const wheelCont = document.getElementById('wheel-container-el');
+            const hardBtn = document.getElementById('hard-mode-btn');
+            const quickSlots = document.getElementById('quick-slots-container');
+            const spinB = document.getElementById('spin-btn');
+            const title = document.getElementById('theme-title');
+
+            if (mode === 'QUICK') {
+                document.body.classList.add('mode-quick');
+                spinsNeeded = 3;
+                wheelCont.style.display = 'none'; 
+                quickSlots.style.display = 'block'; 
+                hardBtn.style.display = 'none';
+                spinB.style.display = 'block';
+                title.innerText = "MODE RAPIDE";
+            } 
+            else if (mode === 'HARD') {
+                document.body.classList.add('mode-hard');
+                wheelCont.style.display = 'none';
+                quickSlots.style.display = 'none'; 
+                spinB.style.display = 'none';
+                hardBtn.style.display = 'flex';
+                title.innerText = "MODE HARDCORE";
+                selectedThemesList = [];
+                // Lancement différé
+                //hardModeTimeout = setTimeout(startHardGame, 1500); 
+                if (hardModeTimeout) clearTimeout(hardModeTimeout);
+            } 
+            else { // NORMAL
+                document.body.classList.remove('mode-quick', 'mode-hard');
+                spinsNeeded = 5;
+                wheelCont.style.display = 'block'; 
+                quickSlots.style.display = 'none'; 
+                hardBtn.style.display = 'none';
+                spinB.style.display = 'block';
+                title.innerText = "SÉLECTION DES THÈMES";
+            }
+            playSound(audioSelected);
+        }
+
+        function startHardGame() {
+            state = 'BOARD';
+            document.getElementById('theme-selection-screen').style.display = 'none';
+            document.getElementById('bg-game-marquee').style.display = 'flex';
+            document.getElementById('game-header').style.display = 'block';
+            document.getElementById('game-board').style.display = 'flex';
+            
+            // On force la génération Hard
+            initGameWithSelectedThemes(); 
+        }
+
+        // --- 2. ROUE ---
+        function startThemeSelection() {
+            state = 'THEME_SELECT';
+            bgGameMarquee.style.display = 'none';
+            themeSelectScreen.style.display = 'flex';
+            drawWheel();
+        }
+
+        function drawWheel(offset=0) {
+            if (activeWheelThemes.length === 0) return;
+            const numSegments = activeWheelThemes.length;
+            const arcSize = (2 * Math.PI) / numSegments;
+            const centerX = canvas.width / 2; const centerY = canvas.height / 2; const radius = canvas.width / 2;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.save();
+            ctx.translate(centerX, centerY); ctx.rotate(offset * Math.PI / 180); ctx.translate(-centerX, -centerY);
+            
+            for (let i = 0; i < numSegments; i++) {
+                const angle = i * arcSize;
+                ctx.beginPath(); ctx.moveTo(centerX, centerY);
+                ctx.arc(centerX, centerY, radius, angle, angle + arcSize);
+                ctx.fillStyle = wheelColors[i % wheelColors.length]; ctx.fill(); ctx.stroke();
+                
+                ctx.save(); 
+                ctx.translate(centerX, centerY); ctx.rotate(angle + arcSize / 2);
+                ctx.textAlign = "right"; ctx.fillStyle = "white"; ctx.font = "bold 24px Anton";
+                ctx.fillText(activeWheelThemes[i], radius - 20, 10); 
+                ctx.restore();
+            }
+            ctx.restore();
+        }
+
+        function triggerSpinSequence() {
+            if (isSpinning || selectedThemesList.length >= spinsNeeded) return;
+            isSpinning = true; 
+
+            // --- MODE RAPIDE (Slots) ---
+            if (gameMode === 'QUICK') {
+                playSound(audioQuickSpin); // Joue le son de 4s
+                const slots = [document.getElementById('slot-1'), document.getElementById('slot-2'), document.getElementById('slot-3')];
+                
+                slots.forEach(slot => slot.classList.add('spinning'));
+
+                // Choisir 3 thèmes
+                let tempThemes = [...activeWheelThemes];
+                let winners = [];
+                for(let i=0; i<3; i++) {
+                    let randIdx = Math.floor(Math.random() * tempThemes.length);
+                    winners.push(tempThemes[randIdx]);
+                    tempThemes.splice(randIdx, 1); 
+                }
+
+                setTimeout(() => {
+                    stopSound(audioQuickSpin);
+                    slots.forEach((slot, index) => {
+                        slot.classList.remove('spinning');
+                        let themeTitle = winners[index];
+                        let safeId = normalizeId(themeTitle);
+                        if(safeId === "sports") safeId = "sport";
+                        let config = GAME_CONFIG.themes.find(t => normalizeId(t.title) === safeId);
+                        if(config) slot.querySelector('img').src = `icons/${config.iconFile}`;
+                        setTimeout(() => {
+                             let originalIndex = activeWheelThemes.indexOf(themeTitle);
+                             handleWin(themeTitle, originalIndex);
+                        }, index * 500);
+                    });
+                    isSpinning = false; 
+                }, 4000); 
+                return; 
+            }
+
+            // --- MODE NORMAL (Roue) ---
+            playSound(audioSpin);
+            const winnerIndex = Math.floor(Math.random() * activeWheelThemes.length);
+            const winnerTheme = activeWheelThemes[winnerIndex];
+            
+            const numSegments = activeWheelThemes.length;
+            const segmentAngle = 360 / numSegments;
+            const targetSegmentAngle = winnerIndex * segmentAngle + segmentAngle / 2;
+            let targetRotation = 270 - targetSegmentAngle + 360 * 5;
+            const diff = targetRotation - (currentRotation % 360);
+            currentRotation += diff + 360 * 5;
+            
+            canvas.style.transition = "transform 5s cubic-bezier(0.1, 0.9, 0.2, 1)";
+            canvas.style.transform = `rotate(${currentRotation}deg)`;
+
+            setTimeout(() => {
+                isSpinning = false; stopSound(audioSpin);
+                handleWin(winnerTheme, winnerIndex);
+            }, 5000);
+        };
+
+        function handleWin(theme, index) {
+            playSound(audioSelected);
+            addSelectedTheme(theme);
+            activeWheelThemes.splice(index, 1);
+
+            setTimeout(() => {
+                canvas.style.transition = 'none'; canvas.style.transform = `rotate(0deg)`; currentRotation = 0; drawWheel(0);
+                setTimeout(() => { canvas.style.transition = 'transform 4s'; }, 50);
+                
+                if (selectedThemesList.length === spinsNeeded) {
+                    setTimeout(() => {
+                        if (gameMode !== 'QUICK') {
+                            addSelectedTheme("MYSTÈRE");
+                        }
+                        spinBtn.innerText = "PRÊT"; 
+                    }, 1000);
+                }
+            }, 1000);
+        }
+
+        function addSelectedTheme(theme) {
+            selectedThemesList.push(theme);
+            const card = document.createElement('div'); card.className = 'selected-theme-card'; card.innerText = theme;
+            if(theme === "MYSTÈRE") { 
+                card.style.borderColor = "#fff"; card.style.backgroundColor = "#333"; card.style.color = "#fff"; card.style.boxShadow = "0 0 20px white";
+            }
+            selectedContainer.appendChild(card);
+            requestAnimationFrame(() => { card.classList.add('pop-in'); });
+        }
+
+        function startGame() {
+            themeSelectScreen.style.opacity = 0; themeSelectScreen.style.transition = "opacity 1s";
+            setTimeout(() => {
+                themeSelectScreen.style.display = 'none';
+                bgGameMarquee.style.display = 'flex'; 
+                gameHeader.style.display = 'block'; 
+                board.style.display = 'flex';
+                state = 'BOARD';
+                initGameWithSelectedThemes();
+            }, 1000);
+        }
+
+        // =============================================================
+        // 3. JEU & BUCKETS (SYNC AVEC REGIE)
+        // =============================================================
+        function initGameWithSelectedThemes() {
+            const board = document.getElementById('game-board');
+            board.innerHTML = ""; totalBuckets = 0; removedBuckets = 0;
+            
+            // --- ID GLOBAL POUR SYNCHRO REGIE ---
+            let globalId = 0;
+            let exportGridData = []; // Ce qu'on va envoyer à la régie
+
+            // 1. CAS SPÉCIAL : MODE HARD
+            if (gameMode === 'HARD') {
+                let hardPool = [];
+                // Chargement des questions HARD (Niv 3+)
+                if(typeof QUESTION_DATABASE !== 'undefined') {
+                    for(const [tKey, tLevels] of Object.entries(QUESTION_DATABASE)) {
+                        for(const [lvl, content] of Object.entries(tLevels)) {
+                            if (parseInt(lvl) >= 3) {
+                                if(content.images) content.images.forEach(obj => hardPool.push({type:'image', file:obj.file, question:obj.question, answer:obj.answer, theme: tKey}));
+                                if(content.sounds) content.sounds.forEach(obj => hardPool.push({type:'audio', file:obj.file, question:obj.question, answer:obj.answer, theme: tKey}));
+                                if(content.text) content.text.forEach(t => hardPool.push({type:'text', ...t, theme: tKey}));
+                            }
+                        }
+                    }
+                }
+                hardPool.sort(() => Math.random() - 0.5);
+                const hardScores = [10, 30, 50, 70, 100];
+
+                for (let rowIdx = 0; rowIdx < 6; rowIdx++) {
+                    const row = document.createElement('div'); row.className = 'row';
+                    for (let colIdx = 0; colIdx < 5; colIdx++) {
+                        let qData = hardPool.length > 0 ? hardPool.pop() : {type:'text', question:'(Vide)', answer:'...'};
+                        if(!qData.question) qData.question = getQuestionText(qData.theme, qData.type);
+                        if(!qData.answer && qData.file) qData.answer = cleanFileName(qData.file);
+
+                        const btn = document.createElement('div'); 
+                        btn.className = 'bucket mystery'; 
+                        btn.style.borderColor = "#800000"; btn.style.backgroundColor = "#0a0a0a";
+                        let iconHtml = '<div class="bucket-icon"><img src="icons/mystere.png" onerror="this.style.display=\'none\'"></div>';
+                        btn.innerHTML = `${iconHtml}<div class="bucket-score" style="color:#ff0000">??</div>`;
+                        
+                        // ID UNIQUE POUR REGIE
+                        const bucketId = `bucket-btn-${globalId++}`;
+                        btn.id = bucketId;
+                        btn._qData = qData; // Stockage local
+                        btn._level = hardScores[colIdx];
+                        
+                        // Pas de onclick ici (passif)
+                        
+                        // Ajout export
+                        exportGridData.push({
+                            id: bucketId,
+                            theme: "HARDCORE",
+                            level: hardScores[colIdx],
+                            display: "??",
+                            qData: qData
+                        });
+
+                        row.appendChild(btn);
+                        totalBuckets++;
+                    }
+                    board.appendChild(row);
+                }
+            }
+            // 2. MODES NORMAL & QUICK
+            else {
+                let uniqueThemes = [...new Set(selectedThemesList)];
+                let mysteryPool = [];
+                // ... Génération du Pool Mystère ...
+                if(typeof QUESTION_DATABASE !== 'undefined') {
+                    for(const [tKey, tLevels] of Object.entries(QUESTION_DATABASE)) {
+                        if(!uniqueThemes.some(u => normalizeId(u) === tKey)) {
+                            for(const [lvl, content] of Object.entries(tLevels)) {
+                                if(content.images) content.images.forEach(obj => { if (tKey !== 'harry_potter') mysteryPool.push({type:'image', ...obj, level: parseInt(lvl), theme: tKey}); });
+                                if(content.sounds) content.sounds.forEach(obj => mysteryPool.push({type:'audio', ...obj, level: parseInt(lvl), theme: tKey}));
+                                if(content.text) content.text.forEach(t => mysteryPool.push({type:'text', ...t, level: parseInt(lvl), theme: tKey}));
+                            }
+                        }
+                    }
+                }
+                mysteryPool.sort(() => Math.random() - 0.5);
+
+                uniqueThemes.forEach(title => {
+                    const isMystere = (title === "MYSTÈRE");
+                    let safeId = normalizeId(title);
+                    if(safeId === "sports") safeId = "sport";
+                    let themeConfig = GAME_CONFIG.themes.find(t => normalizeId(t.title) === safeId) || {id: safeId, title: title, iconFile: ""};
+
+                    const row = document.createElement('div'); row.className = 'row';
+                    let questionsForThisRow = [];
+                    let rowLevels = [];
+
+                    if(isMystere) {
+                        rowLevels = [6, 7, 8, 9, 10]; rowLevels.sort(() => Math.random() - 0.5);
+                        for(let i=0; i<5; i++) questionsForThisRow.push(mysteryPool.length > 0 ? mysteryPool.pop() : {type:'text', question:'Mystère...', answer:'...'});
+                    } else {
+                        rowLevels = [1, 2, 3, 4, 5];
+                        if(typeof QUESTION_DATABASE !== 'undefined' && QUESTION_DATABASE[safeId]) {
+                            let allQuestions = [];
+                            for(let l=1; l<=5; l++) {
+                                let c = QUESTION_DATABASE[safeId][l.toString()];
+                                if(c) {
+                                    if(c.images) c.images.forEach(obj => allQuestions.push({level:l, type:'image', ...obj}));
+                                    if(c.sounds) c.sounds.forEach(obj => allQuestions.push({level:l, type:'audio', ...obj}));
+                                    if(c.text) c.text.forEach(t => allQuestions.push({level:l, type:'text', ...t}));
+                                }
+                            }
+                            allQuestions = allQuestions.filter((v,i,a)=>a.findIndex(t=>(t.file === v.file && t.question === v.question))===i);
+                            allQuestions.sort(() => Math.random() - 0.5);
+                            for(let i=1; i<=5; i++) {
+                                let index = allQuestions.findIndex(q => q.level === i);
+                                if(index === -1) index = 0; 
+                                if(allQuestions.length > 0) { questionsForThisRow.push(allQuestions[index]); allQuestions.splice(index, 1); } 
+                                else { questionsForThisRow.push({type:'text', question:`(Vide Niv ${i})`, answer:'...'}); }
+                            }
+                        } else {
+                            for(let i=0; i<5; i++) questionsForThisRow.push({type:'text', question:'Pas de questions', answer:'...'});
+                        }
+                    }
+
+                    questionsForThisRow.forEach((qData, index) => {
+                        let realScore = rowLevels[index];
+                        if(!qData.question) qData.question = getQuestionText(themeConfig.id, qData.type);
+                        if(!qData.answer && qData.file) qData.answer = cleanFileName(qData.file);
+
+                        const btn = document.createElement('div'); 
+                        btn.className = isMystere ? 'bucket mystery' : 'bucket';
+                        let iconSrc = isMystere ? "icons/mystere.png" : `icons/${themeConfig.iconFile}`;
+                        let iconHtml = `<div class="bucket-icon"><img src="${iconSrc}" onerror="this.style.display='none'"></div>`;
+                        let displayedText = isMystere ? "x?" : `x${realScore}`;
+                        
+                        btn.innerHTML = `${iconHtml}<div class="bucket-score">${displayedText}</div>`;
+                        
+                        // ID UNIQUE & DATA POUR REGIE
+                        const bucketId = `bucket-btn-${globalId++}`;
+                        btn.id = bucketId;
+                        btn._qData = qData;
+                        btn._level = realScore;
+
+                        exportGridData.push({
+                            id: bucketId, theme: title, level: realScore, display: displayedText, qData: qData
+                        });
+
+                        row.appendChild(btn);
+                        totalBuckets++;
+                    });
+                    board.appendChild(row);
+                });
+            }
+
+            // =========================================================
+            // *** CRUCIAL *** : ENVOI DE LA CARTE A LA REGIE
+            // =========================================================
+            console.log("Envoi de la grille à la régie...", exportGridData.length);
+            channel.postMessage({ type: 'SYNC_GRID', grid: exportGridData });
+        }
+
+        // =============================================================
+        // Helper REROLL (Nouveau)
+        // =============================================================
+        function doReroll(bucketId, themeTitle, level) {
+            const btn = document.getElementById(bucketId);
+            if(!btn) return;
+
+            // Logique de recherche dans la DB
+            let newQ = { type: 'text', question: `Question de secours (${themeTitle})`, answer: 'Réponse secours' };
+            
+            if(typeof QUESTION_DATABASE !== 'undefined') {
+                let safeId = normalizeId(themeTitle);
+                if(safeId === "sports") safeId = "sport";
+                
+                // Gestion Mystère / Hardcore : On pioche un thème random
+                if(themeTitle === "MYSTÈRE" || themeTitle === "HARDCORE") {
+                    const keys = Object.keys(QUESTION_DATABASE);
+                    safeId = keys[Math.floor(Math.random() * keys.length)];
+                }
+
+                if(QUESTION_DATABASE[safeId] && QUESTION_DATABASE[safeId][level]) {
+                    const pool = QUESTION_DATABASE[safeId][level];
+                    let all = [];
+                    if(pool.text) pool.text.forEach(x => all.push({...x, type:'text'}));
+                    if(pool.images) pool.images.forEach(x => all.push({...x, type:'image'}));
+                    if(all.length > 0) newQ = all[Math.floor(Math.random() * all.length)];
+                }
+            }
+
+            // Appliquer nouvelle question
+            btn._qData = newQ;
+            
+            // Si c'est le bucket ouvert, on refresh
+            if(currentBucket && currentBucket.id === bucketId) {
+                openQuestion(btn, newQ, level);
+            }
+
+            // Renvoyer à la régie pour qu'elle voit la modif
+            channel.postMessage({ type: 'UPDATED_BUCKET_DATA', bucketId: bucketId, qData: newQ });
+        }
+
+        // =============================================================
+        // 4. AFFICHAGE QUESTION (DÉCLENCHÉ PAR REGIE)
+        // =============================================================
+        function openQuestion(btn, data, forcedLevel) {
+            currentBucket = btn;
+            
+            if(forcedLevel) currentLevel = forcedLevel;
+            else {
+                let txt = btn.querySelector('.bucket-score').innerText.replace('x','');
+                currentLevel = (txt === '?') ? Math.floor(Math.random() * 5) + 6 : parseInt(txt);
+            }
+            
+            state = 'QUESTION';
+            const container = document.getElementById('question-text');
+            container.innerHTML = "";
+
+            if (data.type === 'image') {
+                container.innerHTML = `<img src="${data.file}" style="max-width:80%; max-height:50vh; border:5px solid white; display:block; margin:0 auto 20px; box-shadow: 0 0 30px black;">`;
+                container.innerHTML += `<div style="font-size:40px; text-shadow: 2px 2px 0 #000;">${data.question}</div>`;
+            } else if (data.type === 'audio') {
+                container.innerHTML = `<div style="font-size:100px; animation:pulse 1s infinite">🔊</div>`;
+                container.innerHTML += `<div style="font-size:40px">${data.question}</div>`;
+                if(currentAudio) currentAudio.pause();
+                currentAudio = new Audio(data.file);
+                currentAudio.play();
+            } else {
+                container.innerHTML = `<div style="font-size:50px">${data.question}</div>`;
+            }
+
+            const ansEl = document.getElementById('answer-text');
+            ansEl.innerText = data.answer || "Réponse inconnue";
+            ansEl.style.display = 'none';
+            container.style.display = 'block';
+
+            document.getElementById('overlay').style.display = 'flex';
+            
+            stopSound(audioTimer);
+            if(data.type !== 'audio') {
+                playSound(audioTimer);
+            }
+
+            let t = GAME_CONFIG.timerDuration;
+            const el = document.getElementById('timer');
+            el.innerText = t; 
+            el.style.background = "#D60000";
+            
+            if(timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                t--; el.innerText = t;
+                if(t <= 5) el.style.background = (t%2===0) ? "#000" : "#D60000";
+                
+                if(t <= 0) { 
+                    clearInterval(timerInterval); 
+                    stopSound(audioTimer);
+                    el.innerText = "0"; 
+                    playSound(audioBreak); 
+                }
+            }, 1000);
+        }
+
+        function revealAnswer() {
+            clearInterval(timerInterval); stopSound(audioTimer);
+            if(currentAudio) { currentAudio.pause(); }
+            playSound(audioReveal);
+            document.getElementById('question-text').style.display = 'none';
+            document.getElementById('answer-text').style.display = 'block';
+            state = 'ANSWER';
+        }
+
+        // CORRECTION 2 : Annulation propre
+        function resetQuestionState() {
+            clearInterval(timerInterval);
+            stopSound(audioTimer);
+            if(currentAudio) { currentAudio.pause(); currentAudio = null; }
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // CORRECTION 3 : Priorité Affichage
+        function forceStopAnimation() {
+            if(winLoseTimeout) clearTimeout(winLoseTimeout);
+            document.getElementById('win-screen').style.display = 'none';
+            document.getElementById('lose-screen').style.display = 'none';
+            resetQuestionState(); // Coupe aussi le timer si actif
+        }
+
+        function checkEndGame() {
+            if (removedBuckets >= totalBuckets) { 
+                // Envoyer signal à la régie ? Non, la régie gère.
+                // showScoresBtn.style.display = 'block'; 
+            }
+        }
+
+        function returnToBoard() { 
+            if (currentBucket) { currentBucket.classList.add('hidden'); removedBuckets++; checkEndGame(); }
+            state = 'BOARD'; 
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function runScoreSequence(teams) {
+            scoreTable.innerHTML = '';
+            // Si la régie n'a pas trié, on trie ici
+            const sortedTeams = [...teams].sort((a,b) => b.score - a.score);
+            const top5 = sortedTeams.slice(0, 5); 
+            
+            top5.forEach((team, index) => {
+                const rank = index + 1;
+                const row = document.createElement('div'); row.className = `score-row rank-${rank}`; row.id = `rank-${rank}`;
+                let badge = rank <= 4 ? '<img src="images_front/qualifie.png" class="stamp">' : '<img src="images_front/elimine.png" class="stamp">';
+                row.innerHTML = `<span class="team-rank">#${rank}</span><span class="team-name">${team.name}</span><span class="team-score">${team.score} PTS</span>${badge}`;
+                scoreTable.appendChild(row);
+            });
+
+            let delay = 1000;
+            if(document.getElementById('rank-5')) { setTimeout(() => { revealRow(5); playSound(audioBreak); }, delay); delay += 2000; }
+            if(document.getElementById('rank-4')) { setTimeout(() => { revealRow(4); playSound(audioSelected); }, delay); delay += 1500; }
+            if(document.getElementById('rank-3')) { setTimeout(() => { revealRow(3); playSound(audioSelected); }, delay); delay += 1500; }
+            setTimeout(() => { audioDrum.play(); }, delay); delay += 3500;
+            setTimeout(() => {
+                if(document.getElementById('rank-2')) revealRow(2);
+                if(document.getElementById('rank-1')) revealRow(1);
+                createConfetti(confettiFinalContainer); playSound(audioWin);
+            }, delay);
+        }
+
+        function revealRow(rank) {
+            const row = document.getElementById(`rank-${rank}`);
+            if(row) { row.classList.add('reveal'); setTimeout(() => { const s = row.querySelector('.stamp'); if(s) s.classList.add('visible'); }, 500); }
+        }
+
+        function createConfetti(container) {
+            container.innerHTML = ''; const colors = ['#f1c40f', '#e74c3c', '#3498db', '#2ecc71', '#fff'];
+            for (let i = 0; i < 400; i++) {
+                const conf = document.createElement('div'); conf.className = 'confetti';
+                conf.style.left = Math.random() * 100 + 'vw'; conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                conf.style.animationDuration = (Math.random() * 3 + 1.5) + 's'; conf.style.opacity = Math.random();
+                conf.style.width = (Math.random() * 15 + 5) + 'px'; conf.style.height = conf.style.width;
+                container.appendChild(conf);
+            }
+        }
+
+        function createRain(container) {
+            container.innerHTML = ''; 
+            for (let i = 0; i < 100; i++) {
+                const drop = document.createElement('div'); 
+                drop.className = 'rain-drop';
+                drop.style.left = Math.random() * 100 + 'vw'; 
+                drop.style.animationDuration = (Math.random() * 0.5 + 0.5) + 's'; 
+                drop.style.animationDelay = Math.random() * 2 + 's';
+                container.appendChild(drop);
+            }
+        }
+
+        // --- TES MESSAGES SPÉCIFIQUES ---
+        function triggerWin(points) {
+            state = 'ANIMATING'; 
+            document.getElementById('overlay').style.display = 'none';
+            // Coupe Timer
+            stopSound(audioTimer); 
+            
+            const winTitle = document.getElementById('win-message');
+            const winPoints = document.getElementById('win-points');
+            const lvl = currentLevel; 
+            let soundId = 'sfx-win';
+            let message = "GG";
+
+            if (lvl === 1) { message = "GG"; soundId = 'sfx-win'; }
+            else if (lvl === 2) { message = "BIEN JOUÉ"; soundId = 'sfx-win'; }
+            else if (lvl === 3) { message = "T'ES CHAUD"; soundId = 'sfx-win'; }
+            else if (lvl === 4) {
+                const phrases = ["TIÉ UN TIGRE", "TIÉ UN ORNYTHORINQUE", "TIÉ UN DON", "TIÉ UN MONSTRE"];
+                message = phrases[Math.floor(Math.random() * phrases.length)];
+                soundId = 'sfx-f1';
+            }
+            else if (lvl === 5) {
+                message = "POINT FAIBLE ? TROP FORT(E)";
+                soundId = 'sfx-f1';
+            }
+            else if (lvl > 5) { // Mystère +
+                message = "INCROYABLE !";
+                soundId = Math.random() > 0.5 ? 'sfx-win' : 'sfx-f1';
+            }
+
+            winTitle.innerText = message;
+            winPoints.innerText = "+" + (points || lvl);
+            
+            winScreen.style.display = 'flex'; 
+            createConfetti(confettiContainer);
+            playSound(soundId);
+
+            if(winLoseTimeout) clearTimeout(winLoseTimeout);
+            winLoseTimeout = setTimeout(() => {
+                winScreen.style.display = 'none';
+                returnToBoard();
+            }, 4000);
+        }
+
+        function triggerLose(points) {
+            state = 'ANIMATING'; 
+            document.getElementById('overlay').style.display = 'none';
+            // Coupe Timer
+            stopSound(audioTimer);
+
+            const loseTitle = document.getElementById('lose-message');
+            const losePoints = document.getElementById('lose-points');
+            const rainCont = document.getElementById('rain-container');
+            const lvl = currentLevel;
+            let soundId = 'sfx-break';
+            let message = "PERDU !";
+
+            if (lvl === 1) { message = "HMMM..."; soundId = 'sfx-wrong'; }
+            else if (lvl === 2) { message = "AÏE AÏE AÏE..."; soundId = 'sfx-wrong'; }
+            else if (lvl === 3) { message = "C'EST CHAUD !"; soundId = 'sfx-nope'; }
+            else if (lvl === 4) {
+                const phrases = ["TIÉ UN FADA TOI", "TIÉ UN CON", "SIMPLE POURTANT..."];
+                message = phrases[Math.floor(Math.random() * phrases.length)];
+                soundId = Math.random() > 0.5 ? 'sfx-tmauvais' : 'sfx-wasted';
+            }
+            else if (lvl >= 5) {
+                const options = [
+                    { text: "C'EST CIAO !", sound: 'sfx-ciao' },
+                    { text: "T'ES MORT(E) DANS LE FILM", sound: 'sfx-wasted'},
+                    { text: "OH LE COING !", sound: 'sfx-ohlecon' },
+                    { text: "POINT FORT ? TROP COING !", sound: 'sfx-ohlecon'},
+                    { text: "T'AIMES SOUFFRIR C'EST ÇA ?!", sound: 'sfx-souffrir'}
+                ];    
+                const choice = options[Math.floor(Math.random() * options.length)];   
+                message = choice.text;
+                soundId = choice.sound;
+            }
+
+            loseTitle.innerText = message;
+            losePoints.innerText = "-" + (points || lvl);
+            
+            loseScreen.style.display = 'flex'; 
+            createRain(rainCont); 
+            playSound(soundId);
+
+            if(winLoseTimeout) clearTimeout(winLoseTimeout);
+            winLoseTimeout = setTimeout(() => {
+                loseScreen.style.display = 'none'; 
+                returnToBoard();
+            }, 4000);
+        }
+    </script>
+</body>
+</html>

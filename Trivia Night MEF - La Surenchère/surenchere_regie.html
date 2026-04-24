@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RÉGIE - SURENCHÈRE</title>
+    <link rel="stylesheet" href="style_surenchere.css">
+    <style>
+        h2 { color: #d4af37; font-family: 'Anton'; margin: 0; }
+        .info-box { background: #000; padding: 10px; border: 1px solid #444; margin-bottom: 10px; color: #fff; }
+        
+        /* Styles spécifiques boutons régie */
+        .btn-win { background: #27ae60; color: white; border: 2px solid #2ecc71; }
+        .btn-lose { background: #c0392b; color: white; border: 2px solid #e74c3c; }
+        .btn-skip { background: #555; font-size: 0.8rem; padding: 5px 10px; vertical-align: middle; }
+    </style>
+</head>
+<body class="regie-body">
+
+    <div class="control-bar">
+        <h2>RÉGIE SURENCHÈRE</h2>
+        <button onclick="openScreen()">1. ÉCRAN</button>
+        
+        <div style="display:flex; flex-direction:column; gap:2px;">
+            <button class="btn-launch" onclick="playIntro()">2. GÉNÉRIQUE</button>
+            <button class="btn-skip" onclick="skipIntro()">SKIP INTRO ⏭</button>
+        </div>
+
+        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
+        
+        <button class="btn-spin" id="btn-spin" onclick="startAutoSpin()">3. TIRAGE (AUTO)</button>
+        <button class="btn-question" id="btn-show-q" onclick="showQuestion()" disabled>4. QUESTION</button>
+        
+        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
+
+        <button class="btn-timer" id="btn-start-timer" onclick="startTimer()" disabled>5. GO 30s</button>
+        <button class="btn-pause" onclick="pauseTimer()">PAUSE</button>
+        <button class="btn-reset" onclick="resetTimer()">RESET T</button>
+        
+        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
+        
+        <button class="btn-reveal" onclick="toggleReveal()">6. RÉVÉLER</button>
+        
+        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
+
+        <div style="display:flex; flex-direction:column; gap:5px;">
+            <button class="btn-win" onclick="playWin()">GAGNÉ</button>
+            <button class="btn-lose" onclick="playLose()">PERDU (RND)</button>
+        </div>
+
+        <div style="flex:1;"></div>
+        <button class="btn-reset" onclick="resetGameFull()">NOUVEAU JEU</button>
+    </div>
+
+    <div style="padding: 20px;">
+        <div class="info-box">
+            THÈME : <span id="current-theme-name" style="color:#2ecc71">...</span> | 
+            SCORE : <span id="current-score" style="font-size:1.5rem; font-weight:bold;">0</span>
+        </div>
+
+        <div id="answers-grid" class="regie-grid">
+            <div style="color: #666; font-style: italic;">En attente...</div>
+        </div>
+    </div>
+
+    <script src="surenchere_data.js"></script>
+    <script>
+        const channel = new BroadcastChannel('surenchere_channel');
+
+        let availableThemes = [...THEMES_DATA];
+        let currentTheme = null;
+        let currentScore = 0;
+        let validatedIndices = [];
+        let isRevealOpen = false;
+
+        // LISTE SONS ALEATOIRES PERDU
+        const loseSounds = [
+            'effets_sonores/wasted.mp3',
+            'effets_sonores/oh_le_con.mp3',
+            'effets_sonores/c_nul_homer.mp3',
+            'effets_sonores/wrong.mp3',
+            'effets_sonores/nope.mp3'
+        ];
+
+        function openScreen() {
+            window.open('surenchere_ecran.html', 'SurenchereDisplay', 'width=1280,height=720');
+        }
+
+        function playIntro() {
+            channel.postMessage({ type: 'PLAY_INTRO' });
+        }
+
+        function skipIntro() {
+            channel.postMessage({ type: 'SKIP_INTRO' });
+        }
+
+        function startAutoSpin() {
+            if (availableThemes.length === 0) {
+                alert("Plus de thèmes !");
+                return;
+            }
+            document.getElementById('btn-spin').disabled = true;
+            document.getElementById('answers-grid').innerHTML = '<div style="color:#f39c12">Tirage en cours...</div>';
+            channel.postMessage({ type: 'START_SPIN', availableThemes: availableThemes });
+
+            setTimeout(() => {
+                stopAutoSpin();
+            }, 5000); // 5 secondes
+        }
+
+        function stopAutoSpin() {
+            const randIndex = Math.floor(Math.random() * availableThemes.length);
+            currentTheme = availableThemes[randIndex];
+            availableThemes.splice(randIndex, 1);
+
+            channel.postMessage({ type: 'REVEAL_THEME', theme: currentTheme });
+            document.getElementById('current-theme-name').innerText = currentTheme.title;
+            document.getElementById('btn-show-q').disabled = false;
+            renderAnswersGrid(currentTheme);
+        }
+
+        function showQuestion() {
+            channel.postMessage({ type: 'SHOW_QUESTION', theme: currentTheme });
+            document.getElementById('btn-show-q').disabled = true; 
+            document.getElementById('btn-start-timer').disabled = false;
+        }
+
+        function startTimer() { channel.postMessage({ type: 'START_TIMER' }); }
+        function pauseTimer() { channel.postMessage({ type: 'PAUSE_TIMER' }); }
+        function resetTimer() { channel.postMessage({ type: 'RESET_TIMER' }); }
+
+        function renderAnswersGrid(theme) {
+            const grid = document.getElementById('answers-grid');
+            grid.innerHTML = '';
+            currentScore = 0;
+            validatedIndices = [];
+            updateScoreDisplay();
+
+            theme.answers.forEach((answer, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'answer-btn';
+                btn.innerText = answer;
+                btn.onclick = () => toggleAnswer(btn, index);
+                grid.appendChild(btn);
+            });
+        }
+
+        function toggleAnswer(btn, index) {
+            // Silencieux coté régie
+            if (btn.classList.contains('validated')) {
+                btn.classList.remove('validated');
+                currentScore--;
+                validatedIndices = validatedIndices.filter(i => i !== index);
+            } else {
+                btn.classList.add('validated');
+                currentScore++;
+                validatedIndices.push(index);
+            }
+            updateScoreDisplay();
+        }
+
+        function updateScoreDisplay() {
+            document.getElementById('current-score').innerText = currentScore;
+            channel.postMessage({ type: 'UPDATE_SCORE', count: currentScore });
+        }
+
+        function toggleReveal() {
+            if(!currentTheme) return;
+            
+            if(!isRevealOpen) {
+                // Révélation + Arrêt Timer automatique
+                channel.postMessage({ 
+                    type: 'SHOW_ALL_ANSWERS', 
+                    answers: currentTheme.answers, 
+                    validatedIndices: validatedIndices 
+                });
+                isRevealOpen = true;
+            } else {
+                channel.postMessage({ type: 'HIDE_ALL_ANSWERS' });
+                isRevealOpen = false;
+            }
+        }
+
+        function playWin() {
+            channel.postMessage({ type: 'PLAY_FX', soundFile: 'effets_sonores/win2.mp3' });
+        }
+
+        function playLose() {
+            // Choix aléatoire
+            const rnd = Math.floor(Math.random() * loseSounds.length);
+            const sound = loseSounds[rnd];
+            channel.postMessage({ type: 'PLAY_FX', soundFile: sound });
+        }
+
+        function resetGameFull() {
+            if(confirm("Finir ce round et préparer le suivant ? (Ne lance pas le générique)")) {
+                document.getElementById('btn-spin').disabled = false;
+                document.getElementById('btn-show-q').disabled = true;
+                document.getElementById('btn-start-timer').disabled = true;
+                document.getElementById('current-theme-name').innerText = "...";
+                document.getElementById('answers-grid').innerHTML = "En attente...";
+                document.getElementById('current-score').innerText = "0";
+                
+                channel.postMessage({ type: 'HIDE_ALL_ANSWERS' });
+                channel.postMessage({ type: 'RESET_TIMER' });
+                
+                // CHANGEMENT ICI : On ne lance plus l'intro, on remet juste le logo fixe
+                channel.postMessage({ type: 'RESET_TO_LOGO' });
+                
+                currentTheme = null;
+                validatedIndices = [];
+                isRevealOpen = false;
+            }
+        }
+    </script>
+</body>
+</html>

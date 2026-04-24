@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #0f0f0f;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================== FOND MARQUEE ================== */
+#bg-game-marquee {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 0; opacity: 0.15; pointer-events: none;
+    display: flex; flex-direction: column; justify-content: center; gap: 50px;
+}
+.game-marquee-row { width: 100%; overflow: hidden; white-space: nowrap; position: relative; display: flex; }
+.game-marquee-content { display: flex; animation: scrollTextGame 30s linear infinite; }
+.game-marquee-text {
+    font-size: 8vw; font-weight: 900; color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.3); margin-right: 50px; text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+.game-marquee-row.reverse .game-marquee-content { animation-direction: reverse; }
+@keyframes scrollTextGame { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* ================== ECRAN D'ACCUEIL ================== */
+#waiting-screen {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.98); z-index: 9000;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    transition: opacity 0.5s;
+}
+.click-instruction {
+    margin-top: 30px; font-family: 'Bebas Neue'; font-size: 2.5rem; color: #d4af37;
+    animation: pulse 1.5s infinite; text-transform: uppercase; letter-spacing: 2px;
+}
+@keyframes pulse { 0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; } }
+
+/* ================== HEADER & LOGO ================== */
+#top-bar {
+    height: 120px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent); 
+    z-index: 10;
+}
+
+/* LOGO IMAGE */
+.game-logo {
+    height: 100%; width: auto; object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+/* ANCIEN LOGO CSS (Au cas où tu veux revenir en arrière) */
+.snapshot-logo-container { position: relative; width: 550px; height: 300px; margin: 0 auto; pointer-events: none; }
+.snap-letter { position: absolute; font-family: 'Anton', sans-serif; color: white; text-shadow: 4px 4px 0 #000; z-index: 5; }
+.letter-0 { left: 69px; top: 85px; transform: rotate(-10deg); font-size: 9.3rem; }
+.letter-1 { left: 129px; top: 115px; transform: rotate(5deg); font-size: 6rem; }
+.letter-2 { left: 171px; top: 74px; transform: rotate(-2deg); font-size: 7.3rem; }
+.letter-3 { left: 211px; top: 120px; transform: rotate(-1deg); font-size: 7.1rem; }
+.letter-4 { left: 245px; top: 75px; transform: rotate(-8deg); font-size: 8.4rem; }
+.letter-5 { left: 297px; top: 112px; transform: rotate(3deg); font-size: 6rem; }
+.letter-6 { left: 340px; top: 110px; transform: rotate(-176deg); font-size: 6.7rem; }
+.letter-7 { left: 371px; top: 57px; transform: rotate(-1deg); font-size: 11.2rem; }
+
+/* ================== GRILLE ================== */
+#grid-container {
+    flex: 1; display: flex; justify-content: center; align-items: center;
+    padding: 10px; padding-bottom: 80px;
+    min-height: 0; z-index: 10;
+}
+.photo-grid { display: grid; gap: 8px; width: 100%; height: 100%; max-width: 1600px; }
+.grid-normal { grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(8, 1fr); }
+/* MODIFICATION : 4 lignes pour le Hardcore */
+.grid-hard { grid-template-rows: repeat(4, 1fr); grid-template-columns: repeat(8, 1fr); }
+
+.card {
+    position: relative; overflow: hidden;
+    border: 2px solid #333; background: #000; border-radius: 5px;
+    display: flex; justify-content: center; align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+.card.hidden-state { background-color: #1a1a1a; border: 2px solid #555; }
+.mystery-mark { font-family: 'Anton'; font-size: 4rem; color: #333; }
+.card.removed { border-color: transparent !important; background: transparent !important; pointer-events: none; }
+.card.removed img, .card.removed .mystery-mark { opacity: 0; transform: scale(0); transition: 0.3s; }
+.card-name {
+    position: absolute; bottom: 0; left: 0; width: 100%;
+    background: rgba(0,0,0,0.8); color: #fff;
+    font-size: 14px; font-weight: bold; text-align: center;
+    padding: 4px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+/* ================== UI ÉLÉMENTS ================== */
+.corner-timer {
+    position: fixed; top: 20px; right: 40px;
+    font-family: 'Anton', sans-serif; font-size: 6rem; 
+    text-shadow: 3px 3px 0px #000; z-index: 1000;
+}
+
+#game-timer-display { color: #D60000; display: none; }
+#memo-overlay { display: none; }
+#memo-timer { color: #3498db; }
+
+#game-footer {
+    position: fixed; bottom: 15px; right: 25px;
+    display: flex; align-items: center; gap: 15px;
+    font-family: 'Bebas Neue', sans-serif; font-size: 24px;
+    color: rgba(255, 255, 255, 0.7); z-index: 1000; pointer-events: none;
+}
+#game-footer img { height: 40px; width: auto; filter: drop-shadow(2px 2px 2px black); }
+
+.admin-controls {
+    height: 70px; flex-shrink: 0; background: #222; border-top: 1px solid #444;
+    display: flex; gap: 15px; align-items: center; justify-content: center; padding: 0 20px; z-index: 20;
+}
+button {
+    height: 45px; padding: 0 20px; font-size: 1rem; font-weight: bold; cursor: pointer;
+    border: none; border-radius: 5px; white-space: nowrap; color: white;
+}
+.btn-faux { background: #D60000; border: 2px solid white; }
+.btn-start { background: #2ecc71; }
+.btn-pause { background: #f1c40f; color: black; }
+.btn-reset { background: #95a5a6; }
+.btn-mode { background: #3498db; }
+.btn-memo { background: #9b59b6; color: white; border: 2px solid white; } 
+
+.regie-header { background: #111 !important; height: 60px !important; justify-content: space-between !important; }
+.regie-timer { font-family: 'Anton', sans-serif; font-size: 2.5rem; color: #D60000; text-shadow: 0 0 10px #D60000; cursor: pointer; }

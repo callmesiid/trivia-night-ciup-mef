@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>LE WAGON — ÉCRAN JEU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+    /* ══════════════════════════════════════════
+       BASE
+    ══════════════════════════════════════════ */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        background: #0a0a0a;
+        color: #fff;
+        font-family: 'Anton', sans-serif;
+        overflow: hidden;
+        width: 100vw; height: 100vh;
+        cursor: none;
+        user-select: none;
+    }
+
+    /* ══════════════════════════════════════════
+       MARQUEE FOND
+    ══════════════════════════════════════════ */
+    #bg-marquee {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 0; opacity: 0.07; pointer-events: none;
+        display: flex; flex-direction: column; justify-content: center; gap: 60px;
+    }
+    .mq-row { overflow: hidden; white-space: nowrap; }
+    .mq-inner { display: inline-flex; animation: scrollMq 40s linear infinite; }
+    .mq-row.rev .mq-inner { animation-direction: reverse; }
+    .mq-text { font-size: 9vw; font-weight: 900; color: transparent; -webkit-text-stroke: 2px #fff; margin-right: 60px; text-transform: uppercase; }
+    @keyframes scrollMq { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ══════════════════════════════════════════
+       ATTENTE
+    ══════════════════════════════════════════ */
+    #waiting-screen {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: #000; z-index: 9000;
+        display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;
+    }
+    .waiting-text {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2.5rem; color: #fff; letter-spacing: 6px;
+        animation: blink 0.8s step-end infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    .waiting-sub { font-family: 'Roboto', sans-serif; font-size: 0.85rem; color: #555; letter-spacing: 3px; }
+
+    /* ══════════════════════════════════════════
+       GÉNÉRIQUE
+    ══════════════════════════════════════════ */
+    #generique {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: #000; z-index: 8000; display: none;
+        overflow: hidden;
+    }
+
+    /* Rails du fond */
+    #rails {
+        position: absolute; bottom: 22vh; left: 0; width: 100%;
+        display: flex; flex-direction: column; gap: 12px;
+    }
+    .rail { height: 6px; background: #222; width: 100%; }
+    .ties { position: absolute; bottom: 21vh; left: 0; width: 200%; height: 30px; display: flex; gap: 40px; animation: moveTies 0.6s linear infinite; }
+    .tie { width: 20px; height: 30px; background: #1a1a1a; flex-shrink: 0; }
+    @keyframes moveTies { 0% { transform: translateX(0); } 100% { transform: translateX(-60px); } }
+
+    /* Train SVG */
+    .gen-train {
+        position: absolute;
+        bottom: 18vh;
+        transition: transform 0s;
+        will-change: transform;
+    }
+    .gen-train svg { display: block; }
+    .gen-train.go-right { animation: trainRight 2.2s cubic-bezier(0.4,0,0.6,1) forwards; }
+    .gen-train.go-left  { animation: trainLeft 2.2s cubic-bezier(0.4,0,0.6,1) forwards; }
+    .gen-train.go-right-fast { animation: trainRight 1.5s cubic-bezier(0.4,0,0.8,1) forwards; }
+    @keyframes trainRight { 0% { transform: translateX(-120vw); } 100% { transform: translateX(120vw); } }
+    @keyframes trainLeft  { 0% { transform: translateX(120vw) scaleX(-1); } 100% { transform: translateX(-120vw) scaleX(-1); } }
+
+    /* Steam particules */
+    .steam {
+        position: absolute; border-radius: 50%;
+        background: rgba(255,255,255,0.6);
+        animation: steamUp 1s ease-out forwards;
+        pointer-events: none;
+    }
+    @keyframes steamUp { 0%{opacity:0.8;transform:translate(0,0) scale(1);} 100%{opacity:0;transform:translate(var(--sx),var(--sy)) scale(3);} }
+
+    /* Tunnel iris */
+    #tunnel-overlay {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: #000;
+        clip-path: circle(0% at 50% 60%);
+        transition: clip-path 0s;
+        z-index: 5;
+    }
+    #tunnel-overlay.open { animation: tunnelOpen 1.2s cubic-bezier(0.4,0,0.2,1) forwards; }
+    #tunnel-overlay.close { animation: tunnelClose 0.8s cubic-bezier(0.4,0,0.2,1) forwards; }
+    @keyframes tunnelOpen  { 0%{clip-path:circle(100% at 50% 60%);} 100%{clip-path:circle(0% at 50% 60%);} }
+    @keyframes tunnelClose { 0%{clip-path:circle(0% at 50% 60%);} 100%{clip-path:circle(100% at 50% 60%);} }
+
+    /* Big centre train (emerge from tunnel) */
+    #big-train {
+        position: absolute; left: 50%; top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        z-index: 6; transition: transform 0s; opacity: 0;
+    }
+    #big-train.emerge { animation: bigTrainEmerge 1.5s cubic-bezier(0.2,0,0,1) forwards; }
+    @keyframes bigTrainEmerge {
+        0%   { transform: translate(-50%,-50%) scale(0.1); opacity: 0; }
+        40%  { transform: translate(-50%,-50%) scale(1.4); opacity: 1; }
+        60%  { transform: translate(-50%,-50%) scale(0.9); opacity: 1; }
+        80%  { transform: translate(-50%,-50%) scale(1.05); opacity: 1; }
+        100% { transform: translate(-50%,-50%) scale(1); opacity: 1; }
+    }
+
+    /* Titre LE WAGON */
+    #gen-title {
+        position: absolute; top: -30%; left: 50%;
+        transform: translateX(-50%);
+        z-index: 7; text-align: center;
+        opacity: 0;
+    }
+    #gen-title .title-le {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 5rem; color: #d4af37;
+        text-shadow: 4px 4px 0 #000, 0 0 40px rgba(212,175,55,0.5);
+        display: block;
+    }
+    #gen-title .title-main {
+        font-family: 'Anton', sans-serif;
+        font-size: 15vw; line-height: 0.85;
+        color: #fff;
+        text-shadow: 8px 8px 0 #000, 0 0 60px rgba(255,255,255,0.3);
+        display: block; letter-spacing: -3px;
+    }
+    #gen-title .title-sub {
+        font-family: 'Roboto', sans-serif; font-weight: 900;
+        font-size: 1.2rem; color: #d4af37; letter-spacing: 8px;
+        display: block; margin-top: 10px;
+    }
+    #gen-title.drop { animation: titleDrop 0.8s cubic-bezier(0.2,1.5,0.4,1) forwards; }
+    @keyframes titleDrop {
+        0% { top: -30%; opacity: 0; }
+        100% { top: 50%; opacity: 1; transform: translate(-50%, -50%); }
+    }
+    #gen-title.zoom-out { animation: titleZoomOut 0.6s ease-in forwards; }
+    @keyframes titleZoomOut { 0%{opacity:1;} 100%{opacity:0; transform:translate(-50%,-50%) scale(1.5);} }
+
+    /* Confetti générique */
+    .gen-confetti {
+        position: absolute; border-radius: 3px;
+        animation: confettiFall linear forwards;
+        pointer-events: none;
+    }
+    @keyframes confettiFall {
+        0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+    }
+
+    /* ══════════════════════════════════════════
+       HEADER JEU
+    ══════════════════════════════════════════ */
+    #game-header {
+        position: fixed; top: 0; left: 0; width: 100%; height: 70px;
+        background: linear-gradient(to bottom, #000, #0d0d0d);
+        border-bottom: 2px solid #d4af37;
+        display: flex; align-items: center; z-index: 100;
+        padding: 0 20px; gap: 20px; display: none;
+    }
+    .header-logo {
+        font-family: 'Anton', sans-serif;
+        font-size: 2.2rem; color: #d4af37;
+        text-shadow: 3px 3px 0 #000;
+        letter-spacing: 2px; white-space: nowrap;
+    }
+    .header-teams { display: flex; gap: 10px; flex: 1; overflow: hidden; align-items: center; }
+    .team-chip {
+        display: flex; align-items: center; gap: 6px;
+        background: #111; border: 2px solid #333;
+        border-radius: 6px; padding: 5px 12px;
+        transition: border-color 0.3s, background 0.3s;
+        flex-shrink: 0;
+    }
+    .team-chip.active { border-color: #d4af37; background: #1a1500; }
+    .team-chip.qualified { border-color: #27ae60; }
+    .team-chip-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+    .team-chip-name { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 1px; }
+    .team-chip-score { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 1.1rem; color: #d4af37; }
+
+    /* ══════════════════════════════════════════
+       BOARD WAGONS
+    ══════════════════════════════════════════ */
+    #game-board {
+        position: fixed; top: 70px; left: 0; width: 100%; bottom: 0;
+        padding: 15px 20px;
+        display: none;
+        overflow-y: auto;
+        z-index: 10;
+    }
+    .wagons-rail {
+        display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;
+        align-items: flex-start; padding-bottom: 20px;
+    }
+
+    /* ── WAGON CARD ── */
+    .wagon-card {
+        background: linear-gradient(135deg, #111 0%, #1a1a2e 100%);
+        border: 3px solid #333; border-radius: 12px;
+        padding: 14px; min-width: 280px; max-width: 380px;
+        flex: 1;
+        transition: border-color 0.4s, box-shadow 0.4s;
+        position: relative;
+    }
+    .wagon-card.active-wagon { border-color: #d4af37; box-shadow: 0 0 30px rgba(212,175,55,0.25); }
+    .wagon-card.completed-wagon { opacity: 0.6; }
+
+    .wagon-theme-label {
+        font-family: 'Anton', sans-serif;
+        font-size: 1.2rem; letter-spacing: 2px;
+        margin-bottom: 10px; text-align: center;
+        text-shadow: 2px 2px 0 #000;
+    }
+
+    /* Windows container — looks like a train car side */
+    .wagon-body {
+        background: #0d0d1a;
+        border: 2px solid #2a2a4a;
+        border-radius: 8px;
+        padding: 10px 8px;
+        position: relative;
+    }
+    .wagon-windows-row {
+        display: flex; gap: 4px; justify-content: center; flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+    .wagon-window {
+        width: 36px; height: 28px;
+        border-radius: 5px 5px 3px 3px;
+        border: 2px solid #222;
+        background: #050505;
+        transition: background 0.4s, border-color 0.4s, box-shadow 0.4s;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Roboto', sans-serif; font-size: 0.6rem; font-weight: bold;
+        color: #333; flex-shrink: 0;
+        position: relative;
+    }
+    .wagon-window.lit {
+        background: #f1c40f;
+        border-color: #f1c40f;
+        box-shadow: 0 0 12px rgba(241,196,15,0.6);
+        color: #000;
+    }
+    .wagon-window.banked {
+        border-color: transparent;
+        box-shadow: 0 0 14px var(--team-glow);
+        color: #000;
+    }
+    .wagon-window.palier-end { border-right: 3px solid #555; margin-right: 4px; }
+
+    /* Roues */
+    .wagon-wheels {
+        display: flex; justify-content: space-around;
+        padding: 0 10px; margin-top: 6px;
+    }
+    .wheel {
+        width: 20px; height: 20px; border-radius: 50%;
+        background: #1a1a1a; border: 3px solid #444;
+        animation: wheelSpin 1s linear infinite paused;
+    }
+    .wagon-card.active-wagon .wheel { animation-play-state: running; border-color: #d4af37; }
+    @keyframes wheelSpin { 100% { transform: rotate(360deg); } }
+
+    /* Stats wagon */
+    .wagon-stats {
+        display: flex; justify-content: space-between; align-items: center;
+        margin-top: 8px; font-family: 'Roboto', sans-serif; font-size: 0.75rem; color: #888;
+    }
+    .wagon-pending-label { color: #f39c12; font-weight: bold; }
+    .wagon-palier-badge {
+        background: #2a2a00; border: 1px solid #d4af37;
+        border-radius: 10px; padding: 2px 8px; font-size: 0.7rem; color: #d4af37;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* ══════════════════════════════════════════
+       OVERLAY QUESTION
+    ══════════════════════════════════════════ */
+    #question-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.95);
+        z-index: 500; display: none;
+        flex-direction: column; align-items: center; justify-content: center;
+        padding: 40px;
+    }
+    #question-overlay.show { display: flex; }
+
+    .q-overlay-theme {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.5rem; letter-spacing: 5px; color: #888;
+        margin-bottom: 5px;
+    }
+    .q-overlay-meta {
+        display: flex; gap: 15px; align-items: center; margin-bottom: 25px;
+    }
+    .q-badge {
+        background: #1a1a1a; border: 2px solid #333;
+        border-radius: 20px; padding: 4px 14px;
+        font-family: 'Roboto', sans-serif; font-size: 0.85rem; color: #aaa;
+    }
+    .q-pts-badge {
+        background: #2a2000; border: 2px solid #d4af37;
+        border-radius: 20px; padding: 4px 14px;
+        font-family: 'Roboto', sans-serif; font-size: 0.85rem; font-weight: bold; color: #d4af37;
+    }
+    .q-pending-badge {
+        background: #2a1500; border: 2px solid #f39c12;
+        border-radius: 20px; padding: 4px 14px;
+        font-family: 'Roboto', sans-serif; font-size: 0.85rem; color: #f39c12;
+    }
+    .q-team-badge {
+        border-radius: 20px; padding: 4px 14px;
+        font-family: 'Roboto', sans-serif; font-size: 0.85rem; font-weight: bold;
+    }
+
+    #question-text-el {
+        font-family: 'Anton', sans-serif;
+        font-size: clamp(2rem, 5vw, 4rem);
+        text-align: center; line-height: 1.15;
+        color: #fff; text-shadow: 3px 3px 0 #000;
+        max-width: 900px; margin-bottom: 30px;
+    }
+
+    #answer-reveal {
+        font-family: 'Anton', sans-serif;
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        text-align: center; color: #d4af37;
+        text-shadow: 4px 4px 0 #000, 0 0 40px rgba(212,175,55,0.4);
+        animation: answerPop 0.4s cubic-bezier(0.2,1.5,0.4,1);
+        display: none;
+    }
+    @keyframes answerPop { 0%{transform:scale(0.5);opacity:0;} 100%{transform:scale(1);opacity:1;} }
+
+    /* Timer dans overlay */
+    #timer-ring-container {
+        position: absolute; top: 20px; right: 30px;
+        display: none;
+    }
+    #timer-ring-container.show { display: block; }
+    .timer-svg { transform: rotate(-90deg); }
+    #timer-text-el {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        font-family: 'Anton', sans-serif; font-size: 2rem; color: #fff;
+    }
+
+    /* ══════════════════════════════════════════
+       ÉCRAN PALIER END
+    ══════════════════════════════════════════ */
+    #palier-screen {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.97); z-index: 600;
+        display: none; flex-direction: column; align-items: center; justify-content: center; gap: 20px;
+    }
+    #palier-screen.show { display: flex; }
+    .palier-icon { font-size: 5rem; animation: pulse 1s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.1);} }
+    .palier-title { font-family: 'Anton', sans-serif; font-size: 4rem; color: #d4af37; text-shadow: 4px 4px 0 #000; }
+    .palier-pts { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 2.5rem; color: #fff; }
+    .palier-sub { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: #888; letter-spacing: 4px; }
+
+    /* ══════════════════════════════════════════
+       WIN / LOSE SCREENS
+    ══════════════════════════════════════════ */
+    #win-screen, #lose-screen {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 700; display: none; flex-direction: column;
+        align-items: center; justify-content: center; gap: 10px;
+    }
+    #win-screen { background: radial-gradient(ellipse at center, #1a2a00 0%, #000 70%); }
+    #lose-screen { background: radial-gradient(ellipse at center, #2a0000 0%, #000 70%); }
+    .big-result-text {
+        font-family: 'Anton', sans-serif; font-size: 10vw;
+        text-shadow: 6px 6px 0 #000; animation: resultBounce 0.5s cubic-bezier(0.2,1.5,0.4,1);
+    }
+    #win-screen .big-result-text { color: #d4af37; }
+    #lose-screen .big-result-text { color: #e74c3c; }
+    @keyframes resultBounce { 0%{transform:scale(0.3) rotate(-5deg);opacity:0;} 100%{transform:scale(1) rotate(0deg);opacity:1;} }
+    .result-pts { font-family: 'Bebas Neue', sans-serif; font-size: 5rem; }
+    #win-screen .result-pts { color: #fff; }
+    #lose-screen .result-pts { color: #888; }
+    #confetti-box, #rain-box { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+
+    /* Trompettes */
+    .trumpet-corner { position: absolute; width: 120px; animation: trumpetPop 0.5s cubic-bezier(0.2,2,0.4,1) forwards; }
+    .trumpet-corner.tl { top:10px; left:10px; transform:rotate(0deg); }
+    .trumpet-corner.tr { top:10px; right:10px; transform:rotate(90deg); }
+    .trumpet-corner.bl { bottom:10px; left:10px; transform:rotate(-90deg); }
+    .trumpet-corner.br { bottom:10px; right:10px; transform:rotate(180deg); }
+    @keyframes trumpetPop { 0%{transform:scale(0);} 100%{transform:scale(1);} }
+
+    /* ══════════════════════════════════════════
+       BONUS NOTIFICATION
+    ══════════════════════════════════════════ */
+    #bonus-notif {
+        position: fixed; top: 80px; right: -500px; z-index: 800;
+        background: linear-gradient(135deg, #2a0050, #4a007a);
+        border: 3px solid #8e44ad; border-radius: 12px;
+        padding: 18px 24px; min-width: 280px;
+        transition: right 0.5s cubic-bezier(0.2,1,0.4,1);
+    }
+    #bonus-notif.show { right: 20px; }
+    .bonus-notif-emoji { font-size: 2.5rem; }
+    .bonus-notif-name { font-family: 'Anton', sans-serif; font-size: 1.5rem; color: #d4af37; }
+    .bonus-notif-desc { font-family: 'Roboto', sans-serif; font-size: 0.85rem; color: #ccc; margin-top: 4px; }
+    .bonus-notif-team { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: #aaa; margin-top: 6px; letter-spacing: 2px; }
+
+    /* ══════════════════════════════════════════
+       RÉSULTATS FINAUX
+    ══════════════════════════════════════════ */
+    #results-screen {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: #000; z-index: 900; display: none;
+        flex-direction: column; align-items: center; justify-content: center; gap: 20px;
+    }
+    #results-screen.show { display: flex; }
+    .results-title {
+        font-family: 'Anton', sans-serif; font-size: 4rem; color: #d4af37;
+        text-shadow: 5px 5px 0 #000; letter-spacing: 5px;
+    }
+    .result-row {
+        display: flex; align-items: center; gap: 20px;
+        background: #111; border: 2px solid #333; border-radius: 8px;
+        padding: 14px 24px; min-width: 500px;
+        opacity: 0; transform: translateX(-60px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .result-row.show { opacity: 1; transform: translateX(0); }
+    .result-rank { font-family: 'Anton', sans-serif; font-size: 2rem; color: #555; min-width: 50px; }
+    .result-row:nth-child(1) .result-rank { color: #ffd700; }
+    .result-row:nth-child(2) .result-rank { color: #c0c0c0; }
+    .result-row:nth-child(3) .result-rank { color: #cd7f32; }
+    .result-team-name { font-family: 'Anton', sans-serif; font-size: 1.5rem; flex: 1; }
+    .result-score { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 1.8rem; color: #d4af37; }
+    .result-badge { font-size: 1.5rem; }
+    #results-confetti { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+
+    /* ══════════════════════════════════════════
+       QUALIFIED BANNER
+    ══════════════════════════════════════════ */
+    #qualified-banner {
+        position: fixed; top: -120px; left: 50%; transform: translateX(-50%);
+        z-index: 850; background: #000; border: 4px solid #27ae60;
+        border-radius: 12px; padding: 16px 40px; text-align: center;
+        transition: top 0.6s cubic-bezier(0.2,1,0.4,1);
+        white-space: nowrap;
+    }
+    #qualified-banner.show { top: 90px; }
+    .qual-text { font-family: 'Anton', sans-serif; font-size: 2rem; color: #27ae60; }
+    .qual-sub { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: #aaa; letter-spacing: 4px; }
+
+    /* ══════════════════════════════════════════
+       CONNEXION
+    ══════════════════════════════════════════ */
+    #dot-status {
+        position: fixed; bottom: 6px; right: 6px;
+        width: 10px; height: 10px; border-radius: 50%;
+        background: #c0392b; opacity: 0.5; z-index: 9999;
+        transition: background 0.5s;
+    }
+    #dot-status.ok { background: #27ae60; }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE & UTILS
+    ══════════════════════════════════════════ */
+    .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<!-- Sons -->
+<audio id="sfx-intro"    src="effets_sonores/intro.mp3"    preload="auto"></audio>
+<audio id="sfx-timer"    src="effets_sonores/timer.mp3"    preload="auto" loop></audio>
+<audio id="sfx-win"      src="effets_sonores/win2.mp3"     preload="auto"></audio>
+<audio id="sfx-break"    src="effets_sonores/break.mp3"    preload="auto"></audio>
+<audio id="sfx-reveal"   src="effets_sonores/reveal.mp3"   preload="auto"></audio>
+<audio id="sfx-selected" src="effets_sonores/selected.mp3" preload="auto"></audio>
+<audio id="sfx-spin"     src="effets_sonores/spin.mp3"     preload="auto"></audio>
+
+<!-- Marquee fond -->
+<div id="bg-marquee">
+    <div class="mq-row"><div class="mq-inner">
+        <span class="mq-text">LE WAGON</span><span class="mq-text">MEF TRIVIA</span>
+        <span class="mq-text">LE WAGON</span><span class="mq-text">MEF TRIVIA</span>
+    </div></div>
+    <div class="mq-row rev"><div class="mq-inner">
+        <span class="mq-text">MONTEZ À BORD</span><span class="mq-text">PRÊTS ?</span>
+        <span class="mq-text">MONTEZ À BORD</span><span class="mq-text">PRÊTS ?</span>
+    </div></div>
+    <div class="mq-row"><div class="mq-inner">
+        <span class="mq-text">RISQUEZ TOUT</span><span class="mq-text">OU BANQUEZ</span>
+        <span class="mq-text">RISQUEZ TOUT</span><span class="mq-text">OU BANQUEZ</span>
+    </div></div>
+</div>
+
+<!-- Attente -->
+<div id="waiting-screen">
+    <div class="waiting-text">EN ATTENTE DE LA RÉGIE...</div>
+    <div class="waiting-sub">MEF'S TRIVIA NIGHT — LE WAGON</div>
+</div>
+
+<!-- ═══ GÉNÉRIQUE ═══ -->
+<div id="generique">
+    <!-- Rails fixes -->
+    <div id="rails">
+        <div class="rail" style="background:#1a1a1a; height:8px;"></div>
+        <div class="rail" style="background:#111; height:5px;"></div>
+    </div>
+    <div class="ties" id="ties-el"><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div><div class="tie"></div></div>
+
+    <!-- Train 1, 2, 3 (passages) -->
+    <div class="gen-train" id="gen-train-1" style="display:none;">
+        <!-- SVG train 1 (petit) -->
+    </div>
+    <div class="gen-train" id="gen-train-2" style="display:none;">
+        <!-- SVG train 2 (moyen) -->
+    </div>
+    <div class="gen-train" id="gen-train-3" style="display:none;">
+        <!-- SVG train 3 (grand) -->
+    </div>
+
+    <!-- Tunnel overlay -->
+    <div id="tunnel-overlay"></div>
+
+    <!-- Big center train -->
+    <div id="big-train">
+        <!-- rempli par JS -->
+    </div>
+
+    <!-- Titre -->
+    <div id="gen-title">
+        <span class="title-le">LE</span>
+        <span class="title-main">WAGON</span>
+        <span class="title-sub">MEF'S TRIVIA NIGHT — PREMIÈRE ÉDITION</span>
+    </div>
+
+    <!-- Confetti -->
+    <div id="gen-confetti-box"></div>
+</div>
+
+<!-- ═══ HEADER ═══ -->
+<div id="game-header">
+    <div class="header-logo">🚂 LE WAGON</div>
+    <div class="header-teams" id="header-teams"></div>
+</div>
+
+<!-- ═══ BOARD ═══ -->
+<div id="game-board">
+    <div class="wagons-rail" id="wagons-rail"></div>
+</div>
+
+<!-- ═══ QUESTION OVERLAY ═══ -->
+<div id="question-overlay">
+    <div class="q-overlay-theme" id="q-theme-el">THÈME</div>
+    <div class="q-overlay-meta" id="q-meta-el">
+        <span class="q-badge" id="q-level-el">Q1/10</span>
+        <span class="q-pts-badge" id="q-pts-el">+1 pt</span>
+        <span class="q-pending-badge" id="q-pending-el" style="display:none;"></span>
+        <span class="q-team-badge" id="q-team-el">ÉQUIPE</span>
+    </div>
+    <div id="question-text-el">...</div>
+    <div id="answer-reveal">---</div>
+
+    <!-- Timer (haut droite) -->
+    <div id="timer-ring-container">
+        <svg class="timer-svg" width="100" height="100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="#222" stroke-width="8"/>
+            <circle id="timer-arc" cx="50" cy="50" r="42" fill="none" stroke="#d4af37" stroke-width="8"
+                stroke-dasharray="264" stroke-dashoffset="0" stroke-linecap="round"/>
+        </svg>
+        <div id="timer-text-el">30</div>
+    </div>
+</div>
+
+<!-- ═══ PALIER END ═══ -->
+<div id="palier-screen">
+    <div class="palier-icon">💰</div>
+    <div class="palier-title">FIN DE PALIER !</div>
+    <div class="palier-pts" id="palier-pts-display">X pts à banquer</div>
+    <div class="palier-sub">BANQUER OU CONTINUER ?</div>
+</div>
+
+<!-- ═══ WIN SCREEN ═══ -->
+<div id="win-screen">
+    <div id="confetti-box"></div>
+    <img src="images_front/trompette.png" class="trumpet-corner tl" style="display:none;" id="t-tl">
+    <img src="images_front/trompette.png" class="trumpet-corner tr" style="display:none;" id="t-tr">
+    <img src="images_front/trompette.png" class="trumpet-corner bl" style="display:none;" id="t-bl">
+    <img src="images_front/trompette.png" class="trumpet-corner br" style="display:none;" id="t-br">
+    <div class="big-result-text" id="win-text">GG !</div>
+    <div class="result-pts" id="win-pts">+1</div>
+</div>
+
+<!-- ═══ LOSE SCREEN ═══ -->
+<div id="lose-screen">
+    <div id="rain-box"></div>
+    <div class="big-result-text" id="lose-text">PERDU !</div>
+    <div class="result-pts" id="lose-pts"></div>
+</div>
+
+<!-- ═══ BONUS NOTIFICATION ═══ -->
+<div id="bonus-notif">
+    <div class="bonus-notif-emoji" id="bn-emoji">🎁</div>
+    <div class="bonus-notif-name" id="bn-name">BONUS</div>
+    <div class="bonus-notif-desc" id="bn-desc">...</div>
+    <div class="bonus-notif-team" id="bn-team">---</div>
+</div>
+
+<!-- ═══ QUALIFIED BANNER ═══ -->
+<div id="qualified-banner">
+    <div class="qual-text" id="qual-team-name">ÉQUIPE</div>
+    <div class="qual-sub">🎉 EST QUALIFIÉE ! 🎉</div>
+</div>
+
+<!-- ═══ RÉSULTATS ═══ -->
+<div id="results-screen">
+    <div id="results-confetti"></div>
+    <div class="results-title">CLASSEMENT FINAL</div>
+    <div id="results-list"></div>
+</div>
+
+<!-- Connexion dot -->
+<div id="dot-status"></div>
+
+<script src="data.js"></script>
+<script>
+// ================================================================
+// CANAL & ÉTAT LOCAL
+// ================================================================
+const channel = new BroadcastChannel(CHANNEL_NAME);
+let localState = { teams: [], wagons: [], currentTeamIndex: 0, phase: 'SETUP', config: {} };
+let timerInterval = null;
+let winLoseTimeout = null;
+let genStep = 0;
+
+// ================================================================
+// SONS
+// ================================================================
+function snd(id) {
+    const a = document.getElementById(id);
+    if (a) { a.currentTime = 0; a.play().catch(() => {}); }
+}
+function stopSnd(id) {
+    const a = document.getElementById(id);
+    if (a) { a.pause(); a.currentTime = 0; }
+}
+
+// ================================================================
+// CHANNEL
+// ================================================================
+channel.onmessage = (e) => {
+    const { type, data } = e.data;
+    switch (type) {
+        case 'PONG':           document.getElementById('dot-status').className = 'ok'; break;
+        case 'STATE_UPDATE':   handleStateUpdate(data); break;
+        case 'START_INTRO':    runGenerique(); break;
+        case 'SKIP_INTRO':     skipGenerique(); break;
+        case 'SHOW_QUESTION':  showQuestion(data); break;
+        case 'CORRECT_ANSWER': handleCorrect(data); break;
+        case 'WRONG_ANSWER':   handleWrong(data); break;
+        case 'BANK_POINTS':    handleBank(data); break;
+        case 'PALIER_END':     handlePalierEnd(data); break;
+        case 'AWAIT_NEXT':     hidePalierScreen(); break;
+        case 'CONTINUE_WAGON': hidePalierScreen(); break;
+        case 'HIDE_QUESTION':  hideQuestion(); break;
+        case 'REROLL_QUESTION': document.getElementById('question-text-el').textContent = data.question; break;
+        case 'NEXT_TURN':      handleNextTurn(data); break;
+        case 'START_TIMER':    startTimer(data.seconds); break;
+        case 'STOP_TIMER':     stopTimer(); break;
+        case 'SHOW_BONUS':     showBonus(data); break;
+        case 'TEAM_QUALIFIED': showQualified(data); break;
+        case 'SHOW_RESULTS':   showResults(data.results); break;
+        case 'PING':           channel.postMessage({ type: 'PONG' }); break;
+        case 'REQUEST_STATE':  break;
+    }
+};
+
+// Ping périodique
+setInterval(() => channel.postMessage({ type: 'PING' }), 4000);
+channel.postMessage({ type: 'REQUEST_STATE' });
+
+// ================================================================
+// STATE UPDATE → REBUILD DISPLAY
+// ================================================================
+function handleStateUpdate(data) {
+    localState = data;
+    if (data.phase === 'GAME' || data.phase === 'READY') {
+        hideWaiting();
+        document.getElementById('game-header').style.display = 'flex';
+        document.getElementById('game-board').style.display = 'block';
+        renderHeader();
+        renderWagons();
+    }
+}
+
+// ================================================================
+// GÉNÉRIQUE
+// ================================================================
+const trainSVG = (scale=1) => `
+<svg viewBox="0 0 700 130" width="${700*scale}" height="${130*scale}" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rails -->
+  <rect x="0" y="110" width="700" height="6" fill="#1a1a1a"/>
+  <rect x="0" y="119" width="700" height="4" fill="#111"/>
+  <!-- Traverse 1 -->
+  <rect x="30" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="100" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="170" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="240" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="310" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="380" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="450" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="520" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="590" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <rect x="660" y="108" width="16" height="16" rx="2" fill="#141414"/>
+  <!-- WAGON 1 -->
+  <rect x="5" y="35" width="185" height="70" rx="8" fill="#0d0d1a" stroke="#d4af37" stroke-width="2.5"/>
+  <rect x="15" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <rect x="57" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <rect x="99" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <rect x="141" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <circle cx="45"  cy="108" r="16" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
+  <circle cx="45"  cy="108" r="6"  fill="#222"/>
+  <circle cx="150" cy="108" r="16" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
+  <circle cx="150" cy="108" r="6"  fill="#222"/>
+  <!-- attelage -->
+  <rect x="190" y="68" width="20" height="5" rx="2" fill="#555"/>
+  <!-- WAGON 2 -->
+  <rect x="210" y="35" width="185" height="70" rx="8" fill="#0d0d1a" stroke="#d4af37" stroke-width="2.5"/>
+  <rect x="220" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <rect x="262" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <rect x="304" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <rect x="346" y="44" width="32" height="28" rx="4" fill="#f1c40f"/>
+  <circle cx="250" cy="108" r="16" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
+  <circle cx="250" cy="108" r="6"  fill="#222"/>
+  <circle cx="355" cy="108" r="16" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
+  <circle cx="355" cy="108" r="6"  fill="#222"/>
+  <!-- attelage -->
+  <rect x="395" y="68" width="20" height="5" rx="2" fill="#555"/>
+  <!-- LOCOMOTIVE -->
+  <rect x="415" y="20" width="275" height="85" rx="10" fill="#0d0d1a" stroke="#d4af37" stroke-width="3"/>
+  <!-- Cheminée -->
+  <rect x="640" y="5" width="22" height="28" rx="6" fill="#222" stroke="#d4af37" stroke-width="2"/>
+  <ellipse cx="651" cy="5" rx="14" ry="5" fill="#333"/>
+  <!-- Cabine -->
+  <rect x="570" y="25" width="90" height="65" rx="6" fill="#111" stroke="#d4af37" stroke-width="1.5"/>
+  <!-- Fenêtre cabine -->
+  <rect x="578" y="32" width="35" height="30" rx="4" fill="#f1c40f"/>
+  <rect x="618" y="32" width="35" height="30" rx="4" fill="#f1c40f"/>
+  <!-- Phare -->
+  <circle cx="688" cy="62" r="8" fill="#fffde7" stroke="#d4af37" stroke-width="1.5"/>
+  <!-- Corps loco -->
+  <rect x="425" y="50" width="130" height="40" rx="4" fill="#111" stroke="#333" stroke-width="1"/>
+  <!-- Petite fenêtre loco -->
+  <rect x="445" y="55" width="28" height="20" rx="3" fill="#0a0a20"/>
+  <rect x="483" y="55" width="28" height="20" rx="3" fill="#0a0a20"/>
+  <rect x="521" y="55" width="28" height="20" rx="3" fill="#0a0a20"/>
+  <!-- Grandes roues -->
+  <circle cx="460"  cy="108" r="20" fill="#111" stroke="#d4af37" stroke-width="3"/>
+  <circle cx="460"  cy="108" r="8"  fill="#1a1a1a"/>
+  <circle cx="520" cy="108" r="20" fill="#111" stroke="#d4af37" stroke-width="3"/>
+  <circle cx="520" cy="108" r="8"  fill="#1a1a1a"/>
+  <circle cx="600" cy="108" r="24" fill="#111" stroke="#d4af37" stroke-width="3"/>
+  <circle cx="600" cy="108" r="10" fill="#1a1a1a"/>
+  <!-- Bielle roues -->
+  <line x1="460" y1="108" x2="520" y2="108" stroke="#d4af37" stroke-width="4"/>
+  <line x1="520" y1="108" x2="600" y2="108" stroke="#d4af37" stroke-width="4"/>
+</svg>`;
+
+function runGenerique() {
+    document.getElementById('waiting-screen').style.display = 'none';
+    const gen = document.getElementById('generique');
+    gen.style.display = 'block';
+    snd('sfx-intro');
+
+    // Créer les trains SVG
+    ['gen-train-1', 'gen-train-2', 'gen-train-3'].forEach((id, i) => {
+        document.getElementById(id).innerHTML = trainSVG(0.6 + i * 0.2);
+    });
+    document.getElementById('big-train').innerHTML = trainSVG(1.4);
+
+    let delay = 0;
+
+    // TRAIN 1 : gauche → droite
+    setTimeout(() => {
+        const t = document.getElementById('gen-train-1');
+        t.style.display = 'block';
+        t.style.bottom = '24vh';
+        void t.offsetWidth;
+        t.className = 'gen-train go-right';
+        snd('sfx-spin');
+        spawnSteam(t);
+    }, delay += 300);
+
+    // TRAIN 2 : droite → gauche
+    setTimeout(() => {
+        const t = document.getElementById('gen-train-2');
+        t.style.display = 'block';
+        t.style.bottom = '23vh';
+        void t.offsetWidth;
+        t.className = 'gen-train go-left';
+        snd('sfx-spin');
+        spawnSteam(t, true);
+    }, delay += 2400);
+
+    // TRAIN 3 : gauche → droite (rapide)
+    setTimeout(() => {
+        const t = document.getElementById('gen-train-3');
+        t.style.display = 'block';
+        t.style.bottom = '22vh';
+        void t.offsetWidth;
+        t.className = 'gen-train go-right-fast';
+        snd('sfx-break');
+        spawnSteam(t);
+        // Screen shake
+        document.getElementById('generique').style.animation = 'none';
+        document.getElementById('generique').classList.add('shake');
+    }, delay += 2200);
+
+    // TUNNEL CLOSE (noir envahit l'écran)
+    setTimeout(() => {
+        const tunnel = document.getElementById('tunnel-overlay');
+        tunnel.style.clipPath = 'circle(0% at 50% 55%)';
+        tunnel.style.transition = 'none';
+        void tunnel.offsetWidth;
+        tunnel.classList.add('close');
+    }, delay += 1800);
+
+    // BIG TRAIN EMERGE
+    setTimeout(() => {
+        const big = document.getElementById('big-train');
+        big.classList.add('emerge');
+        snd('sfx-selected');
+    }, delay += 900);
+
+    // TITRE DROP
+    setTimeout(() => {
+        const title = document.getElementById('gen-title');
+        title.classList.add('drop');
+        snd('sfx-win');
+        spawnGenConfetti(40);
+    }, delay += 1200);
+
+    // Confetti suite
+    setTimeout(() => spawnGenConfetti(80), delay + 400);
+
+    // ZOOM OUT ET TRANSITION VERS JEU
+    setTimeout(() => {
+        document.getElementById('gen-title').classList.add('zoom-out');
+    }, delay += 3000);
+
+    setTimeout(() => {
+        gen.style.transition = 'opacity 0.8s';
+        gen.style.opacity = '0';
+        setTimeout(() => {
+            gen.style.display = 'none';
+            gen.style.opacity = '1';
+            transitionToGame();
+        }, 800);
+    }, delay + 600);
+}
+
+function skipGenerique() {
+    stopSnd('sfx-intro');
+    stopSnd('sfx-spin');
+    document.getElementById('generique').style.display = 'none';
+    document.getElementById('waiting-screen').style.display = 'none';
+    transitionToGame();
+}
+
+function transitionToGame() {
+    document.getElementById('game-header').style.display = 'flex';
+    document.getElementById('game-board').style.display = 'block';
+    renderHeader();
+    renderWagons();
+    snd('sfx-selected');
+}
+
+// ── STEAM PARTICLES ──
+function spawnSteam(trainEl, fromRight = false) {
+    const rect = trainEl.getBoundingClientRect ? { left: fromRight ? window.innerWidth * 0.85 : window.innerWidth * 0.1, top: window.innerHeight * 0.3 } : { left: 200, top: 200 };
+    for (let i = 0; i < 8; i++) {
+        setTimeout(() => {
+            const s = document.createElement('div');
+            s.className = 'steam';
+            const size = 10 + Math.random() * 20;
+            s.style.cssText = `width:${size}px;height:${size}px;left:${fromRight ? '80vw' : '15vw'};top:25vh;--sx:${(Math.random()-0.5)*60}px;--sy:-${50+Math.random()*80}px;`;
+            document.getElementById('generique').appendChild(s);
+            setTimeout(() => s.remove(), 1100);
+        }, i * 120);
+    }
+}
+
+// ── CONFETTI GÉNÉRIQUE ──
+function spawnGenConfetti(n) {
+    const box = document.getElementById('gen-confetti-box');
+    const colors = ['#d4af37', '#fff', '#e74c3c', '#3498db', '#f1c40f', '#2ecc71'];
+    for (let i = 0; i < n; i++) {
+        const c = document.createElement('div');
+        c.className = 'gen-confetti';
+        const sz = 6 + Math.random() * 10;
+        c.style.cssText = `width:${sz}px;height:${sz}px;left:${Math.random()*100}vw;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${1.5+Math.random()*2}s;animation-delay:${Math.random()*0.5}s;`;
+        box.appendChild(c);
+        setTimeout(() => c.remove(), 3000);
+    }
+}
+
+// ================================================================
+// WAITING
+// ================================================================
+function hideWaiting() {
+    document.getElementById('waiting-screen').style.display = 'none';
+}
+
+// ================================================================
+// HEADER (SCORES)
+// ================================================================
+function renderHeader() {
+    const el = document.getElementById('header-teams');
+    el.innerHTML = '';
+    localState.teams.forEach((t, i) => {
+        const chip = document.createElement('div');
+        chip.className = 'team-chip' + (i === localState.currentTeamIndex ? ' active' : '') + (t.qualified ? ' qualified' : '');
+        chip.style.borderColor = i === localState.currentTeamIndex ? t.color : '#333';
+        chip.innerHTML = `
+            <div class="team-chip-dot" style="background:${t.color}"></div>
+            <div class="team-chip-name">${t.name}</div>
+            <div class="team-chip-score">${t.score}</div>
+            ${t.qualified ? '<span style="color:#27ae60; font-size:0.8rem;">✓</span>' : ''}
+        `;
+        el.appendChild(chip);
+    });
+}
+
+// ================================================================
+// WAGONS
+// ================================================================
+function renderWagons() {
+    const rail = document.getElementById('wagons-rail');
+    rail.innerHTML = '';
+    if (!localState.wagons || localState.wagons.length === 0) return;
+
+    localState.wagons.forEach((w, wi) => {
+        const card = document.createElement('div');
+        card.className = 'wagon-card' + (w.completed ? ' completed-wagon' : '');
+        card.id = `wagon-card-${wi}`;
+
+        // Windows
+        let winHTML = '';
+        w.windowStates.forEach((ws, qi) => {
+            const tier = getTierForLevel(qi + 1);
+            let cls = 'wagon-window';
+            let style = '';
+            let pts = getPointsForLevel(qi + 1);
+            if (ws.banked && ws.teamColor) {
+                cls += ' banked';
+                style = `background:${ws.teamColor}; --team-glow:${ws.teamColor}80;`;
+            } else if (ws.reached) {
+                cls += ' lit';
+            }
+            // Séparateurs de paliers
+            const d = w.depth || 10;
+            const t1 = Math.ceil(d * 3 / 10);
+            const t2 = Math.ceil(d * 6 / 10);
+            const t3 = Math.ceil(d * 9 / 10);
+            if (qi === t1-1 || qi === t2-1 || qi === t3-1) cls += ' palier-end';
+            winHTML += `<div class="${cls}" style="${style}">${pts}</div>`;
+        });
+
+        const pendingStr = w.pendingPoints > 0 ? `<span class="wagon-pending-label">🪙 ${w.pendingPoints} pts</span>` : '';
+        const atPalier = isBankingAllowed(w.currentLevel, w.depth) && w.currentLevel > 0;
+        const palierBadge = atPalier && !w.completed ? `<span class="wagon-palier-badge">💰 Banquable</span>` : '';
+        const progress = w.completed ? '✓' : `Q${w.currentLevel+1}/${w.depth}`;
+
+        card.innerHTML = `
+            <div class="wagon-theme-label">${w.theme}</div>
+            <div class="wagon-body">
+                <div class="wagon-windows-row">${winHTML}</div>
+            </div>
+            <div class="wagon-wheels">
+                <div class="wheel"></div>
+                <div class="wheel"></div>
+                <div class="wheel"></div>
+            </div>
+            <div class="wagon-stats">
+                <span>${progress}</span>
+                ${pendingStr}
+                ${palierBadge}
+            </div>
+        `;
+        rail.appendChild(card);
+    });
+}
+
+function updateWagonCard(wagonIndex, windowStates, pendingPoints, currentLevel, completed) {
+    if (!localState.wagons[wagonIndex]) return;
+    localState.wagons[wagonIndex].windowStates = windowStates;
+    localState.wagons[wagonIndex].pendingPoints = pendingPoints;
+    localState.wagons[wagonIndex].currentLevel = currentLevel;
+    localState.wagons[wagonIndex].completed = completed;
+    renderWagons();
+}
+
+// ================================================================
+// QUESTION
+// ================================================================
+function showQuestion(data) {
+    document.getElementById('q-theme-el').textContent = data.theme;
+    document.getElementById('q-theme-el').style.color = data.themeColor || '#888';
+    document.getElementById('q-level-el').textContent = `Q${data.level}/${data.depth}`;
+    document.getElementById('q-pts-el').textContent = `+${data.points} pt${data.points > 1 ? 's' : ''}`;
+    document.getElementById('question-text-el').textContent = data.question;
+    document.getElementById('answer-reveal').style.display = 'none';
+
+    if (data.pendingPoints > 0) {
+        document.getElementById('q-pending-el').textContent = `🪙 +${data.pendingPoints} en wagon`;
+        document.getElementById('q-pending-el').style.display = '';
+    } else {
+        document.getElementById('q-pending-el').style.display = 'none';
+    }
+
+    const teamBadge = document.getElementById('q-team-el');
+    teamBadge.textContent = data.teamName;
+    teamBadge.style.background = data.teamColor + '33';
+    teamBadge.style.border = `2px solid ${data.teamColor}`;
+    teamBadge.style.color = data.teamColor;
+
+    // Marquer wagon actif
+    document.querySelectorAll('.wagon-card').forEach(c => c.classList.remove('active-wagon'));
+    // (on ne connaît pas l'index depuis ici, la régie mettra à jour via STATE_UPDATE)
+
+    hidePalierScreen();
+    document.getElementById('question-overlay').classList.add('show');
+    snd('sfx-selected');
+}
+
+function hideQuestion() {
+    document.getElementById('question-overlay').classList.remove('show');
+    document.getElementById('answer-reveal').style.display = 'none';
+    hidePalierScreen();
+    stopTimer();
+}
+
+// ================================================================
+// CORRECT / WRONG
+// ================================================================
+function handleCorrect(data) {
+    // Allumer la fenêtre
+    if (localState.wagons[data.wagonIndex]) {
+        const ws = localState.wagons[data.wagonIndex].windowStates;
+        if (ws[data.level]) { ws[data.level].reached = true; }
+        renderWagons();
+    }
+    // Afficher la réponse ?
+    // La réponse est affichée via PALIER_END ou AWAIT_NEXT — pas automatiquement
+}
+
+function handleWrong(data) {
+    hideQuestion();
+    stopTimer();
+
+    // Affichage perte
+    const winMessages = ["HMMM...", "AÏE AÏE AÏE !", "RATÉ !", "C'EST CHAUD !", "OH NON !"];
+    document.getElementById('lose-text').textContent = winMessages[Math.floor(Math.random() * winMessages.length)];
+    document.getElementById('lose-pts').textContent = '';
+    document.getElementById('lose-screen').style.display = 'flex';
+    createRain(document.getElementById('rain-box'));
+    snd('sfx-break');
+
+    if (winLoseTimeout) clearTimeout(winLoseTimeout);
+    winLoseTimeout = setTimeout(() => {
+        document.getElementById('lose-screen').style.display = 'none';
+        document.getElementById('rain-box').innerHTML = '';
+    }, 3500);
+}
+
+// ================================================================
+// BANK
+// ================================================================
+function handleBank(data) {
+    hideQuestion();
+    stopTimer();
+
+    // Mettre à jour les couleurs de fenêtres localement
+    if (localState.wagons[data.wagonIndex]) {
+        localState.wagons[data.wagonIndex].windowStates = data.windowStates;
+        localState.wagons[data.wagonIndex].pendingPoints = 0;
+        renderWagons();
+    }
+    // Mettre à jour le score
+    const team = localState.teams.find(t => t.name === data.teamName);
+    if (team) { team.score = data.score; renderHeader(); }
+
+    // Animation WIN
+    const msgs = ["BANQUÉ !", "POINTS SÉCURISÉS !", "SAFE !", "WISE MOVE !"];
+    document.getElementById('win-text').textContent = msgs[Math.floor(Math.random() * msgs.length)];
+    document.getElementById('win-pts').textContent = `+${data.points} PTS`;
+    ['t-tl','t-tr','t-bl','t-br'].forEach(id => { const el = document.getElementById(id); if(el){ el.style.display='block'; el.style.animation='none'; void el.offsetWidth; el.style.animation=''; }});
+    document.getElementById('win-screen').style.display = 'flex';
+    createConfetti(document.getElementById('confetti-box'));
+    snd('sfx-win');
+
+    if (winLoseTimeout) clearTimeout(winLoseTimeout);
+    winLoseTimeout = setTimeout(() => {
+        document.getElementById('win-screen').style.display = 'none';
+        document.getElementById('confetti-box').innerHTML = '';
+        ['t-tl','t-tr','t-bl','t-br'].forEach(id => { const el = document.getElementById(id); if(el) el.style.display='none'; });
+    }, 3500);
+}
+
+// ================================================================
+// PALIER END
+// ================================================================
+function handlePalierEnd(data) {
+    const total = data.total || (data.sessionPoints + data.pendingPoints);
+    document.getElementById('palier-pts-display').textContent = `${total} pts à banquer 💰`;
+    document.getElementById('palier-screen').classList.add('show');
+
+    // Reveal answer on question overlay
+    // (already shown to régie but not yet on screen)
+    snd('sfx-reveal');
+}
+
+function hidePalierScreen() {
+    document.getElementById('palier-screen').classList.remove('show');
+}
+
+// ================================================================
+// NEXT TURN
+// ================================================================
+function handleNextTurn(data) {
+    localState.currentTeamIndex = data.teamIndex;
+    renderHeader();
+    snd('sfx-selected');
+}
+
+// ================================================================
+// TIMER
+// ================================================================
+function startTimer(seconds) {
+    stopTimer();
+    const arc = document.getElementById('timer-arc');
+    const txt = document.getElementById('timer-text-el');
+    const cont = document.getElementById('timer-ring-container');
+    const circ = 2 * Math.PI * 42; // r=42
+    arc.style.strokeDasharray = circ;
+    arc.style.strokeDashoffset = 0;
+    let t = seconds;
+    txt.textContent = t;
+    cont.classList.add('show');
+    snd('sfx-timer');
+
+    timerInterval = setInterval(() => {
+        t--;
+        txt.textContent = t;
+        arc.style.strokeDashoffset = circ * (1 - t / seconds);
+        arc.style.stroke = t <= 5 ? '#e74c3c' : '#d4af37';
+        if (t <= 0) {
+            stopTimer();
+            snd('sfx-break');
+        }
+    }, 1000);
+}
+
+function stopTimer() {
+    if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+    document.getElementById('timer-ring-container').classList.remove('show');
+    stopSnd('sfx-timer');
+}
+
+// ================================================================
+// BONUS
+// ================================================================
+function showBonus(data) {
+    document.getElementById('bn-emoji').textContent = data.bonus.emoji || '🎁';
+    document.getElementById('bn-name').textContent = data.bonus.name;
+    document.getElementById('bn-desc').textContent = data.bonus.desc;
+    document.getElementById('bn-team').textContent = data.teamName;
+    document.getElementById('bn-team').style.color = data.teamColor;
+    const notif = document.getElementById('bonus-notif');
+    notif.classList.add('show');
+    snd('sfx-selected');
+    setTimeout(() => notif.classList.remove('show'), 5000);
+}
+
+// ================================================================
+// QUALIFIÉ
+// ================================================================
+function showQualified(data) {
+    document.getElementById('qual-team-name').textContent = data.teamName;
+    document.getElementById('qual-team-name').style.color = data.teamColor;
+    const banner = document.getElementById('qualified-banner');
+    banner.classList.add('show');
+    banner.style.borderColor = data.teamColor;
+    snd('sfx-win');
+    setTimeout(() => banner.classList.remove('show'), 5000);
+    // Mettre à jour le score local
+    const t = localState.teams.find(t => t.name === data.teamName);
+    if (t) { t.qualified = true; t.score = data.score; renderHeader(); }
+}
+
+// ================================================================
+// RÉSULTATS
+// ================================================================
+function showResults(results) {
+    document.getElementById('results-screen').classList.add('show');
+    const list = document.getElementById('results-list');
+    list.innerHTML = '';
+
+    results.forEach((r, i) => {
+        const row = document.createElement('div');
+        row.className = 'result-row';
+        const badge = r.eliminated ? '💀' : r.qualified ? '⭐' : '';
+        row.innerHTML = `
+            <div class="result-rank">#${r.rank}</div>
+            <div class="result-team-name" style="color:${r.color}">${r.name}</div>
+            <div class="result-score">${r.score} pts</div>
+            <div class="result-badge">${badge}</div>
+        `;
+        list.appendChild(row);
+        setTimeout(() => { row.classList.add('show'); snd('sfx-selected'); }, i * 400 + 500);
+    });
+    setTimeout(() => createConfetti(document.getElementById('results-confetti')), 1500);
+    setTimeout(() => snd('sfx-win'), 2000);
+}
+
+// ================================================================
+// EFFETS
+// ================================================================
+function createConfetti(container) {
+    container.innerHTML = '';
+    const colors = ['#d4af37', '#fff', '#e74c3c', '#3498db', '#f1c40f', '#2ecc71', '#e67e22'];
+    for (let i = 0; i < 300; i++) {
+        const c = document.createElement('div');
+        c.className = 'gen-confetti';
+        const sz = 5 + Math.random() * 12;
+        c.style.cssText = `width:${sz}px;height:${sz}px;left:${Math.random()*100}vw;top:-20px;background:${colors[i%colors.length]};animation-duration:${1.5+Math.random()*2.5}s;animation-delay:${Math.random()*0.8}s;border-radius:${Math.random()>0.5?'50%':'3px'};`;
+        container.appendChild(c);
+    }
+}
+
+function createRain(container) {
+    container.innerHTML = '';
+    for (let i = 0; i < 80; i++) {
+        const d = document.createElement('div');
+        d.style.cssText = `position:absolute;left:${Math.random()*100}vw;width:2px;height:${20+Math.random()*40}px;background:rgba(100,150,255,0.4);animation:rainDrop ${0.4+Math.random()*0.4}s linear ${Math.random()*1}s infinite;`;
+        container.appendChild(d);
+    }
+    if (!document.getElementById('rain-style')) {
+        const st = document.createElement('style');
+        st.id = 'rain-style';
+        st.textContent = '@keyframes rainDrop{0%{transform:translateY(-100px)}100%{transform:translateY(110vh)}}';
+        document.head.appendChild(st);
+    }
+}
+
+// Helpers exposés aux animations
+function getPointsForLevel(level) {
+    if (level <= 3) return 1;
+    if (level <= 6) return 2;
+    if (level <= 9) return 3;
+    return 5;
+}
+function getTierForLevel(level) {
+    if (level <= 3) return 1;
+    if (level <= 6) return 2;
+    if (level <= 9) return 3;
+    return 4;
+}
+function isBankingAllowed(level, depth) {
+    const d = depth || 10;
+    const t1 = Math.ceil(d * 3 / 10);
+    const t2 = Math.ceil(d * 6 / 10);
+    const t3 = Math.ceil(d * 9 / 10);
+    return level === t1 || level === t2 || level === t3 || level === d;
+}
+</script>
+</body>
+</html>

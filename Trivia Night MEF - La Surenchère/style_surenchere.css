@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto+Mono:wght@500&display=swap');
+
+body {
+    margin: 0;
+    background-color: #050505;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- FOOTER --- */
+#game-footer {
+    position: fixed; bottom: 15px; right: 25px;
+    display: flex; align-items: center; gap: 15px;
+    font-family: 'Bebas Neue', sans-serif; font-size: 24px;
+    color: rgba(255, 255, 255, 0.7); z-index: 3000; pointer-events: none;
+}
+#game-footer img { height: 40px; width: auto; filter: drop-shadow(2px 2px 2px black); }
+
+/* --- INTRO --- */
+#intro-screen {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: #000;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    z-index: 2000;
+}
+.intro-logo {
+    font-family: 'Anton', sans-serif; font-size: 8rem; text-transform: uppercase; color: #fff;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5); opacity: 0; transform: scale(3);
+}
+.hammer-effect { animation: hammerSmash 0.3s forwards; }
+.broken-lights { animation: flickerLight 2s infinite; color: #e74c3c; text-shadow: 4px 4px 0px #000, 0 0 30px #c0392b; }
+
+@keyframes hammerSmash {
+    0% { opacity: 0; transform: scale(5) rotate(-20deg); }
+    70% { opacity: 1; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+@keyframes flickerLight {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; text-shadow: 0 0 30px #e74c3c, 0 0 60px #e74c3c; }
+    20%, 24%, 55% { opacity: 0.1; text-shadow: none; }
+}
+
+/* --- SELECTION (SLOT) --- */
+#selector-screen {
+    display: none; width: 100%; height: 100%;
+    flex-direction: column; align-items: center; justify-content: center;
+}
+.slot-machine-container {
+    width: 80%; height: 300px; background: #111;
+    border: 10px solid #d4af37; border-radius: 20px; overflow: hidden; position: relative;
+    box-shadow: 0 0 50px rgba(212, 175, 55, 0.3);
+}
+.slot-reel { display: flex; flex-direction: column; align-items: center; }
+.slot-item {
+    height: 300px; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: 'Bebas Neue'; font-size: 4rem; color: #f1c40f;
+    border-bottom: 2px solid #333; background: #222;
+}
+.slot-item img { height: 120px; margin-bottom: 20px; }
+
+/* --- JEU (QUESTION) --- */
+#game-screen {
+    display: none; width: 100%; height: 100%;
+    flex-direction: column; justify-content: space-between;
+    padding: 40px; box-sizing: border-box; padding-bottom: 80px; /* Espace footer */
+    background: radial-gradient(circle, #222 0%, #000 100%);
+}
+.theme-header {
+    font-family: 'Anton'; font-size: 3rem; color: #888; text-transform: uppercase;
+    border-bottom: 2px solid #444; padding-bottom: 10px;
+}
+.question-display {
+    flex: 1; display: flex; align-items: center; justify-content: center; text-align: center;
+    font-family: 'Bebas Neue'; font-size: 4rem; color: white;
+    text-shadow: 2px 2px 4px black; padding: 0 50px; line-height: 1.1;
+}
+.counters-area { display: flex; justify-content: space-between; align-items: flex-end; }
+.score-display {
+    font-size: 3rem; color: #2ecc71; font-weight: bold;
+    background: rgba(0,0,0,0.5); padding: 10px 30px; border-radius: 10px; border: 2px solid #2ecc71;
+}
+.timer-display {
+    font-family: 'Anton'; font-size: 8rem; color: #D60000;
+    text-shadow: 0 0 20px rgba(214, 0, 0, 0.5);
+}
+
+/* --- RÉVÉLATION (ECRAN) --- */
+#reveal-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.95); z-index: 1500;
+    display: none; flex-direction: column; align-items: center; justify-content: center;
+}
+
+.reveal-grid-container {
+    display: grid; 
+    /* On garde 4 colonnes, mais on augmente l'écart */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* Augmenté de 15px à 20px pour espacer les blocs */
+    width: 90%; 
+    max-width: 1400px; 
+    padding: 20px;
+    max-height: 80vh; /* Sécurité si trop de réponses */
+    overflow-y: auto; /* Scroll si vraiment trop de réponses */
+}
+
+.reveal-item {
+    background: #111; 
+    border: 1px solid #333; 
+    color: #555;
+    /* On réduit le padding pour des boites plus fines */
+    padding: 8px 5px; 
+    /* Police un peu plus petite pour éviter les retours à la ligne moches */
+    font-size: 1rem; 
+    font-family: 'Bebas Neue'; 
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.reveal-item.correct {
+    background: #2ecc71; 
+    color: #000; 
+    border-color: #27ae60;
+    /* Glow beaucoup plus net et moins "baveux" */
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.6); 
+    /* SUPPRESSION du scale (agrandissement) pour éviter le chevauchement */
+    transform: scale(1); 
+    font-weight: bold;
+}
+
+/* --- UI RÉGIE --- */
+.regie-body { background: #1a1a1a; overflow-y: auto; display: block; height: auto; padding: 20px;}
+.regie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-top: 20px; }
+.answer-btn {
+    background: #333; color: #aaa; padding: 15px; border: 1px solid #555;
+    font-family: 'Roboto Mono'; font-size: 0.9rem; cursor: pointer; text-align: left; transition: 0.2s;
+}
+.answer-btn:hover { background: #444; }
+.answer-btn.validated { background: #2ecc71; color: black; border-color: #27ae60; font-weight: bold; }
+
+.control-bar {
+    position: sticky; top: 0; background: #222; padding: 10px; z-index: 100;
+    border-bottom: 2px solid #444; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+}
+button { 
+    padding: 10px 15px; font-weight: bold; border: none; cursor: pointer; border-radius: 4px; 
+    font-family: 'Bebas Neue'; letter-spacing: 1px; font-size: 1.1rem;
+}
+button:disabled { opacity: 0.3; cursor: not-allowed; }
+.btn-launch { background: #8e44ad; color: white; }
+.btn-spin { background: #f39c12; color: black; }
+.btn-question { background: #3498db; color: white; }
+.btn-timer { background: #c0392b; color: white; }
+.btn-pause { background: #f1c40f; color: black; }
+.btn-reset { background: #7f8c8d; color: white; }
+.btn-reveal { background: #27ae60; color: white; }

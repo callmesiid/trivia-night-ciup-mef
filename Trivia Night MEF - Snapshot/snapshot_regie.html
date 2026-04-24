@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RÉGIE - SNAPSHOT</title>
+    <link rel="stylesheet" href="style_mix.css">
+    <style>
+        .card { cursor: pointer; }
+        .card:hover { border-color: #2ecc71; }
+        .card.removed { opacity: 0.3; pointer-events: none; } 
+        .card.hidden-state { background-color: transparent; border: 2px solid #333; }
+        .mystery-mark { display: none; }
+        body { background: #111; } 
+        #bg-game-marquee { display: none; }
+        .game-title { font-family: 'Anton'; font-size: 2rem; color: #d4af37; }
+    </style>
+</head>
+<body>
+    <audio id="sfx-break" src="effets_sonores/break.mp3"></audio>
+    <audio id="sfx-selected" src="effets_sonores/selected.mp3"></audio>
+    <audio id="sfx-timer" src="effets_sonores/timer.mp3" loop></audio>
+    
+    <div id="top-bar" class="regie-header">
+        <div class="game-title">RÉGIE SNAPSHOT</div>
+        <div style="font-size: 1.2rem; margin-right: 20px;">Délai: <span id="current-max-time" style="font-weight:bold; color:#2ecc71">24.0</span>s</div>
+        <div class="regie-timer" id="turn-timer" onclick="toggleTurnTimer()">24.0</div>
+    </div>
+
+    <div id="grid-container"></div>
+
+    <div class="admin-controls">
+        <button class="btn-mode" onclick="initGame('NORMAL')">N</button>
+        <button class="btn-mode" onclick="initGame('HARD')">H</button>
+        <div style="width: 15px;"></div>
+        <button class="btn-memo" id="btn-launch-memo" onclick="startMemoSequence()" disabled>LANCER MÉMO</button>
+        <div style="width: 15px;"></div>
+        <button class="btn-start" id="btn-play-pause" onclick="toggleTurnTimer()" disabled>PLAY (ESP)</button>
+        <button class="btn-reset" onclick="resetTurnTimer()">RESET</button>
+        <div style="width: 15px;"></div>
+        <button class="btn-faux" onclick="triggerWrong()">FAUX</button>
+        <div style="width: 15px;"></div>
+        <button onclick="openDisplayWindow()" style="background:#555;">ÉCRAN</button>
+    </div>
+
+    <script src="mix_data.js"></script>
+    <script>
+        const channel = new BroadcastChannel('snapshot_channel');
+        const sfxBreak = document.getElementById('sfx-break');
+        const sfxSelected = document.getElementById('sfx-selected');
+        const sfxTimer = document.getElementById('sfx-timer');
+        
+        let currentMode = 'NORMAL';
+        let turnDuration = 24.0;
+        let turnInterval;
+        let currentTime = 24.0;
+        let timerState = 'STOPPED';
+        let memoTimeout; 
+
+        function openDisplayWindow() {
+            window.open('snapshot_ecran.html', 'SnapshotDisplay', 'width=1280,height=720');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if(e.key.toLowerCase() === 'n') initGame('NORMAL');
+            if(e.key.toLowerCase() === 'h') initGame('HARD');
+            if(e.key.toLowerCase() === 'x') triggerWrong();
+            if(e.key === ' ') { e.preventDefault(); toggleTurnTimer(); }
+        });
+
+        function initGame(mode) {
+            currentMode = mode;
+            stopSoundTimer();
+            if(memoTimeout) clearTimeout(memoTimeout);
+
+            const container = document.getElementById('grid-container');
+            container.innerHTML = '';
+            
+            let pool = [...MIX_PHOTOS].sort(() => Math.random() - 0.5);
+            // MODIF : 32 cartes en Hard (4 lignes)
+            let count = (mode === 'NORMAL') ? 24 : 32; 
+            let selectedPhotos = pool.slice(0, count);
+
+            const grid = document.createElement('div');
+            grid.className = `photo-grid ${mode === 'NORMAL' ? 'grid-normal' : 'grid-hard'}`;
+
+            selectedPhotos.forEach((photo, index) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.id = `card-${index}`;
+                card.innerHTML = `<img src="${photo.file}"><div class="card-name">${photo.name}</div>`;
+                card.onclick = () => validateCard(index);
+                grid.appendChild(card);
+            });
+            container.appendChild(grid);
+
+            document.getElementById('btn-launch-memo').disabled = false;
+            document.getElementById('btn-play-pause').disabled = true;
+
+            channel.postMessage({ type: 'INIT', mode: mode, photos: selectedPhotos });
+
+            // MODIF : 30s en Hard, 24s en Normal
+            turnDuration = (mode === 'NORMAL') ? 24.0 : 30.0;
+            document.getElementById('current-max-time').innerText = turnDuration.toFixed(1);
+            fullResetTimer();
+        }
+
+        function startMemoSequence() {
+            document.getElementById('btn-launch-memo').disabled = true;
+            playSoundTimer();
+            channel.postMessage({ type: 'START_MEMO_PHASE', mode: currentMode });
+
+            // MODIF : 15s en Hard, 20s en Normal
+            let memoTime = (currentMode === 'NORMAL') ? 20000 : 15000;
+            if(memoTimeout) clearTimeout(memoTimeout);
+            memoTimeout = setTimeout(() => {
+                stopSoundTimer();
+                document.getElementById('btn-play-pause').disabled = false;
+            }, memoTime);
+        }
+
+        function validateCard(index) {
+            sfxSelected.currentTime = 0; sfxSelected.play();
+            const card = document.getElementById(`card-${index}`);
+            if(card) card.classList.add('removed');
+            channel.postMessage({ type: 'REMOVE_CARD', index: index });
+
+            fullResetTimer(); 
+            
+            // MODIF : -0.8s en Hard, -0.5s en Normal
+            let reduction = (currentMode === 'NORMAL') ? 0.5 : 0.8;
+            if(turnDuration > 5) turnDuration -= reduction;
+            
+            document.getElementById('current-max-time').innerText = turnDuration.toFixed(1);
+            currentTime = turnDuration;
+            updateTimerDisplay(currentTime);
+        }
+
+        function triggerWrong() {
+            sfxBreak.currentTime = 0; sfxBreak.play();
+            fullResetTimer();
+        }
+
+        function toggleTurnTimer() {
+            if(document.getElementById('btn-play-pause').disabled) return;
+
+            if (timerState === 'RUNNING') {
+                clearInterval(turnInterval);
+                timerState = 'PAUSED';
+                stopSoundTimer();
+                document.getElementById('btn-play-pause').innerText = "RESUME";
+                document.getElementById('btn-play-pause').className = "btn-pause";
+                channel.postMessage({ type: 'PAUSE_TIMER' });
+            } else {
+                if (timerState === 'STOPPED') currentTime = turnDuration;
+                
+                timerState = 'RUNNING';
+                playSoundTimer(); 
+                document.getElementById('btn-play-pause').innerText = "PAUSE";
+                document.getElementById('btn-play-pause').className = "btn-faux";
+                
+                channel.postMessage({ type: 'START_TIMER', duration: currentTime });
+
+                turnInterval = setInterval(() => {
+                    currentTime -= 0.1;
+                    if(currentTime <= 0) {
+                        currentTime = 0;
+                        triggerWrong();
+                    }
+                    updateTimerDisplay(currentTime);
+                }, 100);
+            }
+        }
+
+        function resetTurnTimer() {
+            clearInterval(turnInterval);
+            timerState = 'STOPPED';
+            currentTime = turnDuration;
+            stopSoundTimer();
+            updateTimerDisplay(currentTime);
+            updateButtonUI();
+            channel.postMessage({ type: 'RESET_TIMER', duration: currentTime });
+        }
+
+        function fullResetTimer() {
+            clearInterval(turnInterval);
+            timerState = 'STOPPED';
+            currentTime = turnDuration;
+            stopSoundTimer();
+            updateTimerDisplay(currentTime);
+            updateButtonUI();
+            channel.postMessage({ type: 'STOP_TIMER' });
+        }
+
+        function updateButtonUI() {
+            const btn = document.getElementById('btn-play-pause');
+            btn.innerText = "PLAY (ESP)";
+            btn.className = "btn-start";
+        }
+
+        function updateTimerDisplay(val) {
+            document.getElementById('turn-timer').innerText = val.toFixed(1);
+        }
+
+        function playSoundTimer() {
+            sfxTimer.currentTime = 0;
+            sfxTimer.play().catch(e => console.log(e));
+        }
+        function stopSoundTimer() {
+            sfxTimer.pause();
+            sfxTimer.currentTime = 0;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+        const tokenFiles = [
+            'Jetons/-1.png',
+            'Jetons/-1.1.png',
+            'Jetons/-2.png',
+            'Jetons/-2.2.png',
+            'Jetons/-3.png',
+            'Jetons/-4.png',
+            'Jetons/-5.png',
+            'Jetons/+1.png',
+            'Jetons/+2.png',
+            'Jetons/+3.png',
+            'Jetons/+5.png',
+        ];

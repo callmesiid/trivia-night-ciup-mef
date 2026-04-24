@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SNAPSHOT - JEU</title>
+    <link rel="stylesheet" href="style_mix.css">
+    <style>
+        .card-name { display: none; } 
+    </style>
+</head>
+<body>
+    
+    <div id="bg-game-marquee">
+        <div class="game-marquee-row">
+            <div class="game-marquee-content">
+                <span class="game-marquee-text">SNAPSHOT - MEMORIZE FAST - </span>
+                <span class="game-marquee-text">SNAPSHOT - MEMORIZE FAST - </span>
+            </div>
+        </div>
+        <div class="game-marquee-row reverse">
+            <div class="game-marquee-content">
+                <span class="game-marquee-text">WHO IS IT? - GUESS WHO - </span>
+                <span class="game-marquee-text">WHO IS IT? - GUESS WHO - </span>
+            </div>
+        </div>
+        <div class="game-marquee-row">
+            <div class="game-marquee-content">
+                <span class="game-marquee-text">SNAPSHOT - MEMORIZE FAST - </span>
+                <span class="game-marquee-text">SNAPSHOT - MEMORIZE FAST - </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="waiting-screen">
+        <div class="snapshot-logo-container" style="transform: scale(1.2);">
+            <span class="snap-letter letter-0">S</span>
+            <span class="snap-letter letter-1">N</span>
+            <span class="snap-letter letter-2">A</span>
+            <span class="snap-letter letter-3">P</span>
+            <span class="snap-letter letter-4">S</span>
+            <span class="snap-letter letter-5">H</span>
+            <span class="snap-letter letter-6">O</span>
+            <span class="snap-letter letter-7">T</span>
+        </div>
+        <div class="click-instruction">EN ATTENTE DE LA RÉGIE...</div>
+    </div>
+
+    <div id="top-bar">
+        <div class="snapshot-logo-container" style="transform: scale(0.35); transform-origin: center;">
+            <span class="snap-letter letter-0">S</span>
+            <span class="snap-letter letter-1">N</span>
+            <span class="snap-letter letter-2">A</span>
+            <span class="snap-letter letter-3">P</span>
+            <span class="snap-letter letter-4">S</span>
+            <span class="snap-letter letter-5">H</span>
+            <span class="snap-letter letter-6">O</span>
+            <span class="snap-letter letter-7">T</span>
+        </div>
+    </div>
+
+    <div id="game-timer-display" class="corner-timer">24.0</div>
+    <div id="memo-overlay" class="corner-timer">
+        <div id="memo-timer">20</div>
+    </div>
+
+    <div id="grid-container"></div>
+
+    <div id="game-footer">
+        INSPIRÉ DE POPCORN 
+        <img src="images_front/popcorn.png" alt="Popcorn">
+    </div>
+
+    <script>
+        const channel = new BroadcastChannel('snapshot_channel');
+        let memoInterval;
+        let gameTimerInterval;
+
+        channel.onmessage = (event) => {
+            const data = event.data;
+
+            if (data.type === 'INIT') {
+                document.getElementById('waiting-screen').style.opacity = '0';
+                setTimeout(() => { document.getElementById('waiting-screen').style.display = 'none'; }, 500);
+                
+                document.getElementById('game-timer-display').style.display = 'none';
+                document.getElementById('memo-overlay').style.display = 'none';
+                
+                setupGrid(data.mode, data.photos);
+            }
+            else if (data.type === 'START_MEMO_PHASE') {
+                startMemorization(data.mode);
+            }
+            else if (data.type === 'REMOVE_CARD') {
+                const card = document.getElementById(`card-${data.index}`);
+                if(card) card.classList.add('removed');
+                fullStopGameTimer();
+            }
+            else if (data.type === 'START_TIMER') {
+                document.getElementById('game-timer-display').style.display = 'block';
+                runGameTimer(data.duration);
+            }
+            else if (data.type === 'PAUSE_TIMER') {
+                pauseGameTimer();
+            }
+            else if (data.type === 'RESET_TIMER') {
+                resetGameTimer(data.duration);
+            }
+            else if (data.type === 'STOP_TIMER') {
+                fullStopGameTimer();
+            }
+        };
+
+        function setupGrid(mode, photos) {
+            const container = document.getElementById('grid-container');
+            container.innerHTML = '';
+            const grid = document.createElement('div');
+            grid.className = `photo-grid ${mode === 'NORMAL' ? 'grid-normal' : 'grid-hard'}`;
+            photos.forEach((photo, index) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.id = `card-${index}`;
+                card.innerHTML = `<img src="${photo.file}">`;
+                grid.appendChild(card);
+            });
+            container.appendChild(grid);
+        }
+
+        function startMemorization(mode) {
+            const overlay = document.getElementById('memo-overlay');
+            const timerEl = document.getElementById('memo-timer');
+            overlay.style.display = 'block';
+            
+            // MODIF : 15s en Hard
+            let timeLeft = (mode === 'NORMAL') ? 20 : 15;
+            timerEl.innerText = timeLeft;
+
+            if(memoInterval) clearInterval(memoInterval);
+            memoInterval = setInterval(() => {
+                timeLeft--;
+                timerEl.innerText = timeLeft;
+                if(timeLeft <= 0) {
+                    clearInterval(memoInterval);
+                    overlay.style.display = 'none';
+                    hideAllImages();
+                }
+            }, 1000);
+        }
+
+        function hideAllImages() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.classList.add('hidden-state');
+                card.innerHTML = `<div class="mystery-mark">?</div>`;
+            });
+        }
+
+        function runGameTimer(duration) {
+            const el = document.getElementById('game-timer-display');
+            let t = duration;
+            el.innerText = t.toFixed(1);
+            
+            if(gameTimerInterval) clearInterval(gameTimerInterval);
+            gameTimerInterval = setInterval(() => {
+                t -= 0.1;
+                if(t < 0) t = 0;
+                el.innerText = t.toFixed(1);
+                el.style.color = (t <= 5) ? "#fff" : "#D60000";
+            }, 100);
+        }
+
+        function pauseGameTimer() {
+            if(gameTimerInterval) clearInterval(gameTimerInterval);
+        }
+
+        function resetGameTimer(duration) {
+            if(gameTimerInterval) clearInterval(gameTimerInterval);
+            document.getElementById('game-timer-display').innerText = duration.toFixed(1);
+            document.getElementById('game-timer-display').style.color = "#D60000";
+        }
+
+        function fullStopGameTimer() {
+            if(gameTimerInterval) clearInterval(gameTimerInterval);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SURENCHÈRE - DISPLAY</title>
+    <link rel="stylesheet" href="style_surenchere.css">
+</head>
+<body>
+
+    <div id="intro-screen">
+        <div id="intro-text" class="intro-logo" style="opacity: 1;">LA SURENCHÈRE</div>
+    </div>
+
+    <div id="selector-screen">
+        <div style="font-family:'Anton'; font-size:2rem; margin-bottom:20px; color:#888;">SÉLECTION DU THÈME</div>
+        <div class="slot-machine-container">
+            <div class="slot-reel" id="slot-reel"></div>
+        </div>
+    </div>
+
+    <div id="game-screen">
+        <div class="theme-header" id="game-theme-title">THÈME</div>
+        <div class="question-display" id="game-question">PRÊT ?</div>
+        
+        <div class="counters-area">
+            <div class="score-display">RÉPONSES : <span id="score-val">0</span></div>
+            <div class="timer-display" id="timer-val">30</div>
+        </div>
+    </div>
+
+    <div id="reveal-overlay">
+        <div style="font-family:'Anton'; font-size:3rem; color:#fff; margin-bottom:30px;">LES RÉPONSES</div>
+        <div class="reveal-grid-container" id="reveal-grid"></div>
+    </div>
+
+    <div id="game-footer">
+        INSPIRÉ DE POPCORN 
+        <img src="images_front/popcorn.png" alt="Popcorn">
+    </div>
+
+    <script src="surenchere_data.js"></script>
+    <script>
+        const channel = new BroadcastChannel('surenchere_channel');
+        
+        // Elements
+        const introScreen = document.getElementById('intro-screen');
+        const introText = document.getElementById('intro-text');
+        const selectorScreen = document.getElementById('selector-screen');
+        const gameScreen = document.getElementById('game-screen');
+        const revealOverlay = document.getElementById('reveal-overlay');
+        const revealGrid = document.getElementById('reveal-grid');
+        const slotReel = document.getElementById('slot-reel');
+        const timerEl = document.getElementById('timer-val');
+        
+        // Sounds
+        const audioIntro = new Audio('effets_sonores/intro.mp3');
+        const audioBreak = new Audio('effets_sonores/break.mp3');
+        const audioSpin = new Audio('effets_sonores/spin.mp3'); 
+        const audioTimer = new Audio('effets_sonores/timer.mp3');
+        const audioWin = new Audio('effets_sonores/selected.mp3'); 
+        
+        // FX Sounds container
+        let currentFx = null;
+
+        let timerInterval;
+        let spinInterval;
+        let currentTime = 30;
+        
+        // Intro Timeouts (pour pouvoir skip)
+        let introTimeouts = [];
+
+        channel.onmessage = (event) => {
+            const data = event.data;
+
+            if (data.type === 'PLAY_INTRO') runIntro();
+            else if (data.type === 'SKIP_INTRO') skipIntro();
+            else if (data.type === 'RESET_TO_LOGO') showStaticLogo();
+            else if (data.type === 'START_SPIN') runSpin(data.availableThemes);
+            else if (data.type === 'REVEAL_THEME') stopSpin(data.theme);
+            else if (data.type === 'SHOW_QUESTION') setupGame(data.theme);
+            else if (data.type === 'UPDATE_SCORE') {
+                document.getElementById('score-val').innerText = data.count;
+                const sc = document.querySelector('.score-display');
+                sc.style.transform = "scale(1.2)";
+                setTimeout(() => sc.style.transform = "scale(1)", 200);
+            }
+            else if (data.type === 'START_TIMER') runTimer();
+            else if (data.type === 'PAUSE_TIMER') pauseTimer();
+            else if (data.type === 'RESET_TIMER') resetTimer();
+            else if (data.type === 'SHOW_ALL_ANSWERS') showRevealGrid(data.answers, data.validatedIndices);
+            else if (data.type === 'HIDE_ALL_ANSWERS') revealOverlay.style.display = 'none';
+            else if (data.type === 'PLAY_FX') playFxSound(data.soundFile);
+        };
+
+        function clearIntro() {
+            introTimeouts.forEach(t => clearTimeout(t));
+            introTimeouts = [];
+            audioIntro.pause();
+            audioIntro.currentTime = 0;
+            introText.classList.remove('hammer-effect');
+            introText.classList.remove('broken-lights');
+        }
+
+        function showStaticLogo() {
+            clearIntro();
+            introScreen.style.display = 'flex';
+            selectorScreen.style.display = 'none';
+            gameScreen.style.display = 'none';
+            revealOverlay.style.display = 'none';
+            
+            introText.className = 'intro-logo broken-lights'; // On garde l'effet cassé par défaut c'est joli
+            introText.style.opacity = '1';
+            introText.innerText = "LA SURENCHÈRE";
+        }
+
+        function skipIntro() {
+            showStaticLogo();
+        }
+
+        function runIntro() {
+            clearIntro();
+            introScreen.style.display = 'flex';
+            selectorScreen.style.display = 'none';
+            gameScreen.style.display = 'none';
+            revealOverlay.style.display = 'none';
+            
+            introText.className = 'intro-logo'; 
+            introText.style.opacity = '0';
+            introText.innerText = "LA SURENCHÈRE";
+
+            let t1 = setTimeout(() => {
+                audioBreak.volume = 1.0; audioBreak.play();
+                introText.classList.add('hammer-effect');
+                introText.innerText = "ADJUGÉ !"; 
+                
+                let t2 = setTimeout(() => {
+                    introText.innerText = "LA SURENCHÈRE";
+                    introText.classList.remove('hammer-effect');
+                    introText.classList.add('broken-lights');
+                    audioIntro.play();
+                }, 1500);
+                introTimeouts.push(t2);
+            }, 500);
+            introTimeouts.push(t1);
+        }
+
+        function runSpin(themes) {
+            introScreen.style.display = 'none';
+            selectorScreen.style.display = 'flex';
+            
+            slotReel.innerHTML = '';
+            let spinList = [...themes, ...themes, ...themes, ...themes, ...themes];
+            spinList.forEach(t => {
+                const item = document.createElement('div');
+                item.className = 'slot-item';
+                item.innerHTML = `<img src="${t.icon}">${t.title}`;
+                slotReel.appendChild(item);
+            });
+
+            audioSpin.currentTime = 0; audioSpin.loop = true; audioSpin.play();
+            
+            let offset = 0;
+            if(spinInterval) clearInterval(spinInterval);
+            spinInterval = setInterval(() => {
+                offset -= 80;
+                if (offset < -1500) offset = 0;
+                slotReel.style.transform = `translateY(${offset}px)`;
+            }, 20);
+        }
+
+        function stopSpin(selectedTheme) {
+            clearInterval(spinInterval);
+            audioSpin.pause();
+            
+            slotReel.innerHTML = '';
+            const winItem = document.createElement('div');
+            winItem.className = 'slot-item';
+            winItem.style.background = '#27ae60'; winItem.style.color = '#fff';
+            winItem.innerHTML = `<img src="${selectedTheme.icon}">${selectedTheme.title}`;
+            slotReel.appendChild(winItem);
+            
+            slotReel.style.transform = 'translateY(0)';
+            audioWin.play();
+        }
+
+        function setupGame(theme) {
+            selectorScreen.style.display = 'none';
+            gameScreen.style.display = 'flex';
+            document.getElementById('game-theme-title').innerText = theme.title;
+            document.getElementById('game-question').innerText = theme.question;
+            document.getElementById('score-val').innerText = "0";
+            resetTimerUI();
+        }
+
+        function runTimer() {
+            audioTimer.play();
+            if(timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                currentTime--;
+                timerEl.innerText = currentTime;
+                
+                if(currentTime <= 5) timerEl.style.color = "#fff";
+                else timerEl.style.color = "#D60000";
+
+                if (currentTime <= 0) {
+                    clearInterval(timerInterval);
+                    currentTime = 0;
+                    timerEl.innerText = "0";
+                    audioTimer.pause();
+                    new Audio('effets_sonores/break.mp3').play();
+                }
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            if(timerInterval) clearInterval(timerInterval);
+            audioTimer.pause();
+        }
+
+        function resetTimer() {
+            if(timerInterval) clearInterval(timerInterval);
+            audioTimer.pause();
+            audioTimer.currentTime = 0;
+            resetTimerUI();
+        }
+
+        function resetTimerUI() {
+            currentTime = 30;
+            timerEl.innerText = "30";
+            timerEl.style.color = "#D60000";
+        }
+
+        function showRevealGrid(answers, validatedIndices) {
+            // STOP DU TIMER AUTOMATIQUE
+            if(timerInterval) clearInterval(timerInterval);
+            audioTimer.pause();
+            // Petit son de stop (placeholder)
+            new Audio('effets_sonores/break.mp3').play();
+
+            revealOverlay.style.display = 'flex';
+            revealGrid.innerHTML = '';
+            answers.forEach((ans, index) => {
+                const div = document.createElement('div');
+                div.className = 'reveal-item';
+                div.innerText = ans;
+                if(validatedIndices.includes(index)) {
+                    div.classList.add('correct');
+                }
+                revealGrid.appendChild(div);
+            });
+        }
+
+        function playFxSound(file) {
+            if(currentFx) {
+                currentFx.pause();
+                currentFx.currentTime = 0;
+            }
+            currentFx = new Audio(file);
+            currentFx.play();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calibrage SNAPSHOT - Style Bazar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Permanent+Marker&display=swap');
+
+        body {
+            background-color: #111;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* GAUCHE : VISUALISATION */
+        #preview-area {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            position: relative;
+            border-right: 2px solid #333;
+        }
+
+        .snapshot-wrapper {
+            position: relative;
+            width: 800px;
+            height: 300px;
+            border: 1px dashed rgba(255,255,255,0.1);
+        }
+
+        .letter {
+            position: absolute;
+            font-family: 'Anton', sans-serif; /* Tu pourras changer la police ici */
+            color: white;
+            text-transform: uppercase;
+            line-height: 1;
+            user-select: none;
+            text-shadow: 3px 3px 0 #000;
+        }
+
+        /* DROITE : CONTROLES */
+        #controls-area {
+            flex: 1;
+            background: #222;
+            padding: 20px;
+            overflow-y: auto;
+            border-left: 1px solid #444;
+        }
+
+        h2 { color: #d4af37; border-bottom: 1px solid #555; padding-bottom: 10px; }
+        .control-group { background: #333; padding: 10px; margin-bottom: 15px; border-radius: 5px; }
+        .control-header { font-weight: bold; color: #2ecc71; margin-bottom: 5px; display: flex; justify-content: space-between; }
+        
+        label { display: block; font-size: 0.8rem; margin-top: 5px; color: #ccc; }
+        input[type=range] { width: 100%; }
+        
+        #css-output {
+            width: 100%; height: 200px; background: #000; color: #0f0; 
+            font-family: monospace; padding: 10px; border: 1px solid #555;
+        }
+        button { width: 100%; padding: 10px; background: #d4af37; border: none; font-weight: bold; cursor: pointer; margin-top: 5px;}
+    </style>
+</head>
+<body>
+
+    <div id="preview-area">
+        <div class="snapshot-wrapper">
+            <div id="l-0" class="letter">S</div>
+            <div id="l-1" class="letter">N</div>
+            <div id="l-2" class="letter">A</div>
+            <div id="l-3" class="letter">P</div>
+            <div id="l-4" class="letter">S</div>
+            <div id="l-5" class="letter">H</div>
+            <div id="l-6" class="letter">O</div>
+            <div id="l-7" class="letter">T</div>
+        </div>
+    </div>
+
+    <div id="controls-area">
+        <h2>RÉGLAGES LETTRES</h2>
+        <div id="sliders-container"></div>
+        
+        <h3>CSS GÉNÉRÉ :</h3>
+        <textarea id="css-output" readonly></textarea>
+        <button onclick="copyCSS()">COPIER LE CSS</button>
+    </div>
+
+    <script>
+        const letters = ['S', 'N', 'A', 'P', 'S', 'H', 'O', 'T'];
+        // Valeurs par défaut pour avoir un truc un peu aligné au début
+        const defaults = [
+            { x: 50,  y: 100, r: -10, s: 6 },
+            { x: 130, y: 110, r: 5,   s: 6 },
+            { x: 210, y: 90,  r: -5,  s: 6 },
+            { x: 290, y: 120, r: 10,  s: 6 },
+            { x: 370, y: 100, r: -8,  s: 6 },
+            { x: 450, y: 80,  r: 3,   s: 6 },
+            { x: 530, y: 110, r: -5,  s: 6 },
+            { x: 610, y: 100, r: 8,   s: 6 },
+        ];
+
+        const container = document.getElementById('sliders-container');
+
+        // Génération des contrôles
+        letters.forEach((char, i) => {
+            const div = document.createElement('div');
+            div.className = 'control-group';
+            div.innerHTML = `
+                <div class="control-header">Lettre "${char}" (${i+1})</div>
+                <label>X (Left): <input type="range" min="0" max="750" value="${defaults[i].x}" data-idx="${i}" data-prop="x"></label>
+                <label>Y (Top): <input type="range" min="0" max="250" value="${defaults[i].y}" data-idx="${i}" data-prop="y"></label>
+                <label>Rotation: <input type="range" min="-180" max="180" value="${defaults[i].r}" data-idx="${i}" data-prop="r"></label>
+                <label>Taille: <input type="range" min="2" max="12" step="0.1" value="${defaults[i].s}" data-idx="${i}" data-prop="s"></label>
+            `;
+            container.appendChild(div);
+        });
+
+        function update() {
+            let css = `/* --- LOGO SNAPSHOT (Style Bazar) --- */\n`;
+            css += `.snapshot-logo-container { position: relative; width: 800px; height: 300px; margin: 0 auto; }\n`;
+            css += `.snap-letter { position: absolute; font-family: 'Anton', sans-serif; color: white; text-shadow: 4px 4px 0 #000; z-index: 5; }\n`;
+
+            letters.forEach((char, i) => {
+                const inputs = document.querySelectorAll(`input[data-idx="${i}"]`);
+                const vals = { x: inputs[0].value, y: inputs[1].value, r: inputs[2].value, s: inputs[3].value };
+                
+                const el = document.getElementById(`l-${i}`);
+                el.style.left = vals.x + 'px';
+                el.style.top = vals.y + 'px';
+                el.style.transform = `rotate(${vals.r}deg)`;
+                el.style.fontSize = vals.s + 'rem';
+
+                css += `.letter-${i} { left: ${vals.x}px; top: ${vals.y}px; transform: rotate(${vals.r}deg); font-size: ${vals.s}rem; }\n`;
+            });
+
+            document.getElementById('css-output').value = css;
+        }
+
+        document.querySelectorAll('input').forEach(inp => inp.addEventListener('input', update));
+        update(); // Init
+
+        function copyCSS() {
+            document.getElementById('css-output').select();
+            document.execCommand('copy');
+            alert("CSS Copié !");
+        }
+    </script>
+</body>
+</html>

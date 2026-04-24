@@ -1,0 +1,230 @@
+level,animal_name,filename,category
+1,Aigle royal,aigle_royal.jpg,Oiseau
+1,Alligator d'Amérique,alligator_d_amerique.jpg,Reptile
+1,Ane de Provence,ane_de_provence.jpg,Equidae
+1,Canard mandarin,canard_mandarin.jpg,Oiseau
+1,Chien de prairie,chien_de_prairie.jpg,Canidae
+1,Chèvre montagnes rocheuses,chevre_montagnes_rocheuses.jpg,Mammifère
+1,Cigale commune,cigale_commune.jpg,Mammifère
+1,Ecureuil roux,ecureuil_roux.jpg,Rodentia
+1,Eléphant d'Afrique,elephant_d_afrique.jpg,Mammifère
+1,Grenouille verte,grenouille_verte.jpg,Amphibien
+1,Hibou grand duc,hibou_grand_duc.jpg,Oiseau
+1,Hippopotame,hippopotame.jpg,Mammifère
+1,Hippotrague noir,hippotrague_noir.jpg,Mammifère
+1,Lièvre d'Europe,lievre_d_europe.jpg,Rodentia
+1,Loup gris,loup_gris.jpg,Canidae
+1,Ours brun,ours_brun.jpg,Ursidae
+1,Paresseux à deux doigts,paresseux_a_deux_doigts.jpg,Mammifère
+1,Paresseux à gorge brune,paresseux_a_gorge_brune.jpg,Mammifère
+1,Raton laveur,raton_laveur.jpg,Rodentia
+1,Renard roux,renard_roux.jpg,Canidae
+1,Renne,renne.jpg,Cervidae
+1,Rhinocéros noir,rhinoceros_noir.jpg,Perissodactyla
+1,Sanglier commun,sanglier_commun.jpg,Suidae
+1,Serval,serval.jpg,Felidae
+1,Tigre du Bengale,tigre_du_bengale.jpg,Felidae
+1,Tortue géante,tortue_geante.jpg,Reptile
+1,Tortue molle,tortue_molle.jpg,Reptile
+1,Tortue verte,tortue_verte.jpg,Reptile
+1,Tyrannosaure rex,tyrannosaure_rex.jpg,Mammifère
+2,Alpaga,alpaga.jpg,Camelidae
+2,Lynx boréal,lynx_boreal.jpg,Felidae
+2,Lynx du désert,lynx_du_desert.jpg,Felidae
+2,Lynx roux,lynx_roux.jpg,Felidae
+2,Léopard d'Afrique,leopard_d_afrique.jpg,Felidae
+2,Léopard des mers,leopard_des_mers.jpg,Felidae
+2,Léopard des neiges,leopard_des_neiges.jpg,Felidae
+2,Mammouth laineux,mammouth_laineux.jpg,Mammifère
+2,Otarie de Californie,otarie_de_californie.jpg,Cetacea
+2,Pangolin de Chine,pangolin_de_chine.jpg,Mammifère
+2,Pangolin géant,pangolin_geant.jpg,Mammifère
+2,Requin blanc,requin_blanc.jpg,Poisson
+2,Requin marteau,requin_marteau.jpg,Poisson
+2,Requin-baleine,requin_baleine.jpg,Cetacea
+2,Shiba-inu,shiba_inu.jpg,Mammifère
+2,Siamois,siamois.jpg,Mammifère
+2,Siberian husky,siberian_husky.jpg,Mammifère
+2,Sphynx,sphynx.jpg,Mammifère
+2,Thon rouge,thon_rouge.jpg,Poisson
+2,Truite fario,truite_fario.jpg,Poisson
+3,Chauve souris géante d'Inde,chauve_souris_geante_d_inde.jpg,Rodentia
+3,Dragon de Komodo,dragon_de_komodo.jpg,Mammifère
+3,Jaguar,jaguar.jpg,Felidae
+3,Kiwi austral,kiwi_austral.jpg,Mammifère
+3,Lérot,lerot.jpg,Mammifère
+3,Lézard Jésus,lezard_jesus.jpg,Reptile
+3,Marmotte des Alpes,marmotte_des_alpes.jpg,Rodentia
+3,Ours noir,ours_noir.jpg,Ursidae
+3,Ours polaire,ours_polaire.jpg,Ursidae
+3,Paon bleu,paon_bleu.jpg,Mammifère
+3,Paon du jour,paon_du_jour.jpg,Mammifère
+3,Pic flamboyant,pic_flamboyant.jpg,Mammifère
+3,Pic vert,pic_vert.jpg,Mammifère
+3,Pic épeiche,pic_epeiche.jpg,Mammifère
+3,Pie bavarde,pie_bavarde.jpg,Oiseau
+3,Puma,puma.jpg,Felidae
+3,Putois d'Europe,putois_d_europe.jpg,Mustelidae
+3,Putois à pieds noirs,putois_a_pieds_noirs.jpg,Mustelidae
+3,Pélican blanc,pelican_blanc.jpg,Mammifère
+3,Pélican frisé,pelican_frise.jpg,Mammifère
+3,Suricate,suricate.jpg,Herpestidae
+3,Toucan toco,toucan_toco.jpg,Oiseau
+3,Toucan à carène,toucan_a_carene.jpg,Oiseau
+3,Vipère aspic,vipere_aspic.jpg,Reptile
+4,Cerf de Virginie,cerf_de_virginie.jpg,Cervidae
+4,Cerf elaphe,cerf_elaphe.jpg,Cervidae
+4,Chat de Pallas,chat_de_pallas.jpg,Felidae
+4,Chat de Temminck,chat_de_temminck.jpg,Felidae
+4,Chat des sables,chat_des_sables.jpg,Felidae
+4,Chat pêcheur,chat_pecheur.jpg,Felidae
+4,Chat sauvage,chat_sauvage.jpg,Felidae
+4,Eléphant d'Asie,elephant_d_asie.jpg,Mammifère
+4,Eléphant de mer,elephant_de_mer.jpg,Mammifère
+4,Loup arctique,loup_arctique.jpg,Canidae
+4,Loup d'Abyssinie,loup_d_abyssinie.jpg,Canidae
+4,Loup de Mongolie,loup_de_mongolie.jpg,Canidae
+4,Loup de l'Est,loup_de_l_est.jpg,Canidae
+4,Loup des Indes,loup_des_indes.jpg,Canidae
+4,Loup du Mexique,loup_du_mexique.jpg,Canidae
+4,Loup ibérique,loup_iberique.jpg,Canidae
+4,Loup rouge,loup_rouge.jpg,Canidae
+4,Loup à crinière,loup_a_criniere.jpg,Canidae
+4,Porc-épic d'Amérique du Nord,porc_epic_d_amerique_du_nord.jpg,Suidae
+4,Porc-épic du Cap,porc_epic_du_cap.jpg,Suidae
+4,Raie Manta,raie_manta.jpg,Poisson
+4,Renard corsac,renard_corsac.jpg,Canidae
+4,Renard crabier,renard_crabier.jpg,Canidae
+4,Renard des sables,renard_des_sables.jpg,Canidae
+4,Renard gris,renard_gris.jpg,Canidae
+4,Renard polaire,renard_polaire.jpg,Canidae
+4,Setter irlandais,setter_irlandais.jpg,Mammifère
+4,Shar peï,shar_pei.jpg,Mammifère
+4,Shetland,shetland.jpg,Mammifère
+4,Spilogale,spilogale.jpg,Mammifère
+4,Spizaète orné,spizaete_orne.jpg,Mammifère
+4,Springbok,springbok.jpg,Bovidae
+4,Steenbok,steenbok.jpg,Mammifère
+4,Vautour africain,vautour_africain.jpg,Oiseau
+4,Vautour fauve,vautour_fauve.jpg,Oiseau
+4,Vautour pape,vautour_pape.jpg,Oiseau
+4,Vautour percnoptère,vautour_percnoptere.jpg,Oiseau
+5,Chien chinois à crête,chien_chinois_a_crete.jpg,Canidae
+5,Chien des buissons,chien_des_buissons.jpg,Canidae
+5,Chien viverrin,chien_viverrin.jpg,Canidae
+5,Chien-loup Tchécoslovaque,chien_loup_tchecoslovaque.jpg,Canidae
+5,Chèvre naine,chevre_naine.jpg,Mammifère
+5,Ecureuil de Barbarie,ecureuil_de_barbarie.jpg,Rodentia
+5,Ecureuil de Prévost,ecureuil_de_prevost.jpg,Rodentia
+5,Ecureuil du Yucatan,ecureuil_du_yucatan.jpg,Rodentia
+5,Ecureuil fouisseur,ecureuil_fouisseur.jpg,Rodentia
+5,Ecureuil gris,ecureuil_gris.jpg,Rodentia
+5,Ecureuil géant,ecureuil_geant.jpg,Rodentia
+5,Grenouille fraise,grenouille_fraise.jpg,Amphibien
+5,Grenouille taureau,grenouille_taureau.jpg,Bovidae
+5,Nandinie,nandinie.jpg,Mammifère
+5,Nandou,nandou.jpg,Mammifère
+5,Narval,narval.jpg,Cetacea
+5,Nasique,nasique.jpg,Primates
+5,Nautile,nautile.jpg,Mammifère
+5,Nebelung,nebelung.jpg,Mammifère
+5,Nestor kéa,nestor_kea.jpg,Mammifère
+5,Nette rousse,nette_rousse.jpg,Mammifère
+5,Nicator à gorge grise,nicator_a_gorge_grise.jpg,Mammifère
+5,Nicobar,nicobar.jpg,Poisson
+5,Nilgaut,nilgaut.jpg,Mammifère
+5,Niverolle,niverolle.jpg,Mammifère
+5,Noctuelle,noctuelle.jpg,Mammifère
+5,Noctule,noctule.jpg,Mammifère
+5,Noddi brun,noddi_brun.jpg,Mammifère
+5,Norvégien,norvegien.jpg,Mammifère
+5,Nothocrax nocturne,nothocrax_nocturne.jpg,Mammifère
+5,Numbat,numbat.jpg,Mammifère
+5,Nyala,nyala.jpg,Bovidae
+5,Nyctale,nyctale.jpg,Mammifère
+5,Rhinocéros blanc,rhinoceros_blanc.jpg,Perissodactyla
+5,Rhinocéros de Sumatra,rhinoceros_de_sumatra.jpg,Perissodactyla
+5,Rhinocéros indien,rhinoceros_indien.jpg,Perissodactyla
+5,Saola,saola.jpg,Mammifère
+5,Sapajou apelle,sapajou_apelle.jpg,Mammifère
+5,Saïga,saiga.jpg,Mammifère
+5,Saïmiri à tête noire,saimiri_a_tete_noire.jpg,Mammifère
+5,Scinque,scinque.jpg,Mammifère
+5,Scolie des jardins,scolie_des_jardins.jpg,Mammifère
+5,Scottish terrier,scottish_terrier.jpg,Mammifère
+5,Selkirk rex,selkirk_rex.jpg,Mammifère
+5,Selle français,selle_francais.jpg,Mammifère
+5,Semnopithèque,semnopitheque.jpg,Mammifère
+5,Serpentaire bacha,serpentaire_bacha.jpg,Reptile
+5,Silure glane,silure_glane.jpg,Equidae
+5,Singe hurleur noir,singe_hurleur_noir.jpg,Primates
+5,Sitelle torchepot,sitelle_torchepot.jpg,Mammifère
+5,Sitelle à poitrine blanche,sitelle_a_poitrine_blanche.jpg,Mammifère
+5,Sizerin flammé,sizerin_flamme.jpg,Mammifère
+5,Smilodon,smilodon.jpg,Mammifère
+5,Somali,somali.jpg,Mammifère
+5,Sorraïa,sorraia.jpg,Mammifère
+5,Souris rayée,souris_rayee.jpg,Rodentia
+5,Spatule rose,spatule_rose.jpg,Mammifère
+5,Spermophile rayé,spermophile_raye.jpg,Mammifère
+5,Takin,takin.jpg,Mammifère
+5,Tamandua,tamandua.jpg,Mammifère
+5,Tamanoir,tamanoir.jpg,Mammifère
+5,Tamarin empereur,tamarin_empereur.jpg,Primates
+5,Tamarin lion doré,tamarin_lion_dore.jpg,Felidae
+5,Tamarin à mains dorées,tamarin_a_mains_dorees.jpg,Primates
+5,Tamia rayé,tamia_raye.jpg,Mammifère
+5,Tangara émeraude,tangara_emeraude.jpg,Oiseau
+5,Tangara évêque,tangara_eveque.jpg,Oiseau
+5,Tantale ibis,tantale_ibis.jpg,Oiseau
+5,Tapir de Malaisie,tapir_de_malaisie.jpg,Perissodactyla
+5,Tapir du Brésil,tapir_du_bresil.jpg,Perissodactyla
+5,Tarier pâtre,tarier_patre.jpg,Mammifère
+5,Tarine,tarine.jpg,Mammifère
+5,Tarsier,tarsier.jpg,Mammifère
+5,Tatou à neuf bandes,tatou_a_neuf_bandes.jpg,Mammifère
+5,Taupe d'Europe,taupe_d_europe.jpg,Mammifère
+5,Taupe à nez étoilé,taupe_a_nez_etoile.jpg,Mammifère
+5,Tchitrec de paradis,tchitrec_de_paradis.jpg,Mammifère
+5,Tenrec zébré,tenrec_zebre.jpg,Equidae
+5,Tigre blanc,tigre_blanc.jpg,Felidae
+5,Tigre de Sibérie,tigre_de_siberie.jpg,Felidae
+5,Tigre de Sumatra,tigre_de_sumatra.jpg,Felidae
+5,Tigre doré,tigre_dore.jpg,Felidae
+5,Tisserin gendarme,tisserin_gendarme.jpg,Oiseau
+5,Topi,topi.jpg,Mammifère
+5,Tortue luth,tortue_luth.jpg,Reptile
+5,Touraco vert,touraco_vert.jpg,Oiseau
+5,Triton alpestre,triton_alpestre.jpg,Amphibien
+5,Troglodyte des marais,troglodyte_des_marais.jpg,Mammifère
+5,Troglodyte mignon,troglodyte_mignon.jpg,Mammifère
+5,Trogon de Cuba,trogon_de_cuba.jpg,Oiseau
+5,Tropidacris cristata,tropidacris_cristata.jpg,Mammifère
+5,Tétras des prairies,tetras_des_prairies.jpg,Mammifère
+5,Tétras lyre,tetras_lyre.jpg,Mammifère
+5,Unau,unau.jpg,Mammifère
+5,Urodèle,urodele.jpg,Amphibien
+5,Urubu,urubu.jpg,Mammifère
+5,Vampire d'Azara,vampire_d_azara.jpg,Mammifère
+5,Varan bigarré,varan_bigarre.jpg,Reptile
+5,Verdier d'Europe,verdier_d_europe.jpg,Oiseau
+5,Vigogne,vigogne.jpg,Camelidae
+5,Vipère à cornes,vipere_a_cornes.jpg,Reptile
+5,Viscache des plaines,viscache_des_plaines.jpg,Rodentia
+5,Vison d'Europe,vison_d_europe.jpg,Mustelidae
+5,Wallaby de Bennett,wallaby_de_bennett.jpg,Marsupial
+5,Wallaby des rochers,wallaby_des_rochers.jpg,Marsupial
+5,Wapiti,wapiti.jpg,Cervidae
+5,Waterbuck,waterbuck.jpg,Mammifère
+5,Welsh corgi,welsh_corgi.jpg,Mammifère
+5,West highland terrier,west_highland_terrier.jpg,Mammifère
+5,Wombat commun,wombat_commun.jpg,Marsupial
+5,Xantusie du désert,xantusie_du_desert.jpg,Mammifère
+5,Xylocope violacée,xylocope_violacee.jpg,Mammifère
+5,Xérus,xerus.jpg,Mammifère
+5,Yack,yack.jpg,Mammifère
+5,Yapock,yapock.jpg,Mammifère
+5,Yorkshire terrier,yorkshire_terrier.jpg,Mammifère
+5,Zibeline,zibeline.jpg,Mammifère
+5,Zorille du Cap,zorille_du_cap.jpg,Mammifère
+5,Zébu,zebu.jpg,Bovidae
