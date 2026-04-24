@@ -19,14 +19,12 @@
             overflow: hidden;
             padding: 10px;
         }
-
-        /* ── PANNEAUX ── */
         .panel {
             background: #1a1a1a;
             border: 1px solid #333;
             border-radius: 6px;
             padding: 12px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         h3 {
             font-family: 'Anton', sans-serif;
@@ -37,8 +35,6 @@
             padding-bottom: 6px;
             margin-bottom: 10px;
         }
-
-        /* ── BOUTONS ── */
         button {
             padding: 7px 11px; border: 1px solid #444; border-radius: 4px;
             font-weight: bold; cursor: pointer; text-transform: uppercase;
@@ -55,14 +51,7 @@
         .btn-orange { background: #5a2a00; border-color: #e67e22; }
         .btn-sm { padding: 4px 7px; font-size: 0.75em; }
         .w100 { width: 100%; margin-top: 5px; }
-
-        /* ── LEFT PANEL ── */
-        #left-col {
-            display: flex; flex-direction: column;
-            overflow-y: auto; gap: 0;
-        }
-        #left-col .panel { margin-bottom: 8px; }
-
+        #left-col { display: flex; flex-direction: column; overflow-y: auto; gap: 0; }
         .input-row { display: flex; gap: 5px; align-items: center; margin-bottom: 6px; }
         input[type=text], input[type=number], select {
             background: #111; color: white; border: 1px solid #444;
@@ -71,13 +60,10 @@
         input[type=color] { width: 36px; height: 28px; border: 1px solid #444; border-radius: 4px; cursor: pointer; padding: 1px; }
         input[type=number] { width: 70px; }
         input[type=text] { flex: 1; }
-
-        /* ── ÉQUIPES ── */
         .team-item {
             display: flex; align-items: center; gap: 6px;
             background: #222; padding: 6px 8px; margin-bottom: 4px;
-            border-radius: 4px; border: 1px solid #333;
-            transition: border-color 0.2s;
+            border-radius: 4px; border: 1px solid #333; transition: border-color 0.2s;
         }
         .team-item.active-turn { border-color: #d4af37; background: #2a2400; }
         .team-item.qualified { border-color: #27ae60; }
@@ -86,10 +72,7 @@
         .team-name-d { font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .team-score-d { color: #d4af37; font-family: monospace; font-size: 1.1em; }
         .team-pending { color: #f39c12; font-size: 0.85em; }
-        .team-bonus-d { font-size: 0.75em; color: #aaa; }
         .team-actions-d { display: flex; gap: 3px; flex-shrink: 0; }
-
-        /* ── THÈMES ── */
         .themes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
         .theme-opt {
             padding: 6px 8px; background: #222; border: 1px solid #444;
@@ -99,27 +82,20 @@
         .theme-opt:hover { border-color: #d4af37; }
         .theme-opt.selected { background: #2a3a00; border-color: #d4af37; color: #d4af37; }
         .theme-opt.disabled { pointer-events: none; opacity: 0.5; }
-
-        /* ── WAGONS GRID (régie) ── */
-        #wagons-grid-regie {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
-        }
+        #wagons-grid-regie { display: grid; gap: 6px; }
         .wagon-card-regie {
             background: #1e2a1e; border: 2px solid #333; border-radius: 6px;
-            padding: 8px; cursor: pointer; transition: all 0.15s; position: relative;
+            padding: 8px; cursor: pointer; transition: all 0.15s;
         }
-        .wagon-card-regie:hover { border-color: #d4af37; background: #252e25; }
+        .wagon-card-regie:hover { border-color: #d4af37; }
         .wagon-card-regie.selected { border-color: #f1c40f; background: #2a3a00; box-shadow: 0 0 10px rgba(241,196,15,0.3); }
         .wagon-card-regie.completed { border-color: #27ae60; opacity: 0.7; }
         .wagon-card-regie.blocked { border-color: #c0392b; opacity: 0.7; }
-        .wagon-theme-r { font-size: 0.85em; font-weight: bold; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .wagon-meta { font-size: 0.75em; color: #aaa; margin-bottom: 4px; }
+        .wagon-theme-r { font-size: 0.85em; font-weight: bold; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .wagon-meta { font-size: 0.75em; color: #aaa; margin-bottom: 3px; }
         .wagon-pending-r { font-size: 0.8em; color: #f39c12; }
-        .mini-windows-r { display: flex; gap: 2px; flex-wrap: wrap; margin-top: 4px; }
-        .mini-win-r {
-            width: 10px; height: 10px; border-radius: 2px;
-            background: #222; border: 1px solid #444; transition: background 0.3s;
-        }
+        .mini-windows-r { display: flex; gap: 2px; flex-wrap: wrap; margin-top: 3px; }
+        .mini-win-r { width: 10px; height: 10px; border-radius: 2px; background: #222; border: 1px solid #444; transition: background 0.3s; }
         .mini-win-r.active { background: #f1c40f; border-color: #f1c40f; }
         .mini-win-r.banked { border-color: transparent; }
 
@@ -129,15 +105,27 @@
             border-radius: 6px; padding: 14px; margin-bottom: 10px; display: none;
         }
         #question-panel h3 { color: #e74c3c; border-color: #8b0000; }
-        .q-display { color: #fff; font-size: 1.1em; margin-bottom: 8px; line-height: 1.4; }
-        .a-display { color: #f1c40f; font-size: 1.2em; font-weight: bold; background: #111; padding: 8px; border-radius: 4px; margin-bottom: 12px; }
-        .pts-display { display: inline-block; background: #d4af37; color: #000; font-weight: bold; padding: 3px 10px; border-radius: 12px; font-size: 0.9em; margin-bottom: 10px; }
+        .q-display { color: #fff; font-size: 1em; margin-bottom: 6px; line-height: 1.4; }
+        .a-display { color: #f1c40f; font-size: 1.15em; font-weight: bold; background: #111; padding: 7px; border-radius: 4px; margin-bottom: 10px; }
+        .pts-display { display: inline-block; background: #d4af37; color: #000; font-weight: bold; padding: 3px 10px; border-radius: 12px; font-size: 0.85em; margin-bottom: 6px; }
         .pending-in-wagon { color: #f39c12; font-size: 0.85em; margin-bottom: 8px; }
-        .q-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-        .q-actions-secondary { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
-        #palier-actions { display: none; gap: 8px; margin-top: 10px; }
 
-        /* ── STATUS BAR ── */
+        /* Zones d'action du panel question */
+        #zone-verdict { display: flex; gap: 8px; margin-bottom: 8px; }
+        #zone-post-correct { display: none; gap: 8px; margin-bottom: 8px; }
+        #zone-palier { display: none; gap: 8px; margin-bottom: 8px; }
+        #zone-timer { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; align-items: center; }
+        #zone-footer { display: flex; gap: 6px; flex-wrap: wrap; }
+
+        /* Label timer actif */
+        #timer-active-badge {
+            display: none; background: #7a1a1a; border: 1px solid #c0392b;
+            padding: 3px 8px; border-radius: 3px; font-size: 0.75em; color: #e74c3c;
+            animation: timerBlink 0.7s step-end infinite;
+        }
+        #timer-active-badge.show { display: inline-block; }
+        @keyframes timerBlink { 50% { opacity: 0.4; } }
+
         #status-bar {
             display: flex; justify-content: space-between; align-items: center;
             background: #111; border: 1px solid #333; border-radius: 6px;
@@ -146,81 +134,33 @@
         .status-dot { width: 10px; height: 10px; border-radius: 50%; background: #c0392b; display: inline-block; margin-right: 6px; }
         .status-dot.ok { background: #27ae60; }
         #turn-display { font-family: 'Anton', sans-serif; font-size: 1.1em; color: #d4af37; letter-spacing: 1px; }
-
-        /* ── LOGS ── */
-        #logs-box {
-            height: 100px; overflow-y: auto; background: #000;
-            border: 1px solid #222; padding: 5px; font-family: monospace; font-size: 0.75em; color: #888;
-        }
+        #logs-box { height: 90px; overflow-y: auto; background: #000; border: 1px solid #222; padding: 5px; font-family: monospace; font-size: 0.75em; color: #888; }
         .log-ok { color: #27ae60; }
         .log-bad { color: #c0392b; }
         .log-info { color: #3498db; }
         .log-gold { color: #d4af37; }
-
-        /* ── CORRECTIONS ── */
-        .correction-row { display: flex; gap: 6px; align-items: center; margin-bottom: 6px; }
-        .correction-row label { min-width: 90px; color: #aaa; font-size: 0.8em; }
+        .cfg-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+        .cfg-label { min-width: 120px; color: #aaa; font-size: 0.85em; }
         select { padding: 4px 6px; flex: 1; }
-
-        /* ── BONUS ── */
-        .bonus-team-card {
-            background: #222; border: 1px solid #333; border-radius: 4px;
-            padding: 6px; margin-bottom: 6px;
-        }
+        .bonus-team-card { background: #222; border: 1px solid #333; border-radius: 4px; padding: 6px; margin-bottom: 6px; }
         .bonus-team-name { font-weight: bold; margin-bottom: 4px; }
         .bonus-chips { display: flex; gap: 4px; flex-wrap: wrap; }
-        .bonus-chip {
-            background: #3a1a5a; border: 1px solid #8e44ad; border-radius: 3px;
-            padding: 2px 7px; font-size: 0.75em; cursor: pointer; transition: filter 0.15s;
-        }
+        .bonus-chip { background: #3a1a5a; border: 1px solid #8e44ad; border-radius: 3px; padding: 2px 7px; font-size: 0.75em; cursor: pointer; transition: filter 0.15s; }
         .bonus-chip:hover { filter: brightness(1.4); }
         .bonus-chip.used { background: #1a1a1a; border-color: #333; color: #555; cursor: not-allowed; text-decoration: line-through; }
-
-        /* ── MODAL BONUS ── */
-        #bonus-modal {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 1000; display: none;
-            align-items: center; justify-content: center;
-        }
-        .modal-box {
-            background: #1a1a1a; border: 2px solid #8e44ad;
-            border-radius: 8px; padding: 24px; max-width: 400px; width: 90%;
-            text-align: center;
-        }
+        #bonus-modal, #replace-modal { position: fixed; top:0;left:0;width:100%;height:100%; background:rgba(0,0,0,0.85); z-index:1000; display:none; align-items:center; justify-content:center; }
+        .modal-box { background:#1a1a1a; border:2px solid #8e44ad; border-radius:8px; padding:24px; max-width:400px; width:90%; text-align:center; }
         .modal-bonus-emoji { font-size: 3rem; margin-bottom: 8px; }
         .modal-bonus-name { font-family: 'Anton', sans-serif; font-size: 1.8em; color: #d4af37; margin-bottom: 8px; }
         .modal-bonus-desc { color: #ccc; margin-bottom: 16px; line-height: 1.5; }
         .modal-actions { display: flex; gap: 10px; justify-content: center; }
-
-        /* ── REPLACE WAGON MODAL ── */
-        #replace-modal {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 1000; display: none;
-            align-items: center; justify-content: center;
-        }
-        .replace-box {
-            background: #1a1a1a; border: 2px solid #e67e22;
-            border-radius: 8px; padding: 24px; max-width: 400px; width: 90%;
-        }
+        .replace-box { background:#1a1a1a; border:2px solid #e67e22; border-radius:8px; padding:24px; max-width:420px; width:90%; }
         .replace-box h3 { color: #e67e22; }
         .replace-theme-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 10px 0; }
-        .replace-theme-opt {
-            padding: 8px; background: #222; border: 1px solid #444;
-            border-radius: 4px; cursor: pointer; text-align: center; font-size: 0.8em;
-        }
-        .replace-theme-opt:hover { border-color: #e67e22; background: #2a2000; }
-
-        /* ── MAIN COL ── */
-        #right-col {
-            display: flex; flex-direction: column; overflow-y: auto;
-        }
+        .replace-theme-opt { padding:8px; background:#222; border:1px solid #444; border-radius:4px; cursor:pointer; text-align:center; font-size:0.8em; }
+        .replace-theme-opt:hover { border-color:#e67e22; background:#2a2000; }
+        #right-col { display: flex; flex-direction: column; overflow-y: auto; }
         .main-btn-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
-
-        /* ── CONFIG INLINE ── */
-        .cfg-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
-        .cfg-label { min-width: 120px; color: #aaa; font-size: 0.85em; }
-
-        /* scrollbars */
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: #111; }
         ::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
@@ -231,7 +171,6 @@
 <!-- ═══ COLONNE GAUCHE ═══ -->
 <div id="left-col">
 
-    <!-- 0. OUVRIR ÉCRAN -->
     <div class="panel" style="margin-bottom:8px;">
         <button class="btn-blue w100" onclick="openScreen()">📺 OUVRIR ÉCRAN DE JEU</button>
         <div id="status-bar" style="margin-top:8px; margin-bottom:0;">
@@ -240,8 +179,7 @@
         </div>
     </div>
 
-    <!-- 1. CONFIG -->
-    <div class="panel" id="panel-config">
+    <div class="panel">
         <h3>⚙️ CONFIGURATION</h3>
         <div class="cfg-row">
             <span class="cfg-label">Profondeur wagons :</span>
@@ -263,8 +201,7 @@
         </div>
     </div>
 
-    <!-- 2. ÉQUIPES -->
-    <div class="panel" id="panel-teams">
+    <div class="panel">
         <h3>👥 ÉQUIPES</h3>
         <div class="input-row">
             <input type="text" id="team-name-in" placeholder="Nom de l'équipe" onkeydown="if(event.key==='Enter')addTeam()">
@@ -274,46 +211,41 @@
         <div id="teams-list"></div>
         <div style="display:flex; gap:5px; margin-top:6px;">
             <button class="btn-orange btn-sm" style="flex:1" onclick="randomizeTeams()">🎲 Ordre aléatoire</button>
-            <button class="btn-gold btn-sm" style="flex:1" onclick="validateTeams()" id="btn-validate-teams">✓ VALIDER</button>
+            <button class="btn-gold btn-sm" style="flex:1" onclick="validateTeams()">✓ VALIDER</button>
         </div>
     </div>
 
-    <!-- 3. THÈMES -->
-    <div class="panel" id="panel-themes">
+    <div class="panel">
         <h3>🎯 THÈMES</h3>
         <div class="themes-grid" id="themes-grid"></div>
         <div style="color:#aaa; font-size:0.8em; margin-top:5px;" id="themes-count">Sélectionnez 2 à 8 thèmes</div>
         <button class="btn-green w100" id="btn-validate-themes" disabled onclick="validateThemes()">✓ VALIDER THÈMES</button>
     </div>
 
-    <!-- 4. DÉMARRAGE -->
     <div class="panel">
         <h3>🚀 DÉMARRAGE</h3>
         <button class="btn-green w100" id="btn-start" onclick="startGame()">🚂 DÉMARRER LE JEU</button>
     </div>
 
-    <!-- 5. HISTORIQUE -->
     <div class="panel">
         <h3>📜 LOGS</h3>
         <div id="logs-box"></div>
         <button class="btn-orange btn-sm w100" id="btn-undo" disabled onclick="undoAction()" style="margin-top:6px;">↩ ANNULER DERNIÈRE ACTION</button>
     </div>
-
 </div>
 
 <!-- ═══ COLONNE DROITE ═══ -->
 <div id="right-col">
 
-    <!-- ACTIONS RAPIDES -->
     <div class="main-btn-row">
-        <button class="btn-blue" onclick="prevTeam()">⬅ Équipe préc.</button>
-        <button class="btn-blue" onclick="nextTeam()">Équipe suiv. ➡</button>
+        <button class="btn-blue" onclick="prevTeam()">⬅ Préc.</button>
+        <button class="btn-blue" onclick="nextTeam()">Suiv. ➡</button>
         <button class="btn-red" id="btn-reset-wagon" onclick="resetSelectedWagon()" disabled>🔄 Reset wagon</button>
-        <button class="btn-orange" id="btn-replace-wagon" onclick="openReplaceModal()" disabled>🔀 Remplacer wagon</button>
+        <button class="btn-orange" id="btn-replace-wagon" onclick="openReplaceModal()" disabled>🔀 Remplacer</button>
         <button class="btn-gold" onclick="showResults()">🏆 RÉSULTATS</button>
+        <button class="btn-purple btn-sm" id="btn-reroll" onclick="rerollQuestion()" disabled>♻ Changer Q</button>
     </div>
 
-    <!-- CORRECTIONS MANUELLES -->
     <div class="panel" style="padding:10px;">
         <h3>✏️ CORRECTIONS</h3>
         <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
@@ -321,11 +253,10 @@
             <input type="number" id="manual-pts" value="0" style="width:70px;">
             <span style="color:#aaa; font-size:0.8em;">pts</span>
             <button class="btn-orange btn-sm" onclick="applyManualScore()">Appliquer</button>
-            <button class="btn-blue btn-sm" onclick="rerollQuestion()" id="btn-reroll" disabled>♻ Changer Q</button>
         </div>
     </div>
 
-    <!-- QUESTION EN COURS -->
+    <!-- ═══ QUESTION EN COURS ═══ -->
     <div id="question-panel">
         <h3>🔴 QUESTION EN COURS</h3>
         <div class="q-display" id="q-display">...</div>
@@ -333,24 +264,37 @@
         <div class="pts-display" id="pts-display">+0 pts</div>
         <div class="pending-in-wagon" id="pending-display" style="display:none;"></div>
 
-        <div class="q-actions">
-            <button class="btn-green" id="btn-correct" onclick="answerCorrect()">✅ CORRECT</button>
-            <button class="btn-red" id="btn-wrong" onclick="answerWrong()">❌ FAUX</button>
+        <!-- Zone Timer -->
+        <div id="zone-timer">
+            <button class="btn-purple btn-sm" onclick="startTimerRegie()">⏱ LANCER TIMER</button>
+            <button class="btn-sm" id="btn-stop-timer" onclick="stopTimerRegie()" disabled>⏹ STOP TIMER</button>
+            <span id="timer-active-badge">⚠ TIMER EN COURS</span>
         </div>
 
-        <div id="palier-actions" style="display:flex; gap:8px; margin-top:10px;">
-            <button class="btn-gold" style="flex:1; font-size:1em; padding:12px;" onclick="bankPoints()">💰 BANQUER</button>
-            <button class="btn-blue" style="flex:1; font-size:1em; padding:12px;" onclick="continueWagon()">➡ CONTINUER</button>
+        <!-- Zone Verdict (CORRECT / FAUX) — masquée quand timer actif -->
+        <div id="zone-verdict">
+            <button class="btn-green" id="btn-correct" style="flex:1; padding:12px; font-size:1.1em;" onclick="answerCorrect()">✅ CORRECT</button>
+            <button class="btn-red" id="btn-wrong" style="flex:1; padding:12px; font-size:1.1em;" onclick="answerWrong()">❌ FAUX</button>
         </div>
 
-        <div class="q-actions-secondary">
-            <button class="btn-purple btn-sm" onclick="startTimer()">⏱ TIMER</button>
-            <button class="btn-orange btn-sm" onclick="stopTimer()">⏹ STOP TIMER</button>
-            <button class="btn-sm" onclick="closeQuestion()">✕ Fermer</button>
+        <!-- Zone Post-Correct non-palier : bouton Prochaine Q -->
+        <div id="zone-post-correct">
+            <button class="btn-blue" style="flex:1; padding:12px; font-size:1em;" onclick="nextQuestion()">➡️ PROCHAINE QUESTION</button>
+        </div>
+
+        <!-- Zone Palier End : BANQUER / CONTINUER -->
+        <div id="zone-palier">
+            <button class="btn-gold" style="flex:1; padding:14px; font-size:1.1em;" onclick="bankPoints()">💰 BANQUER</button>
+            <button class="btn-blue" style="flex:1; padding:14px; font-size:1.1em;" onclick="continueWagon()">➡ CONTINUER</button>
+        </div>
+
+        <!-- Footer -->
+        <div id="zone-footer">
+            <button class="btn-sm" onclick="cancelQuestion()">✕ Annuler / Fermer</button>
         </div>
     </div>
 
-    <!-- BONUS PAR ÉQUIPE -->
+    <!-- BONUS -->
     <div class="panel" id="bonus-panel">
         <h3>🎁 BONUS</h3>
         <div id="bonus-list"></div>
@@ -363,7 +307,6 @@
             <div style="color:#555; font-size:0.9em; grid-column:1/-1;">Validez les thèmes pour créer les wagons...</div>
         </div>
     </div>
-
 </div>
 
 <!-- ═══ MODAL BONUS ═══ -->
@@ -396,15 +339,9 @@
 // CANAL BROADCAST
 // ================================================================
 const channel = new BroadcastChannel(CHANNEL_NAME);
-
 channel.onmessage = (e) => {
-    if (e.data.type === 'PING') {
-        updateConnStatus(true);
-        channel.postMessage({ type: 'PONG' });
-    }
-    if (e.data.type === 'REQUEST_STATE') {
-        broadcastState();
-    }
+    if (e.data.type === 'PING') { updateConnStatus(true); channel.postMessage({ type: 'PONG' }); }
+    if (e.data.type === 'REQUEST_STATE') broadcastState();
 };
 
 // ================================================================
@@ -422,9 +359,13 @@ let gameState = {
     config: { depth: 10, threshold: 50, timer: 30 },
     history: []
 };
+
 let pendingBonus = null;
 let isAtPalierEnd = false;
+let isTimerActive = false;       // ← NEW: tracker état timer
+let questionPhase = 'IDLE';      // 'IDLE' | 'ACTIVE' | 'POST_CORRECT' | 'PALIER_END'
 let connectedToScreen = false;
+let selectedThemeIndices = [];
 
 // ================================================================
 // INIT
@@ -432,43 +373,21 @@ let connectedToScreen = false;
 document.addEventListener('DOMContentLoaded', () => {
     renderThemesGrid();
     renderTeamsList();
-    updateDisplay();
-
-    setInterval(() => {
-        channel.postMessage({ type: 'PING' });
-    }, 4000);
-
-    setInterval(() => {
-        if (!connectedToScreen) updateConnStatus(false);
-        connectedToScreen = false;
-    }, 8000);
+    setInterval(() => { channel.postMessage({ type: 'PING' }); }, 4000);
+    setInterval(() => { if (!connectedToScreen) updateConnStatus(false); connectedToScreen = false; }, 8000);
 });
 
 // ================================================================
-// ÉCRAN
+// ÉCRAN & CONNEXION
 // ================================================================
-function openScreen() {
-    window.open('ecran_jeu.html', 'WagonScreen', 'width=1280,height=720');
-    addLog('Écran de jeu ouvert', 'info');
-}
-
+function openScreen() { window.open('ecran_jeu.html', 'WagonScreen', 'width=1280,height=720'); addLog('Écran ouvert', 'info'); }
 function updateConnStatus(ok) {
     connectedToScreen = ok;
     document.getElementById('dot-conn').className = 'status-dot' + (ok ? ' ok' : '');
     document.getElementById('txt-conn').textContent = ok ? 'Écran connecté ✓' : 'Écran non connecté';
 }
-
-// ================================================================
-// INTRO
-// ================================================================
-function sendIntro() {
-    channel.postMessage({ type: 'START_INTRO' });
-    addLog('Intro lancée', 'info');
-}
-function skipIntro() {
-    channel.postMessage({ type: 'SKIP_INTRO' });
-    addLog('Intro skippée', 'info');
-}
+function sendIntro() { channel.postMessage({ type: 'START_INTRO' }); addLog('Intro lancée', 'info'); }
+function skipIntro() { channel.postMessage({ type: 'SKIP_INTRO' }); addLog('Intro skippée', 'info'); }
 
 // ================================================================
 // ÉQUIPES
@@ -480,47 +399,33 @@ function addTeam() {
     const color = document.getElementById('team-color-in').value;
     const allBonusIds = BONUSES.map(b => b.id);
     allBonusIds.sort(() => Math.random() - 0.5);
-    const assignedBonuses = allBonusIds.slice(0, GAME_CONFIG.bonusPerTeam).map(id => ({
-        id, used: false
-    }));
-    gameState.teams.push({ name, color, score: 0, bonuses: assignedBonuses, qualified: false, eliminated: false });
+    const assignedBonuses = allBonusIds.slice(0, GAME_CONFIG.bonusPerTeam).map(id => ({ id, used: false }));
+    gameState.teams.push({ name, color, score: 0, bonuses: assignedBonuses, qualified: false });
     document.getElementById('team-name-in').value = '';
     document.getElementById('team-color-in').value = randomColor();
     saveHistory(`Équipe "${name}" ajoutée`);
-    renderTeamsList();
-    updateManualSelect();
+    renderTeamsList(); updateManualSelect();
     addLog(`+ ${name}`, 'ok');
 }
-
 function removeTeam(i) {
     if (gameState.phase !== 'SETUP') return;
     const name = gameState.teams[i].name;
     gameState.teams.splice(i, 1);
-    saveHistory(`Équipe "${name}" supprimée`);
-    renderTeamsList();
-    updateManualSelect();
+    saveHistory(`Équipe supprimée`); renderTeamsList(); updateManualSelect();
 }
-
 function moveTeam(i, dir) {
     const j = i + dir;
     if (j < 0 || j >= gameState.teams.length) return;
     [gameState.teams[i], gameState.teams[j]] = [gameState.teams[j], gameState.teams[i]];
     renderTeamsList();
 }
-
-function randomizeTeams() {
-    gameState.teams.sort(() => Math.random() - 0.5);
-    saveHistory('Ordre aléatoire');
-    renderTeamsList();
-}
-
+function randomizeTeams() { gameState.teams.sort(() => Math.random() - 0.5); saveHistory('Ordre aléatoire'); renderTeamsList(); }
 function validateTeams() {
     if (gameState.teams.length < 2) { alert('Ajoutez au moins 2 équipes !'); return; }
     gameState.phase = 'THEMES';
-    document.getElementById('panel-teams').style.borderColor = '#27ae60';
+    document.getElementById('panel-config') && (document.getElementById('panel-config').style.borderColor = '#27ae60');
     addLog('Équipes validées', 'ok');
 }
-
 function renderTeamsList() {
     const el = document.getElementById('teams-list');
     el.innerHTML = '';
@@ -528,39 +433,33 @@ function renderTeamsList() {
         const div = document.createElement('div');
         div.className = 'team-item' + (i === gameState.currentTeamIndex && gameState.phase === 'GAME' ? ' active-turn' : '') + (t.qualified ? ' qualified' : '');
         const tempPts = (i === gameState.currentTeamIndex && gameState.phase === 'GAME') ? gameState.sessionPoints : 0;
-        const pendingStr = tempPts > 0 ? `<span class="team-pending">(+${tempPts} en jeu)</span>` : '';
-        const qStr = t.qualified ? ' ✓' : '';
+        const pendingStr = tempPts > 0 ? `<span class="team-pending">(+${tempPts})</span>` : '';
         div.innerHTML = `
             <div class="team-dot" style="background:${t.color}"></div>
             <div class="team-info">
-                <div class="team-name-d">${t.name}${qStr}</div>
+                <div class="team-name-d">${t.name}${t.qualified ? ' ✓' : ''}</div>
                 <div class="team-score-d">${t.score} pts ${pendingStr}</div>
-                <div class="team-bonus-d">🎁 ${t.bonuses.filter(b=>!b.used).length}/${GAME_CONFIG.bonusPerTeam}</div>
             </div>
             <div class="team-actions-d">
                 ${gameState.phase === 'SETUP' ? `
                     <button class="btn-sm" onclick="moveTeam(${i},-1)" ${i===0?'disabled':''}>↑</button>
                     <button class="btn-sm" onclick="moveTeam(${i},1)" ${i===gameState.teams.length-1?'disabled':''}>↓</button>
                     <button class="btn-sm btn-red" onclick="removeTeam(${i})">✕</button>
-                ` : `
-                    <button class="btn-sm btn-orange" onclick="editScore(${i})">✎</button>
-                `}
+                ` : `<button class="btn-sm btn-orange" onclick="editScore(${i})">✎</button>`}
             </div>`;
         el.appendChild(div);
     });
 }
-
 function editScore(i) {
     const old = gameState.teams[i].score;
-    const val = prompt(`Score actuel de ${gameState.teams[i].name} : ${old}\nNouveau score :`, old);
+    const val = prompt(`Score de ${gameState.teams[i].name} (${old}pts) :\nNouveau score :`, old);
     if (val === null) return;
     const n = parseInt(val);
     if (!isNaN(n)) {
+        saveHistory(`Correction score ${gameState.teams[i].name}`);
         gameState.teams[i].score = n;
-        saveHistory(`Correction score ${gameState.teams[i].name}: ${old}→${n}`);
-        renderTeamsList();
-        broadcastState();
-        addLog(`Correction score: ${gameState.teams[i].name} ${n} pts`, 'info');
+        renderTeamsList(); broadcastState();
+        addLog(`✎ ${gameState.teams[i].name} → ${n}pts`, 'info');
     }
 }
 
@@ -572,41 +471,30 @@ function renderThemesGrid() {
     el.innerHTML = '';
     AVAILABLE_THEMES.forEach((t, i) => {
         const d = document.createElement('div');
-        d.className = 'theme-opt';
-        d.textContent = t.name;
-        d.dataset.i = i;
+        d.className = 'theme-opt'; d.textContent = t.name; d.dataset.i = i;
         d.onclick = () => toggleTheme(i);
         el.appendChild(d);
     });
 }
-
-let selectedThemeIndices = [];
 function toggleTheme(i) {
-    if (gameState.phase !== 'SETUP' && gameState.phase !== 'THEMES') return;
     const idx = selectedThemeIndices.indexOf(i);
-    if (idx > -1) {
-        selectedThemeIndices.splice(idx, 1);
-    } else {
+    if (idx > -1) { selectedThemeIndices.splice(idx, 1); }
+    else {
         if (selectedThemeIndices.length >= 8) { alert('Maximum 8 thèmes !'); return; }
         selectedThemeIndices.push(i);
     }
-    document.querySelectorAll('.theme-opt').forEach((d, j) => {
-        d.classList.toggle('selected', selectedThemeIndices.includes(j));
-    });
+    document.querySelectorAll('.theme-opt').forEach((d, j) => d.classList.toggle('selected', selectedThemeIndices.includes(j)));
     const cnt = selectedThemeIndices.length;
     document.getElementById('themes-count').textContent = `${cnt} thème(s) sélectionné(s)`;
     document.getElementById('btn-validate-themes').disabled = cnt < 2;
 }
-
 function validateThemes() {
     if (selectedThemeIndices.length < 2) return;
     createWagons();
     gameState.phase = 'READY';
-    document.getElementById('panel-themes').style.borderColor = '#27ae60';
     document.querySelectorAll('.theme-opt').forEach(d => d.classList.add('disabled'));
-    renderWagonsGrid();
-    renderBonusPanel();
-    addLog('Thèmes validés — wagons créés', 'ok');
+    renderWagonsGrid(); renderBonusPanel();
+    addLog(`Thèmes validés — ${gameState.wagons.length} wagons créés`, 'ok');
 }
 
 // ================================================================
@@ -620,57 +508,38 @@ function createWagons() {
         const qs = [...theme.questions].slice(0, depth);
         while (qs.length < depth) qs.push({ q: `Q${qs.length+1} (${theme.name})`, a: 'N/A' });
         return {
-            themeId: theme.id,
-            theme: theme.name,
-            themeColor: theme.color,
-            questions: qs,
-            depth,
-            currentLevel: 0,
-            pendingPoints: 0,
+            themeId: theme.id, theme: theme.name, themeColor: theme.color,
+            questions: qs, depth,
+            currentLevel: 0, pendingPoints: 0,
             windowStates: Array(depth).fill(null).map(() => ({ reached: false, banked: false, teamColor: null, teamName: null })),
-            completed: false,
-            blockedForTurn: false,
-            replacedWith: null
+            completed: false, blockedForTurn: false
         };
     });
 }
-
 function renderWagonsGrid() {
     const el = document.getElementById('wagons-grid-regie');
     el.innerHTML = '';
-    if (gameState.wagons.length === 0) {
-        el.innerHTML = '<div style="color:#555; grid-column:1/-1;">Validez les thèmes...</div>';
-        return;
-    }
-    const colCount = Math.min(gameState.wagons.length, 4);
-    el.style.gridTemplateColumns = `repeat(${colCount}, 1fr)`;
+    if (gameState.wagons.length === 0) { el.innerHTML = '<div style="color:#555;">Validez les thèmes...</div>'; return; }
+    const cols = Math.min(gameState.wagons.length, 4);
+    el.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
     gameState.wagons.forEach((w, i) => {
         const card = document.createElement('div');
         card.className = 'wagon-card-regie' + (i === gameState.selectedWagonIndex ? ' selected' : '') + (w.completed ? ' completed' : '') + (w.blockedForTurn ? ' blocked' : '');
         card.onclick = () => selectWagon(i);
-
         const windows = w.windowStates.map((ws, qi) => {
             let cls = 'mini-win-r';
             let style = '';
             if (ws.banked && ws.teamColor) { cls += ' banked'; style = `background:${ws.teamColor}; border-color:${ws.teamColor};`; }
-            else if (ws.reached) { cls += ' active'; }
+            else if (ws.reached) cls += ' active';
             return `<div class="${cls}" style="${style}"></div>`;
         }).join('');
-
-        const palierEnd = isBankingAllowed(w.currentLevel, w.depth);
-        const meta = w.completed ? '✓ Terminé' : `Q${w.currentLevel+1}/${w.depth}${palierEnd && w.currentLevel > 0 ? ' 💰' : ''}`;
-        const pendingStr = w.pendingPoints > 0 ? `<div class="wagon-pending-r">🪙 ${w.pendingPoints} pts en attente</div>` : '';
-
-        card.innerHTML = `
-            <div class="wagon-theme-r">${w.theme}</div>
-            <div class="wagon-meta">${meta}</div>
-            ${pendingStr}
-            <div class="mini-windows-r">${windows}</div>`;
+        const meta = w.completed ? '✓ Terminé' : `Q${w.currentLevel+1}/${w.depth}`;
+        const pendingStr = w.pendingPoints > 0 ? `<div class="wagon-pending-r">🪙 ${w.pendingPoints} pts</div>` : '';
+        card.innerHTML = `<div class="wagon-theme-r">${w.theme}</div><div class="wagon-meta">${meta}</div>${pendingStr}<div class="mini-windows-r">${windows}</div>`;
         el.appendChild(card);
     });
     document.getElementById('wagons-subtitle').textContent = `(${gameState.wagons.length} wagon${gameState.wagons.length>1?'s':''})`;
 }
-
 function selectWagon(i) {
     if (gameState.phase !== 'GAME') { addLog('Démarrez le jeu d\'abord', 'bad'); return; }
     if (gameState.currentQuestion) { addLog('Fermez la question en cours', 'bad'); return; }
@@ -678,7 +547,6 @@ function selectWagon(i) {
     if (w.completed) { addLog('Wagon terminé !', 'bad'); return; }
     if (w.blockedForTurn) { addLog('Wagon bloqué ce tour', 'bad'); return; }
     if (w.currentLevel >= w.depth) { addLog('Wagon vide !', 'bad'); return; }
-
     gameState.selectedWagonIndex = i;
     gameState.sessionStartLevel = w.currentLevel;
     gameState.sessionPoints = 0;
@@ -690,118 +558,159 @@ function selectWagon(i) {
 }
 
 // ================================================================
+// TIMER — avec blocage des boutons CORRECT/FAUX
+// ================================================================
+function startTimerRegie() {
+    const sec = parseInt(document.getElementById('cfg-timer').value) || 30;
+    isTimerActive = true;
+    document.getElementById('btn-correct').disabled = true;
+    document.getElementById('btn-wrong').disabled = true;
+    document.getElementById('btn-stop-timer').disabled = false;
+    document.getElementById('timer-active-badge').classList.add('show');
+    channel.postMessage({ type: 'START_TIMER', data: { seconds: sec } });
+    addLog(`⏱ Timer ${sec}s`, 'info');
+}
+function stopTimerRegie() {
+    isTimerActive = false;
+    document.getElementById('btn-stop-timer').disabled = true;
+    document.getElementById('timer-active-badge').classList.remove('show');
+    // On réactive les boutons UNIQUEMENT si on est encore en phase ACTIVE
+    if (questionPhase === 'ACTIVE') {
+        document.getElementById('btn-correct').disabled = false;
+        document.getElementById('btn-wrong').disabled = false;
+    }
+    channel.postMessage({ type: 'STOP_TIMER' });
+    addLog('⏹ Timer stoppé', 'info');
+}
+
+// ================================================================
 // QUESTIONS
 // ================================================================
 function openQuestion(wagonIndex, level) {
     const w = gameState.wagons[wagonIndex];
     const q = w.questions[level];
-    const pts = getPointsForLevel(level + 1); // level 1-indexed
+    const pts = getPointsForLevel(level + 1);
     isAtPalierEnd = false;
+    questionPhase = 'ACTIVE';
+    isTimerActive = false;
 
     gameState.currentQuestion = { wagonIndex, level, question: q.q, answer: q.a, points: pts };
 
     document.getElementById('q-display').textContent = q.q;
     document.getElementById('a-display').textContent = q.a;
-    document.getElementById('pts-display').textContent = `+${pts} pts (Q${level+1})`;
+    document.getElementById('pts-display').textContent = `+${pts} pts  —  Q${level+1}/${w.depth}  —  Palier ${getTierForLevel(level+1)}`;
 
     const pending = w.pendingPoints + gameState.sessionPoints;
     if (pending > 0) {
-        document.getElementById('pending-display').textContent = `🪙 ${pending} pts en attente dans le wagon`;
+        document.getElementById('pending-display').textContent = `🪙 ${pending} pts en attente dans ce wagon`;
         document.getElementById('pending-display').style.display = 'block';
     } else {
         document.getElementById('pending-display').style.display = 'none';
     }
 
-    document.getElementById('palier-actions').style.display = 'none';
-    document.getElementById('btn-correct').disabled = false;
-    document.getElementById('btn-wrong').disabled = false;
+    // Reset UI
+    setQuestionZone('ACTIVE');
+    document.getElementById('timer-active-badge').classList.remove('show');
+    document.getElementById('btn-stop-timer').disabled = true;
     document.getElementById('question-panel').style.display = 'block';
 
-    // Envoie à l'écran (sans la réponse)
     const team = gameState.teams[gameState.currentTeamIndex];
     channel.postMessage({
         type: 'SHOW_QUESTION',
         data: {
-            theme: w.theme,
-            themeColor: w.themeColor,
-            question: q.q,
-            level: level + 1,
-            depth: w.depth,
-            points: pts,
-            teamName: team.name,
-            teamColor: team.color,
+            theme: w.theme, themeColor: w.themeColor,
+            question: q.q, level: level + 1, depth: w.depth,
+            points: pts, teamName: team.name, teamColor: team.color,
             pendingPoints: w.pendingPoints + gameState.sessionPoints,
             tier: getTierForLevel(level + 1)
         }
     });
-    addLog(`Q${level+1} – ${w.theme} (+${pts}pts)`, 'info');
+    addLog(`Q${level+1} — ${w.theme} (+${pts}pts)`, 'info');
+}
+
+function setQuestionZone(zone) {
+    // Zones: 'ACTIVE' | 'POST_CORRECT' | 'PALIER_END' | 'IDLE'
+    document.getElementById('zone-verdict').style.display     = zone === 'ACTIVE'      ? 'flex' : 'none';
+    document.getElementById('zone-post-correct').style.display= zone === 'POST_CORRECT'? 'flex' : 'none';
+    document.getElementById('zone-palier').style.display      = zone === 'PALIER_END'  ? 'flex' : 'none';
+    document.getElementById('btn-correct').disabled = (zone !== 'ACTIVE');
+    document.getElementById('btn-wrong').disabled   = (zone !== 'ACTIVE');
+    questionPhase = zone;
 }
 
 function answerCorrect() {
-    if (!gameState.currentQuestion) return;
+    if (!gameState.currentQuestion || questionPhase !== 'ACTIVE') return;
+    if (isTimerActive) { addLog('⚠ Stoppez le timer d\'abord !', 'bad'); return; }
+
     const { wagonIndex, level, points } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
 
-    // Marquer la fenêtre comme atteinte
     w.windowStates[level].reached = true;
     w.currentLevel = level + 1;
     gameState.sessionPoints += points;
 
-    document.getElementById('btn-correct').disabled = true;
-    document.getElementById('btn-wrong').disabled = true;
-
-    // Vérifier si c'est la fin d'un palier
     isAtPalierEnd = isBankingAllowed(w.currentLevel, w.depth);
     const isFinished = w.currentLevel >= w.depth;
+    if (isFinished) isAtPalierEnd = true;
 
-    channel.postMessage({ type: 'CORRECT_ANSWER', data: { wagonIndex, level, teamColor: gameState.teams[gameState.currentTeamIndex].color } });
+    // Envoyer CORRECT à l'écran (affiche la réponse + allume la fenêtre)
+    channel.postMessage({
+        type: 'CORRECT_ANSWER',
+        data: {
+            wagonIndex, level,
+            teamColor: gameState.teams[gameState.currentTeamIndex].color,
+            answer: gameState.currentQuestion.answer
+        }
+    });
     addLog(`✓ Q${level+1} correcte (+${points}pts) — session: ${gameState.sessionPoints}pts`, 'ok');
-
-    if (isFinished) {
-        // Wagon terminé, on force le palier end
-        isAtPalierEnd = true;
-    }
+    renderTeamsList(); renderWagonsGrid();
 
     if (isAtPalierEnd) {
-        document.getElementById('palier-actions').style.display = 'flex';
-        document.getElementById('palier-actions').scrollIntoView({ behavior: 'smooth' });
-        channel.postMessage({ type: 'PALIER_END', data: { sessionPoints: gameState.sessionPoints, pendingPoints: w.pendingPoints, total: gameState.sessionPoints + w.pendingPoints, canContinue: !isFinished } });
+        const total = gameState.sessionPoints + w.pendingPoints;
+        channel.postMessage({ type: 'PALIER_END', data: { total, canContinue: !isFinished } });
+        setQuestionZone('PALIER_END');
     } else {
-        // Juste afficher "Q suivante" → on ne la pose pas auto, MC décide
         channel.postMessage({ type: 'AWAIT_NEXT' });
+        setQuestionZone('POST_CORRECT');
     }
-    renderTeamsList();
-    renderWagonsGrid();
+}
+
+function nextQuestion() {
+    if (!gameState.currentQuestion) return;
+    const { wagonIndex } = gameState.currentQuestion;
+    const w = gameState.wagons[wagonIndex];
+    if (w.currentLevel >= w.depth) { addLog('Wagon terminé !', 'bad'); return; }
+    setQuestionZone('ACTIVE');
+    openQuestion(wagonIndex, w.currentLevel);
 }
 
 function answerWrong() {
-    if (!gameState.currentQuestion) return;
+    if (!gameState.currentQuestion || questionPhase !== 'ACTIVE') return;
+    if (isTimerActive) { addLog('⚠ Stoppez le timer d\'abord !', 'bad'); return; }
+
     const { wagonIndex, level } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
 
-    // Les points de session retournent dans le wagon
     w.pendingPoints += gameState.sessionPoints;
     gameState.sessionPoints = 0;
     isAtPalierEnd = false;
-
-    // currentLevel NE BOUGE PAS (prochaine équipe reprend à la Q ratée)
+    // currentLevel NE CHANGE PAS (prochaine équipe reprend à la Q ratée)
 
     channel.postMessage({ type: 'WRONG_ANSWER', data: { wagonIndex, level } });
     addLog(`✗ Q${level+1} ratée — ${w.pendingPoints}pts restent dans le wagon`, 'bad');
 
-    saveHistory(`Faux: Q${level+1} wagon ${w.theme}`);
-    closeQuestion();
+    saveHistory(`Faux Q${level+1} wagon ${w.theme}`);
+    closeQuestionPanel();
     nextTeamAuto();
 }
 
 function bankPoints() {
-    if (!isAtPalierEnd) return;
+    if (!isAtPalierEnd || !gameState.currentQuestion) return;
     const { wagonIndex } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
     const team = gameState.teams[gameState.currentTeamIndex];
     const total = gameState.sessionPoints + w.pendingPoints;
 
-    // Colorier toutes les fenêtres atteintes non-bankées
     for (let i = 0; i < w.currentLevel; i++) {
         if (w.windowStates[i].reached && !w.windowStates[i].banked) {
             w.windowStates[i].banked = true;
@@ -809,30 +718,23 @@ function bankPoints() {
             w.windowStates[i].teamName = team.name;
         }
     }
-
     team.score += total;
     w.pendingPoints = 0;
     gameState.sessionPoints = 0;
 
-    // Vérification qualification
     const threshold = parseInt(document.getElementById('cfg-threshold').value) || 50;
     if (team.score >= threshold && !team.qualified) {
         team.qualified = true;
         channel.postMessage({ type: 'TEAM_QUALIFIED', data: { teamName: team.name, teamColor: team.color, score: team.score } });
         addLog(`🎉 ${team.name} QUALIFIÉ !`, 'gold');
     }
-
-    // Wagon terminé ?
-    if (w.currentLevel >= w.depth) {
-        w.completed = true;
-        addLog(`🏁 Wagon "${w.theme}" COMPLÉTÉ !`, 'gold');
-    }
+    if (w.currentLevel >= w.depth) { w.completed = true; addLog(`🏁 Wagon "${w.theme}" COMPLÉTÉ !`, 'gold'); }
 
     channel.postMessage({ type: 'BANK_POINTS', data: { wagonIndex, teamName: team.name, teamColor: team.color, points: total, score: team.score, windowStates: w.windowStates } });
     addLog(`💰 ${team.name} banque ${total} pts (total: ${team.score})`, 'gold');
 
     saveHistory(`Bank: ${team.name} +${total}pts`);
-    closeQuestion();
+    closeQuestionPanel();
     nextTeamAuto();
     broadcastState();
 }
@@ -842,18 +744,29 @@ function continueWagon() {
     const { wagonIndex } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
     if (w.currentLevel >= w.depth) { addLog('Wagon terminé !', 'bad'); return; }
-    document.getElementById('palier-actions').style.display = 'none';
     isAtPalierEnd = false;
     channel.postMessage({ type: 'CONTINUE_WAGON' });
     openQuestion(wagonIndex, w.currentLevel);
 }
 
-function closeQuestion() {
+function cancelQuestion() {
+    if (gameState.currentQuestion) {
+        gameState.sessionPoints = 0;
+        channel.postMessage({ type: 'HIDE_QUESTION' });
+    }
+    closeQuestionPanel();
+    stopTimerRegie();
+    addLog('Question annulée', 'info');
+}
+
+function closeQuestionPanel() {
     document.getElementById('question-panel').style.display = 'none';
-    document.getElementById('palier-actions').style.display = 'none';
-    gameState.currentQuestion = null;
+    isTimerActive = false;
     isAtPalierEnd = false;
-    channel.postMessage({ type: 'HIDE_QUESTION' });
+    questionPhase = 'IDLE';
+    gameState.currentQuestion = null;
+    document.getElementById('timer-active-badge').classList.remove('show');
+    document.getElementById('btn-stop-timer').disabled = true;
     document.getElementById('btn-reroll').disabled = true;
     renderWagonsGrid();
 }
@@ -864,8 +777,7 @@ function rerollQuestion() {
     const w = gameState.wagons[wagonIndex];
     const theme = AVAILABLE_THEMES.find(t => t.id === w.themeId);
     if (!theme) return;
-    // Prendre une Q différente si possible
-    const pool = theme.questions.filter((q, i) => i !== level);
+    const pool = theme.questions.filter((_, i) => i !== level);
     if (pool.length === 0) return;
     const newQ = pool[Math.floor(Math.random() * pool.length)];
     w.questions[level] = newQ;
@@ -874,52 +786,29 @@ function rerollQuestion() {
     document.getElementById('q-display').textContent = newQ.q;
     document.getElementById('a-display').textContent = newQ.a;
     channel.postMessage({ type: 'REROLL_QUESTION', data: { question: newQ.q } });
-    addLog(`♻ Question changée: Q${level+1} wagon ${w.theme}`, 'info');
+    addLog(`♻ Q${level+1} changée — wagon ${w.theme}`, 'info');
 }
 
 // ================================================================
-// TIMER
-// ================================================================
-function startTimer() {
-    const sec = parseInt(document.getElementById('cfg-timer').value) || 30;
-    channel.postMessage({ type: 'START_TIMER', data: { seconds: sec } });
-    addLog(`⏱ Timer ${sec}s`, 'info');
-}
-function stopTimer() {
-    channel.postMessage({ type: 'STOP_TIMER' });
-}
-
-// ================================================================
-// GESTION DES ÉQUIPES (TURN)
+// GESTION DES TOURS
 // ================================================================
 function nextTeamAuto() {
     gameState.currentTeamIndex = (gameState.currentTeamIndex + 1) % gameState.teams.length;
     gameState.sessionPoints = 0;
     gameState.sessionStartLevel = 0;
     gameState.selectedWagonIndex = null;
-    // Reset blocages 1 tour
     gameState.wagons.forEach(w => { w.blockedForTurn = false; });
-    updateTurnDisplay();
-    renderTeamsList();
-    renderWagonsGrid();
+    updateTurnDisplay(); renderTeamsList(); renderWagonsGrid();
     channel.postMessage({ type: 'NEXT_TURN', data: { teamIndex: gameState.currentTeamIndex, teamName: gameState.teams[gameState.currentTeamIndex].name, teamColor: gameState.teams[gameState.currentTeamIndex].color } });
 }
-
-function nextTeam() {
-    saveHistory('Tour suivant');
-    nextTeamAuto();
-    addLog(`➡ Tour: ${gameState.teams[gameState.currentTeamIndex].name}`, 'info');
-}
-
+function nextTeam() { saveHistory('Tour suivant'); nextTeamAuto(); addLog(`➡ Tour: ${gameState.teams[gameState.currentTeamIndex].name}`, 'info'); }
 function prevTeam() {
     saveHistory('Tour précédent');
     gameState.currentTeamIndex = (gameState.currentTeamIndex - 1 + gameState.teams.length) % gameState.teams.length;
     gameState.sessionPoints = 0;
-    updateTurnDisplay();
-    renderTeamsList();
+    updateTurnDisplay(); renderTeamsList();
     channel.postMessage({ type: 'NEXT_TURN', data: { teamIndex: gameState.currentTeamIndex, teamName: gameState.teams[gameState.currentTeamIndex].name, teamColor: gameState.teams[gameState.currentTeamIndex].color } });
 }
-
 function updateTurnDisplay() {
     if (!gameState.teams.length) { document.getElementById('turn-display').textContent = '---'; return; }
     const t = gameState.teams[gameState.currentTeamIndex];
@@ -934,17 +823,14 @@ function resetSelectedWagon() {
     if (i === null || i === undefined) return;
     if (!confirm('Réinitialiser ce wagon ?')) return;
     const w = gameState.wagons[i];
-    w.currentLevel = 0;
-    w.pendingPoints = 0;
+    w.currentLevel = 0; w.pendingPoints = 0;
     w.windowStates = Array(w.depth).fill(null).map(() => ({ reached: false, banked: false, teamColor: null, teamName: null }));
     w.completed = false;
     gameState.sessionPoints = 0;
     saveHistory(`Reset wagon ${w.theme}`);
-    renderWagonsGrid();
-    broadcastState();
+    renderWagonsGrid(); broadcastState();
     addLog(`🔄 Wagon "${w.theme}" réinitialisé`, 'info');
 }
-
 function openReplaceModal() {
     const i = gameState.selectedWagonIndex;
     if (i === null || i === undefined) { addLog('Sélectionnez un wagon', 'bad'); return; }
@@ -954,38 +840,26 @@ function openReplaceModal() {
     AVAILABLE_THEMES.forEach((t, ti) => {
         if (usedIds.includes(t.id)) return;
         const d = document.createElement('div');
-        d.className = 'replace-theme-opt';
-        d.textContent = t.name;
+        d.className = 'replace-theme-opt'; d.textContent = t.name;
         d.onclick = () => replaceWagon(i, ti);
         list.appendChild(d);
     });
-    if (list.children.length === 0) {
-        list.innerHTML = '<div style="color:#888; grid-column:1/-1;">Tous les thèmes sont utilisés.</div>';
-    }
+    if (list.children.length === 0) list.innerHTML = '<div style="color:#888; grid-column:1/-1;">Tous les thèmes sont utilisés.</div>';
     document.getElementById('replace-modal').style.display = 'flex';
 }
-
 function replaceWagon(wagonIdx, themeIdx) {
     const theme = AVAILABLE_THEMES[themeIdx];
     const depth = gameState.config.depth;
     const qs = [...theme.questions].slice(0, depth);
-    while (qs.length < depth) qs.push({ q: `Q${qs.length+1} (${theme.name})`, a: 'N/A' });
+    while (qs.length < depth) qs.push({ q: `Q${qs.length+1}`, a: 'N/A' });
     gameState.wagons[wagonIdx] = {
-        themeId: theme.id,
-        theme: theme.name,
-        themeColor: theme.color,
-        questions: qs,
-        depth,
-        currentLevel: 0,
-        pendingPoints: 0,
+        themeId: theme.id, theme: theme.name, themeColor: theme.color, questions: qs, depth,
+        currentLevel: 0, pendingPoints: 0,
         windowStates: Array(depth).fill(null).map(() => ({ reached: false, banked: false, teamColor: null, teamName: null })),
-        completed: false,
-        blockedForTurn: false
+        completed: false, blockedForTurn: false
     };
     saveHistory(`Remplacement wagon → ${theme.name}`);
-    closeModal('replace-modal');
-    renderWagonsGrid();
-    broadcastState();
+    closeModal('replace-modal'); renderWagonsGrid(); broadcastState();
     addLog(`🔀 Wagon remplacé par ${theme.name}`, 'info');
 }
 
@@ -996,17 +870,15 @@ function renderBonusPanel() {
     const el = document.getElementById('bonus-list');
     el.innerHTML = '';
     gameState.teams.forEach((t, ti) => {
-        const card = document.createElement('div');
-        card.className = 'bonus-team-card';
+        const card = document.createElement('div'); card.className = 'bonus-team-card';
         const chips = t.bonuses.map((b, bi) => {
             const bonus = BONUSES.find(x => x.id === b.id);
             return `<span class="bonus-chip${b.used ? ' used' : ''}" onclick="triggerBonus(${ti}, ${bi})">${bonus.emoji} ${bonus.name}</span>`;
         }).join('');
-        card.innerHTML = `<div class="bonus-team-name" style="color:${t.color}">${t.name}</div><div class="bonus-chips">${chips}</div>`;
+        card.innerHTML = `<div class="bonus-team-name" style="color:${t.color}">${t.name} (${t.bonuses.filter(b=>!b.used).length} bonus)</div><div class="bonus-chips">${chips}</div>`;
         el.appendChild(card);
     });
 }
-
 function triggerBonus(teamIdx, bonusIdx) {
     const team = gameState.teams[teamIdx];
     const b = team.bonuses[bonusIdx];
@@ -1019,47 +891,29 @@ function triggerBonus(teamIdx, bonusIdx) {
     document.getElementById('modal-team').textContent = `Équipe : ${team.name}`;
     document.getElementById('bonus-modal').style.display = 'flex';
 }
-
 function confirmBonus() {
     if (!pendingBonus) return;
     const { teamIdx, bonusIdx, bonus } = pendingBonus;
     const team = gameState.teams[teamIdx];
     team.bonuses[bonusIdx].used = true;
-
-    // Effets automatiques
     applyBonusEffect(bonus, teamIdx);
-
     channel.postMessage({ type: 'SHOW_BONUS', data: { bonus, teamName: team.name, teamColor: team.color } });
     addLog(`🎁 Bonus "${bonus.name}" → ${team.name}`, 'gold');
-    saveHistory(`Bonus ${bonus.name} activé`);
-    closeModal('bonus-modal');
-    renderBonusPanel();
-    renderTeamsList();
+    saveHistory(`Bonus ${bonus.name}`);
+    closeModal('bonus-modal'); renderBonusPanel(); renderTeamsList();
     pendingBonus = null;
 }
-
 function applyBonusEffect(bonus, teamIdx) {
     const team = gameState.teams[teamIdx];
-    switch (bonus.id) {
-        case 11: // WAGON BAR : +5 pts
-            team.score += 5;
-            broadcastState();
-            addLog(`🍸 +5 pts pour ${team.name}`, 'gold');
-            break;
-        case 9: // VOL DE BAGAGE : -3 pts au leader
-            const leader = [...gameState.teams].sort((a, b) => b.score - a.score)[0];
-            if (leader && leader !== team) { leader.score = Math.max(0, leader.score - 3); broadcastState(); addLog(`🧳 -3 pts à ${leader.name}`, 'bad'); }
-            break;
-        case 12: // GRIÈVE : bloque un wagon
-            if (gameState.selectedWagonIndex !== null) {
-                gameState.wagons[gameState.selectedWagonIndex].blockedForTurn = true;
-                renderWagonsGrid();
-                addLog(`🔒 Wagon bloqué`, 'bad');
-            }
-            break;
-        default:
-            addLog(`Appliquez l'effet manuellement: ${bonus.desc}`, 'info');
+    if (bonus.id === 11) { team.score += 5; broadcastState(); addLog(`🍸 +5 pts pour ${team.name}`, 'gold'); }
+    else if (bonus.id === 9) {
+        const leader = [...gameState.teams].sort((a,b) => b.score - a.score)[0];
+        if (leader && leader !== team) { leader.score = Math.max(0, leader.score - 3); broadcastState(); addLog(`🧳 -3 pts à ${leader.name}`, 'bad'); }
     }
+    else if (bonus.id === 12) {
+        if (gameState.selectedWagonIndex !== null) { gameState.wagons[gameState.selectedWagonIndex].blockedForTurn = true; renderWagonsGrid(); }
+    }
+    else { addLog(`Appliquez manuellement: ${bonus.desc}`, 'info'); }
 }
 
 // ================================================================
@@ -1068,24 +922,17 @@ function applyBonusEffect(bonus, teamIdx) {
 function updateManualSelect() {
     const sel = document.getElementById('manual-team-sel');
     sel.innerHTML = '<option value="">Équipe...</option>';
-    gameState.teams.forEach((t, i) => {
-        const opt = document.createElement('option');
-        opt.value = i; opt.textContent = t.name;
-        sel.appendChild(opt);
-    });
+    gameState.teams.forEach((t, i) => { const opt = document.createElement('option'); opt.value = i; opt.textContent = t.name; sel.appendChild(opt); });
 }
-
 function applyManualScore() {
     const idx = document.getElementById('manual-team-sel').value;
     if (idx === '') { alert('Sélectionnez une équipe'); return; }
     const adj = parseInt(document.getElementById('manual-pts').value) || 0;
     const team = gameState.teams[parseInt(idx)];
-    team.score += adj;
-    if (team.score < 0) team.score = 0;
-    saveHistory(`Correction: ${team.name} ${adj>0?'+':''}${adj}pts`);
-    renderTeamsList();
-    broadcastState();
-    addLog(`✎ ${team.name}: ${adj>0?'+':''}${adj} pts → ${team.score}`, 'info');
+    team.score = Math.max(0, team.score + adj);
+    saveHistory(`Correction ${team.name}`);
+    renderTeamsList(); broadcastState();
+    addLog(`✎ ${team.name}: ${adj>0?'+':''}${adj} → ${team.score}pts`, 'info');
 }
 
 // ================================================================
@@ -1099,8 +946,7 @@ function startGame() {
     gameState.config.timer = parseInt(document.getElementById('cfg-timer').value) || 30;
     document.getElementById('btn-start').textContent = '✓ JEU EN COURS';
     document.getElementById('btn-start').disabled = true;
-    updateTurnDisplay();
-    broadcastState();
+    updateTurnDisplay(); broadcastState();
     addLog('🚂 JEU DÉMARRÉ !', 'gold');
 }
 
@@ -1108,11 +954,7 @@ function startGame() {
 // RÉSULTATS
 // ================================================================
 function showResults() {
-    const sorted = [...gameState.teams].sort((a, b) => b.score - a.score).map((t, i) => ({
-        ...t,
-        rank: i + 1,
-        eliminated: i === gameState.teams.length - 1
-    }));
+    const sorted = [...gameState.teams].sort((a,b) => b.score-a.score).map((t,i) => ({ ...t, rank:i+1, eliminated:i===gameState.teams.length-1 }));
     channel.postMessage({ type: 'SHOW_RESULTS', data: { results: sorted } });
     addLog('🏆 Résultats affichés', 'gold');
 }
@@ -1125,62 +967,38 @@ function saveHistory(action) {
     if (gameState.history.length > 30) gameState.history.shift();
     document.getElementById('btn-undo').disabled = gameState.history.length < 2;
 }
-
 function undoAction() {
     if (gameState.history.length < 2) return;
     gameState.history.pop();
-    const prev = JSON.parse(gameState.history[gameState.history.length - 1].snapshot);
-    gameState.teams = prev.teams;
-    gameState.wagons = prev.wagons;
-    gameState.currentTeamIndex = prev.currentTeamIndex;
-    gameState.sessionPoints = 0;
-    gameState.currentQuestion = null;
-    closeQuestion();
-    renderTeamsList();
-    renderWagonsGrid();
-    renderBonusPanel();
-    updateTurnDisplay();
-    broadcastState();
+    const prev = JSON.parse(gameState.history[gameState.history.length-1].snapshot);
+    gameState.teams = prev.teams; gameState.wagons = prev.wagons; gameState.currentTeamIndex = prev.currentTeamIndex;
+    gameState.sessionPoints = 0; gameState.currentQuestion = null;
+    closeQuestionPanel();
+    renderTeamsList(); renderWagonsGrid(); renderBonusPanel(); updateTurnDisplay(); broadcastState();
     addLog('↩ Action annulée', 'info');
 }
 
 // ================================================================
-// BROADCAST / DISPLAY
+// UTILS
 // ================================================================
 function broadcastState() {
     channel.postMessage({ type: 'STATE_UPDATE', data: { teams: gameState.teams, wagons: gameState.wagons, currentTeamIndex: gameState.currentTeamIndex, phase: gameState.phase, config: gameState.config } });
 }
-
-function updateDisplay() {
-    renderTeamsList();
-    updateTurnDisplay();
-}
-
-function addLog(text, type = 'info') {
+function addLog(text, type='info') {
     const box = document.getElementById('logs-box');
     const div = document.createElement('div');
-    const t = new Date().toLocaleTimeString().slice(0,5);
-    div.className = type === 'ok' ? 'log-ok' : type === 'bad' ? 'log-bad' : type === 'gold' ? 'log-gold' : 'log-info';
-    div.textContent = `[${t}] ${text}`;
+    div.className = type==='ok'?'log-ok':type==='bad'?'log-bad':type==='gold'?'log-gold':'log-info';
+    div.textContent = `[${new Date().toLocaleTimeString().slice(0,5)}] ${text}`;
     box.prepend(div);
     if (box.children.length > 50) box.removeChild(box.lastChild);
 }
-
-function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
-}
-
+function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 function randomColor() {
-    const colors = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63'];
-    return colors[Math.floor(Math.random() * colors.length)];
+    const c = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63','#00bcd4'];
+    return c[Math.floor(Math.random()*c.length)];
 }
-
-// Expose for HTML onclick
-window.removeTeam = removeTeam;
-window.moveTeam = moveTeam;
-window.editScore = editScore;
-window.triggerBonus = triggerBonus;
-window.replaceWagon = replaceWagon;
+window.removeTeam = removeTeam; window.moveTeam = moveTeam; window.editScore = editScore;
+window.triggerBonus = triggerBonus; window.replaceWagon = replaceWagon;
 </script>
 </body>
 </html>
