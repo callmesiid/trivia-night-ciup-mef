@@ -7,12 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-        background: #0a0a0a; color: #fff;
-        font-family: 'Anton', sans-serif;
-        overflow: hidden; width: 100vw; height: 100vh;
-        cursor: none; user-select: none;
-    }
+    body { background: #0a0a0a; color: #fff; font-family: 'Anton', sans-serif; overflow: hidden; width: 100vw; height: 100vh; cursor: none; user-select: none; }
 
     /* ── MARQUEE FOND ── */
     #bg-marquee { position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.06;pointer-events:none;display:flex;flex-direction:column;justify-content:space-around; }
@@ -33,283 +28,154 @@
     ══════════════════════════════════════════ */
     #generique { position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:8000;display:none;overflow:hidden; }
 
-    /* Les 3 voies ferrées */
-    .track-layer { position:absolute;left:0;width:100%; }
-    .track-rails { display:flex;flex-direction:column;gap:0; }
-    .track-rail { height:5px;background:#1e1e1e; }
-    .track-sleepers { position:relative;height:20px;overflow:hidden; }
-    .sleeper-inner { display:flex;gap:50px;width:200%;animation:moveSleepers 0.5s linear infinite; }
-    .sleeper { width:18px;height:14px;background:#141414;flex-shrink:0; }
-    @keyframes moveSleepers { 0%{transform:translateX(0);}100%{transform:translateX(-68px);} }
+    /* Rails des 3 voies */
+    .track-layer { position:absolute;left:0;width:100%;pointer-events:none; }
+    .rail-top    { height:4px;background:#1a1a1a; }
+    .rail-bot    { height:3px;background:#111;margin-top:8px; }
+    .sleeper-row { height:18px;overflow:hidden;position:relative; }
+    .sleeper-strip { display:flex;gap:45px;position:absolute;top:2px;animation:moveSl 0.55s linear infinite; }
+    .sleeper-strip.slow { animation-duration:1.2s; }
+    .sleeper-strip.fast { animation-duration:0.3s; }
+    .sl { width:16px;height:12px;background:#131313;flex-shrink:0; }
+    @keyframes moveSl { 0%{transform:translateX(0);}100%{transform:translateX(-61px);} }
 
-    /* Train sur voie : position dynamique */
-    .track-train { position:absolute;bottom:100%; /* positionné par JS */ will-change:transform; }
+    /* Trains */
+    .gen-train { position:absolute;will-change:transform; }
 
-    /* Track 1 : bottom (biggest, closest) */
-    #track1 { bottom: 12vh; }
-    #track2 { bottom: 38vh; }
-    #track3 { bottom: 62vh; }
+    /* Blackout */
+    #gen-blackout { position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;z-index:9;transition:opacity 0s; }
+    #gen-blackout.fade { animation:toBlack 0.9s ease-in forwards; }
+    @keyframes toBlack { to{opacity:1;} }
 
-    /* Tunnel : cercle qui grandit depuis le centre */
-    #tunnel-scene {
-        position:absolute;top:0;left:0;width:100%;height:100%;
-        display:flex;align-items:center;justify-content:center;
-        z-index:10; display:none;
-    }
-    #tunnel-hole {
-        width:0; height:0;
-        border-radius:50%;
-        background:#000;
-        border:8px solid #333;
-        box-shadow:0 0 60px rgba(255,220,50,0.2), inset 0 0 40px #000;
-        transition:width 0s, height 0s;
-        position:relative;
-        display:flex;align-items:center;justify-content:center;
-    }
-    #tunnel-hole.grow { animation:tunnelGrow 1s cubic-bezier(0.2,0,0.5,1) forwards; }
-    @keyframes tunnelGrow {
-        0%  { width:0;height:0; }
-        100%{ width:340px;height:260px; }
-    }
-    /* Halo lumineux dans le tunnel */
-    #tunnel-glow {
-        position:absolute;width:80%;height:75%;border-radius:50%;
-        background:radial-gradient(ellipse at center, rgba(255,220,80,0.15) 0%, transparent 70%);
-    }
+    /* Tunnel hole */
+    #tunnel-scene { position:absolute;inset:0;display:none;align-items:center;justify-content:center;z-index:10; }
+    #tunnel-hole { width:0;height:0;border-radius:50%;background:radial-gradient(ellipse at center,#0a0a14 60%,#000 100%);border:6px solid #2a2a2a;display:flex;align-items:center;justify-content:center;overflow:hidden; }
+    #tunnel-hole.grow { animation:tunnelGrow 1.1s cubic-bezier(0.2,0,0.5,1) forwards; }
+    @keyframes tunnelGrow { 0%{width:0;height:0;} 100%{width:380px;height:290px;} }
+    #tunnel-glow { position:absolute;width:70%;height:65%;border-radius:50%;background:radial-gradient(ellipse,rgba(255,220,80,.12) 0%,transparent 70%); }
 
-    /* Locomotive face (sort du tunnel) */
-    #front-loco {
-        position:absolute;top:50%;left:50%;
-        transform:translate(-50%,-50%) scale(0);
-        z-index:12; opacity:0;
-        transition:transform 0s, opacity 0s;
-    }
-    #front-loco.emerge {
-        animation:locoEmerge 1.8s cubic-bezier(0.2,0,0.1,1) forwards;
-    }
+    /* Loco de face */
+    #front-loco { position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);opacity:0;z-index:12; }
+    #front-loco.emerge { animation:locoEmerge 1.8s cubic-bezier(0.15,0,0.1,1) forwards; }
     @keyframes locoEmerge {
-        0%  { transform:translate(-50%,-50%) scale(0.05); opacity:0.8; }
-        40% { transform:translate(-50%,-50%) scale(1.2); opacity:1; }
-        60% { transform:translate(-50%,-50%) scale(0.95); opacity:1; }
-        80% { transform:translate(-50%,-50%) scale(1.05); opacity:1; }
-        100%{ transform:translate(-50%,-50%) scale(1); opacity:1; }
+        0%  { transform:translate(-50%,-50%) scale(0.04);opacity:0.7; }
+        40% { transform:translate(-50%,-50%) scale(1.25);opacity:1; }
+        65% { transform:translate(-50%,-50%) scale(0.92);opacity:1; }
+        85% { transform:translate(-50%,-50%) scale(1.04);opacity:1; }
+        100%{ transform:translate(-50%,-50%) scale(1);   opacity:1; }
     }
 
-    /* Overlay noir qui envahit l'écran (masque tout sauf tunnel+titre) */
-    #gen-blackout {
-        position:absolute;top:0;left:0;width:100%;height:100%;
-        background:#000;z-index:9;opacity:0;
-        transition:opacity 0s;
-        pointer-events:none;
-    }
-    #gen-blackout.darken { animation:fadeToBlack 0.8s ease-in forwards; }
-    @keyframes fadeToBlack { 0%{opacity:0;}100%{opacity:1;} }
-
-    /* Titre "LE WAGON" */
-    #gen-title {
-        position:absolute;top:-40%;left:50%;
-        transform:translateX(-50%);
-        z-index:20;text-align:center;opacity:0;
-        filter:drop-shadow(0 0 30px rgba(212,175,55,0.5));
-    }
-    #gen-title .t-le { font-family:'Bebas Neue',sans-serif;font-size:4.5rem;color:#d4af37;text-shadow:4px 4px 0 #000;display:block; }
-    #gen-title .t-main { font-family:'Anton',sans-serif;font-size:18vw;line-height:0.85;color:#fff;text-shadow:10px 10px 0 #000;display:block;letter-spacing:-3px; }
-    #gen-title .t-sub { font-family:'Roboto',sans-serif;font-weight:900;font-size:1.1rem;color:#d4af37;letter-spacing:8px;display:block;margin-top:10px; }
-    #gen-title.drop { animation:titleDrop 0.9s cubic-bezier(0.15,1.5,0.4,1) forwards; }
+    /* Titre */
+    #gen-title { position:absolute;top:-40%;left:50%;transform:translateX(-50%);z-index:20;text-align:center;opacity:0;filter:drop-shadow(0 0 40px rgba(212,175,55,.5)); }
+    #gen-title .t-le   { font-family:'Bebas Neue',sans-serif;font-size:4.5rem;color:#d4af37;text-shadow:4px 4px 0 #000;display:block; }
+    #gen-title .t-main { font-family:'Anton',sans-serif;font-size:18vw;line-height:.85;color:#fff;text-shadow:10px 10px 0 #000;display:block;letter-spacing:-3px; }
+    #gen-title .t-sub  { font-family:'Roboto',sans-serif;font-weight:900;font-size:1.1rem;color:#d4af37;letter-spacing:8px;display:block;margin-top:10px; }
+    #gen-title.drop  { animation:titleDrop 0.9s cubic-bezier(0.15,1.5,.4,1) forwards; }
     @keyframes titleDrop { 0%{top:-40%;opacity:0;} 100%{top:52%;opacity:1;transform:translate(-50%,-50%);} }
-    #gen-title.outro { animation:titleOutro 0.6s ease-in forwards; }
+    #gen-title.outro { animation:titleOutro .6s ease-in forwards; }
     @keyframes titleOutro { 0%{opacity:1;}100%{opacity:0;transform:translate(-50%,-55%) scale(1.3);} }
 
-    /* Confetti */
-    .gen-conf { position:absolute;border-radius:3px;animation:confFall linear forwards;pointer-events:none; }
+    /* Confetti / steam */
+    .gen-conf  { position:absolute;border-radius:3px;animation:confFall linear forwards;pointer-events:none; }
     @keyframes confFall { 0%{transform:translateY(-10px) rotate(0);opacity:1;}100%{transform:translateY(115vh) rotate(720deg);opacity:0;} }
-
-    /* Steam puffs */
-    .steam-puff { position:absolute;border-radius:50%;background:rgba(255,255,255,0.5);animation:steamRise 1.2s ease-out forwards;pointer-events:none; }
-    @keyframes steamRise { 0%{opacity:0.8;transform:scale(1);}100%{opacity:0;transform:translateY(-80px) scale(4);} }
+    .steam-puff { position:absolute;border-radius:50%;background:rgba(255,255,255,.45);animation:steamRise 1.2s ease-out forwards;pointer-events:none; }
+    @keyframes steamRise { 0%{opacity:.8;transform:scale(1);}100%{opacity:0;transform:translateY(-90px) scale(4);} }
+    #gen-confetti-box { position:absolute;inset:0;pointer-events:none;z-index:19; }
 
     /* ── HEADER ── */
     #game-header { position:fixed;top:0;left:0;width:100%;height:65px;background:linear-gradient(to bottom,#000,#0a0a0a);border-bottom:2px solid #d4af37;display:flex;align-items:center;z-index:100;padding:0 20px;gap:16px;display:none; }
     .header-logo { font-family:'Anton',sans-serif;font-size:2rem;color:#d4af37;text-shadow:3px 3px 0 #000;letter-spacing:2px;white-space:nowrap; }
     .header-teams { display:flex;gap:8px;flex:1;overflow:hidden;align-items:center; }
-    .team-chip { display:flex;align-items:center;gap:6px;background:#111;border:2px solid #333;border-radius:6px;padding:5px 12px;transition:all 0.3s;flex-shrink:0; }
+    .team-chip { display:flex;align-items:center;gap:6px;background:#111;border:2px solid #333;border-radius:6px;padding:5px 12px;transition:all .3s;flex-shrink:0; }
     .team-chip.active { border-color:#d4af37;background:#1a1500; }
     .team-chip.qualified { border-color:#27ae60; }
-    .team-chip-dot { width:12px;height:12px;border-radius:50%;flex-shrink:0; }
-    .team-chip-name { font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:1px; }
+    .team-chip-dot   { width:12px;height:12px;border-radius:50%;flex-shrink:0; }
+    .team-chip-name  { font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:1px; }
     .team-chip-score { font-family:'Roboto',sans-serif;font-weight:900;font-size:1.1rem;color:#d4af37; }
 
-    /* ══════════════════════════════════════════
-       BOARD — WAGONS PLEINE LARGEUR
-    ══════════════════════════════════════════ */
-    #game-board { position:fixed;top:65px;left:0;width:100%;bottom:0;padding:12px 16px;display:none;overflow-y:auto;z-index:10; }
+    /* ── BOARD ── */
+    #game-board { position:fixed;top:65px;left:0;width:100%;bottom:0;padding:10px 14px;display:none;overflow-y:auto;z-index:10; }
 
     /* ── WAGON ROW ── */
-    .wagon-row {
-        display:flex;flex-direction:column;
-        background:linear-gradient(135deg,#0d0d1a 0%,#111 100%);
-        border:3px solid #2a2a4a;border-radius:14px;
-        margin-bottom:12px;overflow:hidden;
-        transition:border-color 0.4s, box-shadow 0.4s;
-        position:relative;
-    }
-    .wagon-row.active-wagon { border-color:#d4af37;box-shadow:0 0 30px rgba(212,175,55,0.2); }
-    .wagon-row.completed-wagon { opacity:0.5; }
-
-    /* Header du wagon */
-    .wagon-row-header {
-        display:flex;align-items:center;justify-content:space-between;
-        padding:8px 16px 4px;
-        border-bottom:1px solid #1a1a2e;
-    }
-    .wagon-row-name { font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:3px; }
-    .wagon-row-info { font-family:'Roboto',sans-serif;font-size:0.8rem;color:#888;display:flex;gap:14px; }
+    .wagon-row { margin-bottom:10px;border-radius:10px;overflow:hidden;border:2px solid #1e1e2e;transition:border-color .4s; }
+    .wagon-row.active-wagon { border-color:#d4af37;box-shadow:0 0 20px rgba(212,175,55,.15); }
+    .wagon-row.completed-wagon { opacity:.5; }
+    .wagon-row-header { display:flex;align-items:center;justify-content:space-between;padding:5px 14px;background:#0d0d14;border-bottom:1px solid #1a1a2a; }
+    .wagon-row-name { font-family:'Anton',sans-serif;font-size:1.15rem;letter-spacing:2px; }
+    .wagon-row-info { font-family:'Roboto',sans-serif;font-size:.78rem;color:#888;display:flex;gap:12px;align-items:center; }
     .wagon-info-pending { color:#f39c12;font-weight:bold; }
-    .wagon-info-bank { color:#d4af37;font-weight:bold; }
+    .wagon-info-bank    { color:#d4af37;font-weight:bold; }
+    .wagon-svg-wrap { display:block;line-height:0; }
 
-    /* Corps du wagon (côté train) */
-    .wagon-row-body { padding:10px 16px 4px; }
-
-    /* Rangée de fenêtres */
-    .wagon-windows-row {
-        display:flex;align-items:stretch;gap:4px;
-        height:70px;
-    }
-    .palier-sep { width:4px;background:#2a2a4a;border-radius:2px;flex-shrink:0;align-self:stretch; }
-
-    .wagon-window {
-        flex:1;
-        border-radius:8px 8px 4px 4px;
-        border:2px solid #1a1a2e;
-        background:#060614;
-        display:flex;align-items:center;justify-content:center;
-        font-family:'Roboto',sans-serif;font-weight:900;
-        font-size:0.85rem;color:#222;
-        transition:background 0.4s,border-color 0.4s,box-shadow 0.4s,color 0.3s;
-        position:relative;cursor:default;
-    }
-    /* Reflet fenêtre */
-    .wagon-window::after {
-        content:'';position:absolute;top:3px;left:3px;right:60%;bottom:40%;
-        background:rgba(255,255,255,0.04);border-radius:3px;
-    }
-    .wagon-window.lit {
-        background:#f1c40f;border-color:#f1c40f;
-        box-shadow:0 0 18px rgba(241,196,15,0.5);color:#000;
-    }
-    .wagon-window.banked {
-        border-color:transparent;color:#000;
-        box-shadow:0 0 18px var(--glow-color,rgba(255,255,255,0.3));
-    }
-
-    /* Châssis */
-    .wagon-chassis {
-        height:10px;background:#0d0d0d;
-        border-top:2px solid #1a1a2e;margin:0 16px;border-radius:2px;
-    }
-
-    /* Roues */
-    .wagon-wheels-row { display:flex;justify-content:space-around;padding:4px 30px 10px; }
-    .wheel {
-        width:26px;height:26px;border-radius:50%;
-        background:#111;border:3px solid #2a2a4a;
-        transition:border-color 0.4s;
-    }
-    .wagon-row.active-wagon .wheel { border-color:#d4af37;animation:wheelSpin 0.8s linear infinite; }
-    @keyframes wheelSpin { 100%{transform:rotate(360deg);} }
-
-    /* ══════════════════════════════════════════
-       OVERLAY QUESTION
-    ══════════════════════════════════════════ */
-    #question-overlay {
-        position:fixed;top:0;left:0;width:100%;height:100%;
-        background:rgba(0,0,0,0.96);z-index:500;
-        display:none;flex-direction:column;align-items:center;justify-content:center;
-        padding:40px;
-    }
+    /* ── QUESTION OVERLAY ── */
+    #question-overlay { position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.96);z-index:500;display:none;flex-direction:column;align-items:center;justify-content:center;padding:40px; }
     #question-overlay.show { display:flex; }
-
     .q-theme-label { font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:6px;margin-bottom:6px; }
     .q-badges { display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:20px; }
-    .q-badge { background:#1a1a1a;border:2px solid #333;border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;font-size:0.85rem;color:#aaa; }
-    .q-pts-badge { background:#2a2000;border:2px solid #d4af37;border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;font-weight:bold;color:#d4af37; }
+    .q-badge         { background:#1a1a1a;border:2px solid #333;border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;font-size:.85rem;color:#aaa; }
+    .q-pts-badge     { background:#2a2000;border:2px solid #d4af37;border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;font-weight:bold;color:#d4af37; }
     .q-pending-badge { background:#2a1500;border:2px solid #f39c12;border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;color:#f39c12; }
-    .q-team-badge { border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;font-weight:bold; }
-
+    .q-team-badge    { border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;font-weight:bold; }
     #question-text-el { font-family:'Anton',sans-serif;font-size:clamp(2rem,5vw,4rem);text-align:center;line-height:1.15;color:#fff;text-shadow:3px 3px 0 #000;max-width:950px;margin-bottom:30px; }
-
-    #answer-reveal {
-        font-family:'Anton',sans-serif;font-size:clamp(2.5rem,6vw,5rem);
-        text-align:center;color:#d4af37;
-        text-shadow:4px 4px 0 #000,0 0 50px rgba(212,175,55,0.4);
-        animation:answerPop 0.5s cubic-bezier(0.2,1.5,0.4,1);
-        display:none;
-    }
-    @keyframes answerPop { 0%{transform:scale(0.4);opacity:0;}100%{transform:scale(1);opacity:1;} }
-
-    /* Timer SVG ring */
+    #answer-reveal { font-family:'Anton',sans-serif;font-size:clamp(2.5rem,6vw,5rem);text-align:center;color:#d4af37;text-shadow:4px 4px 0 #000,0 0 50px rgba(212,175,55,.4);animation:answerPop .5s cubic-bezier(.2,1.5,.4,1);display:none; }
+    @keyframes answerPop { 0%{transform:scale(.4);opacity:0;}100%{transform:scale(1);opacity:1;} }
     #timer-ring { position:absolute;top:20px;right:30px;display:none; }
     #timer-ring.show { display:block; }
     .timer-svg-el { transform:rotate(-90deg); }
     #timer-text-el { position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Anton',sans-serif;font-size:1.8rem;color:#fff; }
 
     /* ── PALIER END ── */
-    #palier-screen { position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.97);z-index:600;display:none;flex-direction:column;align-items:center;justify-content:center;gap:20px; }
+    #palier-screen { position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.97);z-index:600;display:none;flex-direction:column;align-items:center;justify-content:center;gap:20px; }
     #palier-screen.show { display:flex; }
-    .palier-icon { font-size:5rem;animation:pulse 1s ease-in-out infinite; }
+    .palier-icon  { font-size:5rem;animation:pulse 1s ease-in-out infinite; }
     @keyframes pulse { 0%,100%{transform:scale(1);}50%{transform:scale(1.1);} }
     .palier-title { font-family:'Anton',sans-serif;font-size:4rem;color:#d4af37;text-shadow:4px 4px 0 #000; }
-    .palier-pts { font-family:'Roboto',sans-serif;font-weight:900;font-size:2.5rem;color:#fff; }
-    .palier-sub { font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#888;letter-spacing:4px; }
+    .palier-pts   { font-family:'Roboto',sans-serif;font-weight:900;font-size:2.5rem;color:#fff; }
+    .palier-sub   { font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#888;letter-spacing:4px; }
 
     /* ── WIN / LOSE ── */
     #win-screen,#lose-screen { position:fixed;top:0;left:0;width:100%;height:100%;z-index:700;display:none;flex-direction:column;align-items:center;justify-content:center;gap:10px; }
-    #win-screen { background:radial-gradient(ellipse at center,#1a2a00 0%,#000 70%); }
+    #win-screen  { background:radial-gradient(ellipse at center,#1a2a00 0%,#000 70%); }
     #lose-screen { background:radial-gradient(ellipse at center,#2a0000 0%,#000 70%); }
-    .big-result-text { font-family:'Anton',sans-serif;font-size:10vw;text-shadow:6px 6px 0 #000;animation:resultBounce 0.5s cubic-bezier(0.2,1.5,0.4,1); }
-    #win-screen .big-result-text { color:#d4af37; }
+    .big-result-text { font-family:'Anton',sans-serif;font-size:10vw;text-shadow:6px 6px 0 #000;animation:resultBounce .5s cubic-bezier(.2,1.5,.4,1); }
+    #win-screen  .big-result-text { color:#d4af37; }
     #lose-screen .big-result-text { color:#e74c3c; }
-    @keyframes resultBounce { 0%{transform:scale(0.3) rotate(-5deg);opacity:0;}100%{transform:scale(1) rotate(0);opacity:1;} }
+    @keyframes resultBounce { 0%{transform:scale(.3) rotate(-5deg);opacity:0;}100%{transform:scale(1) rotate(0);opacity:1;} }
     .result-pts { font-family:'Bebas Neue',sans-serif;font-size:4rem; }
-    #win-screen .result-pts { color:#fff; }
+    #win-screen  .result-pts { color:#fff; }
     #lose-screen .result-pts { color:#888; }
-    #confetti-box,#rain-box { position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none; }
+    #confetti-box,#rain-box { position:absolute;inset:0;pointer-events:none; }
     .trumpet-corner { position:absolute;width:110px; }
-    .tc-tl{top:10px;left:10px;transform:rotate(0);}
-    .tc-tr{top:10px;right:10px;transform:rotate(90deg);}
-    .tc-bl{bottom:10px;left:10px;transform:rotate(-90deg);}
-    .tc-br{bottom:10px;right:10px;transform:rotate(180deg);}
+    .tc-tl{top:10px;left:10px;}  .tc-tr{top:10px;right:10px;transform:rotate(90deg);}
+    .tc-bl{bottom:10px;left:10px;transform:rotate(-90deg);}  .tc-br{bottom:10px;right:10px;transform:rotate(180deg);}
 
     /* ── BONUS NOTIF ── */
-    #bonus-notif { position:fixed;top:75px;right:-500px;z-index:800;background:linear-gradient(135deg,#2a0050,#4a007a);border:3px solid #8e44ad;border-radius:12px;padding:16px 22px;min-width:270px;transition:right 0.5s cubic-bezier(0.2,1,0.4,1); }
+    #bonus-notif { position:fixed;top:75px;right:-500px;z-index:800;background:linear-gradient(135deg,#2a0050,#4a007a);border:3px solid #8e44ad;border-radius:12px;padding:16px 22px;min-width:270px;transition:right .5s cubic-bezier(.2,1,.4,1); }
     #bonus-notif.show { right:20px; }
     .bn-emoji { font-size:2.2rem; }
-    .bn-name { font-family:'Anton',sans-serif;font-size:1.4rem;color:#d4af37; }
-    .bn-desc { font-family:'Roboto',sans-serif;font-size:0.8rem;color:#ccc;margin-top:3px; }
-    .bn-team { font-family:'Bebas Neue',sans-serif;font-size:0.9rem;color:#aaa;margin-top:5px;letter-spacing:2px; }
+    .bn-name  { font-family:'Anton',sans-serif;font-size:1.4rem;color:#d4af37; }
+    .bn-desc  { font-family:'Roboto',sans-serif;font-size:.8rem;color:#ccc;margin-top:3px; }
+    .bn-team  { font-family:'Bebas Neue',sans-serif;font-size:.9rem;color:#aaa;margin-top:5px;letter-spacing:2px; }
 
-    /* ── QUALIFIED BANNER ── */
-    #qualified-banner { position:fixed;top:-120px;left:50%;transform:translateX(-50%);z-index:850;background:#000;border:4px solid #27ae60;border-radius:12px;padding:14px 40px;text-align:center;transition:top 0.6s cubic-bezier(0.2,1,0.4,1);white-space:nowrap; }
+    /* ── QUALIFIED ── */
+    #qualified-banner { position:fixed;top:-120px;left:50%;transform:translateX(-50%);z-index:850;background:#000;border:4px solid #27ae60;border-radius:12px;padding:14px 40px;text-align:center;transition:top .6s cubic-bezier(.2,1,.4,1);white-space:nowrap; }
     #qualified-banner.show { top:80px; }
     .qual-text { font-family:'Anton',sans-serif;font-size:2rem;color:#27ae60; }
-    .qual-sub { font-family:'Bebas Neue',sans-serif;font-size:1rem;color:#aaa;letter-spacing:4px; }
+    .qual-sub  { font-family:'Bebas Neue',sans-serif;font-size:1rem;color:#aaa;letter-spacing:4px; }
 
     /* ── RÉSULTATS ── */
-    #results-screen { position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:900;display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px; }
+    #results-screen { position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:900;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px; }
     #results-screen.show { display:flex; }
     .results-title { font-family:'Anton',sans-serif;font-size:4rem;color:#d4af37;text-shadow:5px 5px 0 #000;letter-spacing:5px; }
-    .result-row { display:flex;align-items:center;gap:20px;background:#111;border:2px solid #333;border-radius:8px;padding:12px 24px;min-width:500px;opacity:0;transform:translateX(-60px);transition:opacity 0.5s,transform 0.5s; }
+    .result-row { display:flex;align-items:center;gap:20px;background:#111;border:2px solid #333;border-radius:8px;padding:12px 24px;min-width:500px;opacity:0;transform:translateX(-60px);transition:opacity .5s,transform .5s; }
     .result-row.show { opacity:1;transform:translateX(0); }
     .result-rank { font-family:'Anton',sans-serif;font-size:2rem;color:#555;min-width:50px; }
-    .result-row:nth-child(2) .result-rank{color:#ffd700;}
-    .result-row:nth-child(3) .result-rank{color:#c0c0c0;}
-    .result-row:nth-child(4) .result-rank{color:#cd7f32;}
+    .result-row:nth-child(2) .result-rank{color:#ffd700;} .result-row:nth-child(3) .result-rank{color:#c0c0c0;} .result-row:nth-child(4) .result-rank{color:#cd7f32;}
     .result-team-name { font-family:'Anton',sans-serif;font-size:1.4rem;flex:1; }
     .result-score { font-family:'Roboto',sans-serif;font-weight:900;font-size:1.7rem;color:#d4af37; }
-    #results-confetti { position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none; }
+    #results-confetti { position:absolute;inset:0;pointer-events:none; }
 
-    /* ── DOT STATUS ── */
-    #dot-status { position:fixed;bottom:6px;right:6px;width:10px;height:10px;border-radius:50%;background:#c0392b;opacity:0.5;z-index:9999;transition:background 0.5s; }
+    #dot-status { position:fixed;bottom:6px;right:6px;width:10px;height:10px;border-radius:50%;background:#c0392b;opacity:.5;z-index:9999;transition:background .5s; }
     #dot-status.ok { background:#27ae60; }
     </style>
 </head>
@@ -324,11 +190,11 @@
 <audio id="sfx-selected" src="effets_sonores/selected.mp3" preload="auto"></audio>
 <audio id="sfx-spin"     src="effets_sonores/spin.mp3"     preload="auto"></audio>
 
-<!-- Fond marquee -->
+<!-- Marquee fond -->
 <div id="bg-marquee">
     <div class="mq-row"><div class="mq-inner"><span class="mq-text">LE WAGON</span><span class="mq-text">MEF TRIVIA</span><span class="mq-text">LE WAGON</span><span class="mq-text">MEF TRIVIA</span></div></div>
     <div class="mq-row rev"><div class="mq-inner"><span class="mq-text">MONTEZ À BORD</span><span class="mq-text">BANQUEZ OU ROULEZ</span><span class="mq-text">MONTEZ À BORD</span><span class="mq-text">BANQUEZ OU ROULEZ</span></div></div>
-    <div class="mq-row"><div class="mq-inner"><span class="mq-text">RISQUEZ TOUT</span><span class="mq-text">PREMIERE EDITION</span><span class="mq-text">RISQUEZ TOUT</span><span class="mq-text">PREMIERE EDITION</span></div></div>
+    <div class="mq-row"><div class="mq-inner"><span class="mq-text">RISQUEZ TOUT</span><span class="mq-text">PREMIÈRE EDITION</span><span class="mq-text">RISQUEZ TOUT</span><span class="mq-text">PREMIÈRE EDITION</span></div></div>
 </div>
 
 <!-- Attente -->
@@ -339,47 +205,38 @@
 
 <!-- ═══ GÉNÉRIQUE ═══ -->
 <div id="generique">
-    <!-- VOIE 3 — haut (lointain, petit) -->
-    <div class="track-layer" id="track3">
-        <div class="track-rails">
-            <div class="track-rail" style="height:3px;background:#181818;"></div>
-            <div class="track-sleepers"><div class="sleeper-inner" id="sleepers3" style="animation-duration:1s;"><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div></div></div>
-            <div class="track-rail" style="height:3px;background:#141414;"></div>
-        </div>
+    <!-- Voie 3 : haut, lointaine -->
+    <div class="track-layer" id="track3" style="bottom:66vh;">
+        <div class="rail-top" style="background:#141414;height:3px;"></div>
+        <div class="sleeper-row"><div class="sleeper-strip slow"><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div></div></div>
+        <div class="rail-bot" style="background:#0f0f0f;height:2px;margin-top:4px;"></div>
     </div>
-    <!-- VOIE 2 — milieu -->
-    <div class="track-layer" id="track2">
-        <div class="track-rails">
-            <div class="track-rail" style="height:5px;background:#1c1c1c;"></div>
-            <div class="track-sleepers"><div class="sleeper-inner" id="sleepers2"><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div></div></div>
-            <div class="track-rail" style="height:4px;background:#161616;"></div>
-        </div>
+    <!-- Voie 2 : milieu -->
+    <div class="track-layer" id="track2" style="bottom:42vh;">
+        <div class="rail-top" style="height:5px;"></div>
+        <div class="sleeper-row"><div class="sleeper-strip"><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div></div></div>
+        <div class="rail-bot"></div>
     </div>
-    <!-- VOIE 1 — bas (proche, grand) -->
-    <div class="track-layer" id="track1">
-        <div class="track-rails">
-            <div class="track-rail" style="height:8px;background:#1f1f1f;"></div>
-            <div class="track-sleepers"><div class="sleeper-inner" id="sleepers1" style="animation-duration:0.3s;"><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div><div class="sleeper"></div></div></div>
-            <div class="track-rail" style="height:6px;background:#191919;"></div>
-        </div>
+    <!-- Voie 1 : bas, proche -->
+    <div class="track-layer" id="track1" style="bottom:14vh;">
+        <div class="rail-top" style="height:8px;background:#1f1f1f;"></div>
+        <div class="sleeper-row"><div class="sleeper-strip fast"><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div><div class="sl"></div></div></div>
+        <div class="rail-bot" style="height:6px;background:#161616;"></div>
     </div>
 
-    <!-- Trains (créés par JS) -->
-    <div id="gen-train-1"></div>
-    <div id="gen-train-2"></div>
-    <div id="gen-train-3"></div>
+    <!-- Trains (HTML injecté par JS) -->
+    <div class="gen-train" id="gen-train-1"></div>
+    <div class="gen-train" id="gen-train-2"></div>
+    <div class="gen-train" id="gen-train-3"></div>
 
-    <!-- Overlay noir -->
     <div id="gen-blackout"></div>
 
-    <!-- Scène tunnel -->
-    <div id="tunnel-scene" style="display:none; position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;display:none;align-items:center;justify-content:center;">
-        <div id="tunnel-hole">
-            <div id="tunnel-glow"></div>
-        </div>
+    <!-- Tunnel -->
+    <div id="tunnel-scene" style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;z-index:10;">
+        <div id="tunnel-hole"><div id="tunnel-glow"></div></div>
     </div>
 
-    <!-- Locomotive face (de face) -->
+    <!-- Loco face -->
     <div id="front-loco"></div>
 
     <!-- Titre -->
@@ -389,8 +246,7 @@
         <span class="t-sub">MEF'S TRIVIA NIGHT — PREMIÈRE ÉDITION</span>
     </div>
 
-    <!-- Confetti -->
-    <div id="gen-confetti-box" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:19;"></div>
+    <div id="gen-confetti-box"></div>
 </div>
 
 <!-- ═══ HEADER ═══ -->
@@ -400,22 +256,19 @@
 </div>
 
 <!-- ═══ BOARD ═══ -->
-<div id="game-board">
-    <div id="wagons-rail"></div>
-</div>
+<div id="game-board"><div id="wagons-rail"></div></div>
 
-<!-- ═══ QUESTION OVERLAY ═══ -->
+<!-- ═══ QUESTION ═══ -->
 <div id="question-overlay">
     <div class="q-theme-label" id="q-theme-el">THÈME</div>
-    <div class="q-badges" id="q-badges-el">
-        <span class="q-badge" id="q-level-el">Q1/10</span>
-        <span class="q-pts-badge" id="q-pts-el">+1 pt</span>
-        <span class="q-pending-badge" id="q-pending-el" style="display:none;">🪙 pts en wagon</span>
-        <span class="q-team-badge" id="q-team-el">ÉQUIPE</span>
+    <div class="q-badges">
+        <span class="q-badge"         id="q-level-el">Q1/10</span>
+        <span class="q-pts-badge"     id="q-pts-el">+1 pt</span>
+        <span class="q-pending-badge" id="q-pending-el" style="display:none;"></span>
+        <span class="q-team-badge"    id="q-team-el">ÉQUIPE</span>
     </div>
     <div id="question-text-el">...</div>
     <div id="answer-reveal"></div>
-    <!-- Timer -->
     <div id="timer-ring">
         <svg class="timer-svg-el" width="100" height="100">
             <circle cx="50" cy="50" r="42" fill="none" stroke="#222" stroke-width="7"/>
@@ -433,7 +286,7 @@
     <div class="palier-sub">BANQUER OU CONTINUER ?</div>
 </div>
 
-<!-- ═══ WIN SCREEN ═══ -->
+<!-- ═══ WIN ═══ -->
 <div id="win-screen">
     <div id="confetti-box"></div>
     <img src="images_front/trompette.png" class="trumpet-corner tc-tl" id="t-tl" style="display:none;">
@@ -441,10 +294,10 @@
     <img src="images_front/trompette.png" class="trumpet-corner tc-bl" id="t-bl" style="display:none;">
     <img src="images_front/trompette.png" class="trumpet-corner tc-br" id="t-br" style="display:none;">
     <div class="big-result-text" id="win-text">BANQUÉ !</div>
-    <div class="result-pts" id="win-pts">+1</div>
+    <div class="result-pts"      id="win-pts">+1</div>
 </div>
 
-<!-- ═══ LOSE SCREEN ═══ -->
+<!-- ═══ LOSE ═══ -->
 <div id="lose-screen">
     <div id="rain-box"></div>
     <div class="big-result-text" id="lose-text">RATÉ !</div>
@@ -453,9 +306,9 @@
 <!-- ═══ BONUS ═══ -->
 <div id="bonus-notif">
     <div class="bn-emoji" id="bn-emoji">🎁</div>
-    <div class="bn-name" id="bn-name">BONUS</div>
-    <div class="bn-desc" id="bn-desc">...</div>
-    <div class="bn-team" id="bn-team">---</div>
+    <div class="bn-name"  id="bn-name">BONUS</div>
+    <div class="bn-desc"  id="bn-desc">...</div>
+    <div class="bn-team"  id="bn-team">---</div>
 </div>
 
 <!-- ═══ QUALIFIED ═══ -->
@@ -476,15 +329,16 @@
 <script src="data.js"></script>
 <script>
 const channel = new BroadcastChannel(CHANNEL_NAME);
-let localState = { teams: [], wagons: [], currentTeamIndex: 0, phase: 'SETUP', config: {} };
+let localState = { teams:[], wagons:[], currentTeamIndex:0, phase:'SETUP', config:{} };
 let timerInterval = null;
 let winLoseTimeout = null;
+let activeWagonIdx = -1; // wagon dont la question est affichée
 
-// ── SONS ──
-function snd(id) { const a=document.getElementById(id); if(a){a.currentTime=0;a.play().catch(()=>{});} }
+// ── Sons ──
+function snd(id)     { const a=document.getElementById(id); if(a){a.currentTime=0;a.play().catch(()=>{});} }
 function stopSnd(id) { const a=document.getElementById(id); if(a){a.pause();a.currentTime=0;} }
 
-// ── CHANNEL ──
+// ── Channel ──
 channel.onmessage = (e) => {
     const { type, data } = e.data;
     switch(type) {
@@ -503,6 +357,7 @@ channel.onmessage = (e) => {
         case 'REROLL_QUESTION': document.getElementById('question-text-el').textContent=data.question; break;
         case 'NEXT_TURN':       handleNextTurn(data); break;
         case 'START_TIMER':     startTimer(data.seconds); break;
+        case 'RESUME_TIMER':    startTimer(data.seconds); break;
         case 'STOP_TIMER':      stopTimer(); break;
         case 'SHOW_BONUS':      showBonus(data); break;
         case 'TEAM_QUALIFIED':  showQualified(data); break;
@@ -513,245 +368,169 @@ channel.onmessage = (e) => {
 setInterval(() => channel.postMessage({type:'PING'}), 4000);
 channel.postMessage({type:'REQUEST_STATE'});
 
-// ── STATE UPDATE ──
 function handleStateUpdate(data) {
     localState = data;
     if (data.phase === 'GAME' || data.phase === 'READY') {
         hideWaiting();
         document.getElementById('game-header').style.display = 'flex';
-        document.getElementById('game-board').style.display = 'block';
+        document.getElementById('game-board').style.display  = 'block';
         renderHeader(); renderWagons();
     }
 }
-function hideWaiting() { document.getElementById('waiting-screen').style.display = 'none'; }
+function hideWaiting() { document.getElementById('waiting-screen').style.display='none'; }
 
 /* ══════════════════════════════════════════
-   GÉNÉRIQUE — 3 ÉTAGES + TUNNEL + FACE TRAIN
+   SVG WAGON — style TGV réaliste
+   Adapté du design fourni (10 fenêtres, 4 groupes palier)
 ══════════════════════════════════════════ */
-
-// SVG train côté (paramétrable : scale, showLoco)
-function makeSideTrainSVG(scale, showLoco=true, windows=5) {
-    const w = Math.round(650 * scale);
-    const h = Math.round(160 * scale);
-    const s = scale;
-    // Couleurs fenêtres génératif
-    const winColors = ['#f1c40f','#ffe066','#ffd700'];
-    const wc = winColors[Math.floor(Math.random()*winColors.length)];
-    let svg = `<svg viewBox="0 0 650 160" width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg">`;
-
-    if (showLoco) {
-        // Locomotive (à droite)
-        svg += `
-        <rect x="400" y="20" width="240" height="100" rx="12" fill="#0a0a1a" stroke="#d4af37" stroke-width="3"/>
-        <rect x="590" y="5" width="20" height="28" rx="5" fill="#1a1a1a" stroke="#d4af37" stroke-width="1.5"/>
-        <rect x="490" y="28" width="80" height="75" rx="6" fill="#0d0d1a" stroke="#d4af37" stroke-width="1.5"/>
-        <rect x="498" y="35" width="30" height="30" rx="4" fill="${wc}"/>
-        <rect x="535" y="35" width="28" height="30" rx="4" fill="${wc}"/>
-        <circle cx="678" cy="80" r="7" fill="#fffde7" stroke="#d4af37" stroke-width="1.5"/>
-        <circle cx="440" cy="130" r="22" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
-        <circle cx="440" cy="130" r="9" fill="#1a1a1a"/>
-        <circle cx="510" cy="130" r="22" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
-        <circle cx="510" cy="130" r="9" fill="#1a1a1a"/>
-        <circle cx="590" cy="130" r="26" fill="#111" stroke="#d4af37" stroke-width="3"/>
-        <circle cx="590" cy="130" r="10" fill="#1a1a1a"/>
-        <line x1="440" y1="130" x2="590" y2="130" stroke="#d4af37" stroke-width="3"/>`;
-    }
-
-    // Wagons (à gauche)
-    const wagonW = 185;
-    const wCount = showLoco ? 2 : 3;
-    for (let i = 0; i < wCount; i++) {
-        const x = 5 + i * (wagonW + 10);
-        svg += `
-        <rect x="${x}" y="30" width="${wagonW}" height="90" rx="8" fill="#0a0a1a" stroke="#d4af37" stroke-width="2.5"/>`;
-        // Fenêtres
-        const winW = 33, winH = 36, winY = 42, gap = (wagonW - 8 - 4 * winW) / 3;
-        for (let j = 0; j < 4; j++) {
-            const wx = x + 4 + j * (winW + gap);
-            svg += `<rect x="${wx}" y="${winY}" width="${winW}" height="${winH}" rx="4" fill="${wc}"/>`;
-        }
-        // Roues
-        const wx1 = x + 35, wx2 = x + wagonW - 35;
-        svg += `
-        <circle cx="${wx1}" cy="130" r="18" fill="#111" stroke="#d4af37" stroke-width="2"/>
-        <circle cx="${wx1}" cy="130" r="7" fill="#1a1a1a"/>
-        <circle cx="${wx2}" cy="130" r="18" fill="#111" stroke="#d4af37" stroke-width="2"/>
-        <circle cx="${wx2}" cy="130" r="7" fill="#1a1a1a"/>`;
-    }
-
-    svg += '</svg>';
-    return svg;
+function darkenHex(hex, f) {
+    let r=parseInt(hex.slice(1,3),16), g=parseInt(hex.slice(3,5),16), b=parseInt(hex.slice(5,7),16);
+    if(isNaN(r)){return hex;}
+    return `rgb(${Math.round(r*f)},${Math.round(g*f)},${Math.round(b*f)})`;
 }
 
-// SVG Locomotive de face
-function makeFrontLocoSVG() {
-    return `<svg viewBox="0 0 300 400" width="440" height="590" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="hlight" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fff8c0" stop-opacity="1"/>
-      <stop offset="60%" stop-color="#ffe080" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <!-- Corps principal -->
-  <rect x="25" y="80" width="250" height="290" rx="18" fill="#0a0a1a" stroke="#d4af37" stroke-width="4"/>
-  <!-- Cheminées -->
-  <rect x="58" y="12" width="30" height="82" rx="8" fill="#0d0d0d" stroke="#d4af37" stroke-width="3"/>
-  <ellipse cx="73" cy="12" rx="19" ry="7" fill="#111" stroke="#d4af37" stroke-width="2"/>
-  <rect x="212" y="12" width="30" height="82" rx="8" fill="#0d0d0d" stroke="#d4af37" stroke-width="3"/>
-  <ellipse cx="227" cy="12" rx="19" ry="7" fill="#111" stroke="#d4af37" stroke-width="2"/>
-  <!-- Phare central -->
-  <circle cx="150" cy="195" r="68" fill="#111" stroke="#d4af37" stroke-width="5"/>
-  <circle cx="150" cy="195" r="55" fill="#090910" stroke="#555" stroke-width="2"/>
-  <circle cx="150" cy="195" r="42" fill="url(#hlight)" filter="url(#glow)"/>
-  <!-- Halo lumineux -->
-  <circle cx="150" cy="195" r="38" fill="#fffde7" opacity="0.95"/>
-  <circle cx="135" cy="180" r="10" fill="white" opacity="0.5"/>
-  <!-- Petits phares latéraux -->
-  <circle cx="68" cy="140" r="20" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
-  <circle cx="68" cy="140" r="13" fill="#f1c40f"/>
-  <circle cx="232" cy="140" r="20" fill="#111" stroke="#d4af37" stroke-width="2.5"/>
-  <circle cx="232" cy="140" r="13" fill="#f1c40f"/>
-  <!-- Plaque d'immatriculation -->
-  <rect x="95" y="295" width="110" height="42" rx="6" fill="#111" stroke="#d4af37" stroke-width="2"/>
-  <text x="150" y="324" text-anchor="middle" fill="#d4af37" font-family="Anton,sans-serif" font-size="24">MEF</text>
-  <!-- Pare-choc -->
-  <rect x="15" y="350" width="270" height="22" rx="7" fill="#1a1a1a" stroke="#d4af37" stroke-width="2.5"/>
-  <rect x="40" y="356" width="40" height="10" rx="3" fill="#d4af37"/>
-  <rect x="220" y="356" width="40" height="10" rx="3" fill="#d4af37"/>
+function makeWagonSVG(wagon) {
+    const VW=920, VH=132;
+    const BC='#1a1a2e';          // body color
+    const SC='#d4af37';          // stripe (gold)
+    const DARK='#0d0d16';
+    const MED='#12122a';
+
+    // Groupes de fenêtres par palier : 3+3+3+1
+    // x: position left, w: largeur, qi: index 0-based
+    const winH=36, winY=34;
+    const groups = [
+        // Palier 1 — Q1 Q2 Q3
+        [{qi:0,x:80,w:50},{qi:1,x:138,w:50},{qi:2,x:196,w:50}],
+        // Palier 2 — Q4 Q5 Q6
+        [{qi:3,x:295,w:50},{qi:4,x:353,w:50},{qi:5,x:411,w:50}],
+        // Palier 3 — Q7 Q8 Q9
+        [{qi:6,x:510,w:50},{qi:7,x:568,w:50},{qi:8,x:626,w:50}],
+        // Q10 (jackpot — fenêtre plus large)
+        [{qi:9,x:720,w:66}]
+    ];
+
+    // Couleur de chaque fenêtre selon état
+    function wColor(qi) {
+        if (qi >= (wagon.depth||10)) return '#06060e';
+        const ws = wagon.windowStates[qi];
+        if (!ws) return '#06060e';
+        if (ws.banked && ws.teamColor) return ws.teamColor;
+        if (ws.reached) return '#e67e22';   // pending / en attente dans wagon
+        return '#ffd54f';                   // disponible
+    }
+    function wTextColor(qi) {
+        const c = wColor(qi);
+        if (c === '#ffd54f') return '#7a5c00';
+        if (c === '#e67e22') return '#3a1500';
+        if (c === '#06060e') return '#222';
+        return '#000';
+    }
+    function wGlow(qi) {
+        const ws = wagon.windowStates && wagon.windowStates[qi];
+        if (ws && ws.banked && ws.teamColor) return `filter="url(#wglow)"`;
+        return '';
+    }
+
+    // Générer les fenêtres SVG
+    let winsHTML = '';
+    groups.forEach((group, gi) => {
+        group.forEach(({qi, x, w}) => {
+            const pts = gPts(qi+1);
+            const fill = wColor(qi);
+            const tc   = wTextColor(qi);
+            const glow = wGlow(qi);
+            winsHTML += `
+            <rect x="${x}" y="${winY}" width="${w}" height="${winH}" rx="5"
+                fill="${fill}" stroke="rgba(255,255,255,0.06)" stroke-width="0.8" ${glow}/>
+            <rect x="${x+4}" y="${winY+3}" width="${Math.floor(w/2)-3}" height="9" rx="3"
+                fill="rgba(255,255,255,0.18)" pointer-events="none"/>
+            <text x="${x+w/2}" y="${winY+winH-7}" text-anchor="middle"
+                font-family="Anton,sans-serif" font-size="13" fill="${tc}">${pts}</text>`;
+        });
+    });
+
+    // Petits labels palier sous les groupes
+    const palierLabels = `
+        <text x="158" y="${winY+winH+14}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#444">PALIER 1 · 1pt</text>
+        <text x="373" y="${winY+winH+14}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#444">PALIER 2 · 2pts</text>
+        <text x="588" y="${winY+winH+14}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#444">PALIER 3 · 3pts</text>
+        <text x="753" y="${winY+winH+14}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#d4af37">5 pts ★</text>`;
+
+    // Bogies (4 ensembles de roues)
+    const bogies = [105, 310, 515, 740].map(bx => `
+        <rect x="${bx-22}" y="112" width="44" height="7" rx="2" fill="#1a1a1a"/>
+        <rect x="${bx-2}"  y="110" width="4"  height="10" fill="#222"/>
+        <circle cx="${bx-12}" cy="122" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
+        <circle cx="${bx-12}" cy="122" r="3" fill="#555"/>
+        <circle cx="${bx+12}" cy="122" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
+        <circle cx="${bx+12}" cy="122" r="3" fill="#555"/>`).join('');
+
+    // Séparateurs de portes entre paliers (porte entre chaque groupe)
+    const doors = [253, 463, 673].map(dx => `
+        <rect x="${dx}" y="12" width="24" height="99" fill="${MED}" stroke="${DARK}" stroke-width="0.8"/>
+        <rect x="${dx+4}" y="20" width="16" height="82" rx="2" fill="${DARK}" opacity="0.8"/>
+        <rect x="${dx+10}" y="55" width="4" height="8" rx="2" fill="#333"/>`).join('');
+
+    return `<svg viewBox="0 0 ${VW} ${VH}" width="100%" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+<defs>
+  <filter id="wglow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="rgba(255,255,255,0.6)"/>
+  </filter>
+</defs>
+
+<!-- Rails -->
+<rect x="0" y="122" width="${VW}" height="5" rx="1" fill="#191919"/>
+<rect x="0" y="129" width="${VW}" height="3" rx="1" fill="#141414"/>
+${[...Array(32)].map((_,i)=>`<rect x="${i*30+2}" y="120" width="14" height="12" rx="1" fill="#111"/>`).join('')}
+
+<!-- Corps principal -->
+<rect x="65" y="10" width="${VW-130}" height="102" fill="${BC}" stroke="${DARK}" stroke-width="1"/>
+
+<!-- Nez avant (gauche) -->
+<path d="M65 10 Q0 10 0 45 L0 104 Q0 112 10 112 L65 112 Z" fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
+<path d="M65 17 L12 17 Q2 26 2 38" fill="none" stroke="${SC}" stroke-width="10" opacity="0.9"/>
+<path d="M65 105 L10 105" fill="none" stroke="${SC}" stroke-width="4" opacity="0.5"/>
+<rect x="12" y="50" width="36" height="26" rx="5" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
+<ellipse cx="30" cy="63" rx="11" ry="8" fill="#fffde7" opacity="0.92"/>
+<ellipse cx="25" cy="59" rx="4"  ry="3" fill="white" opacity="0.5"/>
+
+<!-- Nez arrière (droite) -->
+<path d="M${VW-65} 10 Q${VW} 10 ${VW} 45 L${VW} 104 Q${VW} 112 ${VW-10} 112 L${VW-65} 112 Z" fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
+<path d="M${VW-65} 17 L${VW-12} 17 Q${VW-2} 26 ${VW-2} 38" fill="none" stroke="${SC}" stroke-width="10" opacity="0.9"/>
+<path d="M${VW-65} 105 L${VW-10} 105" fill="none" stroke="${SC}" stroke-width="4" opacity="0.5"/>
+<rect x="${VW-48}" y="50" width="36" height="26" rx="5" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
+<ellipse cx="${VW-30}" cy="63" rx="11" ry="8" fill="#fffde7" opacity="0.92"/>
+
+<!-- Bande dorée haut -->
+<rect x="65" y="15" width="${VW-130}" height="12" fill="${SC}" opacity="0.92"/>
+<!-- Bande dorée bas -->
+<rect x="65" y="104" width="${VW-130}" height="5" fill="${SC}" opacity="0.5"/>
+<!-- Highlight silver haut -->
+<rect x="65" y="10" width="${VW-130}" height="2" fill="rgba(255,255,255,0.08)"/>
+<!-- Bas sombre -->
+<rect x="65" y="111" width="${VW-130}" height="9" fill="${DARK}"/>
+
+<!-- Portes / séparateurs -->
+${doors}
+
+<!-- Fenêtres -->
+${winsHTML}
+
+<!-- Labels palier -->
+${palierLabels}
+
+<!-- Bogies -->
+${bogies}
+
+<!-- Attelages -->
+<rect x="0"     y="60" width="8"  height="6" rx="2" fill="#444"/>
+<rect x="${VW-8}" y="60" width="8"  height="6" rx="2" fill="#444"/>
 </svg>`;
 }
 
-function runGenerique() {
-    document.getElementById('waiting-screen').style.display = 'none';
-    const gen = document.getElementById('generique');
-    gen.style.display = 'block';
-    snd('sfx-intro');
-
-    // Positions des voies (bottom depuis le bas du parent)
-    document.getElementById('track1').style.bottom = '10vh';
-    document.getElementById('track2').style.bottom = '38vh';
-    document.getElementById('track3').style.bottom = '63vh';
-
-    let t = 0;
-
-    // ─── ÉTAGE 1 : bas, grand train, gauche → droite ───
-    setTimeout(() => {
-        const el = document.getElementById('gen-train-1');
-        el.innerHTML = makeSideTrainSVG(1.05, true);
-        el.style.cssText = `position:absolute;bottom:14vh;left:0;transform:translateX(-110vw);transition:transform 2.6s cubic-bezier(0.3,0,0.7,1);`;
-        void el.offsetWidth;
-        el.style.transform = 'translateX(110vw)';
-        snd('sfx-spin');
-        spawnSteamPuffs(15, 80, false);
-    }, t += 200);
-
-    // ─── ÉTAGE 2 : milieu, petit train, droite → gauche ───
-    setTimeout(() => {
-        const el = document.getElementById('gen-train-2');
-        el.innerHTML = makeSideTrainSVG(0.65, true);
-        el.style.cssText = `position:absolute;bottom:41vh;right:0;transform:translateX(110vw) scaleX(-1);transition:transform 2.2s cubic-bezier(0.3,0,0.7,1);`;
-        void el.offsetWidth;
-        el.style.transform = 'translateX(-110vw) scaleX(-1)';
-        spawnSteamPuffs(8, 40, true);
-    }, t += 2200);
-
-    // ─── ÉTAGE 3 : haut, très petit train, gauche → droite, rapide ───
-    setTimeout(() => {
-        const el = document.getElementById('gen-train-3');
-        el.innerHTML = makeSideTrainSVG(0.45, false);
-        el.style.cssText = `position:absolute;bottom:67vh;left:0;transform:translateX(-110vw);transition:transform 1.4s cubic-bezier(0.4,0,0.8,1);`;
-        void el.offsetWidth;
-        el.style.transform = 'translateX(110vw)';
-        snd('sfx-break');
-    }, t += 1800);
-
-    // ─── BLACKOUT ───
-    setTimeout(() => {
-        const blackout = document.getElementById('gen-blackout');
-        blackout.style.opacity = '0'; void blackout.offsetWidth;
-        blackout.style.transition = 'opacity 0.9s ease-in';
-        blackout.style.opacity = '1';
-    }, t += 1600);
-
-    // ─── TUNNEL ───
-    setTimeout(() => {
-        const scene = document.getElementById('tunnel-scene');
-        scene.style.display = 'flex';
-        const hole = document.getElementById('tunnel-hole');
-        hole.classList.add('grow');
-    }, t += 1000);
-
-    // ─── LOCO DE FACE ───
-    setTimeout(() => {
-        const loco = document.getElementById('front-loco');
-        loco.innerHTML = makeFrontLocoSVG();
-        loco.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);opacity:0;z-index:12;';
-        void loco.offsetWidth;
-        loco.classList.add('emerge');
-        snd('sfx-spin');
-    }, t += 800);
-
-    // ─── TITRE ───
-    setTimeout(() => {
-        const title = document.getElementById('gen-title');
-        title.classList.add('drop');
-        snd('sfx-win');
-        spawnGenConfetti(100);
-    }, t += 1500);
-    setTimeout(() => spawnGenConfetti(60), t + 600);
-
-    // ─── TRANSITION VERS JEU ───
-    setTimeout(() => {
-        document.getElementById('gen-title').classList.add('outro');
-    }, t += 3500);
-    setTimeout(() => {
-        gen.style.transition = 'opacity 0.9s';
-        gen.style.opacity = '0';
-        setTimeout(() => { gen.style.display='none'; gen.style.opacity='1'; transitionToGame(); }, 900);
-    }, t + 700);
-}
-
-function skipGenerique() {
-    stopSnd('sfx-intro'); stopSnd('sfx-spin');
-    document.getElementById('generique').style.display = 'none';
-    document.getElementById('waiting-screen').style.display = 'none';
-    transitionToGame();
-}
-function transitionToGame() {
-    document.getElementById('game-header').style.display = 'flex';
-    document.getElementById('game-board').style.display = 'block';
-    renderHeader(); renderWagons(); snd('sfx-selected');
-}
-
-function spawnSteamPuffs(n, xVw, fromRight) {
-    const gen = document.getElementById('generique');
-    for (let i = 0; i < n; i++) {
-        setTimeout(() => {
-            const p = document.createElement('div');
-            p.className = 'steam-puff';
-            const sz = 8 + Math.random() * 16;
-            p.style.cssText = `width:${sz}px;height:${sz}px;left:${xVw+(Math.random()-0.5)*10}vw;top:${40+Math.random()*20}vh;animation-duration:${0.8+Math.random()*0.8}s;`;
-            gen.appendChild(p);
-            setTimeout(() => p.remove(), 1200);
-        }, i * 80);
-    }
-}
-function spawnGenConfetti(n) {
-    const box = document.getElementById('gen-confetti-box');
-    const colors = ['#d4af37','#fff','#e74c3c','#3498db','#f1c40f','#2ecc71','#e67e22'];
-    for (let i = 0; i < n; i++) {
-        const c = document.createElement('div'); c.className = 'gen-conf';
-        const sz = 6 + Math.random() * 10;
-        c.style.cssText = `width:${sz}px;height:${sz}px;left:${Math.random()*100}vw;top:-20px;background:${colors[i%colors.length]};animation-duration:${1.5+Math.random()*2.5}s;animation-delay:${Math.random()*0.6}s;border-radius:${Math.random()>0.5?'50%':'3px'};`;
-        box.appendChild(c);
-        setTimeout(() => c.remove(), 3500);
-    }
-}
+// Helper local
+function gPts(l){if(l<=3)return 1;if(l<=6)return 2;if(l<=9)return 3;return 5;}
 
 /* ── HEADER ── */
 function renderHeader() {
@@ -761,93 +540,51 @@ function renderHeader() {
         const chip = document.createElement('div');
         chip.className = 'team-chip' + (i===localState.currentTeamIndex?' active':'') + (t.qualified?' qualified':'');
         chip.style.borderColor = i===localState.currentTeamIndex ? t.color : '#333';
-        chip.innerHTML = `<div class="team-chip-dot" style="background:${t.color}"></div><div class="team-chip-name">${t.name}</div><div class="team-chip-score">${t.score}</div>${t.qualified?'<span style="color:#27ae60;font-size:0.8rem">✓</span>':''}`;
+        chip.innerHTML = `<div class="team-chip-dot" style="background:${t.color}"></div><div class="team-chip-name">${t.name}</div><div class="team-chip-score">${t.score}</div>${t.qualified?'<span style="color:#27ae60;font-size:.8rem">✓</span>':''}`;
         el.appendChild(chip);
     });
 }
 
-/* ══════════════════════════════════════════
-   WAGONS — PLEINE LARGEUR, 1 PAR LIGNE
-══════════════════════════════════════════ */
+/* ── WAGONS ── */
 function renderWagons() {
     const rail = document.getElementById('wagons-rail');
     rail.innerHTML = '';
-    if (!localState.wagons || localState.wagons.length === 0) return;
-
+    if (!localState.wagons || !localState.wagons.length) return;
     localState.wagons.forEach((w, wi) => {
         const row = document.createElement('div');
-        row.className = 'wagon-row' + (w.completed ? ' completed-wagon' : '');
+        row.className = 'wagon-row' + (wi===activeWagonIdx?' active-wagon':'') + (w.completed?' completed-wagon':'');
         row.id = `wagon-row-${wi}`;
 
-        // Calcul des séparateurs de palier
         const depth = w.depth || 10;
-        const t1 = Math.ceil(depth * 3 / 10);  // fin palier 1
-        const t2 = Math.ceil(depth * 6 / 10);  // fin palier 2
-        const t3 = Math.ceil(depth * 9 / 10);  // fin palier 3
-
-        // Fenêtres
-        let winHTML = '';
-        for (let qi = 0; qi < depth; qi++) {
-            // Séparateur palier
-            if (qi === t1 || qi === t2 || qi === t3) {
-                winHTML += `<div class="palier-sep"></div>`;
-            }
-            const ws = w.windowStates[qi];
-            const pts = getPointsForLevel(qi + 1);
-            let cls = 'wagon-window';
-            let style = '';
-            if (ws && ws.banked && ws.teamColor) {
-                cls += ' banked';
-                style = `background:${ws.teamColor};--glow-color:${ws.teamColor}80;`;
-            } else if (ws && ws.reached) {
-                cls += ' lit';
-            }
-            winHTML += `<div class="${cls}" style="${style}">${pts}</div>`;
-        }
-
-        // Info header
-        const pending = w.pendingPoints > 0 ? `<span class="wagon-info-pending">🪙 ${w.pendingPoints} pts</span>` : '';
-        const bankable = isBankingAllowed(w.currentLevel, w.depth) && w.currentLevel > 0 && !w.completed;
-        const bankBadge = bankable ? `<span class="wagon-info-bank">💰 BANQUABLE</span>` : '';
-        const progress = w.completed ? '✓ COMPLET' : `Q${w.currentLevel+1}/${depth}`;
+        const pending  = w.pendingPoints > 0 ? `<span class="wagon-info-pending">🪙 ${w.pendingPoints} pts</span>` : '';
+        const bankable = isBankingAllowed(w.currentLevel, depth) && w.currentLevel>0 && !w.completed;
+        const bankBadge= bankable ? `<span class="wagon-info-bank">💰 BANQUABLE</span>` : '';
+        const progress = w.completed ? '<span style="color:#27ae60">✓ COMPLET</span>' : `Q${w.currentLevel+1}/${depth}`;
 
         row.innerHTML = `
             <div class="wagon-row-header">
-                <div class="wagon-row-name">${w.theme}</div>
-                <div class="wagon-row-info">
-                    <span>${progress}</span>
-                    ${pending}
-                    ${bankBadge}
-                </div>
+                <div class="wagon-row-name" style="color:${w.themeColor||'#fff'}">${w.theme}</div>
+                <div class="wagon-row-info">${progress} ${pending} ${bankBadge}</div>
             </div>
-            <div class="wagon-row-body">
-                <div class="wagon-windows-row">${winHTML}</div>
-            </div>
-            <div class="wagon-chassis"></div>
-            <div class="wagon-wheels-row">
-                <div class="wheel"></div>
-                <div class="wheel"></div>
-                <div class="wheel"></div>
-                <div class="wheel"></div>
-                <div class="wheel"></div>
-            </div>`;
+            <div class="wagon-svg-wrap">${makeWagonSVG(w)}</div>`;
         rail.appendChild(row);
     });
 }
 
 /* ── QUESTION ── */
 function showQuestion(data) {
+    activeWagonIdx = (data.wagonIndex !== undefined) ? data.wagonIndex : -1;
     document.getElementById('q-theme-el').textContent = data.theme;
     document.getElementById('q-theme-el').style.color = data.themeColor || '#888';
-    document.getElementById('q-level-el').textContent = `Q${data.level}/${data.depth}  ·  Palier ${data.tier}`;
-    document.getElementById('q-pts-el').textContent = `+${data.points} pt${data.points>1?'s':''}`;
+    document.getElementById('q-level-el').textContent = `Q${data.level}/${data.depth} · Palier ${data.tier}`;
+    document.getElementById('q-pts-el').textContent   = `+${data.points} pt${data.points>1?'s':''}`;
     document.getElementById('question-text-el').textContent = data.question;
-    document.getElementById('answer-reveal').style.display = 'none';
-    document.getElementById('answer-reveal').textContent = '';
+    document.getElementById('answer-reveal').style.display  = 'none';
+    document.getElementById('answer-reveal').textContent    = '';
 
-    const pendEl = document.getElementById('q-pending-el');
-    if (data.pendingPoints > 0) { pendEl.textContent = `🪙 +${data.pendingPoints} en wagon`; pendEl.style.display=''; }
-    else { pendEl.style.display='none'; }
+    const pEl = document.getElementById('q-pending-el');
+    if (data.pendingPoints > 0) { pEl.textContent=`🪙 +${data.pendingPoints} en wagon`; pEl.style.display=''; }
+    else pEl.style.display='none';
 
     const tb = document.getElementById('q-team-el');
     tb.textContent = data.teamName;
@@ -856,30 +593,27 @@ function showQuestion(data) {
     hidePalierScreen();
     document.getElementById('question-overlay').classList.add('show');
     snd('sfx-selected');
-
-    // Marquer le wagon actif visuellement
-    document.querySelectorAll('.wagon-row').forEach(r => r.classList.remove('active-wagon'));
+    renderWagons(); // highlight le wagon actif
 }
+
 function hideQuestion() {
+    activeWagonIdx = -1;
     document.getElementById('question-overlay').classList.remove('show');
     document.getElementById('answer-reveal').style.display = 'none';
-    hidePalierScreen(); stopTimer();
+    hidePalierScreen(); stopTimer(); renderWagons();
 }
 
-/* ── CORRECT → affiche la réponse + allume fenêtre ── */
+/* ── CORRECT ── */
 function handleCorrect(data) {
     if (localState.wagons[data.wagonIndex]) {
         const ws = localState.wagons[data.wagonIndex].windowStates;
-        if (ws[data.level]) { ws[data.level].reached = true; }
+        if (ws[data.level]) ws[data.level].reached = true;
         localState.wagons[data.wagonIndex].currentLevel = data.level + 1;
-        renderWagons();
     }
-    // Afficher la réponse sur l'overlay
     const ar = document.getElementById('answer-reveal');
     ar.textContent = data.answer;
     ar.style.display = 'block';
-    snd('sfx-reveal');
-    stopTimer();
+    snd('sfx-reveal'); stopTimer(); renderWagons();
 }
 
 /* ── WRONG ── */
@@ -898,16 +632,19 @@ function handleWrong(data) {
 function handleBank(data) {
     hideQuestion(); stopTimer();
     if (localState.wagons[data.wagonIndex]) {
-        localState.wagons[data.wagonIndex].windowStates = data.windowStates;
-        localState.wagons[data.wagonIndex].pendingPoints = 0;
-        renderWagons();
+        localState.wagons[data.wagonIndex].windowStates   = data.windowStates;
+        localState.wagons[data.wagonIndex].pendingPoints  = 0;
+        if (data.wagonIndex < localState.wagons.length) {
+            if (localState.wagons[data.wagonIndex].currentLevel >= localState.wagons[data.wagonIndex].depth)
+                localState.wagons[data.wagonIndex].completed = true;
+        }
     }
     const team = localState.teams.find(t => t.name===data.teamName);
     if (team) { team.score = data.score; renderHeader(); }
 
     const msgs = ["BANQUÉ !", "SAFE !", "SÉCURISÉ !", "WISE MOVE !"];
     document.getElementById('win-text').textContent = msgs[Math.floor(Math.random()*msgs.length)];
-    document.getElementById('win-pts').textContent = `+${data.points} PTS`;
+    document.getElementById('win-pts').textContent  = `+${data.points} PTS`;
     ['t-tl','t-tr','t-bl','t-br'].forEach(id => { const e=document.getElementById(id); if(e)e.style.display='block'; });
     document.getElementById('win-screen').style.display = 'flex';
     createConfetti(document.getElementById('confetti-box'));
@@ -917,6 +654,7 @@ function handleBank(data) {
         document.getElementById('win-screen').style.display='none';
         document.getElementById('confetti-box').innerHTML='';
         ['t-tl','t-tr','t-bl','t-br'].forEach(id => { const e=document.getElementById(id); if(e)e.style.display='none'; });
+        renderWagons();
     }, 3500);
 }
 
@@ -937,11 +675,11 @@ function handleNextTurn(data) {
 /* ── TIMER ── */
 function startTimer(seconds) {
     stopTimer();
-    const arc = document.getElementById('timer-arc');
-    const txt = document.getElementById('timer-text-el');
+    const arc  = document.getElementById('timer-arc');
+    const txt  = document.getElementById('timer-text-el');
     const cont = document.getElementById('timer-ring');
     const circ = 2 * Math.PI * 42;
-    arc.style.strokeDasharray = circ;
+    arc.style.strokeDasharray  = circ;
     arc.style.strokeDashoffset = 0;
     let t = seconds;
     txt.textContent = t;
@@ -963,10 +701,10 @@ function stopTimer() {
 /* ── BONUS ── */
 function showBonus(data) {
     document.getElementById('bn-emoji').textContent = data.bonus.emoji||'🎁';
-    document.getElementById('bn-name').textContent = data.bonus.name;
-    document.getElementById('bn-desc').textContent = data.bonus.desc;
-    document.getElementById('bn-team').textContent = data.teamName;
-    document.getElementById('bn-team').style.color = data.teamColor;
+    document.getElementById('bn-name').textContent  = data.bonus.name;
+    document.getElementById('bn-desc').textContent  = data.bonus.desc;
+    document.getElementById('bn-team').textContent  = data.teamName;
+    document.getElementById('bn-team').style.color  = data.teamColor;
     const n = document.getElementById('bonus-notif');
     n.classList.add('show'); snd('sfx-selected');
     setTimeout(() => n.classList.remove('show'), 5000);
@@ -1004,24 +742,187 @@ function showResults(results) {
 function createConfetti(container) {
     container.innerHTML = '';
     const colors=['#d4af37','#fff','#e74c3c','#3498db','#f1c40f','#2ecc71','#e67e22'];
-    for (let i=0;i<300;i++) {
+    for(let i=0;i<300;i++){
         const c=document.createElement('div');c.className='gen-conf';
         const sz=5+Math.random()*12;
-        c.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}vw;top:-20px;background:${colors[i%colors.length]};animation-duration:${1.5+Math.random()*2.5}s;animation-delay:${Math.random()*0.8}s;border-radius:${Math.random()>0.5?'50%':'3px'};`;
+        c.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}vw;top:-20px;background:${colors[i%colors.length]};animation-duration:${1.5+Math.random()*2.5}s;animation-delay:${Math.random()*.8}s;border-radius:${Math.random()>.5?'50%':'3px'};`;
         container.appendChild(c);
     }
 }
 function createRain(container) {
-    container.innerHTML = '';
-    if (!document.getElementById('rain-style')) {
-        const st=document.createElement('style');st.id='rain-style';
-        st.textContent='@keyframes rainDrop{0%{transform:translateY(-80px)}100%{transform:translateY(110vh)}}';
-        document.head.appendChild(st);
-    }
-    for (let i=0;i<80;i++) {
-        const d=document.createElement('div');
-        d.style.cssText=`position:absolute;left:${Math.random()*100}vw;width:2px;height:${20+Math.random()*35}px;background:rgba(100,150,255,0.35);animation:rainDrop ${0.4+Math.random()*0.4}s linear ${Math.random()*1}s infinite;`;
-        container.appendChild(d);
+    container.innerHTML='';
+    if(!document.getElementById('rain-style')){const st=document.createElement('style');st.id='rain-style';st.textContent='@keyframes rd{0%{transform:translateY(-80px)}100%{transform:translateY(110vh)}}';document.head.appendChild(st);}
+    for(let i=0;i<80;i++){const d=document.createElement('div');d.style.cssText=`position:absolute;left:${Math.random()*100}vw;width:2px;height:${20+Math.random()*35}px;background:rgba(100,150,255,.35);animation:rd ${.4+Math.random()*.4}s linear ${Math.random()}s infinite;`;container.appendChild(d);}
+}
+
+/* ══════════════════════════════════════════
+   GÉNÉRIQUE
+══════════════════════════════════════════ */
+function makeSideSVG(scale, reversed) {
+    const w=Math.round(780*scale), h=Math.round(140*scale);
+    const wc='#f1c40f';
+    const flip = reversed ? ` transform="scale(-1,1) translate(-780,0)"` : '';
+    return `<svg viewBox="0 0 780 140" width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><g${flip}>
+<!-- Rails -->
+<rect x="0" y="116" width="780" height="5" fill="#1a1a1a"/>
+<rect x="0" y="123" width="780" height="3" fill="#111"/>
+${[...Array(26)].map((_,i)=>`<rect x="${i*30+5}" y="114" width="14" height="12" rx="1" fill="#121212"/>`).join('')}
+<!-- Wagon 1 -->
+<rect x="5" y="28" width="185" height="82" rx="8" fill="#0d0d1a" stroke="#d4af37" stroke-width="2.5"/>
+<rect x="15" y="38" width="36" height="32" rx="4" fill="${wc}"/><rect x="59" y="38" width="36" height="32" rx="4" fill="${wc}"/><rect x="103" y="38" width="36" height="32" rx="4" fill="${wc}"/><rect x="147" y="38" width="36" height="32" rx="4" fill="${wc}"/>
+<circle cx="45"  cy="116" r="17" fill="#111" stroke="#d4af37" stroke-width="2.5"/><circle cx="45"  cy="116" r="6" fill="#1a1a1a"/>
+<circle cx="155" cy="116" r="17" fill="#111" stroke="#d4af37" stroke-width="2.5"/><circle cx="155" cy="116" r="6" fill="#1a1a1a"/>
+<rect x="190" y="66" width="18" height="5" rx="2" fill="#555"/>
+<!-- Wagon 2 -->
+<rect x="208" y="28" width="185" height="82" rx="8" fill="#0d0d1a" stroke="#d4af37" stroke-width="2.5"/>
+<rect x="218" y="38" width="36" height="32" rx="4" fill="${wc}"/><rect x="262" y="38" width="36" height="32" rx="4" fill="${wc}"/><rect x="306" y="38" width="36" height="32" rx="4" fill="${wc}"/><rect x="350" y="38" width="36" height="32" rx="4" fill="${wc}"/>
+<circle cx="248" cy="116" r="17" fill="#111" stroke="#d4af37" stroke-width="2.5"/><circle cx="248" cy="116" r="6" fill="#1a1a1a"/>
+<circle cx="358" cy="116" r="17" fill="#111" stroke="#d4af37" stroke-width="2.5"/><circle cx="358" cy="116" r="6" fill="#1a1a1a"/>
+<rect x="393" y="66" width="18" height="5" rx="2" fill="#555"/>
+<!-- Locomotive -->
+<rect x="411" y="14" width="360" height="98" rx="12" fill="#0d0d1a" stroke="#d4af37" stroke-width="3"/>
+<rect x="706" y="3"  width="22" height="30" rx="6" fill="#111" stroke="#d4af37" stroke-width="2"/>
+<ellipse cx="717" cy="3" rx="14" ry="5" fill="#1a1a1a" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="608" y="20" width="90" height="72" rx="6" fill="#0d0d14" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="616" y="27" width="36" height="32" rx="4" fill="${wc}"/><rect x="656" y="27" width="36" height="32" rx="4" fill="${wc}"/>
+<circle cx="757" cy="80" r="8" fill="#fffde7" stroke="#d4af37" stroke-width="1.5"/>
+<rect x="421" y="48" width="175" height="48" rx="4" fill="#0d0d14" stroke="#1a1a2e"/>
+<rect x="431" y="55" width="30" height="24" rx="3" fill="#0a0a1e"/><rect x="470" y="55" width="30" height="24" rx="3" fill="#0a0a1e"/><rect x="509" y="55" width="30" height="24" rx="3" fill="#0a0a1e"/>
+<circle cx="455" cy="116" r="22" fill="#111" stroke="#d4af37" stroke-width="3"/><circle cx="455" cy="116" r="8" fill="#1a1a1a"/>
+<circle cx="525" cy="116" r="22" fill="#111" stroke="#d4af37" stroke-width="3"/><circle cx="525" cy="116" r="8" fill="#1a1a1a"/>
+<circle cx="618" cy="116" r="26" fill="#111" stroke="#d4af37" stroke-width="3"/><circle cx="618" cy="116" r="10" fill="#1a1a1a"/>
+<line x1="455" y1="116" x2="618" y2="116" stroke="#d4af37" stroke-width="4"/>
+</g></svg>`;
+}
+
+function makeFrontSVG() {
+    return `<svg viewBox="0 0 300 400" width="420" height="560" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="hl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff8c0"/><stop offset="65%" stop-color="#ffe060" stop-opacity=".7"/><stop offset="100%" stop-color="#d4af37" stop-opacity="0"/></radialGradient>
+<filter id="gf"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="25" y="75" width="250" height="295" rx="18" fill="#0a0a1a" stroke="#d4af37" stroke-width="4"/>
+<rect x="58" y="10" width="30" height="80" rx="8" fill="#0d0d0d" stroke="#d4af37" stroke-width="3"/>
+<ellipse cx="73" cy="10" rx="19" ry="7" fill="#111" stroke="#d4af37" stroke-width="2"/>
+<rect x="212" y="10" width="30" height="80" rx="8" fill="#0d0d0d" stroke="#d4af37" stroke-width="3"/>
+<ellipse cx="227" cy="10" rx="19" ry="7" fill="#111" stroke="#d4af37" stroke-width="2"/>
+<circle cx="150" cy="195" r="70" fill="#111" stroke="#d4af37" stroke-width="5"/>
+<circle cx="150" cy="195" r="56" fill="#08081a" stroke="#444" stroke-width="1.5"/>
+<circle cx="150" cy="195" r="43" fill="url(#hl)" filter="url(#gf)"/>
+<circle cx="150" cy="195" r="38" fill="#fffde7" opacity=".96"/>
+<ellipse cx="135" cy="180" rx="11" ry="7" fill="white" opacity=".5"/>
+<circle cx="68"  cy="138" r="20" fill="#111" stroke="#d4af37" stroke-width="2.5"/><circle cx="68"  cy="138" r="13" fill="#f1c40f"/>
+<circle cx="232" cy="138" r="20" fill="#111" stroke="#d4af37" stroke-width="2.5"/><circle cx="232" cy="138" r="13" fill="#f1c40f"/>
+<rect x="94" y="292" width="112" height="44" rx="6" fill="#111" stroke="#d4af37" stroke-width="2"/>
+<text x="150" y="322" text-anchor="middle" fill="#d4af37" font-family="Anton,sans-serif" font-size="26">MEF</text>
+<rect x="14" y="348" width="272" height="24" rx="8" fill="#1a1a1a" stroke="#d4af37" stroke-width="2.5"/>
+<rect x="38"  y="354" width="42" height="11" rx="3" fill="#d4af37"/>
+<rect x="220" y="354" width="42" height="11" rx="3" fill="#d4af37"/>
+</svg>`;
+}
+
+function runGenerique() {
+    document.getElementById('waiting-screen').style.display = 'none';
+    const gen = document.getElementById('generique');
+    gen.style.display = 'block';
+    snd('sfx-intro');
+    let t = 0;
+
+    // Train 1 — bas, grand, gauche→droite
+    setTimeout(() => {
+        const el = document.getElementById('gen-train-1');
+        el.innerHTML = makeSideSVG(1.1, false);
+        el.style.cssText = 'position:absolute;bottom:17vh;transform:translateX(-110vw);transition:transform 2.6s cubic-bezier(.3,0,.7,1);';
+        void el.offsetWidth; el.style.transform='translateX(115vw)';
+        snd('sfx-spin'); spawnSteam(12, 12, false);
+    }, t += 200);
+
+    // Train 2 — milieu, moyen, droite→gauche
+    setTimeout(() => {
+        const el = document.getElementById('gen-train-2');
+        el.innerHTML = makeSideSVG(0.68, true);
+        el.style.cssText = 'position:absolute;bottom:44vh;transform:translateX(110vw);transition:transform 2.2s cubic-bezier(.3,0,.7,1);';
+        void el.offsetWidth; el.style.transform='translateX(-115vw)';
+        spawnSteam(7, 85, true);
+    }, t += 2300);
+
+    // Train 3 — haut, petit, gauche→droite, rapide
+    setTimeout(() => {
+        const el = document.getElementById('gen-train-3');
+        el.innerHTML = makeSideSVG(0.45, false);
+        el.style.cssText = 'position:absolute;bottom:68vh;transform:translateX(-110vw);transition:transform 1.4s cubic-bezier(.4,0,.8,1);';
+        void el.offsetWidth; el.style.transform='translateX(115vw)';
+        snd('sfx-break');
+    }, t += 1800);
+
+    // Blackout
+    setTimeout(() => {
+        const b = document.getElementById('gen-blackout');
+        b.style.transition='opacity 0.9s ease-in'; b.classList.add('fade');
+    }, t += 1600);
+
+    // Tunnel
+    setTimeout(() => {
+        const sc = document.getElementById('tunnel-scene');
+        sc.style.display='flex'; sc.style.position='absolute'; sc.style.inset='0'; sc.style.alignItems='center'; sc.style.justifyContent='center'; sc.style.zIndex='10';
+        document.getElementById('tunnel-hole').classList.add('grow');
+    }, t += 900);
+
+    // Loco de face
+    setTimeout(() => {
+        const loco = document.getElementById('front-loco');
+        loco.innerHTML = makeFrontSVG();
+        loco.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);opacity:0;z-index:12;';
+        void loco.offsetWidth; loco.classList.add('emerge');
+        snd('sfx-spin');
+    }, t += 850);
+
+    // Titre
+    setTimeout(() => {
+        document.getElementById('gen-title').classList.add('drop');
+        snd('sfx-win'); spawnConfetti(100);
+    }, t += 1600);
+    setTimeout(() => spawnConfetti(60), t+500);
+
+    // Outro + transition jeu
+    setTimeout(() => document.getElementById('gen-title').classList.add('outro'), t += 3500);
+    setTimeout(() => {
+        gen.style.transition='opacity 0.9s'; gen.style.opacity='0';
+        setTimeout(() => { gen.style.display='none'; gen.style.opacity='1'; transitionToGame(); }, 900);
+    }, t+700);
+}
+
+function skipGenerique() {
+    stopSnd('sfx-intro'); stopSnd('sfx-spin');
+    document.getElementById('generique').style.display='none';
+    document.getElementById('waiting-screen').style.display='none';
+    transitionToGame();
+}
+
+function transitionToGame() {
+    document.getElementById('game-header').style.display='flex';
+    document.getElementById('game-board').style.display='block';
+    renderHeader(); renderWagons(); snd('sfx-selected');
+}
+
+function spawnSteam(n, xVw, fromRight) {
+    for(let i=0;i<n;i++) setTimeout(()=>{
+        const p=document.createElement('div'); p.className='steam-puff';
+        const sz=10+Math.random()*18;
+        p.style.cssText=`width:${sz}px;height:${sz}px;left:${xVw+(Math.random()-0.5)*15}vw;top:${35+Math.random()*25}vh;animation-duration:${.9+Math.random()*.8}s;`;
+        document.getElementById('generique').appendChild(p);
+        setTimeout(()=>p.remove(), 1300);
+    }, i*90);
+}
+
+function spawnConfetti(n) {
+    const box=document.getElementById('gen-confetti-box');
+    const colors=['#d4af37','#fff','#e74c3c','#3498db','#f1c40f','#2ecc71','#e67e22'];
+    for(let i=0;i<n;i++){
+        const c=document.createElement('div');c.className='gen-conf';
+        const sz=6+Math.random()*10;
+        c.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}vw;top:-20px;background:${colors[i%colors.length]};animation-duration:${1.5+Math.random()*2.5}s;animation-delay:${Math.random()*.6}s;border-radius:${Math.random()>.5?'50%':'3px'};`;
+        box.appendChild(c); setTimeout(()=>c.remove(),3500);
     }
 }
 

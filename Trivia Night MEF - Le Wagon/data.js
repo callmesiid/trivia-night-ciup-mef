@@ -44,19 +44,44 @@ function getTierForLevel(level) {
 }
 
 // --- 12 BONUS THÈME TRAIN ---
+// type: 'AUTO' = effet automatique en régie | 'MANUAL' = l'animateur applique manuellement
 const BONUSES = [
-    { id: 1,  name: "TCHOU TCHOU",       emoji: "🚂", desc: "Double les points de ce tour si la réponse est juste." },
-    { id: 2,  name: "FREIN D'URGENCE",   emoji: "🚨", desc: "Permet de banquer hors palier (une seule fois)." },
-    { id: 3,  name: "AIGUILLAGE",        emoji: "🔀", desc: "Change la question actuelle (reroll gratuit)." },
-    { id: 4,  name: "CONTRÔLEUR",        emoji: "🎫", desc: "Force une équipe adverse à répondre à votre place." },
-    { id: 5,  name: "CHARBON",           emoji: "⛏️", desc: "+3 points bonus ajoutés si la réponse est correcte." },
-    { id: 6,  name: "PREMIÈRE CLASSE",   emoji: "👑", desc: "Si juste, la prochaine question est validée d'office." },
-    { id: 7,  name: "RETARD SNCF",       emoji: "⏰", desc: "+20 secondes de réflexion supplémentaires." },
-    { id: 8,  name: "TUNNEL SOMBRE",     emoji: "🌑", desc: "Cache la question à l'écran (réponse à l'aveugle)." },
-    { id: 9,  name: "VOL DE BAGAGE",     emoji: "🧳", desc: "Vole 3 points à l'équipe qui est en tête." },
-    { id: 10, name: "TERMINUS",          emoji: "🏁", desc: "Force le bank immédiat sans passer par la fin du palier." },
-    { id: 11, name: "WAGON BAR",         emoji: "🍸", desc: "+5 points instantanément à votre score (jackpot)." },
-    { id: 12, name: "GRIÈVE",            emoji: "🔒", desc: "Bloque un wagon adverse : il passe son tour 1 fois." }
+    { id: 1,  name: "TCHOU TCHOU",       emoji: "🚂", type: "MANUAL",
+      desc: "Double les points de ce wagon ce tour.",
+      how: "Appliquez x2 sur les points banqués à la fin du tour." },
+    { id: 2,  name: "FREIN D'URGENCE",   emoji: "🚨", type: "MANUAL",
+      desc: "Permet de banquer HORS palier (une fois).",
+      how: "Activez le bouton BANQUER dès que l'équipe le demande, même hors palier." },
+    { id: 3,  name: "AIGUILLAGE",        emoji: "🔀", type: "MANUAL",
+      desc: "Change la question actuelle (reroll gratuit).",
+      how: "Cliquez sur ♻ Changer Q dans la régie." },
+    { id: 4,  name: "CONTRÔLEUR",        emoji: "🎫", type: "MANUAL",
+      desc: "Une équipe adverse répond à votre place (si juste, les points vont à vous).",
+      how: "Désignez l'équipe adverse et gérez les points manuellement." },
+    { id: 5,  name: "CHARBON",           emoji: "⛏️", type: "MANUAL",
+      desc: "+3 points bonus si la réponse est correcte.",
+      how: "Ajoutez +3 via la correction manuelle si la réponse est juste." },
+    { id: 6,  name: "PREMIÈRE CLASSE",   emoji: "👑", type: "MANUAL",
+      desc: "Si juste, la prochaine question est validée d'office.",
+      how: "Après une bonne réponse, passez la question suivante sans la poser." },
+    { id: 7,  name: "RETARD SNCF",       emoji: "⏰", type: "MANUAL",
+      desc: "+20 secondes de réflexion supplémentaires.",
+      how: "Rajoutez 20 secondes au prochain timer lancé." },
+    { id: 8,  name: "TUNNEL SOMBRE",     emoji: "🌑", type: "MANUAL",
+      desc: "La question N'EST PAS affichée à l'écran — réponse à l'aveugle.",
+      how: "Lisez la question à voix haute uniquement, sans cliquer sur 'afficher'." },
+    { id: 9,  name: "VOL DE BAGAGE",     emoji: "🧳", type: "AUTO",
+      desc: "Vole 3 points à l'équipe en tête — effet immédiat.",
+      how: "Appliqué automatiquement dès confirmation." },
+    { id: 10, name: "TERMINUS",          emoji: "🏁", type: "MANUAL",
+      desc: "Force le bank immédiat, même hors fin de palier.",
+      how: "Appuyez sur BANQUER immédiatement dans la régie." },
+    { id: 11, name: "WAGON BAR",         emoji: "🍸", type: "AUTO",
+      desc: "+5 points instantanément à votre score.",
+      how: "Appliqué automatiquement dès confirmation." },
+    { id: 12, name: "GRIÈVE",            emoji: "🔒", type: "AUTO",
+      desc: "Bloque le wagon sélectionné pour ce tour.",
+      how: "Appliqué au wagon actuellement sélectionné." }
 ];
 
 // --- THÈMES & QUESTIONS (8 thèmes x 10 questions) ---
