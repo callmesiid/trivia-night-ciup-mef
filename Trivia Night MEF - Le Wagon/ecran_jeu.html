@@ -172,6 +172,7 @@
 
     #dot-status { position:fixed;bottom:6px;right:6px;width:10px;height:10px;border-radius:50%;background:#c0392b;opacity:.5;z-index:9999;transition:background .5s; }
     #dot-status.ok { background:#27ae60; }
+    @keyframes flashGold { 0%{opacity:1;}100%{opacity:0;} }
     </style>
 </head>
 <body>
@@ -324,8 +325,11 @@ channel.onmessage = (e) => {
         case 'PALIER_END':      handlePalierEnd(data); break;
         case 'AWAIT_NEXT':      hidePalierScreen(); break;
         case 'CONTINUE_WAGON':  hidePalierScreen(); break;
-        case 'HIDE_QUESTION':   hideQuestion(); break;
-        case 'REROLL_QUESTION': document.getElementById('question-text-el').textContent=data.question; break;
+        case 'HIDE_QUESTION':    hideQuestion(); break;
+        case 'QUESTION_LOADED':  showQuestionReady(); break;
+        case 'REROLL_QUESTION':  document.getElementById('question-text-el').textContent=data.question; break;
+        case 'PREMIERE_CLASSE':  handlePremiereClasse(data); break;
+        case 'SKIP_TURN':        showSkipTurnBanner(data); break;
         case 'NEXT_TURN':       handleNextTurn(data); break;
         case 'START_TIMER':     startTimer(data.seconds); break;
         case 'RESUME_TIMER':    startTimer(data.seconds); break;
@@ -401,16 +405,20 @@ function renderHeader() {
 function gPts(l){if(l<=3)return 1;if(l<=6)return 2;if(l<=9)return 3;return 5;}
 
 function makeWagonSVG(wagon) {
-    const VW=920, VH=128;
-    const BC='#1a1a2e', SC='#d4af37', DARK='#0d0d16', MED='#12122a';
+    const VW=960, VH=128;
+    // Nez TGV long (110px chaque côté) → corps: x=110 à x=850
+    const BC='#1a1a2e', SC='#d4af37', DARK='#0d0d16', MED='#141428';
 
-    // Groupes de fenêtres : palier 1 (Q1-3), palier 2 (Q4-6), palier 3 (Q7-9), Q10
-    const winH=34, winY=30;
+    // Fenêtres — 4 groupes (P1: Q1-3, P2: Q4-6, P3: Q7-9, Q10)
+    // Répartition équilibrée dans le corps (110→850 = 740px)
+    // 3 portes de 32px + marges + 10 fenêtres de 52px + gaps de 8px
+    // P1: 130,190,250  | porte: 282-314 | P2: 322,382,442 | porte: 474-506 | P3: 514,574,634 | porte: 666-698 | Q10: 718,w=72
+    const winH=36, winY=29;
     const groups = [
-        [{qi:0,x:80,w:50},{qi:1,x:138,w:50},{qi:2,x:196,w:50}],
-        [{qi:3,x:295,w:50},{qi:4,x:353,w:50},{qi:5,x:411,w:50}],
-        [{qi:6,x:510,w:50},{qi:7,x:568,w:50},{qi:8,x:626,w:50}],
-        [{qi:9,x:716,w:66}]
+        [{qi:0,x:130,w:52},{qi:1,x:190,w:52},{qi:2,x:250,w:52}],
+        [{qi:3,x:322,w:52},{qi:4,x:382,w:52},{qi:5,x:442,w:52}],
+        [{qi:6,x:514,w:52},{qi:7,x:574,w:52},{qi:8,x:634,w:52}],
+        [{qi:9,x:718,w:72}]
     ];
 
     function wCol(qi) {
@@ -438,76 +446,101 @@ function makeWagonSVG(wagon) {
             const glowAttr = (wagon.windowStates[qi]?.banked) ? 'filter="url(#wglow)"' : '';
             winsHTML += `
             <rect x="${x}" y="${winY}" width="${w}" height="${winH}" rx="5"
-                fill="${af}" stroke="${isActive?'rgba(255,255,255,.8)':'rgba(255,255,255,.06)'}"
-                stroke-width="${isActive?2:.8}" ${glowAttr}/>
-            <rect x="${x+4}" y="${winY+3}" width="${Math.floor(w/2)-3}" height="8" rx="3"
-                fill="rgba(255,255,255,.18)" pointer-events="none"/>
+                fill="${af}" stroke="${isActive?'rgba(255,255,255,.85)':'rgba(255,255,255,.07)'}"
+                stroke-width="${isActive?2.5:.8}" ${glowAttr}/>
+            <rect x="${x+4}" y="${winY+3}" width="${Math.floor(w/2)-3}" height="9" rx="3"
+                fill="rgba(255,255,255,.2)" pointer-events="none"/>
             <text x="${x+w/2}" y="${winY+winH-6}" text-anchor="middle"
-                font-family="Anton,sans-serif" font-size="13" fill="${isActive?'#000':tc}">${pts}</text>`;
+                font-family="Anton,sans-serif" font-size="14" fill="${isActive?'#000':tc}">${pts}</text>`;
         });
     });
 
+    const ly = winY+winH+12;
     const palierLabels = `
-        <text x="158" y="${winY+winH+12}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">P1·1pt</text>
-        <text x="373" y="${winY+winH+12}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">P2·2pts</text>
-        <text x="588" y="${winY+winH+12}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">P3·3pts</text>
-        <text x="749" y="${winY+winH+12}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#9a7a00">★5pts</text>`;
+        <text x="190" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">PALIER 1 · 1pt</text>
+        <text x="382" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">PALIER 2 · 2pts</text>
+        <text x="574" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">PALIER 3 · 3pts</text>
+        <text x="754" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#9a7a00">★ 5 pts</text>`;
 
-    const bogies = [105,310,515,738].map(bx=>`
-        <rect x="${bx-20}" y="108" width="40" height="6" rx="2" fill="#1a1a1a"/>
+    // Bogies centrés sous le corps
+    const bogies = [155, 380, 580, 800].map(bx=>`
+        <rect x="${bx-22}" y="108" width="44" height="6" rx="2" fill="#1a1a1a"/>
         <rect x="${bx-2}" y="106" width="4" height="9" fill="#222"/>
-        <circle cx="${bx-11}" cy="117" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
-        <circle cx="${bx-11}" cy="117" r="3" fill="#555"/>
-        <circle cx="${bx+11}" cy="117" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
-        <circle cx="${bx+11}" cy="117" r="3" fill="#555"/>`).join('');
+        <circle cx="${bx-12}" cy="117" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
+        <circle cx="${bx-12}" cy="117" r="3" fill="#555"/>
+        <circle cx="${bx+12}" cy="117" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
+        <circle cx="${bx+12}" cy="117" r="3" fill="#555"/>`).join('');
 
-    const doors = [253,463,673].map(dx=>`
-        <rect x="${dx}" y="8" width="22" height="98" fill="${MED}" stroke="${DARK}" stroke-width=".8"/>
-        <rect x="${dx+3}" y="16" width="16" height="82" rx="2" fill="${DARK}" opacity=".8"/>
-        <rect x="${dx+9}" y="50" width="4" height="8" rx="2" fill="#333"/>`).join('');
+    // Portes entre paliers (32px, bien marquées)
+    const doors = [[282,314],[474,506],[666,698]].map(([x1,x2])=>`
+        <rect x="${x1}" y="4" width="${x2-x1}" height="108" fill="${MED}" stroke="${DARK}" stroke-width="1"/>
+        <rect x="${x1+4}" y="12" width="${x2-x1-8}" height="90" rx="2" fill="${DARK}" opacity=".85"/>
+        <rect x="${x1+(x2-x1)/2-3}" y="52" width="6" height="10" rx="3" fill="#333"/>
+        <line x1="${x1}" y1="4" x2="${x1}" y2="112" stroke="rgba(212,175,55,.15)" stroke-width="1"/>
+        <line x1="${x2}" y1="4" x2="${x2}" y2="112" stroke="rgba(212,175,55,.15)" stroke-width="1"/>`).join('');
 
     return `<svg viewBox="0 0 ${VW} ${VH}" width="100%" height="100%"
         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="display:block;">
 <defs>
   <filter id="wglow" x="-30%" y="-30%" width="160%" height="160%">
-    <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="rgba(255,255,255,.55)"/>
+    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="rgba(255,255,255,.6)"/>
   </filter>
 </defs>
-<!-- Rails -->
+
+<!-- Rails et traverses -->
 <rect x="0" y="117" width="${VW}" height="5" rx="1" fill="#191919"/>
 <rect x="0" y="124" width="${VW}" height="3" rx="1" fill="#141414"/>
-${[...Array(31)].map((_,i)=>`<rect x="${i*30+4}" y="115" width="14" height="10" rx="1" fill="#111"/>`).join('')}
-<!-- Corps -->
-<rect x="65" y="6" width="${VW-130}" height="106" fill="${BC}" stroke="${DARK}" stroke-width="1"/>
-<!-- Nez avant -->
-<path d="M65 6 Q0 6 0 42 L0 104 Q0 112 10 112 L65 112 Z" fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
-<path d="M65 13 L12 13 Q2 22 2 34" fill="none" stroke="${SC}" stroke-width="10" opacity=".9"/>
-<path d="M65 105 L10 105" fill="none" stroke="${SC}" stroke-width="4" opacity=".5"/>
-<rect x="12" y="46" width="36" height="26" rx="5" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
-<ellipse cx="30" cy="59" rx="11" ry="8" fill="#fffde7" opacity=".92"/>
-<ellipse cx="25" cy="55" rx="4" ry="3" fill="white" opacity=".5"/>
-<!-- Nez arrière -->
-<path d="M${VW-65} 6 Q${VW} 6 ${VW} 42 L${VW} 104 Q${VW} 112 ${VW-10} 112 L${VW-65} 112 Z" fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
-<path d="M${VW-65} 13 L${VW-12} 13 Q${VW-2} 22 ${VW-2} 34" fill="none" stroke="${SC}" stroke-width="10" opacity=".9"/>
-<path d="M${VW-65} 105 L${VW-10} 105" fill="none" stroke="${SC}" stroke-width="4" opacity=".5"/>
-<rect x="${VW-48}" y="46" width="36" height="26" rx="5" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
-<ellipse cx="${VW-30}" cy="59" rx="11" ry="8" fill="#fffde7" opacity=".92"/>
-<!-- Bandes dorées -->
-<rect x="65" y="11" width="${VW-130}" height="12" fill="${SC}" opacity=".9"/>
-<rect x="65" y="104" width="${VW-130}" height="5" fill="${SC}" opacity=".5"/>
-<rect x="65" y="6" width="${VW-130}" height="2" fill="rgba(255,255,255,.07)"/>
-<rect x="65" y="111" width="${VW-130}" height="7" fill="${DARK}"/>
+${[...Array(33)].map((_,i)=>`<rect x="${i*30+3}" y="115" width="15" height="10" rx="1" fill="#111"/>`).join('')}
+
+<!-- Corps principal (entre les deux nez) -->
+<rect x="110" y="4" width="${VW-220}" height="108" fill="${BC}" stroke="${DARK}" stroke-width="1"/>
+
+<!-- ── NEZ AVANT — style TGV pointu ── -->
+<!-- Coque principale effilée -->
+<path d="M110 4 C80 4 40 10 8 46 C4 52 2 58 2 64 C2 76 10 104 22 110 L110 110 Z"
+      fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
+<!-- Bande dorée avant (suit la forme) -->
+<path d="M110 13 C78 13 42 19 14 48" fill="none" stroke="${SC}" stroke-width="11" opacity=".88"/>
+<path d="M110 104 C78 104 42 99 18 84" fill="none" stroke="${SC}" stroke-width="5" opacity=".45"/>
+<!-- Phare avant -->
+<ellipse cx="18" cy="64" rx="12" ry="9" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
+<ellipse cx="18" cy="64" rx="8"  ry="6" fill="#fffde7" opacity=".92"/>
+<ellipse cx="14" cy="61" rx="3"  ry="2" fill="white" opacity=".5"/>
+<!-- Pare-brise -->
+<path d="M110 22 C88 22 55 28 28 46 L28 60 C55 44 88 38 110 38"
+      fill="#0a1520" opacity=".8"/>
+
+<!-- ── NEZ ARRIÈRE — miroir ── -->
+<path d="M${VW-110} 4 C${VW-80} 4 ${VW-40} 10 ${VW-8} 46 C${VW-4} 52 ${VW-2} 58 ${VW-2} 64 C${VW-2} 76 ${VW-10} 104 ${VW-22} 110 L${VW-110} 110 Z"
+      fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
+<path d="M${VW-110} 13 C${VW-78} 13 ${VW-42} 19 ${VW-14} 48" fill="none" stroke="${SC}" stroke-width="11" opacity=".88"/>
+<path d="M${VW-110} 104 C${VW-78} 104 ${VW-42} 99 ${VW-18} 84" fill="none" stroke="${SC}" stroke-width="5" opacity=".45"/>
+<ellipse cx="${VW-18}" cy="64" rx="12" ry="9" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
+<ellipse cx="${VW-18}" cy="64" rx="8"  ry="6" fill="#fffde7" opacity=".92"/>
+<path d="M${VW-110} 22 C${VW-88} 22 ${VW-55} 28 ${VW-28} 46 L${VW-28} 60 C${VW-55} 44 ${VW-88} 38 ${VW-110} 38"
+      fill="#0a1520" opacity=".8"/>
+
+<!-- Bandes dorées sur le corps -->
+<rect x="110" y="10" width="${VW-220}" height="12" fill="${SC}" opacity=".9"/>
+<rect x="110" y="104" width="${VW-220}" height="5" fill="${SC}" opacity=".45"/>
+<rect x="110" y="4" width="${VW-220}" height="2" fill="rgba(255,255,255,.07)"/>
+<rect x="110" y="110" width="${VW-220}" height="6" fill="${DARK}"/>
+
 <!-- Portes / séparateurs de palier -->
 ${doors}
+
 <!-- Fenêtres -->
 ${winsHTML}
+
 <!-- Labels palier -->
 ${palierLabels}
+
 <!-- Bogies & roues -->
 ${bogies}
+
 <!-- Attelages -->
-<rect x="0" y="56" width="8" height="6" rx="2" fill="#444"/>
-<rect x="${VW-8}" y="56" width="8" height="6" rx="2" fill="#444"/>
+<rect x="0"     y="60" width="8" height="7" rx="2" fill="#444"/>
+<rect x="${VW-8}" y="60" width="8" height="7" rx="2" fill="#444"/>
 </svg>`;
 }
 
@@ -544,8 +577,16 @@ function renderWagons() {
 }
 
 /* ══════════════════════════════════════════
-   QUESTION
+   QUESTION — affichée uniquement au lancement du timer
 ══════════════════════════════════════════ */
+
+// Question "prête" : timer pas encore lancé — on montre juste une attente discrète
+function showQuestionReady() {
+    // L'écran attend que la régie lance le timer — rien de visible pour les joueurs
+    // (le MC voit la Q dans la régie)
+    hidePalierScreen();
+}
+
 function showQuestion(data) {
     activeWagonIdx = (data.wagonIndex !== undefined) ? data.wagonIndex : -1;
     document.getElementById('q-theme-el').textContent  = data.theme;
@@ -781,6 +822,33 @@ function createRain(container) {
         d.style.cssText=`left:${Math.random()*100}vw;height:${20+Math.random()*35}px;animation-duration:${.4+Math.random()*.4}s;animation-delay:${Math.random()}s;`;
         container.appendChild(d);
     }
+}
+
+// Première Classe : allume automatiquement la fenêtre suivante
+function handlePremiereClasse(data) {
+    if (localState.wagons[data.wagonIndex]) {
+        const ws = localState.wagons[data.wagonIndex].windowStates;
+        if (ws[data.level]) { ws[data.level].reached = true; }
+        localState.wagons[data.wagonIndex].currentLevel = data.level + 1;
+    }
+    // Petit flash doré
+    const flash = document.createElement('div');
+    flash.style.cssText = 'position:fixed;inset:0;background:rgba(212,175,55,.15);z-index:550;pointer-events:none;animation:flashGold .6s ease-out forwards;';
+    document.body.appendChild(flash);
+    setTimeout(() => flash.remove(), 700);
+    renderWagons();
+}
+
+// Skip turn banner
+function showSkipTurnBanner(data) {
+    const b = document.getElementById('qualified-banner');
+    const txt = document.getElementById('qual-team-name');
+    txt.textContent = `${data.teamName} — PASSE SON TOUR`;
+    txt.style.color = '#e74c3c';
+    b.style.borderColor = '#e74c3c';
+    b.classList.add('show');
+    snd('sfx-break');
+    setTimeout(() => { b.classList.remove('show'); txt.style.color = '#27ae60'; b.style.borderColor = '#27ae60'; }, 4000);
 }
 
 // Helper

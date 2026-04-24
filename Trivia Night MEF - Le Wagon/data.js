@@ -1,6 +1,6 @@
 // =====================================================================
 // LE WAGON - DATA.JS
-// Configuration, Bonus et Questions
+// Configuration, Bonus, Malus et Questions
 // =====================================================================
 
 const CHANNEL_NAME = 'wagon_channel';
@@ -14,6 +14,7 @@ const GAME_CONFIG = {
         { endAt: 10, points: 5 }   // Q10   : 5 pts
     ],
     bonusPerTeam: 3,
+    malusPerTeam: 2,
     defaultDepth: 10,
     defaultThreshold: 50,
     defaultTimer: 30
@@ -44,44 +45,64 @@ function getTierForLevel(level) {
 }
 
 // --- 12 BONUS THÈME TRAIN ---
-// type: 'AUTO' = effet automatique en régie | 'MANUAL' = l'animateur applique manuellement
+// timing: 'IMMEDIATE' = s'applique au moment de l'activation
+//         'PRE_QUESTION' = s'applique quand la prochaine question DÉMARRE (au timer)
+//         'POST_CORRECT' = s'applique après une bonne réponse
+//         'TARGET' = vise un wagon/adversaire
+// type: 'AUTO' = appliqué automatiquement en code | 'MANUAL' = le MC gère manuellement
 const BONUSES = [
-    { id: 1,  name: "TCHOU TCHOU",       emoji: "🚂", type: "MANUAL",
-      desc: "Double les points de ce wagon ce tour.",
-      how: "Appliquez x2 sur les points banqués à la fin du tour." },
-    { id: 2,  name: "FREIN D'URGENCE",   emoji: "🚨", type: "MANUAL",
-      desc: "Permet de banquer HORS palier (une fois).",
-      how: "Activez le bouton BANQUER dès que l'équipe le demande, même hors palier." },
-    { id: 3,  name: "AIGUILLAGE",        emoji: "🔀", type: "MANUAL",
-      desc: "Change la question actuelle (reroll gratuit).",
-      how: "Cliquez sur ♻ Changer Q dans la régie." },
-    { id: 4,  name: "CONTRÔLEUR",        emoji: "🎫", type: "MANUAL",
-      desc: "Une équipe adverse répond à votre place (si juste, les points vont à vous).",
-      how: "Désignez l'équipe adverse et gérez les points manuellement." },
-    { id: 5,  name: "CHARBON",           emoji: "⛏️", type: "MANUAL",
+    { id: 1,  name: "TCHOU TCHOU",       emoji: "🚂", type: "AUTO",   timing: "POST_CORRECT",
+      desc: "Double les points de la question suivante.",
+      how: "Activez AVANT de lancer la prochaine question. Appliqué automatiquement si bonne réponse." },
+    { id: 2,  name: "FREIN D'URGENCE",   emoji: "🚨", type: "AUTO",   timing: "POST_CORRECT",
+      desc: "Permet de banquer après n'importe quelle bonne réponse (hors palier).",
+      how: "Activez AVANT la question. Si bonne réponse, le bouton BANK apparaît." },
+    { id: 3,  name: "AIGUILLAGE",        emoji: "🔀", type: "AUTO",   timing: "PRE_QUESTION",
+      desc: "Remplace la question au moment de son lancement (reroll automatique).",
+      how: "Activez avant le timer. La question est changée au lancement." },
+    { id: 4,  name: "CONTRÔLEUR",        emoji: "🎫", type: "MANUAL", timing: "PRE_QUESTION",
+      desc: "Une équipe adverse répond à votre place. Si juste, les points vous reviennent.",
+      how: "Désignez l'équipe adverse dans la régie, gérez les points manuellement." },
+    { id: 5,  name: "CHARBON",           emoji: "⛏️", type: "AUTO",   timing: "POST_CORRECT",
       desc: "+3 points bonus si la réponse est correcte.",
-      how: "Ajoutez +3 via la correction manuelle si la réponse est juste." },
-    { id: 6,  name: "PREMIÈRE CLASSE",   emoji: "👑", type: "MANUAL",
-      desc: "Si juste, la prochaine question est validée d'office.",
-      how: "Après une bonne réponse, passez la question suivante sans la poser." },
-    { id: 7,  name: "RETARD SNCF",       emoji: "⏰", type: "MANUAL",
-      desc: "+20 secondes de réflexion supplémentaires.",
-      how: "Rajoutez 20 secondes au prochain timer lancé." },
-    { id: 8,  name: "TUNNEL SOMBRE",     emoji: "🌑", type: "MANUAL",
-      desc: "La question N'EST PAS affichée à l'écran — réponse à l'aveugle.",
-      how: "Lisez la question à voix haute uniquement, sans cliquer sur 'afficher'." },
-    { id: 9,  name: "VOL DE BAGAGE",     emoji: "🧳", type: "AUTO",
+      how: "Activez avant la question. +3 ajoutés automatiquement si bonne réponse." },
+    { id: 6,  name: "PREMIÈRE CLASSE",   emoji: "👑", type: "AUTO",   timing: "POST_CORRECT",
+      desc: "Si la réponse est juste, la question suivante est validée automatiquement.",
+      how: "Activez avant la question. Si correct, la Q suivante est gagnée d'office." },
+    { id: 7,  name: "RETARD SNCF",       emoji: "⏰", type: "AUTO",   timing: "PRE_QUESTION",
+      desc: "+20 secondes au timer de la prochaine question.",
+      how: "Activez avant le timer. Le timer sera allongé automatiquement." },
+    { id: 8,  name: "TUNNEL SOMBRE",     emoji: "🌑", type: "AUTO",   timing: "PRE_QUESTION",
+      desc: "La question est masquée à l'écran — réponse à l'aveugle (lu uniquement par le MC).",
+      how: "Activez avant le timer. L'écran n'affiche pas la question." },
+    { id: 9,  name: "VOL DE BAGAGE",     emoji: "🧳", type: "AUTO",   timing: "IMMEDIATE",
       desc: "Vole 3 points à l'équipe en tête — effet immédiat.",
       how: "Appliqué automatiquement dès confirmation." },
-    { id: 10, name: "TERMINUS",          emoji: "🏁", type: "MANUAL",
-      desc: "Force le bank immédiat, même hors fin de palier.",
-      how: "Appuyez sur BANQUER immédiatement dans la régie." },
-    { id: 11, name: "WAGON BAR",         emoji: "🍸", type: "AUTO",
+    { id: 10, name: "TERMINUS",          emoji: "🏁", type: "AUTO",   timing: "POST_CORRECT",
+      desc: "Force le bank immédiatement après une bonne réponse, même hors palier.",
+      how: "Activez avant la question. Si bonne réponse, bank forcé automatiquement." },
+    { id: 11, name: "WAGON BAR",         emoji: "🍸", type: "AUTO",   timing: "IMMEDIATE",
       desc: "+5 points instantanément à votre score.",
       how: "Appliqué automatiquement dès confirmation." },
-    { id: 12, name: "GRIÈVE",            emoji: "🔒", type: "AUTO",
+    { id: 12, name: "GRIÈVE",            emoji: "🔒", type: "AUTO",   timing: "IMMEDIATE",
       desc: "Bloque le wagon sélectionné pour ce tour.",
       how: "Appliqué au wagon actuellement sélectionné." }
+];
+
+// --- 4 MALUS (ciblés sur un adversaire) ---
+const MALUS = [
+    { id: 13, name: "VOL DE TOUR",      emoji: "🎯", type: "AUTO",   timing: "IMMEDIATE",
+      desc: "Vole le tour de jeu de l'équipe adverse — vous jouez à sa place immédiatement.",
+      how: "Sélectionnez la cible. Vous prenez la main à leur place." },
+    { id: 14, name: "PASSE TON TOUR",   emoji: "⛔", type: "AUTO",   timing: "IMMEDIATE",
+      desc: "Force l'équipe adverse à passer son prochain tour.",
+      how: "La prochaine fois que l'équipe doit jouer, son tour est sauté automatiquement." },
+    { id: 15, name: "BLOQUER LE BANK",  emoji: "🚫", type: "AUTO",   timing: "IMMEDIATE",
+      desc: "Empêche l'équipe adverse de banquer au prochain palier — elle doit finir le wagon.",
+      how: "Le bouton BANK sera désactivé pour la prochaine opportunité de cette équipe." },
+    { id: 16, name: "TIMER RÉDUIT",     emoji: "⏩", type: "AUTO",   timing: "IMMEDIATE",
+      desc: "Réduit le temps de réflexion de l'adversaire de 20 secondes pour sa prochaine question.",
+      how: "Appliqué automatiquement au prochain timer de l'équipe ciblée." }
 ];
 
 // --- THÈMES & QUESTIONS (8 thèmes x 10 questions) ---
