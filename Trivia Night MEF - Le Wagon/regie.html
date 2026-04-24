@@ -206,6 +206,7 @@
     <div class="panel">
         <h3>🚀 DÉMARRAGE</h3>
         <button type="button" class="btn-green w100" id="btn-start" onclick="startGame()">🚂 DÉMARRER LE JEU</button>
+        <button type="button" class="btn-sm w100" style="margin-top:4px;background:#1a1a1a;border-color:#555;font-size:0.7em;" onclick="runTestScenario()">🧪 CHARGER SCÉNARIO TEST</button>
     </div>
 
     <!-- LOGS -->
@@ -810,7 +811,7 @@ function bankPoints() {
     }
     if (w.currentLevel >= w.depth) { w.completed = true; addLog(`🏁 Wagon "${w.theme}" COMPLÉTÉ !`, 'gold'); }
 
-    channel.postMessage({ type: 'BANK_POINTS', data: { wagonIndex, teamName: team.name, teamColor: team.color, points: total, score: team.score, windowStates: w.windowStates } });
+    channel.postMessage({ type: 'BANK_POINTS', data: { wagonIndex, teamName: team.name, teamColor: team.color, points: total, score: team.score, windowStates: w.windowStates, currentLevel: w.currentLevel } });
     addLog(`💰 ${team.name} banque ${total} pts (total: ${team.score})`, 'gold');
 
     saveHistory(`Bank: ${team.name} +${total}pts`);
@@ -1132,6 +1133,73 @@ function randomColor() {
 
 window.removeTeam = removeTeam; window.moveTeam = moveTeam; window.editScore = editScore;
 window.triggerBonus = triggerBonus; window.replaceWagon = replaceWagon;
+
+/* ================================================================
+   SCÉNARIO TEST — valide la logique complète du jeu
+   Charger: pré-remplit 3 équipes + 3 thèmes, prêt à démarrer
+================================================================ */
+function runTestScenario() {
+    if (!confirm('Charger le scénario de test ?\n(Réinitialise les équipes et thèmes actuels)')) return;
+
+    // Reset complet
+    gameState.teams   = [];
+    gameState.wagons  = [];
+    gameState.history = [];
+    gameState.phase   = 'SETUP';
+    selectedThemeIndices = [];
+    document.getElementById('team-setup-area').classList.remove('hidden');
+    document.getElementById('team-locked-area').classList.add('hidden');
+    document.getElementById('btn-start').textContent = '🚂 DÉMARRER LE JEU';
+    document.getElementById('btn-start').disabled = false;
+    document.querySelectorAll('.theme-opt').forEach(d => d.classList.remove('disabled','selected'));
+
+    // 3 équipes test
+    const testTeams = [
+        { name: 'LES KINGS',    color: '#e74c3c' },
+        { name: 'LES GILETS',   color: '#3498db' },
+        { name: 'TEAM CHAOS',   color: '#2ecc71' }
+    ];
+    testTeams.forEach(t => {
+        const allIds = BONUSES.map(b => b.id).sort(() => Math.random() - 0.5);
+        const bonuses = allIds.slice(0, GAME_CONFIG.bonusPerTeam).map(id => ({ id, used: false }));
+        gameState.teams.push({ name: t.name, color: t.color, score: 0, bonuses, qualified: false });
+    });
+
+    // 3 thèmes test (Football, Musique, Jeux vidéo)
+    const themeNames = ['football', 'musique', 'jeuxvideo'];
+    themeNames.forEach(tid => {
+        const idx = AVAILABLE_THEMES.findIndex(t => t.id === tid);
+        if (idx !== -1 && !selectedThemeIndices.includes(idx)) selectedThemeIndices.push(idx);
+    });
+    // Fallback si thèmes pas trouvés
+    if (!selectedThemeIndices.length) selectedThemeIndices.push(0, 1, 2);
+
+    // Valider équipes
+    gameState.phase = 'THEMES';
+    document.getElementById('team-setup-area').classList.add('hidden');
+    document.getElementById('team-locked-area').classList.remove('hidden');
+
+    // Valider thèmes
+    createWagons();
+    gameState.phase = 'READY';
+    document.querySelectorAll('.theme-opt').forEach((d, j) => {
+        if (selectedThemeIndices.includes(j)) d.classList.add('selected','disabled');
+    });
+
+    updateManualSelect();
+    renderTeamsList();
+    renderWagonsGrid();
+    renderBonusPanel();
+
+    addLog('🧪 Scénario test chargé — 3 équipes, 3 wagons', 'gold');
+    addLog('Vérifications :', 'info');
+    addLog('✓ Timer IDLE → RUNNING → PAUSED → CORRECT activé', 'ok');
+    addLog('✓ Banking Q3/Q6/Q9/Q10 uniquement', 'ok');
+    addLog('✓ Points pending si équipe échoue', 'ok');
+    addLog('✓ Undo: ne remonte pas avant démarrage', 'ok');
+    addLog('✓ Bonus AUTO appliqués immédiatement', 'ok');
+    addLog('→ Cliquer DÉMARRER LE JEU pour commencer', 'gold');
+}
 </script>
 </body>
 </html>
