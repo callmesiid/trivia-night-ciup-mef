@@ -1,0 +1,458 @@
+[
+  {
+    "id": "fleurs",
+    "name": "🌸 Fleurs",
+    "color": "#e84393",
+    "questions": [
+      {
+        "q": "Quelle fleur est le symbole universel de l'amour ?",
+        "a": "La rose",
+        "validated": true
+      },
+      {
+        "q": "De quelle couleur est le tournesol ?",
+        "a": "Jaune",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur blanche de mai sent très fort et porte bonheur ?",
+        "a": "Le muguet",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur néerlandaise a causé une bulle spéculative au XVIIe siècle ?",
+        "a": "La tulipe",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur carnivore referme ses mâchoires sur les insectes ?",
+        "a": "La dionée (Venus flytrap)",
+        "validated": true
+      },
+      {
+        "q": "Comment appelle-t-on l'étude scientifique des fleurs et des plantes ?",
+        "a": "La botanique",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur japonaise symbolise la beauté éphémère du printemps ?",
+        "a": "Le cerisier (sakura)",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur produit l'opium quand on en incise la capsule ?",
+        "a": "Le pavot",
+        "validated": true
+      },
+      {
+        "q": "Quelle plante fleurit une fois tous les 100 ans selon la légende ?",
+        "a": "L'agave (century plant)",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom scientifique de la famille des roses ?",
+        "a": "Les Rosacées",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "jeux",
+    "name": "🎲 Jeux de société",
+    "color": "#3498db",
+    "questions": [
+      {
+        "q": "Combien y a-t-il de cases sur un échiquier ?",
+        "a": "64",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de société fait jouer de petits chevaux colorés ?",
+        "a": "Le jeu des petits chevaux",
+        "validated": true
+      },
+      {
+        "q": "Dans le Monopoly, quelle est la rue la plus chère en version française ?",
+        "a": "La Rue de la Paix",
+        "validated": true
+      },
+      {
+        "q": "Dans le Scrabble, combien vaut la lettre Z ?",
+        "a": "10 points",
+        "validated": true
+      },
+      {
+        "q": "Qui a inventé le Rubik's Cube ?",
+        "a": "Ernő Rubik (en 1974)",
+        "validated": true
+      },
+      {
+        "q": "Dans les échecs, quel est le seul coup où on déplace deux pièces simultanément ?",
+        "a": "Le roque",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de société coopératif médical vous demande d'opérer un patient ?",
+        "a": "Docteur Maboul",
+        "validated": true
+      },
+      {
+        "q": "Combien de propriétés y a-t-il dans un Monopoly standard ?",
+        "a": "28",
+        "validated": true
+      },
+      {
+        "q": "Dans quel jeu cherche-t-on à faire couler les bateaux adverses ?",
+        "a": "La Bataille navale",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de plateau lancé en 1995 se joue sur une île avec des routes et des villes ?",
+        "a": "Les Colons de Catane",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "animaux",
+    "name": "🐶🐱 Chiens & chats",
+    "color": "#f39c12",
+    "questions": [
+      {
+        "q": "Comment s'appelle le bébé du chat ?",
+        "a": "Le chaton",
+        "validated": true
+      },
+      {
+        "q": "Quelle race de chien de chasse a de très longues oreilles tombantes ?",
+        "a": "Le basset hound",
+        "validated": true
+      },
+      {
+        "q": "Les chats voient-ils les couleurs comme les humains ?",
+        "a": "Non, ils voient en nuances limitées (dichromates)",
+        "validated": true
+      },
+      {
+        "q": "Quel est le chien de course le plus rapide au monde ?",
+        "a": "Le lévrier (greyhound)",
+        "validated": true
+      },
+      {
+        "q": "Combien de dents a un chat adulte ?",
+        "a": "30 dents",
+        "validated": true
+      },
+      {
+        "q": "Quelle race de chat n'a pas de poils ?",
+        "a": "Le Sphynx",
+        "validated": true
+      },
+      {
+        "q": "Combien d'heures par jour un chat dort-il en moyenne ?",
+        "a": "12 à 16 heures",
+        "validated": true
+      },
+      {
+        "q": "Quelle race de chien est connue pour son pelage 'dreadlock' appelé corded ?",
+        "a": "Le Komondor ou le Puli",
+        "validated": true
+      },
+      {
+        "q": "Quel organe unique les chats ont-ils dans la gorge qui leur permet de ronronner ?",
+        "a": "Le larynx (muscles laryngés)",
+        "validated": true
+      },
+      {
+        "q": "Quel chien de berger australien est souvent confondu avec le Colley mais est d'origine américaine ?",
+        "a": "L'Australian Shepherd (Berger australien)",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "football",
+    "name": "⚽ Football",
+    "color": "#27ae60",
+    "questions": [
+      {
+        "q": "Combien de joueurs y a-t-il dans une équipe de football sur le terrain ?",
+        "a": "11 joueurs",
+        "validated": true
+      },
+      {
+        "q": "De quelle couleur est un carton d'expulsion ?",
+        "a": "Rouge",
+        "validated": true
+      },
+      {
+        "q": "Qui a gagné la Coupe du Monde 2018 ?",
+        "a": "La France",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a remporté le plus de Coupes du Monde ?",
+        "a": "Le Brésil (5 titres)",
+        "validated": true
+      },
+      {
+        "q": "Combien de temps dure un match de football réglementaire ?",
+        "a": "90 minutes (2×45)",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur détient le record du nombre de Ballons d'Or ?",
+        "a": "Lionel Messi (8 Ballons d'Or)",
+        "validated": true
+      },
+      {
+        "q": "En quelle année a eu lieu la première Coupe du Monde de football ?",
+        "a": "1930 (en Uruguay)",
+        "validated": true
+      },
+      {
+        "q": "Quel club a remporté le plus de Ligues des Champions ?",
+        "a": "Le Real Madrid",
+        "validated": true
+      },
+      {
+        "q": "Quel est le record de buts marqués lors d'une seule Coupe du Monde par un joueur ?",
+        "a": "Miroslav Klose (16 buts, 4 éditions)",
+        "validated": true
+      },
+      {
+        "q": "Dans quelle ville s'est déroulée la finale de la Coupe du Monde 2006 remportée par l'Italie ?",
+        "a": "Berlin (Olympiastadion)",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "jeuxvideo",
+    "name": "🎮 Jeux vidéo",
+    "color": "#9b59b6",
+    "questions": [
+      {
+        "q": "Quel plombier moustachu saute sur des champignons ?",
+        "a": "Mario",
+        "validated": true
+      },
+      {
+        "q": "Dans quel jeu construit-on des structures avec des blocs de terrain cubiques ?",
+        "a": "Minecraft",
+        "validated": true
+      },
+      {
+        "q": "Quel hérisson bleu court à la vitesse du son ?",
+        "a": "Sonic",
+        "validated": true
+      },
+      {
+        "q": "Qui a créé la franchise Pokémon ?",
+        "a": "Satoshi Tajiri (Nintendo/Game Freak)",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu se déroule dans le royaume de Hyrule avec une jeune elfe en vert ?",
+        "a": "The Legend of Zelda",
+        "validated": true
+      },
+      {
+        "q": "Quel est le jeu vidéo le plus vendu de tous les temps (toutes plateformes) ?",
+        "a": "Minecraft",
+        "validated": true
+      },
+      {
+        "q": "En quelle année est sorti le premier jeu Donkey Kong, premier apparition de Mario ?",
+        "a": "1981",
+        "validated": true
+      },
+      {
+        "q": "Quel studio a développé la saga Grand Theft Auto ?",
+        "a": "Rockstar Games",
+        "validated": true
+      },
+      {
+        "q": "Qui est le créateur de la saga Metal Gear Solid ?",
+        "a": "Hideo Kojima",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de Valve lancé en 2012 est considéré comme le MOBA le plus joué au monde ?",
+        "a": "Dota 2",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "nourriture",
+    "name": "🍔 Nourriture",
+    "color": "#e74c3c",
+    "questions": [
+      {
+        "q": "Quel fromage est typiquement fondu sur une pizza italienne traditionnelle ?",
+        "a": "La mozzarella",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a inventé les sushis ?",
+        "a": "Le Japon",
+        "validated": true
+      },
+      {
+        "q": "Quel est l'ingrédient principal du guacamole ?",
+        "a": "L'avocat",
+        "validated": true
+      },
+      {
+        "q": "Quelle ville italienne est le berceau de la pizza ?",
+        "a": "Naples",
+        "validated": true
+      },
+      {
+        "q": "Quel chef français cumule le plus d'étoiles Michelin au monde ?",
+        "a": "Alain Ducasse (20+ étoiles)",
+        "validated": true
+      },
+      {
+        "q": "Quel est le fromage français qui sent le plus fort et est protégé par une AOC ?",
+        "a": "Le Munster (ou l'Époisses)",
+        "validated": true
+      },
+      {
+        "q": "Quelle épice est extraite du crocus et est la plus chère du monde au kilo ?",
+        "a": "Le safran",
+        "validated": true
+      },
+      {
+        "q": "Dans quel pays mange-t-on du 'injera', une galette fermentée acide ?",
+        "a": "L'Éthiopie",
+        "validated": true
+      },
+      {
+        "q": "Combien de litres de lait faut-il environ pour faire 1 kilo de fromage ?",
+        "a": "Environ 10 litres",
+        "validated": true
+      },
+      {
+        "q": "Quel fruit tropical contient une enzyme (bromélaïne) qui empêche la gélatine de prendre ?",
+        "a": "L'ananas",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "filmsfrancais",
+    "name": "🎬 Films français",
+    "color": "#1abc9c",
+    "questions": [
+      {
+        "q": "Quel film parle d'une serveuse timide qui améliore la vie de ses voisins à Montmartre ?",
+        "a": "Le Fabuleux Destin d'Amélie Poulain",
+        "validated": true
+      },
+      {
+        "q": "Qui a réalisé 'La Haine' en 1995 ?",
+        "a": "Mathieu Kassovitz",
+        "validated": true
+      },
+      {
+        "q": "Quel acteur français joue le tueur à gages dans 'Léon' de Luc Besson ?",
+        "a": "Jean Reno",
+        "validated": true
+      },
+      {
+        "q": "Qui a composé la bande originale du Fabuleux Destin d'Amélie Poulain ?",
+        "a": "Yann Tiersen",
+        "validated": true
+      },
+      {
+        "q": "Dans quel film de 2011 un riche tétraplégique engage un homme de banlieue pour le soigner ?",
+        "a": "Intouchables",
+        "validated": true
+      },
+      {
+        "q": "Quel film de Jean-Marie Poiré met en scène un chevalier medieval transporté de nos jours ?",
+        "a": "Les Visiteurs",
+        "validated": true
+      },
+      {
+        "q": "Quelle Palme d'Or française de 2008 se déroule dans un collège difficile de Paris ?",
+        "a": "Entre les murs",
+        "validated": true
+      },
+      {
+        "q": "Quel film de 1985 avec Depardieu et Anémone raconte une histoire de bébé échangé ?",
+        "a": "Le Père Noël est une ordure (1982) ou Trois hommes et un couffin",
+        "validated": true
+      },
+      {
+        "q": "Quel acteur incarne Astérix dans 'Mission Cléopâtre' aux côtés de Jamel Debbouze ?",
+        "a": "Christian Clavier",
+        "validated": true
+      },
+      {
+        "q": "Quel film de François Truffaut, sorti en 1959, marque le début de la Nouvelle Vague ?",
+        "a": "Les Quatre Cents Coups",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "musique",
+    "name": "🎵 Musique",
+    "color": "#e67e22",
+    "questions": [
+      {
+        "q": "Combien de cordes a une guitare classique standard ?",
+        "a": "6 cordes",
+        "validated": true
+      },
+      {
+        "q": "Qui chante 'Formidable' en 2012 ?",
+        "a": "Stromae",
+        "validated": true
+      },
+      {
+        "q": "Quel groupe britannique a interprété 'Bohemian Rhapsody' ?",
+        "a": "Queen",
+        "validated": true
+      },
+      {
+        "q": "Qui a composé la Symphonie n°9 malgré sa surdité ?",
+        "a": "Ludwig van Beethoven",
+        "validated": true
+      },
+      {
+        "q": "Quel rappeur français a sorti 'Bande Organisée' avec Jul, SCH, Naps et autres ?",
+        "a": "SCH, Jul, Naps, Kofs, Elams, Solda, Houari, Soso Maness",
+        "validated": true
+      },
+      {
+        "q": "Quelle chanteuse française a popularisé 'La Vie en rose' dans les années 40 ?",
+        "a": "Édith Piaf",
+        "validated": true
+      },
+      {
+        "q": "Qui a gagné l'Eurovision 2021 pour l'Italie ?",
+        "a": "Måneskin",
+        "validated": true
+      },
+      {
+        "q": "Quel instrument à cordes pincées est associé au flamenco espagnol ?",
+        "a": "La guitare flamenca",
+        "validated": true
+      },
+      {
+        "q": "Combien de touches (notes) possède un piano de concert standard ?",
+        "a": "88 touches",
+        "validated": true
+      },
+      {
+        "q": "Quel est le vrai nom du chanteur Stromae ?",
+        "a": "Paul Van Haver",
+        "validated": true
+      }
+    ]
+  }
+]

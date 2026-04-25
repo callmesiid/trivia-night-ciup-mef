@@ -1,0 +1,148 @@
+{
+  "id": "instruments",
+  "label": "INSTRUMENTS DE MUSIQUE",
+  "icon": "icons/musique.png",
+  "prompt": "Citez un maximum d'instruments de musique (tous genres confondus).",
+  "answers": [
+    {
+      "value": "Violon",
+      "validated": true
+    },
+    {
+      "value": "Alto",
+      "validated": true
+    },
+    {
+      "value": "Violoncelle",
+      "validated": true
+    },
+    {
+      "value": "Contrebasse",
+      "validated": true
+    },
+    {
+      "value": "Guitare",
+      "validated": true
+    },
+    {
+      "value": "Guitare basse",
+      "validated": true
+    },
+    {
+      "value": "Mandoline",
+      "validated": true
+    },
+    {
+      "value": "Banjo",
+      "validated": true
+    },
+    {
+      "value": "Piano",
+      "validated": true
+    },
+    {
+      "value": "Orgue",
+      "validated": true
+    },
+    {
+      "value": "Clavecin",
+      "validated": true
+    },
+    {
+      "value": "Accordéon",
+      "validated": true
+    },
+    {
+      "value": "Flûte traversière",
+      "validated": true
+    },
+    {
+      "value": "Flûte à bec",
+      "validated": true
+    },
+    {
+      "value": "Hautbois",
+      "validated": true
+    },
+    {
+      "value": "Clarinette",
+      "validated": true
+    },
+    {
+      "value": "Saxophone",
+      "validated": true
+    },
+    {
+      "value": "Basson",
+      "validated": true
+    },
+    {
+      "value": "Cor",
+      "validated": true
+    },
+    {
+      "value": "Trompette",
+      "validated": true
+    },
+    {
+      "value": "Trombone",
+      "validated": true
+    },
+    {
+      "value": "Tuba",
+      "validated": true
+    },
+    {
+      "value": "Euphonium",
+      "validated": true
+    },
+    {
+      "value": "Batterie",
+      "validated": true
+    },
+    {
+      "value": "Xylophone",
+      "validated": true
+    },
+    {
+      "value": "Marimba",
+      "validated": true
+    },
+    {
+      "value": "Vibraphone",
+      "validated": true
+    },
+    {
+      "value": "Harpe",
+      "validated": true
+    },
+    {
+      "value": "Luth",
+      "validated": true
+    },
+    {
+      "value": "Sitar",
+      "validated": true
+    },
+    {
+      "value": "Kora",
+      "validated": true
+    },
+    {
+      "value": "Didgeridoo",
+      "validated": true
+    },
+    {
+      "value": "Balafon",
+      "validated": true
+    },
+    {
+      "value": "Djembé",
+      "validated": true
+    },
+    {
+      "value": "Bongo",
+      "validated": true
+    }
+  ]
+}

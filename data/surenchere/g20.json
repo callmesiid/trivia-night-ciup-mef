@@ -1,0 +1,88 @@
+{
+  "id": "g20",
+  "label": "PAYS DU G20",
+  "icon": "icons/histoire.png",
+  "prompt": "Citez un maximum de pays membres du G20.",
+  "answers": [
+    {
+      "value": "Afrique du Sud",
+      "validated": true
+    },
+    {
+      "value": "Allemagne",
+      "validated": true
+    },
+    {
+      "value": "Arabie Saoudite",
+      "validated": true
+    },
+    {
+      "value": "Argentine",
+      "validated": true
+    },
+    {
+      "value": "Australie",
+      "validated": true
+    },
+    {
+      "value": "Brésil",
+      "validated": true
+    },
+    {
+      "value": "Canada",
+      "validated": true
+    },
+    {
+      "value": "Chine",
+      "validated": true
+    },
+    {
+      "value": "Corée du Sud",
+      "validated": true
+    },
+    {
+      "value": "États-Unis",
+      "validated": true
+    },
+    {
+      "value": "France",
+      "validated": true
+    },
+    {
+      "value": "Inde",
+      "validated": true
+    },
+    {
+      "value": "Indonésie",
+      "validated": true
+    },
+    {
+      "value": "Italie",
+      "validated": true
+    },
+    {
+      "value": "Japon",
+      "validated": true
+    },
+    {
+      "value": "Mexique",
+      "validated": true
+    },
+    {
+      "value": "Royaume-Uni",
+      "validated": true
+    },
+    {
+      "value": "Russie",
+      "validated": true
+    },
+    {
+      "value": "Turquie",
+      "validated": true
+    },
+    {
+      "value": "Union Européenne",
+      "validated": true
+    }
+  ]
+}

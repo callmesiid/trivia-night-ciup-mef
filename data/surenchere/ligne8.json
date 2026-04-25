@@ -1,0 +1,156 @@
+{
+  "id": "ligne8",
+  "label": "ARRÊTS LIGNE 8 DU MÉTRO",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum d'arrêts de la ligne 8 du métro (Balard — Créteil-Pointe du Lac).",
+  "answers": [
+    {
+      "value": "Balard",
+      "validated": true
+    },
+    {
+      "value": "Lourmel",
+      "validated": true
+    },
+    {
+      "value": "Boucicaut",
+      "validated": true
+    },
+    {
+      "value": "Félix Faure",
+      "validated": true
+    },
+    {
+      "value": "Commerce",
+      "validated": true
+    },
+    {
+      "value": "La Motte-Picquet Grenelle",
+      "validated": true
+    },
+    {
+      "value": "École Militaire",
+      "validated": true
+    },
+    {
+      "value": "La Tour-Maubourg",
+      "validated": true
+    },
+    {
+      "value": "Invalides",
+      "validated": true
+    },
+    {
+      "value": "Concorde",
+      "validated": true
+    },
+    {
+      "value": "Madeleine",
+      "validated": true
+    },
+    {
+      "value": "Opéra",
+      "validated": true
+    },
+    {
+      "value": "Richelieu-Drouot",
+      "validated": true
+    },
+    {
+      "value": "Grands Boulevards",
+      "validated": true
+    },
+    {
+      "value": "Bonne Nouvelle",
+      "validated": true
+    },
+    {
+      "value": "Strasbourg-Saint-Denis",
+      "validated": true
+    },
+    {
+      "value": "République",
+      "validated": true
+    },
+    {
+      "value": "Filles du Calvaire",
+      "validated": true
+    },
+    {
+      "value": "Saint-Sébastien Froissart",
+      "validated": true
+    },
+    {
+      "value": "Chemin Vert",
+      "validated": true
+    },
+    {
+      "value": "Bastille",
+      "validated": true
+    },
+    {
+      "value": "Ledru-Rollin",
+      "validated": true
+    },
+    {
+      "value": "Faidherbe-Chaligny",
+      "validated": true
+    },
+    {
+      "value": "Reuilly-Diderot",
+      "validated": true
+    },
+    {
+      "value": "Montgallet",
+      "validated": true
+    },
+    {
+      "value": "Daumesnil",
+      "validated": true
+    },
+    {
+      "value": "Michel Bizot",
+      "validated": true
+    },
+    {
+      "value": "Porte Dorée",
+      "validated": true
+    },
+    {
+      "value": "Porte de Charenton",
+      "validated": true
+    },
+    {
+      "value": "Liberté",
+      "validated": true
+    },
+    {
+      "value": "Charenton-Écoles",
+      "validated": true
+    },
+    {
+      "value": "École Vétérinaire",
+      "validated": true
+    },
+    {
+      "value": "Maisons-Alfort",
+      "validated": true
+    },
+    {
+      "value": "Créteil-Université",
+      "validated": true
+    },
+    {
+      "value": "Créteil-L'Échat",
+      "validated": true
+    },
+    {
+      "value": "Créteil-Préfecture",
+      "validated": true
+    },
+    {
+      "value": "Pointe du Lac",
+      "validated": true
+    }
+  ]
+}

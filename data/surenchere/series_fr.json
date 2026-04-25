@@ -1,0 +1,112 @@
+{
+  "id": "series_fr",
+  "label": "SÉRIES FRANÇAISES",
+  "icon": "icons/cinema.png",
+  "prompt": "Citez un maximum de séries françaises (tous supports : TV, streaming, etc.).",
+  "answers": [
+    {
+      "value": "Lupin",
+      "validated": true
+    },
+    {
+      "value": "Kaamelott",
+      "validated": true
+    },
+    {
+      "value": "Engrenages",
+      "validated": true
+    },
+    {
+      "value": "Dix pour cent",
+      "validated": true
+    },
+    {
+      "value": "Braquo",
+      "validated": true
+    },
+    {
+      "value": "Call My Agent",
+      "validated": true
+    },
+    {
+      "value": "Plus belle la vie",
+      "validated": true
+    },
+    {
+      "value": "Marseille",
+      "validated": true
+    },
+    {
+      "value": "Au Service de la France",
+      "validated": true
+    },
+    {
+      "value": "Plan Cœur",
+      "validated": true
+    },
+    {
+      "value": "Bref",
+      "validated": true
+    },
+    {
+      "value": "Validé",
+      "validated": true
+    },
+    {
+      "value": "La Flamme",
+      "validated": true
+    },
+    {
+      "value": "Versailles",
+      "validated": true
+    },
+    {
+      "value": "Baron Noir",
+      "validated": true
+    },
+    {
+      "value": "Capitaine Marleau",
+      "validated": true
+    },
+    {
+      "value": "Section de recherches",
+      "validated": true
+    },
+    {
+      "value": "Profilage",
+      "validated": true
+    },
+    {
+      "value": "Laetitia",
+      "validated": true
+    },
+    {
+      "value": "Mortel",
+      "validated": true
+    },
+    {
+      "value": "Family Business",
+      "validated": true
+    },
+    {
+      "value": "Nox",
+      "validated": true
+    },
+    {
+      "value": "Skam France",
+      "validated": true
+    },
+    {
+      "value": "Ainsi soient-ils",
+      "validated": true
+    },
+    {
+      "value": "Les Revenants",
+      "validated": true
+    },
+    {
+      "value": "Un village français",
+      "validated": true
+    }
+  ]
+}

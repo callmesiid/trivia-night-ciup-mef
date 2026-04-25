@@ -1,0 +1,148 @@
+{
+  "id": "jo_sports",
+  "label": "SPORTS AUX JO D'ÉTÉ",
+  "icon": "icons/sport.png",
+  "prompt": "Citez un maximum de disciplines présentes aux Jeux Olympiques d'été.",
+  "answers": [
+    {
+      "value": "Athlétisme",
+      "validated": true
+    },
+    {
+      "value": "Natation",
+      "validated": true
+    },
+    {
+      "value": "Cyclisme",
+      "validated": true
+    },
+    {
+      "value": "Judo",
+      "validated": true
+    },
+    {
+      "value": "Tennis",
+      "validated": true
+    },
+    {
+      "value": "Football",
+      "validated": true
+    },
+    {
+      "value": "Basketball",
+      "validated": true
+    },
+    {
+      "value": "Volleyball",
+      "validated": true
+    },
+    {
+      "value": "Rugby à 7",
+      "validated": true
+    },
+    {
+      "value": "Boxe",
+      "validated": true
+    },
+    {
+      "value": "Lutte",
+      "validated": true
+    },
+    {
+      "value": "Escrime",
+      "validated": true
+    },
+    {
+      "value": "Tir",
+      "validated": true
+    },
+    {
+      "value": "Aviron",
+      "validated": true
+    },
+    {
+      "value": "Kayak",
+      "validated": true
+    },
+    {
+      "value": "Canoë",
+      "validated": true
+    },
+    {
+      "value": "Voile",
+      "validated": true
+    },
+    {
+      "value": "Équitation",
+      "validated": true
+    },
+    {
+      "value": "Haltérophilie",
+      "validated": true
+    },
+    {
+      "value": "Tir à l'arc",
+      "validated": true
+    },
+    {
+      "value": "Pentathlon moderne",
+      "validated": true
+    },
+    {
+      "value": "Badminton",
+      "validated": true
+    },
+    {
+      "value": "Tennis de table",
+      "validated": true
+    },
+    {
+      "value": "Handball",
+      "validated": true
+    },
+    {
+      "value": "Water-polo",
+      "validated": true
+    },
+    {
+      "value": "Plongeon",
+      "validated": true
+    },
+    {
+      "value": "Natation synchronisée",
+      "validated": true
+    },
+    {
+      "value": "Trampoline",
+      "validated": true
+    },
+    {
+      "value": "Golf",
+      "validated": true
+    },
+    {
+      "value": "Surf",
+      "validated": true
+    },
+    {
+      "value": "Skateboard",
+      "validated": true
+    },
+    {
+      "value": "Escalade",
+      "validated": true
+    },
+    {
+      "value": "Breaking",
+      "validated": true
+    },
+    {
+      "value": "Taekwondo",
+      "validated": true
+    },
+    {
+      "value": "Triathlon",
+      "validated": true
+    }
+  ]
+}

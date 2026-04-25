@@ -1,0 +1,116 @@
+{
+  "id": "ue",
+  "label": "PAYS DE L'UNION EUROPÉENNE",
+  "icon": "icons/histoire.png",
+  "prompt": "Citez un maximum de pays membres de l'Union Européenne (27 membres).",
+  "answers": [
+    {
+      "value": "Allemagne",
+      "validated": true
+    },
+    {
+      "value": "Autriche",
+      "validated": true
+    },
+    {
+      "value": "Belgique",
+      "validated": true
+    },
+    {
+      "value": "Bulgarie",
+      "validated": true
+    },
+    {
+      "value": "Chypre",
+      "validated": true
+    },
+    {
+      "value": "Croatie",
+      "validated": true
+    },
+    {
+      "value": "Danemark",
+      "validated": true
+    },
+    {
+      "value": "Espagne",
+      "validated": true
+    },
+    {
+      "value": "Estonie",
+      "validated": true
+    },
+    {
+      "value": "Finlande",
+      "validated": true
+    },
+    {
+      "value": "France",
+      "validated": true
+    },
+    {
+      "value": "Grèce",
+      "validated": true
+    },
+    {
+      "value": "Hongrie",
+      "validated": true
+    },
+    {
+      "value": "Irlande",
+      "validated": true
+    },
+    {
+      "value": "Italie",
+      "validated": true
+    },
+    {
+      "value": "Lettonie",
+      "validated": true
+    },
+    {
+      "value": "Lituanie",
+      "validated": true
+    },
+    {
+      "value": "Luxembourg",
+      "validated": true
+    },
+    {
+      "value": "Malte",
+      "validated": true
+    },
+    {
+      "value": "Pays-Bas",
+      "validated": true
+    },
+    {
+      "value": "Pologne",
+      "validated": true
+    },
+    {
+      "value": "Portugal",
+      "validated": true
+    },
+    {
+      "value": "Roumanie",
+      "validated": true
+    },
+    {
+      "value": "Slovaquie",
+      "validated": true
+    },
+    {
+      "value": "Slovénie",
+      "validated": true
+    },
+    {
+      "value": "Suède",
+      "validated": true
+    },
+    {
+      "value": "Tchéquie",
+      "validated": true
+    }
+  ]
+}

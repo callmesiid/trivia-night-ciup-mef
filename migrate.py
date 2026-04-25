@@ -52,23 +52,82 @@ def strip_js_var(content, var_name):
 
 
 def js_to_json(text):
-    """Convert a JS object/array literal to valid JSON (handles unquoted keys & single quotes)."""
+    """Convert a JS object/array literal to valid JSON.
+
+    Uses a character-by-character parser to correctly handle:
+    - Single-quoted strings ('value') -> converted to double-quoted
+    - Double-quoted strings with apostrophes ("l'amour") -> copied verbatim
+    - Unquoted object keys (id:) -> quoted ("id":)
+    - Trailing commas
+    """
     # Strip comments
     text = re.sub(r'//[^\n]*', '', text)
     text = re.sub(r'/\*[\s\S]*?\*/', '', text)
-    # Quote unquoted object keys
+
+    # Phase 1: convert single-quoted strings to double-quoted, leave double-quoted intact
+    result = []
+    i, n = 0, len(text)
+    while i < n:
+        c = text[i]
+        if c == '"':
+            # Double-quoted string: copy verbatim (including apostrophes inside)
+            result.append(c)
+            i += 1
+            while i < n:
+                c = text[i]
+                if c == '\\':
+                    result.append(c)
+                    i += 1
+                    if i < n:
+                        result.append(text[i])
+                elif c == '"':
+                    result.append(c)
+                    break
+                else:
+                    result.append(c)
+                i += 1
+        elif c == "'":
+            # Single-quoted string: convert to double-quoted
+            result.append('"')
+            i += 1
+            while i < n:
+                c = text[i]
+                if c == '\\':
+                    i += 1
+                    if i < n:
+                        nc = text[i]
+                        if nc == "'":
+                            result.append("'")       # \' -> '
+                        elif nc == '"':
+                            result.append('\\"')     # \" -> \"
+                        else:
+                            result.append('\\')
+                            result.append(nc)
+                elif c == "'":
+                    result.append('"')
+                    break
+                else:
+                    if c == '"':
+                        result.append('\\"')         # escape bare " inside single-quoted string
+                    else:
+                        result.append(c)
+                i += 1
+        else:
+            result.append(c)
+        i += 1
+
+    text = ''.join(result)
+
+    # Phase 2: quote unquoted object keys  (word chars followed by colon, after { , \n \r)
     text = re.sub(
         r'(?<=[{,\n\r])\s*([a-zA-Z_$][a-zA-Z0-9_$]*)\s*:',
         lambda m: m.group(0).replace(m.group(1), f'"{m.group(1)}"', 1),
         text
     )
-    # Single-quoted strings -> double-quoted
-    def fix_sq(m):
-        inner = m.group(1).replace('"', '\\"').replace("\\'", "'")
-        return f'"{inner}"'
-    text = re.sub(r"'((?:[^'\\]|\\.)*)'", fix_sq, text)
-    # Remove trailing commas before } or ]
+
+    # Phase 3: remove trailing commas before } or ]
     text = re.sub(r',(\s*[\]}])', r'\1', text)
+
     return text
 
 

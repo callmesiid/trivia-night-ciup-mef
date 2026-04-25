@@ -1,0 +1,172 @@
+{
+  "id": "afrique",
+  "label": "PAYS D'AFRIQUE",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum de pays du continent africain.",
+  "answers": [
+    {
+      "value": "Afrique du Sud",
+      "validated": true
+    },
+    {
+      "value": "Algérie",
+      "validated": true
+    },
+    {
+      "value": "Angola",
+      "validated": true
+    },
+    {
+      "value": "Bénin",
+      "validated": true
+    },
+    {
+      "value": "Botswana",
+      "validated": true
+    },
+    {
+      "value": "Burkina Faso",
+      "validated": true
+    },
+    {
+      "value": "Burundi",
+      "validated": true
+    },
+    {
+      "value": "Cameroun",
+      "validated": true
+    },
+    {
+      "value": "Cap-Vert",
+      "validated": true
+    },
+    {
+      "value": "Centrafrique",
+      "validated": true
+    },
+    {
+      "value": "Comores",
+      "validated": true
+    },
+    {
+      "value": "Congo",
+      "validated": true
+    },
+    {
+      "value": "Côte d'Ivoire",
+      "validated": true
+    },
+    {
+      "value": "Djibouti",
+      "validated": true
+    },
+    {
+      "value": "Égypte",
+      "validated": true
+    },
+    {
+      "value": "Érythrée",
+      "validated": true
+    },
+    {
+      "value": "Éthiopie",
+      "validated": true
+    },
+    {
+      "value": "Gabon",
+      "validated": true
+    },
+    {
+      "value": "Gambie",
+      "validated": true
+    },
+    {
+      "value": "Ghana",
+      "validated": true
+    },
+    {
+      "value": "Guinée",
+      "validated": true
+    },
+    {
+      "value": "Kenya",
+      "validated": true
+    },
+    {
+      "value": "Libye",
+      "validated": true
+    },
+    {
+      "value": "Madagascar",
+      "validated": true
+    },
+    {
+      "value": "Mali",
+      "validated": true
+    },
+    {
+      "value": "Maroc",
+      "validated": true
+    },
+    {
+      "value": "Mauritanie",
+      "validated": true
+    },
+    {
+      "value": "Mozambique",
+      "validated": true
+    },
+    {
+      "value": "Niger",
+      "validated": true
+    },
+    {
+      "value": "Nigeria",
+      "validated": true
+    },
+    {
+      "value": "Ouganda",
+      "validated": true
+    },
+    {
+      "value": "Rwanda",
+      "validated": true
+    },
+    {
+      "value": "Sénégal",
+      "validated": true
+    },
+    {
+      "value": "Somalie",
+      "validated": true
+    },
+    {
+      "value": "Soudan",
+      "validated": true
+    },
+    {
+      "value": "Tanzanie",
+      "validated": true
+    },
+    {
+      "value": "Tchad",
+      "validated": true
+    },
+    {
+      "value": "Togo",
+      "validated": true
+    },
+    {
+      "value": "Tunisie",
+      "validated": true
+    },
+    {
+      "value": "Zambie",
+      "validated": true
+    },
+    {
+      "value": "Zimbabwe",
+      "validated": true
+    }
+  ]
+}

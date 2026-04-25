@@ -1,0 +1,188 @@
+{
+  "id": "europe",
+  "label": "PAYS D'EUROPE",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum de pays du continent européen.",
+  "answers": [
+    {
+      "value": "Albanie",
+      "validated": true
+    },
+    {
+      "value": "Allemagne",
+      "validated": true
+    },
+    {
+      "value": "Andorre",
+      "validated": true
+    },
+    {
+      "value": "Autriche",
+      "validated": true
+    },
+    {
+      "value": "Belgique",
+      "validated": true
+    },
+    {
+      "value": "Biélorussie",
+      "validated": true
+    },
+    {
+      "value": "Bosnie-Herzégovine",
+      "validated": true
+    },
+    {
+      "value": "Bulgarie",
+      "validated": true
+    },
+    {
+      "value": "Chypre",
+      "validated": true
+    },
+    {
+      "value": "Croatie",
+      "validated": true
+    },
+    {
+      "value": "Danemark",
+      "validated": true
+    },
+    {
+      "value": "Espagne",
+      "validated": true
+    },
+    {
+      "value": "Estonie",
+      "validated": true
+    },
+    {
+      "value": "Finlande",
+      "validated": true
+    },
+    {
+      "value": "France",
+      "validated": true
+    },
+    {
+      "value": "Grèce",
+      "validated": true
+    },
+    {
+      "value": "Hongrie",
+      "validated": true
+    },
+    {
+      "value": "Irlande",
+      "validated": true
+    },
+    {
+      "value": "Islande",
+      "validated": true
+    },
+    {
+      "value": "Italie",
+      "validated": true
+    },
+    {
+      "value": "Kosovo",
+      "validated": true
+    },
+    {
+      "value": "Lettonie",
+      "validated": true
+    },
+    {
+      "value": "Liechtenstein",
+      "validated": true
+    },
+    {
+      "value": "Lituanie",
+      "validated": true
+    },
+    {
+      "value": "Luxembourg",
+      "validated": true
+    },
+    {
+      "value": "Malte",
+      "validated": true
+    },
+    {
+      "value": "Moldova",
+      "validated": true
+    },
+    {
+      "value": "Monaco",
+      "validated": true
+    },
+    {
+      "value": "Monténégro",
+      "validated": true
+    },
+    {
+      "value": "Norvège",
+      "validated": true
+    },
+    {
+      "value": "Pays-Bas",
+      "validated": true
+    },
+    {
+      "value": "Pologne",
+      "validated": true
+    },
+    {
+      "value": "Portugal",
+      "validated": true
+    },
+    {
+      "value": "Roumanie",
+      "validated": true
+    },
+    {
+      "value": "Royaume-Uni",
+      "validated": true
+    },
+    {
+      "value": "Russie",
+      "validated": true
+    },
+    {
+      "value": "Saint-Marin",
+      "validated": true
+    },
+    {
+      "value": "Serbie",
+      "validated": true
+    },
+    {
+      "value": "Slovaquie",
+      "validated": true
+    },
+    {
+      "value": "Slovénie",
+      "validated": true
+    },
+    {
+      "value": "Suède",
+      "validated": true
+    },
+    {
+      "value": "Suisse",
+      "validated": true
+    },
+    {
+      "value": "Tchéquie",
+      "validated": true
+    },
+    {
+      "value": "Ukraine",
+      "validated": true
+    },
+    {
+      "value": "Vatican",
+      "validated": true
+    }
+  ]
+}

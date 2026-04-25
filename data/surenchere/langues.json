@@ -1,0 +1,128 @@
+{
+  "id": "langues",
+  "label": "LANGUES LES PLUS PARLÉES",
+  "icon": "icons/histoire.png",
+  "prompt": "Citez un maximum de langues parmi les 30 plus parlées au monde.",
+  "answers": [
+    {
+      "value": "Mandarin",
+      "validated": true
+    },
+    {
+      "value": "Espagnol",
+      "validated": true
+    },
+    {
+      "value": "Anglais",
+      "validated": true
+    },
+    {
+      "value": "Hindi",
+      "validated": true
+    },
+    {
+      "value": "Arabe",
+      "validated": true
+    },
+    {
+      "value": "Bengali",
+      "validated": true
+    },
+    {
+      "value": "Portugais",
+      "validated": true
+    },
+    {
+      "value": "Russe",
+      "validated": true
+    },
+    {
+      "value": "Japonais",
+      "validated": true
+    },
+    {
+      "value": "Punjabi",
+      "validated": true
+    },
+    {
+      "value": "Malais",
+      "validated": true
+    },
+    {
+      "value": "Télougou",
+      "validated": true
+    },
+    {
+      "value": "Marathi",
+      "validated": true
+    },
+    {
+      "value": "Tamoul",
+      "validated": true
+    },
+    {
+      "value": "Français",
+      "validated": true
+    },
+    {
+      "value": "Allemand",
+      "validated": true
+    },
+    {
+      "value": "Ourdou",
+      "validated": true
+    },
+    {
+      "value": "Persan",
+      "validated": true
+    },
+    {
+      "value": "Swahili",
+      "validated": true
+    },
+    {
+      "value": "Turc",
+      "validated": true
+    },
+    {
+      "value": "Coréen",
+      "validated": true
+    },
+    {
+      "value": "Vietnamien",
+      "validated": true
+    },
+    {
+      "value": "Italien",
+      "validated": true
+    },
+    {
+      "value": "Polonais",
+      "validated": true
+    },
+    {
+      "value": "Ukrainien",
+      "validated": true
+    },
+    {
+      "value": "Néerlandais",
+      "validated": true
+    },
+    {
+      "value": "Indonésien",
+      "validated": true
+    },
+    {
+      "value": "Thaï",
+      "validated": true
+    },
+    {
+      "value": "Birman",
+      "validated": true
+    },
+    {
+      "value": "Gujarati",
+      "validated": true
+    }
+  ]
+}

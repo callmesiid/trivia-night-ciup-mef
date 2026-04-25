@@ -1,0 +1,112 @@
+{
+  "id": "metro_lignes",
+  "label": "LIGNES DU MÉTRO PARISIEN",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum de lignes du métro parisien (numéros et/ou noms de terminus).",
+  "answers": [
+    {
+      "value": "Ligne 1",
+      "validated": true
+    },
+    {
+      "value": "Ligne 2",
+      "validated": true
+    },
+    {
+      "value": "Ligne 3",
+      "validated": true
+    },
+    {
+      "value": "Ligne 3bis",
+      "validated": true
+    },
+    {
+      "value": "Ligne 4",
+      "validated": true
+    },
+    {
+      "value": "Ligne 5",
+      "validated": true
+    },
+    {
+      "value": "Ligne 6",
+      "validated": true
+    },
+    {
+      "value": "Ligne 7",
+      "validated": true
+    },
+    {
+      "value": "Ligne 7bis",
+      "validated": true
+    },
+    {
+      "value": "Ligne 8",
+      "validated": true
+    },
+    {
+      "value": "Ligne 9",
+      "validated": true
+    },
+    {
+      "value": "Ligne 10",
+      "validated": true
+    },
+    {
+      "value": "Ligne 11",
+      "validated": true
+    },
+    {
+      "value": "Ligne 12",
+      "validated": true
+    },
+    {
+      "value": "Ligne 13",
+      "validated": true
+    },
+    {
+      "value": "Ligne 14",
+      "validated": true
+    },
+    {
+      "value": "La Défense",
+      "validated": true
+    },
+    {
+      "value": "Château de Vincennes",
+      "validated": true
+    },
+    {
+      "value": "Nation",
+      "validated": true
+    },
+    {
+      "value": "Mairie des Lilas",
+      "validated": true
+    },
+    {
+      "value": "Porte Dauphine",
+      "validated": true
+    },
+    {
+      "value": "Bobigny",
+      "validated": true
+    },
+    {
+      "value": "Balard",
+      "validated": true
+    },
+    {
+      "value": "Créteil-Préfecture",
+      "validated": true
+    },
+    {
+      "value": "Saint-Denis-Pleyel",
+      "validated": true
+    },
+    {
+      "value": "Olympiades",
+      "validated": true
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "presidents_fr",
+  "label": "PRÉSIDENTS DE LA Ve RÉPUBLIQUE",
+  "icon": "icons/histoire.png",
+  "prompt": "Citez les présidents de la Cinquième République française avec leur nom ou prénom.",
+  "answers": [
+    {
+      "value": "De Gaulle",
+      "validated": true
+    },
+    {
+      "value": "Charles de Gaulle",
+      "validated": true
+    },
+    {
+      "value": "Pompidou",
+      "validated": true
+    },
+    {
+      "value": "Georges Pompidou",
+      "validated": true
+    },
+    {
+      "value": "Giscard d'Estaing",
+      "validated": true
+    },
+    {
+      "value": "Valéry Giscard d'Estaing",
+      "validated": true
+    },
+    {
+      "value": "Mitterrand",
+      "validated": true
+    },
+    {
+      "value": "François Mitterrand",
+      "validated": true
+    },
+    {
+      "value": "Chirac",
+      "validated": true
+    },
+    {
+      "value": "Jacques Chirac",
+      "validated": true
+    },
+    {
+      "value": "Sarkozy",
+      "validated": true
+    },
+    {
+      "value": "Nicolas Sarkozy",
+      "validated": true
+    },
+    {
+      "value": "Hollande",
+      "validated": true
+    },
+    {
+      "value": "François Hollande",
+      "validated": true
+    },
+    {
+      "value": "Macron",
+      "validated": true
+    },
+    {
+      "value": "Emmanuel Macron",
+      "validated": true
+    }
+  ]
+}

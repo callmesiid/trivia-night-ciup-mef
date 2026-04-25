@@ -1,0 +1,96 @@
+{
+  "id": "parcs",
+  "label": "PARCS ET JARDINS PARISIENS",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum de parcs, jardins ou bois de Paris et sa petite couronne.",
+  "answers": [
+    {
+      "value": "Jardin du Luxembourg",
+      "validated": true
+    },
+    {
+      "value": "Jardin des Tuileries",
+      "validated": true
+    },
+    {
+      "value": "Parc des Buttes-Chaumont",
+      "validated": true
+    },
+    {
+      "value": "Parc Monceau",
+      "validated": true
+    },
+    {
+      "value": "Parc Montsouris",
+      "validated": true
+    },
+    {
+      "value": "Champ de Mars",
+      "validated": true
+    },
+    {
+      "value": "Jardin des Plantes",
+      "validated": true
+    },
+    {
+      "value": "Parc de la Villette",
+      "validated": true
+    },
+    {
+      "value": "Parc André Citroën",
+      "validated": true
+    },
+    {
+      "value": "Bois de Boulogne",
+      "validated": true
+    },
+    {
+      "value": "Bois de Vincennes",
+      "validated": true
+    },
+    {
+      "value": "Parc de Bercy",
+      "validated": true
+    },
+    {
+      "value": "Jardin du Palais Royal",
+      "validated": true
+    },
+    {
+      "value": "Parc de Belleville",
+      "validated": true
+    },
+    {
+      "value": "Square des Batignolles",
+      "validated": true
+    },
+    {
+      "value": "Jardin d'Acclimatation",
+      "validated": true
+    },
+    {
+      "value": "Promenade Plantée",
+      "validated": true
+    },
+    {
+      "value": "Parc Kellermann",
+      "validated": true
+    },
+    {
+      "value": "Parc Georges-Brassens",
+      "validated": true
+    },
+    {
+      "value": "Jardin Tino Rossi",
+      "validated": true
+    },
+    {
+      "value": "Parc de Saint-Cloud",
+      "validated": true
+    },
+    {
+      "value": "Parc de Sceaux",
+      "validated": true
+    }
+  ]
+}

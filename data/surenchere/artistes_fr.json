@@ -1,0 +1,132 @@
+{
+  "id": "artistes_fr",
+  "label": "CHANTEURS / ARTISTES FRANÇAIS",
+  "icon": "icons/musique.png",
+  "prompt": "Citez un maximum d'artistes ou chanteurs français (solo ou groupe).",
+  "answers": [
+    {
+      "value": "Édith Piaf",
+      "validated": true
+    },
+    {
+      "value": "Charles Aznavour",
+      "validated": true
+    },
+    {
+      "value": "Serge Gainsbourg",
+      "validated": true
+    },
+    {
+      "value": "Jacques Brel",
+      "validated": true
+    },
+    {
+      "value": "Barbara",
+      "validated": true
+    },
+    {
+      "value": "Jean-Jacques Goldman",
+      "validated": true
+    },
+    {
+      "value": "Johnny Hallyday",
+      "validated": true
+    },
+    {
+      "value": "Claude François",
+      "validated": true
+    },
+    {
+      "value": "Michel Sardou",
+      "validated": true
+    },
+    {
+      "value": "Renaud",
+      "validated": true
+    },
+    {
+      "value": "Francis Cabrel",
+      "validated": true
+    },
+    {
+      "value": "Vanessa Paradis",
+      "validated": true
+    },
+    {
+      "value": "Stromae",
+      "validated": true
+    },
+    {
+      "value": "Angèle",
+      "validated": true
+    },
+    {
+      "value": "Aya Nakamura",
+      "validated": true
+    },
+    {
+      "value": "Jul",
+      "validated": true
+    },
+    {
+      "value": "Orelsan",
+      "validated": true
+    },
+    {
+      "value": "Maître Gims",
+      "validated": true
+    },
+    {
+      "value": "Soprano",
+      "validated": true
+    },
+    {
+      "value": "Nekfeu",
+      "validated": true
+    },
+    {
+      "value": "PNL",
+      "validated": true
+    },
+    {
+      "value": "Indochine",
+      "validated": true
+    },
+    {
+      "value": "M",
+      "validated": true
+    },
+    {
+      "value": "Zazie",
+      "validated": true
+    },
+    {
+      "value": "IAM",
+      "validated": true
+    },
+    {
+      "value": "NTM",
+      "validated": true
+    },
+    {
+      "value": "Daft Punk",
+      "validated": true
+    },
+    {
+      "value": "Air",
+      "validated": true
+    },
+    {
+      "value": "Christine and the Queens",
+      "validated": true
+    },
+    {
+      "value": "Vald",
+      "validated": true
+    },
+    {
+      "value": "Damso",
+      "validated": true
+    }
+  ]
+}

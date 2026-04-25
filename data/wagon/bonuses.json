@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "TCHOU TCHOU",
+    "emoji": "🚂",
+    "type": "AUTO",
+    "timing": "POST_CORRECT",
+    "desc": "Double les points de la question suivante.",
+    "how": "Activez AVANT de lancer la prochaine question. Appliqué automatiquement si bonne réponse."
+  },
+  {
+    "id": 2,
+    "name": "FREIN D'URGENCE",
+    "emoji": "🚨",
+    "type": "AUTO",
+    "timing": "POST_CORRECT",
+    "desc": "Permet de banquer après n'importe quelle bonne réponse (hors palier).",
+    "how": "Activez AVANT la question. Si bonne réponse, le bouton BANK apparaît."
+  },
+  {
+    "id": 3,
+    "name": "AIGUILLAGE",
+    "emoji": "🔀",
+    "type": "AUTO",
+    "timing": "PRE_QUESTION",
+    "desc": "Remplace la question au moment de son lancement (reroll automatique).",
+    "how": "Activez avant le timer. La question est changée au lancement."
+  },
+  {
+    "id": 4,
+    "name": "CONTRÔLEUR",
+    "emoji": "🎫",
+    "type": "MANUAL",
+    "timing": "IMMEDIATE",
+    "desc": "Une équipe adverse répond à la prochaine question à votre place. Si juste, les points vous reviennent.",
+    "how": "Activez → un banner apparaît dans la régie. Annoncez quelle équipe adverse répond. Gérez les points manuellement au résultat."
+  },
+  {
+    "id": 5,
+    "name": "CHARBON",
+    "emoji": "⛏️",
+    "type": "AUTO",
+    "timing": "POST_CORRECT",
+    "desc": "+3 points bonus si la réponse est correcte.",
+    "how": "Activez avant la question. +3 ajoutés automatiquement si bonne réponse."
+  },
+  {
+    "id": 6,
+    "name": "PREMIÈRE CLASSE",
+    "emoji": "👑",
+    "type": "AUTO",
+    "timing": "POST_CORRECT",
+    "desc": "Si la réponse est juste, la question suivante est validée automatiquement.",
+    "how": "Activez avant la question. Si correct, la Q suivante est gagnée d'office."
+  },
+  {
+    "id": 7,
+    "name": "RETARD SNCF",
+    "emoji": "⏰",
+    "type": "AUTO",
+    "timing": "PRE_QUESTION",
+    "desc": "+20 secondes au timer de la prochaine question.",
+    "how": "Activez avant le timer. Le timer sera allongé automatiquement."
+  },
+  {
+    "id": 9,
+    "name": "VOL DE BAGAGE",
+    "emoji": "🧳",
+    "type": "AUTO",
+    "timing": "IMMEDIATE",
+    "desc": "Vole 3 points à l'équipe en tête — effet immédiat.",
+    "how": "Appliqué automatiquement dès confirmation."
+  },
+  {
+    "id": 10,
+    "name": "TERMINUS",
+    "emoji": "🏁",
+    "type": "AUTO",
+    "timing": "POST_CORRECT",
+    "desc": "Force le bank immédiatement après une bonne réponse, même hors palier.",
+    "how": "Activez avant la question. Si bonne réponse, bank forcé automatiquement."
+  },
+  {
+    "id": 11,
+    "name": "WAGON BAR",
+    "emoji": "🍸",
+    "type": "AUTO",
+    "timing": "IMMEDIATE",
+    "desc": "+5 points instantanément à votre score.",
+    "how": "Appliqué automatiquement dès confirmation."
+  },
+  {
+    "id": 12,
+    "name": "GRIÈVE",
+    "emoji": "🔒",
+    "type": "AUTO",
+    "timing": "IMMEDIATE",
+    "desc": "Bloque le wagon sélectionné pour ce tour.",
+    "how": "Appliqué au wagon actuellement sélectionné."
+  }
+]

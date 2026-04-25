@@ -1,0 +1,116 @@
+{
+  "id": "films_fr",
+  "label": "FILMS FRANÇAIS CULTES",
+  "icon": "icons/cinema.png",
+  "prompt": "Citez un maximum de films français devenus cultes ou iconiques.",
+  "answers": [
+    {
+      "value": "Intouchables",
+      "validated": true
+    },
+    {
+      "value": "Le Fabuleux Destin d'Amélie Poulain",
+      "validated": true
+    },
+    {
+      "value": "La Haine",
+      "validated": true
+    },
+    {
+      "value": "Les Visiteurs",
+      "validated": true
+    },
+    {
+      "value": "Bienvenue chez les Ch'tis",
+      "validated": true
+    },
+    {
+      "value": "Léon",
+      "validated": true
+    },
+    {
+      "value": "Les Choristes",
+      "validated": true
+    },
+    {
+      "value": "Un Prophète",
+      "validated": true
+    },
+    {
+      "value": "Le Dîner de Cons",
+      "validated": true
+    },
+    {
+      "value": "À Bout de Souffle",
+      "validated": true
+    },
+    {
+      "value": "OSS 117",
+      "validated": true
+    },
+    {
+      "value": "Nikita",
+      "validated": true
+    },
+    {
+      "value": "Taxi",
+      "validated": true
+    },
+    {
+      "value": "La Cité de la Peur",
+      "validated": true
+    },
+    {
+      "value": "La Grande Vadrouille",
+      "validated": true
+    },
+    {
+      "value": "Astérix Mission Cléopâtre",
+      "validated": true
+    },
+    {
+      "value": "Le Grand Bleu",
+      "validated": true
+    },
+    {
+      "value": "La Vie en Rose",
+      "validated": true
+    },
+    {
+      "value": "8 Femmes",
+      "validated": true
+    },
+    {
+      "value": "Trois Hommes et un Couffin",
+      "validated": true
+    },
+    {
+      "value": "Les Misérables",
+      "validated": true
+    },
+    {
+      "value": "Au Revoir les Enfants",
+      "validated": true
+    },
+    {
+      "value": "Le Fabuleux",
+      "validated": true
+    },
+    {
+      "value": "Banlieue 13",
+      "validated": true
+    },
+    {
+      "value": "La Vérité si je mens",
+      "validated": true
+    },
+    {
+      "value": "Qu'est-ce qu'on a fait au Bon Dieu",
+      "validated": true
+    },
+    {
+      "value": "Le Grand Bain",
+      "validated": true
+    }
+  ]
+}

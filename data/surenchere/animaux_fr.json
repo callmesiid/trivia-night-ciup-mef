@@ -1,0 +1,128 @@
+{
+  "id": "animaux_fr",
+  "label": "ANIMAUX DE LA FERME",
+  "icon": "icons/animaux.png",
+  "prompt": "Citez un maximum d'animaux qu'on trouve traditionnellement dans une ferme.",
+  "answers": [
+    {
+      "value": "Vache",
+      "validated": true
+    },
+    {
+      "value": "Cochon",
+      "validated": true
+    },
+    {
+      "value": "Mouton",
+      "validated": true
+    },
+    {
+      "value": "Chèvre",
+      "validated": true
+    },
+    {
+      "value": "Poulet",
+      "validated": true
+    },
+    {
+      "value": "Poule",
+      "validated": true
+    },
+    {
+      "value": "Coq",
+      "validated": true
+    },
+    {
+      "value": "Canard",
+      "validated": true
+    },
+    {
+      "value": "Oie",
+      "validated": true
+    },
+    {
+      "value": "Dinde",
+      "validated": true
+    },
+    {
+      "value": "Lapin",
+      "validated": true
+    },
+    {
+      "value": "Cheval",
+      "validated": true
+    },
+    {
+      "value": "Âne",
+      "validated": true
+    },
+    {
+      "value": "Mule",
+      "validated": true
+    },
+    {
+      "value": "Bœuf",
+      "validated": true
+    },
+    {
+      "value": "Taureau",
+      "validated": true
+    },
+    {
+      "value": "Veau",
+      "validated": true
+    },
+    {
+      "value": "Agneau",
+      "validated": true
+    },
+    {
+      "value": "Cabri",
+      "validated": true
+    },
+    {
+      "value": "Chien",
+      "validated": true
+    },
+    {
+      "value": "Chat",
+      "validated": true
+    },
+    {
+      "value": "Pigeon",
+      "validated": true
+    },
+    {
+      "value": "Pintade",
+      "validated": true
+    },
+    {
+      "value": "Caille",
+      "validated": true
+    },
+    {
+      "value": "Faisan",
+      "validated": true
+    },
+    {
+      "value": "Abeille",
+      "validated": true
+    },
+    {
+      "value": "Ver à soie",
+      "validated": true
+    },
+    {
+      "value": "Porc",
+      "validated": true
+    },
+    {
+      "value": "Truie",
+      "validated": true
+    },
+    {
+      "value": "Poney",
+      "validated": true
+    }
+  ]
+}

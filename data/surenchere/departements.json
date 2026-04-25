@@ -1,0 +1,288 @@
+{
+  "id": "departements",
+  "label": "DÉPARTEMENTS FRANÇAIS",
+  "icon": "icons/histoire.png",
+  "prompt": "Citez un maximum de départements français (par leur nom).",
+  "answers": [
+    {
+      "value": "Ain",
+      "validated": true
+    },
+    {
+      "value": "Aisne",
+      "validated": true
+    },
+    {
+      "value": "Allier",
+      "validated": true
+    },
+    {
+      "value": "Alpes-Maritimes",
+      "validated": true
+    },
+    {
+      "value": "Ardèche",
+      "validated": true
+    },
+    {
+      "value": "Ardennes",
+      "validated": true
+    },
+    {
+      "value": "Ariège",
+      "validated": true
+    },
+    {
+      "value": "Aube",
+      "validated": true
+    },
+    {
+      "value": "Aude",
+      "validated": true
+    },
+    {
+      "value": "Aveyron",
+      "validated": true
+    },
+    {
+      "value": "Bouches-du-Rhône",
+      "validated": true
+    },
+    {
+      "value": "Calvados",
+      "validated": true
+    },
+    {
+      "value": "Cantal",
+      "validated": true
+    },
+    {
+      "value": "Charente",
+      "validated": true
+    },
+    {
+      "value": "Cher",
+      "validated": true
+    },
+    {
+      "value": "Corrèze",
+      "validated": true
+    },
+    {
+      "value": "Corse",
+      "validated": true
+    },
+    {
+      "value": "Côte-d'Or",
+      "validated": true
+    },
+    {
+      "value": "Côtes-d'Armor",
+      "validated": true
+    },
+    {
+      "value": "Creuse",
+      "validated": true
+    },
+    {
+      "value": "Dordogne",
+      "validated": true
+    },
+    {
+      "value": "Doubs",
+      "validated": true
+    },
+    {
+      "value": "Drôme",
+      "validated": true
+    },
+    {
+      "value": "Essonne",
+      "validated": true
+    },
+    {
+      "value": "Eure",
+      "validated": true
+    },
+    {
+      "value": "Finistère",
+      "validated": true
+    },
+    {
+      "value": "Gard",
+      "validated": true
+    },
+    {
+      "value": "Gers",
+      "validated": true
+    },
+    {
+      "value": "Gironde",
+      "validated": true
+    },
+    {
+      "value": "Hérault",
+      "validated": true
+    },
+    {
+      "value": "Ille-et-Vilaine",
+      "validated": true
+    },
+    {
+      "value": "Indre",
+      "validated": true
+    },
+    {
+      "value": "Isère",
+      "validated": true
+    },
+    {
+      "value": "Jura",
+      "validated": true
+    },
+    {
+      "value": "Landes",
+      "validated": true
+    },
+    {
+      "value": "Loire",
+      "validated": true
+    },
+    {
+      "value": "Loire-Atlantique",
+      "validated": true
+    },
+    {
+      "value": "Loiret",
+      "validated": true
+    },
+    {
+      "value": "Lozère",
+      "validated": true
+    },
+    {
+      "value": "Maine-et-Loire",
+      "validated": true
+    },
+    {
+      "value": "Manche",
+      "validated": true
+    },
+    {
+      "value": "Marne",
+      "validated": true
+    },
+    {
+      "value": "Mayenne",
+      "validated": true
+    },
+    {
+      "value": "Moselle",
+      "validated": true
+    },
+    {
+      "value": "Nièvre",
+      "validated": true
+    },
+    {
+      "value": "Nord",
+      "validated": true
+    },
+    {
+      "value": "Oise",
+      "validated": true
+    },
+    {
+      "value": "Orne",
+      "validated": true
+    },
+    {
+      "value": "Pas-de-Calais",
+      "validated": true
+    },
+    {
+      "value": "Puy-de-Dôme",
+      "validated": true
+    },
+    {
+      "value": "Rhône",
+      "validated": true
+    },
+    {
+      "value": "Saône-et-Loire",
+      "validated": true
+    },
+    {
+      "value": "Sarthe",
+      "validated": true
+    },
+    {
+      "value": "Savoie",
+      "validated": true
+    },
+    {
+      "value": "Paris",
+      "validated": true
+    },
+    {
+      "value": "Seine-Maritime",
+      "validated": true
+    },
+    {
+      "value": "Seine-et-Marne",
+      "validated": true
+    },
+    {
+      "value": "Yvelines",
+      "validated": true
+    },
+    {
+      "value": "Somme",
+      "validated": true
+    },
+    {
+      "value": "Tarn",
+      "validated": true
+    },
+    {
+      "value": "Var",
+      "validated": true
+    },
+    {
+      "value": "Vaucluse",
+      "validated": true
+    },
+    {
+      "value": "Vendée",
+      "validated": true
+    },
+    {
+      "value": "Vienne",
+      "validated": true
+    },
+    {
+      "value": "Vosges",
+      "validated": true
+    },
+    {
+      "value": "Yonne",
+      "validated": true
+    },
+    {
+      "value": "Hauts-de-Seine",
+      "validated": true
+    },
+    {
+      "value": "Seine-Saint-Denis",
+      "validated": true
+    },
+    {
+      "value": "Val-de-Marne",
+      "validated": true
+    },
+    {
+      "value": "Val-d'Oise",
+      "validated": true
+    }
+  ]
+}

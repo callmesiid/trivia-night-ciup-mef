@@ -1,0 +1,124 @@
+{
+  "id": "plats_fr",
+  "label": "PLATS FRANÇAIS TRADITIONNELS",
+  "icon": "icons/cuisine.png",
+  "prompt": "Citez un maximum de plats ou spécialités culinaires traditionnellement français.",
+  "answers": [
+    {
+      "value": "Bouillabaisse",
+      "validated": true
+    },
+    {
+      "value": "Pot-au-feu",
+      "validated": true
+    },
+    {
+      "value": "Cassoulet",
+      "validated": true
+    },
+    {
+      "value": "Ratatouille",
+      "validated": true
+    },
+    {
+      "value": "Bœuf bourguignon",
+      "validated": true
+    },
+    {
+      "value": "Coq au vin",
+      "validated": true
+    },
+    {
+      "value": "Blanquette de veau",
+      "validated": true
+    },
+    {
+      "value": "Quiche lorraine",
+      "validated": true
+    },
+    {
+      "value": "Soupe à l'oignon",
+      "validated": true
+    },
+    {
+      "value": "Tartiflette",
+      "validated": true
+    },
+    {
+      "value": "Raclette",
+      "validated": true
+    },
+    {
+      "value": "Fondue savoyarde",
+      "validated": true
+    },
+    {
+      "value": "Choucroute",
+      "validated": true
+    },
+    {
+      "value": "Confit de canard",
+      "validated": true
+    },
+    {
+      "value": "Gratin dauphinois",
+      "validated": true
+    },
+    {
+      "value": "Magret de canard",
+      "validated": true
+    },
+    {
+      "value": "Foie gras",
+      "validated": true
+    },
+    {
+      "value": "Escargots de Bourgogne",
+      "validated": true
+    },
+    {
+      "value": "Sole meunière",
+      "validated": true
+    },
+    {
+      "value": "Tête de veau",
+      "validated": true
+    },
+    {
+      "value": "Cervelle de canut",
+      "validated": true
+    },
+    {
+      "value": "Crêpes bretonnes",
+      "validated": true
+    },
+    {
+      "value": "Galette complète",
+      "validated": true
+    },
+    {
+      "value": "Kouign-amann",
+      "validated": true
+    },
+    {
+      "value": "Clafoutis",
+      "validated": true
+    },
+    {
+      "value": "Tarte tatin",
+      "validated": true
+    },
+    {
+      "value": "Flamiche",
+      "validated": true
+    },
+    {
+      "value": "Garbure",
+      "validated": true
+    },
+    {
+      "value": "Pistou",
+      "validated": true
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "amerique_latine",
+  "label": "PAYS D'AMÉRIQUE LATINE",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum de pays d'Amérique latine.",
+  "answers": [
+    {
+      "value": "Mexique",
+      "validated": true
+    },
+    {
+      "value": "Guatemala",
+      "validated": true
+    },
+    {
+      "value": "Belize",
+      "validated": true
+    },
+    {
+      "value": "Honduras",
+      "validated": true
+    },
+    {
+      "value": "Salvador",
+      "validated": true
+    },
+    {
+      "value": "Nicaragua",
+      "validated": true
+    },
+    {
+      "value": "Costa Rica",
+      "validated": true
+    },
+    {
+      "value": "Panama",
+      "validated": true
+    },
+    {
+      "value": "Cuba",
+      "validated": true
+    },
+    {
+      "value": "Haïti",
+      "validated": true
+    },
+    {
+      "value": "République Dominicaine",
+      "validated": true
+    },
+    {
+      "value": "Jamaïque",
+      "validated": true
+    },
+    {
+      "value": "Venezuela",
+      "validated": true
+    },
+    {
+      "value": "Colombie",
+      "validated": true
+    },
+    {
+      "value": "Équateur",
+      "validated": true
+    },
+    {
+      "value": "Pérou",
+      "validated": true
+    },
+    {
+      "value": "Brésil",
+      "validated": true
+    },
+    {
+      "value": "Bolivie",
+      "validated": true
+    },
+    {
+      "value": "Paraguay",
+      "validated": true
+    },
+    {
+      "value": "Uruguay",
+      "validated": true
+    },
+    {
+      "value": "Argentine",
+      "validated": true
+    },
+    {
+      "value": "Chili",
+      "validated": true
+    },
+    {
+      "value": "Guyana",
+      "validated": true
+    },
+    {
+      "value": "Suriname",
+      "validated": true
+    }
+  ]
+}

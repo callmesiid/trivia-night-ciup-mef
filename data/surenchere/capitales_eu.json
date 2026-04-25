@@ -1,0 +1,156 @@
+{
+  "id": "capitales_eu",
+  "label": "CAPITALES EUROPÉENNES",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum de capitales de pays européens.",
+  "answers": [
+    {
+      "value": "Paris",
+      "validated": true
+    },
+    {
+      "value": "Berlin",
+      "validated": true
+    },
+    {
+      "value": "Madrid",
+      "validated": true
+    },
+    {
+      "value": "Rome",
+      "validated": true
+    },
+    {
+      "value": "Vienne",
+      "validated": true
+    },
+    {
+      "value": "Varsovie",
+      "validated": true
+    },
+    {
+      "value": "Bucarest",
+      "validated": true
+    },
+    {
+      "value": "Budapest",
+      "validated": true
+    },
+    {
+      "value": "Prague",
+      "validated": true
+    },
+    {
+      "value": "Sofia",
+      "validated": true
+    },
+    {
+      "value": "Bruxelles",
+      "validated": true
+    },
+    {
+      "value": "Amsterdam",
+      "validated": true
+    },
+    {
+      "value": "Stockholm",
+      "validated": true
+    },
+    {
+      "value": "Oslo",
+      "validated": true
+    },
+    {
+      "value": "Copenhague",
+      "validated": true
+    },
+    {
+      "value": "Helsinki",
+      "validated": true
+    },
+    {
+      "value": "Lisbonne",
+      "validated": true
+    },
+    {
+      "value": "Athènes",
+      "validated": true
+    },
+    {
+      "value": "Dublin",
+      "validated": true
+    },
+    {
+      "value": "Zagreb",
+      "validated": true
+    },
+    {
+      "value": "Bratislava",
+      "validated": true
+    },
+    {
+      "value": "Ljubljana",
+      "validated": true
+    },
+    {
+      "value": "Tallinn",
+      "validated": true
+    },
+    {
+      "value": "Riga",
+      "validated": true
+    },
+    {
+      "value": "Vilnius",
+      "validated": true
+    },
+    {
+      "value": "Sarajevo",
+      "validated": true
+    },
+    {
+      "value": "Belgrade",
+      "validated": true
+    },
+    {
+      "value": "Podgorica",
+      "validated": true
+    },
+    {
+      "value": "Tirana",
+      "validated": true
+    },
+    {
+      "value": "Skopje",
+      "validated": true
+    },
+    {
+      "value": "Reykjavik",
+      "validated": true
+    },
+    {
+      "value": "Kiev",
+      "validated": true
+    },
+    {
+      "value": "Minsk",
+      "validated": true
+    },
+    {
+      "value": "Moscou",
+      "validated": true
+    },
+    {
+      "value": "Berne",
+      "validated": true
+    },
+    {
+      "value": "Luxembourg",
+      "validated": true
+    },
+    {
+      "value": "La Valette",
+      "validated": true
+    }
+  ]
+}

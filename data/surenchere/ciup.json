@@ -1,0 +1,104 @@
+{
+  "id": "ciup",
+  "label": "MAISONS DE LA CIUP",
+  "icon": "icons/géographie.png",
+  "prompt": "Citez un maximum de maisons de la Cité Internationale Universitaire de Paris.",
+  "answers": [
+    {
+      "value": "Fondation Deutsch de la Meurthe",
+      "validated": true
+    },
+    {
+      "value": "Maison Internationale",
+      "validated": true
+    },
+    {
+      "value": "Maison des Provinces de France",
+      "validated": true
+    },
+    {
+      "value": "Maison du Maroc",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Tunisie",
+      "validated": true
+    },
+    {
+      "value": "Maison du Cambodge",
+      "validated": true
+    },
+    {
+      "value": "Maison du Liban",
+      "validated": true
+    },
+    {
+      "value": "Maison de l'Inde",
+      "validated": true
+    },
+    {
+      "value": "Maison du Japon",
+      "validated": true
+    },
+    {
+      "value": "Maison du Brésil",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Suède",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Suisse",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Norvège",
+      "validated": true
+    },
+    {
+      "value": "Maison du Portugal",
+      "validated": true
+    },
+    {
+      "value": "Collège Néerlandais",
+      "validated": true
+    },
+    {
+      "value": "Maison des États-Unis",
+      "validated": true
+    },
+    {
+      "value": "Maison de l'Allemagne",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Corée",
+      "validated": true
+    },
+    {
+      "value": "Maison de l'Argentine",
+      "validated": true
+    },
+    {
+      "value": "Maison du Mexique",
+      "validated": true
+    },
+    {
+      "value": "Maison du Canada",
+      "validated": true
+    },
+    {
+      "value": "Maison des Étudiants de la Francophonie",
+      "validated": true
+    },
+    {
+      "value": "Maison de l'Île-de-France",
+      "validated": true
+    },
+    {
+      "value": "Maison de l'Italie",
+      "validated": true
+    }
+  ]
+}

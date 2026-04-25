@@ -1,0 +1,47 @@
+[
+  {
+    "id": 13,
+    "name": "VOL DE TOUR",
+    "emoji": "🎯",
+    "type": "AUTO",
+    "timing": "IMMEDIATE",
+    "desc": "Vole le tour de jeu de l'équipe adverse — vous jouez à sa place immédiatement.",
+    "how": "Sélectionnez la cible. Vous prenez la main à leur place."
+  },
+  {
+    "id": 14,
+    "name": "PASSE TON TOUR",
+    "emoji": "⛔",
+    "type": "AUTO",
+    "timing": "IMMEDIATE",
+    "desc": "Force l'équipe adverse à passer son prochain tour.",
+    "how": "La prochaine fois que l'équipe doit jouer, son tour est sauté automatiquement."
+  },
+  {
+    "id": 15,
+    "name": "BLOQUER LE BANK",
+    "emoji": "🚫",
+    "type": "AUTO",
+    "timing": "IMMEDIATE",
+    "desc": "Empêche l'équipe adverse de banquer au prochain palier — elle doit finir le wagon.",
+    "how": "Le bouton BANK sera désactivé pour la prochaine opportunité de cette équipe."
+  },
+  {
+    "id": 16,
+    "name": "TIMER RÉDUIT",
+    "emoji": "⏩",
+    "type": "AUTO",
+    "timing": "IMMEDIATE",
+    "desc": "Réduit le temps de réflexion de l'adversaire de 20 secondes pour sa prochaine question.",
+    "how": "Appliqué automatiquement au prochain timer de l'équipe ciblée."
+  },
+  {
+    "id": 17,
+    "name": "VOL DE BANQUE",
+    "emoji": "🦹",
+    "type": "AUTO",
+    "timing": "PRE_QUESTION",
+    "desc": "Si l'équipe adverse choisit de BANQUER à son prochain palier, ses points vous reviennent. Si elle continue, le malus est perdu.",
+    "how": "Activez avant que l'adversaire joue. Leur bank = vos points. Ils continuent = malus perdu."
+  }
+]

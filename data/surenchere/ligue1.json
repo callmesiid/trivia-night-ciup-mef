@@ -1,0 +1,132 @@
+{
+  "id": "ligue1",
+  "label": "CLUBS DE LIGUE 1",
+  "icon": "icons/sport.png",
+  "prompt": "Citez un maximum de clubs ayant joué en Ligue 1 depuis 2010.",
+  "answers": [
+    {
+      "value": "Paris Saint-Germain",
+      "validated": true
+    },
+    {
+      "value": "PSG",
+      "validated": true
+    },
+    {
+      "value": "Olympique de Marseille",
+      "validated": true
+    },
+    {
+      "value": "OM",
+      "validated": true
+    },
+    {
+      "value": "Olympique Lyonnais",
+      "validated": true
+    },
+    {
+      "value": "OL",
+      "validated": true
+    },
+    {
+      "value": "AS Monaco",
+      "validated": true
+    },
+    {
+      "value": "RC Lens",
+      "validated": true
+    },
+    {
+      "value": "LOSC Lille",
+      "validated": true
+    },
+    {
+      "value": "OGC Nice",
+      "validated": true
+    },
+    {
+      "value": "Stade Rennais",
+      "validated": true
+    },
+    {
+      "value": "Montpellier",
+      "validated": true
+    },
+    {
+      "value": "Strasbourg",
+      "validated": true
+    },
+    {
+      "value": "Nantes",
+      "validated": true
+    },
+    {
+      "value": "Brest",
+      "validated": true
+    },
+    {
+      "value": "Toulouse",
+      "validated": true
+    },
+    {
+      "value": "Le Havre",
+      "validated": true
+    },
+    {
+      "value": "Auxerre",
+      "validated": true
+    },
+    {
+      "value": "Reims",
+      "validated": true
+    },
+    {
+      "value": "Saint-Étienne",
+      "validated": true
+    },
+    {
+      "value": "Angers",
+      "validated": true
+    },
+    {
+      "value": "Bordeaux",
+      "validated": true
+    },
+    {
+      "value": "Valenciennes",
+      "validated": true
+    },
+    {
+      "value": "Évian",
+      "validated": true
+    },
+    {
+      "value": "Ajaccio",
+      "validated": true
+    },
+    {
+      "value": "Clermont",
+      "validated": true
+    },
+    {
+      "value": "Troyes",
+      "validated": true
+    },
+    {
+      "value": "Lorient",
+      "validated": true
+    },
+    {
+      "value": "Metz",
+      "validated": true
+    },
+    {
+      "value": "Caen",
+      "validated": true
+    },
+    {
+      "value": "Guingamp",
+      "validated": true
+    }
+  ]
+}
