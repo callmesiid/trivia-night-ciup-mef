@@ -5,6 +5,109 @@
     <title>LA SURENCHÈRE — ÉCRAN</title>
     <link rel="stylesheet" href="style_surenchere.css">
     <style>
+        /* ══ NOUVEAU GÉNÉRIQUE ══════════════════════════════════════ */
+
+        /* Flash écran (coup de marteau) */
+        #flash-el {
+            position: fixed; inset: 0; background: #fff;
+            opacity: 0; pointer-events: none; z-index: 9990;
+        }
+        #flash-el.flash { animation: screenFlash .35s ease-out forwards; }
+        @keyframes screenFlash { 0%{opacity:.8;} 100%{opacity:0;} }
+
+        /* Marteau */
+        #gavel-el {
+            position: absolute; font-size: 9rem; opacity: 0; z-index: 10;
+            transform-origin: 20% 80%;
+            filter: drop-shadow(4px 4px 0 #000);
+            /* légèrement au-dessus du centre */
+            margin-bottom: 40px;
+        }
+        #gavel-el.strike {
+            animation: gavelStrike .32s cubic-bezier(0.15, 0, 0.1, 1) forwards;
+        }
+        #gavel-el.recoil {
+            animation: gavelRecoil .25s ease-out forwards;
+        }
+        @keyframes gavelStrike {
+            0%  { opacity: 0; transform: rotate(-75deg) translateY(-90px) scale(1.2); }
+            40% { opacity: 1; transform: rotate(18deg)  translateY(6px)   scale(1); }
+            70% { opacity: 1; transform: rotate(-8deg)  translateY(-8px); }
+            100%{ opacity: 1; transform: rotate(0deg)   translateY(0); }
+        }
+        @keyframes gavelRecoil {
+            0%  { opacity: 1; transform: rotate(0deg) translateY(0); }
+            100%{ opacity: 0; transform: rotate(-55deg) translateY(-70px) scale(.9); }
+        }
+
+        /* Bloc de juge (dessous marteau) */
+        #gavel-block {
+            position: absolute;
+            width: 160px; height: 28px;
+            background: linear-gradient(to bottom, #8b6914, #5a3f00);
+            border-radius: 6px; margin-top: 90px;
+            box-shadow: 0 6px 0 #3a2700, 0 0 20px rgba(0,0,0,.6);
+            opacity: 0;
+        }
+        #gavel-block.show { opacity: 1; }
+
+        /* Logo structure — "LA" + "SURENCHÈRE" (style Le Risque Tout) */
+        .title-logo-wrapper {
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            opacity: 0; position: relative; user-select: none;
+        }
+        .title-la {
+            font-family: 'Anton', sans-serif;
+            font-size: 4.5rem; color: #d4af37;
+            text-shadow: 3px 3px 0 #000, 0 0 30px rgba(212,175,55,.4);
+            transform: rotate(-12deg);
+            align-self: flex-start; margin-left: 30px;
+            margin-bottom: -18px; line-height: 1;
+        }
+        .title-main {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(5rem, 10vw, 10rem);
+            color: #fff; line-height: 1; letter-spacing: -2px;
+            text-shadow: 6px 6px 0 #000, 0 0 50px rgba(231,76,60,.25);
+        }
+
+        /* Phase 1 : tombe depuis le haut */
+        .title-logo-wrapper.title-drop {
+            opacity: 1;
+            animation: titleFall .75s cubic-bezier(0.2, 1.4, 0.4, 1) forwards;
+        }
+        @keyframes titleFall {
+            0%   { transform: translateY(-110vh); opacity: 0; }
+            65%  { transform: translateY(14px);   opacity: 1; }
+            80%  { transform: translateY(-7px);   }
+            100% { transform: translateY(0);      opacity: 1; }
+        }
+
+        /* Phase 2 : zoom (identique superBounce de Le Risque Tout) */
+        .title-logo-wrapper.title-zoom {
+            animation: titleSuperBounce 1.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        @keyframes titleSuperBounce {
+            0%  { transform: scale(1); opacity: 1; }
+            30% { transform: scale(1.65); opacity: 1; }
+            60% { transform: scale(1.45); opacity: 1; }
+            100%{ transform: scale(1.55); opacity: 1; }
+        }
+
+        /* Phase finale : scintillement rouge (casino) */
+        .title-logo-wrapper.title-flicker .title-main {
+            animation: flickerRed 2s infinite;
+            color: #e74c3c;
+            text-shadow: 4px 4px 0 #000, 0 0 30px #c0392b;
+        }
+        @keyframes flickerRed {
+            0%,18%,22%,25%,53%,57%,100% { opacity:1; text-shadow:0 0 30px #e74c3c,0 0 60px #e74c3c,4px 4px 0 #000; }
+            20%,24%,55% { opacity:.1; text-shadow:none; }
+        }
+
+        /* ══ FIN NOUVEAU GÉNÉRIQUE ══════════════════════════════════ */
+
         /* ── SCORES ÉQUIPES (header) ── */
         #teams-header {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 3100;
@@ -85,9 +188,22 @@
 <!-- Scores équipes en header -->
 <div id="teams-header"></div>
 
+<!-- Flash overlay (coup de marteau) -->
+<div id="flash-el"></div>
+
 <!-- Intro -->
 <div id="intro-screen">
-    <div id="intro-text" class="intro-logo" style="opacity:1;">LA SURENCHÈRE</div>
+    <!-- Marteau de juge -->
+    <div id="gavel-el">🔨</div>
+
+    <!-- Bloc où le marteau frappe -->
+    <div id="gavel-block"></div>
+
+    <!-- Logo "LA SURENCHÈRE" -->
+    <div class="title-logo-wrapper" id="title-logo">
+        <div class="title-la">LA</div>
+        <div class="title-main">SURENCHÈRE</div>
+    </div>
 </div>
 
 <!-- Slot machine -->
@@ -132,7 +248,6 @@
 const channel = new BroadcastChannel('surenchere_channel');
 
 const introScreen    = document.getElementById('intro-screen');
-const introText      = document.getElementById('intro-text');
 const selectorScreen = document.getElementById('selector-screen');
 const gameScreen     = document.getElementById('game-screen');
 const revealOverlay  = document.getElementById('reveal-overlay');
@@ -148,6 +263,12 @@ const audioTimer  = new Audio('effets_sonores/timer.mp3');
 const audioReveal = new Audio('effets_sonores/reveal.mp3');
 const audioWin    = new Audio('effets_sonores/selected.mp3');
 let currentFx = null;
+
+// Éléments du nouveau générique
+const gavelEl  = document.getElementById('gavel-el');
+const gavelBlk = document.getElementById('gavel-block');
+const titleLogo= document.getElementById('title-logo');
+const flashEl  = document.getElementById('flash-el');
 
 let timerInterval, spinInterval;
 let currentTime = 30;
@@ -212,33 +333,91 @@ function clearIntro() {
     introTimeouts.forEach(t => clearTimeout(t));
     introTimeouts = [];
     audioIntro.pause(); audioIntro.currentTime = 0;
-    introText.className = 'intro-logo';
+    // Reset tous les éléments génériques
+    gavelEl.className  = ''; gavelEl.style.opacity = '0';
+    gavelBlk.className = '';
+    titleLogo.className= 'title-logo-wrapper';
+    titleLogo.style.opacity = '0';
+    flashEl.className  = '';
 }
+
+function flash() {
+    flashEl.className = '';
+    void flashEl.offsetWidth;
+    flashEl.classList.add('flash');
+}
+
+function gavelHit(n) {
+    // Animer le marteau : recoil → strike
+    gavelEl.className = '';
+    gavelBlk.classList.add('show');
+    void gavelEl.offsetWidth;
+    gavelEl.classList.add('strike');
+    flash();
+    // Son de marteau
+    const snd = new Audio('effets_sonores/break.mp3');
+    snd.volume = .9; snd.play();
+}
+
 function showStaticLogo() {
     clearIntro();
     introScreen.style.display = 'flex'; selectorScreen.style.display = 'none';
     gameScreen.style.display = 'none'; revealOverlay.style.display = 'none';
     document.getElementById('scores-screen').classList.remove('show');
-    introText.className = 'intro-logo broken-lights'; introText.style.opacity = '1';
-    introText.textContent = 'LA SURENCHÈRE';
+    // Logo statique avec scintillement rouge
+    titleLogo.style.opacity = '1';
+    titleLogo.className = 'title-logo-wrapper title-flicker';
+    // Volume de fond
+    audioIntro.volume = .4; audioIntro.loop = true;
+    if (audioIntro.paused) audioIntro.play();
 }
+
 function skipIntro() { showStaticLogo(); }
+
 function runIntro() {
     clearIntro();
     introScreen.style.display = 'flex'; selectorScreen.style.display = 'none';
-    gameScreen.style.display = 'none'; revealOverlay.style.display = 'none';
-    introText.className = 'intro-logo'; introText.style.opacity = '0'; introText.textContent = 'LA SURENCHÈRE';
-    let t1 = setTimeout(() => {
-        audioBreak.volume = 1; audioBreak.play();
-        introText.classList.add('hammer-effect'); introText.textContent = 'ADJUGÉ !';
-        let t2 = setTimeout(() => {
-            introText.textContent = 'LA SURENCHÈRE';
-            introText.classList.remove('hammer-effect'); introText.classList.add('broken-lights');
-            audioIntro.play();
-        }, 1500);
-        introTimeouts.push(t2);
-    }, 500);
-    introTimeouts.push(t1);
+    gameScreen.style.display  = 'none'; revealOverlay.style.display  = 'none';
+    document.getElementById('scores-screen').classList.remove('show');
+
+    // ─── SÉQUENCE GÉNÉRIQUE ───────────────────────────────────
+    // 0.6s : PREMIER COUP DE MARTEAU
+    let t1 = setTimeout(() => gavelHit(1), 600);
+
+    // 1.0s : recoil du marteau
+    let t2 = setTimeout(() => {
+        gavelEl.className = 'recoil';
+    }, 1000);
+
+    // 1.7s : DEUXIÈME COUP DE MARTEAU
+    let t3 = setTimeout(() => gavelHit(2), 1700);
+
+    // 2.1s : recoil final + marteau disparaît
+    let t4 = setTimeout(() => {
+        gavelEl.className = 'recoil';
+        gavelBlk.className = '';
+    }, 2100);
+
+    // 2.6s : "LA SURENCHÈRE" tombe depuis le haut
+    let t5 = setTimeout(() => {
+        titleLogo.style.opacity = '1';
+        titleLogo.className = 'title-logo-wrapper title-drop';
+    }, 2600);
+
+    // 3.5s : ZOOM (style superBounce Le Risque Tout)
+    let t6 = setTimeout(() => {
+        titleLogo.className = 'title-logo-wrapper'; // reset
+        void titleLogo.offsetWidth;
+        titleLogo.className = 'title-logo-wrapper title-zoom';
+    }, 3500);
+
+    // 5.2s : scintillement rouge + musique
+    let t7 = setTimeout(() => {
+        titleLogo.className = 'title-logo-wrapper title-zoom title-flicker';
+        audioIntro.volume = .6; audioIntro.play();
+    }, 5200);
+
+    introTimeouts.push(t1, t2, t3, t4, t5, t6, t7);
 }
 
 // ── SPIN ──
