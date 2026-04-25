@@ -267,14 +267,15 @@
 // DÉFINITIONS BONUS & MALUS
 // ================================================================
 const BONUS_POOL = [
-    { id: 'double', name: 'POINTS ×2',    emoji: '✖️2', desc: 'Double tous les points (gagnés ou perdus) ce round.' },
+    { id: 'double', name: 'POINTS ×2',    emoji: '✖️2', desc: 'Si gain : ×2. Si perte : ×2 aussi. Joue double ou rien.' },
     { id: 'time',   name: 'PLUS DE TEMPS', emoji: '⏰+', desc: '+25 secondes au chrono.' },
-    { id: 'pouce',  name: 'COUP DE POUCE', emoji: '👍',  desc: '+5 réponses ajoutées automatiquement à votre citées.' }
+    { id: 'pouce',  name: 'COUP DE POUCE', emoji: '👍',  desc: '+5 réponses ajoutées aux citées (ex: citez 10, compté 15). Contre les malus +5 mise.' },
+    { id: 'adeux',  name: 'À DEUX',        emoji: '👫',  desc: 'Répondez en binôme avec l\'aide d\'un coéquipier ou du public — aucun effet sur le score.' }
 ];
 const MALUS_POOL = [
     { id: 'division', name: 'DIVISION',    emoji: '➗',  desc: 'Gains ÷3 (arrondi), pertes ×3 pour l\'adversaire.' },
     { id: 'notime',   name: 'PAS DE TEMPS', emoji: '⏩',  desc: '-15 secondes au chrono de l\'adversaire.' },
-    { id: 'plusmise', name: '+5 MISE',      emoji: '📈',  desc: '+5 à la mise de l\'adversaire (jusqu\'au max de réponses dispo).' }
+    { id: 'plusmise', name: '+5 MISE',      emoji: '📈',  desc: '+5 à la mise de l\'adversaire (jusqu\'au max des réponses dispo). Annulé par Coup de Pouce.' }
 ];
 
 // ================================================================
@@ -301,6 +302,7 @@ let coupDePouce    = false; // bonus: +5 aux citées
 let doublePoints   = false; // bonus: ×2
 let timerBonus     = 0;    // secondes nettes (positif=plus, négatif=moins)
 let divisionMalus  = false; // malus: ÷3 gains ou ×3 pertes
+let roundAwarded   = false; // empêche double-clic sur APPLIQUER
 
 const loseSounds = ['effets_sonores/wasted.mp3','effets_sonores/oh_le_con.mp3','effets_sonores/c_nul_homer.mp3','effets_sonores/wrong.mp3','effets_sonores/nope.mp3'];
 
@@ -321,11 +323,9 @@ function addTeam() {
     const name  = document.getElementById('team-name-in').value.trim();
     const color = document.getElementById('team-color-in').value;
     if (!name) return;
-    // Assigner 2 bonus + 2 malus aléatoires
-    const bPool = [...BONUS_POOL].sort(() => Math.random() - .5);
-    const mPool = [...MALUS_POOL].sort(() => Math.random() - .5);
-    const bonuses = bPool.slice(0, 2).map(b => ({ id: b.id, used: false }));
-    const malus   = mPool.slice(0, 2).map(m => ({ id: m.id, used: false }));
+    // Toutes les équipes ont les MÊMES bonus et malus (pool complet)
+    const bonuses = BONUS_POOL.map(b => ({ id: b.id, used: false }));
+    const malus   = MALUS_POOL.map(m => ({ id: m.id, used: false }));
     teams.push({ name, color, score: 0, bonuses, malus });
     document.getElementById('team-name-in').value = '';
     document.getElementById('team-color-in').value = randomColor();
@@ -469,17 +469,20 @@ function updateMiseDisplay() {
 }
 
 function calcDelta(em, ec) {
-    let d;
     if (ec >= em) {
-        d = em;
-        if (doublePoints)   d *= 2;
-        if (divisionMalus)  d = Math.floor(d / 3);
+        // GAGNÉ : on score TOUT ce qu'on a cité (pas juste la mise)
+        // Citer plus que la mise = bonus de points !
+        let d = ec;
+        if (doublePoints)  d *= 2;
+        if (divisionMalus) d = Math.floor(d / 3);
+        return d;
     } else {
-        d = -(em - ec);
-        if (doublePoints)   d *= 2;
-        if (divisionMalus)  d *= 3;
+        // PERDU : on perd la différence mise - citées
+        let d = -(em - ec);
+        if (doublePoints)  d *= 2;
+        if (divisionMalus) d *= 3;
+        return d;
     }
-    return d;
 }
 
 function updateDeltaPreview() {
@@ -554,7 +557,8 @@ function activateBonus(teamIdx, bonusIdx) {
     switch (def.id) {
         case 'double': doublePoints = true; log(`✖️2 Points doubles activé par ${teams[teamIdx].name}`, 'gold'); break;
         case 'time':   timerBonus += 25;    log(`⏰ +25s au chrono activé par ${teams[teamIdx].name}`, 'gold'); break;
-        case 'pouce':  coupDePouce = true;  log(`👍 Coup de pouce activé par ${teams[teamIdx].name} (+5 citées)`, 'gold'); break;
+        case 'pouce':  coupDePouce = true;  log(`👍 Coup de pouce activé (+5 citées) — annule aussi un malus +5 MISE`, 'gold'); break;
+        case 'adeux':  log(`👫 À DEUX activé par ${teams[teamIdx].name} — réponse en binôme autorisée !`, 'gold'); break;
     }
     channel.postMessage({ type: 'SHOW_BONUS', bonus: def, teamName: teams[teamIdx].name });
     updateMiseDisplay(); updateBmPanel();
@@ -582,6 +586,8 @@ function activateMalus(teamIdx, malusIdx) {
             break;
         case 'plusmise': {
             if (!currentTheme) { log('Tirez un thème d\'abord', 'bad'); return; }
+            // Re-lire la mise courante depuis l'input avant de calculer
+            mise = Math.max(0, parseInt(document.getElementById('mise-input').value) || 0);
             const maxA    = currentTheme.answers.length;
             const curEff  = effectiveMise();
             const remaining = maxA - curEff;
@@ -608,7 +614,8 @@ function playIntro()   { channel.postMessage({ type: 'PLAY_INTRO' }); }
 function skipIntro()   { channel.postMessage({ type: 'SKIP_INTRO' }); }
 
 function startAutoSpin() {
-    if (!availableThemes.length) { alert('Plus de thèmes !'); return; }
+    if (phase !== 'GAME') { alert('Validez les équipes d\'abord !'); return; }
+    if (!availableThemes.length) { alert('Plus de thèmes disponibles ! Démarrez une nouvelle partie.'); return; }
     document.getElementById('btn-spin').disabled = true;
     document.getElementById('answers-grid').innerHTML = '<div style="color:#f39c12;grid-column:1/-1;">Tirage en cours...</div>';
     channel.postMessage({ type: 'START_SPIN', availableThemes });
@@ -642,11 +649,10 @@ function showQuestion() {
 }
 
 function startTimer() {
-    // Validation : l'équipe qui a la main doit être sélectionnée
-    if (playingTeamIdx < 0) {
-        alert('⚠️ Sélectionnez l\'équipe qui a la main avant de lancer le chrono !');
-        return;
-    }
+    if (playingTeamIdx < 0) { alert('⚠️ Sélectionnez l\'équipe qui a la main !'); return; }
+    // Re-lire la mise depuis l'input (en cas de non-déclenchement de oninput)
+    mise = Math.max(0, parseInt(document.getElementById('mise-input').value) || 0);
+    if (mise <= 0) { alert('⚠️ Déclarez la mise avant de lancer le chrono !'); return; }
     const duration = Math.max(10, 30 + timerBonus);
     channel.postMessage({ type: 'START_TIMER', duration });
     answersLocked = false;
@@ -752,8 +758,12 @@ function toggleReveal() {
 // ATTRIBUTION DES POINTS
 // ================================================================
 function awardPoints() {
+    if (roundAwarded)      { log('Points déjà attribués — nouveau round en cours...', 'bad'); return; }
     if (playingTeamIdx < 0) { log('Sélectionnez l\'équipe qui a la main', 'bad'); return; }
+    // Re-lire la mise finale
+    mise = Math.max(0, parseInt(document.getElementById('mise-input').value) || 0);
     if (effectiveMise() === 0) { log('Entrez la mise d\'abord', 'bad'); return; }
+
     const d = calcDelta(effectiveMise(), effectiveCited());
     teams[playingTeamIdx].score += d;
     const t = teams[playingTeamIdx];
@@ -761,6 +771,12 @@ function awardPoints() {
     renderTeamsList();
     broadcastTeams();
     if (d >= 0) playWin(); else playLose();
+
+    // Verrouiller le bouton APPLIQUER — auto-reset après 3s
+    roundAwarded = true;
+    document.getElementById('delta-preview').textContent = `${d >= 0 ? '+' : ''}${d} pts ✓`;
+    document.getElementById('delta-preview').style.color = '#888';
+    setTimeout(() => doResetRound(), 3000);
 }
 
 function playWin()  { channel.postMessage({ type: 'PLAY_FX', soundFile: 'effets_sonores/win2.mp3' }); }
@@ -771,6 +787,11 @@ function playLose() { const s = loseSounds[Math.floor(Math.random() * loseSounds
 // ================================================================
 function resetRound() {
     if (!confirm('Préparer un nouveau round ?')) return;
+    doResetRound();
+}
+
+// Reset automatique (appelé après awardPoints ou manuellement)
+function doResetRound() {
     // Reset UI
     document.getElementById('btn-spin').disabled    = false;
     document.getElementById('btn-show-q').disabled  = true;
@@ -791,7 +812,7 @@ function resetRound() {
     isRevealOpen = false; lastValidatedBtn = null; answersLocked = true;
     playingTeamIdx = -1;
     mise = 0; plusMiseMalus = 0; coupDePouce = false; doublePoints = false;
-    timerBonus = 0; divisionMalus = false;
+    timerBonus = 0; divisionMalus = false; roundAwarded = false;
 
     // Réinitialiser les bonus/malus des équipes pour le nouveau round
     teams.forEach(t => {

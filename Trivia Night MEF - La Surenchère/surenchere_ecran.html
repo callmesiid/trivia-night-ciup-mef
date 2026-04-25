@@ -353,8 +353,11 @@ channel.onmessage = (event) => {
 function clearIntro() {
     introTimeouts.forEach(t => clearTimeout(t));
     introTimeouts = [];
-    audioIntro.pause(); audioIntro.currentTime = 0;
-    // Reset tous les éléments génériques
+    // Stopper l'audio proprement (loop=false pour éviter les boucles)
+    audioIntro.loop = false;
+    audioIntro.pause();
+    audioIntro.currentTime = 0;
+    // Reset éléments génériques
     gavelEl.className  = ''; gavelEl.style.opacity = '0';
     gavelBlk.className = '';
     titleLogo.className= 'title-logo-wrapper';
@@ -381,16 +384,13 @@ function gavelHit(n) {
 }
 
 function showStaticLogo() {
-    clearIntro();
+    clearIntro(); // stoppe tout audio + animations
     introScreen.style.display = 'flex'; selectorScreen.style.display = 'none';
     gameScreen.style.display = 'none'; revealOverlay.style.display = 'none';
     document.getElementById('scores-screen').classList.remove('show');
-    // Logo statique avec scintillement rouge
+    // Logo statique avec scintillement rouge — PAS de musique ici
     titleLogo.style.opacity = '1';
     titleLogo.className = 'title-logo-wrapper title-flicker';
-    // Volume de fond
-    audioIntro.volume = .4; audioIntro.loop = true;
-    if (audioIntro.paused) audioIntro.play();
 }
 
 function skipIntro() { showStaticLogo(); }
@@ -432,10 +432,12 @@ function runIntro() {
         titleLogo.className = 'title-logo-wrapper title-zoom';
     }, 3500);
 
-    // 5.2s : scintillement rouge + musique
+    // 5.2s : scintillement rouge + musique (pas de loop)
     let t7 = setTimeout(() => {
         titleLogo.className = 'title-logo-wrapper title-zoom title-flicker';
-        audioIntro.volume = .6; audioIntro.play();
+        audioIntro.loop = false;
+        audioIntro.volume = .6;
+        audioIntro.play().catch(() => {});
     }, 5200);
 
     introTimeouts.push(t1, t2, t3, t4, t5, t6, t7);
@@ -452,14 +454,18 @@ function runSpin(themes) {
         item.innerHTML = `<img src="${t.icon}" onerror="this.style.display='none'">${t.title}`;
         slotReel.appendChild(item);
     });
-    audioSpin.currentTime = 0; audioSpin.loop = true; audioSpin.play();
+    audioSpin.currentTime = 0; audioSpin.loop = true;
     let offset = 0;
     if (spinInterval) clearInterval(spinInterval);
-    spinInterval = setInterval(() => {
-        offset -= 80;
-        if (offset < -1600) offset = 0;
-        slotReel.style.transform = `translateY(${offset}px)`;
-    }, 16);
+    // Sync son + animation dans le même frame pour éviter le délai visuel
+    requestAnimationFrame(() => {
+        audioSpin.play().catch(() => {});
+        spinInterval = setInterval(() => {
+            offset -= 80;
+            if (offset < -1600) offset = 0;
+            slotReel.style.transform = `translateY(${offset}px)`;
+        }, 16);
+    });
 }
 
 function stopSpin(selectedTheme) {
