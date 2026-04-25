@@ -427,7 +427,8 @@ let gameState = {
     sessionPoints: 0,
     sessionStartLevel: 0,
     currentQuestion: null,
-    pendingBonus: null,          // {bonus, teamIdx} — bonus queued pour la prochaine question
+    pendingBonus: null,          // {bonus, teamIdx, itemIdx} — bonus queued pour la prochaine question
+    expressActive: false,        // EXPRESS (id=8) — points ×3 pour la question en cours
     config: { depth: 10, threshold: 50, timer: 30 },
     history: []
 };
@@ -696,6 +697,12 @@ function startTimerRegie() {
         if (b.timing === 'PRE_QUESTION') {
             if (b.id === 7) { sec += 20; addLog(`⏰ RETARD SNCF: +20s → ${sec}s`, 'gold'); }
             if (b.id === 3) { rerollQuestion(); addLog(`🔀 AIGUILLAGE: question changée au lancement`, 'gold'); }
+            if (b.id === 8) { // EXPRESS — 10s, points ×3
+                sec = 10;
+                gameState.expressActive = true;
+                addLog(`🚄 EXPRESS activé : 10s — points ×3 si correct !`, 'gold');
+                channel.postMessage({ type: 'SHOW_BONUS', data: { bonus: b, teamName: gameState.teams[gameState.currentTeamIndex].name, teamColor: gameState.teams[gameState.currentTeamIndex].color } });
+            }
             // Bonus PRE_QUESTION non-POST_CORRECT → consommé maintenant
             if (b.id !== 5 && b.id !== 1 && b.id !== 2 && b.id !== 6 && b.id !== 10) {
                 gameState.pendingBonus = null;
@@ -807,9 +814,17 @@ function answerCorrect() {
     if (!gameState.currentQuestion || questionPhase !== 'ACTIVE') return;
     if (timerState !== 'PAUSED') { addLog('⚠ Stoppez le timer !', 'bad'); return; }
 
-    const { wagonIndex, level, points } = gameState.currentQuestion;
+    const { wagonIndex, level } = gameState.currentQuestion;
+    let points = gameState.currentQuestion.points;
     const w = gameState.wagons[wagonIndex];
     resetTimerState();
+
+    // EXPRESS — multiplier ×3
+    if (gameState.expressActive) {
+        points *= 3;
+        gameState.expressActive = false;
+        addLog(`🚄 EXPRESS: ×3 → ${points}pts !`, 'gold');
+    }
 
     w.windowStates[level].reached = true;
     w.currentLevel = level + 1;
@@ -844,6 +859,20 @@ function answerCorrect() {
                 forceBank = true;
                 addLog(`🏁 TERMINUS: bank forcé !`, 'gold');
                 break;
+            case 4: { // CLASSE AFFAIRES — Q suivante auto-validée, points offerts
+                const nextLvl = w.currentLevel; // déjà incrémenté juste avant
+                if (nextLvl < w.depth) {
+                    const nextPts = getPointsForLevel(nextLvl + 1);
+                    gameState.sessionPoints += nextPts;
+                    w.windowStates[nextLvl] = { reached: true, banked: false, teamColor: null, teamName: null };
+                    w.currentLevel = nextLvl + 1;
+                    addLog(`💼 CLASSE AFFAIRES: Q${nextLvl + 1} grillée automatiquement (+${nextPts}pts)`, 'gold');
+                    channel.postMessage({ type: 'SHOW_BONUS', data: { bonus: b, teamName: gameState.teams[gameState.currentTeamIndex].name, teamColor: gameState.teams[gameState.currentTeamIndex].color } });
+                } else {
+                    addLog('💼 CLASSE AFFAIRES: fin du wagon, bonus non applicable', 'info');
+                }
+                break;
+            }
         }
         gameState.pendingBonus = null;
         updatePendingBonusBar();
@@ -911,6 +940,7 @@ function answerWrong() {
     const { wagonIndex, level } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
     resetTimerState();
+    gameState.expressActive = false; // EXPRESS annulé si mauvaise réponse
     w.pendingPoints += gameState.sessionPoints;
     gameState.sessionPoints = 0;
     isAtPalierEnd = false;
@@ -1198,6 +1228,26 @@ function applyBonusImmediate(bonus, teamIdx) {
             break; }
         case 11: // WAGON BAR +5
             team.score+=5; broadcastState(); addLog(`🍸 +5pts pour ${team.name}`,'gold'); break;
+        case 18: { // BILLET DE RETOUR — recule d'une question dans le wagon actuel
+            const bwIdx = gameState.selectedWagonIndex;
+            const bw = bwIdx !== null ? gameState.wagons[bwIdx] : null;
+            if (!bw || bw.currentLevel <= 0) {
+                addLog('🎫 BILLET DE RETOUR : impossible (aucun wagon ou déjà Q1)', 'bad');
+                // Restaurer le chip
+                const { teamIdx: bti, itemIdx: bii } = pendingBonusActivation || {};
+                if (bti !== undefined && bii !== undefined) { gameState.teams[bti].bonuses[bii].used = false; renderBonusPanel(); }
+                break;
+            }
+            const prevLvl = bw.currentLevel - 1;
+            const prevPts = getPointsForLevel(prevLvl + 1);
+            bw.currentLevel = prevLvl;
+            bw.windowStates[prevLvl] = { reached: false, banked: false, teamColor: null, teamName: null };
+            gameState.sessionPoints = Math.max(0, gameState.sessionPoints - prevPts);
+            renderWagonsGrid(); broadcastState();
+            channel.postMessage({ type: 'SHOW_BONUS', data: { bonus: def, teamName: team.name, teamColor: team.color } });
+            addLog(`🎫 BILLET DE RETOUR: retour Q${prevLvl + 1} dans "${bw.theme}" — retentez !`, 'gold');
+            break;
+        }
         case 12: { // GRIÈVE — bloque le wagon actuellement sélectionné
             if (gameState.selectedWagonIndex !== null) {
                 gameState.wagons[gameState.selectedWagonIndex].blockedForTurn = true;

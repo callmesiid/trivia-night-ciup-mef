@@ -80,12 +80,21 @@ const BONUSES = [
     },
     {
         "id": 4,
-        "name": "CONTRÔLEUR",
-        "emoji": "🎫",
-        "type": "MANUAL",
-        "timing": "IMMEDIATE",
-        "desc": "Une équipe adverse répond à la prochaine question à votre place. Si juste, les points vous reviennent.",
-        "how": "Activez → un banner apparaît dans la régie. Annoncez quelle équipe adverse répond. Gérez les points manuellement au résultat."
+        "name": "CLASSE AFFAIRES",
+        "emoji": "💼",
+        "type": "AUTO",
+        "timing": "POST_CORRECT",
+        "desc": "Après une bonne réponse, la question suivante dans le wagon est automatiquement validée et ses points vous sont accordés.",
+        "how": "Activez avant la question. Si bonne réponse, la Q suivante est grillée et ses points ajoutés à votre session."
+    },
+    {
+        "id": 8,
+        "name": "EXPRESS",
+        "emoji": "🚄",
+        "type": "AUTO",
+        "timing": "PRE_QUESTION",
+        "desc": "La prochaine question n'a que 10 secondes de timer — mais les points sont triplés si vous répondez correctement.",
+        "how": "Activez avant le timer. Le timer passe à 10s, les points à ×3. Haut risque, haute récompense !"
     },
     {
         "id": 5,
@@ -148,7 +157,16 @@ const BONUSES = [
         "type": "AUTO",
         "timing": "IMMEDIATE",
         "desc": "Bloque le wagon sélectionné pour ce tour.",
-        "how": "Appliqué au wagon actuellement sélectionné."
+        "how": "Sélectionnez d'abord un wagon (cliquez dessus), puis activez GRIÈVE."
+    },
+    {
+        "id": 18,
+        "name": "BILLET DE RETOUR",
+        "emoji": "🎫",
+        "type": "AUTO",
+        "timing": "IMMEDIATE",
+        "desc": "Revient d'une question en arrière dans le wagon actuel — la question ratée peut être retentée.",
+        "how": "Activez depuis votre wagon en cours. Vous reculez d'une case et retentez la question précédente."
     }
 ];
 
