@@ -2,262 +2,362 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>SURENCHÈRE - DISPLAY</title>
+    <title>LA SURENCHÈRE — ÉCRAN</title>
     <link rel="stylesheet" href="style_surenchere.css">
+    <style>
+        /* ── SCORES ÉQUIPES (header) ── */
+        #teams-header {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 3100;
+            display: none; align-items: center; justify-content: center;
+            gap: 20px; padding: 6px 20px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+        }
+        .team-score-chip {
+            display: flex; align-items: center; gap: 8px;
+            background: rgba(0,0,0,0.7); border: 2px solid #333;
+            border-radius: 8px; padding: 5px 14px;
+            font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem;
+            transition: border-color .3s, background .3s;
+        }
+        .team-score-chip.playing { border-color: #d4af37; background: rgba(30,20,0,0.85); }
+        .team-chip-dot  { width: 12px; height: 12px; border-radius: 50%; }
+        .team-chip-name { color: #fff; }
+        .team-chip-pts  { color: #d4af37; font-weight: bold; font-size: 1.2rem; margin-left: 6px; }
+        .team-playing-badge {
+            font-size: .65rem; color: #f39c12; display: block; line-height: 1;
+        }
+
+        /* ── SCORE LIVE (during game) ── */
+        .score-display {
+            font-size: 2.8rem; color: #2ecc71; font-weight: bold;
+            background: rgba(0,0,0,0.6); padding: 10px 30px; border-radius: 10px;
+            border: 2px solid #2ecc71; transition: transform .15s;
+        }
+
+        /* ── REVEAL GRID amélioré ── */
+        .reveal-item {
+            background: #111; border: 1px solid #2a2a2a; color: #444;
+            padding: 10px 8px; font-size: .95rem; font-family: 'Bebas Neue', sans-serif;
+            text-align: center; border-radius: 6px;
+            transition: all 0.3s ease; opacity: 0; transform: scale(0.8);
+        }
+        .reveal-item.visible { opacity: 1; transform: scale(1); }
+        .reveal-item.correct {
+            background: #1a5a2a; color: #a8e6b8; border-color: #27ae60;
+            box-shadow: 0 0 12px rgba(46,204,113,0.4);
+        }
+        .reveal-item.correct.visible {
+            animation: popIn .4s cubic-bezier(.2,1.5,.4,1);
+        }
+        @keyframes popIn { 0%{transform:scale(.6);opacity:0;} 60%{transform:scale(1.08);} 100%{transform:scale(1);opacity:1;} }
+
+        /* ── REVEAL HEADER ── */
+        #reveal-header {
+            display: flex; align-items: center; justify-content: space-between;
+            width: 90%; margin-bottom: 20px; max-width: 1400px;
+        }
+        #reveal-title { font-family: 'Anton', sans-serif; font-size: 2.5rem; color: #fff; letter-spacing: 3px; }
+        #reveal-score-badge {
+            background: #2ecc71; color: #000; font-family: 'Anton', sans-serif;
+            font-size: 1.8rem; padding: 6px 20px; border-radius: 8px;
+        }
+
+        /* ── SCORE PODIUM ── */
+        #scores-screen {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, #1a0a30 0%, #000 100%);
+            z-index: 4000; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 20px;
+        }
+        #scores-screen.show { display: flex; }
+        #scores-screen h1 { font-family: 'Anton'; font-size: 4rem; color: #d4af37; letter-spacing: 5px; text-shadow: 0 0 30px rgba(212,175,55,0.4); }
+        .podium-row { display: flex; align-items: center; gap: 20px; background: #1a1a2e; border-radius: 10px; padding: 14px 28px; min-width: 500px; border: 2px solid #2a2a4a; }
+        .podium-rank { font-family: 'Anton'; font-size: 2rem; color: #555; min-width: 50px; }
+        .podium-row:nth-child(2) .podium-rank { color: #ffd700; }
+        .podium-row:nth-child(3) .podium-rank { color: #c0c0c0; }
+        .podium-row:nth-child(4) .podium-rank { color: #cd7f32; }
+        .podium-dot  { width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0; }
+        .podium-name { font-family: 'Anton'; font-size: 1.5rem; flex: 1; color: #fff; }
+        .podium-pts  { font-family: 'Anton'; font-size: 2rem; color: #d4af37; }
+    </style>
 </head>
 <body>
 
-    <div id="intro-screen">
-        <div id="intro-text" class="intro-logo" style="opacity: 1;">LA SURENCHÈRE</div>
+<!-- Scores équipes en header -->
+<div id="teams-header"></div>
+
+<!-- Intro -->
+<div id="intro-screen">
+    <div id="intro-text" class="intro-logo" style="opacity:1;">LA SURENCHÈRE</div>
+</div>
+
+<!-- Slot machine -->
+<div id="selector-screen">
+    <div style="font-family:'Anton';font-size:2rem;margin-bottom:20px;color:#888;letter-spacing:3px;">SÉLECTION DU THÈME</div>
+    <div class="slot-machine-container">
+        <div class="slot-reel" id="slot-reel"></div>
     </div>
+</div>
 
-    <div id="selector-screen">
-        <div style="font-family:'Anton'; font-size:2rem; margin-bottom:20px; color:#888;">SÉLECTION DU THÈME</div>
-        <div class="slot-machine-container">
-            <div class="slot-reel" id="slot-reel"></div>
-        </div>
+<!-- Jeu -->
+<div id="game-screen">
+    <div class="theme-header" id="game-theme-title">THÈME</div>
+    <div class="question-display" id="game-question">PRÊT ?</div>
+    <div class="counters-area">
+        <div class="score-display">RÉPONSES : <span id="score-val">0</span> <span id="score-total" style="color:#666;font-size:.6em;"> / ?</span></div>
+        <div class="timer-display" id="timer-val">30</div>
     </div>
+</div>
 
-    <div id="game-screen">
-        <div class="theme-header" id="game-theme-title">THÈME</div>
-        <div class="question-display" id="game-question">PRÊT ?</div>
-        
-        <div class="counters-area">
-            <div class="score-display">RÉPONSES : <span id="score-val">0</span></div>
-            <div class="timer-display" id="timer-val">30</div>
-        </div>
+<!-- Révélation -->
+<div id="reveal-overlay">
+    <div id="reveal-header">
+        <div id="reveal-title">LES RÉPONSES</div>
+        <div id="reveal-score-badge">0 / 0 trouvées</div>
     </div>
+    <div class="reveal-grid-container" id="reveal-grid"></div>
+</div>
 
-    <div id="reveal-overlay">
-        <div style="font-family:'Anton'; font-size:3rem; color:#fff; margin-bottom:30px;">LES RÉPONSES</div>
-        <div class="reveal-grid-container" id="reveal-grid"></div>
-    </div>
+<!-- Podium -->
+<div id="scores-screen">
+    <h1>CLASSEMENT</h1>
+    <div id="podium-list"></div>
+</div>
 
-    <div id="game-footer">
-        INSPIRÉ DE POPCORN 
-        <img src="images_front/popcorn.png" alt="Popcorn">
-    </div>
+<div id="game-footer">
+    INSPIRÉ DE <img src="images_front/popcorn.png" alt="Popcorn">
+</div>
 
-    <script src="surenchere_data.js"></script>
-    <script>
-        const channel = new BroadcastChannel('surenchere_channel');
-        
-        // Elements
-        const introScreen = document.getElementById('intro-screen');
-        const introText = document.getElementById('intro-text');
-        const selectorScreen = document.getElementById('selector-screen');
-        const gameScreen = document.getElementById('game-screen');
-        const revealOverlay = document.getElementById('reveal-overlay');
-        const revealGrid = document.getElementById('reveal-grid');
-        const slotReel = document.getElementById('slot-reel');
-        const timerEl = document.getElementById('timer-val');
-        
-        // Sounds
-        const audioIntro = new Audio('effets_sonores/intro.mp3');
-        const audioBreak = new Audio('effets_sonores/break.mp3');
-        const audioSpin = new Audio('effets_sonores/spin.mp3'); 
-        const audioTimer = new Audio('effets_sonores/timer.mp3');
-        const audioWin = new Audio('effets_sonores/selected.mp3'); 
-        
-        // FX Sounds container
-        let currentFx = null;
+<script src="surenchere_data.js"></script>
+<script>
+const channel = new BroadcastChannel('surenchere_channel');
 
-        let timerInterval;
-        let spinInterval;
-        let currentTime = 30;
-        
-        // Intro Timeouts (pour pouvoir skip)
-        let introTimeouts = [];
+const introScreen    = document.getElementById('intro-screen');
+const introText      = document.getElementById('intro-text');
+const selectorScreen = document.getElementById('selector-screen');
+const gameScreen     = document.getElementById('game-screen');
+const revealOverlay  = document.getElementById('reveal-overlay');
+const revealGrid     = document.getElementById('reveal-grid');
+const slotReel       = document.getElementById('slot-reel');
+const timerEl        = document.getElementById('timer-val');
+const teamsHeader    = document.getElementById('teams-header');
 
-        channel.onmessage = (event) => {
-            const data = event.data;
+const audioIntro  = new Audio('effets_sonores/intro.mp3');
+const audioBreak  = new Audio('effets_sonores/break.mp3');
+const audioSpin   = new Audio('effets_sonores/spin.mp3');
+const audioTimer  = new Audio('effets_sonores/timer.mp3');
+const audioReveal = new Audio('effets_sonores/reveal.mp3');
+const audioWin    = new Audio('effets_sonores/selected.mp3');
+let currentFx = null;
 
-            if (data.type === 'PLAY_INTRO') runIntro();
-            else if (data.type === 'SKIP_INTRO') skipIntro();
-            else if (data.type === 'RESET_TO_LOGO') showStaticLogo();
-            else if (data.type === 'START_SPIN') runSpin(data.availableThemes);
-            else if (data.type === 'REVEAL_THEME') stopSpin(data.theme);
-            else if (data.type === 'SHOW_QUESTION') setupGame(data.theme);
-            else if (data.type === 'UPDATE_SCORE') {
-                document.getElementById('score-val').innerText = data.count;
-                const sc = document.querySelector('.score-display');
-                sc.style.transform = "scale(1.2)";
-                setTimeout(() => sc.style.transform = "scale(1)", 200);
-            }
-            else if (data.type === 'START_TIMER') runTimer();
-            else if (data.type === 'PAUSE_TIMER') pauseTimer();
-            else if (data.type === 'RESET_TIMER') resetTimer();
-            else if (data.type === 'SHOW_ALL_ANSWERS') showRevealGrid(data.answers, data.validatedIndices);
-            else if (data.type === 'HIDE_ALL_ANSWERS') revealOverlay.style.display = 'none';
-            else if (data.type === 'PLAY_FX') playFxSound(data.soundFile);
-        };
+let timerInterval, spinInterval;
+let currentTime = 30;
+let introTimeouts = [];
 
-        function clearIntro() {
-            introTimeouts.forEach(t => clearTimeout(t));
-            introTimeouts = [];
-            audioIntro.pause();
-            audioIntro.currentTime = 0;
-            introText.classList.remove('hammer-effect');
-            introText.classList.remove('broken-lights');
-        }
+// ── TEAMS ──
+let teamsData = [];
+let playingIdx = -1;
 
-        function showStaticLogo() {
-            clearIntro();
-            introScreen.style.display = 'flex';
-            selectorScreen.style.display = 'none';
-            gameScreen.style.display = 'none';
-            revealOverlay.style.display = 'none';
-            
-            introText.className = 'intro-logo broken-lights'; // On garde l'effet cassé par défaut c'est joli
-            introText.style.opacity = '1';
-            introText.innerText = "LA SURENCHÈRE";
-        }
+function renderTeamsHeader() {
+    teamsHeader.innerHTML = '';
+    if (!teamsData.length) { teamsHeader.style.display = 'none'; return; }
+    teamsHeader.style.display = 'flex';
+    teamsData.forEach((t, i) => {
+        const chip = document.createElement('div');
+        chip.className = 'team-score-chip' + (i === playingIdx ? ' playing' : '');
+        chip.innerHTML = `
+            <div class="team-chip-dot" style="background:${t.color}"></div>
+            <div>
+                ${i===playingIdx?'<span class="team-playing-badge">▶ EN JEU</span>':''}
+                <span class="team-chip-name">${t.name}</span>
+                <span class="team-chip-pts">${t.score}</span>
+            </div>`;
+        teamsHeader.appendChild(chip);
+    });
+}
 
-        function skipIntro() {
-            showStaticLogo();
-        }
+// ── CHANNEL ──
+channel.onmessage = (event) => {
+    const data = event.data;
+    switch(data.type) {
+        case 'PLAY_INTRO':      runIntro(); break;
+        case 'SKIP_INTRO':      skipIntro(); break;
+        case 'RESET_TO_LOGO':   showStaticLogo(); break;
+        case 'START_SPIN':      runSpin(data.availableThemes); break;
+        case 'REVEAL_THEME':    stopSpin(data.theme); break;
+        case 'SHOW_QUESTION':   setupGame(data.theme); break;
+        case 'UPDATE_SCORE':
+            document.getElementById('score-val').textContent = data.count;
+            if (data.total) document.getElementById('score-total').textContent = ` / ${data.total}`;
+            const sc = document.querySelector('.score-display');
+            sc.style.transform = 'scale(1.15)';
+            setTimeout(() => sc.style.transform = 'scale(1)', 200);
+            break;
+        case 'UPDATE_TEAMS':
+            teamsData = data.teams || [];
+            playingIdx = data.playingIdx ?? -1;
+            renderTeamsHeader();
+            break;
+        case 'START_TIMER':     runTimer(); break;
+        case 'PAUSE_TIMER':     pauseTimer(); break;
+        case 'RESET_TIMER':     resetTimer(); break;
+        case 'SHOW_ALL_ANSWERS': showRevealGrid(data.answers, data.validatedIndices, data.total); break;
+        case 'HIDE_ALL_ANSWERS': revealOverlay.style.display = 'none'; break;
+        case 'PLAY_FX':         playFxSound(data.soundFile); break;
+        case 'SHOW_SCORES':     showScoreScreen(data.teams); break;
+    }
+};
 
-        function runIntro() {
-            clearIntro();
-            introScreen.style.display = 'flex';
-            selectorScreen.style.display = 'none';
-            gameScreen.style.display = 'none';
-            revealOverlay.style.display = 'none';
-            
-            introText.className = 'intro-logo'; 
-            introText.style.opacity = '0';
-            introText.innerText = "LA SURENCHÈRE";
+// ── INTRO ──
+function clearIntro() {
+    introTimeouts.forEach(t => clearTimeout(t));
+    introTimeouts = [];
+    audioIntro.pause(); audioIntro.currentTime = 0;
+    introText.className = 'intro-logo';
+}
+function showStaticLogo() {
+    clearIntro();
+    introScreen.style.display = 'flex'; selectorScreen.style.display = 'none';
+    gameScreen.style.display = 'none'; revealOverlay.style.display = 'none';
+    document.getElementById('scores-screen').classList.remove('show');
+    introText.className = 'intro-logo broken-lights'; introText.style.opacity = '1';
+    introText.textContent = 'LA SURENCHÈRE';
+}
+function skipIntro() { showStaticLogo(); }
+function runIntro() {
+    clearIntro();
+    introScreen.style.display = 'flex'; selectorScreen.style.display = 'none';
+    gameScreen.style.display = 'none'; revealOverlay.style.display = 'none';
+    introText.className = 'intro-logo'; introText.style.opacity = '0'; introText.textContent = 'LA SURENCHÈRE';
+    let t1 = setTimeout(() => {
+        audioBreak.volume = 1; audioBreak.play();
+        introText.classList.add('hammer-effect'); introText.textContent = 'ADJUGÉ !';
+        let t2 = setTimeout(() => {
+            introText.textContent = 'LA SURENCHÈRE';
+            introText.classList.remove('hammer-effect'); introText.classList.add('broken-lights');
+            audioIntro.play();
+        }, 1500);
+        introTimeouts.push(t2);
+    }, 500);
+    introTimeouts.push(t1);
+}
 
-            let t1 = setTimeout(() => {
-                audioBreak.volume = 1.0; audioBreak.play();
-                introText.classList.add('hammer-effect');
-                introText.innerText = "ADJUGÉ !"; 
-                
-                let t2 = setTimeout(() => {
-                    introText.innerText = "LA SURENCHÈRE";
-                    introText.classList.remove('hammer-effect');
-                    introText.classList.add('broken-lights');
-                    audioIntro.play();
-                }, 1500);
-                introTimeouts.push(t2);
-            }, 500);
-            introTimeouts.push(t1);
-        }
+// ── SPIN ──
+function runSpin(themes) {
+    introScreen.style.display = 'none'; selectorScreen.style.display = 'flex';
+    slotReel.innerHTML = '';
+    let spinList = [...themes, ...themes, ...themes, ...themes];
+    spinList.forEach(t => {
+        const item = document.createElement('div');
+        item.className = 'slot-item';
+        item.innerHTML = `<img src="${t.icon}" onerror="this.style.display='none'">${t.title}`;
+        slotReel.appendChild(item);
+    });
+    audioSpin.currentTime = 0; audioSpin.loop = true; audioSpin.play();
+    let offset = 0;
+    if (spinInterval) clearInterval(spinInterval);
+    spinInterval = setInterval(() => {
+        offset -= 80;
+        if (offset < -1600) offset = 0;
+        slotReel.style.transform = `translateY(${offset}px)`;
+    }, 16);
+}
 
-        function runSpin(themes) {
-            introScreen.style.display = 'none';
-            selectorScreen.style.display = 'flex';
-            
-            slotReel.innerHTML = '';
-            let spinList = [...themes, ...themes, ...themes, ...themes, ...themes];
-            spinList.forEach(t => {
-                const item = document.createElement('div');
-                item.className = 'slot-item';
-                item.innerHTML = `<img src="${t.icon}">${t.title}`;
-                slotReel.appendChild(item);
-            });
+function stopSpin(selectedTheme) {
+    clearInterval(spinInterval); audioSpin.pause();
+    slotReel.innerHTML = '';
+    const winItem = document.createElement('div');
+    winItem.className = 'slot-item';
+    winItem.style.cssText = 'background:#27ae60;color:#fff;font-size:3.5rem;';
+    winItem.innerHTML = `<img src="${selectedTheme.icon}" onerror="this.style.display='none'">${selectedTheme.title}`;
+    slotReel.appendChild(winItem); slotReel.style.transform = 'translateY(0)';
+    audioWin.play();
+}
 
-            audioSpin.currentTime = 0; audioSpin.loop = true; audioSpin.play();
-            
-            let offset = 0;
-            if(spinInterval) clearInterval(spinInterval);
-            spinInterval = setInterval(() => {
-                offset -= 80;
-                if (offset < -1500) offset = 0;
-                slotReel.style.transform = `translateY(${offset}px)`;
-            }, 20);
-        }
+// ── JEU ──
+function setupGame(theme) {
+    selectorScreen.style.display = 'none'; gameScreen.style.display = 'flex';
+    document.getElementById('game-theme-title').textContent = theme.title;
+    document.getElementById('game-question').textContent = theme.question;
+    document.getElementById('score-val').textContent = '0';
+    document.getElementById('score-total').textContent = ` / ${theme.answers.length}`;
+    resetTimerUI();
+}
 
-        function stopSpin(selectedTheme) {
-            clearInterval(spinInterval);
-            audioSpin.pause();
-            
-            slotReel.innerHTML = '';
-            const winItem = document.createElement('div');
-            winItem.className = 'slot-item';
-            winItem.style.background = '#27ae60'; winItem.style.color = '#fff';
-            winItem.innerHTML = `<img src="${selectedTheme.icon}">${selectedTheme.title}`;
-            slotReel.appendChild(winItem);
-            
-            slotReel.style.transform = 'translateY(0)';
-            audioWin.play();
-        }
-
-        function setupGame(theme) {
-            selectorScreen.style.display = 'none';
-            gameScreen.style.display = 'flex';
-            document.getElementById('game-theme-title').innerText = theme.title;
-            document.getElementById('game-question').innerText = theme.question;
-            document.getElementById('score-val').innerText = "0";
-            resetTimerUI();
-        }
-
-        function runTimer() {
-            audioTimer.play();
-            if(timerInterval) clearInterval(timerInterval);
-            timerInterval = setInterval(() => {
-                currentTime--;
-                timerEl.innerText = currentTime;
-                
-                if(currentTime <= 5) timerEl.style.color = "#fff";
-                else timerEl.style.color = "#D60000";
-
-                if (currentTime <= 0) {
-                    clearInterval(timerInterval);
-                    currentTime = 0;
-                    timerEl.innerText = "0";
-                    audioTimer.pause();
-                    new Audio('effets_sonores/break.mp3').play();
-                }
-            }, 1000);
-        }
-
-        function pauseTimer() {
-            if(timerInterval) clearInterval(timerInterval);
-            audioTimer.pause();
-        }
-
-        function resetTimer() {
-            if(timerInterval) clearInterval(timerInterval);
-            audioTimer.pause();
-            audioTimer.currentTime = 0;
-            resetTimerUI();
-        }
-
-        function resetTimerUI() {
-            currentTime = 30;
-            timerEl.innerText = "30";
-            timerEl.style.color = "#D60000";
-        }
-
-        function showRevealGrid(answers, validatedIndices) {
-            // STOP DU TIMER AUTOMATIQUE
-            if(timerInterval) clearInterval(timerInterval);
-            audioTimer.pause();
-            // Petit son de stop (placeholder)
+// ── TIMER ──
+function runTimer() {
+    audioTimer.currentTime = 0; audioTimer.play();
+    if (timerInterval) clearInterval(timerInterval);
+    timerInterval = setInterval(() => {
+        currentTime--;
+        timerEl.textContent = currentTime;
+        timerEl.style.color = currentTime <= 5 ? '#fff' : '#D60000';
+        if (currentTime <= 0) {
+            clearInterval(timerInterval); currentTime = 0;
+            timerEl.textContent = '0'; audioTimer.pause();
             new Audio('effets_sonores/break.mp3').play();
-
-            revealOverlay.style.display = 'flex';
-            revealGrid.innerHTML = '';
-            answers.forEach((ans, index) => {
-                const div = document.createElement('div');
-                div.className = 'reveal-item';
-                div.innerText = ans;
-                if(validatedIndices.includes(index)) {
-                    div.classList.add('correct');
-                }
-                revealGrid.appendChild(div);
-            });
         }
+    }, 1000);
+}
+function pauseTimer() { if (timerInterval) clearInterval(timerInterval); audioTimer.pause(); }
+function resetTimer() { if (timerInterval) clearInterval(timerInterval); audioTimer.pause(); audioTimer.currentTime = 0; resetTimerUI(); }
+function resetTimerUI() { currentTime = 30; timerEl.textContent = '30'; timerEl.style.color = '#D60000'; }
 
-        function playFxSound(file) {
-            if(currentFx) {
-                currentFx.pause();
-                currentFx.currentTime = 0;
+// ── RÉVÉLATION animée ──
+function showRevealGrid(answers, validatedIndices, total) {
+    if (timerInterval) clearInterval(timerInterval);
+    audioTimer.pause();
+    audioReveal.play();
+
+    revealOverlay.style.display = 'flex';
+    revealGrid.innerHTML = '';
+
+    const found = validatedIndices.length;
+    const tot   = total || answers.length;
+    document.getElementById('reveal-score-badge').textContent = `${found} / ${tot} trouvées`;
+
+    const items = [];
+    answers.forEach((ans, index) => {
+        const div = document.createElement('div');
+        div.className = 'reveal-item' + (validatedIndices.includes(index) ? ' correct' : '');
+        div.textContent = ans;
+        revealGrid.appendChild(div);
+        items.push(div);
+    });
+
+    // Apparition échelonnée
+    const DELAY_STEP = Math.min(80, 1200 / items.length);
+    items.forEach((el, i) => {
+        setTimeout(() => {
+            el.classList.add('visible');
+            if (el.classList.contains('correct') && i % 3 === 0) {
+                new Audio('effets_sonores/selected.mp3').play();
             }
-            currentFx = new Audio(file);
-            currentFx.play();
-        }
-    </script>
+        }, i * DELAY_STEP + 200);
+    });
+}
+
+// ── SCORE SCREEN ──
+function showScoreScreen(teams) {
+    const screen = document.getElementById('scores-screen');
+    const list   = document.getElementById('podium-list');
+    list.innerHTML = '';
+    const sorted = [...teams].sort((a,b) => b.score - a.score);
+    sorted.forEach((t, i) => {
+        const row = document.createElement('div');
+        row.className = 'podium-row';
+        row.innerHTML = `<div class="podium-rank">#${i+1}</div><div class="podium-dot" style="background:${t.color}"></div><div class="podium-name">${t.name}</div><div class="podium-pts">${t.score} pts</div>`;
+        list.appendChild(row);
+        setTimeout(() => row.style.opacity='1', i * 400 + 300);
+        row.style.opacity = '0'; row.style.transition = 'opacity .5s';
+    });
+    screen.classList.add('show');
+}
+
+// ── FX ──
+function playFxSound(file) {
+    if (currentFx) { currentFx.pause(); currentFx.currentTime = 0; }
+    currentFx = new Audio(file); currentFx.play();
+}
+</script>
 </body>
 </html>

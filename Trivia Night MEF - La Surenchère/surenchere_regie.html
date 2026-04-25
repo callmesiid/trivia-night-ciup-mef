@@ -2,215 +2,544 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>RÉGIE - SURENCHÈRE</title>
-    <link rel="stylesheet" href="style_surenchere.css">
+    <title>RÉGIE — LA SURENCHÈRE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        h2 { color: #d4af37; font-family: 'Anton'; margin: 0; }
-        .info-box { background: #000; padding: 10px; border: 1px solid #444; margin-bottom: 10px; color: #fff; }
-        
-        /* Styles spécifiques boutons régie */
-        .btn-win { background: #27ae60; color: white; border: 2px solid #2ecc71; }
-        .btn-lose { background: #c0392b; color: white; border: 2px solid #e74c3c; }
-        .btn-skip { background: #555; font-size: 0.8rem; padding: 5px 10px; vertical-align: middle; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: #111; color: #ecf0f1; font-family: 'Roboto', sans-serif; font-size: 13px; height: 100vh; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
+
+        /* ── TOP BAR ── */
+        #top-bar {
+            background: #1a1a1a; border-bottom: 2px solid #d4af37;
+            padding: 8px 14px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+        }
+        #top-bar h2 { font-family: 'Anton', sans-serif; color: #d4af37; font-size: 1.1em; letter-spacing: 2px; white-space: nowrap; }
+        .sep { width: 1px; height: 30px; background: #444; flex-shrink: 0; }
+        button { padding: 7px 12px; font-weight: bold; border: 1px solid #555; border-radius: 4px; cursor: pointer; font-size: 0.8em; color: white; background: #2a2a2a; transition: filter .15s, border-color .15s; text-transform: uppercase; font-family: 'Roboto', sans-serif; }
+        button:hover:not(:disabled) { filter: brightness(1.3); border-color: #d4af37; }
+        button:disabled { opacity: 0.3; cursor: not-allowed; }
+        .btn-purple { background: #3a1a5a; border-color: #8e44ad; }
+        .btn-orange { background: #6a3200; border-color: #e67e22; }
+        .btn-blue   { background: #1a3a6a; border-color: #2980b9; }
+        .btn-green  { background: #1a5a2a; border-color: #27ae60; }
+        .btn-red    { background: #5a1a1a; border-color: #c0392b; }
+        .btn-gold   { background: #5a4000; border-color: #d4af37; color: #d4af37; }
+        .btn-gray   { background: #444; border-color: #666; }
+        .btn-sm     { padding: 4px 8px; font-size: 0.75em; }
+
+        /* ── MAIN LAYOUT ── */
+        #main { display: grid; grid-template-columns: 280px 1fr; overflow: hidden; }
+
+        /* ── LEFT PANEL ── */
+        #left-panel { border-right: 1px solid #333; display: flex; flex-direction: column; overflow-y: auto; }
+        .lp-section { padding: 12px; border-bottom: 1px solid #2a2a2a; }
+        .lp-section h3 { font-family: 'Anton', sans-serif; color: #d4af37; font-size: .9em; letter-spacing: 2px; margin-bottom: 8px; }
+
+        /* Équipes */
+        .team-input-row { display: flex; gap: 5px; margin-bottom: 6px; }
+        .team-input-row input[type=text] { flex: 1; background: #222; color: white; border: 1px solid #444; padding: 5px 8px; border-radius: 4px; font-size: .85em; }
+        .team-input-row input[type=color] { width: 30px; height: 28px; border: 1px solid #444; border-radius: 3px; padding: 1px; cursor: pointer; }
+        .team-item { display: flex; align-items: center; gap: 6px; background: #1e1e1e; padding: 6px 8px; margin-bottom: 4px; border-radius: 4px; border: 2px solid transparent; transition: border-color .2s; }
+        .team-item.playing { border-color: #d4af37; background: #2a2400; }
+        .team-item.qualified { border-color: #27ae60; }
+        .team-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+        .team-name-d { flex: 1; font-weight: bold; font-size: .85em; }
+        .team-score-d { font-family: monospace; font-size: 1.2em; color: #d4af37; min-width: 28px; text-align: right; }
+        .team-actions { display: flex; gap: 3px; }
+
+        /* Thème actuel */
+        #current-theme-box { background: #000; border: 1px solid #444; padding: 8px; border-radius: 4px; font-size: .85em; }
+        #current-theme-name { color: #2ecc71; font-weight: bold; font-size: 1em; }
+        #current-score-display { font-size: 2rem; font-weight: bold; color: #d4af37; margin-top: 4px; }
+        #answers-count { font-size: .75em; color: #888; }
+
+        /* ── RIGHT PANEL ── */
+        #right-panel { display: flex; flex-direction: column; overflow: hidden; }
+        #answers-grid { flex: 1; overflow-y: auto; padding: 14px; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; align-content: start; }
+        .answer-btn {
+            background: #222; color: #bbb; padding: 10px 14px; border: 1px solid #444;
+            border-radius: 5px; cursor: pointer; text-align: left; font-size: .85em;
+            transition: .15s; font-family: 'Roboto', sans-serif; position: relative;
+        }
+        .answer-btn:hover { background: #2a2a2a; border-color: #888; }
+        .answer-btn.validated { background: #1a5a2a; color: #a8e6b8; border-color: #27ae60; font-weight: bold; }
+        .answer-btn .ans-num { position: absolute; top: 4px; right: 6px; font-size: .65em; color: #666; font-family: monospace; }
+        .answer-btn.validated .ans-num { color: #2ecc71; }
+
+        /* ── BOTTOM BAR ── */
+        #bottom-bar {
+            border-top: 2px solid #333; padding: 8px 14px;
+            display: flex; gap: 8px; align-items: center; background: #1a1a1a; flex-wrap: wrap;
+        }
+        #bottom-bar .info-txt { font-size: .8em; color: #888; }
+
+        /* ── MODAL SETUP ÉQUIPES ── */
+        #setup-modal { position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 1000; display: flex; align-items: center; justify-content: center; }
+        .setup-box { background: #1a1a1a; border: 2px solid #d4af37; border-radius: 10px; padding: 28px; max-width: 480px; width: 90%; }
+        .setup-box h2 { font-family: 'Anton'; color: #d4af37; font-size: 1.5em; margin-bottom: 16px; letter-spacing: 2px; }
+
+        /* Score board overlay */
+        #score-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.9); z-index: 2000; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+        #score-overlay h1 { font-family: 'Anton'; color: #d4af37; font-size: 3rem; letter-spacing: 4px; }
+        .score-row-big { display: flex; align-items: center; gap: 20px; background: #222; border-radius: 8px; padding: 14px 28px; min-width: 400px; font-family: 'Anton'; font-size: 1.5rem; }
+        .score-dot-big { width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; }
+        .score-name-big { flex: 1; }
+        .score-pts-big { color: #d4af37; font-size: 2rem; }
+
+        ::-webkit-scrollbar { width: 5px; } ::-webkit-scrollbar-track { background: #111; } ::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+        select { background: #222; color: white; border: 1px solid #444; padding: 5px 8px; border-radius: 4px; font-size: .85em; }
     </style>
 </head>
-<body class="regie-body">
+<body>
 
-    <div class="control-bar">
-        <h2>RÉGIE SURENCHÈRE</h2>
-        <button onclick="openScreen()">1. ÉCRAN</button>
-        
-        <div style="display:flex; flex-direction:column; gap:2px;">
-            <button class="btn-launch" onclick="playIntro()">2. GÉNÉRIQUE</button>
-            <button class="btn-skip" onclick="skipIntro()">SKIP INTRO ⏭</button>
+<!-- ═══ SETUP INITIAL ═══ -->
+<div id="setup-modal">
+    <div class="setup-box">
+        <h2>LA SURENCHÈRE — SETUP</h2>
+        <p style="color:#888;margin-bottom:16px;font-size:.9em;">Ajoutez les équipes avant de commencer.</p>
+        <div class="team-input-row">
+            <input type="text" id="setup-team-name" placeholder="Nom de l'équipe" onkeydown="if(event.key==='Enter')setupAddTeam()">
+            <input type="color" id="setup-team-color" value="#e74c3c">
+            <button type="button" class="btn-green btn-sm" onclick="setupAddTeam()">+ Ajouter</button>
         </div>
-
-        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
-        
-        <button class="btn-spin" id="btn-spin" onclick="startAutoSpin()">3. TIRAGE (AUTO)</button>
-        <button class="btn-question" id="btn-show-q" onclick="showQuestion()" disabled>4. QUESTION</button>
-        
-        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
-
-        <button class="btn-timer" id="btn-start-timer" onclick="startTimer()" disabled>5. GO 30s</button>
-        <button class="btn-pause" onclick="pauseTimer()">PAUSE</button>
-        <button class="btn-reset" onclick="resetTimer()">RESET T</button>
-        
-        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
-        
-        <button class="btn-reveal" onclick="toggleReveal()">6. RÉVÉLER</button>
-        
-        <div style="border-left: 1px solid #555; height: 30px; margin: 0 10px;"></div>
-
-        <div style="display:flex; flex-direction:column; gap:5px;">
-            <button class="btn-win" onclick="playWin()">GAGNÉ</button>
-            <button class="btn-lose" onclick="playLose()">PERDU (RND)</button>
-        </div>
-
-        <div style="flex:1;"></div>
-        <button class="btn-reset" onclick="resetGameFull()">NOUVEAU JEU</button>
-    </div>
-
-    <div style="padding: 20px;">
-        <div class="info-box">
-            THÈME : <span id="current-theme-name" style="color:#2ecc71">...</span> | 
-            SCORE : <span id="current-score" style="font-size:1.5rem; font-weight:bold;">0</span>
-        </div>
-
-        <div id="answers-grid" class="regie-grid">
-            <div style="color: #666; font-style: italic;">En attente...</div>
+        <div id="setup-teams-list" style="margin-bottom:14px;min-height:60px;"></div>
+        <div style="display:flex;gap:8px;justify-content:flex-end;">
+            <button type="button" class="btn-gray" onclick="setupSkip()" style="font-size:.8em;">Jouer sans équipes</button>
+            <button type="button" class="btn-gold" id="setup-validate-btn" onclick="setupValidate()" disabled>▶ COMMENCER</button>
         </div>
     </div>
+</div>
 
-    <script src="surenchere_data.js"></script>
-    <script>
-        const channel = new BroadcastChannel('surenchere_channel');
+<!-- ═══ TOP BAR ═══ -->
+<div id="top-bar">
+    <h2>🎲 LA SURENCHÈRE</h2>
+    <button type="button" class="btn-blue" onclick="openScreen()">📺 ÉCRAN</button>
+    <div class="sep"></div>
+    <button type="button" class="btn-purple" onclick="playIntro()">🎬 GÉNÉRIQUE</button>
+    <button type="button" class="btn-gray btn-sm" onclick="skipIntro()">⏭ SKIP</button>
+    <div class="sep"></div>
+    <button type="button" class="btn-orange" id="btn-spin" onclick="startAutoSpin()">🎰 TIRAGE</button>
+    <button type="button" class="btn-blue"   id="btn-show-q"  onclick="showQuestion()"  disabled>❓ QUESTION</button>
+    <div class="sep"></div>
+    <button type="button" class="btn-red"    id="btn-timer"   onclick="startTimer()"    disabled>⏱ GO 30s</button>
+    <button type="button" class="btn-gray btn-sm" onclick="pauseTimer()">⏸ PAUSE</button>
+    <button type="button" class="btn-gray btn-sm" onclick="resetTimer()">↺ RESET T</button>
+    <div class="sep"></div>
+    <button type="button" class="btn-green"  id="btn-reveal"  onclick="toggleReveal()"  disabled>👁 RÉVÉLER</button>
+    <div class="sep"></div>
+    <button type="button" class="btn-green" onclick="playWin()" style="font-size:.8em;">✅ GAGNÉ !</button>
+    <button type="button" class="btn-red"   onclick="playLose()" style="font-size:.8em;">❌ PERDU !</button>
+    <div style="flex:1;"></div>
+    <button type="button" class="btn-gold btn-sm" onclick="showScoreOverlay()">🏆 SCORES</button>
+    <button type="button" class="btn-gray btn-sm" onclick="resetGameFull()">🔄 NOUVEAU ROUND</button>
+</div>
 
-        let availableThemes = [...THEMES_DATA];
-        let currentTheme = null;
-        let currentScore = 0;
-        let validatedIndices = [];
-        let isRevealOpen = false;
+<!-- ═══ MAIN ═══ -->
+<div id="main">
 
-        // LISTE SONS ALEATOIRES PERDU
-        const loseSounds = [
-            'effets_sonores/wasted.mp3',
-            'effets_sonores/oh_le_con.mp3',
-            'effets_sonores/c_nul_homer.mp3',
-            'effets_sonores/wrong.mp3',
-            'effets_sonores/nope.mp3'
-        ];
+    <!-- LEFT -->
+    <div id="left-panel">
 
-        function openScreen() {
-            window.open('surenchere_ecran.html', 'SurenchereDisplay', 'width=1280,height=720');
-        }
+        <!-- Équipes -->
+        <div class="lp-section">
+            <h3>👥 ÉQUIPES</h3>
+            <div id="teams-list"></div>
+            <div style="margin-top:6px;font-size:.75em;color:#666;">Cliquer sur une équipe = elle joue</div>
+        </div>
 
-        function playIntro() {
-            channel.postMessage({ type: 'PLAY_INTRO' });
-        }
+        <!-- Thème actuel -->
+        <div class="lp-section">
+            <h3>🎯 EN JEU</h3>
+            <div id="current-theme-box">
+                <div>Thème : <span id="current-theme-name">—</span></div>
+                <div id="current-score-display">0</div>
+                <div id="answers-count" style="color:#888;font-size:.75em;">0 / 0 réponses validées</div>
+            </div>
+            <div style="margin-top:8px;display:flex;gap:5px;flex-wrap:wrap;">
+                <button type="button" class="btn-gray btn-sm" onclick="undoLastAnswer()" id="btn-undo" disabled>↩ Annuler dernière</button>
+                <button type="button" class="btn-gray btn-sm" onclick="resetAnswers()">🗑 Reset réponses</button>
+            </div>
+        </div>
 
-        function skipIntro() {
-            channel.postMessage({ type: 'SKIP_INTRO' });
-        }
+        <!-- Équipe qui joue (enchère gagnée) -->
+        <div class="lp-section">
+            <h3>🎤 QUI JOUE ?</h3>
+            <select id="playing-team-select" onchange="setPlayingTeam()" style="width:100%;margin-bottom:6px;">
+                <option value="">— Sélectionner —</option>
+            </select>
+            <div style="font-size:.75em;color:#888;line-height:1.4;">Sélectionnez l'équipe qui a remporté l'enchère et qui présente ses réponses.</div>
+        </div>
 
-        function startAutoSpin() {
-            if (availableThemes.length === 0) {
-                alert("Plus de thèmes !");
-                return;
-            }
-            document.getElementById('btn-spin').disabled = true;
-            document.getElementById('answers-grid').innerHTML = '<div style="color:#f39c12">Tirage en cours...</div>';
-            channel.postMessage({ type: 'START_SPIN', availableThemes: availableThemes });
+        <!-- Attribution du point -->
+        <div class="lp-section">
+            <h3>📊 ATTRIBUTION POINT</h3>
+            <div style="display:flex;gap:6px;">
+                <button type="button" class="btn-green" style="flex:1" onclick="awardPoint(true)">✅ +1 Joueur</button>
+                <button type="button" class="btn-red"   style="flex:1" onclick="awardPoint(false)">❌ +1 Adversaire</button>
+            </div>
+            <div style="font-size:.75em;color:#888;margin-top:5px;">✅ = l'équipe qui jouait a réussi · ❌ = les adversaires gagnent le point</div>
+        </div>
 
-            setTimeout(() => {
-                stopAutoSpin();
-            }, 5000); // 5 secondes
-        }
+        <!-- Logs -->
+        <div class="lp-section" style="flex:1;">
+            <h3>📜 LOG</h3>
+            <div id="log-box" style="font-family:monospace;font-size:.75em;color:#888;height:100px;overflow-y:auto;background:#000;padding:5px;border-radius:3px;"></div>
+        </div>
+    </div>
 
-        function stopAutoSpin() {
-            const randIndex = Math.floor(Math.random() * availableThemes.length);
-            currentTheme = availableThemes[randIndex];
-            availableThemes.splice(randIndex, 1);
+    <!-- RIGHT : grille réponses -->
+    <div id="right-panel">
+        <div id="answers-grid" style="flex:1;overflow-y:auto;padding:14px;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px;align-content:start;">
+            <div style="color:#555;font-style:italic;grid-column:1/-1;">Lance le tirage pour commencer...</div>
+        </div>
+        <div id="bottom-bar">
+            <span class="info-txt" id="bottom-info">En attente...</span>
+        </div>
+    </div>
+</div>
 
-            channel.postMessage({ type: 'REVEAL_THEME', theme: currentTheme });
-            document.getElementById('current-theme-name').innerText = currentTheme.title;
-            document.getElementById('btn-show-q').disabled = false;
-            renderAnswersGrid(currentTheme);
-        }
+<!-- Score overlay -->
+<div id="score-overlay">
+    <h1>CLASSEMENT</h1>
+    <div id="score-big-list"></div>
+    <button type="button" class="btn-gray" onclick="document.getElementById('score-overlay').style.display='none'" style="margin-top:16px;">FERMER</button>
+</div>
 
-        function showQuestion() {
-            channel.postMessage({ type: 'SHOW_QUESTION', theme: currentTheme });
-            document.getElementById('btn-show-q').disabled = true; 
-            document.getElementById('btn-start-timer').disabled = false;
-        }
+<script src="surenchere_data.js"></script>
+<script>
+const channel = new BroadcastChannel('surenchere_channel');
 
-        function startTimer() { channel.postMessage({ type: 'START_TIMER' }); }
-        function pauseTimer() { channel.postMessage({ type: 'PAUSE_TIMER' }); }
-        function resetTimer() { channel.postMessage({ type: 'RESET_TIMER' }); }
+// ── ÉTAT GLOBAL ──
+let teams = [];
+let playingTeamIdx  = -1;   // équipe qui joue ce round
+let availableThemes = [...THEMES_DATA];
+let currentTheme    = null;
+let currentScore    = 0;
+let validatedIndices= [];
+let lastValidatedBtn= null;
+let isRevealOpen    = false;
+let timerInterval   = null;
+let currentTime     = 30;
+let timerRunning    = false;
 
-        function renderAnswersGrid(theme) {
-            const grid = document.getElementById('answers-grid');
-            grid.innerHTML = '';
-            currentScore = 0;
-            validatedIndices = [];
-            updateScoreDisplay();
+const loseSounds = [
+    'effets_sonores/wasted.mp3','effets_sonores/oh_le_con.mp3',
+    'effets_sonores/c_nul_homer.mp3','effets_sonores/wrong.mp3','effets_sonores/nope.mp3'
+];
 
-            theme.answers.forEach((answer, index) => {
-                const btn = document.createElement('button');
-                btn.className = 'answer-btn';
-                btn.innerText = answer;
-                btn.onclick = () => toggleAnswer(btn, index);
-                grid.appendChild(btn);
-            });
-        }
+// ── SETUP MODAL ──
+let setupTeams = [];
 
-        function toggleAnswer(btn, index) {
-            // Silencieux coté régie
-            if (btn.classList.contains('validated')) {
-                btn.classList.remove('validated');
-                currentScore--;
-                validatedIndices = validatedIndices.filter(i => i !== index);
-            } else {
-                btn.classList.add('validated');
-                currentScore++;
-                validatedIndices.push(index);
-            }
-            updateScoreDisplay();
-        }
+function setupAddTeam() {
+    const name  = document.getElementById('setup-team-name').value.trim();
+    const color = document.getElementById('setup-team-color').value;
+    if (!name) return;
+    setupTeams.push({ name, color, score: 0 });
+    document.getElementById('setup-team-name').value = '';
+    document.getElementById('setup-team-color').value = randomColor();
+    renderSetupList();
+}
 
-        function updateScoreDisplay() {
-            document.getElementById('current-score').innerText = currentScore;
-            channel.postMessage({ type: 'UPDATE_SCORE', count: currentScore });
-        }
+function renderSetupList() {
+    const el = document.getElementById('setup-teams-list');
+    el.innerHTML = '';
+    setupTeams.forEach((t, i) => {
+        const div = document.createElement('div');
+        div.style.cssText = `display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #333;`;
+        div.innerHTML = `<span style="width:14px;height:14px;border-radius:50%;background:${t.color};display:inline-block;flex-shrink:0;"></span>
+            <span style="flex:1">${t.name}</span>
+            <button class="btn-sm btn-red" onclick="setupTeams.splice(${i},1);renderSetupList()" style="font-size:.65em;padding:2px 6px;">✕</button>`;
+        el.appendChild(div);
+    });
+    document.getElementById('setup-validate-btn').disabled = setupTeams.length < 2;
+}
 
-        function toggleReveal() {
-            if(!currentTheme) return;
-            
-            if(!isRevealOpen) {
-                // Révélation + Arrêt Timer automatique
-                channel.postMessage({ 
-                    type: 'SHOW_ALL_ANSWERS', 
-                    answers: currentTheme.answers, 
-                    validatedIndices: validatedIndices 
-                });
-                isRevealOpen = true;
-            } else {
-                channel.postMessage({ type: 'HIDE_ALL_ANSWERS' });
-                isRevealOpen = false;
-            }
-        }
+function setupValidate() {
+    teams = setupTeams.map(t => ({ ...t, score: 0 }));
+    document.getElementById('setup-modal').style.display = 'none';
+    initGame();
+}
 
-        function playWin() {
-            channel.postMessage({ type: 'PLAY_FX', soundFile: 'effets_sonores/win2.mp3' });
-        }
+function setupSkip() {
+    teams = [];
+    document.getElementById('setup-modal').style.display = 'none';
+    initGame();
+}
 
-        function playLose() {
-            // Choix aléatoire
-            const rnd = Math.floor(Math.random() * loseSounds.length);
-            const sound = loseSounds[rnd];
-            channel.postMessage({ type: 'PLAY_FX', soundFile: sound });
-        }
+function initGame() {
+    renderTeamsList();
+    updatePlayingTeamSelect();
+    log('Jeu initialisé');
+}
 
-        function resetGameFull() {
-            if(confirm("Finir ce round et préparer le suivant ? (Ne lance pas le générique)")) {
-                document.getElementById('btn-spin').disabled = false;
-                document.getElementById('btn-show-q').disabled = true;
-                document.getElementById('btn-start-timer').disabled = true;
-                document.getElementById('current-theme-name').innerText = "...";
-                document.getElementById('answers-grid').innerHTML = "En attente...";
-                document.getElementById('current-score').innerText = "0";
-                
-                channel.postMessage({ type: 'HIDE_ALL_ANSWERS' });
-                channel.postMessage({ type: 'RESET_TIMER' });
-                
-                // CHANGEMENT ICI : On ne lance plus l'intro, on remet juste le logo fixe
-                channel.postMessage({ type: 'RESET_TO_LOGO' });
-                
-                currentTheme = null;
-                validatedIndices = [];
-                isRevealOpen = false;
-            }
-        }
-    </script>
+// ── ÉQUIPES ──
+function renderTeamsList() {
+    const el = document.getElementById('teams-list');
+    el.innerHTML = '';
+    if (!teams.length) { el.innerHTML = '<div style="color:#555;font-size:.8em">Aucune équipe</div>'; return; }
+    teams.forEach((t, i) => {
+        const div = document.createElement('div');
+        div.className = 'team-item' + (i===playingTeamIdx?' playing':'');
+        div.onclick = () => setPlayingTeamByIdx(i);
+        div.innerHTML = `
+            <div class="team-dot" style="background:${t.color}"></div>
+            <div class="team-name-d">${t.name}</div>
+            <div class="team-score-d">${t.score}</div>
+            <div class="team-actions">
+                <button type="button" class="btn-sm" onclick="event.stopPropagation();adjustScore(${i},-1)">-</button>
+                <button type="button" class="btn-sm" onclick="event.stopPropagation();adjustScore(${i},1)">+</button>
+            </div>`;
+        el.appendChild(div);
+    });
+}
+
+function adjustScore(idx, delta) {
+    teams[idx].score = Math.max(0, teams[idx].score + delta);
+    renderTeamsList();
+    channel.postMessage({ type: 'UPDATE_TEAMS', teams: teams.map(t=>({name:t.name,color:t.color,score:t.score})), playingIdx: playingTeamIdx });
+    log(`Score ${teams[idx].name}: ${teams[idx].score}`);
+}
+
+function updatePlayingTeamSelect() {
+    const sel = document.getElementById('playing-team-select');
+    const prev = sel.value;
+    sel.innerHTML = '<option value="">— Sélectionner —</option>';
+    teams.forEach((t, i) => {
+        const opt = document.createElement('option');
+        opt.value = i; opt.textContent = t.name;
+        sel.appendChild(opt);
+    });
+    if (prev !== '') sel.value = prev;
+}
+
+function setPlayingTeam() {
+    const v = document.getElementById('playing-team-select').value;
+    playingTeamIdx = v === '' ? -1 : parseInt(v);
+    renderTeamsList();
+    broadcastTeams();
+    if (playingTeamIdx >= 0) log(`${teams[playingTeamIdx].name} joue ce round`);
+}
+
+function setPlayingTeamByIdx(idx) {
+    playingTeamIdx = idx;
+    document.getElementById('playing-team-select').value = idx;
+    renderTeamsList();
+    broadcastTeams();
+    log(`${teams[idx].name} joue ce round`);
+}
+
+function broadcastTeams() {
+    channel.postMessage({
+        type: 'UPDATE_TEAMS',
+        teams: teams.map(t => ({ name: t.name, color: t.color, score: t.score })),
+        playingIdx: playingTeamIdx
+    });
+}
+
+function awardPoint(playerWon) {
+    if (!teams.length) { log('Aucune équipe configurée','warn'); return; }
+    if (playerWon) {
+        if (playingTeamIdx < 0) { log('Sélectionnez qui jouait','warn'); return; }
+        teams[playingTeamIdx].score++;
+        log(`✅ +1 → ${teams[playingTeamIdx].name} (${teams[playingTeamIdx].score} pts)`);
+    } else {
+        // Point aux adversaires : +1 à tous les autres
+        teams.forEach((t, i) => { if (i !== playingTeamIdx) t.score++; });
+        log(`❌ +1 → adversaires`);
+    }
+    renderTeamsList();
+    broadcastTeams();
+}
+
+function showScoreOverlay() {
+    const ol = document.getElementById('score-overlay');
+    const list = document.getElementById('score-big-list');
+    list.innerHTML = '';
+    const sorted = [...teams].sort((a, b) => b.score - a.score);
+    sorted.forEach(t => {
+        const row = document.createElement('div');
+        row.className = 'score-row-big';
+        row.innerHTML = `<div class="score-dot-big" style="background:${t.color}"></div><div class="score-name-big">${t.name}</div><div class="score-pts-big">${t.score} pts</div>`;
+        list.appendChild(row);
+    });
+    ol.style.display = 'flex';
+    channel.postMessage({ type: 'SHOW_SCORES', teams: sorted });
+}
+
+// ── NAVIGATION JEU ──
+function openScreen() {
+    window.open('surenchere_ecran.html', 'SurenchereDisplay', 'width=1280,height=720');
+}
+
+function playIntro() { channel.postMessage({ type: 'PLAY_INTRO' }); log('Générique lancé'); }
+function skipIntro()  { channel.postMessage({ type: 'SKIP_INTRO' }); }
+
+function startAutoSpin() {
+    if (!availableThemes.length) { alert('Plus de thèmes disponibles ! Relancez le jeu.'); return; }
+    document.getElementById('btn-spin').disabled = true;
+    document.getElementById('answers-grid').innerHTML = '<div style="color:#f39c12;grid-column:1/-1;">Tirage en cours...</div>';
+    channel.postMessage({ type: 'START_SPIN', availableThemes });
+    document.getElementById('bottom-info').textContent = '🎰 Tirage en cours...';
+    setTimeout(() => stopAutoSpin(), 5000);
+}
+
+function stopAutoSpin() {
+    const randIndex    = Math.floor(Math.random() * availableThemes.length);
+    currentTheme       = availableThemes[randIndex];
+    availableThemes.splice(randIndex, 1);
+    channel.postMessage({ type: 'REVEAL_THEME', theme: currentTheme });
+    document.getElementById('current-theme-name').textContent = currentTheme.title;
+    document.getElementById('btn-show-q').disabled  = false;
+    document.getElementById('btn-reveal').disabled  = true;
+    document.getElementById('btn-timer').disabled   = true;
+    renderAnswersGrid(currentTheme);
+    log(`Thème tiré : ${currentTheme.title}`);
+    document.getElementById('bottom-info').textContent = `Thème : ${currentTheme.title} (${currentTheme.answers.length} réponses possibles)`;
+}
+
+function showQuestion() {
+    if (!currentTheme) return;
+    channel.postMessage({ type: 'SHOW_QUESTION', theme: currentTheme });
+    document.getElementById('btn-show-q').disabled  = true;
+    document.getElementById('btn-timer').disabled   = false;
+    document.getElementById('btn-reveal').disabled  = false;
+    log('Question affichée sur l\'écran');
+}
+
+function startTimer() {
+    channel.postMessage({ type: 'START_TIMER' });
+    timerRunning = true;
+    log('Timer lancé');
+}
+function pauseTimer()  { channel.postMessage({ type: 'PAUSE_TIMER' }); timerRunning = false; log('Timer pausé'); }
+function resetTimer()  { channel.postMessage({ type: 'RESET_TIMER' }); timerRunning = false; log('Timer reset'); }
+
+function renderAnswersGrid(theme) {
+    const grid = document.getElementById('answers-grid');
+    grid.innerHTML = '';
+    currentScore = 0; validatedIndices = []; lastValidatedBtn = null;
+    updateScoreDisplay();
+
+    theme.answers.forEach((answer, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'answer-btn';
+        btn.innerHTML = `${answer}<span class="ans-num">#${index+1}</span>`;
+        btn.onclick = () => toggleAnswer(btn, index);
+        grid.appendChild(btn);
+    });
+    document.getElementById('btn-undo').disabled = true;
+}
+
+function toggleAnswer(btn, index) {
+    if (btn.classList.contains('validated')) {
+        btn.classList.remove('validated');
+        currentScore--;
+        validatedIndices = validatedIndices.filter(i => i !== index);
+        if (lastValidatedBtn === btn) lastValidatedBtn = null;
+    } else {
+        btn.classList.add('validated');
+        currentScore++;
+        validatedIndices.push(index);
+        lastValidatedBtn = btn;
+    }
+    document.getElementById('btn-undo').disabled = validatedIndices.length === 0;
+    updateScoreDisplay();
+}
+
+function undoLastAnswer() {
+    if (!lastValidatedBtn) return;
+    const idx = parseInt(lastValidatedBtn.querySelector('.ans-num').textContent.replace('#', '')) - 1;
+    lastValidatedBtn.classList.remove('validated');
+    currentScore--;
+    validatedIndices = validatedIndices.filter(i => i !== idx);
+    lastValidatedBtn = null;
+    document.getElementById('btn-undo').disabled = validatedIndices.length === 0;
+    updateScoreDisplay();
+    log('Dernière réponse annulée');
+}
+
+function resetAnswers() {
+    if (!currentTheme) return;
+    document.querySelectorAll('.answer-btn').forEach(b => b.classList.remove('validated'));
+    currentScore = 0; validatedIndices = []; lastValidatedBtn = null;
+    document.getElementById('btn-undo').disabled = true;
+    updateScoreDisplay();
+    log('Réponses réinitialisées');
+}
+
+function updateScoreDisplay() {
+    document.getElementById('current-score-display').textContent = currentScore;
+    const total = currentTheme ? currentTheme.answers.length : 0;
+    document.getElementById('answers-count').textContent = `${currentScore} / ${total} réponses validées`;
+    channel.postMessage({ type: 'UPDATE_SCORE', count: currentScore, total });
+}
+
+function toggleReveal() {
+    if (!currentTheme) return;
+    if (!isRevealOpen) {
+        channel.postMessage({ type: 'SHOW_ALL_ANSWERS', answers: currentTheme.answers, validatedIndices, total: currentTheme.answers.length });
+        isRevealOpen = true;
+        document.getElementById('btn-reveal').textContent = '🙈 MASQUER';
+        log(`Révélation : ${currentScore}/${currentTheme.answers.length} trouvées`);
+    } else {
+        channel.postMessage({ type: 'HIDE_ALL_ANSWERS' });
+        isRevealOpen = false;
+        document.getElementById('btn-reveal').textContent = '👁 RÉVÉLER';
+    }
+}
+
+function playWin()  {
+    channel.postMessage({ type: 'PLAY_FX', soundFile: 'effets_sonores/win2.mp3' });
+    log('🎉 FX Gagné joué');
+}
+function playLose() {
+    const sound = loseSounds[Math.floor(Math.random() * loseSounds.length)];
+    channel.postMessage({ type: 'PLAY_FX', soundFile: sound });
+    log('💀 FX Perdu joué');
+}
+
+function resetGameFull() {
+    if (!confirm('Préparer un nouveau round ?')) return;
+    document.getElementById('btn-spin').disabled    = false;
+    document.getElementById('btn-show-q').disabled  = true;
+    document.getElementById('btn-timer').disabled   = true;
+    document.getElementById('btn-reveal').disabled  = true;
+    document.getElementById('btn-reveal').textContent = '👁 RÉVÉLER';
+    document.getElementById('current-theme-name').textContent = '—';
+    document.getElementById('current-score-display').textContent = '0';
+    document.getElementById('answers-count').textContent = '0 / 0 réponses validées';
+    document.getElementById('answers-grid').innerHTML = '<div style="color:#555;font-style:italic;grid-column:1/-1;">Lance le tirage pour commencer...</div>';
+    document.getElementById('bottom-info').textContent = 'En attente...';
+    document.getElementById('btn-undo').disabled = true;
+    currentTheme = null; validatedIndices = []; currentScore = 0; isRevealOpen = false; lastValidatedBtn = null;
+    playingTeamIdx = -1;
+    document.getElementById('playing-team-select').value = '';
+    renderTeamsList();
+    channel.postMessage({ type: 'HIDE_ALL_ANSWERS' });
+    channel.postMessage({ type: 'RESET_TIMER' });
+    channel.postMessage({ type: 'RESET_TO_LOGO' });
+    log('--- Nouveau round ---');
+}
+
+// ── LOG ──
+function log(msg, type = 'info') {
+    const box = document.getElementById('log-box');
+    const div = document.createElement('div');
+    div.style.color = type==='warn' ? '#f39c12' : '#888';
+    div.textContent = `[${new Date().toLocaleTimeString().slice(0,5)}] ${msg}`;
+    box.prepend(div);
+    if (box.children.length > 40) box.removeChild(box.lastChild);
+}
+
+// ── UTILS ──
+function randomColor() {
+    const c = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63'];
+    return c[Math.floor(Math.random() * c.length)];
+}
+
+window.setupAddTeam = setupAddTeam;
+window.setupTeams = setupTeams;
+</script>
 </body>
 </html>
