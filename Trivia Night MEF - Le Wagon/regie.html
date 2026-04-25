@@ -1027,9 +1027,10 @@ function nextTeamAuto() {
     if (skipGuard >= gameState.teams.length) nextIdx = (gameState.currentTeamIndex + 1) % gameState.teams.length;
 
     gameState.currentTeamIndex = nextIdx;
-    updateTurnDisplay(); renderTeamsList(); renderWagonsGrid();
+    updateTurnDisplay(); renderTeamsList(); renderWagonsGrid(); renderBonusPanel();
     const t = gameState.teams[gameState.currentTeamIndex];
     channel.postMessage({ type:'NEXT_TURN', data:{teamIndex:gameState.currentTeamIndex, teamName:t.name, teamColor:t.color} });
+    broadcastState();
 }
 function nextTeam() { saveHistory('Tour suivant'); nextTeamAuto(); addLog(`➡ Tour: ${gameState.teams[gameState.currentTeamIndex].name}`, 'info'); }
 function prevTeam() {

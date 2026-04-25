@@ -316,7 +316,7 @@ let answersLocked    = true;   // verrouillé jusqu'au lancement du chrono
 let mise           = 0;
 let plusMiseMalus  = 0;    // ajout à la mise via malus
 let coupDePouce    = false; // bonus: +5 aux citées
-let doubleMalus    = false; // malus: ×2 gains ET ×2 pertes
+let doubleMalus    = 0;     // malus: ×2 gains ET ×2 pertes — compteur (stacking si plusieurs équipes l'activent)
 let timerBonus     = 0;    // secondes nettes (positif=plus, négatif=moins)
 let divisionMalus  = false; // malus: ÷3 gains ou ×3 pertes
 let roundAwarded   = false; // empêche double-clic sur APPLIQUER
@@ -468,7 +468,7 @@ function updateMiseDisplay() {
     const parts = [`Mise: ${mise}`];
     if (plusMiseMalus > 0) parts.push(`+${plusMiseMalus} malus`);
     if (coupDePouce)       parts.push('+5 coup de pouce (citées)');
-    if (doubleMalus)       parts.push('MALUS ×2 pts');
+    if (doubleMalus > 0)   parts.push(`MALUS ×${Math.pow(2, doubleMalus)} pts (${doubleMalus} activation${doubleMalus>1?'s':''})`);
     if (divisionMalus)     parts.push('÷3 gains / ×3 pertes');
     if (timerBonus !== 0)  parts.push(`${timerBonus>0?'+':''}${timerBonus}s chrono`);
     document.getElementById('mise-breakdown').textContent = parts.join(' · ');
@@ -486,17 +486,18 @@ function updateMiseDisplay() {
 }
 
 function calcDelta(em, ec) {
+    const doubleMultiplier = Math.pow(2, doubleMalus); // 1 si 0, 2 si 1, 4 si 2 activations...
     if (ec >= em) {
         // GAGNÉ : on score TOUT ce qu'on a cité (citer plus = bonus)
         let d = ec;
-        if (doubleMalus)   d *= 2;
-        if (divisionMalus) d = Math.floor(d / 3);
+        if (doubleMalus > 0) d *= doubleMultiplier;
+        if (divisionMalus)   d = Math.floor(d / 3);
         return d;
     } else {
         // PERDU : on perd la différence mise - citées
         let d = -(em - ec);
-        if (doubleMalus)   d *= 2;
-        if (divisionMalus) d *= 3;
+        if (doubleMalus > 0) d *= doubleMultiplier;
+        if (divisionMalus)   d *= 3;
         return d;
     }
 }
@@ -560,7 +561,7 @@ function updateBmPanel() {
     // Effets actifs
     const activeEl = document.getElementById('active-effects');
     activeEl.innerHTML = '';
-    if (doubleMalus)     activeEl.innerHTML += `<span style="background:#3a0a0a;border:1px solid #c0392b;color:#f0a0a0;border-radius:3px;padding:2px 7px;font-size:.72em;">✖️2 MALUS ACTIF</span> `;
+    if (doubleMalus > 0) activeEl.innerHTML += `<span style="background:#3a0a0a;border:1px solid #c0392b;color:#f0a0a0;border-radius:3px;padding:2px 7px;font-size:.72em;">✖️${Math.pow(2,doubleMalus)} MALUS ACTIF (×${doubleMalus})</span> `;
     if (coupDePouce)     activeEl.innerHTML += `<span style="background:#1a3a6a;border:1px solid #2980b9;color:#90c0ff;border-radius:3px;padding:2px 7px;font-size:.72em;">👍 +5 ACTIF</span> `;
     if (timerBonus > 0)  activeEl.innerHTML += `<span style="background:#1a3a6a;border:1px solid #2980b9;color:#90c0ff;border-radius:3px;padding:2px 7px;font-size:.72em;">⏰ +${timerBonus}s ACTIF</span> `;
     if (divisionMalus)   activeEl.innerHTML += `<span style="background:#3a0a0a;border:1px solid #c0392b;color:#f0a0a0;border-radius:3px;padding:2px 7px;font-size:.72em;">➗ MALUS ACTIF</span> `;
@@ -600,7 +601,7 @@ function activateMalus(teamIdx, malusIdx) {
     switch (def.id) {
         case 'double':
             m.used = true;
-            doubleMalus = true;
+            doubleMalus++;
             log(`✖️2 Malus POINTS ×2 activé par ${teams[teamIdx].name} → ${teams[playingTeamIdx].name}`, 'bad');
             break;
         case 'division':
@@ -844,14 +845,10 @@ function doResetRound() {
     currentTheme = null; validatedIndices = []; currentScore = 0;
     isRevealOpen = false; revealHasBeenShown = false; lastValidatedBtn = null; answersLocked = true;
     playingTeamIdx = -1;
-    mise = 0; plusMiseMalus = 0; coupDePouce = false; doubleMalus = false;
+    mise = 0; plusMiseMalus = 0; coupDePouce = false; doubleMalus = 0;
     timerBonus = 0; divisionMalus = false; roundAwarded = false;
 
-    // Réinitialiser les bonus/malus des équipes pour le nouveau round
-    teams.forEach(t => {
-        t.bonuses.forEach(b => b.used = false);
-        t.malus.forEach(m => m.used = false);
-    });
+    // Bonus/malus: les chips UTILISÉS restent consommés pour toute la partie (pas de reset)
 
     document.getElementById('playing-team-select').value = '';
     renderTeamsList();

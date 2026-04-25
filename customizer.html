@@ -598,7 +598,12 @@ function getQATheme() {
 function getQAQuestions() {
   const theme = getQATheme();
   if (!theme) return [];
-  return theme.questions || [];
+  return (theme.questions || []).map(q => ({
+    ...q,
+    type:     q.type     || 'text',
+    question: q.question !== undefined ? q.question : (q.q || ''),
+    answer:   q.answer   !== undefined ? q.answer   : (q.a  || ''),
+  }));
 }
 
 function renderQAPanel() {
@@ -882,8 +887,11 @@ function addQuestion() {
   const a = document.getElementById('add-q-answer')?.value.trim();
   const file = document.getElementById('add-q-file')?.value.trim();
   if (!q || !a) { showToast('Question et réponse obligatoires', true); return; }
-  const newQ = { type: addType, question: q, answer: a, difficulty: addDiff, validated: true };
-  if (addType !== 'text' && file) newQ.file = file;
+  // Wagon uses q/a fields; all other games use question/answer
+  const newQ = currentGame === 'wagon'
+    ? { q, a, validated: true }
+    : { type: addType, question: q, answer: a, difficulty: addDiff, validated: true };
+  if (currentGame !== 'wagon' && addType !== 'text' && file) newQ.file = file;
   theme.questions.push(newQ);
   saveTheme(currentGame, currentThemeId);
   document.getElementById('add-q-question').value = '';
@@ -915,8 +923,15 @@ document.getElementById('modal-save').onclick = () => {
   const theme = getQAThemeObj();
   if (!theme) return;
   const diff = parseInt(document.querySelector('#modal-diff-selector .diff-option.selected')?.dataset.diff || '1');
-  theme.questions[editingCard].question = document.getElementById('modal-question').value.trim();
-  theme.questions[editingCard].answer = document.getElementById('modal-answer').value.trim();
+  const qVal = document.getElementById('modal-question').value.trim();
+  const aVal = document.getElementById('modal-answer').value.trim();
+  if (currentGame === 'wagon') {
+    theme.questions[editingCard].q = qVal;
+    theme.questions[editingCard].a = aVal;
+  } else {
+    theme.questions[editingCard].question = qVal;
+    theme.questions[editingCard].answer   = aVal;
+  }
   theme.questions[editingCard].difficulty = diff;
   saveTheme(currentGame, currentThemeId);
   document.getElementById('modal-overlay').classList.remove('open');
