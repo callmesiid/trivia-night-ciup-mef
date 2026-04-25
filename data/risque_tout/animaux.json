@@ -1,0 +1,3088 @@
+{
+  "id": "animaux",
+  "label": "Animaux",
+  "icon": "icons/animaux.png",
+  "questions": [
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/aigle_royal.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Aigle Royal",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/alligator_d_amerique.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Alligator D Amerique",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/ane_de_provence.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ane De Provence",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/canard_mandarin.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Canard Mandarin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/chevre_montagnes_rocheuses.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chevre Montagnes Rocheuses",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/chien_de_prairie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chien De Prairie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/cigale_commune.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Cigale Commune",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/ecureuil_roux.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ecureuil Roux",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/elephant_d_afrique.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Elephant D Afrique",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/grenouille_verte.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Grenouille Verte",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/hibou_grand_duc.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Hibou Grand Duc",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/hippopotame.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Hippopotame",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/hippotrague_noir.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Hippotrague Noir",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/lievre_d_europe.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Lievre D Europe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/loup_gris.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup Gris",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/ours_brun.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ours Brun",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/paresseux_a_deux_doigts.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Paresseux A Deux Doigts",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/paresseux_a_gorge_brune.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Paresseux A Gorge Brune",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/raton_laveur.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Raton Laveur",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/renard_roux.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Renard Roux",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/renne.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Renne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/rhinoceros_noir.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Rhinoceros Noir",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/sanglier_commun.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Sanglier Commun",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/serval.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Serval",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/tigre_du_bengale.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tigre Du Bengale",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/tortue_geante.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tortue Geante",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/tortue_molle.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tortue Molle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/tortue_verte.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tortue Verte",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/1/images/tyrannosaure_rex.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tyrannosaure Rex",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Canard.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Canard",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Cheval.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Cheval",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Chien.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Chien",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Chèvre.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Chèvre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Elephant.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Elephant",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Mouette.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Mouette",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Poule.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Poule",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Singe.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Singe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/1/sons/Vache.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Vache",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand animal terrestre ?",
+      "answer": "Éléphant",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le roi de la jungle ?",
+      "answer": "Lion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quoi se nourrit principalement le Panda géant ?",
+      "answer": "Bambou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a le plus long cou ?",
+      "answer": "Girafe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le meilleur ami de l'homme ?",
+      "answer": "Chien",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de pattes a une araignée ?",
+      "answer": "8",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal produit du lait pour faire du fromage de chèvre ?",
+      "answer": "Chèvre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand mammifère marin ?",
+      "answer": "Baleine bleue",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel félin court le plus vite ?",
+      "answer": "Guépard",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a une trompe ?",
+      "answer": "Éléphant",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal porte sa maison sur son dos ?",
+      "answer": "Escargot (ou Tortue)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est connu pour sa mémoire ?",
+      "answer": "Éléphant",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel reptile change de couleur pour se camoufler ?",
+      "answer": "Caméléon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal rayé ressemble au cheval ?",
+      "answer": "Zèbre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau pond les plus gros œufs ?",
+      "answer": "Autruche",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on le petit du chat ?",
+      "answer": "Chaton",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal construit des barrages sur les rivières ?",
+      "answer": "Castor",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal produit de la laine ?",
+      "answer": "Mouton",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel insecte fabrique du miel ?",
+      "answer": "Abeille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand primate ?",
+      "answer": "Gorille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a des piquants sur le dos pour se défendre ?",
+      "answer": "Hérisson (ou Porc-épic)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau est le symbole de la paix ?",
+      "answer": "Colombe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prédateur principal des gazelles en Afrique ?",
+      "answer": "Lion (ou Guépard)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal dort la tête en bas ?",
+      "answer": "Chauve-souris",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on la femelle du taureau ?",
+      "answer": "Vache",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'animal le plus lent (symbole de lenteur) ?",
+      "answer": "Tortue (ou Paresseux)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a une poche ventrale pour son petit ?",
+      "answer": "Kangourou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le cri du chien ?",
+      "answer": "Aboiement",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel insecte se transforme en papillon ?",
+      "answer": "Chenille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'animal le plus grand du monde (toutes catégories) ?",
+      "answer": "Baleine bleue",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel crustacé marche de côté ?",
+      "answer": "Crabe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a une corne sur le nez ?",
+      "answer": "Rhinocéros",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit de la poule ?",
+      "answer": "Poussin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal vit dans une ruche ?",
+      "answer": "Abeille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est la mascotte de la marque Lacoste ?",
+      "answer": "Crocodile",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mammifère marin est connu pour son intelligence et ses sauts ?",
+      "answer": "Dauphin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on le petit du chien ?",
+      "answer": "Chiot",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel ours vit sur la banquise ?",
+      "answer": "Ours polaire",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel insecte porte bonheur (rouge à points noirs) ?",
+      "answer": "Coccinelle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau imite la voix humaine ?",
+      "answer": "Perroquet",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est l'ancêtre du chien domestique ?",
+      "answer": "Loup",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit du cheval ?",
+      "answer": "Poulain",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal construit des termitières géantes ?",
+      "answer": "Termite",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est \"Bambi\" ?",
+      "answer": "Faon (Cerf)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit de la vache ?",
+      "answer": "Veau",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a une poche pour stocker la nourriture dans ses joues ?",
+      "answer": "Hamster (ou Écureuil)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit du mouton ?",
+      "answer": "Agneau",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du cri de la vache ?",
+      "answer": "Meuglement",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la femelle du loup ?",
+      "answer": "Louve",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit de la lionne ?",
+      "answer": "Lionceau",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit du cochon ?",
+      "answer": "Porcelet",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le cri du lion ?",
+      "answer": "Rugissement",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit de l'ours ?",
+      "answer": "Ourson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel insecte produit de la lumière ?",
+      "answer": "Luciole",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la femelle du tigre ?",
+      "answer": "Tigresse",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a inspiré le personnage de Sonic ?",
+      "answer": "Hérisson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le cri du mouton ?",
+      "answer": "Bêlement",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/alpaga.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Alpaga",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/leopard_des_mers.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Leopard Des Mers",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/leopard_des_neiges.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Leopard Des Neiges",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/leopard_d_afrique.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Leopard D Afrique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/lynx_boreal.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Lynx Boreal",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/lynx_du_desert.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Lynx Du Desert",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/lynx_roux.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Lynx Roux",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/mammouth_laineux.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Mammouth Laineux",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/otarie_de_californie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Otarie De Californie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/pangolin_de_chine.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pangolin De Chine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/pangolin_geant.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pangolin Geant",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/requin_baleine.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Requin Baleine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/requin_blanc.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Requin Blanc",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/requin_marteau.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Requin Marteau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/shiba_inu.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Shiba Inu",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/siamois.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Siamois",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/siberian_husky.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Siberian Husky",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/sphynx.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Sphynx",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/thon_rouge.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Thon Rouge",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/2/images/truite_fario.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Truite Fario",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/2/sons/Agneau.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Agneau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau ne vole pas et vit sur la banquise (Antarctique) ?",
+      "answer": "Manchot",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de bosses a un dromadaire ?",
+      "answer": "1",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul mammifère capable de voler ?",
+      "answer": "Chauve-souris",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de tentacules a une pieuvre ?",
+      "answer": "8",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poisson est connu pour remonter les rivières pour pondre ?",
+      "answer": "Saumon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus gros poisson carnivore ?",
+      "answer": "Grand requin blanc",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est le symbole des États-Unis ?",
+      "answer": "Aigle (Pygargue)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a des bois qui tombent et repoussent chaque année ?",
+      "answer": "Cerf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau est capable de tourner sa tête à 270 degrés ?",
+      "answer": "Hibou (ou Chouette)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on un groupe de loups ?",
+      "answer": "Meute",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est surnommé le \"vaisseau du désert\" ?",
+      "answer": "Chameau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de pattes a un insecte (en général) ?",
+      "answer": "6",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est célèbre pour laver sa nourriture (raton) ?",
+      "answer": "Raton laveur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau vole à reculons ?",
+      "answer": "Colibri",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mâle de la brebis ?",
+      "answer": "Bélier",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal mange des eucalyptus ?",
+      "answer": "Koala",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal expulse de l'encre pour fuir ?",
+      "answer": "Seiche (ou Pieuvre/Calamar)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de bosses a un chameau ?",
+      "answer": "2",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mâle de la chèvre ?",
+      "answer": "Bouc",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel singe est le plus proche de l'homme génétiquement ?",
+      "answer": "Chimpanzé (Bonobo)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand félin (en taille/poids) ?",
+      "answer": "Tigre",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est la proie favorite du Grand Requin Blanc ?",
+      "answer": "Phoque (ou Otarie)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus petit oiseau du monde ?",
+      "answer": "Colibri (Oiseau-mouche)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est vénéré en Inde ?",
+      "answer": "Vache",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau migrateur forme des \"V\" dans le ciel ?",
+      "answer": "Oie (ou Canard/Grue)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la femelle du cerf ?",
+      "answer": "Biche",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal peut perdre sa queue et la faire repousser ?",
+      "answer": "Lézard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poisson peut gonfler pour effrayer ses prédateurs ?",
+      "answer": "Poisson-globe (Fugu)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du cri du cheval ?",
+      "answer": "Hennissement",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est la femelle de l'âne ?",
+      "answer": "Ânesse",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul félin qui vit en groupe social ?",
+      "answer": "Lion",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit du tigre ?",
+      "answer": "Tigreau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la femelle du canard ?",
+      "answer": "Cane",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit du cerf ?",
+      "answer": "Faon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit de la chèvre ?",
+      "answer": "Chevreau (ou Cabri)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/chauve_souris_geante_d_inde.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chauve Souris Geante D Inde",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/dragon_de_komodo.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Dragon De Komodo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/jaguar.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Jaguar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/kiwi_austral.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Kiwi Austral",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/lerot.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Lerot",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/lezard_jesus.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Lezard Jesus",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/marmotte_des_alpes.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Marmotte Des Alpes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/ours_noir.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ours Noir",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/ours_polaire.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ours Polaire",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/paon_bleu.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Paon Bleu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/paon_du_jour.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Paon Du Jour",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/pelican_blanc.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pelican Blanc",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/pelican_frise.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pelican Frise",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/pic_epeiche.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pic Epeiche",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/pic_flamboyant.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pic Flamboyant",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/pic_vert.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pic Vert",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/pie_bavarde.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Pie Bavarde",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/puma.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Puma",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/putois_a_pieds_noirs.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Putois A Pieds Noirs",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/putois_d_europe.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Putois D Europe",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/suricate.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Suricate",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/toucan_a_carene.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Toucan A Carene",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/toucan_toco.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Toucan Toco",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/3/images/vipere_aspic.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vipere Aspic",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/3/sons/Corbeau.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Corbeau",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/3/sons/Hibou.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Hibou",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a des vertèbres cervicales aussi nombreuses que l'homme (7) ?",
+      "answer": "Girafe",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'oiseau le plus rapide en piqué ?",
+      "answer": "Faucon pèlerin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus gros serpent du monde (poids) ?",
+      "answer": "Anaconda",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mammifère pond des œufs ?",
+      "answer": "Ornithorynque",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a la langue bleue ?",
+      "answer": "Girafe (ou Chow-chow)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal utilise des ultrasons (écholocation) ?",
+      "answer": "Chauve-souris (ou Dauphin)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau ne vole pas et vit en Australie ?",
+      "answer": "Émeu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a la gestation la plus longue (22 mois) ?",
+      "answer": "Éléphant",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le petit du lapin ?",
+      "answer": "Lapereau",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité des dents du requin ?",
+      "answer": "Elles repoussent indéfiniment",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul continent sans reptiles ?",
+      "answer": "Antarctique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poisson n'a pas d'arêtes (squelette cartilagineux) ?",
+      "answer": "Requin (ou Raie)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a inspiré le mythe de la licorne (marin) ?",
+      "answer": "Narval",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mammifère marin a une défense torsadée ?",
+      "answer": "Narval",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand reptile vivant ?",
+      "answer": "Crocodile marin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est la mascotte de Linux ?",
+      "answer": "Manchot",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau pond ses œufs dans le nid des autres ?",
+      "answer": "Coucou",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est le \"Diable de Tasmanie\" ?",
+      "answer": "Marsupial",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel insecte mange son partenaire après l'accouplement ?",
+      "answer": "Mante religieuse",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est l'orque (Baleine ou Dauphin) ?",
+      "answer": "Dauphin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal vit dans un terrier appelé \"garenne\" ?",
+      "answer": "Lapin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand poisson du monde (qui mange du plancton) ?",
+      "answer": "Requin-baleine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le petit de l'âne ?",
+      "answer": "Ânon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau est l'emblème de la Nouvelle-Zélande ?",
+      "answer": "Kiwi",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal peut vivre sans tête plusieurs jours (insecte) ?",
+      "answer": "Cafard",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mammifère a la peau la plus épaisse ?",
+      "answer": "Rhinocéros (ou Hippopotame)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a les yeux plus gros que le cerveau ?",
+      "answer": "Autruche",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mammifère vole mais n'est pas une chauve-souris (planeur) ?",
+      "answer": "Écureuil volant",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul animal dont le mâle porte les bébés ?",
+      "answer": "Hippocampe",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est un \"pachyderme\" ?",
+      "answer": "Éléphant (ou Rhino/Hippo)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau a le plus grand tour d'aile (envergure) ?",
+      "answer": "Albatros",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/cerf_de_virginie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Cerf De Virginie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/cerf_elaphe.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Cerf Elaphe",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/chat_des_sables.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chat Des Sables",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/chat_de_pallas.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chat De Pallas",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/chat_de_temminck.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chat De Temminck",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/chat_pecheur.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chat Pecheur",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/chat_sauvage.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chat Sauvage",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/elephant_de_mer.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Elephant De Mer",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/elephant_d_asie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Elephant D Asie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_arctique.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup Arctique",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_a_criniere.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup A Criniere",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_des_indes.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup Des Indes",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_de_l_est.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup De L Est",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_de_mongolie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup De Mongolie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_du_mexique.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup Du Mexique",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_d_abyssinie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup D Abyssinie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_iberique.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup Iberique",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/loup_rouge.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Loup Rouge",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/porc_epic_du_cap.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Porc Epic Du Cap",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/porc_epic_d_amerique_du_nord.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Porc Epic D Amerique Du Nord",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/raie_manta.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Raie Manta",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/renard_corsac.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Renard Corsac",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/renard_crabier.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Renard Crabier",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/renard_des_sables.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Renard Des Sables",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/renard_gris.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Renard Gris",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/renard_polaire.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Renard Polaire",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/setter_irlandais.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Setter Irlandais",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/shar_pei.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Shar Pei",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/shetland.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Shetland",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/spilogale.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Spilogale",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/spizaete_orne.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Spizaete Orne",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/springbok.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Springbok",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/steenbok.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Steenbok",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/vautour_africain.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vautour Africain",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/vautour_fauve.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vautour Fauve",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/vautour_pape.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vautour Pape",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/4/images/vautour_percnoptere.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vautour Percnoptere",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/4/sons/Leopard.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Leopard",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/4/sons/Tigre.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Tigre",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est célèbre pour faire le mort (Opossum) ?",
+      "answer": "Opossum",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la femelle du sanglier ?",
+      "answer": "Laie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de cœurs a une pieuvre ?",
+      "answer": "3",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est un \"plantigrade\" (marche sur la plante des pieds) ?",
+      "answer": "Ours (ou Homme)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on l'élevage des abeilles ?",
+      "answer": "Apiculture",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel insecte transmet la maladie du sommeil ?",
+      "answer": "Mouche Tsé-tsé",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le régime alimentaire d'un animal \"piscivore\" ?",
+      "answer": "Poissons",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a la plus forte pression mâchoire au monde ?",
+      "answer": "Crocodile marin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'animal terrestre le plus bruyant ?",
+      "answer": "Singe hurleur",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a 3 paupières ?",
+      "answer": "Chameau (et beaucoup d'oiseaux)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mammifère le plus trafiqué au monde (écailles) ?",
+      "answer": "Pangolin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a des rayures noires sur la peau (pas que les poils) ?",
+      "answer": "Tigre",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau plongeur est souvent confondu avec le manchot en français ?",
+      "answer": "Pingouin (Petit Pingouin)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a une espérance de vie de 24 heures (insecte) ?",
+      "answer": "Éphémère",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est un \"octopode\" ?",
+      "answer": "Pieuvre",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand animal invertébré ?",
+      "answer": "Calamar colossal",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est un \"céphalopode\" ?",
+      "answer": "Pieuvre (ou Calamar)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est immunisé contre le venin de serpent (Cobra) ?",
+      "answer": "Mangouste",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est un \"gastéropode\" ?",
+      "answer": "Escargot",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/chevre_naine.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chevre Naine",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/chien_chinois_a_crete.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chien Chinois A Crete",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/chien_des_buissons.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chien Des Buissons",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/chien_loup_tchecoslovaque.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chien Loup Tchecoslovaque",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/chien_viverrin.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Chien Viverrin",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/ecureuil_de_barbarie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ecureuil De Barbarie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/ecureuil_de_prevost.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ecureuil De Prevost",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/ecureuil_du_yucatan.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ecureuil Du Yucatan",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/ecureuil_fouisseur.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ecureuil Fouisseur",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/ecureuil_geant.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ecureuil Geant",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/ecureuil_gris.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Ecureuil Gris",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/grenouille_fraise.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Grenouille Fraise",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/grenouille_taureau.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Grenouille Taureau",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nandinie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nandinie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nandou.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nandou",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/narval.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Narval",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nasique.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nasique",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nautile.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nautile",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nebelung.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nebelung",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nestor_kea.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nestor Kea",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nette_rousse.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nette Rousse",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nicator_a_gorge_grise.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nicator A Gorge Grise",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nicobar.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nicobar",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nilgaut.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nilgaut",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/niverolle.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Niverolle",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/noctuelle.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Noctuelle",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/noctule.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Noctule",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/noddi_brun.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Noddi Brun",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/norvegien.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Norvegien",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nothocrax_nocturne.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nothocrax Nocturne",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/numbat.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Numbat",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nyala.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nyala",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/nyctale.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Nyctale",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/rhinoceros_blanc.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Rhinoceros Blanc",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/rhinoceros_de_sumatra.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Rhinoceros De Sumatra",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/rhinoceros_indien.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Rhinoceros Indien",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/saiga.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Saiga",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/saimiri_a_tete_noire.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Saimiri A Tete Noire",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/saola.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Saola",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/sapajou_apelle.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Sapajou Apelle",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/scinque.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Scinque",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/scolie_des_jardins.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Scolie Des Jardins",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/scottish_terrier.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Scottish Terrier",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/selkirk_rex.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Selkirk Rex",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/selle_francais.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Selle Francais",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/semnopitheque.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Semnopitheque",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/serpentaire_bacha.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Serpentaire Bacha",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/silure_glane.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Silure Glane",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/singe_hurleur_noir.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Singe Hurleur Noir",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/sitelle_a_poitrine_blanche.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Sitelle A Poitrine Blanche",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/sitelle_torchepot.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Sitelle Torchepot",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/sizerin_flamme.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Sizerin Flamme",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/smilodon.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Smilodon",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/somali.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Somali",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/sorraia.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Sorraia",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/souris_rayee.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Souris Rayee",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/spatule_rose.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Spatule Rose",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/spermophile_raye.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Spermophile Raye",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/takin.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Takin",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tamandua.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tamandua",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tamanoir.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tamanoir",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tamarin_a_mains_dorees.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tamarin A Mains Dorees",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tamarin_empereur.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tamarin Empereur",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tamarin_lion_dore.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tamarin Lion Dore",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tamia_raye.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tamia Raye",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tangara_emeraude.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tangara Emeraude",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tangara_eveque.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tangara Eveque",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tantale_ibis.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tantale Ibis",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tapir_de_malaisie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tapir De Malaisie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tapir_du_bresil.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tapir Du Bresil",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tarier_patre.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tarier Patre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tarine.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tarine",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tarsier.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tarsier",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tatou_a_neuf_bandes.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tatou A Neuf Bandes",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/taupe_a_nez_etoile.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Taupe A Nez Etoile",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/taupe_d_europe.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Taupe D Europe",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tchitrec_de_paradis.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tchitrec De Paradis",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tenrec_zebre.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tenrec Zebre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tetras_des_prairies.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tetras Des Prairies",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tetras_lyre.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tetras Lyre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tigre_blanc.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tigre Blanc",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tigre_de_siberie.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tigre De Siberie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tigre_de_sumatra.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tigre De Sumatra",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tigre_dore.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tigre Dore",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tisserin_gendarme.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tisserin Gendarme",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/topi.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Topi",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tortue_luth.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tortue Luth",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/touraco_vert.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Touraco Vert",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/triton_alpestre.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Triton Alpestre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/troglodyte_des_marais.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Troglodyte Des Marais",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/troglodyte_mignon.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Troglodyte Mignon",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/trogon_de_cuba.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Trogon De Cuba",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/tropidacris_cristata.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Tropidacris Cristata",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/unau.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Unau",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/urodele.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Urodele",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/urubu.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Urubu",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/vampire_d_azara.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vampire D Azara",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/varan_bigarre.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Varan Bigarre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/verdier_d_europe.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Verdier D Europe",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/vigogne.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vigogne",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/vipere_a_cornes.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vipere A Cornes",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/viscache_des_plaines.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Viscache Des Plaines",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/vison_d_europe.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Vison D Europe",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/wallaby_des_rochers.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Wallaby Des Rochers",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/wallaby_de_bennett.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Wallaby De Bennett",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/wapiti.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Wapiti",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/waterbuck.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Waterbuck",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/welsh_corgi.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Welsh Corgi",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/west_highland_terrier.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "West Highland Terrier",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/wombat_commun.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Wombat Commun",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/xantusie_du_desert.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Xantusie Du Desert",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/xerus.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Xerus",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/xylocope_violacee.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Xylocope Violacee",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/yack.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Yack",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/yapock.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Yapock",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/yorkshire_terrier.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Yorkshire Terrier",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/zebu.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Zebu",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/zibeline.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Zibeline",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/animaux/5/images/zorille_du_cap.jpg",
+      "question": "Quel est cet animal ?",
+      "answer": "Zorille Du Cap",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/5/sons/Lion.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Lion",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/5/sons/Rhinocéros.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Rhinocéros",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "sound",
+      "file": "Quizz/questions/animaux/5/sons/Serpent-à-sonnette.mp3",
+      "question": "À quel animal ce bruit est-il associé ?",
+      "answer": "Serpent À Sonnette",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal peut dormir 3 ans (escargot) ?",
+      "answer": "Escargot",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du mâle de l'oie ?",
+      "answer": "Jars",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal possède des empreintes digitales proches de l'homme ?",
+      "answer": "Koala",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est surnommé \"l'aspirateur des mers\" ?",
+      "answer": "Concombre de mer",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom scientifique de l'étude des oiseaux ?",
+      "answer": "Ornithologie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau est capable de dormir en volant ?",
+      "answer": "Martinet (ou Frégate)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est surnommé \"l'ours d'eau\" (microscopique) ?",
+      "answer": "Tardigrade",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le petit du kangourou ?",
+      "answer": "Joey",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a le sang bleu (crustacé) ?",
+      "answer": "Limule",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau est incapable de marcher (pattes trop courtes) ?",
+      "answer": "Martinet",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du mâle de la fourmi ?",
+      "answer": "Il n'a pas de nom spécifique (Mâle)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note: Souvent appelé \"Prince\" ou simplement \"Mâle ailé\".",
+      "answer": "Mâle (ou Prince)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est un \"Lépidoptère\" ?",
+      "answer": "Papillon",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal produit le \"Musc\" ?",
+      "answer": "Chevrotain (ou Porte-musc)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal mange des os (nécrophage) ?",
+      "answer": "Gypaète barbu (ou Hyène)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal peut courir sur l'eau (Lézard Jésus-Christ) ?",
+      "answer": "Basilic",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a le plus de dents (escargot ou requin) ?",
+      "answer": "Escargot (Radula)",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

@@ -1,0 +1,1456 @@
+{
+  "id": "jeux_video",
+  "label": "Jeux Vidéo",
+  "icon": "icons/jeux_video.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Quelle est la couleur de la casquette de Mario ?",
+      "answer": "Rouge",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du frère de Mario ?",
+      "answer": "Luigi",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Sonic ?",
+      "answer": "Un hérisson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on attraper des monstres dans des boules ?",
+      "answer": "Pokémon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le jeu le plus vendu de tous les temps (blocs) ?",
+      "answer": "Minecraft",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de la princesse que Link doit sauver ?",
+      "answer": "Zelda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a créé la PlayStation ?",
+      "answer": "Sony",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du plombier moustachu de Nintendo ?",
+      "answer": "Mario",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de Battle Royale a popularisé les danses comme le \"Floss\" ?",
+      "answer": "Fortnite",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la petite créature jaune électrique dans Pokémon ?",
+      "answer": "Pikachu",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu mange-t-on des pac-gommes en fuyant des fantômes ?",
+      "answer": "Pac-Man",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la profession de Lara Croft ?",
+      "answer": "Archéologue",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel personnage est une boule rose qui aspire ses ennemis ?",
+      "answer": "Kirby",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de simulation de vie permet de gérer une famille et sa maison ?",
+      "answer": "Les Sims",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du gorille qui lance des tonneaux ?",
+      "answer": "Donkey Kong",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a popularisé la manette à détection de mouvement (Wiimote) ?",
+      "answer": "Wii",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu de foot conduit-on des voitures ?",
+      "answer": "Rocket League",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"The Legend of Zelda\" ?",
+      "answer": "Link",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a créé la Xbox ?",
+      "answer": "Microsoft",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de tir se déroule pendant la Seconde Guerre mondiale (ou moderne) ?",
+      "answer": "Call of Duty",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du champignon serviteur de la princesse Peach ?",
+      "answer": "Toad",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu mobile demande de couper des fruits avec le doigt ?",
+      "answer": "Fruit Ninja",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du dragon violet ami de Spyro ?",
+      "answer": "Spyro",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on déduire qui est l'imposteur dans un vaisseau ?",
+      "answer": "Among Us",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console portable de Nintendo avait deux écrans ?",
+      "answer": "Nintendo DS",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du royaume où se déroule Mario ?",
+      "answer": "Royaume Champignon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la princesse dans Super Mario ?",
+      "answer": "Peach",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur de la tunique classique de Link ?",
+      "answer": "Vert",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du dinosaure vert ami de Mario ?",
+      "answer": "Yoshi",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de course met en scène les personnages de Nintendo ?",
+      "answer": "Mario Kart",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'épée de Link ?",
+      "answer": "Excalibur (ou Épée de Légende / Master Sword)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le méchant principal de l'univers Mario ?",
+      "answer": "Bowser",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la princesse dans \"The Legend of Zelda\" ?",
+      "answer": "Zelda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la boule jaune qui mange des fantômes ?",
+      "answer": "Pac-Man",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console de Nintendo est sortie en 2017 et est hybride ?",
+      "answer": "Switch",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du bandit marsupial orange ?",
+      "answer": "Crash Bandicoot",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu explore-t-on la région de Hyrule ?",
+      "answer": "The Legend of Zelda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a créé la Game Boy ?",
+      "answer": "Nintendo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur de la casquette de Luigi ?",
+      "answer": "Verte",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'organisation criminelle dans Pokémon (la première) ?",
+      "answer": "Team Rocket",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on aligner des bonbons colorés ?",
+      "answer": "Candy Crush Saga",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Max Payne\" ?",
+      "answer": "Max Payne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on la \"Master Sword\" ?",
+      "answer": "Zelda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu a pour sous-titre \"Breath of the Wild\" ?",
+      "answer": "Zelda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capacité de Kirby ?",
+      "answer": "Avaler ses ennemis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la ville dans \"Silent Hill\" ?",
+      "answer": "Silent Hill",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on des \"Creepers\" ?",
+      "answer": "Minecraft",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on sauver la princesse Peach (le tout premier) ?",
+      "answer": "Super Mario Bros",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le jeu de cartes virtuel de l'univers Warcraft ?",
+      "answer": "Hearthstone",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un tueur à gages chauve avec un code barre ?",
+      "answer": "Hitman",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de la saga \"Halo\" ?",
+      "answer": "Master Chief",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel studio a créé GTA et Red Dead Redemption ?",
+      "answer": "Rockstar Games",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu de combat entend-on \"Hadouken\" ?",
+      "answer": "Street Fighter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom du personnage principal de \"Uncharted\" ?",
+      "answer": "Nathan (Drake)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu indépendant met en scène un squelette nommé Sans ?",
+      "answer": "Undertale",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la ville dans GTA V ?",
+      "answer": "Los Santos",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on construire une ville et gérer ses habitants (maire) ?",
+      "answer": "SimCity",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'héroïne de Metroid (sous l'armure) ?",
+      "answer": "Samus Aran",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la console la plus vendue de l'histoire (Sony) ?",
+      "answer": "PlayStation 2",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu d'horreur est-on poursuivi par le Nemesis ?",
+      "answer": "Resident Evil 3",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a créé la Mega Drive ?",
+      "answer": "Sega",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Metal Gear Solid\" ?",
+      "answer": "Solid Snake",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu utilise-t-on un \"Portal Gun\" ?",
+      "answer": "Portal",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on Geralt de Riv ?",
+      "answer": "The Witcher",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du renard à deux queues ami de Sonic ?",
+      "answer": "Tails",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on survivre à des animatroniques dans une pizzeria ?",
+      "answer": "Five Nights at Freddy's",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du robot bleu créé par le Dr. Light ?",
+      "answer": "Mega Man",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a suivi la Super Nintendo ?",
+      "answer": "Nintendo 64",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la fille d'Ellie dans The Last of Us (figure paternelle Joël) ?",
+      "answer": "Ellie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note: Question remplacée: Quel jeu de course est une exclusivité Xbox ?",
+      "answer": "Forza",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu de combat très violent peut-on faire des \"Fatalities\" ?",
+      "answer": "Mortal Kombat",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un calamar qui tire de la peinture ?",
+      "answer": "Splatoon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de Final Fantasy VII ?",
+      "answer": "Cloud Strife",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité des jeux \"Souls\" (Dark Souls) ?",
+      "answer": "Difficulté élevée",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'intelligence artificielle dans Halo ?",
+      "answer": "Cortana",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du méchant dans Sonic ?",
+      "answer": "Dr. Robotnik (ou Eggman)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du cowboy dans Red Dead Redemption 2 ?",
+      "answer": "Arthur Morgan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la relique triangulaire dorée dans Zelda ?",
+      "answer": "Triforce",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le jeu de combat crossover de Nintendo ?",
+      "answer": "Super Smash Bros",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on la ville de Raccoon City ?",
+      "answer": "Resident Evil",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on le Dovahkiin ?",
+      "answer": "Skyrim (The Elder Scrolls V)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a fait un flop commercial pour Nintendo avant la Switch ?",
+      "answer": "Wii U",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Prince of Persia\" ?",
+      "answer": "Le Prince",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on les personnages de Ryu et Ken ?",
+      "answer": "Street Fighter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu a popularisé le genre MOBA (avec DOTA) ?",
+      "answer": "League of Legends",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu utilise-t-on une \"Keyblade\" ?",
+      "answer": "Kingdom Hearts",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le jeu le plus vendu sur la Game Boy originale ?",
+      "answer": "Tetris",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la devise de la Team Rocket ?",
+      "answer": "Afin de préserver le monde de la dévastation...",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un sorceleur ?",
+      "answer": "The Witcher",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chien dans Duck Hunt ?",
+      "answer": "Le chien (Duck Hunt Dog)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console Sega était la concurrente de la Super Nintendo ?",
+      "answer": "Mega Drive (Genesis)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la mascotte d'Ubisoft (pas de bras ni jambes) ?",
+      "answer": "Rayman",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on la \"Lame secrète\" ?",
+      "answer": "Assassin's Creed",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a développé \"Overwatch\" ?",
+      "answer": "Blizzard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on la ville de Rapture sous l'eau ?",
+      "answer": "BioShock",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la petite sœur de Mario (n'existe pas officiellement). Remplacé : Qui est l'anti-Mario ?",
+      "answer": "Wario",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du frère de Wario ?",
+      "answer": "Waluigi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu a été créé par Markus Persson (Notch) ?",
+      "answer": "Minecraft",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on s'échapper des laboratoires d'Aperture Science ?",
+      "answer": "Portal",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on la ville de Vice City ?",
+      "answer": "GTA (Grand Theft Auto)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on des Chocobos ?",
+      "answer": "Final Fantasy",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un cuphead ?",
+      "answer": "Cuphead",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on des Bloopers et des Goombas ?",
+      "answer": "Super Mario",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du vampire dans \"Castlevania\" ?",
+      "answer": "Dracula",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de tir multijoueur de Valve a pour terroristes et antiterroristes ?",
+      "answer": "Counter-Strike",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un chat roux dans une ville cybernétique ?",
+      "answer": "Stray",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de rythme se joue avec un tapis de danse ?",
+      "answer": "Dance Dance Revolution",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on la région de Kanto ?",
+      "answer": "Pokémon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un personnage en papier ?",
+      "answer": "Paper Mario",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on le personnage de Sephiroth ?",
+      "answer": "Final Fantasy VII",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un camionneur dans l'espace ?",
+      "answer": "Star Trucker (Non). Remplacé : Euro Truck Simulator",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de baston réunit les univers Marvel et Capcom ?",
+      "answer": "Marvel vs. Capcom",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on des \"Lemmings\" ?",
+      "answer": "Lemmings",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a pour logo un cube violet ?",
+      "answer": "GameCube",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un assassin chauve (Code 47) ?",
+      "answer": "Hitman",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fruit donne des vies ou de la force à Crash Bandicoot ?",
+      "answer": "Wumpa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la sorcière à lunettes et aux pistolets (Sega) ?",
+      "answer": "Bayonetta",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la devise des Assassins dans Assassin's Creed ?",
+      "answer": "Rien n'est vrai tout est permis",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu voyage-t-on à bord du Normandy ?",
+      "answer": "Mass Effect",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle marque de voiture est au centre du jeu \"Gran Turismo\" (Exclusivité Sony) ?",
+      "answer": "Toutes (C'est un jeu de course réaliste)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de plateforme difficile met en scène un morceau de viande ?",
+      "answer": "Super Meat Boy",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du créateur de Mario et Zelda ?",
+      "answer": "Shigeru Miyamoto",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on attraper des singes avec un filet ?",
+      "answer": "Ape Escape",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la firme qui a créé la franchise \"Final Fantasy\" ?",
+      "answer": "Square Enix",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un commandant de vaisseau spatial contre les Reapers ?",
+      "answer": "Mass Effect",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la petite fée qui accompagne Link dans Ocarina of Time ?",
+      "answer": "Navi",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Kingdom Hearts\" ?",
+      "answer": "Sora",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu doit-on désamorcer une bombe pendant qu'un autre lit le manuel ?",
+      "answer": "Keep Talking and Nobody Explodes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du raton laveur voleur (Sly) ?",
+      "answer": "Sly Cooper",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu gère-t-on un parc d'attractions ?",
+      "answer": "RollerCoaster Tycoon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du créateur de Metal Gear Solid ?",
+      "answer": "Hideo Kojima",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un petit chevalier insecte dans un monde souterrain ?",
+      "answer": "Hollow Knight",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du scientifique dans Half-Life ?",
+      "answer": "Gordon Freeman",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console est connue pour son \"Red Ring of Death\" ?",
+      "answer": "Xbox 360",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du renard pilote de vaisseau spatial ?",
+      "answer": "Fox McCloud",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on des Big Daddies et des Little Sisters ?",
+      "answer": "BioShock",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Splinter Cell\" ?",
+      "answer": "Sam Fisher",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du monde dans Minecraft ?",
+      "answer": "Overworld",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on le Commandant Shepard ?",
+      "answer": "Mass Effect",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console de salon a été la première à utiliser des CD (grand public) ?",
+      "answer": "PlayStation (ou Saturn)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du jeu où l'on contrôle une oie insupportable ?",
+      "answer": "Untitled Goose Game",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on Pyramid Head ?",
+      "answer": "Silent Hill",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité de la Game Gear de Sega ?",
+      "answer": "Écran couleur",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu de course futuriste conduit-on des vaisseaux antigravité (Sony) ?",
+      "answer": "Wipeout",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la fille du président dans Resident Evil 4 ?",
+      "answer": "Ashley Graham",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Dead Space\" ?",
+      "answer": "Isaac Clarke",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la dernière console produite par Sega ?",
+      "answer": "Dreamcast",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un avocat qui crie \"Objection !\" ?",
+      "answer": "Ace Attorney (Phoenix Wright)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du monde dans World of Warcraft ?",
+      "answer": "Azeroth",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du méchant dans \"Far Cry 3\" ?",
+      "answer": "Vaas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de gestion de parc de dinosaures est sorti en 2018 ?",
+      "answer": "Jurassic World Evolution",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la console la plus vendue de Nintendo (portable incluse) ?",
+      "answer": "Nintendo DS",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"F-Zero\" ?",
+      "answer": "Captain Falcon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on le personnage de Glados ?",
+      "answer": "Portal",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la touche pour \"Payer ses respects\" (Press F to pay respects) ?",
+      "answer": "F",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du personnage principal de \"Persona 5\" (Nom de code) ?",
+      "answer": "Joker",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on des \"Clickers\" (Claqueurs) ?",
+      "answer": "The Last of Us",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on la \"Buster Sword\" ?",
+      "answer": "Final Fantasy VII",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Life is Strange\" (Saison 1) ?",
+      "answer": "Max Caulfield",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un pilote de Titan ?",
+      "answer": "Titanfall",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du méchant dans \"Crash Bandicoot\" ?",
+      "answer": "Dr. Neo Cortex",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la date de sortie de la Switch (Année) ?",
+      "answer": "2017",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du fantôme roi dans Mario ?",
+      "answer": "Roi Boo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note: Question remplacée: Quel est le FPS compétitif de Valve sorti en 2012 ?",
+      "answer": "CS:GO",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du père de la princesse Zelda ?",
+      "answer": "Le Roi d'Hyrule",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu indépendant a pour héros un petit chevalier à la pelle ?",
+      "answer": "Shovel Knight",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle année est sortie la première PlayStation au Japon ?",
+      "answer": "1994",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la planète des Zorgs dans Toy Story (Jeu tiré du film). Remplacé : Quel jeu a pour héros un ver de terre en combinaison spatiale ?",
+      "answer": "Earthworm Jim",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du frère de Dante dans Devil May Cry ?",
+      "answer": "Vergil",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'agent secret féminin dans Perfect Dark ?",
+      "answer": "Joanna Dark",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la princesse dans Donkey Kong (l'originale) ?",
+      "answer": "Pauline",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Ghosts 'n Goblins\" ?",
+      "answer": "Arthur",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du vaisseau de Samus Aran ?",
+      "answer": "Gunship",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du cyborg ninja dans Metal Gear Solid ?",
+      "answer": "Gray Fox",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la pierre verte magique dans les Sims ?",
+      "answer": "Plumbob",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Dragon Quest\" (souvent) ?",
+      "answer": "Le Héros (ou un nom choisi)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on des \"Cremators\" et \"Combine\" ?",
+      "answer": "Half-Life 2",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de combat spatial se passe dans l'univers de Star Wars (années 90/2000) ?",
+      "answer": "Rogue Squadron",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la créature qui accompagne le héros dans \"The Last Guardian\" ?",
+      "answer": "Trico",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a introduit les trophées/succès en premier ?",
+      "answer": "Xbox 360",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du personnage principal de \"Watch Dogs\" ?",
+      "answer": "Aiden Pearce",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du créateur de \"Civilization\" ?",
+      "answer": "Sid Meier",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Bioshock Infinite\" ?",
+      "answer": "Booker DeWitt",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la ville volante dans Bioshock Infinite ?",
+      "answer": "Columbia",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Dishonored\" ?",
+      "answer": "Corvo Attano",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on un dieu parmi les dieux (MOBA) ?",
+      "answer": "Smite",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console virtuelle a échoué lamentablement pour Nintendo (rouge et noir) ?",
+      "answer": "Virtual Boy",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Yakuza\" ?",
+      "answer": "Kazuma Kiryu",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo est le plus vendu sur PC (avant Minecraft) ?",
+      "answer": "Les Sims (ou PUBG selon les périodes)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a introduit le stick analogique moderne (grand public) ?",
+      "answer": "Nintendo 64",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du frère de Solid Snake ?",
+      "answer": "Liquid Snake",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu incarne-t-on 2B ?",
+      "answer": "NieR: Automata",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Deus Ex\" ?",
+      "answer": "JC Denton (ou Adam Jensen)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu a popularisé le terme \"Speedrun\" (Metroid/Doom) ?",
+      "answer": "Doom",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu a été enterré dans le désert du Nouveau-Mexique en 1983 ?",
+      "answer": "E.T. l'extra-terrestre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la première mascotte de Sega (avant Sonic) ?",
+      "answer": "Alex Kidd",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la fille de Kratos (God of War grec) ? Piège c'est Calliope.",
+      "answer": "Calliope",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Shenmue\" ?",
+      "answer": "Ryo Hazuki",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console de jeux vidéo a été conçue par Apple en 1996 ?",
+      "answer": "Pippin",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel jeu trouve-t-on le \"Konami Code\" pour la première fois ?",
+      "answer": "Gradius",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a pour nom de code \"Dolphin\" ?",
+      "answer": "GameCube",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du créateur de \"Stardew Valley\" ?",
+      "answer": "ConcernedApe",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la console la plus puissante à sa sortie : SNES ou Mega Drive ?",
+      "answer": "SNES (Techniquement)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Kingdom Come: Deliverance\" ?",
+      "answer": "Henry",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a créé la Neo-Geo ?",
+      "answer": "SNK",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du créateur de \"Tetris\" ?",
+      "answer": "Alexey Pajitnov",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Goat Simulator\" ?",
+      "answer": "Pilgor",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

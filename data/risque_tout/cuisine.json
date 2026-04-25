@@ -1,0 +1,686 @@
+{
+  "id": "cuisine",
+  "label": "Cuisine",
+  "icon": "icons/cuisine.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal d'une omelette ?",
+      "answer": "Oeuf",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quel pays vient la pizza ?",
+      "answer": "Italie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fruit est la base du guacamole ?",
+      "answer": "Avocat",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plat national de la Belgique (souvent associé aux frites) ?",
+      "answer": "Moules",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle céréale est la base du risotto ?",
+      "answer": "Riz",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel ingrédient fait pleurer quand on le coupe ?",
+      "answer": "Oignon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle boisson obtient-on en pressant des raisins ?",
+      "answer": "Jus de raisin (ou Vin)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal du chocolat ?",
+      "answer": "Cacao",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal donne le jambon ?",
+      "answer": "Cochon (Porc)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quelle couleur est un citron vert ?",
+      "answer": "Vert",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays est célèbre pour ses sushis ?",
+      "answer": "Japon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plat principal de Thanksgiving aux USA ?",
+      "answer": "Dinde",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel ingrédient est indispensable pour faire du pain ?",
+      "answer": "Farine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la saveur du citron ?",
+      "answer": "Acide",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal de la purée ?",
+      "answer": "Pomme de terre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays mange-t-on traditionnellement avec des baguettes ?",
+      "answer": "Chine (ou Japon/Corée)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle vitamine trouve-t-on principalement dans les oranges ?",
+      "answer": "Vitamine C",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du régime sans viande ni poisson ?",
+      "answer": "Végétarien",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle noix est l'ingrédient principal du Nutella ?",
+      "answer": "Noisette",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quelle région vient le beurre salé en France ?",
+      "answer": "Bretagne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays est le premier producteur de sirop d'érable ?",
+      "answer": "Canada",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la base de la pâte à crêpes (liquide) ?",
+      "answer": "Lait",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel plat met-on traditionnellement une fève ?",
+      "answer": "Galette des Rois",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal du Ketchup ?",
+      "answer": "Tomate",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur de la chair du saumon ?",
+      "answer": "Rose (ou Orange)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la viande traditionnelle du bœuf bourguignon ?",
+      "answer": "Bœuf",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quel fruit vient le pruneau ?",
+      "answer": "Prune",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel légume est la base de la choucroute ?",
+      "answer": "Chou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la technique de cuisson où l'on plonge l'aliment dans l'huile bouillante ?",
+      "answer": "Friture",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle pâtisserie est surnommée \"Paris-Brest\" ?",
+      "answer": "Paris-Brest",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la température d'ébullition de l'eau (au niveau de la mer) ?",
+      "answer": "100 degrés",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du pain indien plat et rond ?",
+      "answer": "Naan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fromage est utilisé dans la tartiflette ?",
+      "answer": "Reblochon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville française est connue pour sa moutarde ?",
+      "answer": "Dijon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal du Hummus ?",
+      "answer": "Pois chiche",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quelle région française vient la choucroute ?",
+      "answer": "Alsace",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fromage italien utilise-t-on pour le Tiramisu ?",
+      "answer": "Mascarpone",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du champignon noir très cher recherché par les cochons ou chiens ?",
+      "answer": "Truffe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quel pays est originaire la Paella ?",
+      "answer": "Espagne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle plante aromatique est la base du Pesto ?",
+      "answer": "Basilic",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal du Tofu ?",
+      "answer": "Soja",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle pâtisserie est composée de mille feuilles de pâte ?",
+      "answer": "Mille-feuille",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du bœuf cru coupé très fin ?",
+      "answer": "Carpaccio",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel alcool est utilisé dans la fondue savoyarde ?",
+      "answer": "Vin blanc",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom des œufs de poisson de l'esturgeon (produit de luxe) ?",
+      "answer": "Caviar",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité de la Tarte Tatin ?",
+      "answer": "Elle est renversée",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le fromage français le plus consommé ?",
+      "answer": "Emmental",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la soupe froide espagnole ?",
+      "answer": "Gaspacho",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom japonais de la pâte verte piquante servie avec les sushis ?",
+      "answer": "Wasabi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient qui fait lever le pain ?",
+      "answer": "Levure (Boulangère)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit gâteau lorrain en forme de coquillage ?",
+      "answer": "Madeleine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plat national de la Suisse ?",
+      "answer": "Fondue (ou Raclette)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on un repas servi sous forme de petites portions en Espagne ?",
+      "answer": "Tapas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité du steak tartare ?",
+      "answer": "Il est cru",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la base de la meringue ?",
+      "answer": "Blanc d'oeuf et sucre",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plat à base de restes de viande et de purée de pomme de terre ?",
+      "answer": "Hachis Parmentier",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la boisson la plus consommée au monde après l'eau ?",
+      "answer": "Thé",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle pâte est utilisée pour faire des éclairs ou des chouquettes ?",
+      "answer": "Pâte à choux",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poisson est utilisé pour le Fish and Chips ?",
+      "answer": "Cabillaud (ou Eglefin)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle épice est la plus chère du monde ?",
+      "answer": "Safran",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la spécialité culinaire de la ville de Marseille ?",
+      "answer": "Bouillabaisse",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fruit est appelé \"Pamplemousse\" en France (alors que c'est un Pomelo) ?",
+      "answer": "Pomelo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville française est la capitale du Cassoulet ?",
+      "answer": "Castelnaudary (ou Toulouse/Carcassonne)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal de la Moussaka ?",
+      "answer": "Aubergine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle sauce accompagne traditionnellement les nems ?",
+      "answer": "Sauce Nuoc-mâm",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on le séchage de la viande ou du poisson pour le conserver ?",
+      "answer": "Salaison (ou Fumage)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la viande utilisée dans un Osso Buco ?",
+      "answer": "Veau",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel gâteau de Noël mange-t-on en Italie ?",
+      "answer": "Panettone",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la différence entre une clémentine et une mandarine ?",
+      "answer": "La clémentine n'a pas de pépins",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle algue est utilisée pour enrouler les makis ?",
+      "answer": "Nori",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle épice donne sa couleur jaune au Curry ?",
+      "answer": "Curcuma",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'ingrédient principal de la Polenta ?",
+      "answer": "Maïs",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la sauce pimentée tunisienne ?",
+      "answer": "Harissa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du bol hawaïen composé de poisson cru et riz ?",
+      "answer": "Poke Bowl",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la ville d'origine du Canelé ?",
+      "answer": "Bordeaux",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul ingrédient qui ne périme jamais ?",
+      "answer": "Miel",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la viande rouge la plus consommée au monde ?",
+      "answer": "Porc",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville a été inventée la pizza Margherita ?",
+      "answer": "Naples",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays a été inventé le Croissant (origine historique) ?",
+      "answer": "Autriche",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quel pays vient le Ceviche (poisson cru mariné) ?",
+      "answer": "Pérou",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la technique pour couper des légumes en tout petits dés ?",
+      "answer": "Brunoise",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du sandwich vietnamien populaire ?",
+      "answer": "Banh Mi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la cuisson des aliments dans un sachet sous vide ?",
+      "answer": "Sous-vide",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quel animal vient le lait de la Mozzarella di Bufala ?",
+      "answer": "Bufflonne",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chef français a été élu \"Cuisinier du siècle\" en 1989 ?",
+      "answer": "Paul Bocuse",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la pâte feuilletée fourrée à la viande (spécialité lyonnaise) ?",
+      "answer": "Pâté en croûte",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la boisson indienne à base de yaourt ?",
+      "answer": "Lassi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quelle région vient le Roquefort ?",
+      "answer": "Aveyron (ou Occitanie)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la gélatine végétale à base d'algues ?",
+      "answer": "Agar-agar",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du couteau japonais Santoku ?",
+      "answer": "Santoku",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays consomme le plus de café par habitant ?",
+      "answer": "Finlande",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du beurre clarifié utilisé en Inde ?",
+      "answer": "Ghee",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle échelle mesure la force des piments ?",
+      "answer": "Échelle de Scoville",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du bouillon japonais utilisé pour les soupes Miso ?",
+      "answer": "Dashi",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quel pays vient le dessert \"Pavlova\" (origine débattue mais souvent attribuée) ?",
+      "answer": "Nouvelle-Zélande (ou Australie)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la réaction chimique qui fait brunir la viande grillée ?",
+      "answer": "Réaction de Maillard",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du condiment noir et salé à base de levure (populaire en Australie) ?",
+      "answer": "Vegemite",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

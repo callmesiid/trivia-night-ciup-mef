@@ -1,0 +1,1372 @@
+{
+  "id": "sciences",
+  "label": "Sciences",
+  "icon": "icons/sciences.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'eau ?",
+      "answer": "H2O",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de pattes a une araignée ?",
+      "answer": "8",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'organe principal du système nerveux ?",
+      "answer": "Cerveau",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "À quelle température l'eau bout-elle (au niveau de la mer) ?",
+      "answer": "100 degrés",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle force nous maintient au sol sur Terre ?",
+      "answer": "Gravité",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand mammifère du monde ?",
+      "answer": "Baleine bleue",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel gaz respire-t-on principalement pour survivre ?",
+      "answer": "Oxygène",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète surnommée la \"Planète Rouge\" ?",
+      "answer": "Mars",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a formulé la théorie de la relativité ?",
+      "answer": "Albert Einstein",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel organe pompe le sang dans le corps ?",
+      "answer": "Cœur",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète la plus grande du système solaire ?",
+      "answer": "Jupiter",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la formule chimique du dioxyde de carbone ?",
+      "answer": "CO2",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument utilise-t-on pour regarder les étoiles ?",
+      "answer": "Télescope",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul satellite naturel de la Terre ?",
+      "answer": "Lune",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé l'ampoule électrique (commercialement viable) ?",
+      "answer": "Thomas Edison",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur de la chlorophylle ?",
+      "answer": "Vert",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'animal terrestre le plus rapide ?",
+      "answer": "Guépard",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le point de congélation de l'eau en degrés Celsius ?",
+      "answer": "0",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle planète a des anneaux très visibles ?",
+      "answer": "Saturne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Oxygène ?",
+      "answer": "O",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument mesure la température ?",
+      "answer": "Thermomètre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de planètes y a-t-il dans notre système solaire ?",
+      "answer": "8",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Carbone ?",
+      "answer": "C",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du premier homme sur la Lune ?",
+      "answer": "Neil Armstrong",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel métal rouille au contact de l'humidité ?",
+      "answer": "Fer",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a énoncé la loi de la gravitation universelle en recevant une pomme ?",
+      "answer": "Isaac Newton",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+      "answer": "Oxygène",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand océan de la Terre ?",
+      "answer": "Pacifique",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la durée de rotation de la Terre sur elle-même ?",
+      "answer": "24 heures",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'organe de l'ouïe ?",
+      "answer": "Oreille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on la transformation d'une chenille en papillon ?",
+      "answer": "Métamorphose",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couche gazeuse qui entoure la Terre ?",
+      "answer": "Atmosphère",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal a une poche pour porter ses petits ?",
+      "answer": "Kangourou (Marsupiaux)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est le symbole du WWF ?",
+      "answer": "Panda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mammifère volant ?",
+      "answer": "Chauve-souris",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la température moyenne du corps humain ?",
+      "answer": "37 degrés",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le reptile qui change de couleur ?",
+      "answer": "Caméléon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'organe qui permet aux poissons de respirer ?",
+      "answer": "Branchies",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la durée d'une grossesse humaine en mois ?",
+      "answer": "9",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'insecte qui produit de la soie ?",
+      "answer": "Ver à soie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète naine la plus connue ?",
+      "answer": "Pluton",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète la plus proche du Soleil ?",
+      "answer": "Mercure",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle partie de la plante assure la photosynthèse ?",
+      "answer": "Feuille",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de notre galaxie ?",
+      "answer": "Voie Lactée",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand organe du corps humain ?",
+      "answer": "Peau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel dinosaure est connu pour ses trois cornes ?",
+      "answer": "Tricératops",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal peut dormir debout ?",
+      "answer": "Cheval (ou Éléphant)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le centre d'un atome ?",
+      "answer": "Noyau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de dents a un adulte (dents de sagesse comprises) ?",
+      "answer": "32",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a proposé la théorie de l'évolution ?",
+      "answer": "Charles Darwin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel minéral est le plus dur sur l'échelle de Mohs ?",
+      "answer": "Diamant",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est le plus proche parent de l'homme génétiquement ?",
+      "answer": "Chimpanzé",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert le Radium ?",
+      "answer": "Marie Curie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'élément chimique le plus léger ?",
+      "answer": "Hydrogène",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal pond les plus gros œufs ?",
+      "answer": "Autruche",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la partie colorée de l'œil ?",
+      "answer": "Iris",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel organe filtre le sang et produit l'urine ?",
+      "answer": "Reins",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'unité de mesure de la puissance électrique ?",
+      "answer": "Watt",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'échelle mesurant la magnitude des séismes ?",
+      "answer": "Richter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Hélium ?",
+      "answer": "He",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel oiseau est capable de voler à reculons ?",
+      "answer": "Colibri",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la molécule porteuse de l'information génétique ?",
+      "answer": "ADN",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'inventeur du téléphone ?",
+      "answer": "Alexander Graham Bell",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle vitamine est produite par le corps grâce au soleil ?",
+      "answer": "Vitamine D",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé la presse à imprimer ?",
+      "answer": "Gutenberg",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'animal qui tue le plus d'humains par an (maladies) ?",
+      "answer": "Moustique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du processus par lequel l'eau passe de liquide à gaz ?",
+      "answer": "Évaporation",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "answer": "Fémur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint l'Homme de Vitruve (anatomie) ?",
+      "answer": "Léonard de Vinci",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'unité de mesure de l'énergie (aliments) ?",
+      "answer": "Calorie (ou Joule)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la partie de la cellule qui contient l'ADN ?",
+      "answer": "Noyau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la science qui étudie les volcans ?",
+      "answer": "Vulcanologie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Calcium ?",
+      "answer": "Ca",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a formulé les lois du mouvement ?",
+      "answer": "Isaac Newton",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le gaz à effet de serre principal ?",
+      "answer": "Dioxyde de carbone (CO2)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète la plus brillante vue depuis la Terre ?",
+      "answer": "Vénus",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le métal principal utilisé dans les batteries de téléphone ?",
+      "answer": "Lithium",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la plus petite unité de la vie ?",
+      "answer": "Cellule",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la maladie provoquée par le virus VIH ?",
+      "answer": "SIDA",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Uranium ?",
+      "answer": "U",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la science qui étudie le climat ?",
+      "answer": "Climatologie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la première femme prix Nobel ?",
+      "answer": "Marie Curie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la partie de l'ordinateur qui fait les calculs ?",
+      "answer": "Processeur (CPU)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé le vaccin contre la rage ?",
+      "answer": "Louis Pasteur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la théorie de la naissance de l'univers ?",
+      "answer": "Big Bang",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la science qui étudie les roches ?",
+      "answer": "Géologie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du premier clone animal (brebis) ?",
+      "answer": "Dolly",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Néon ?",
+      "answer": "Ne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la distance parcourue par la lumière en un an ?",
+      "answer": "Année-lumière",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Or ?",
+      "answer": "Au",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien d'os possède le corps humain adulte (environ) ?",
+      "answer": "206",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le métal liquide à température ambiante ?",
+      "answer": "Mercure",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la vitesse de la lumière (environ en km/s) ?",
+      "answer": "300 000",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Fer ?",
+      "answer": "Fe",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le gaz le plus abondant dans l'atmosphère terrestre ?",
+      "answer": "Azote",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "answer": "O négatif",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la substance la plus dure du corps humain ?",
+      "answer": "Émail (dents)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'unité de mesure de la fréquence ?",
+      "answer": "Hertz",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la science qui étudie les fossiles ?",
+      "answer": "Paléontologie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le muscle le plus fort du corps humain (proportionnellement) ?",
+      "answer": "Langue (ou Masséter)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le pH de l'eau pure (neutre) ?",
+      "answer": "7",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la cellule nerveuse ?",
+      "answer": "Neurone",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète la plus chaude du système solaire ?",
+      "answer": "Vénus",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de paires de chromosomes a un être humain ?",
+      "answer": "23",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la première brebis clonée ?",
+      "answer": "Dolly",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du télescope spatial lancé en 1990 ?",
+      "answer": "Hubble",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le composant principal du verre ?",
+      "answer": "Silice (Sable)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus gros poisson du monde ?",
+      "answer": "Requin-baleine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la première chienne dans l'espace ?",
+      "answer": "Laïka",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète la plus éloignée du Soleil ?",
+      "answer": "Neptune",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument mesure la pression atmosphérique ?",
+      "answer": "Baromètre",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle partie de l'atome a une charge négative ?",
+      "answer": "Électron",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel organe produit l'insuline ?",
+      "answer": "Pancréas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé le paratonnerre ?",
+      "answer": "Benjamin Franklin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Cuivre ?",
+      "answer": "Cu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de temps met la lumière du soleil pour atteindre la Terre ?",
+      "answer": "8 minutes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Chlore ?",
+      "answer": "Cl",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du premier satellite artificiel ?",
+      "answer": "Spoutnik",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'étoile polaire ?",
+      "answer": "Polaris",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Azote ?",
+      "answer": "N",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'inventeur de la dynamite ?",
+      "answer": "Alfred Nobel",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du rover qui a atterri sur Mars en 2021 ?",
+      "answer": "Perseverance",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'unité de mesure de la force ?",
+      "answer": "Newton",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Soufre ?",
+      "answer": "S",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la partie blanche de l'œuf ?",
+      "answer": "Albumen (ou Blanc)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé la machine à vapeur (perfectionnement) ?",
+      "answer": "James Watt",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Magnésium ?",
+      "answer": "Mg",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du télescope spatial successeur de Hubble (2021) ?",
+      "answer": "James Webb",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la force qui s'oppose au mouvement ?",
+      "answer": "Frottement",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a démontré que la Terre tourne autour du Soleil (Héliocentrisme) ?",
+      "answer": "Copernic (ou Galilée)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul mammifère qui pond des œufs (avec l'échidné) ?",
+      "answer": "Ornithorynque",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la vitesse de la lumière (symbole) ?",
+      "answer": "c",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Zinc ?",
+      "answer": "Zn",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Fluor ?",
+      "answer": "F",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la plus grande artère du corps humain ?",
+      "answer": "Aorte",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a dit \"Eppur si muove\" (Et pourtant elle tourne) ?",
+      "answer": "Galilée",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du supervolcan américain ?",
+      "answer": "Yellowstone",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert la pénicilline ?",
+      "answer": "Alexander Fleming",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'unité de mesure de la résistance électrique ?",
+      "answer": "Ohm",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on l'étude des champignons ?",
+      "answer": "Mycologie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle maladie est transmise par le moustique anophèle ?",
+      "answer": "Paludisme (Malaria)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus petit os du corps humain ?",
+      "answer": "Étrier (dans l'oreille)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle couche d'ozone nous protège des rayons UV ?",
+      "answer": "Stratosphère",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de cœurs a une pieuvre ?",
+      "answer": "3",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la distance approximative Terre-Soleil ?",
+      "answer": "150 millions de km",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de vertèbres cervicales possède une girafe ?",
+      "answer": "7 (comme l'homme)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Sodium ?",
+      "answer": "Na",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du supercontinent unique il y a 200 millions d'années ?",
+      "answer": "Pangée",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Potassium ?",
+      "answer": "K",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est considéré comme le père de la médecine moderne ?",
+      "answer": "Hippocrate",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la source d'énergie d'une étoile ?",
+      "answer": "Fusion nucléaire",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le gaz hilarant ?",
+      "answer": "Protoxyde d'azote",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Argent ?",
+      "answer": "Ag",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la vitesse du son dans l'air (environ) ?",
+      "answer": "340 m/s",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand volcan du système solaire (sur Mars) ?",
+      "answer": "Mont Olympe",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la maladie causée par une carence en vitamine C ?",
+      "answer": "Scorbut",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'acide présent dans l'estomac ?",
+      "answer": "Acide chlorhydrique",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle partie de la fleur produit le pollen ?",
+      "answer": "Étamine",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la réaction inverse de la photosynthèse ?",
+      "answer": "Respiration cellulaire",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand désert du monde (froid) ?",
+      "answer": "Antarctique",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la température de la surface du Soleil (environ) ?",
+      "answer": "5500 degrés",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Phosphore ?",
+      "answer": "P",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé le World Wide Web ?",
+      "answer": "Tim Berners-Lee",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Silicium ?",
+      "answer": "Si",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'unité de mesure de la pression ?",
+      "answer": "Pascal",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nuage d'orage par excellence ?",
+      "answer": "Cumulonimbus",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète qui tourne \"couchée\" sur son orbite ?",
+      "answer": "Uranus",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé la pile électrique ?",
+      "answer": "Volta",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Iode ?",
+      "answer": "I",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'élément chimique le plus lourd présent naturellement ?",
+      "answer": "Uranium",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'inventeur de la radio (souvent cité) ?",
+      "answer": "Marconi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Platine ?",
+      "answer": "Pt",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la planète la plus dense du système solaire ?",
+      "answer": "Terre",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on les globules rouges ?",
+      "answer": "Hématies (ou Érythrocytes)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom scientifique de l'eau de Javel ?",
+      "answer": "Hypochlorite de sodium",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la science qui étudie les insectes ?",
+      "answer": "Entomologie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le métal le plus conducteur ?",
+      "answer": "Argent",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Plomb ?",
+      "answer": "Pb",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la galaxie d'Andromède ?",
+      "answer": "M31",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert les rayons X ?",
+      "answer": "Röntgen",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle maladie est causée par le bacille de Koch ?",
+      "answer": "Tuberculose",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'animal qui vit le plus longtemps (vertébré) ?",
+      "answer": "Requin du Groenland",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert la structure de l'ADN (Double hélice) ?",
+      "answer": "Watson et Crick",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Mercure ?",
+      "answer": "Hg",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la science qui étudie les oiseaux ?",
+      "answer": "Ornithologie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'organe qui détruit les vieux globules rouges ?",
+      "answer": "Rate",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'animal le plus venimeux du monde (méduse) ?",
+      "answer": "Chironex (ou Cuboméduse)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est l'unité d'intensité lumineuse ?",
+      "answer": "Candela",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Étain ?",
+      "answer": "Sn",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du boson découvert au CERN en 2012 ?",
+      "answer": "Boson de Higgs",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur du sang d'une limule ?",
+      "answer": "Bleu",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'échelle de mesure de la dureté des minéraux ?",
+      "answer": "Mohs",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert les lois de l'hérédité (Pois) ?",
+      "answer": "Mendel",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique du Manganèse ?",
+      "answer": "Mn",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le symbole chimique de l'Arsenic ?",
+      "answer": "As",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

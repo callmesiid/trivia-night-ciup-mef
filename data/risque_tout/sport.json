@@ -1,0 +1,2211 @@
+{
+  "id": "sport",
+  "label": "Sport",
+  "icon": "icons/sport.png",
+  "questions": [
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Arjen Robben.png",
+      "question": "Qui est-ce ?",
+      "answer": "Arjen Robben",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Aryna Sabalenka.png",
+      "question": "Qui est-ce ?",
+      "answer": "Aryna Sabalenka",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Carles Puyol.png",
+      "question": "Qui est-ce ?",
+      "answer": "Carles Puyol",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Carlos Alcaraz.png",
+      "question": "Qui est-ce ?",
+      "answer": "Carlos Alcaraz",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/David Beckham.png",
+      "question": "Qui est-ce ?",
+      "answer": "David Beckham",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Diego Maradona.png",
+      "question": "Qui est-ce ?",
+      "answer": "Diego Maradona",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Erling Haaland.png",
+      "question": "Qui est-ce ?",
+      "answer": "Erling Haaland",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Frank Lampard.png",
+      "question": "Qui est-ce ?",
+      "answer": "Frank Lampard",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Gerard Pique.png",
+      "question": "Qui est-ce ?",
+      "answer": "Gerard Pique",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Gianluigi Buffon.png",
+      "question": "Qui est-ce ?",
+      "answer": "Gianluigi Buffon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Iker Casillas.png",
+      "question": "Qui est-ce ?",
+      "answer": "Iker Casillas",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Jannik Sinner.png",
+      "question": "Qui est-ce ?",
+      "answer": "Jannik Sinner",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Johan Cruyff.png",
+      "question": "Qui est-ce ?",
+      "answer": "Johan Cruyff",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Karim Benzema.png",
+      "question": "Qui est-ce ?",
+      "answer": "Karim Benzema",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Kylian Mbappe.png",
+      "question": "Qui est-ce ?",
+      "answer": "Kylian Mbappe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Luis Suarez.png",
+      "question": "Qui est-ce ?",
+      "answer": "Luis Suarez",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Luka Modric.png",
+      "question": "Qui est-ce ?",
+      "answer": "Luka Modric",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Marco Reus.png",
+      "question": "Qui est-ce ?",
+      "answer": "Marco Reus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Mesut Ozil.png",
+      "question": "Qui est-ce ?",
+      "answer": "Mesut Ozil",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Mohamed Salah.png",
+      "question": "Qui est-ce ?",
+      "answer": "Mohamed Salah",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Neymar.png",
+      "question": "Qui est-ce ?",
+      "answer": "Neymar",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Novak Djokovic.png",
+      "question": "Qui est-ce ?",
+      "answer": "Novak Djokovic",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Paolo Maldini.png",
+      "question": "Qui est-ce ?",
+      "answer": "Paolo Maldini",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Paul Pogba.png",
+      "question": "Qui est-ce ?",
+      "answer": "Paul Pogba",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Paulo Dybala.png",
+      "question": "Qui est-ce ?",
+      "answer": "Paulo Dybala",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Pele.png",
+      "question": "Qui est-ce ?",
+      "answer": "Pele",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Rafael Nadal.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rafael Nadal",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Ricardo Kaka.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ricardo Kaka",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Robert Lewandowski.png",
+      "question": "Qui est-ce ?",
+      "answer": "Robert Lewandowski",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Roger Federer.png",
+      "question": "Qui est-ce ?",
+      "answer": "Roger Federer",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Ronaldinho.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ronaldinho",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Ronaldo Nazario.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ronaldo Nazario",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Serena Williams.png",
+      "question": "Qui est-ce ?",
+      "answer": "Serena Williams",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Thierry Henry.png",
+      "question": "Qui est-ce ?",
+      "answer": "Thierry Henry",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Zinedine Zidane.png",
+      "question": "Qui est-ce ?",
+      "answer": "Zinedine Zidane",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/1/images/Zlatan Ibrahimovic.png",
+      "question": "Qui est-ce ?",
+      "answer": "Zlatan Ibrahimovic",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a remporté la Coupe du Monde de football en 1998 ?",
+      "answer": "France",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Michael Jordan ?",
+      "answer": "Basket-ball",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur du maillot du leader du Tour de France ?",
+      "answer": "Jaune",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs y a-t-il dans une équipe de football sur le terrain ?",
+      "answer": "11",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel joueur de tennis est surnommé le \"Roi de la terre battue\" ?",
+      "answer": "Rafael Nadal",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Tiger Woods ?",
+      "answer": "Golf",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel objet s'échangent les coureurs lors d'un relais ?",
+      "answer": "Témoin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un volant ?",
+      "answer": "Badminton",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Usain Bolt ?",
+      "answer": "Athlétisme (Sprint)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien y a-t-il d'anneaux sur le drapeau olympique ?",
+      "answer": "5",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Teddy Riner ?",
+      "answer": "Judo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pilote de F1 a remporté 7 titres (comme Hamilton) ?",
+      "answer": "Michael Schumacher",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a accueilli les Jeux Olympiques de 2024 ?",
+      "answer": "Paris",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le surnom de l'équipe de France de football ?",
+      "answer": "Les Bleus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Tony Parker ?",
+      "answer": "Basket-ball",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de temps dure un match de football (hors arrêts de jeu) ?",
+      "answer": "90 minutes",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Sébastien Loeb ?",
+      "answer": "Rallye (WRC)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport marque-t-on un \"Essai\" ?",
+      "answer": "Rugby",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel joueur argentin a marqué un but de la main (\"La main de Dieu\") ?",
+      "answer": "Diego Maradona",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Roger Federer ?",
+      "answer": "Tennis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de trous y a-t-il sur un parcours de golf standard ?",
+      "answer": "18",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Muhammad Ali ?",
+      "answer": "Boxe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Lewis Hamilton ?",
+      "answer": "Formule 1",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de points vaut un panier marqué au-delà de la ligne en NBA ?",
+      "answer": "3 points",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Laure Manaudou ?",
+      "answer": "Natation",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le surnom de Zinédine Zidane ?",
+      "answer": "Zizou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de LeBron James ?",
+      "answer": "Basket-ball",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle équipe de football joue au Parc des Princes ?",
+      "answer": "Paris Saint-Germain (PSG)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel cycliste a été déchu de ses 7 Tours de France pour dopage ?",
+      "answer": "Lance Armstrong",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Serena Williams ?",
+      "answer": "Tennis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport tire-t-on à l'arc ?",
+      "answer": "Tir à l'arc",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a inventé le Judo ?",
+      "answer": "Japon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Novak Djokovic ?",
+      "answer": "Tennis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport peut-on faire un \"Strike\" ?",
+      "answer": "Bowling",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du ballon au rugby ?",
+      "answer": "Ovale",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Cristiano Ronaldo ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Kylian Mbappé ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de carreaux noirs et blancs y a-t-il sur un drapeau de course auto ?",
+      "answer": "Damier",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Michael Phelps ?",
+      "answer": "Natation",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de quilles y a-t-il au bowling ?",
+      "answer": "10",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le stade de l'équipe de France de football et rugby ?",
+      "answer": "Stade de France",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Jo-Wilfried Tsonga ?",
+      "answer": "Tennis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle danse font les All Blacks avant un match ?",
+      "answer": "Haka",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Zinédine Zidane ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport y a-t-il des ceintures de couleur (blanche à noire) ?",
+      "answer": "Judo (ou Karaté)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Kobe Bryant ?",
+      "answer": "Basket-ball",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur de la terre battue ?",
+      "answer": "Ocre (ou Rouge/Orange)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Antoine Griezmann ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle course automobile dure 24 heures ?",
+      "answer": "24 Heures du Mans",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Lionel Messi ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Mike Tyson ?",
+      "answer": "Boxe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on une batte ?",
+      "answer": "Baseball (ou Cricket)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Yannick Noah ?",
+      "answer": "Tennis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Pelé ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport pratique-t-on la brasse ?",
+      "answer": "Natation",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on une \"mêlée\" ?",
+      "answer": "Rugby",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Ronaldo (le Brésilien) ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs composent une équipe de basket sur le terrain ?",
+      "answer": "5",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Max Verstappen ?",
+      "answer": "Formule 1",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de David Beckham ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Michel Platini ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la seule épreuve de tennis du Grand Chelem sur terre battue ?",
+      "answer": "Roland-Garros",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Zlatan Ibrahimovic ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"javelot\" ?",
+      "answer": "Athlétisme",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Lionel Messi ?",
+      "answer": "Argentine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Karim Benzema ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la distance d'un sprint court standard ?",
+      "answer": "100 mètres",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de Coupes du Monde l'équipe de France de foot a-t-elle gagnées ?",
+      "answer": "2",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Thierry Henry ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Didier Deschamps ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on des \"crampons\" ?",
+      "answer": "Football/Rugby",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Dunk\" ?",
+      "answer": "Basket-ball",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Eric Cantona ?",
+      "answer": "Football",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Uppercut\" ?",
+      "answer": "Boxe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Ada Hegerberg.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ada Hegerberg",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Aitana Bonmati.png",
+      "question": "Qui est-ce ?",
+      "answer": "Aitana Bonmati",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Alexia Putellas.png",
+      "question": "Qui est-ce ?",
+      "answer": "Alexia Putellas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Andrea Pirlo.png",
+      "question": "Qui est-ce ?",
+      "answer": "Andrea Pirlo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Andriy Shevchenko.png",
+      "question": "Qui est-ce ?",
+      "answer": "Andriy Shevchenko",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Andy Murray.png",
+      "question": "Qui est-ce ?",
+      "answer": "Andy Murray",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Angel Di Maria.png",
+      "question": "Qui est-ce ?",
+      "answer": "Angel Di Maria",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Clarence Seedorf.png",
+      "question": "Qui est-ce ?",
+      "answer": "Clarence Seedorf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Dani Alves.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dani Alves",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Daniil Medvedev.png",
+      "question": "Qui est-ce ?",
+      "answer": "Daniil Medvedev",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Didier Drogba.png",
+      "question": "Qui est-ce ?",
+      "answer": "Didier Drogba",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Dominic Thiem.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dominic Thiem",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Franck Ribery.png",
+      "question": "Qui est-ce ?",
+      "answer": "Franck Ribery",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/James Harden.png",
+      "question": "Qui est-ce ?",
+      "answer": "James Harden",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Kevin Durant.png",
+      "question": "Qui est-ce ?",
+      "answer": "Kevin Durant",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/LeBron James.png",
+      "question": "Qui est-ce ?",
+      "answer": "Lebron James",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Luka Doncic.png",
+      "question": "Qui est-ce ?",
+      "answer": "Luka Doncic",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Maria Sharapova.png",
+      "question": "Qui est-ce ?",
+      "answer": "Maria Sharapova",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Megan Rapinoe.png",
+      "question": "Qui est-ce ?",
+      "answer": "Megan Rapinoe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Nikola Jokic.png",
+      "question": "Qui est-ce ?",
+      "answer": "Nikola Jokic",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Sergio Aguero.png",
+      "question": "Qui est-ce ?",
+      "answer": "Sergio Aguero",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Sergio Busquets.png",
+      "question": "Qui est-ce ?",
+      "answer": "Sergio Busquets",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Simona Halep.png",
+      "question": "Qui est-ce ?",
+      "answer": "Simona Halep",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Stan Wawrinka.png",
+      "question": "Qui est-ce ?",
+      "answer": "Stan Wawrinka",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Stephen Curry.png",
+      "question": "Qui est-ce ?",
+      "answer": "Stephen Curry",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Venus Williams.png",
+      "question": "Qui est-ce ?",
+      "answer": "Venus Williams",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Victor Wembanyama.png",
+      "question": "Qui est-ce ?",
+      "answer": "Victor Wembanyama",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Xabi Alonso.png",
+      "question": "Qui est-ce ?",
+      "answer": "Xabi Alonso",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/2/images/Yaya Toure.png",
+      "question": "Qui est-ce ?",
+      "answer": "Yaya Toure",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Sur quelle surface se joue le tournoi de Wimbledon ?",
+      "answer": "Gazon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a remporté le plus de Coupes du Monde de football ?",
+      "answer": "Brésil",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Ace\" ?",
+      "answer": "Tennis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement sportif américain a lieu chaque année en février (finale NFL) ?",
+      "answer": "Super Bowl",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Martin Fourcade ?",
+      "answer": "Biathlon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs y a-t-il dans une équipe de rugby à XV ?",
+      "answer": "15",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Valentino Rossi ?",
+      "answer": "Moto (MotoGP)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Conor McGregor ?",
+      "answer": "MMA (Arts martiaux mixtes)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on de la magnésie pour les mains ?",
+      "answer": "Gymnastique (ou Escalade)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Carl Lewis ?",
+      "answer": "Athlétisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a organisé les JO de 2012 ?",
+      "answer": "Londres",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Ayrton Senna ?",
+      "answer": "Formule 1",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"Puck\" (palet) ?",
+      "answer": "Hockey sur glace",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de sets faut-il gagner pour remporter un match de Grand Chelem (Hommes) ?",
+      "answer": "3",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Alain Prost ?",
+      "answer": "Formule 1",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs y a-t-il dans une équipe de handball sur le terrain ?",
+      "answer": "7",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Eddy Merckx ?",
+      "answer": "Cyclisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"Caddie\" ?",
+      "answer": "Golf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Andre Agassi ?",
+      "answer": "Tennis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de temps dure un match de rugby (hors arrêts) ?",
+      "answer": "80 minutes",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur du maillot du meilleur grimpeur du Tour de France ?",
+      "answer": "À pois rouges",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Jonny Wilkinson ?",
+      "answer": "Rugby",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Shaquille O'Neal ?",
+      "answer": "Basket-ball",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle équipe de football est surnommée les \"Red Devils\" ?",
+      "answer": "Manchester United",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Renaud Lavillenie ?",
+      "answer": "Saut à la perche",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs y a-t-il dans une équipe de volley-ball ?",
+      "answer": "6",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Steffi Graf ?",
+      "answer": "Tennis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Floyd Mayweather ?",
+      "answer": "Boxe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Bernard Hinault ?",
+      "answer": "Cyclisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle nation domine traditionnellement le tennis de table ?",
+      "answer": "Chine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Tom Brady ?",
+      "answer": "Football Américain",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la longueur d'une piscine olympique ?",
+      "answer": "50 mètres",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Marie-José Pérec ?",
+      "answer": "Athlétisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Björn Borg ?",
+      "answer": "Tennis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a organisé les JO de 2008 ?",
+      "answer": "Pékin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport y a-t-il un \"Quarterback\" ?",
+      "answer": "Football Américain",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Earvin \"Magic\" Johnson ?",
+      "answer": "Basket-ball",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Clarisse Agbégnénou ?",
+      "answer": "Judo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on des \"pointes\" aux chaussures ?",
+      "answer": "Athlétisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle équipe de NBA a pour logo un taureau rouge ?",
+      "answer": "Chicago Bulls",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"putter\" ?",
+      "answer": "Golf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Pete Sampras ?",
+      "answer": "Tennis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur du maillot du meilleur sprinteur du Tour de France ?",
+      "answer": "Vert",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Antoine Dupont ?",
+      "answer": "Rugby",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Stephen Curry ?",
+      "answer": "Basket-ball",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de temps dure une prolongation au football (total) ?",
+      "answer": "30 minutes",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Ippon\" ?",
+      "answer": "Judo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Nikola Karabatic ?",
+      "answer": "Handball",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on une \"bombe\" (casque) ?",
+      "answer": "Équitation",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Offside\" (Hors-jeu) ?",
+      "answer": "Football/Rugby",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Simone Biles ?",
+      "answer": "Gymnastique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle course de F1 se déroule dans les rues de la ville ?",
+      "answer": "Monaco",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Victor Wembanyama ?",
+      "answer": "Basket-ball",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Florent Manaudou ?",
+      "answer": "Natation",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Amélie Mauresmo ?",
+      "answer": "Tennis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Richard Virenque ?",
+      "answer": "Cyclisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Home Run\" ?",
+      "answer": "Baseball",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Julian Alaphilippe ?",
+      "answer": "Cyclisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Jeannie Longo ?",
+      "answer": "Cyclisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Arsène Wenger (entraîneur) ?",
+      "answer": "Football",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Philippe Candeloro ?",
+      "answer": "Patinage artistique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs y a-t-il au total sur un terrain de basket ?",
+      "answer": "10",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de David Douillet ?",
+      "answer": "Judo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Check-mate\" (Échec et mat) ?",
+      "answer": "Échecs",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note pour le quiz master: Les échecs sont reconnus comme sport par le CIO.",
+      "answer": "Échecs",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Léon Marchand ?",
+      "answer": "Natation",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de sets maximum un match de tennis féminin peut-il durer ?",
+      "answer": "3",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Kevin De Bruyne ?",
+      "answer": "Football",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Renaud Lavillenie ?",
+      "answer": "Saut à la perche",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Alessandro Del Piero.png",
+      "question": "Qui est-ce ?",
+      "answer": "Alessandro Del Piero",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Alexander Zverev.png",
+      "question": "Qui est-ce ?",
+      "answer": "Alexander Zverev",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Casper Ruud.png",
+      "question": "Qui est-ce ?",
+      "answer": "Casper Ruud",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Coco Gauff.png",
+      "question": "Qui est-ce ?",
+      "answer": "Coco Gauff",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/David Villa.png",
+      "question": "Qui est-ce ?",
+      "answer": "David Villa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Elena Rybakina.png",
+      "question": "Qui est-ce ?",
+      "answer": "Elena Rybakina",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Fabio Cannavaro.png",
+      "question": "Qui est-ce ?",
+      "answer": "Fabio Cannavaro",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Francesco Totti.png",
+      "question": "Qui est-ce ?",
+      "answer": "Francesco Totti",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Iga Swiatek.png",
+      "question": "Qui est-ce ?",
+      "answer": "Iga Swiatek",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Naomi Osaka.png",
+      "question": "Qui est-ce ?",
+      "answer": "Naomi Osaka",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Petra Kvitova.png",
+      "question": "Qui est-ce ?",
+      "answer": "Petra Kvitova",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Rivaldo.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rivaldo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Samuel Eto o.png",
+      "question": "Qui est-ce ?",
+      "answer": "Samuel Eto O",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Stefanos Tsitsipas.png",
+      "question": "Qui est-ce ?",
+      "answer": "Stefanos Tsitsipas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Wayne Rooney.png",
+      "question": "Qui est-ce ?",
+      "answer": "Wayne Rooney",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Wendie Renard.png",
+      "question": "Qui est-ce ?",
+      "answer": "Wendie Renard",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/3/images/Wesley Sneijder.png",
+      "question": "Qui est-ce ?",
+      "answer": "Wesley Sneijder",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du trophée de la Ligne Nationale de Hockey (NHL) ?",
+      "answer": "Coupe Stanley",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle course cycliste est surnommée \"L'Enfer du Nord\" ?",
+      "answer": "Paris-Roubaix",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de périodes y a-t-il dans un match de hockey sur glace ?",
+      "answer": "3",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"shuttlecock\" (volant) ?",
+      "answer": "Badminton",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Nadia Comaneci ?",
+      "answer": "Gymnastique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Lindsey Vonn ?",
+      "answer": "Ski alpin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"bouclier de Brennus\" ?",
+      "answer": "Rugby (Top 14)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de points vaut un essai transformé au rugby ?",
+      "answer": "7",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Alberto Contador ?",
+      "answer": "Cyclisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Chris Froome ?",
+      "answer": "Cyclisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de fois le Brésil a-t-il gagné la Coupe du Monde de foot ?",
+      "answer": "5",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Kevin Mayer ?",
+      "answer": "Décathlon (Athlétisme)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Sébastien Ogier ?",
+      "answer": "Rallye",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Jean-Claude Killy ?",
+      "answer": "Ski alpin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Jesse Owens ?",
+      "answer": "Athlétisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a organisé les JO d'hiver de 1992 (en France) ?",
+      "answer": "Albertville",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Tadej Pogacar ?",
+      "answer": "Cyclisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Alexander Zverev ?",
+      "answer": "Tennis",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Dan Carter ?",
+      "answer": "Rugby",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la plus vieille compétition de tennis au monde ?",
+      "answer": "Wimbledon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de points vaut un drop au rugby ?",
+      "answer": "3",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Alain Bernard ?",
+      "answer": "Natation",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"stick\" ?",
+      "answer": "Hockey sur gazon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Romain Bardet ?",
+      "answer": "Cyclisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Wendie Renard ?",
+      "answer": "Football",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de fois Michael Schumacher a-t-il été champion du monde ?",
+      "answer": "7",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a organisé les premiers Jeux Olympiques modernes en 1896 ?",
+      "answer": "Athènes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"plastron\" ?",
+      "answer": "Escrime (ou Taekwondo)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Tony Estanguet ?",
+      "answer": "Canoë-Kayak",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Surya Bonaly ?",
+      "answer": "Patinage artistique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité du coureur Eddy Merckx ?",
+      "answer": "Belge",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Eagle\" ?",
+      "answer": "Golf",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/4/images/Anthony Davis.png",
+      "question": "Qui est-ce ?",
+      "answer": "Anthony Davis",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/4/images/Chris Paul.png",
+      "question": "Qui est-ce ?",
+      "answer": "Chris Paul",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/4/images/Damian Lillard.png",
+      "question": "Qui est-ce ?",
+      "answer": "Damian Lillard",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/4/images/Giannis Antetokounmpo.png",
+      "question": "Qui est-ce ?",
+      "answer": "Giannis Antetokounmpo",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/4/images/Jayson Tatum.png",
+      "question": "Qui est-ce ?",
+      "answer": "Jayson Tatum",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/4/images/Joel Embiid.png",
+      "question": "Qui est-ce ?",
+      "answer": "Joel Embiid",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/4/images/Kawhi Leonard.png",
+      "question": "Qui est-ce ?",
+      "answer": "Kawhi Leonard",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de médailles d'or Michael Phelps a-t-il gagnées en une seule olympiade (2008) ?",
+      "answer": "8",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on le terme \"Albatros\" ?",
+      "answer": "Golf",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Hicham El Guerrouj ?",
+      "answer": "Athlétisme (Demi-fond)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de tours de piste font 10 000 mètres (piste standard de 400m) ?",
+      "answer": "25",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs y a-t-il dans une équipe de water-polo ?",
+      "answer": "7",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de haies y a-t-il dans un 110 mètres haies ?",
+      "answer": "10",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel sport utilise-t-on un \"masque\" et un \"tuba\" (en compétition) ?",
+      "answer": "Nage avec palmes (ou Hockey subaquatique)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Alexis Pinturault ?",
+      "answer": "Ski alpin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de fautes personnelles un joueur de NBA peut-il faire avant d'être exclu ?",
+      "answer": "6",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la devise olympique (en latin) ?",
+      "answer": "Citius Altius Fortius",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle nation a remporté la première Coupe du Monde de football en 1930 ?",
+      "answer": "Uruguay",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de François Gabart ?",
+      "answer": "Voile",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de balles y a-t-il sur une table de billard américain (jeu de la 8) ?",
+      "answer": "16",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Martin Johnson ?",
+      "answer": "Rugby",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Franz Beckenbauer.png",
+      "question": "Qui est-ce ?",
+      "answer": "Franz Beckenbauer",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Garrincha.png",
+      "question": "Qui est-ce ?",
+      "answer": "Garrincha",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/George Best.png",
+      "question": "Qui est-ce ?",
+      "answer": "George Best",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Kadidiatou Diani.png",
+      "question": "Qui est-ce ?",
+      "answer": "Kadidiatou Diani",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Lucy Bronze.png",
+      "question": "Qui est-ce ?",
+      "answer": "Lucy Bronze",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Mapi Leon.png",
+      "question": "Qui est-ce ?",
+      "answer": "Mapi Leon",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Marco van Basten.png",
+      "question": "Qui est-ce ?",
+      "answer": "Marco Van Basten",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Michel Platini.png",
+      "question": "Qui est-ce ?",
+      "answer": "Michel Platini",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Philipp Lahm.png",
+      "question": "Qui est-ce ?",
+      "answer": "Philipp Lahm",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Raul.png",
+      "question": "Qui est-ce ?",
+      "answer": "Raul",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Romario.png",
+      "question": "Qui est-ce ?",
+      "answer": "Romario",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Sam Kerr.png",
+      "question": "Qui est-ce ?",
+      "answer": "Sam Kerr",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Steven Gerrard.png",
+      "question": "Qui est-ce ?",
+      "answer": "Steven Gerrard",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Trinity Rodman.png",
+      "question": "Qui est-ce ?",
+      "answer": "Trinity Rodman",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/sport/5/images/Zico.png",
+      "question": "Qui est-ce ?",
+      "answer": "Zico",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Jason Lamy-Chappuis ?",
+      "answer": "Combiné nordique",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle équipe de rugby fait le \"Cibi\" (équivalent du Haka) ?",
+      "answer": "Fidji",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de joueurs y a-t-il dans une équipe de Cricket ?",
+      "answer": "11",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la vitesse maximale autorisée dans les stands en F1 (généralement) ?",
+      "answer": "80 km/h",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Patrice Martin ?",
+      "answer": "Ski nautique",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de temps a le gardien de foot pour dégager le ballon (théoriquement) ?",
+      "answer": "6 secondes",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport de Laureus (prix sportif) ?",
+      "answer": "Tous les sports",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

@@ -1,0 +1,1379 @@
+{
+  "id": "histoire",
+  "label": "Histoire",
+  "icon": "icons/histoire.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la prise de la Bastille ?",
+      "answer": "1789",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert l'Amérique en 1492 ?",
+      "answer": "Christophe Colomb",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel empereur français est mort à Sainte-Hélène ?",
+      "answer": "Napoléon Ier",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle guerre a duré de 1914 à 1918 ?",
+      "answer": "Première Guerre mondiale",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint la Joconde ?",
+      "answer": "Léonard de Vinci",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France était surnommé le Roi-Soleil ?",
+      "answer": "Louis XIV",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
+      "answer": "1969",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a été détruite par une bombe atomique en 1945 ?",
+      "answer": "Hiroshima",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mur est tombé en 1989 ?",
+      "answer": "Mur de Berlin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle reine d'Égypte a eu une liaison avec Jules César ?",
+      "answer": "Cléopâtre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a débuté la Seconde Guerre mondiale ?",
+      "answer": "1939",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle civilisation a construit les pyramides de Gizeh ?",
+      "answer": "Égyptiens",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui était le chef des Gaulois vaincu à Alésia ?",
+      "answer": "Vercingétorix",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la bataille de Marignan ?",
+      "answer": "1515",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle pucelle a délivré Orléans en 1429 ?",
+      "answer": "Jeanne d'Arc",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit le \"Journal\" racontant sa vie cachée pendant la Shoah ?",
+      "answer": "Anne Frank",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel empire a régné sur la Méditerranée durant l'Antiquité ?",
+      "answer": "Empire Romain",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui était le dieu des dieux dans la mythologie grecque ?",
+      "answer": "Zeus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a prononcé \"I have a dream\" ?",
+      "answer": "Martin Luther King",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel dictateur a dirigé l'Allemagne nazie ?",
+      "answer": "Adolf Hitler",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel monument parisien a été construit pour l'Exposition universelle de 1889 ?",
+      "answer": "Tour Eiffel",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été dirigé par Nelson Mandela ?",
+      "answer": "Afrique du Sud",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année Christophe Colomb a-t-il découvert l'Amérique ?",
+      "answer": "1492",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a été signée l'Armistice de la Première Guerre mondiale ?",
+      "answer": "1918",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la chute du Mur de Berlin ?",
+      "answer": "1989",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a dirigé la résistance française depuis Londres ?",
+      "answer": "Charles de Gaulle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier président noir des États-Unis ?",
+      "answer": "Barack Obama",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a formulé la théorie de la relativité ?",
+      "answer": "Albert Einstein",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a trahi Jésus selon la Bible ?",
+      "answer": "Judas",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année la France a-t-elle gagné sa première Coupe du Monde de foot ?",
+      "answer": "1998",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi mythique de Bretagne est associé aux chevaliers de la Table Ronde ?",
+      "answer": "Arthur",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle bataille a marqué la fin de Napoléon Ier ?",
+      "answer": "Waterloo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu l'attentat des tours jumelles à New York ?",
+      "answer": "2001",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Misérables\" ?",
+      "answer": "Victor Hugo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a commencé la Révolution française ?",
+      "answer": "1789",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peuple scandinave a mené des raids en Europe au Moyen Âge ?",
+      "answer": "Vikings",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle civilisation a inventé les hiéroglyphes ?",
+      "answer": "Égyptiens",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année le Titanic a-t-il fait naufrage ?",
+      "answer": "1912",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a eu lieu le 14 juillet 1789 ?",
+      "answer": "Prise de la Bastille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chef indien a résisté aux britanniques par la non-violence ?",
+      "answer": "Gandhi",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le premier président de la Ve République française ?",
+      "answer": "Charles de Gaulle",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé l'imprimerie en Europe ?",
+      "answer": "Gutenberg",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a offert la Statue de la Liberté aux États-Unis ?",
+      "answer": "France",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France a été guillotiné en 1793 ?",
+      "answer": "Louis XVI",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel président américain a aboli l'esclavage ?",
+      "answer": "Abraham Lincoln",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année la Déclaration des droits de l'homme a-t-elle été votée en France ?",
+      "answer": "1789",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel navigateur a fait le premier tour du monde (terminé par son équipage) ?",
+      "answer": "Magellan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle guerre a opposé le Nord et le Sud des États-Unis ?",
+      "answer": "Guerre de Sécession",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle maladie a tué un tiers de la population européenne au 14e siècle ?",
+      "answer": "Peste noire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu le débarquement en Normandie ?",
+      "answer": "1944",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle reine d'Angleterre a régné pendant 63 ans au 19e siècle ?",
+      "answer": "Victoria",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert le vaccin contre la rage ?",
+      "answer": "Louis Pasteur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel conflit a opposé les USA et l'URSS sans affrontement direct ?",
+      "answer": "Guerre froide",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui était le chef de l'URSS pendant la Seconde Guerre mondiale ?",
+      "answer": "Staline",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peuple a inventé la démocratie ?",
+      "answer": "Grecs",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été assassiné à Dallas en 1963 ?",
+      "answer": "John F. Kennedy",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle civilisation vivait au Pérou avant l'arrivée des Espagnols ?",
+      "answer": "Incas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté le David et peint la Chapelle Sixtine ?",
+      "answer": "Michel-Ange",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a fondé la ville de Rome selon la légende ?",
+      "answer": "Romulus",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année Napoléon a-t-il été sacré empereur ?",
+      "answer": "1804",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été le premier à envoyer un homme dans l'espace ?",
+      "answer": "URSS",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle guerre a opposé la France et l'Angleterre pendant plus de 100 ans ?",
+      "answer": "Guerre de Cent Ans",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé le téléphone ?",
+      "answer": "Graham Bell",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle reine de France a été guillotinée avec Louis XVI ?",
+      "answer": "Marie-Antoinette",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la bataille de Waterloo ?",
+      "answer": "1815",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit l'Iliade et l'Odyssée ?",
+      "answer": "Homère",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle bataille de 1916 est devenue le symbole de l'horreur des tranchées ?",
+      "answer": "Verdun",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année Charlemagne a-t-il été sacré empereur ?",
+      "answer": "800",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a attaqué Pearl Harbor en 1941 ?",
+      "answer": "Japon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui était le Premier ministre britannique pendant la Seconde Guerre mondiale ?",
+      "answer": "Winston Churchill",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint Guernica ?",
+      "answer": "Pablo Picasso",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle civilisation a inventé la poudre à canon ?",
+      "answer": "Chine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert la radioactivité ?",
+      "answer": "Marie Curie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier homme dans l'espace ?",
+      "answer": "Youri Gagarine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle civilisation a construit le Machu Picchu ?",
+      "answer": "Incas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chef révolutionnaire argentin a aidé Castro à Cuba ?",
+      "answer": "Che Guevara",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a fondé l'Islam ?",
+      "answer": "Mahomet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a colonisé le Brésil ?",
+      "answer": "Portugal",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a libéré l'Inde de la domination britannique ?",
+      "answer": "Gandhi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé l'ampoule électrique ?",
+      "answer": "Thomas Edison",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier président des États-Unis ?",
+      "answer": "George Washington",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville italienne a été ensevelie par le Vésuve ?",
+      "answer": "Pompéi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint le plafond de la chapelle Sixtine ?",
+      "answer": "Michel-Ange",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a été signée la Déclaration d'indépendance américaine ?",
+      "answer": "1776",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert la gravité en recevant (selon la légende) une pomme sur la tête ?",
+      "answer": "Isaac Newton",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Petit Prince\" ?",
+      "answer": "Antoine de Saint-Exupéry",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le chef des Huns ?",
+      "answer": "Attila",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la catastrophe de Tchernobyl ?",
+      "answer": "1986",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé la 9ème symphonie (Ode à la joie) ?",
+      "answer": "Beethoven",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a été construite la Tour Eiffel ?",
+      "answer": "1889",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui était le dieu de la guerre chez les Romains ?",
+      "answer": "Mars",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a régné sur l'Angleterre pendant l'époque victorienne ?",
+      "answer": "Victoria",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu le krach boursier de Wall Street ?",
+      "answer": "1929",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a théorisé l'évolution des espèces ?",
+      "answer": "Charles Darwin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le dernier pharaon d'Égypte (dynastie lagide) ?",
+      "answer": "Cléopâtre",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu l'exposition universelle de Paris (Tour Eiffel) ?",
+      "answer": "1889",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel président français a aboli la peine de mort ?",
+      "answer": "François Mitterrand",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier homme à faire un vol spatial ?",
+      "answer": "Youri Gagarine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la bataille de Verdun ?",
+      "answer": "1916",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année l'URSS a-t-elle été dissoute ?",
+      "answer": "1991",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a fondé l'Empire mongol ?",
+      "answer": "Gengis Khan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi des Francs s'est fait baptiser à Reims ?",
+      "answer": "Clovis",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier empereur romain ?",
+      "answer": "Auguste",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville était la capitale de l'Empire romain d'Orient ?",
+      "answer": "Constantinople",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Manifeste du parti communiste\" ?",
+      "answer": "Karl Marx",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi d'Angleterre a eu six femmes ?",
+      "answer": "Henri VIII",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la Révolution russe ?",
+      "answer": "1917",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a commandé l'armée carthaginoise et traversé les Alpes avec des éléphants ?",
+      "answer": "Hannibal",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel traité a mis fin à la Première Guerre mondiale ?",
+      "answer": "Traité de Versailles",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année l'Algérie est-elle devenue indépendante ?",
+      "answer": "1962",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement marque le début du Moyen Âge ?",
+      "answer": "Chute de Rome",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel président américain a démissionné suite au scandale du Watergate ?",
+      "answer": "Richard Nixon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année l'euro a-t-il été mis en circulation (billets et pièces) ?",
+      "answer": "2002",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel empire a été dirigé par Soliman le Magnifique ?",
+      "answer": "Empire Ottoman",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année le droit de vote a-t-il été accordé aux femmes en France ?",
+      "answer": "1944",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel explorateur italien a donné son nom à l'Amérique ?",
+      "answer": "Amerigo Vespucci",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi a signé l'Édit de Nantes ?",
+      "answer": "Henri IV",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a conquis le Mexique pour l'Espagne ?",
+      "answer": "Hernan Cortès",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a déclenché la Première Guerre mondiale ?",
+      "answer": "Attentat de Sarajevo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a été abolie la peine de mort en France ?",
+      "answer": "1981",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année l'Allemagne a-t-elle été réunifiée ?",
+      "answer": "1990",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année l'esclavage a-t-il été aboli définitivement en France ?",
+      "answer": "1848",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le dernier tsar de Russie ?",
+      "answer": "Nicolas II",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel philosophe grec a été condamné à boire de la ciguë ?",
+      "answer": "Socrate",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France a fait construire le château de Chambord ?",
+      "answer": "François Ier",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la première femme Premier ministre du Royaume-Uni ?",
+      "answer": "Margaret Thatcher",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle guerre a duré de 1337 à 1453 ?",
+      "answer": "Guerre de Cent Ans",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a assassiné Henri IV ?",
+      "answer": "Ravaillac",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle civilisation précolombienne pratiquait des sacrifices humains massifs au Mexique ?",
+      "answer": "Aztèques",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France a été surnommé \"le Saint\" ?",
+      "answer": "Louis IX (Saint Louis)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la bataille de Stalingrad ?",
+      "answer": "1942",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a inventé le cinéma ?",
+      "answer": "Frères Lumière",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a été fondée la Ve République ?",
+      "answer": "1958",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a dirigé l'Espagne de 1939 à 1975 ?",
+      "answer": "Franco",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement de 1955 marque le début du mouvement des droits civiques aux USA ?",
+      "answer": "Boycott des bus (Rosa Parks)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel président américain a été acteur de cinéma avant d'être élu ?",
+      "answer": "Ronald Reagan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été surnommé \"Le Tigre\" pendant la Guerre de 14-18 ?",
+      "answer": "Georges Clemenceau",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle bataille navale a vu la victoire de l'Angleterre sur Napoléon en 1805 ?",
+      "answer": "Trafalgar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"La Guerre des Gaules\" ?",
+      "answer": "Jules César",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la bataille d'Austerlitz ?",
+      "answer": "1805",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la première femme à recevoir un prix Nobel ?",
+      "answer": "Marie Curie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert le radium ?",
+      "answer": "Marie et Pierre Curie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année le droit à l'avortement (IVG) a-t-il été légalisé en France ?",
+      "answer": "1975",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi a succédé à Louis XIV ?",
+      "answer": "Louis XV",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu le génocide au Rwanda ?",
+      "answer": "1994",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"L'Origine des espèces\" ?",
+      "answer": "Charles Darwin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a succédé à Jules César (adoptif) ?",
+      "answer": "Auguste",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la première femme à voler seule au-dessus de l'Atlantique ?",
+      "answer": "Amelia Earhart",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France est mort lors d'un tournoi à cause d'une lance dans l'œil ?",
+      "answer": "Henri II",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père fondateur de la Turquie moderne ?",
+      "answer": "Atatürk (Mustafa Kemal)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a découvert la pénicilline ?",
+      "answer": "Alexander Fleming",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a été le siège de la papauté en France ?",
+      "answer": "Avignon",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu le premier vol motorisé des frères Wright ?",
+      "answer": "1903",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pape a lancé la première croisade ?",
+      "answer": "Urbain II",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France était surnommé le \"Roi des Français\" (Monarchie de Juillet) ?",
+      "answer": "Louis-Philippe",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la bataille d'Hastings ?",
+      "answer": "1066",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a rédigé la Déclaration d'Indépendance des États-Unis ?",
+      "answer": "Thomas Jefferson",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a été signé le Traité de Rome (CEE) ?",
+      "answer": "1957",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle guerre s'est terminée par l'armistice de Panmunjom en 1953 ?",
+      "answer": "Guerre de Corée",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année Mao Zedong a-t-il proclamé la République populaire de Chine ?",
+      "answer": "1949",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a unifié l'Allemagne au 19e siècle ?",
+      "answer": "Otto von Bismarck",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu le massacre de la Saint-Barthélemy ?",
+      "answer": "1572",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a commandé les armées alliées lors du débarquement en Normandie ?",
+      "answer": "Eisenhower",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été le théâtre de la Guerre des Roses ?",
+      "answer": "Angleterre",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel empereur romain a légalisé le christianisme ?",
+      "answer": "Constantin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année l'URSS a-t-elle lancé Spoutnik ?",
+      "answer": "1957",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel président français est mort en fonction en 1974 ?",
+      "answer": "Georges Pompidou",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel navigateur portugais a ouvert la route des Indes en contournant l'Afrique ?",
+      "answer": "Vasco de Gama",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année Hong Kong a-t-il été rétrocédé à la Chine ?",
+      "answer": "1997",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France a révoqué l'Édit de Nantes ?",
+      "answer": "Louis XIV",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle guerre a opposé l'Angleterre et l'Argentine en 1982 ?",
+      "answer": "Guerre des Malouines",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a été inventé le World Wide Web (Web) ?",
+      "answer": "1989",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Liberté guidant le peuple\" ?",
+      "answer": "Delacroix",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a mené la \"Longue Marche\" en Chine ?",
+      "answer": "Mao Zedong",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu la première élection présidentielle au suffrage universel en France ?",
+      "answer": "1965",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année Israël a-t-il été créé ?",
+      "answer": "1948",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel explorateur français a fondé Québec ?",
+      "answer": "Samuel de Champlain",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année la ségrégation raciale a-t-elle été abolie aux USA ?",
+      "answer": "1964",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi de France a été capturé à la bataille de Pavie ?",
+      "answer": "François Ier",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle dynastie a régné sur la France avant les Capétiens ?",
+      "answer": "Carolingiens",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année a eu lieu le coup d'État de Napoléon Bonaparte (18 Brumaire) ?",
+      "answer": "1799",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel président américain a ordonné le largage de la bombe atomique ?",
+      "answer": "Harry Truman",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année le mur de Berlin a-t-il été construit ?",
+      "answer": "1961",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a traduit la Bible en allemand ?",
+      "answer": "Martin Luther",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année la monarchie a-t-elle été abolie en France (1ère fois) ?",
+      "answer": "1792",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier président de la Fédération de Russie ?",
+      "answer": "Boris Eltsine",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel samouraï a unifié le Japon au 16e siècle ?",
+      "answer": "Oda Nobunaga",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel explorateur a atteint le premier le pôle Sud ?",
+      "answer": "Roald Amundsen",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel roi anglais a été exécuté en 1649 ?",
+      "answer": "Charles Ier",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel traité a divisé l'empire de Charlemagne en 843 ?",
+      "answer": "Traité de Verdun",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier empereur de Chine ?",
+      "answer": "Qin Shi Huang",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peuple a fondé Carthage ?",
+      "answer": "Phéniciens",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "En quelle année le canal de Suez a-t-il été inauguré ?",
+      "answer": "1869",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le principal opposant politique de Louis XIV (La Fronde) ?",
+      "answer": "Le Grand Condé",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a fondé la Croix-Rouge ?",
+      "answer": "Henry Dunant",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel traité a mis fin à la guerre d'Indochine en 1954 ?",
+      "answer": "Accords de Genève",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

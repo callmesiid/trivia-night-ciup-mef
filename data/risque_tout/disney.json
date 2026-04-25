@@ -1,0 +1,1680 @@
+{
+  "id": "disney",
+  "label": "Disney",
+  "icon": "icons/disney.png",
+  "questions": [
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Anna.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Anna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Ariel.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Ariel",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Bambi.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Bambi",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Belle.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Belle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Black_Panther.jpeg",
+      "question": "Qui est-ce ?",
+      "answer": "Black Panther",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Black_Widow.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Black Widow",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Buzz_L_Eclair.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Buzz L Eclair",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Captain_America.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Captain America",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Dingo.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Dingo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Doctor_Strange.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Doctor Strange",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Donald_Duck.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Donald Duck",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Dory.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Dory",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Elsa.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Elsa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Flash_McQueen.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Flash Mcqueen",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Hulk.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Hulk",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Iron_Man.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Iron Man",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Joie.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Joie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Loki.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Loki",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Mickey_Mouse.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Mickey Mouse",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Minnie_Mouse.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Minnie Mouse",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Nemo.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Nemo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Pluto.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Pluto",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Pumbaa.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Pumbaa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Simba.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Simba",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Spider-Man.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Spider Man",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Thanos.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Thanos",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Thor.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Thor",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Timon.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Timon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/1/images/Woody.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Woody",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la souris mascotte de Disney ?",
+      "answer": "Mickey Mouse",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Simba ?",
+      "answer": "Un lion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle reine a le pouvoir de contrôler la glace ?",
+      "answer": "Elsa (La Reine des Neiges)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du cowboy dans Toy Story ?",
+      "answer": "Woody",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quelle couleur est le géant Hulk ?",
+      "answer": "Vert",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fruit empoisonné mange Blanche-Neige ?",
+      "answer": "Pomme",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du poisson clown à la petite nageoire ?",
+      "answer": "Nemo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel super-héros porte une armure rouge et or ?",
+      "answer": "Iron Man",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se passe l'action de Mulan ?",
+      "answer": "Chine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'ours dans le Livre de la Jungle ?",
+      "answer": "Baloo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle princesse perd sa chaussure de verre ?",
+      "answer": "Cendrillon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le méchant dans le Roi Lion ?",
+      "answer": "Scar",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du bonhomme de neige dans la Reine des Neiges ?",
+      "answer": "Olaf",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jouet astronaute est le meilleur ami de Woody ?",
+      "answer": "Buzz l'Éclair",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Dumbo ?",
+      "answer": "Un éléphant",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel super-héros grimpe aux murs et lance des toiles ?",
+      "answer": "Spider-Man",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la fée dans Peter Pan ?",
+      "answer": "Fée Clochette",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on une voiture de course nommée Flash McQueen ?",
+      "answer": "Cars",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle princesse a une très longue chevelure magique ?",
+      "answer": "Raiponce",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel dieu du tonnerre est un Avenger ?",
+      "answer": "Thor",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du rat cuisinier dans Ratatouille ?",
+      "answer": "Rémy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'amoureuse de Mickey ?",
+      "answer": "Minnie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film voyage-t-on au Pays des Morts (Coco) ?",
+      "answer": "Coco",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Bambi ?",
+      "answer": "Un faon (Cerf)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le méchant capitaine dans Peter Pan ?",
+      "answer": "Capitaine Crochet",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du génie dans Aladdin (en bleu) ?",
+      "answer": "Génie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de Luke Skywalker (racheté par Disney) ?",
+      "answer": "Dark Vador",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du robot compacteur de déchets ?",
+      "answer": "Wall-E",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la phrase fétiche de Buzz l'Éclair ?",
+      "answer": "Vers l'infini et au-delà",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la sirène rousse ?",
+      "answer": "Ariel",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la famille Parr (Super-héros) ?",
+      "answer": "Les Indestructibles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la ville dans Zootopie ?",
+      "answer": "Zootopie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du pantin de bois qui veut devenir un vrai petit garçon ?",
+      "answer": "Pinocchio",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le méchant dans les 101 Dalmatiens ?",
+      "answer": "Cruella d'Enfer",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on un vieux monsieur et des ballons ?",
+      "answer": "Là-haut",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la nounou magicienne ?",
+      "answer": "Mary Poppins",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la chanson \"Il en faut peu pour être heureux\" ?",
+      "answer": "Le Livre de la Jungle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la sœur d'Elsa ?",
+      "answer": "Anna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel super-héros devient vert quand il est en colère ?",
+      "answer": "Hulk",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film une maison s'envole-t-elle avec des ballons ?",
+      "answer": "Là-haut",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle princesse est une Amérindienne ?",
+      "answer": "Pocahontas",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la chanson \"Ce rêve bleu\" ?",
+      "answer": "Aladdin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le grand méchant loup dans les Trois Petits Cochons ?",
+      "answer": "Le Grand Méchant Loup",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on un personnage nommé \"Tristesse\" ?",
+      "answer": "Vice-Versa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du poisson chirurgien amnésique ?",
+      "answer": "Dory",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la méchante qui veut la peau des dalmatiens ?",
+      "answer": "Cruella d'Enfer",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on \"Hakuna Matata\" ?",
+      "answer": "Le Roi Lion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on un rat qui rêve d'être chef ?",
+      "answer": "Ratatouille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Aladdin.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Aladdin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Ant-Man.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Ant Man",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Blanche_Neige.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Blanche Neige",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Captain_Marvel.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Captain Marvel",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Carl_Fredricksen.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Carl Fredricksen",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Clochette.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Clochette",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Gamora.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Gamora",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Genie.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Genie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Groot.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Groot",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Jasmine.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Jasmine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Jessie.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Jessie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/La_Guepe.webp",
+      "question": "Qui est-ce ?",
+      "answer": "La Guepe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Miguel_Rivera.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Miguel Rivera",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Mike_Wazowski.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Mike Wazowski",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Mulan.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Mulan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Nick_Fury.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Nick Fury",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Oeil_de_Faucon.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Oeil De Faucon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Raiponce.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Raiponce",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Remy.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Remy",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Russell.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Russell",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Scarlet_Witch.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Scarlet Witch",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Star-Lord.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Star Lord",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Stitch.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Stitch",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Tristesse.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Tristesse",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Violette_Parr.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Violette Parr",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Vision.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Vision",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/2/images/Winnie_l_Ourson.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Winnie L Ourson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du tigre d'Aladdin ?",
+      "answer": "Rajah",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Captain America ?",
+      "answer": "Steve Rogers",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émotion est jaune et joyeuse dans Vice-Versa ?",
+      "answer": "Joie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du royaume d'Elsa et Anna ?",
+      "answer": "Arendelle",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le méchant violet qui claque des doigts dans Avengers ?",
+      "answer": "Thanos",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Sébastien dans la Petite Sirène ?",
+      "answer": "Un crabe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chien de Mickey ?",
+      "answer": "Pluto",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du dragon de Mulan ?",
+      "answer": "Mushu",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a volé le cœur de Te Fiti dans Vaiana ?",
+      "answer": "Maui",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le frère de Thor ?",
+      "answer": "Loki",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle princesse dort pendant 100 ans ?",
+      "answer": "Aurore (La Belle au Bois Dormant)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'île de Peter Pan ?",
+      "answer": "Le Pays Imaginaire (Neverland)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit monstre vert à un œil dans Monstres et Cie ?",
+      "answer": "Bob Razowski",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du gros monstre bleu dans Monstres et Cie ?",
+      "answer": "Sulli (Jacques Sullivan)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle princesse embrasse une grenouille ?",
+      "answer": "Tiana",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la méchante sorcière dans la Petite Sirène ?",
+      "answer": "Ursula",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la profession de Geppetto ?",
+      "answer": "Menuisier (Fabricant de jouets)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'arbre vivant dans les Gardiens de la Galaxie ?",
+      "answer": "Groot",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur de la robe de Belle lors du bal ?",
+      "answer": "Jaune (ou Or)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du tapis volant d'Aladdin ?",
+      "answer": "Le Tapis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le sorcier suprême dans Marvel (avant Wong) ?",
+      "answer": "Doctor Strange",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du château emblématique de Disney ?",
+      "answer": "Château de Cendrillon (ou Belle au Bois Dormant selon les parcs)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Judy Hopps dans Zootopie ?",
+      "answer": "Un lapin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la cane amoureuse de Donald ?",
+      "answer": "Daisy",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du demi-dieu grec entraîné par Philoctète ?",
+      "answer": "Hercule",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le méchant dans Hercule (dieu des enfers) ?",
+      "answer": "Hadès",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité de la maison des Madrigal dans Encanto ?",
+      "answer": "Elle est magique (Casita)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Bing_Bong.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Bing Bong",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Boo.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Boo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Capitaine_Crochet.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Capitaine Crochet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Colere.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Colere",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Degout.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Degout",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Edna_Mode.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Edna Mode",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Faucon.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Faucon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Hades.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Hades",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Jafar.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Jafar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Malefique.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Malefique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Merida.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Merida",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Mufasa.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Mufasa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Nebula.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Nebula",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Peter_Pan.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Peter Pan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Peur.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Peur",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Rocket_Raton_Laveur.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Rocket Raton Laveur",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Roz.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Roz",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Scar.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Scar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Soldat_de_l_Hiver.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Soldat De L Hiver",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Tigrou.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Tigrou",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Tilt.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Tilt",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Ursula.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Ursula",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/War_Machine.webp",
+      "question": "Qui est-ce ?",
+      "answer": "War Machine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/3/images/Yondu.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Yondu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le métal du bouclier de Captain America ?",
+      "answer": "Vibranium",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit robot blanc infirmier dans Les Nouveaux Héros ?",
+      "answer": "Baymax",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le roi du Wakanda (Black Panther) ?",
+      "answer": "T'Challa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Pumbaa ?",
+      "answer": "Un phacochère",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la tasse ébréchée dans la Belle et la Bête ?",
+      "answer": "Zip",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel océan se déroule le Monde de Nemo ?",
+      "answer": "Pacifique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du renard dans Rox et Rouky ?",
+      "answer": "Rox",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la ville dans Cars ?",
+      "answer": "Radiator Springs",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'organisation secrète dans Marvel (S.H.I.E.L.D.) ?",
+      "answer": "S.H.I.E.L.D.",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du lézard compagnon de Raiponce ?",
+      "answer": "Pascal",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du singe d'Aladdin ?",
+      "answer": "Abu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le méchant dans Toy Story 1 (le petit garçon) ?",
+      "answer": "Sid",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la tribu d'oursons dans Star Wars (racheté par Disney) ?",
+      "answer": "Ewoks",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de la Petite Sirène ?",
+      "answer": "Le Roi Triton",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du dinosaure vert peureux dans Toy Story ?",
+      "answer": "Rex",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a racheté Marvel en 2009 ?",
+      "answer": "Disney",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de la Belle au Bois Dormant (donné par ses parents) ?",
+      "answer": "Aurore",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'ami de Vaiana (le coq) ?",
+      "answer": "Hei Hei",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chien dans Là-haut (qui parle) ?",
+      "answer": "Dug",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui ne doit pas être nommé dans Encanto ?",
+      "answer": "Bruno",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Anton_Ego.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Anton Ego",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Aurore.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Aurore",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Crane_Rouge.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Crane Rouge",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Doug.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Doug",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/EVE.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Eve",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Hank.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Hank",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Heimdall.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Heimdall",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Joe_Gardner.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Joe Gardner",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Korg.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Korg",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Marlin.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Marlin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Megara.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Megara",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Merida.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Merida",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Pepper_Potts.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Pepper Potts",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Pocahontas.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Pocahontas",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Shang-Chi.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Shang Chi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Tiana.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Tiana",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Ultron.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Ultron",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Vaiana.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Vaiana",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Valkyrie.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Valkyrie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/4/images/Wong.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Wong",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la planète de Thanos ?",
+      "answer": "Titan",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du raton laveur dans Pocahontas ?",
+      "answer": "Meeko",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du cochon tirelire dans Toy Story ?",
+      "answer": "Bayonne",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du créateur des Indestructibles (la costumière) ?",
+      "answer": "Edna Mode",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la pierre verte du temps dans Marvel ?",
+      "answer": "Pierre du Temps (Œil d'Agamotto)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Alberto_Scorfano.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Alberto Scorfano",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Alfredo_Linguini.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Alfredo Linguini",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Alice.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Alice",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Arlo.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Arlo",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Balthazar_Picsou.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Balthazar Picsou",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Bouffon_Vert.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Bouffon Vert",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Daisy_Duck.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Daisy Duck",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Docteur_Octopus.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Docteur Octopus",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Giulia_Marcovaldo.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Giulia Marcovaldo",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Hela.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Hela",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Jiminy_Cricket.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Jiminy Cricket",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Luca_Paguro.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Luca Paguro",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Mantis.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Mantis",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Maria_Hill.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Maria Hill",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Mysterio.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Mysterio",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Panpan.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Panpan",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Pinocchio.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Pinocchio",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Quicksilver.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Quicksilver",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/disney/5/images/Reine_de_Coeur.webp",
+      "question": "Qui est-ce ?",
+      "answer": "Reine De Coeur",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la Bête dans la Belle et la Bête (Piège) ?",
+      "answer": "Il n'a pas de nom (La Bête)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le premier personnage créé par Walt Disney (avant Mickey) ?",
+      "answer": "Oswald le lapin chanceux",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le surnom de la Belle au Bois Dormant (donné par les fées) ?",
+      "answer": "Rose (Briar Rose)",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

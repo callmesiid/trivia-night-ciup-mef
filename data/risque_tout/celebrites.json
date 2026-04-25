@@ -1,0 +1,1526 @@
+{
+  "id": "celebrites",
+  "label": "Célébrités",
+  "icon": "icons/celebrites.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Qui est surnommé le \"King\" du Rock'n'roll ?",
+      "answer": "Elvis Presley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star de la télé-réalité a été mariée à Kanye West ?",
+      "answer": "Kim Kardashian",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse interprète de \"Djadja\" ?",
+      "answer": "Aya Nakamura",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a épousé le Prince Harry ?",
+      "answer": "Meghan Markle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur incarne Iron Man ?",
+      "answer": "Robert Downey Jr.",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"All I Want for Christmas Is You\" ?",
+      "answer": "Mariah Carey",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la mère de Blue Ivy ?",
+      "answer": "Beyoncé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle princesse est décédée sous le pont de l'Alma en 1997 ?",
+      "answer": "Lady Diana (Princesse Diana)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le créateur de Facebook (et célébrité de la tech) ?",
+      "answer": "Mark Zuckerberg",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a débuté dans la série \"Hannah Montana\" ?",
+      "answer": "Miley Cyrus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui forme un couple célèbre avec Jay-Z ?",
+      "answer": "Beyoncé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a giflé Chris Rock aux Oscars 2022 ?",
+      "answer": "Will Smith",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur canadien a été découvert sur YouTube avec \"Baby\" ?",
+      "answer": "Justin Bieber",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le rôle de Jack dans Titanic ?",
+      "answer": "Leonardo DiCaprio",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la compagne de Brad Pitt après Jennifer Aniston ?",
+      "answer": "Angelina Jolie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse est surnommée \"Riri\" ?",
+      "answer": "Rihanna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'animateur de \"Touche pas à mon poste\" ?",
+      "answer": "Cyril Hanouna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur américain est aussi un ancien catcheur surnommé \"The Rock\" ?",
+      "answer": "Dwayne Johnson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice blonde est devenue une icône avec sa robe soulevée par le métro ?",
+      "answer": "Marilyn Monroe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Victoria Beckham ?",
+      "answer": "David Beckham",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français a joué dans \"Lupin\" sur Netflix ?",
+      "answer": "Omar Sy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a joué \"Rachel\" dans Friends ?",
+      "answer": "Jennifer Aniston",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a épousé le Prince William ?",
+      "answer": "Kate Middleton",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Terminator\" et a été gouverneur ?",
+      "answer": "Arnold Schwarzenegger",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse française a pour surnom \"La Môme\" ?",
+      "answer": "Edith Piaf",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné le procès ultra-médiatisé contre Amber Heard ?",
+      "answer": "Johnny Depp",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse de \"Shake It Off\" ?",
+      "answer": "Taylor Swift",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice française a défendu la cause animale (bébés phoques) ?",
+      "answer": "Brigitte Bardot",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le fondateur d'Amazon (crâne chauve) ?",
+      "answer": "Jeff Bezos",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Forrest Gump\" ?",
+      "answer": "Tom Hanks",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a eu une résidence à Las Vegas pendant des années (My Heart Will Go On) ?",
+      "answer": "Céline Dion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Hailey Bieber ?",
+      "answer": "Justin Bieber",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel youtubeur américain est connu pour donner des millions de dollars ?",
+      "answer": "MrBeast",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué Hermione Granger ?",
+      "answer": "Emma Watson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'interprète de \"Thriller\" ?",
+      "answer": "Michael Jackson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star de télé-réalité a dit \"Non mais allô quoi ?\" ?",
+      "answer": "Nabilla",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de Lily-Rose Depp ?",
+      "answer": "Johnny Depp",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'acteur principal de \"Mission Impossible\" ?",
+      "answer": "Tom Cruise",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel présentateur télé a animé \"N'oubliez pas les paroles\" ?",
+      "answer": "Nagui",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse de \"Rolling in the Deep\" ?",
+      "answer": "Adele",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'actrice principale de \"Pretty Woman\" ?",
+      "answer": "Julia Roberts",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animateur présente \"Koh-Lanta\" ?",
+      "answer": "Denis Brogniart",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Harry Potter\" ?",
+      "answer": "Daniel Radcliffe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit et réalisé \"Kaamelott\" ?",
+      "answer": "Alexandre Astier",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a été en couple avec Justin Timberlake (Britney ou...). Remplacé : Qui a chanté \"Toxic\" ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel humoriste français a créé les \"Restos du Cœur\" ?",
+      "answer": "Coluche",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse de \"Waka Waka\" ?",
+      "answer": "Shakira",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Wolverine\" ?",
+      "answer": "Hugh Jackman",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté le journal de 13h sur TF1 pendant 33 ans ?",
+      "answer": "Jean-Pierre Pernaut",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père d'Enrique Iglesias ?",
+      "answer": "Julio Iglesias",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur français chante \"Santé\" et \"Papaoutai\" ?",
+      "answer": "Stromae",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a divorcé de Kanye West en 2021/2022 ?",
+      "answer": "Kim Kardashian",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'animateur de \"Recherche appartement ou maison\" ?",
+      "answer": "Stéphane Plaza",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur est mort le 25 juin 2009 ?",
+      "answer": "Michael Jackson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Neo\" dans Matrix ?",
+      "answer": "Keanu Reeves",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Je te promets\" ?",
+      "answer": "Johnny Hallyday",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a pour surnom \"J.Lo\" ?",
+      "answer": "Jennifer Lopez",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le célèbre agent secret 007 (personnage) ?",
+      "answer": "James Bond",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur du groupe Queen ?",
+      "answer": "Freddie Mercury",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Beyoncé ?",
+      "answer": "Jay-Z",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur français a chanté \"Allumer le feu\" ?",
+      "answer": "Johnny Hallyday",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Indiana Jones\" ?",
+      "answer": "Harrison Ford",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Bohemian Rhapsody\" ?",
+      "answer": "Queen (Freddie Mercury)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle animatrice présente \"L'Amour est dans le pré\" ?",
+      "answer": "Karine Le Marchand",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de \"Shape of You\" ?",
+      "answer": "Ed Sheeran",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Like a Virgin\" ?",
+      "answer": "Madonna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Barbie\" dans le film de 2023 ?",
+      "answer": "Margot Robbie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star de télé-réalité a pour soeurs Kourtney et Khloé ?",
+      "answer": "Kim Kardashian",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français a joué dans \"Intouchables\" ?",
+      "answer": "Omar Sy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Imagine\" ?",
+      "answer": "John Lennon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Forrest Gump\" ?",
+      "answer": "Tom Hanks",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la femme de Nicolas Sarkozy ?",
+      "answer": "Carla Bruni",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le créateur de la série \"Kaamelott\" ?",
+      "answer": "Alexandre Astier",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté le \"Club Dorothée\" ?",
+      "answer": "Dorothée",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"Baby One More Time\" ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Les Lacs du Connemara\" ?",
+      "answer": "Michel Sardou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué \"Amélie Poulain\" ?",
+      "answer": "Audrey Tautou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de Enrique Iglesias ?",
+      "answer": "Julio Iglesias",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Rocky Balboa\" ?",
+      "answer": "Sylvester Stallone",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Léon\" ?",
+      "answer": "Jean Reno",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse de \"Bad Romance\" ?",
+      "answer": "Lady Gaga",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Johnny Hallyday ?",
+      "answer": "Jean-Philippe Smet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a porté une robe en viande aux MTV Awards ?",
+      "answer": "Lady Gaga",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français a reçu un Oscar pour \"The Artist\" ?",
+      "answer": "Jean Dujardin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel DJ français porte toujours un casque intégral ?",
+      "answer": "Daft Punk (ou Thomas Bangalter/Guy-Manuel)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'influenceuse française autrice de \"Toujours plus\" ?",
+      "answer": "Lena Situations",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est surnommée \"La Madone\" des palaces (héritière blonde) ?",
+      "answer": "Paris Hilton",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star française est surnommée \"Bébel\" ?",
+      "answer": "Jean-Paul Belmondo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'actrice principale de la série \"Mercredi\" (Netflix) ?",
+      "answer": "Jenna Ortega",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la plus jeune milliardaire \"self-made\" du clan Kardashian/Jenner ?",
+      "answer": "Kylie Jenner",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le compagnon de Zendaya (acteur de Spider-Man) ?",
+      "answer": "Tom Holland",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a popularisé la queue de cheval haute ?",
+      "answer": "Ariana Grande",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté le \"Bigdil\" ?",
+      "answer": "Vincent Lagaf'",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le mari de Nicole Kidman avant Keith Urban ?",
+      "answer": "Tom Cruise",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'influenceur le plus suivi sur TikTok au monde (le silencieux) ?",
+      "answer": "Khaby Lame",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a interrompu le discours de Taylor Swift aux VMA 2009 ?",
+      "answer": "Kanye West",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de K-Pop est le plus connu au monde (garçons) ?",
+      "answer": "BTS",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français est célèbre pour ses colères dans les films (De Funès ou...). Remplacé : Qui joue Astérix dans le film de Guillaume Canet ?",
+      "answer": "Guillaume Canet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la première femme de Brad Pitt (actrice de Friends) ?",
+      "answer": "Jennifer Aniston",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a fait le show à la mi-temps du Super Bowl 2023 enceinte ?",
+      "answer": "Rihanna",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a lancé la marque de cosmétiques \"Fenty Beauty\" ?",
+      "answer": "Rihanna",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le compagnon de Marion Cotillard ?",
+      "answer": "Guillaume Canet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a chanté \"Purple Rain\" ?",
+      "answer": "Prince",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a un grain de beauté célèbre au-dessus de la lèvre ?",
+      "answer": "Cindy Crawford (ou Marilyn)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur du groupe U2 ?",
+      "answer": "Bono",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur incarne \"Thor\" ?",
+      "answer": "Chris Hemsworth",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué \"Black Widow\" ?",
+      "answer": "Scarlett Johansson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été Miss France et Miss Univers 2016 ?",
+      "answer": "Iris Mittenaere",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice française a reçu un Oscar pour \"La Môme\" ?",
+      "answer": "Marion Cotillard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le créateur de Star Wars ?",
+      "answer": "George Lucas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur aveugle américain chante \"Superstition\" ?",
+      "answer": "Stevie Wonder",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la compagne de Johnny Depp et mère de ses enfants (française) ?",
+      "answer": "Vanessa Paradis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star de la pop a été sous tutelle de son père pendant 13 ans ?",
+      "answer": "Britney Spears",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le présentateur de \"Quotidien\" ?",
+      "answer": "Yann Barthès",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue \"Deadpool\" ?",
+      "answer": "Ryan Reynolds",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Edward aux mains d'argent\" ?",
+      "answer": "Johnny Depp",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse de \"I Will Always Love You\" (Bodyguard) ?",
+      "answer": "Whitney Houston",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a épousé Amal Alamuddin (avocate) ?",
+      "answer": "George Clooney",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué \"Lara Croft\" au cinéma (la première) ?",
+      "answer": "Angelina Jolie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté \"Le Juste Prix\" (version années 2000) ?",
+      "answer": "Vincent Lagaf'",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"Rehab\" ?",
+      "answer": "Amy Winehouse",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la sœur de Michael Jackson ?",
+      "answer": "Janet Jackson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a joué dans \"Hunger Games\" ?",
+      "answer": "Jennifer Lawrence",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le compagnon de Selena Gomez et Hailey Baldwin ?",
+      "answer": "Justin Bieber",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la créatrice de la marque \"Kylie Cosmetics\" ?",
+      "answer": "Kylie Jenner",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'animateur historique de \"Fort Boyard\" ?",
+      "answer": "Olivier Minne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"Material Girl\" ?",
+      "answer": "Madonna",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de Charlotte Gainsbourg ?",
+      "answer": "Serge Gainsbourg",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star française a chanté \"La Javanaise\" ?",
+      "answer": "Serge Gainsbourg",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'acteur principal de la saga \"Fast and Furious\" ?",
+      "answer": "Vin Diesel",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a été membre des One Direction ?",
+      "answer": "Harry Styles",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué dans \"Basic Instinct\" (scène des jambes) ?",
+      "answer": "Sharon Stone",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur français porte des lunettes blanches (généralement) ?",
+      "answer": "Michel Polnareff",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"Bad Guy\" ?",
+      "answer": "Billie Eilish",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Gladiator\" ?",
+      "answer": "Russell Crowe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star de YouTube fait des vidéos d'horreur \"Thread Horreur\" ?",
+      "answer": "Squeezie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la fille de Jane Birkin et Serge Gainsbourg ?",
+      "answer": "Charlotte Gainsbourg",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français a joué \"Cyrano de Bergerac\" (1990) ?",
+      "answer": "Gérard Depardieu",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la Première Dame de France chanteuse et mannequin ?",
+      "answer": "Carla Bruni",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a chanté \"Mistral Gagnant\" ?",
+      "answer": "Renaud",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a chanté \"Rocket Man\" ?",
+      "answer": "Elton John",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'animateur de \"Vendredi tout est permis\" ?",
+      "answer": "Arthur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a un parfum célèbre \"N°5\" (marque associée) ?",
+      "answer": "Coco Chanel (Marilyn le portait)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Ken\" dans le film Barbie ?",
+      "answer": "Ryan Gosling",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Jada Pinkett Smith ?",
+      "answer": "Will Smith",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"Born to Die\" ?",
+      "answer": "Lana Del Rey",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Spider-Man\" avant Tom Holland et Andrew Garfield ?",
+      "answer": "Tobey Maguire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Dr House\" ?",
+      "answer": "Hugh Laurie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel youtubeur fait des vidéos \"Qui est l'imposteur ?\" ?",
+      "answer": "Squeezie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse de \"Chandelier\" ?",
+      "answer": "Sia",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animateur a des cheveux longs et présente \"Le Plus Grand Cabaret du monde\" ?",
+      "answer": "Patrick Sébastien",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de \"Uptown Funk\" ?",
+      "answer": "Bruno Mars",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"California Gurls\" ?",
+      "answer": "Katy Perry",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star française a joué dans \"Inception\" ?",
+      "answer": "Marion Cotillard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté \"Ushuaïa\" ?",
+      "answer": "Nicolas Hulot",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a chanté \"Pas là\" ?",
+      "answer": "Vianney",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a épousé Ben Affleck en 2022 (après 20 ans de pause) ?",
+      "answer": "Jennifer Lopez",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de Miley Cyrus (chanteur de country) ?",
+      "answer": "Billy Ray Cyrus",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de M. Pokora ?",
+      "answer": "Matthieu Tota",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le frère de Liam Gallagher (Oasis) ?",
+      "answer": "Noel Gallagher",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français a eu un accident de ski grave en 2022 ?",
+      "answer": "Gaspard Ulliel",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le Joker et est mort peu après (2008) ?",
+      "answer": "Heath Ledger",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la mère de la famille Kardashian (la manager) ?",
+      "answer": "Kris Jenner",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse française a chanté \"La Grenade\" ?",
+      "answer": "Clara Luciani",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été mariée à Tom Cruise et a joué dans \"Batman Begins\" ?",
+      "answer": "Katie Holmes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse du groupe No Doubt ?",
+      "answer": "Gwen Stefani",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'acteur principal de la série \"The Witcher\" (Saison 1-3) ?",
+      "answer": "Henry Cavill",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel humoriste a fait un sketch sur le \"Lâcher de salopes\" ?",
+      "answer": "Jean-Marie Bigard",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français est surnommé \"Le Magnifique\" ?",
+      "answer": "Jean-Paul Belmondo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue \"Captain America\" ?",
+      "answer": "Chris Evans",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été mariée à Russell Brand et Orlando Bloom ?",
+      "answer": "Katy Perry",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté \"Tout le monde en parle\" ?",
+      "answer": "Thierry Ardisson",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Blake Lively ?",
+      "answer": "Ryan Reynolds",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Gandalf\" ?",
+      "answer": "Ian McKellen",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le célèbre pâtissier qui fait des trompe-l'œil (fruits) ?",
+      "answer": "Cédric Grolet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'ex-femme de Bruce Willis ?",
+      "answer": "Demi Moore",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a incarné le \"Joker\" en 2019 ?",
+      "answer": "Joaquin Phoenix",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le compagnon de Rihanna (rappeur) ?",
+      "answer": "A$AP Rocky",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'actrice principale de \"La La Land\" ?",
+      "answer": "Emma Stone",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice française a joué dans un James Bond (Spectre) ?",
+      "answer": "Léa Seydoux",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté \"Le Grand Journal\" sur Canal+ (au début) ?",
+      "answer": "Michel Denisot",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur du groupe Coldplay ?",
+      "answer": "Chris Martin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"Video Games\" ?",
+      "answer": "Lana Del Rey",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté \"Les Z'amours\" pendant longtemps (viré) ?",
+      "answer": "Tex",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué \"Batman\" dans la trilogie de Nolan ?",
+      "answer": "Christian Bale",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué \"Catwoman\" dans Batman le Défi (1992) ?",
+      "answer": "Michelle Pfeiffer",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de \"Angels\" ?",
+      "answer": "Robbie Williams",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Sophie Turner (Game of Thrones) ?",
+      "answer": "Joe Jonas (Divorce en cours mais connu pour ça)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Hannibal Lecter\" ?",
+      "answer": "Anthony Hopkins",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a chanté \"Femme Libérée\" ?",
+      "answer": "Cookie Dingler",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué \"Mad Max\" (l'original) ?",
+      "answer": "Mel Gibson",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'animatrice de \"C à vous\" (historique ou actuelle) ?",
+      "answer": "Anne-Elisabeth Lemoine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la soeur de Beyoncé ?",
+      "answer": "Solange Knowles",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué \"Cruella\" (film récent) ?",
+      "answer": "Emma Stone",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel humoriste a fait un spectacle avec Gad Elmaleh (disponible sur Netflix) ?",
+      "answer": "Kev Adams",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Les Démons de minuit\" ?",
+      "answer": "Images",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Lady Gaga ?",
+      "answer": "Stefani Germanotta",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Marilyn Monroe ?",
+      "answer": "Norma Jeane Baker",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Priyanka Chopra (Jonas Brothers) ?",
+      "answer": "Nick Jonas",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le batteur des Beatles ?",
+      "answer": "Ringo Starr",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animateur américain a une moustache et présente \"Family Feud\" ?",
+      "answer": "Steve Harvey",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de Angelina Jolie ?",
+      "answer": "Jon Voight",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Soprano ?",
+      "answer": "Saïd M'Roumbaba",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'épouse de Justin Timberlake ?",
+      "answer": "Jessica Biel",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la mère de Kate Hudson ?",
+      "answer": "Goldie Hawn",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"Hollaback Girl\" ?",
+      "answer": "Gwen Stefani",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français est surnommé \"Dewaere\" ?",
+      "answer": "Patrick Dewaere",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle star a pour ex-mari Russell Brand ?",
+      "answer": "Katy Perry",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de \"Take Me to Church\" ?",
+      "answer": "Hozier",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom du fils d'Elon Musk (X Æ A-12) ?",
+      "answer": "X (ou un prénom imprononçable)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a pour vrai nom Bruno Mars ?",
+      "answer": "Peter Gene Hernandez",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Sting ?",
+      "answer": "Gordon Sumner",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur américain collectionne les machines à écrire ?",
+      "answer": "Tom Hanks",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle influenceuse a créé la marque \"Rouje\" ?",
+      "answer": "Jeanne Damas",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Elton John ?",
+      "answer": "Reginald Dwight",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Vin Diesel ?",
+      "answer": "Mark Sinclair",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le mari de Elton John ?",
+      "answer": "David Furnish",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+{
+  "id": "litterature",
+  "label": "Littérature",
+  "icon": "icons/litterature.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Misérables\" ?",
+      "answer": "Victor Hugo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom du jeune sorcier créé par J.K. Rowling ?",
+      "answer": "Harry",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur des \"Fables\" mettant en scène des animaux ?",
+      "answer": "Jean de La Fontaine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel célèbre détective a été créé par Arthur Conan Doyle ?",
+      "answer": "Sherlock Holmes",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Vingt mille lieues sous les mers\" ?",
+      "answer": "Jules Verne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel dramaturge anglais a écrit \"Hamlet\" ?",
+      "answer": "William Shakespeare",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel roman trouve-t-on le personnage de D'Artagnan ?",
+      "answer": "Les Trois Mousquetaires",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Petit Prince\" ?",
+      "answer": "Antoine de Saint-Exupéry",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur américain a écrit \"Shining\" et \"Ça\" ?",
+      "answer": "Stephen King",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel célèbre aventurier a été créé par Hergé ?",
+      "answer": "Tintin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel livre sacré commence par la Genèse ?",
+      "answer": "La Bible",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le titre du premier tome d'Harry Potter ?",
+      "answer": "Harry Potter à l'école des sorciers",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel roman trouve-t-on le personnage de Jean Valjean ?",
+      "answer": "Les Misérables",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle célèbre diariste a vécu cachée à Amsterdam ?",
+      "answer": "Anne Frank",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel conte une citrouille se transforme-t-elle en carrosse ?",
+      "answer": "Cendrillon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Malade imaginaire\" ?",
+      "answer": "Molière",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la devise des Trois Mousquetaires ?",
+      "answer": "Un pour tous tous pour un",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du compagnon de Sherlock Holmes ?",
+      "answer": "Docteur Watson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'épée du Roi Arthur ?",
+      "answer": "Excalibur",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Moby Dick ?",
+      "answer": "Une baleine (Cachalot blanc)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel livre trouve-t-on le personnage de Robinson Crusoé ?",
+      "answer": "Robinson Crusoé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville se déroule l'histoire de \"Roméo et Juliette\" ?",
+      "answer": "Vérone",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"L'Étranger\" ?",
+      "answer": "Albert Camus",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur a écrit \"1984\" ?",
+      "answer": "George Orwell",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'héroïne de \"Notre-Dame de Paris\" ?",
+      "answer": "Esmeralda",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Madame Bovary\" ?",
+      "answer": "Gustave Flaubert",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel prix littéraire français est le plus prestigieux ?",
+      "answer": "Prix Goncourt",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de la saga \"Le Seigneur des Anneaux\" ?",
+      "answer": "J.R.R. Tolkien",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poète a écrit le recueil \"Les Fleurs du mal\" ?",
+      "answer": "Charles Baudelaire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit la pièce \"Cyrano de Bergerac\" ?",
+      "answer": "Edmond Rostand",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel personnage de fiction vit au 221B Baker Street ?",
+      "answer": "Sherlock Holmes",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Germinal\" ?",
+      "answer": "Émile Zola",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle friandise est associée à la mémoire chez Proust ?",
+      "answer": "Madeleine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle saga suit-on les familles Stark et Lannister ?",
+      "answer": "Game of Thrones (Le Trône de fer)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Comte de Monte-Cristo\" ?",
+      "answer": "Alexandre Dumas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Candide\" ?",
+      "answer": "Voltaire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"L'Odyssée\" ?",
+      "answer": "Homère",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle œuvre trouve-t-on \"Big Brother\" ?",
+      "answer": "1984",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"L'Alchimiste\" ?",
+      "answer": "Paulo Coelho",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel écrivain français a écrit \"J'accuse...!\" dans le journal L'Aurore ?",
+      "answer": "Émile Zola",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de l'auteur de \"Da Vinci Code\" ?",
+      "answer": "Dan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"La Gloire de mon père\" ?",
+      "answer": "Marcel Pagnol",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poète a écrit \"Le Dormeur du val\" ?",
+      "answer": "Arthur Rimbaud",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le titre du livre d'Hitler ?",
+      "answer": "Mein Kampf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Alice au pays des merveilles\" ?",
+      "answer": "Lewis Carroll",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du capitaine du Nautilus ?",
+      "answer": "Nemo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du capitaine dans \"Moby Dick\" ?",
+      "answer": "Achab",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se déroule l'action de \"Guerre et Paix\" ?",
+      "answer": "Russie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Orgueil et Préjugés\" ?",
+      "answer": "Jane Austen",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Molière ?",
+      "answer": "Jean-Baptiste Poquelin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"La Peste\" ?",
+      "answer": "Albert Camus",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur a écrit \"À la recherche du temps perdu\" ?",
+      "answer": "Marcel Proust",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"Frankenstein\" ?",
+      "answer": "Mary Shelley",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Bel-Ami\" ?",
+      "answer": "Guy de Maupassant",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du renard dans \"Le Petit Prince\" ?",
+      "answer": "Il n'a pas de nom (Le Renard)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Rouge et le Noir\" ?",
+      "answer": "Stendhal",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur a créé le personnage d'Arsène Lupin ?",
+      "answer": "Maurice Leblanc",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur irlandais a écrit \"Dracula\" ?",
+      "answer": "Bram Stoker",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mouvement littéraire est associé à Victor Hugo ?",
+      "answer": "Romantisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur a écrit \"Le Vieil Homme et la Mer\" ?",
+      "answer": "Ernest Hemingway",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de la série de BD \"Astérix\" (scénariste original) ?",
+      "answer": "René Goscinny",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poète a été le compagnon tumultueux de Rimbaud ?",
+      "answer": "Paul Verlaine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"La Métamorphose\" ?",
+      "answer": "Franz Kafka",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Gatsby le Magnifique\" ?",
+      "answer": "F. Scott Fitzgerald",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel roman voyage-t-on à Lilliput ?",
+      "answer": "Les Voyages de Gulliver",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"La Ferme des animaux\" ?",
+      "answer": "George Orwell",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur de SF a écrit le cycle de \"Dune\" ?",
+      "answer": "Frank Herbert",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Fourmis\" ?",
+      "answer": "Bernard Werber",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur a écrit \"Au bonheur des dames\" ?",
+      "answer": "Émile Zola",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Deuxième Sexe\" ?",
+      "answer": "Simone de Beauvoir",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel poète français a écrit \"Liberté\" ?",
+      "answer": "Paul Éluard",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"La Guerre des mondes\" ?",
+      "answer": "H.G. Wells",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Liaisons dangereuses\" ?",
+      "answer": "Choderlos de Laclos",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel écrivain a refusé le prix Nobel de littérature en 1964 ?",
+      "answer": "Jean-Paul Sartre",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Franz Kafka ?",
+      "answer": "Tchèque (ou austro-hongroise)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur a écrit \"Voyage au bout de la nuit\" ?",
+      "answer": "Louis-Ferdinand Céline",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"Crime et Châtiment\" ?",
+      "answer": "Fiodor Dostoïevski",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Raisins de la colère\" ?",
+      "answer": "John Steinbeck",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Cent ans de solitude\" ?",
+      "answer": "Gabriel Garcia Marquez",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Hauts de Hurlevent\" ?",
+      "answer": "Emily Brontë",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Nom de la rose\" ?",
+      "answer": "Umberto Eco",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel monstre de la littérature craint le feu ?",
+      "answer": "La créature de Frankenstein",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"En attendant Godot\" ?",
+      "answer": "Samuel Beckett",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Lolita\" ?",
+      "answer": "Vladimir Nabokov",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"La Divine Comédie\" ?",
+      "answer": "Dante",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Le Parfum\" ?",
+      "answer": "Patrick Süskind",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"L'Attrape-cœurs\" ?",
+      "answer": "J.D. Salinger",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"La Nuit des temps\" ?",
+      "answer": "René Barjavel",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"La Promesse de l'aube\" ?",
+      "answer": "Romain Gary",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de \"Fahrenheit 451\" ?",
+      "answer": "Ray Bradbury",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le livre le plus vendu au monde après la Bible ?",
+      "answer": "Le Petit Rouge (Mao) ou Don Quichotte (selon sources)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note pour le quiz master: Don Quichotte est souvent cité comme le roman le plus vendu.",
+      "answer": "Don Quichotte",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteure d'Agatha Raisin ?",
+      "answer": "M.C. Beaton",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel auteur français est connu pour ses fables (hors La Fontaine) ?",
+      "answer": "Jean Anouilh (ou Esope pour l'antique)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note pour le quiz master: Question piège souvent Florian ou Anouilh.",
+      "answer": "Jean-Pierre Claris de Florian",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Chevaliers de la Table Ronde\" (Chrétien de Troyes) ?",
+      "answer": "Chrétien de Troyes",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de George Sand ?",
+      "answer": "Aurore Dupin",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel écrivain a pour pseudonyme \"Boz\" ?",
+      "answer": "Charles Dickens",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit \"Les Fleurs bleues\" ?",
+      "answer": "Raymond Queneau",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel écrivain a remporté deux fois le prix Goncourt (sous un pseudo) ?",
+      "answer": "Romain Gary (Émile Ajar)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le titre original de \"L'Étranger\" en anglais ?",
+      "answer": "The Stranger",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

@@ -40,10 +40,26 @@
         <button class="btn-faux" onclick="triggerWrong()">FAUX</button>
         <div style="width: 15px;"></div>
         <button onclick="openDisplayWindow()" style="background:#555;">ÉCRAN</button>
+        <button id="btn-mode-snapshot" onclick="toggleDataMode()" style="background:#1a1a1a;border:1px solid #444;color:#888;padding:4px 10px;font-family:monospace;font-size:.75rem;cursor:pointer;border-radius:3px;" title="Basculer entre base normale et base personnalisée">MODE: <span id="mode-label-snapshot">◉ NORMAL</span></button>
     </div>
 
     <script src="mix_data.js"></script>
+    <script src="mix_data_custom.js"></script>
     <script>
+        // ── MODE DONNÉES (normal / personnalisé) ─────────────────────────
+        (function() {
+            if (localStorage.getItem('snapshot_mode') === 'custom' && Array.isArray(MIX_PHOTOS_CUSTOM)) {
+                MIX_PHOTOS.length = 0;
+                MIX_PHOTOS_CUSTOM.forEach(p => MIX_PHOTOS.push(p));
+            }
+        })();
+        function toggleDataMode() {
+            const cur = localStorage.getItem('snapshot_mode') || 'normal';
+            localStorage.setItem('snapshot_mode', cur === 'normal' ? 'custom' : 'normal');
+            location.reload();
+        }
+        // ──────────────────────────────────────────────────────────────────
+
         const channel = new BroadcastChannel('snapshot_channel');
         const sfxBreak = document.getElementById('sfx-break');
         const sfxSelected = document.getElementById('sfx-selected');
@@ -209,6 +225,16 @@
             sfxTimer.pause();
             sfxTimer.currentTime = 0;
         }
+
+        // Init mode label
+        (function() {
+            const mode = localStorage.getItem('snapshot_mode') || 'normal';
+            const lbl = document.getElementById('mode-label-snapshot');
+            const btn = document.getElementById('btn-mode-snapshot');
+            if (!lbl) return;
+            lbl.textContent = mode === 'custom' ? '◉ PERSONNALISÉ' : '◉ NORMAL';
+            if (mode === 'custom') { btn.style.color = '#d4af37'; btn.style.borderColor = '#d4af37'; }
+        })();
     </script>
 </body>
 </html>

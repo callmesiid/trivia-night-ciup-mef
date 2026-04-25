@@ -117,6 +117,10 @@
     <aside style="display: flex; flex-direction: column; gap: 10px;">
         
         <button class="btn-action" onclick="window.open('ecran_jeu.html', 'EcranJeu', 'width=1280,height=720')">📺 OUVRIR ÉCRAN JEU</button>
+        <button id="btn-mode-rt" onclick="(function(){const c=localStorage.getItem('rt_mode')||'normal';localStorage.setItem('rt_mode',c==='normal'?'custom':'normal');document.getElementById('mode-label-rt').textContent=localStorage.getItem('rt_mode')==='custom'?'◉ PERSONNALISÉ':'◉ NORMAL';document.getElementById('btn-mode-rt').style.color=localStorage.getItem('rt_mode')==='custom'?'#d4af37':'#888';document.getElementById('btn-mode-rt').style.borderColor=localStorage.getItem('rt_mode')==='custom'?'#d4af37':'#444';alert('Rechargez l\'écran de jeu pour appliquer le changement.');})();" style="width:100%;margin-top:4px;background:#1a1a1a;border:1px solid #444;color:#888;padding:5px;font-family:'Bebas Neue';font-size:.82rem;letter-spacing:1px;cursor:pointer;border-radius:3px;" title="Basculer entre base normale et base personnalisée">MODE: <span id="mode-label-rt">◉ NORMAL</span></button>
+        <script>
+        (function(){ const m=localStorage.getItem('rt_mode')||'normal'; const l=document.getElementById('mode-label-rt'); const b=document.getElementById('btn-mode-rt'); if(!l)return; l.textContent=m==='custom'?'◉ PERSONNALISÉ':'◉ NORMAL'; if(m==='custom'){b.style.color='#d4af37';b.style.borderColor='#d4af37';} })();
+        </script>
 
         <div class="panel">
             <div id="overlay-config" class="disabled-overlay">Validez les équipes</div>

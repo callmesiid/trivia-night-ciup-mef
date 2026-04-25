@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>MEF Trivia — Gestionnaire de données</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:       #0d0d0d;
+  --bg2:      #1a1a1a;
+  --bg3:      #252525;
+  --border:   #333;
+  --gold:     #d4af37;
+  --green:    #27ae60;
+  --red:      #e74c3c;
+  --blue:     #3498db;
+  --purple:   #8e44ad;
+  --text:     #e0e0e0;
+  --muted:    #777;
+  --sidebar-w: 240px;
+}
+html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font-family: 'Roboto Mono', monospace; font-size: 13px; }
+
+/* ── HEADER ── */
+#header {
+  height: 56px; background: #000; border-bottom: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between; padding: 0 20px;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+}
+#header h1 { font-family: 'Bebas Neue'; font-size: 1.4rem; color: var(--gold); letter-spacing: 2px; }
+#connect-zone { display: flex; align-items: center; gap: 12px; }
+#btn-connect {
+  font-family: 'Bebas Neue'; font-size: 1rem; letter-spacing: 1px;
+  background: var(--purple); color: #fff; border: none; padding: 8px 18px;
+  border-radius: 4px; cursor: pointer;
+}
+#btn-connect:hover { background: #7d3c98; }
+#status-dot { width: 10px; height: 10px; border-radius: 50%; background: #555; }
+#status-dot.connected { background: var(--green); box-shadow: 0 0 6px var(--green); }
+#status-text { color: var(--muted); font-size: 0.8rem; }
+
+/* ── LAYOUT ── */
+#layout {
+  display: flex; height: calc(100vh - 56px); margin-top: 56px;
+}
+
+/* ── SIDEBAR ── */
+#sidebar {
+  width: var(--sidebar-w); min-width: var(--sidebar-w);
+  background: var(--bg2); border-right: 1px solid var(--border);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+#game-tabs { border-bottom: 1px solid var(--border); }
+.game-tab {
+  display: block; width: 100%; padding: 11px 16px;
+  font-family: 'Bebas Neue'; font-size: 1rem; letter-spacing: 1px;
+  background: transparent; color: var(--muted); border: none;
+  border-left: 3px solid transparent; cursor: pointer; text-align: left;
+  transition: all 0.15s;
+}
+.game-tab:hover { background: var(--bg3); color: var(--text); }
+.game-tab.active { color: var(--gold); border-left-color: var(--gold); background: var(--bg3); }
+
+#theme-list { flex: 1; overflow-y: auto; padding: 8px 0; }
+.theme-entry {
+  padding: 8px 16px; cursor: pointer; display: flex; justify-content: space-between;
+  align-items: center; border-left: 3px solid transparent; transition: all 0.15s;
+}
+.theme-entry:hover { background: var(--bg3); }
+.theme-entry.active { background: var(--bg3); border-left-color: var(--blue); color: #fff; }
+.theme-name { font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; }
+.theme-count { color: var(--muted); font-size: 0.72rem; margin-left: 6px; flex-shrink: 0; }
+
+#add-theme-btn {
+  margin: 8px 12px; width: calc(100% - 24px); padding: 8px;
+  font-family: 'Bebas Neue'; font-size: 0.9rem; letter-spacing: 1px;
+  background: var(--bg3); color: var(--green); border: 1px dashed var(--green);
+  border-radius: 4px; cursor: pointer;
+}
+#add-theme-btn:hover { background: rgba(39,174,96,0.1); }
+
+/* ── MAIN CONTENT ── */
+#main {
+  flex: 1; overflow-y: auto; padding: 20px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+#welcome {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  color: var(--muted); text-align: center; gap: 12px;
+}
+#welcome h2 { font-family: 'Anton'; font-size: 2rem; color: var(--border); }
+
+/* ── CONTENT HEADER ── */
+#content-header {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+#content-title { font-family: 'Bebas Neue'; font-size: 1.6rem; color: var(--gold); flex: 1; }
+#content-subtitle { color: var(--muted); font-size: 0.78rem; }
+.filter-bar { display: flex; gap: 6px; flex-wrap: wrap; }
+.filter-btn {
+  padding: 4px 10px; font-size: 0.75rem; border: 1px solid var(--border);
+  background: var(--bg3); color: var(--muted); border-radius: 3px; cursor: pointer;
+}
+.filter-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+.search-input {
+  background: var(--bg3); border: 1px solid var(--border); color: var(--text);
+  padding: 4px 10px; border-radius: 3px; font-family: 'Roboto Mono'; font-size: 0.78rem;
+  width: 180px;
+}
+.search-input:focus { outline: none; border-color: var(--blue); }
+
+/* ── STATS BAR ── */
+#stats-bar {
+  display: flex; gap: 16px; padding: 8px 12px;
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 4px;
+  font-size: 0.75rem;
+}
+.stat-item { display: flex; gap: 6px; align-items: center; }
+.stat-dot { width: 8px; height: 8px; border-radius: 50%; }
+.stat-dot.green { background: var(--green); }
+.stat-dot.red { background: var(--red); }
+.stat-dot.blue { background: var(--blue); }
+
+/* ── QUESTION GRID ── */
+#question-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 10px;
+}
+.q-card {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px; display: flex; flex-direction: column; gap: 8px;
+  transition: border-color 0.15s;
+}
+.q-card:hover { border-color: #555; }
+.q-card.validated { border-left: 3px solid var(--green); }
+.q-card.invalidated { border-left: 3px solid var(--red); opacity: 0.5; }
+.q-card-top { display: flex; align-items: center; gap: 8px; }
+.type-badge {
+  font-size: 0.65rem; padding: 2px 6px; border-radius: 3px; font-family: 'Bebas Neue';
+  letter-spacing: 1px; flex-shrink: 0;
+}
+.type-badge.text   { background: rgba(52,152,219,0.2); color: var(--blue); border: 1px solid var(--blue); }
+.type-badge.image  { background: rgba(155,89,182,0.2); color: #b87fe0; border: 1px solid #b87fe0; }
+.type-badge.sound  { background: rgba(230,126,34,0.2); color: #e67e22; border: 1px solid #e67e22; }
+.diff-dots { display: flex; gap: 3px; margin-left: auto; flex-shrink: 0; }
+.diff-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border); }
+.diff-dot.filled { background: var(--gold); }
+.q-question { font-size: 0.8rem; color: var(--text); line-height: 1.35; }
+.q-answer { font-size: 0.78rem; color: var(--green); font-weight: 500; }
+.q-file { font-size: 0.68rem; color: var(--muted); word-break: break-all; }
+.q-actions { display: flex; gap: 6px; margin-top: 2px; }
+.q-btn {
+  flex: 1; padding: 5px 8px; font-size: 0.72rem; border: 1px solid var(--border);
+  background: var(--bg3); color: var(--text); border-radius: 3px; cursor: pointer;
+  font-family: 'Roboto Mono';
+}
+.q-btn:hover { background: #333; }
+.q-btn.validate-btn.active { background: rgba(39,174,96,0.2); color: var(--green); border-color: var(--green); }
+.q-btn.delete-btn:hover { background: rgba(231,76,60,0.2); color: var(--red); border-color: var(--red); }
+.q-btn.edit-btn:hover { background: rgba(52,152,219,0.2); color: var(--blue); border-color: var(--blue); }
+
+/* ── ADD QUESTION FORM ── */
+#add-section {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 6px; padding: 16px;
+}
+#add-section h3 {
+  font-family: 'Bebas Neue'; font-size: 1.1rem; color: var(--text); margin-bottom: 12px;
+  border-bottom: 1px solid var(--border); padding-bottom: 8px;
+}
+.form-row { display: flex; gap: 10px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 10px; }
+.form-group { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 150px; }
+.form-group label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.form-input, .form-select, .form-textarea {
+  background: var(--bg3); border: 1px solid var(--border); color: var(--text);
+  padding: 7px 10px; border-radius: 3px; font-family: 'Roboto Mono'; font-size: 0.82rem;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  outline: none; border-color: var(--blue);
+}
+.form-textarea { resize: vertical; min-height: 60px; }
+.form-select { cursor: pointer; }
+.diff-selector { display: flex; gap: 6px; }
+.diff-option {
+  width: 32px; height: 32px; border-radius: 4px; border: 1px solid var(--border);
+  background: var(--bg3); color: var(--muted); cursor: pointer;
+  display: flex; align-items: center; justify-content: center; font-size: 0.82rem;
+}
+.diff-option.selected { background: var(--gold); color: #000; border-color: var(--gold); font-weight: bold; }
+.type-selector { display: flex; gap: 6px; }
+.type-option {
+  padding: 6px 12px; border-radius: 3px; border: 1px solid var(--border);
+  background: var(--bg3); color: var(--muted); cursor: pointer; font-size: 0.8rem;
+}
+.type-option.selected.text   { background: rgba(52,152,219,0.2); color: var(--blue); border-color: var(--blue); }
+.type-option.selected.image  { background: rgba(155,89,182,0.2); color: #b87fe0; border-color: #b87fe0; }
+.type-option.selected.sound  { background: rgba(230,126,34,0.2); color: #e67e22; border-color: #e67e22; }
+.btn-add {
+  padding: 9px 20px; font-family: 'Bebas Neue'; font-size: 1rem; letter-spacing: 1px;
+  background: var(--green); color: #fff; border: none; border-radius: 4px; cursor: pointer;
+}
+.btn-add:hover { background: #219a52; }
+.btn-add:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── SURENCHÈRE ── */
+#answers-container {
+  display: flex; flex-wrap: wrap; gap: 7px; padding: 12px;
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 6px;
+  min-height: 80px;
+}
+.answer-tag {
+  display: flex; align-items: center; gap: 5px; padding: 5px 10px;
+  border-radius: 20px; border: 1px solid var(--border); font-size: 0.78rem; cursor: pointer;
+  background: var(--bg3); transition: all 0.15s;
+}
+.answer-tag.validated { background: rgba(39,174,96,0.15); border-color: var(--green); color: #7be0a0; }
+.answer-tag.invalidated { opacity: 0.35; text-decoration: line-through; }
+.answer-tag-del {
+  background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem;
+  line-height: 1; padding: 0 2px;
+}
+.answer-tag-del:hover { color: var(--red); }
+#answer-add-row { display: flex; gap: 8px; align-items: center; }
+#new-answer-input { flex: 1; }
+#bulk-import-area { width: 100%; min-height: 80px; }
+
+/* ── SNAPSHOT ── */
+#photo-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px;
+}
+.photo-card {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 6px;
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.photo-card.invalidated { opacity: 0.4; }
+.photo-thumb {
+  width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--bg3);
+  display: block; font-size: 0.7rem; color: var(--muted);
+}
+.photo-name-input {
+  background: transparent; border: none; border-top: 1px solid var(--border);
+  padding: 6px 8px; color: var(--text); font-family: 'Roboto Mono'; font-size: 0.75rem;
+  width: 100%;
+}
+.photo-name-input:focus { outline: none; background: var(--bg3); }
+.photo-actions { display: flex; border-top: 1px solid var(--border); }
+.photo-btn {
+  flex: 1; padding: 5px; font-size: 0.7rem; background: none; border: none;
+  color: var(--muted); cursor: pointer;
+}
+.photo-btn:hover { background: var(--bg3); color: var(--text); }
+.photo-btn.active { color: var(--green); }
+
+#drop-zone {
+  border: 2px dashed var(--border); border-radius: 8px; padding: 30px;
+  text-align: center; color: var(--muted); cursor: pointer; transition: all 0.2s;
+}
+#drop-zone:hover, #drop-zone.drag-over { border-color: var(--gold); color: var(--gold); background: rgba(212,175,55,0.05); }
+#drop-zone p { font-size: 0.85rem; margin-top: 8px; }
+
+/* ── EDIT MODAL ── */
+#modal-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 200;
+  align-items: center; justify-content: center;
+}
+#modal-overlay.open { display: flex; }
+#modal {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 24px; width: 480px; max-width: 95vw; display: flex; flex-direction: column; gap: 14px;
+}
+#modal h3 { font-family: 'Bebas Neue'; font-size: 1.2rem; color: var(--gold); }
+.modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
+.btn-save { padding: 8px 20px; font-family: 'Bebas Neue'; font-size: 0.95rem; background: var(--green); color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.btn-cancel { padding: 8px 16px; font-family: 'Bebas Neue'; font-size: 0.95rem; background: var(--bg3); color: var(--muted); border: 1px solid var(--border); border-radius: 4px; cursor: pointer; }
+
+/* ── TOAST ── */
+#toast {
+  position: fixed; bottom: 20px; right: 20px; padding: 10px 18px;
+  background: var(--bg2); border: 1px solid var(--green); border-radius: 4px;
+  color: var(--green); font-size: 0.82rem; opacity: 0; transition: opacity 0.3s;
+  z-index: 300; pointer-events: none;
+}
+#toast.show { opacity: 1; }
+#toast.error { border-color: var(--red); color: var(--red); }
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #666; }
+
+/* ── NO-API NOTICE ── */
+#no-api-notice {
+  background: rgba(231,76,60,0.1); border: 1px solid var(--red); border-radius: 4px;
+  padding: 8px 14px; font-size: 0.78rem; color: var(--red); display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header">
+  <h1>MEF TRIVIA — GESTIONNAIRE DE DONNÉES</h1>
+  <div id="connect-zone">
+    <div id="no-api-notice">Navigateur non compatible (utilisez Chrome/Edge)</div>
+    <button id="btn-connect">📁 Connecter le dossier du projet</button>
+    <div id="status-dot"></div>
+    <span id="status-text">Non connecté</span>
+  </div>
+</div>
+
+<!-- LAYOUT -->
+<div id="layout">
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar">
+    <div id="game-tabs">
+      <button class="game-tab active" data-game="risque_tout">LE RISQUE TOUT</button>
+      <button class="game-tab" data-game="wagon">LE WAGON</button>
+      <button class="game-tab" data-game="surenchere">LA SURENCHÈRE</button>
+      <button class="game-tab" data-game="snapshot">SNAPSHOT</button>
+    </div>
+    <div id="theme-list"></div>
+    <button id="add-theme-btn" style="display:none">+ NOUVEAU THÈME</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main id="main">
+    <div id="welcome">
+      <h2>📁</h2>
+      <p>Connectez le dossier du projet pour commencer</p>
+      <p style="font-size:0.75rem">Sélectionnez la racine du repo (le dossier contenant data/)</p>
+    </div>
+  </main>
+
+</div>
+
+<!-- EDIT MODAL -->
+<div id="modal-overlay">
+  <div id="modal">
+    <h3>Modifier la question</h3>
+    <div class="form-group">
+      <label>Question</label>
+      <textarea id="modal-question" class="form-textarea form-input"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Réponse</label>
+      <input id="modal-answer" class="form-input" type="text">
+    </div>
+    <div class="form-group">
+      <label>Difficulté</label>
+      <div class="diff-selector" id="modal-diff-selector">
+        <div class="diff-option selected" data-diff="1">1</div>
+        <div class="diff-option" data-diff="2">2</div>
+        <div class="diff-option" data-diff="3">3</div>
+        <div class="diff-option" data-diff="4">4</div>
+        <div class="diff-option" data-diff="5">5</div>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" id="modal-cancel">Annuler</button>
+      <button class="btn-save" id="modal-save">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script>
+// ════════════════════════════════════════════════════════════════
+// STATE
+// ════════════════════════════════════════════════════════════════
+let rootHandle = null;
+let currentGame = 'risque_tout';
+let currentThemeId = null;
+let gameData = { risque_tout: {}, wagon: { themes: [], bonuses: [], malus: [] }, surenchere: {}, snapshot: { photos: [] } };
+let dirty = new Set();
+
+// Filter state
+let filterType = 'all';
+let filterValidated = 'all';
+let searchQuery = '';
+
+// Modal state
+let editingCard = null; // { game, themeId, questionIndex }
+
+// ════════════════════════════════════════════════════════════════
+// FILE SYSTEM ACCESS API
+// ════════════════════════════════════════════════════════════════
+async function connectFolder() {
+  if (!window.showDirectoryPicker) {
+    document.getElementById('no-api-notice').style.display = 'block';
+    return;
+  }
+  try {
+    rootHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+    document.getElementById('status-dot').classList.add('connected');
+    document.getElementById('status-text').textContent = rootHandle.name;
+    document.getElementById('btn-connect').textContent = '🔄 Rechanger de dossier';
+    await loadAllData();
+    renderSidebar();
+    renderMain();
+  } catch (e) {
+    if (e.name !== 'AbortError') showToast('Erreur connexion dossier', true);
+  }
+}
+
+async function getDirHandle(path) {
+  let h = rootHandle;
+  for (const part of path.split('/').filter(Boolean)) {
+    h = await h.getDirectoryHandle(part, { create: true });
+  }
+  return h;
+}
+
+async function readJson(filePath) {
+  const parts = filePath.split('/');
+  let h = rootHandle;
+  for (const p of parts.slice(0, -1)) h = await h.getDirectoryHandle(p);
+  const fh = await h.getFileHandle(parts[parts.length - 1]);
+  const file = await fh.getFile();
+  return JSON.parse(await file.text());
+}
+
+async function writeJson(filePath, data) {
+  const parts = filePath.split('/');
+  let h = rootHandle;
+  for (const p of parts.slice(0, -1)) h = await h.getDirectoryHandle(p, { create: true });
+  const fh = await h.getFileHandle(parts[parts.length - 1], { create: true });
+  const w = await fh.createWritable();
+  await w.write(JSON.stringify(data, null, 2));
+  await w.close();
+  dirty.delete(filePath);
+}
+
+// Save a file given a game + themeId
+async function saveTheme(game, themeId) {
+  try {
+    if (game === 'risque_tout') {
+      await writeJson(`data/risque_tout/${themeId}.json`, gameData.risque_tout[themeId]);
+    } else if (game === 'wagon') {
+      await writeJson('data/wagon/themes.json', gameData.wagon.themes);
+    } else if (game === 'surenchere') {
+      await writeJson(`data/surenchere/${themeId}.json`, gameData.surenchere[themeId]);
+    } else if (game === 'snapshot') {
+      await writeJson('data/snapshot/photos.json', gameData.snapshot);
+    }
+    showToast('Sauvegardé ✓');
+  } catch (e) {
+    showToast('Erreur sauvegarde : ' + e.message, true);
+  }
+}
+
+// ════════════════════════════════════════════════════════════════
+// LOAD DATA
+// ════════════════════════════════════════════════════════════════
+async function loadAllData() {
+  await Promise.all([
+    loadRisqueTout(),
+    loadWagon(),
+    loadSurenchere(),
+    loadSnapshot()
+  ]);
+}
+
+async function loadRisqueTout() {
+  try {
+    const dir = await rootHandle.getDirectoryHandle('data').then(d => d.getDirectoryHandle('risque_tout'));
+    for await (const [name, handle] of dir.entries()) {
+      if (name.endsWith('.json') && !name.startsWith('custom_')) {
+        try {
+          const file = await handle.getFile();
+          const data = JSON.parse(await file.text());
+          gameData.risque_tout[data.id] = data;
+        } catch {}
+      }
+    }
+  } catch {}
+}
+
+async function loadWagon() {
+  try {
+    const dir = await rootHandle.getDirectoryHandle('data').then(d => d.getDirectoryHandle('wagon'));
+    for (const fname of ['themes.json', 'bonuses.json', 'malus.json']) {
+      try {
+        const fh = await dir.getFileHandle(fname);
+        const file = await fh.getFile();
+        const key = fname.replace('.json', '');
+        gameData.wagon[key] = JSON.parse(await file.text());
+      } catch {}
+    }
+  } catch {}
+}
+
+async function loadSurenchere() {
+  try {
+    const dir = await rootHandle.getDirectoryHandle('data').then(d => d.getDirectoryHandle('surenchere'));
+    for await (const [name, handle] of dir.entries()) {
+      if (name.endsWith('.json') && !name.startsWith('custom_')) {
+        try {
+          const file = await handle.getFile();
+          const data = JSON.parse(await file.text());
+          gameData.surenchere[data.id] = data;
+        } catch {}
+      }
+    }
+  } catch {}
+}
+
+async function loadSnapshot() {
+  try {
+    const data = await readJson('data/snapshot/photos.json');
+    gameData.snapshot = data;
+  } catch {}
+}
+
+// ════════════════════════════════════════════════════════════════
+// SIDEBAR
+// ════════════════════════════════════════════════════════════════
+function renderSidebar() {
+  const list = document.getElementById('theme-list');
+  const addBtn = document.getElementById('add-theme-btn');
+  list.innerHTML = '';
+
+  if (currentGame === 'risque_tout') {
+    addBtn.style.display = 'none';
+    const themes = Object.values(gameData.risque_tout).sort((a, b) => a.label.localeCompare(b.label));
+    if (!themes.length) { list.innerHTML = '<div style="padding:12px;color:#555;font-size:.75rem">Aucune donnée. Lancez migrate.py</div>'; return; }
+    themes.forEach(t => {
+      const total = t.questions.length;
+      const val = t.questions.filter(q => q.validated).length;
+      list.appendChild(makeThemeEntry(t.id, t.label, `${val}/${total}`));
+    });
+  } else if (currentGame === 'wagon') {
+    addBtn.style.display = 'none';
+    const themes = Array.isArray(gameData.wagon.themes) ? gameData.wagon.themes : [];
+    themes.forEach(t => {
+      const total = t.questions.length;
+      const val = t.questions.filter(q => q.validated !== false).length;
+      list.appendChild(makeThemeEntry(t.id, t.name || t.id, `${val}/${total}`));
+    });
+  } else if (currentGame === 'surenchere') {
+    addBtn.style.display = 'block';
+    const themes = Object.values(gameData.surenchere).sort((a, b) => a.label.localeCompare(b.label));
+    if (!themes.length) { list.innerHTML = '<div style="padding:12px;color:#555;font-size:.75rem">Aucune donnée. Lancez migrate.py</div>'; return; }
+    themes.forEach(t => {
+      const total = t.answers.length;
+      const val = t.answers.filter(a => a.validated).length;
+      list.appendChild(makeThemeEntry(t.id, t.label, `${val}/${total}`));
+    });
+  } else if (currentGame === 'snapshot') {
+    addBtn.style.display = 'none';
+    const photos = gameData.snapshot.photos || [];
+    const val = photos.filter(p => p.validated).length;
+    const entry = makeThemeEntry('all', 'Mix & Twist', `${val}/${photos.length}`);
+    list.appendChild(entry);
+    if (!currentThemeId) { currentThemeId = 'all'; entry.classList.add('active'); }
+  }
+}
+
+function makeThemeEntry(id, label, count) {
+  const el = document.createElement('div');
+  el.className = 'theme-entry' + (currentThemeId === id ? ' active' : '');
+  el.dataset.themeId = id;
+  el.innerHTML = `<span class="theme-name">${label}</span><span class="theme-count">${count}</span>`;
+  el.addEventListener('click', () => {
+    currentThemeId = id;
+    document.querySelectorAll('.theme-entry').forEach(e => e.classList.remove('active'));
+    el.classList.add('active');
+    renderMain();
+  });
+  return el;
+}
+
+// ════════════════════════════════════════════════════════════════
+// MAIN AREA
+// ════════════════════════════════════════════════════════════════
+function renderMain() {
+  const main = document.getElementById('main');
+  if (!currentThemeId) {
+    main.innerHTML = '<div id="welcome"><h2>←</h2><p>Sélectionnez un thème</p></div>';
+    return;
+  }
+  if (currentGame === 'risque_tout' || currentGame === 'wagon') renderQAPanel();
+  else if (currentGame === 'surenchere') renderSurencherePanel();
+  else if (currentGame === 'snapshot') renderSnapshotPanel();
+}
+
+// ── Q&A PANEL (Risque Tout + Wagon) ──────────────────────────────────────────
+function getQATheme() {
+  if (currentGame === 'risque_tout') return gameData.risque_tout[currentThemeId];
+  return (gameData.wagon.themes || []).find(t => t.id === currentThemeId);
+}
+
+function getQAQuestions() {
+  const theme = getQATheme();
+  if (!theme) return [];
+  return theme.questions || [];
+}
+
+function renderQAPanel() {
+  const theme = getQATheme();
+  if (!theme) return;
+  const questions = getQAQuestions();
+
+  const filtered = questions.filter(q => {
+    if (filterType !== 'all' && q.type !== filterType) return false;
+    if (filterValidated === 'validated' && !q.validated) return false;
+    if (filterValidated === 'pending' && q.validated) return false;
+    if (searchQuery) {
+      const s = searchQuery.toLowerCase();
+      if (!q.question?.toLowerCase().includes(s) && !q.answer?.toLowerCase().includes(s)) return false;
+    }
+    return true;
+  });
+
+  const validated = questions.filter(q => q.validated).length;
+  const byType = { text: 0, image: 0, sound: 0 };
+  questions.forEach(q => { if (byType[q.type] !== undefined) byType[q.type]++; });
+
+  const label = currentGame === 'risque_tout' ? theme.label : (theme.name || theme.id);
+
+  document.getElementById('main').innerHTML = `
+    <div id="content-header">
+      <span id="content-title">${label}</span>
+      <div class="filter-bar">
+        <button class="filter-btn ${filterType==='all'?'active':''}" onclick="setFilter('type','all')">Tout</button>
+        <button class="filter-btn ${filterType==='text'?'active':''}" onclick="setFilter('type','text')">Texte</button>
+        <button class="filter-btn ${filterType==='image'?'active':''}" onclick="setFilter('type','image')">Image</button>
+        <button class="filter-btn ${filterType==='sound'?'active':''}" onclick="setFilter('type','sound')">Son</button>
+        <button class="filter-btn ${filterValidated==='all'?'active':''}" onclick="setFilter('validated','all')">Tous</button>
+        <button class="filter-btn ${filterValidated==='validated'?'active':''}" onclick="setFilter('validated','validated')">✅ Validées</button>
+        <button class="filter-btn ${filterValidated==='pending'?'active':''}" onclick="setFilter('validated','pending')">⏳ En attente</button>
+        <input class="search-input" type="text" placeholder="🔍 Rechercher..." value="${searchQuery}" oninput="setSearch(this.value)">
+      </div>
+    </div>
+    <div id="stats-bar">
+      <div class="stat-item"><div class="stat-dot green"></div>${validated}/${questions.length} validées</div>
+      <div class="stat-item"><div class="stat-dot blue"></div>${byType.text} texte</div>
+      <div class="stat-item"><div class="stat-dot" style="background:#b87fe0"></div>${byType.image} image</div>
+      <div class="stat-item"><div class="stat-dot" style="background:#e67e22"></div>${byType.sound} son</div>
+      <div class="stat-item" style="margin-left:auto;color:#777">${filtered.length} affichées</div>
+    </div>
+    <div id="question-grid">${filtered.map((q, i) => renderQuestionCard(q, questions.indexOf(q))).join('')}</div>
+    ${renderAddQForm()}
+  `;
+}
+
+function renderQuestionCard(q, idx) {
+  const diffDots = Array.from({length:5}, (_,i) => `<div class="diff-dot ${i < (q.difficulty||1) ? 'filled' : ''}"></div>`).join('');
+  const fileInfo = (q.type !== 'text' && q.file) ? `<div class="q-file">📎 ${q.file}</div>` : '';
+  return `
+    <div class="q-card ${q.validated ? 'validated' : 'invalidated'}" data-idx="${idx}">
+      <div class="q-card-top">
+        <span class="type-badge ${q.type}">${q.type}</span>
+        <div class="diff-dots">${diffDots}</div>
+      </div>
+      <div class="q-question">${escHtml(q.question || '')}</div>
+      <div class="q-answer">${escHtml(q.answer || '')}</div>
+      ${fileInfo}
+      <div class="q-actions">
+        <button class="q-btn validate-btn ${q.validated?'active':''}" onclick="toggleValidated(${idx})">
+          ${q.validated ? '✅ Validée' : '⏳ Non validée'}
+        </button>
+        <button class="q-btn edit-btn" onclick="openEditModal(${idx})">✏️ Éditer</button>
+        <button class="q-btn delete-btn" onclick="deleteQuestion(${idx})">🗑️</button>
+      </div>
+    </div>
+  `;
+}
+
+function renderAddQForm() {
+  const isWagon = currentGame === 'wagon';
+  return `
+    <div id="add-section">
+      <h3>${isWagon ? 'AJOUTER UNE QUESTION' : 'AJOUTER UNE QUESTION'}</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Type</label>
+          <div class="type-selector">
+            <div class="type-option selected text" data-type="text" onclick="selectType('text')">Texte</div>
+            <div class="type-option image" data-type="image" onclick="selectType('image')">Image</div>
+            <div class="type-option sound" data-type="sound" onclick="selectType('sound')">Son</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Difficulté</label>
+          <div class="diff-selector" id="add-diff-selector">
+            <div class="diff-option selected" data-diff="1">1</div>
+            <div class="diff-option" data-diff="2">2</div>
+            <div class="diff-option" data-diff="3">3</div>
+            <div class="diff-option" data-diff="4">4</div>
+            <div class="diff-option" data-diff="5">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group" style="min-width:100%">
+          <label>Question</label>
+          <textarea id="add-q-question" class="form-textarea form-input" placeholder="Texte de la question..."></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Réponse</label>
+          <input id="add-q-answer" class="form-input" type="text" placeholder="Réponse attendue...">
+        </div>
+        <div class="form-group" id="add-file-group" style="display:none">
+          <label>Chemin fichier (relatif au jeu)</label>
+          <input id="add-q-file" class="form-input" type="text" placeholder="Quizz/questions/theme/1/images/nom.jpg">
+        </div>
+      </div>
+      <div class="form-row">
+        <button class="btn-add" onclick="addQuestion()">+ AJOUTER</button>
+      </div>
+    </div>
+  `;
+}
+
+// ── SURENCHÈRE PANEL ──────────────────────────────────────────────────────────
+function renderSurencherePanel() {
+  const theme = gameData.surenchere[currentThemeId];
+  if (!theme) return;
+  const answers = theme.answers || [];
+  const validated = answers.filter(a => a.validated).length;
+
+  document.getElementById('main').innerHTML = `
+    <div id="content-header">
+      <span id="content-title">${escHtml(theme.label)}</span>
+      <span id="content-subtitle">${validated}/${answers.length} réponses validées</span>
+    </div>
+    <div id="stats-bar">
+      <div class="stat-item"><div class="stat-dot green"></div>${validated} validées</div>
+      <div class="stat-item"><div class="stat-dot red"></div>${answers.length - validated} non validées</div>
+      <div class="stat-item" style="color:#777;font-size:.72rem;margin-left:auto">Cliquez sur un tag pour valider/invalider</div>
+    </div>
+    <div id="answers-container">
+      ${answers.map((a, i) => `
+        <div class="answer-tag ${a.validated?'validated':'invalidated'}" onclick="toggleAnswer(${i})">
+          ${escHtml(a.value)}
+          <button class="answer-tag-del" onclick="event.stopPropagation();deleteAnswer(${i})">×</button>
+        </div>
+      `).join('')}
+    </div>
+    <div id="add-section">
+      <h3>AJOUTER DES RÉPONSES</h3>
+      <div class="answer-add-row form-row">
+        <div class="form-group" style="flex:2">
+          <label>Nouvelle réponse</label>
+          <input id="new-answer-input" class="form-input" type="text" placeholder="Ex: Maroc" onkeydown="if(event.key==='Enter')addAnswer()">
+        </div>
+        <div class="form-group" style="flex:0;align-self:flex-end">
+          <button class="btn-add" onclick="addAnswer()">+ AJOUTER</button>
+        </div>
+      </div>
+      <div class="form-row" style="flex-direction:column;gap:6px">
+        <label style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Import en masse (une réponse par ligne)</label>
+        <textarea id="bulk-import-area" class="form-textarea form-input bulk-import-area" placeholder="Réponse 1&#10;Réponse 2&#10;Réponse 3..."></textarea>
+        <button class="btn-add" style="align-self:flex-start;background:var(--blue)" onclick="bulkImport()">⬆ IMPORTER</button>
+      </div>
+    </div>
+  `;
+}
+
+// ── SNAPSHOT PANEL ────────────────────────────────────────────────────────────
+function renderSnapshotPanel() {
+  const photos = gameData.snapshot.photos || [];
+  const validated = photos.filter(p => p.validated).length;
+
+  document.getElementById('main').innerHTML = `
+    <div id="content-header">
+      <span id="content-title">MIX & TWIST</span>
+      <div class="filter-bar">
+        <button class="filter-btn ${filterValidated==='all'?'active':''}" onclick="setFilter('validated','all')">Toutes</button>
+        <button class="filter-btn ${filterValidated==='validated'?'active':''}" onclick="setFilter('validated','validated')">✅ Validées</button>
+        <button class="filter-btn ${filterValidated==='pending'?'active':''}" onclick="setFilter('validated','pending')">⏳ En attente</button>
+        <input class="search-input" type="text" placeholder="🔍 Rechercher..." value="${searchQuery}" oninput="setSearch(this.value)">
+      </div>
+    </div>
+    <div id="stats-bar">
+      <div class="stat-item"><div class="stat-dot green"></div>${validated}/${photos.length} validées</div>
+    </div>
+    <div id="drop-zone" onclick="triggerPhotoUpload()" ondragover="dragOver(event)" ondragleave="dragLeave(event)" ondrop="dropPhotos(event)">
+      <div style="font-size:2rem">🖼️</div>
+      <p>Glissez des images ici ou cliquez pour en ajouter</p>
+      <p style="font-size:.7rem;margin-top:4px">JPG, PNG, WEBP, GIF</p>
+    </div>
+    <input type="file" id="photo-file-input" multiple accept="image/*" style="display:none" onchange="handlePhotoFiles(this.files)">
+    <div id="photo-grid">
+      ${photos.filter(p => {
+        if (filterValidated === 'validated' && !p.validated) return false;
+        if (filterValidated === 'pending' && p.validated) return false;
+        if (searchQuery && !p.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+        return true;
+      }).map((p, i) => {
+        const realIdx = photos.indexOf(p);
+        return `
+          <div class="photo-card ${p.validated?'':'invalidated'}" data-idx="${realIdx}">
+            <div class="photo-thumb" style="display:flex;align-items:center;justify-content:center;padding:8px;font-size:.65rem;color:#555">${escHtml(p.file)}</div>
+            <input class="photo-name-input" type="text" value="${escHtml(p.name)}" onchange="updatePhotoName(${realIdx}, this.value)" onblur="saveTheme('snapshot', 'all')">
+            <div class="photo-actions">
+              <button class="photo-btn ${p.validated?'active':''}" onclick="togglePhoto(${realIdx})">${p.validated?'✅':' ⏳'}</button>
+              <button class="photo-btn" onclick="deletePhoto(${realIdx})" style="color:var(--muted)">🗑️</button>
+            </div>
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+}
+
+// ════════════════════════════════════════════════════════════════
+// ACTIONS — Q&A
+// ════════════════════════════════════════════════════════════════
+function getQAThemeObj() {
+  if (currentGame === 'risque_tout') return gameData.risque_tout[currentThemeId];
+  return (gameData.wagon.themes || []).find(t => t.id === currentThemeId);
+}
+
+function toggleValidated(idx) {
+  const theme = getQAThemeObj();
+  if (!theme) return;
+  theme.questions[idx].validated = !theme.questions[idx].validated;
+  saveTheme(currentGame, currentThemeId);
+  renderQAPanel();
+  renderSidebar();
+}
+
+function deleteQuestion(idx) {
+  const theme = getQAThemeObj();
+  if (!theme) return;
+  if (!confirm('Supprimer cette question ?')) return;
+  theme.questions.splice(idx, 1);
+  saveTheme(currentGame, currentThemeId);
+  renderQAPanel();
+  renderSidebar();
+}
+
+// Selected add-type
+let addType = 'text';
+let addDiff = 1;
+
+function selectType(type) {
+  addType = type;
+  document.querySelectorAll('.type-option').forEach(el => {
+    el.className = `type-option ${el.dataset.type === type ? 'selected ' + type : ''}`;
+  });
+  const fileGroup = document.getElementById('add-file-group');
+  if (fileGroup) fileGroup.style.display = type !== 'text' ? 'flex' : 'none';
+}
+
+document.addEventListener('click', e => {
+  if (e.target.closest('#add-diff-selector')) {
+    const opt = e.target.closest('.diff-option');
+    if (!opt) return;
+    addDiff = parseInt(opt.dataset.diff);
+    document.querySelectorAll('#add-diff-selector .diff-option').forEach(el => {
+      el.classList.toggle('selected', el.dataset.diff === opt.dataset.diff);
+    });
+  }
+  if (e.target.closest('#modal-diff-selector')) {
+    const opt = e.target.closest('.diff-option');
+    if (!opt) return;
+    document.querySelectorAll('#modal-diff-selector .diff-option').forEach(el => {
+      el.classList.toggle('selected', el.dataset.diff === opt.dataset.diff);
+    });
+  }
+});
+
+function addQuestion() {
+  const theme = getQAThemeObj();
+  if (!theme) return;
+  const q = document.getElementById('add-q-question')?.value.trim();
+  const a = document.getElementById('add-q-answer')?.value.trim();
+  const file = document.getElementById('add-q-file')?.value.trim();
+  if (!q || !a) { showToast('Question et réponse obligatoires', true); return; }
+  const newQ = { type: addType, question: q, answer: a, difficulty: addDiff, validated: true };
+  if (addType !== 'text' && file) newQ.file = file;
+  theme.questions.push(newQ);
+  saveTheme(currentGame, currentThemeId);
+  document.getElementById('add-q-question').value = '';
+  document.getElementById('add-q-answer').value = '';
+  if (document.getElementById('add-q-file')) document.getElementById('add-q-file').value = '';
+  renderQAPanel();
+  renderSidebar();
+}
+
+// ════════════════════════════════════════════════════════════════
+// EDIT MODAL
+// ════════════════════════════════════════════════════════════════
+function openEditModal(idx) {
+  const theme = getQAThemeObj();
+  if (!theme) return;
+  const q = theme.questions[idx];
+  editingCard = idx;
+  document.getElementById('modal-question').value = q.question || '';
+  document.getElementById('modal-answer').value = q.answer || '';
+  document.querySelectorAll('#modal-diff-selector .diff-option').forEach(el => {
+    el.classList.toggle('selected', parseInt(el.dataset.diff) === (q.difficulty || 1));
+  });
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+document.getElementById('modal-cancel').onclick = () => document.getElementById('modal-overlay').classList.remove('open');
+document.getElementById('modal-save').onclick = () => {
+  if (editingCard === null) return;
+  const theme = getQAThemeObj();
+  if (!theme) return;
+  const diff = parseInt(document.querySelector('#modal-diff-selector .diff-option.selected')?.dataset.diff || '1');
+  theme.questions[editingCard].question = document.getElementById('modal-question').value.trim();
+  theme.questions[editingCard].answer = document.getElementById('modal-answer').value.trim();
+  theme.questions[editingCard].difficulty = diff;
+  saveTheme(currentGame, currentThemeId);
+  document.getElementById('modal-overlay').classList.remove('open');
+  renderQAPanel();
+};
+
+// ════════════════════════════════════════════════════════════════
+// ACTIONS — SURENCHÈRE
+// ════════════════════════════════════════════════════════════════
+function toggleAnswer(idx) {
+  const theme = gameData.surenchere[currentThemeId];
+  if (!theme) return;
+  theme.answers[idx].validated = !theme.answers[idx].validated;
+  saveTheme('surenchere', currentThemeId);
+  renderSurencherePanel();
+  renderSidebar();
+}
+
+function deleteAnswer(idx) {
+  const theme = gameData.surenchere[currentThemeId];
+  if (!theme) return;
+  theme.answers.splice(idx, 1);
+  saveTheme('surenchere', currentThemeId);
+  renderSurencherePanel();
+  renderSidebar();
+}
+
+function addAnswer() {
+  const input = document.getElementById('new-answer-input');
+  if (!input) return;
+  const val = input.value.trim();
+  if (!val) return;
+  const theme = gameData.surenchere[currentThemeId];
+  if (!theme) return;
+  theme.answers.push({ value: val, validated: true });
+  saveTheme('surenchere', currentThemeId);
+  input.value = '';
+  renderSurencherePanel();
+  renderSidebar();
+}
+
+function bulkImport() {
+  const area = document.getElementById('bulk-import-area');
+  if (!area) return;
+  const lines = area.value.split('\n').map(l => l.trim()).filter(Boolean);
+  if (!lines.length) return;
+  const theme = gameData.surenchere[currentThemeId];
+  if (!theme) return;
+  const existing = new Set(theme.answers.map(a => a.value.toLowerCase()));
+  let added = 0;
+  lines.forEach(v => {
+    if (!existing.has(v.toLowerCase())) { theme.answers.push({ value: v, validated: true }); added++; }
+  });
+  saveTheme('surenchere', currentThemeId);
+  area.value = '';
+  showToast(`${added} réponse(s) ajoutée(s)`);
+  renderSurencherePanel();
+  renderSidebar();
+}
+
+// ── ADD THEME (Surenchère) ────────────────────────────────────────────────────
+document.getElementById('add-theme-btn').onclick = () => {
+  const id = prompt('ID du thème (ex: mes_capitales, sans espaces, sans accents)');
+  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide. Utilisez uniquement a-z, 0-9, _'); return; }
+  if (gameData.surenchere[id]) { alert('Ce thème existe déjà'); return; }
+  const label = prompt('Nom affiché (ex: Capitales d\'Asie)');
+  if (!label) return;
+  const prompt2 = prompt('Question (ex: Citez des capitales d\'Asie)');
+  if (!prompt2) return;
+  gameData.surenchere[id] = {
+    id, label, icon: 'icons/geographie.png',
+    prompt: prompt2, answers: []
+  };
+  currentThemeId = id;
+  saveTheme('surenchere', id);
+  renderSidebar();
+  renderMain();
+};
+
+// ════════════════════════════════════════════════════════════════
+// ACTIONS — SNAPSHOT
+// ════════════════════════════════════════════════════════════════
+function togglePhoto(idx) {
+  const p = (gameData.snapshot.photos || [])[idx];
+  if (!p) return;
+  p.validated = !p.validated;
+  saveTheme('snapshot', 'all');
+  renderSnapshotPanel();
+  renderSidebar();
+}
+
+function deletePhoto(idx) {
+  if (!confirm('Supprimer cette photo ?')) return;
+  gameData.snapshot.photos.splice(idx, 1);
+  saveTheme('snapshot', 'all');
+  renderSnapshotPanel();
+  renderSidebar();
+}
+
+function updatePhotoName(idx, val) {
+  if (gameData.snapshot.photos[idx]) gameData.snapshot.photos[idx].name = val;
+}
+
+function triggerPhotoUpload() { document.getElementById('photo-file-input').click(); }
+
+function handlePhotoFiles(files) {
+  Array.from(files).forEach(file => {
+    const ext = file.name.split('.').pop().toLowerCase();
+    if (!['jpg','jpeg','png','webp','gif'].includes(ext)) return;
+    const cleanName = file.name.replace(/\.[^.]+$/, '').replace(/_/g,' ').replace(/-/g,' ')
+      .replace(/\b\w/g, c => c.toUpperCase());
+    gameData.snapshot.photos.push({
+      file: `Mix & Twist/${file.name}`,
+      name: cleanName,
+      validated: false
+    });
+  });
+  saveTheme('snapshot', 'all');
+  renderSnapshotPanel();
+  renderSidebar();
+  showToast(`${files.length} photo(s) ajoutée(s) — pensez à copier les fichiers dans le dossier Mix & Twist/`);
+}
+
+function dragOver(e) { e.preventDefault(); document.getElementById('drop-zone').classList.add('drag-over'); }
+function dragLeave(e) { document.getElementById('drop-zone').classList.remove('drag-over'); }
+function dropPhotos(e) {
+  e.preventDefault();
+  document.getElementById('drop-zone').classList.remove('drag-over');
+  handlePhotoFiles(e.dataTransfer.files);
+}
+
+// ════════════════════════════════════════════════════════════════
+// FILTERS
+// ════════════════════════════════════════════════════════════════
+function setFilter(key, val) {
+  if (key === 'type') filterType = val;
+  if (key === 'validated') filterValidated = val;
+  renderMain();
+}
+function setSearch(val) { searchQuery = val; renderMain(); }
+
+// ════════════════════════════════════════════════════════════════
+// GAME TABS
+// ════════════════════════════════════════════════════════════════
+document.querySelectorAll('.game-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    currentGame = btn.dataset.game;
+    currentThemeId = null;
+    filterType = 'all'; filterValidated = 'all'; searchQuery = '';
+    document.querySelectorAll('.game-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (rootHandle) { renderSidebar(); renderMain(); }
+  });
+});
+
+// ════════════════════════════════════════════════════════════════
+// UTILS
+// ════════════════════════════════════════════════════════════════
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+let toastTimer;
+function showToast(msg, isError = false) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = 'show' + (isError ? ' error' : '');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.className = '', 2500);
+}
+
+// ════════════════════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════════════════════
+document.getElementById('btn-connect').addEventListener('click', connectFolder);
+
+if (!window.showDirectoryPicker) {
+  document.getElementById('no-api-notice').style.display = 'block';
+  document.getElementById('btn-connect').disabled = true;
+}
+</script>
+</body>
+</html>

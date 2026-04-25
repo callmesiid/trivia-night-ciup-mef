@@ -1,0 +1,2338 @@
+{
+  "id": "annees_2000",
+  "label": "Années 2000",
+  "icon": "icons/annee_2000.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Quelle monnaie fiduciaire est entrée en circulation en France en 2002 ?",
+      "answer": "L'Euro",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement tragique a eu lieu le 11 septembre 2001 ?",
+      "answer": "Attentats du World Trade Center",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel site de partage de vidéos a été créé en 2005 ?",
+      "answer": "YouTube",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été élu président des États-Unis en 2008 ?",
+      "answer": "Barack Obama",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel téléphone d'Apple a révolutionné la téléphonie en 2007 ?",
+      "answer": "iPhone",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émission de télé-réalité française a enfermé des candidats dans un loft en 2001 ?",
+      "answer": "Loft Story",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a donné un coup de tête en finale de la Coupe du Monde 2006 ?",
+      "answer": "Zinédine Zidane",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réseau social a été fondé par Mark Zuckerberg en 2004 ?",
+      "answer": "Facebook",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle saga de films fantastiques a débuté au cinéma en 2001 (sorciers) ?",
+      "answer": "Harry Potter",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film de James Cameron est sorti en 2009 et a battu des records ?",
+      "answer": "Avatar",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti le tube \"Toxic\" en 2003 ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console de jeu Sony est sortie en 2000 et reste la plus vendue de l'histoire ?",
+      "answer": "PlayStation 2",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel moteur de recherche est devenu hégémonique dans les années 2000 ?",
+      "answer": "Google",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la première saison de la Star Academy en France ?",
+      "answer": "Jenifer",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pape est décédé en 2005 ?",
+      "answer": "Jean-Paul II",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a organisé les Jeux Olympiques en 2008 ?",
+      "answer": "Chine (Pékin)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle catastrophe naturelle a frappé l'Asie du Sud-Est en décembre 2004 ?",
+      "answer": "Tsunami",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation met en scène un ogre vert en 2001 ?",
+      "answer": "Shrek",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Single Ladies\" en 2008 ?",
+      "answer": "Beyoncé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pilote de F1 a dominé le début des années 2000 avec Ferrari ?",
+      "answer": "Michael Schumacher",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo de simulation de vie est sorti en 2000 ?",
+      "answer": "Les Sims",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel lecteur de musique portable d'Apple a cartonné au début des années 2000 ?",
+      "answer": "iPod",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Moi... Lolita\" en 2000 ?",
+      "answer": "Alizée",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série culte s'est terminée en 2004 après 10 saisons (avec Ross et Rachel) ?",
+      "answer": "Friends",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui était le président de la France au début des années 2000 ?",
+      "answer": "Jacques Chirac",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur américain a sorti le film et l'album \"8 Mile\" ?",
+      "answer": "Eminem",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console de Nintendo avec des manettes à détection de mouvement est sortie en 2006 ?",
+      "answer": "Wii",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a succédé à Jacques Chirac en 2007 ?",
+      "answer": "Nicolas Sarkozy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français a eu un succès mondial avec Audrey Tautou en 2001 ?",
+      "answer": "Le Fabuleux Destin d'Amélie Poulain",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle guerre a été déclenchée par les USA en 2003 ?",
+      "answer": "Guerre d'Irak",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Rehab\" en 2006 ?",
+      "answer": "Amy Winehouse",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV commence par le crash du vol 815 sur une île ?",
+      "answer": "Lost",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel coureur cycliste a remporté 7 tours de France dans les années 2000 (puis annulés) ?",
+      "answer": "Lance Armstrong",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur est mort le 25 juin 2009 ?",
+      "answer": "Michael Jackson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation de Pixar se passe sous l'océan (2003) ?",
+      "answer": "Le Monde de Nemo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel logiciel de messagerie instantanée de Microsoft était incontournable ?",
+      "answer": "MSN Messenger",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série médicale avec le Dr Meredith Grey a débuté en 2005 ?",
+      "answer": "Grey's Anatomy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement climatique a touché la France en été 2003 ?",
+      "answer": "Canicule",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de rock a sorti \"Seven Nation Army\" en 2003 ?",
+      "answer": "The White Stripes",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse pop a sorti \"Poker Face\" en 2008 ?",
+      "answer": "Lady Gaga",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo permet de voler des voitures dans un monde ouvert (version San Andreas 2004) ?",
+      "answer": "GTA (Grand Theft Auto)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émission de M6 cherchait l'amour pour des agriculteurs (2005) ?",
+      "answer": "L'Amour est dans le pré",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a rasé sa tête devant les paparazzis en 2007 ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel homme politique français a atteint le second tour de la présidentielle 2002 ?",
+      "answer": "Jean-Marie Le Pen",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV met en scène des femmes au foyer désespérées ?",
+      "answer": "Desperate Housewives",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel sprinteur jamaïcain a explosé les records en 2008 ?",
+      "answer": "Usain Bolt",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a joué le rôle de Jack Sparrow ?",
+      "answer": "Johnny Depp",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français a dépassé les 20 millions d'entrées en 2008 ?",
+      "answer": "Bienvenue chez les Ch'tis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a mis en scène des voitures tunées et Vin Diesel en 2001 ?",
+      "answer": "Fast and Furious",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un poisson clown nommé Nemo ?",
+      "answer": "Le Monde de Nemo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la première saison de Loft Story (avec Christophe) ?",
+      "answer": "Loana",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série culte a pour héros un professeur de chimie devenant dealer (2008) ?",
+      "answer": "Breaking Bad",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Harder Better Faster Stronger\" en 2001 ?",
+      "answer": "Daft Punk",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a marqué le passage à l'an 2000 en informatique (peur) ?",
+      "answer": "Bug de l'an 2000",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un robot compacteur de déchets (2008) ?",
+      "answer": "WALL-E",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a réuni Christian Clavier et Gérard Depardieu en Gaule (2002) ?",
+      "answer": "Astérix et Obélix : Mission Cléopâtre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse colombienne a cartonné avec \"Whenever Wherever\" en 2001 ?",
+      "answer": "Shakira",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a chanté \"La Boulette\" en 2006 ?",
+      "answer": "Diam's",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a succédé à Bill Clinton en 2001 ?",
+      "answer": "George W. Bush",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a révélé Keira Knightley aux côtés de Johnny Depp ?",
+      "answer": "Pirates des Caraïbes",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation met en scène des voitures de course (2006) ?",
+      "answer": "Cars",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel accessoire pour écouter de la musique a remplacé le Discman ?",
+      "answer": "Lecteur MP3",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville américaine a subi les attentats du 11 septembre ?",
+      "answer": "New York",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Oops!... I Did It Again\" en 2000 ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV a popularisé Hugh Laurie en médecin boiteux ?",
+      "answer": "Dr House",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note: Question remplacée: Quel jeu de sport sur Wii a été un phénomène ?",
+      "answer": "Wii Sports",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été accusé de posséder des armes de destruction massive en 2003 ?",
+      "answer": "Irak",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un panda qui fait du Kung Fu (2008) ?",
+      "answer": "Kung Fu Panda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Umbrella\" en 2007 ?",
+      "answer": "Rihanna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel joueur de tennis espagnol a gagné son premier Roland Garros en 2005 ?",
+      "answer": "Rafael Nadal",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation a pour héros un mammouth nommé Manny ?",
+      "answer": "L'Âge de glace",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour réplique \"Mon précieux\" ?",
+      "answer": "Le Seigneur des Anneaux",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti \"Crazy in Love\" en 2003 ?",
+      "answer": "Beyoncé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de gestion de vie (Maxis) est sorti en 2000 ?",
+      "answer": "Les Sims",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation a pour héros un rat cuisinier (2007) ?",
+      "answer": "Ratatouille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le rôle d'Amélie Poulain ?",
+      "answer": "Audrey Tautou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un panda roux (ah non ça c'est 2022). Remplacé : Quel film d'animation a pour héros une famille de super-héros (2004) ?",
+      "answer": "Les Indestructibles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV a pour décor Wisteria Lane ?",
+      "answer": "Desperate Housewives",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour sujet la vie d'Edith Piaf ?",
+      "answer": "La Môme",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation a pour héros un ogre et un âne ?",
+      "answer": "Shrek",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV suit une équipe d'experts à Las Vegas ?",
+      "answer": "Les Experts (CSI)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Seigneur des Anneaux\" ?",
+      "answer": "Peter Jackson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français raconte la vie dans un internat en 1949 ?",
+      "answer": "Les Choristes",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV suit des naufragés (encore) ?",
+      "answer": "Lost",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle marque de baladeur a dominé le marché ?",
+      "answer": "iPod (Apple)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film de science-fiction a pour héros Neo (suites en 2003) ?",
+      "answer": "Matrix",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle monnaie a remplacé le Mark allemand ?",
+      "answer": "Euro",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour méchant le Joker (2008) ?",
+      "answer": "The Dark Knight",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un petit poisson clown ?",
+      "answer": "Nemo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a lancé la Xbox en 2001 ?",
+      "answer": "Microsoft",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Avatar\" ?",
+      "answer": "James Cameron",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a introduit la Wiimote ?",
+      "answer": "Wii",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Whenever Wherever\" ?",
+      "answer": "Shakira",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti \"Hips Don't Lie\" ?",
+      "answer": "Shakira",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV a pour héros un prof de chimie (Walter White) ?",
+      "answer": "Breaking Bad",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Moi... Lolita\" ?",
+      "answer": "Alizée",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation a pour héros Shrek ?",
+      "answer": "Shrek",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné le Tour de France 2000 (titre retiré) ?",
+      "answer": "Lance Armstrong",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un petit robot blanc (EVE) et jaune (WALL-E) ?",
+      "answer": "WALL-E",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émission de télé-réalité enfermait des candidats dans un château ?",
+      "answer": "Star Academy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de rock a chanté \"Boulevard of Broken Dreams\" en 2004 ?",
+      "answer": "Green Day",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle encyclopédie en ligne collaborative a été lancée en 2001 ?",
+      "answer": "Wikipedia",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a remporté la Coupe du Monde de football 2002 ?",
+      "answer": "Brésil",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV met en scène Jack Bauer en temps réel ?",
+      "answer": "24 heures chrono",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel ouragan a dévasté la Nouvelle-Orléans en 2005 ?",
+      "answer": "Katrina",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a remporté 11 Oscars en 2004 ?",
+      "answer": "Le Seigneur des Anneaux : Le Retour du Roi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Where Is the Love?\" en 2003 ?",
+      "answer": "The Black Eyed Peas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné l'Euro 2000 de football ?",
+      "answer": "France",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo en ligne massivement multijoueur (MMORPG) est sorti en 2004 ?",
+      "answer": "World of Warcraft",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a fait scandale avec son sein nu au Super Bowl 2004 ?",
+      "answer": "Janet Jackson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur incarne Spider-Man dans la trilogie débutée en 2002 ?",
+      "answer": "Tobey Maguire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel téléphone Nokia était réputé indestructible au début des années 2000 ?",
+      "answer": "3310",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle planète du système solaire a été rétrogradée en \"planète naine\" en 2006 ?",
+      "answer": "Pluton",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe allemand a fait fureur chez les ados avec \"Monsoon\" ?",
+      "answer": "Tokio Hotel",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté le journal de 20h sur TF1 jusqu'en 2008 ?",
+      "answer": "Patrick Poivre d'Arvor (PPDA)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanson a été le tube de l'été 2002 (chorégraphie ketchup) ?",
+      "answer": "Asereje (The Ketchup Song)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la Nouvelle Star en 2006 (La Tortue) ?",
+      "answer": "Christophe Willem",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français a révélé Jean Dujardin en surfeur (2005) ?",
+      "answer": "Brice de Nice",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console portable de Nintendo à deux écrans est sortie en 2004 ?",
+      "answer": "Nintendo DS",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film de Christopher Nolan a relancé la franchise Batman en 2005 ?",
+      "answer": "Batman Begins",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a interprété le Joker dans \"The Dark Knight\" (2008) ?",
+      "answer": "Heath Ledger",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du concorde qui s'est écrasé en 2000 ?",
+      "answer": "Concorde",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Can't Get You Out of My Head\" en 2001 ?",
+      "answer": "Kylie Minogue",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a réuni Brad Pitt et Angelina Jolie en 2005 ?",
+      "answer": "Mr. and Mrs. Smith",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a organisé la Coupe du Monde de football en 2006 ?",
+      "answer": "Allemagne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV met en scène un tueur en série expert en sang (2006) ?",
+      "answer": "Dexter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur français a chanté \"Caravane\" en 2005 ?",
+      "answer": "Raphaël",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a remporté le tournoi de Wimbledon 5 fois de suite entre 2003 et 2007 ?",
+      "answer": "Roger Federer",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation met en scène des manchots empereurs (2005) ?",
+      "answer": "La Marche de l'empereur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel système d'exploitation Microsoft a succédé à Windows 98/ME en 2001 ?",
+      "answer": "Windows XP",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"In the End\" en 2000 ?",
+      "answer": "Linkin Park",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté le \"Bigdil\" sur TF1 ?",
+      "answer": "Vincent Lagaf'",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanson de O-Zone a été un tube mondial en 2004 ?",
+      "answer": "Dragostea din tei",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"I Kissed a Girl\" en 2008 ?",
+      "answer": "Katy Perry",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel dictateur irakien a été capturé en 2003 ?",
+      "answer": "Saddam Hussein",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console Microsoft a concurrencé la PS3 ?",
+      "answer": "Xbox 360",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Voyage de Chihiro\" (2001) ?",
+      "answer": "Hayao Miyazaki",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti l'album \"Back to Black\" ?",
+      "answer": "Amy Winehouse",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel livre de Dan Brown a fait polémique en 2003 ?",
+      "answer": "Da Vinci Code",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réseau social permettait de personnaliser sa page avec du CSS (ancêtre de Facebook) ?",
+      "answer": "MySpace",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la Star Academy 4 (2004) ?",
+      "answer": "Grégory Lemarchal",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle monnaie a remplacé la Drachme grecque en 2001/2002 ?",
+      "answer": "Euro",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel DJ français a sorti \"Love Don't Let Me Go\" en 2002 ?",
+      "answer": "David Guetta",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel nageur américain a commencé sa moisson de médailles à Athènes 2004 ?",
+      "answer": "Michael Phelps",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Femme Like U\" en 2004 ?",
+      "answer": "K-Maro",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse barbadienne a débuté avec \"Pon de Replay\" en 2005 ?",
+      "answer": "Rihanna",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a remporté l'Oscar du meilleur film en 2001 (péplum) ?",
+      "answer": "Gladiator",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série de jeux de guerre a débuté en 2003 (Activision) ?",
+      "answer": "Call of Duty",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'horreur a popularisé le concept de torture-porn en 2004 ?",
+      "answer": "Saw",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle présentatrice a animé \"Le Maillon Faible\" ?",
+      "answer": "Laurence Boccolini",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été chancelière allemande à partir de 2005 ?",
+      "answer": "Angela Merkel",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo musical avec une guitare en plastique est sorti en 2005 ?",
+      "answer": "Guitar Hero",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a sorti \"Relax Take It Easy\" en 2006 ?",
+      "answer": "Mika",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a épousé Nicolas Sarkozy en 2008 ?",
+      "answer": "Carla Bruni",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti le tube \"Complicated\" en 2002 ?",
+      "answer": "Avril Lavigne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu de cartes à collectionner était très populaire dans les cours de récré (monstres) ?",
+      "answer": "Yu-Gi-Oh!",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a sorti \"In Da Club\" en 2003 ?",
+      "answer": "50 Cent",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console portable de Sony est sortie en 2004 ?",
+      "answer": "PSP",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel humoriste français a fait des sketchs avec un téléphone géant (le SAV) ?",
+      "answer": "Omar et Fred",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour personnage principal un poisson amnésique (Dory) ?",
+      "answer": "Le Monde de Nemo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Hey Ya!\" en 2003 ?",
+      "answer": "OutKast",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émission de TV réalité enfermait des célébrités dans une ferme ?",
+      "answer": "La Ferme Célébrités",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le rôle de Wolverine pour la première fois en 2000 ?",
+      "answer": "Hugh Jackman",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pilote espagnol a gagné le titre F1 en 2005 et 2006 ?",
+      "answer": "Fernando Alonso",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réseau social de microblogging a été créé en 2006 (oiseau bleu) ?",
+      "answer": "Twitter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a formé le groupe Destiny's Child ?",
+      "answer": "Beyoncé",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film de Tim Burton est sorti en 2005 (Chocolaterie) ?",
+      "answer": "Charlie et la Chocolaterie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV fantastique a pour héroïnes trois sœurs sorcières (fin en 2006) ?",
+      "answer": "Charmed",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo a pour héros Master Chief ?",
+      "answer": "Halo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Bring Me to Life\" en 2003 ?",
+      "answer": "Evanescence",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse française a gagné la Star Ac 2 ?",
+      "answer": "Nolwenn Leroy",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a marqué le monde de la finance en 2008 ?",
+      "answer": "Crise des subprimes (ou Faillite Lehman Brothers)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Ça m'énerve\" en 2009 ?",
+      "answer": "Helmut Fritz",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté la météo de TF1 pendant toute la décennie ?",
+      "answer": "Catherine Laborde (ou Evelyne Dhéliat)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Yellow\" en 2000 ?",
+      "answer": "Coldplay",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle animatrice a présenté \"C'est mon choix\" ?",
+      "answer": "Évelyne Thomas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le candidat socialiste face à Sarkozy en 2007 ?",
+      "answer": "Ségolène Royal",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel appareil photo a progressivement disparu au profit du numérique ?",
+      "answer": "Argentique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le rôle de Jason Bourne dans la trilogie ?",
+      "answer": "Matt Damon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émission de télé-crochet a été lancée sur M6 en 2003 (Popstars c'est 2001) ?",
+      "answer": "Nouvelle Star",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a réuni Brad Pitt et George Clooney pour un braquage ?",
+      "answer": "Ocean's Eleven",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Las Ketchup\" ?",
+      "answer": "Las Ketchup",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel navigateur internet a été lancé en 2004 pour concurrencer Internet Explorer ?",
+      "answer": "Firefox",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti \"Complicated\" en 2002 ?",
+      "answer": "Avril Lavigne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo a introduit les Mii ?",
+      "answer": "Wii Sports",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réseau social a été fondé en 2003 (musique et blog) ?",
+      "answer": "MySpace",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pilote moto a dominé les années 2000 ?",
+      "answer": "Valentino Rossi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série a pour héros un tueur en série de Miami ?",
+      "answer": "Dexter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Kill Bill\" (2003) ?",
+      "answer": "Quentin Tarantino",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti \"Family Portrait\" en 2001 ?",
+      "answer": "Pink",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été élu président de la Russie en 2000 ?",
+      "answer": "Vladimir Poutine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console portable a succédé à la Game Boy Color en 2001 ?",
+      "answer": "Game Boy Advance",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Grace Kelly\" en 2007 ?",
+      "answer": "Mika",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Gran Torino\" (2008) ?",
+      "answer": "Clint Eastwood",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel téléphone BlackBerry était célèbre pour son clavier ?",
+      "answer": "Clavier AZERTY/QWERTY physique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un homme qui rajeunit (2008) ?",
+      "answer": "L'Étrange Histoire de Benjamin Button",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été dirigé par Silvio Berlusconi durant une grande partie des années 2000 ?",
+      "answer": "Italie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo a pour héros un assassin à Jérusalem (2007) ?",
+      "answer": "Assassin's Creed",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Viva la Vida\" en 2008 ?",
+      "answer": "Coldplay",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Californication\" en 2000 (Single) ?",
+      "answer": "Red Hot Chili Peppers",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel site d'enchères en ligne était incontournable ?",
+      "answer": "eBay",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le rôle de Bridget Jones ?",
+      "answer": "Renée Zellweger",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console a introduit le Blu-Ray en 2006 ?",
+      "answer": "PlayStation 3",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel joueur de foot a remporté le Ballon d'Or en 2005 ?",
+      "answer": "Ronaldinho",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Tired of Being Sorry\" en 2008 ?",
+      "answer": "Enrique Iglesias (avec Nâdiya)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Numb\" en 2003 ?",
+      "answer": "Linkin Park",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour vedette Will Smith et son fils (2006) ?",
+      "answer": "À la recherche du bonheur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Dilemma\" en 2002 ?",
+      "answer": "Nelly et Kelly Rowland",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pape a succédé à Jean-Paul II en 2005 ?",
+      "answer": "Benoît XVI",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Sk8er Boi\" en 2002 ?",
+      "answer": "Avril Lavigne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a touché AZF à Toulouse en 2001 ?",
+      "answer": "Explosion de l'usine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV a pour héros un tueur de vampires (fin en 2003) ?",
+      "answer": "Buffy contre les vampires",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Fabuleux Destin d'Amélie Poulain\" ?",
+      "answer": "Jean-Pierre Jeunet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Shut Up\" en 2003 ?",
+      "answer": "The Black Eyed Peas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console portable avait deux écrans dont un tactile ?",
+      "answer": "Nintendo DS",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Cry Me a River\" en 2002 ?",
+      "answer": "Justin Timberlake",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné l'Euro 2008 de football ?",
+      "answer": "Espagne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros des manchots danseurs (2006) ?",
+      "answer": "Happy Feet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"L'Envie d'aimer\" (Les Dix Commandements) en 2000 ?",
+      "answer": "Daniel Lévi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"American Idiot\" en 2004 ?",
+      "answer": "Green Day",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti \"Hung Up\" en 2005 (sample ABBA) ?",
+      "answer": "Madonna",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Marly-Gomont\" en 2006 ?",
+      "answer": "Kamini",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a réuni Brad Pitt et Angelina Jolie ?",
+      "answer": "Mr. and Mrs. Smith",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la Star Academy 2 ?",
+      "answer": "Nolwenn Leroy",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros Borat (2006) ?",
+      "answer": "Borat",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté le Morning Live sur M6 ?",
+      "answer": "Michaël Youn",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Mr. Brightside\" en 2004 ?",
+      "answer": "The Killers",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console de jeu est sortie en 2005 chez Microsoft ?",
+      "answer": "Xbox 360",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Boulevard of Broken Dreams\" ?",
+      "answer": "Green Day",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse est décédée tragiquement en 2001 (R&B) ?",
+      "answer": "Aaliyah",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel traité européen a été rejeté par référendum en France en 2005 ?",
+      "answer": "Constitution européenne",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle maladie respiratoire a causé une épidémie mondiale en 2003 ?",
+      "answer": "SRAS",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le titre du dernier tome d'Harry Potter sorti en livre en 2007 ?",
+      "answer": "Les Reliques de la Mort",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a remporté l'Euro 2004 de football à la surprise générale ?",
+      "answer": "Grèce",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé le film \"Inglourious Basterds\" sorti en 2009 ?",
+      "answer": "Quentin Tarantino",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le premier ministre de la France de 2002 à 2005 ?",
+      "answer": "Jean-Pierre Raffarin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a rejoint l'Union Européenne en 2004 (avec 9 autres) ?",
+      "answer": "Pologne (ou Hongrie/Rep. Tchèque)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle navette spatiale s'est désintégrée lors de son retour en 2003 ?",
+      "answer": "Columbia",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle entreprise a racheté YouTube en 2006 ?",
+      "answer": "Google",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle plateforme de streaming musical suédoise a été lancée en 2008 ?",
+      "answer": "Spotify",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a popularisé la phrase \"Je vais bien ne t'en fais pas\" en 2006 ?",
+      "answer": "Je vais bien ne t'en fais pas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réseau social professionnel a été lancé en 2003 ?",
+      "answer": "LinkedIn",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement sportif a eu lieu au Portugal en 2004 ?",
+      "answer": "Euro de football",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel studio d'animation a été racheté par Disney en 2006 ?",
+      "answer": "Pixar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit la saga \"Twilight\" débutée en livre en 2005 ?",
+      "answer": "Stephenie Meyer",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de rap français a sorti \"Demain c'est loin\" (fin 90 mais culte 2000) ?",
+      "answer": "IAM",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel boys band a chanté \"Bye Bye Bye\" en 2000 ?",
+      "answer": "NSYNC",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été élue Miss France 2001 (puis Miss Europe) ?",
+      "answer": "Élodie Gossuin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a lancé la Station Spatiale Internationale (ISS) avec les USA ?",
+      "answer": "Russie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté la météo sur Canal+ avec humour dans les années 2000 ?",
+      "answer": "Louise Bourgoin (Météo)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel premier ministre britannique a soutenu Bush en Irak ?",
+      "answer": "Tony Blair",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV raconte la vie de lycéens à Newport Beach ?",
+      "answer": "Newport Beach",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la Coupe du Monde de Rugby en 2003 ?",
+      "answer": "Angleterre",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation japonais a pour héros un château ambulant ?",
+      "answer": "Le Château ambulant",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel accessoire de mode en plastique coloré portait-on au poignet (Lance Armstrong) ?",
+      "answer": "Bracelet Livestrong (ou Silly Bandz plus tard)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"La Môme\" (2007) ?",
+      "answer": "Olivier Dahan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel sport a vu la retraite de Pete Sampras en 2002 ?",
+      "answer": "Tennis",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de rock anglais a sorti \"X&Y\" en 2005 ?",
+      "answer": "Coldplay",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a connu le succès avec \"Fallin'\" en 2001 ?",
+      "answer": "Alicia Keys",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de Nu Metal a sorti \"Chop Suey!\" en 2001 ?",
+      "answer": "System of a Down",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a présenté \"Y'a que la vérité qui compte\" ?",
+      "answer": "Bataille et Fontaine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Million Dollar Baby\" (2004) ?",
+      "answer": "Clint Eastwood",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV a révélé Jennifer Garner en espionne ?",
+      "answer": "Alias",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle console de Nintendo a précédé la Wii (sortie en 2001) ?",
+      "answer": "GameCube",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'horreur espagnol a pour décor un immeuble infecté (2007) ?",
+      "answer": "REC",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de rap a sorti \"Sorry Ms. Jackson\" en 2000 ?",
+      "answer": "OutKast",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été dirigé par Lula de 2003 à 2010 ?",
+      "answer": "Brésil",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné le Ballon d'Or en 2008 (Premier de sa série) ?",
+      "answer": "Cristiano Ronaldo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Pianiste\" (2002) ?",
+      "answer": "Roman Polanski",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe de rock a chanté \"Take Me Out\" en 2004 ?",
+      "answer": "Franz Ferdinand",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Clocks\" en 2002 ?",
+      "answer": "Coldplay",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"How to Save a Life\" en 2005 ?",
+      "answer": "The Fray",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la Coupe du Monde de handball en 2001 ?",
+      "answer": "France",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti \"Rich Girl\" en 2004 ?",
+      "answer": "Gwen Stefani",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a organisé les JO d'hiver de 2006 ?",
+      "answer": "Italie (Turin)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"It's Raining Men\" (reprise) en 2001 ?",
+      "answer": "Geri Halliwell",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a marqué le Concorde en 2003 ?",
+      "answer": "Son dernier vol (retrait)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a sorti \"Can't Fight the Moonlight\" (Coyote Girls) ?",
+      "answer": "LeAnn Rimes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été maire de Paris en 2001 ?",
+      "answer": "Bertrand Delanoë",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Feel Good Inc.\" en 2005 ?",
+      "answer": "Gorillaz",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Les Infiltrés\" (2006) ?",
+      "answer": "Martin Scorsese",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a touché le métro de Londres en 2005 ?",
+      "answer": "Attentats terroristes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été dirigé par Hugo Chavez ?",
+      "answer": "Venezuela",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel système d'exploitation a succédé à Windows XP en 2007 (et a bidé) ?",
+      "answer": "Windows Vista",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Into the Wild\" (2007) ?",
+      "answer": "Sean Penn",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel homme politique a perdu face à Bush en 2000 (recomptage) ?",
+      "answer": "Al Gore",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV se déroule dans une agence de pub dans les années 60 (début 2007) ?",
+      "answer": "Mad Men",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français a eu du succès avec des marionnettes (Le Bébête Show non). Remplacé : Quel film a pour titre \"Être et Avoir\" ?",
+      "answer": "Documentaire sur l'école",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série TV suit un père de famille trafiquant de drogue (déjà vu). Remplacé : Quelle série suit des vampires en Louisiane (2008) ?",
+      "answer": "True Blood",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a touché Madrid en 2004 ?",
+      "answer": "Attentats d'Atocha (Gare)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Slumdog Millionaire\" (2008) ?",
+      "answer": "Danny Boyle",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Chasing Cars\" en 2006 ?",
+      "answer": "Snow Patrol",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a touché les côtes françaises en 1999/2000 (Marée noire) ?",
+      "answer": "Erika",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel scandale financier a éclaté en 2001 (entreprise énergétique US) ?",
+      "answer": "Enron",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été touché par une guerre éclair avec la Russie en 2008 ?",
+      "answer": "Géorgie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe français a sorti l'album \"Tourist\" en 2000 ?",
+      "answer": "St Germain",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel homme politique a été agressé par Maxime Brunerie en 2002 ?",
+      "answer": "Jacques Chirac",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel site a été créé par Julian Assange en 2006 ?",
+      "answer": "WikiLeaks",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel virus informatique a causé des milliards de dégâts en 2000 ?",
+      "answer": "ILOVEYOU",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Mulholland Drive\" (2001) ?",
+      "answer": "David Lynch",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été le théâtre de la \"Révolution orange\" en 2004 ?",
+      "answer": "Ukraine",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle série française suit des avocats et une greffière (Femmes de loi) ou Police Scientifique ?",
+      "answer": "R.I.S Police scientifique",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a adopté l'Euro en 2001 (juste avant la monnaie physique) ?",
+      "answer": "Grèce",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français a gagné la Palme d'Or en 2008 (Entre les murs) ?",
+      "answer": "Entre les murs",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été sacré champion du monde de F1 en 2007 ?",
+      "answer": "Kimi Räikkönen",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel premier ministre a subi la crise du CPE en 2006 ?",
+      "answer": "Dominique de Villepin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel traité a remplacé la constitution européenne en 2007 ?",
+      "answer": "Traité de Lisbonne",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Lost in Translation\" (2003) ?",
+      "answer": "Sofia Coppola",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville a accueilli les JO d'hiver de 2002 ?",
+      "answer": "Salt Lake City",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour sujet la guerre en Irak (Oscar 2009) ?",
+      "answer": "Démineurs",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement a annulé le Paris-Dakar en 2008 ?",
+      "answer": "Menaces terroristes",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la Star Academy 3 (2003) ?",
+      "answer": "Élodie Frégé",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Last Nite\" en 2001 ?",
+      "answer": "The Strokes",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel événement spatial a eu lieu en 2001 (Tourisme) ?",
+      "answer": "Premier touriste de l'espace (Dennis Tito)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a chanté \"Hey There Delilah\" en 2006 ?",
+      "answer": "Plain White T's",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émission de TF1 faisait passer le permis de conduire à des stars ?",
+      "answer": "Le Grand Concours (Non). Remplacé : Zéro de conduite",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"No Country for Old Men\" (2007) ?",
+      "answer": "Les frères Coen",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a connu une crise économique majeure en 2001 (Cacerolazo) ?",
+      "answer": "Argentine",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle émission de télé-réalité suivait la famille Osbourne ?",
+      "answer": "The Osbournes",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été frappé par le séisme du Sichuan en 2008 ?",
+      "answer": "Chine",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a rejoint l'UE en 2007 avec la Bulgarie ?",
+      "answer": "Roumanie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"La Cité de Dieu\" (2002) ?",
+      "answer": "Fernando Meirelles",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a été frappé par le cyclone Nargis en 2008 ?",
+      "answer": "Birmanie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français choral avec des acteurs connus est sorti en 2002 (Kiss Kiss Bang Bang) ?",
+      "answer": "Le code a changé (ou confusion avec embrassez qui vous voudrez)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel jeu vidéo a popularisé les guitares en plastique avant Guitar Hero ?",
+      "answer": "Guitar Freaks (ou Singstar pour le chant)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a vu la catastrophe nucléaire de... (c'est 2011 Fukushima). Remplacé : Dans quel pays a eu lieu la prise d'otages de Beslan en 2004 ?",
+      "answer": "Russie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été la première femme présidente du Chili en 2006 ?",
+      "answer": "Michelle Bachelet",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a rejoint la zone Euro en 2007 ?",
+      "answer": "Slovénie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a été le Premier ministre britannique après Tony Blair (2007) ?",
+      "answer": "Gordon Brown",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné Koh-Lanta saison 1 ?",
+      "answer": "Gilles",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné la Coupe du Monde de foot féminine en 2003 ?",
+      "answer": "Allemagne",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel joueur de tennis a gagné Wimbledon en 2001 avec une Wild Card ?",
+      "answer": "Goran Ivanisevic",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a adopté l'Euro en 2008 (île) ?",
+      "answer": "Chypre (ou Malte)",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

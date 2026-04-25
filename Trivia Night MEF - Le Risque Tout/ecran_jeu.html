@@ -192,8 +192,18 @@
     <script src="data.js"></script>
     <script src="scores.js"></script>
     <script src="database.js"></script>
-    
+    <script src="database_custom.js"></script>
+
     <script>
+        // ── MODE DONNÉES (normal / personnalisé) ──────────────────────────
+        (function() {
+            if (localStorage.getItem('rt_mode') === 'custom' && QUESTION_DATABASE_CUSTOM && typeof QUESTION_DATABASE_CUSTOM === 'object') {
+                Object.keys(QUESTION_DATABASE).forEach(k => delete QUESTION_DATABASE[k]);
+                Object.assign(QUESTION_DATABASE, QUESTION_DATABASE_CUSTOM);
+            }
+        })();
+        // ──────────────────────────────────────────────────────────────────
+
         // =================================================================
         // CONNEXION RÉGIE (LE CERVEAU EST DÉPLACÉ ICI)
         // =================================================================

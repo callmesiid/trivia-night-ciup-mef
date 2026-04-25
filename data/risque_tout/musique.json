@@ -1,0 +1,2114 @@
+{
+  "id": "musique",
+  "label": "Musique",
+  "icon": "icons/musique.png",
+  "questions": [
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Ariana Grande.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ariana Grande",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Aya Nakamura.png",
+      "question": "Qui est-ce ?",
+      "answer": "Aya Nakamura",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Benjamin Biolay.png",
+      "question": "Qui est-ce ?",
+      "answer": "Benjamin Biolay",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Beyonce.png",
+      "question": "Qui est-ce ?",
+      "answer": "Beyonce",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Bigflo.png",
+      "question": "Qui est-ce ?",
+      "answer": "Bigflo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Billie Eilish.png",
+      "question": "Qui est-ce ?",
+      "answer": "Billie Eilish",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Britney Spears.png",
+      "question": "Qui est-ce ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Camila Cabello.png",
+      "question": "Qui est-ce ?",
+      "answer": "Camila Cabello",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Cardi B.png",
+      "question": "Qui est-ce ?",
+      "answer": "Cardi B",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Celine Dion.png",
+      "question": "Qui est-ce ?",
+      "answer": "Celine Dion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Christophe Maé.png",
+      "question": "Qui est-ce ?",
+      "answer": "Christophe Maé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Clara Luciani.png",
+      "question": "Qui est-ce ?",
+      "answer": "Clara Luciani",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Dadju.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dadju",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Dua Lipa.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dua Lipa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Ed Sheeran.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ed Sheeran",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Eminem.png",
+      "question": "Qui est-ce ?",
+      "answer": "Eminem",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Gims.png",
+      "question": "Qui est-ce ?",
+      "answer": "Gims",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Harry Styles.png",
+      "question": "Qui est-ce ?",
+      "answer": "Harry Styles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Julien Dore.png",
+      "question": "Qui est-ce ?",
+      "answer": "Julien Dore",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Juliette Armanet.png",
+      "question": "Qui est-ce ?",
+      "answer": "Juliette Armanet",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Justin Bieber.png",
+      "question": "Qui est-ce ?",
+      "answer": "Justin Bieber",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Justin Timberlake.png",
+      "question": "Qui est-ce ?",
+      "answer": "Justin Timberlake",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Kanye West.png",
+      "question": "Qui est-ce ?",
+      "answer": "Kanye West",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Katy Perry.png",
+      "question": "Qui est-ce ?",
+      "answer": "Katy Perry",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Kendji Girac.png",
+      "question": "Qui est-ce ?",
+      "answer": "Kendji Girac",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Lady Gaga.png",
+      "question": "Qui est-ce ?",
+      "answer": "Lady Gaga",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Louane.png",
+      "question": "Qui est-ce ?",
+      "answer": "Louane",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Miley Cyrus.png",
+      "question": "Qui est-ce ?",
+      "answer": "Miley Cyrus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Nicki Minaj.png",
+      "question": "Qui est-ce ?",
+      "answer": "Nicki Minaj",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Ninho.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ninho",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Pascal Obispo.png",
+      "question": "Qui est-ce ?",
+      "answer": "Pascal Obispo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Patrick Bruel.png",
+      "question": "Qui est-ce ?",
+      "answer": "Patrick Bruel",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Post Malone.png",
+      "question": "Qui est-ce ?",
+      "answer": "Post Malone",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Shakira.png",
+      "question": "Qui est-ce ?",
+      "answer": "Shakira",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Slimane.png",
+      "question": "Qui est-ce ?",
+      "answer": "Slimane",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Stromae.png",
+      "question": "Qui est-ce ?",
+      "answer": "Stromae",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Taylor Swift.png",
+      "question": "Qui est-ce ?",
+      "answer": "Taylor Swift",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/The Weeknd.png",
+      "question": "Qui est-ce ?",
+      "answer": "The Weeknd",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Vianney.png",
+      "question": "Qui est-ce ?",
+      "answer": "Vianney",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/1/images/Vitaa.png",
+      "question": "Qui est-ce ?",
+      "answer": "Vitaa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est surnommé le \"King of Pop\" ?",
+      "answer": "Michael Jackson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"We Will Rock You\" ?",
+      "answer": "Queen",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui interprète \"Allumer le feu\" ?",
+      "answer": "Johnny Hallyday",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse chante \"La Vie en rose\" ?",
+      "answer": "Edith Piaf",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Yellow Submarine\" ?",
+      "answer": "The Beatles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Papaoutai\" ?",
+      "answer": "Stromae",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument a 88 touches noires et blanches ?",
+      "answer": "Piano",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Single Ladies\" ?",
+      "answer": "Beyoncé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a chanté \"Lose Yourself\" ?",
+      "answer": "Eminem",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la reine de la Pop (Queen of Pop) ?",
+      "answer": "Madonna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe français porte des casques de robots ?",
+      "answer": "Daft Punk",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Louis Armstrong ?",
+      "answer": "Trompette",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a interprété \"My Heart Will Go On\" ?",
+      "answer": "Céline Dion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Satisfaction\" ?",
+      "answer": "The Rolling Stones",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Djadja\" ?",
+      "answer": "Aya Nakamura",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'hymne national de la France ?",
+      "answer": "La Marseillaise",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Bohemian Rhapsody\" ?",
+      "answer": "Queen",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de cordes a une guitare standard ?",
+      "answer": "6",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Hello\" (2015) ?",
+      "answer": "Adele",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Smells Like Teen Spirit\" ?",
+      "answer": "Nirvana",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Les Lacs du Connemara\" ?",
+      "answer": "Michel Sardou",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Thriller\" ?",
+      "answer": "Michael Jackson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chanteuse a popularisé \"Like a Virgin\" ?",
+      "answer": "Madonna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur français fait le signe \"Jul\" avec ses mains ?",
+      "answer": "Jul",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"I Will Always Love You\" (Bodyguard) ?",
+      "answer": "Whitney Houston",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe suédois a chanté \"Dancing Queen\" ?",
+      "answer": "ABBA",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Wannabe\" ?",
+      "answer": "Spice Girls",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"La Bohème\" ?",
+      "answer": "Charles Aznavour",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Highway to Hell\" ?",
+      "answer": "AC/DC",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Happy\" ?",
+      "answer": "Pharrell Williams",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le roi du Reggae ?",
+      "answer": "Bob Marley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Poker Face\" ?",
+      "answer": "Lady Gaga",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Alexandrie Alexandra\" ?",
+      "answer": "Claude François",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Uptown Funk\" ?",
+      "answer": "Bruno Mars",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel DJ français a fait \"Titanium\" ?",
+      "answer": "David Guetta",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Formidable\" ?",
+      "answer": "Stromae",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Wonderwall\" ?",
+      "answer": "Oasis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Rehab\" ?",
+      "answer": "Amy Winehouse",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Sapés comme jamais\" ?",
+      "answer": "Maître Gims",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Imagine\" ?",
+      "answer": "John Lennon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Stayin' Alive\" ?",
+      "answer": "Bee Gees",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Balance ton quoi\" ?",
+      "answer": "Angèle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Despacito\" ?",
+      "answer": "Luis Fonsi",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Baby One More Time\" ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Let It Be\" ?",
+      "answer": "The Beatles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le \"Roi du Rock'n'roll\" ?",
+      "answer": "Elvis Presley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Bad Guy\" ?",
+      "answer": "Billie Eilish",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Gangnam Style\" ?",
+      "answer": "Psy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"I Want to Break Free\" ?",
+      "answer": "Queen",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Umbrella\" ?",
+      "answer": "Rihanna",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Joe le taxi\" ?",
+      "answer": "Vanessa Paradis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Santé\" ?",
+      "answer": "Stromae",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de scène de Marshall Mathers ?",
+      "answer": "Eminem",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Shape of You\" ?",
+      "answer": "Ed Sheeran",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"L'Aventurier\" ?",
+      "answer": "Indochine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Ray Charles ?",
+      "answer": "Piano",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Shake It Off\" ?",
+      "answer": "Taylor Swift",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé la musique de \"Star Wars\" ?",
+      "answer": "John Williams",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"La Boulette\" ?",
+      "answer": "Diam's",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Carlos Santana ?",
+      "answer": "Guitare",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Thriller\" ?",
+      "answer": "Michael Jackson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Basique\" ?",
+      "answer": "Orelsan",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Crazy in Love\" ?",
+      "answer": "Beyoncé",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Rolling in the Deep\" ?",
+      "answer": "Adele",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"J'ai demandé à la lune\" ?",
+      "answer": "Indochine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Slash ?",
+      "answer": "Guitare",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Blinding Lights\" ?",
+      "answer": "The Weeknd",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Toxic\" ?",
+      "answer": "Britney Spears",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Je marche seul\" ?",
+      "answer": "Jean-Jacques Goldman",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Elton Ray ?",
+      "answer": "Piano",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Don't Stop Me Now\" ?",
+      "answer": "Queen",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Levitating\" ?",
+      "answer": "Dua Lipa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Il changeait la vie\" ?",
+      "answer": "Jean-Jacques Goldman",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Hips Don't Lie\" ?",
+      "answer": "Shakira",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Seven Nation Army\" ?",
+      "answer": "The White Stripes",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Résiste\" ?",
+      "answer": "France Gall",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Imagine Dragons\" ?",
+      "answer": "Imagine Dragons",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"I Kissed a Girl\" ?",
+      "answer": "Katy Perry",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Color Gitano\" ?",
+      "answer": "Kendji Girac",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Wrecking Ball\" ?",
+      "answer": "Miley Cyrus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Envole-moi\" ?",
+      "answer": "Jean-Jacques Goldman",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Bad Romance\" ?",
+      "answer": "Lady Gaga",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Take On Me\" ?",
+      "answer": "A-ha",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Andalouse\" ?",
+      "answer": "Kendji Girac",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Thunderstruck\" ?",
+      "answer": "AC/DC",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"La Kiffance\" ?",
+      "answer": "Naps",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur est membre de la Sexion d'Assaut ?",
+      "answer": "Maître Gims (ou Black M)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Tomber la chemise\" ?",
+      "answer": "Zebda",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Watermelon Sugar\" ?",
+      "answer": "Harry Styles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Someone Like You\" ?",
+      "answer": "Adele",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Pour que tu m'aimes encore\" ?",
+      "answer": "Céline Dion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur a pour surnom \"The King of Rock and Roll\" ?",
+      "answer": "Elvis Presley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Flowers\" ?",
+      "answer": "Miley Cyrus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Hey Jude\" ?",
+      "answer": "The Beatles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"As It Was\" ?",
+      "answer": "Harry Styles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Don't Start Now\" ?",
+      "answer": "Dua Lipa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"J't'emmène au vent\" ?",
+      "answer": "Louise Attaque",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Numb\" ?",
+      "answer": "Linkin Park",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Tout oublier\" ?",
+      "answer": "Angèle (et Roméo Elvis)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"All I Want for Christmas Is You\" ?",
+      "answer": "Mariah Carey",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/2/images/Bad Bunny.png",
+      "question": "Qui est-ce ?",
+      "answer": "Bad Bunny",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/2/images/Olivia Rodrigo.png",
+      "question": "Qui est-ce ?",
+      "answer": "Olivia Rodrigo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/2/images/Rihanna.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rihanna",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/2/images/Selena Gomez.png",
+      "question": "Qui est-ce ?",
+      "answer": "Selena Gomez",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/2/images/Shawn Mendes.png",
+      "question": "Qui est-ce ?",
+      "answer": "Shawn Mendes",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/2/images/Sia.png",
+      "question": "Qui est-ce ?",
+      "answer": "Sia",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de Mozart ?",
+      "answer": "Wolfgang",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Ne me quitte pas\" ?",
+      "answer": "Jacques Brel",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Les Quatre Saisons\" ?",
+      "answer": "Vivaldi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Je te donne\" avec Jean-Jacques Goldman ?",
+      "answer": "Michael Jones",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a chanté \"Purple Rain\" ?",
+      "answer": "Prince",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de U2 ?",
+      "answer": "Bono",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé la \"Lettre à Élise\" ?",
+      "answer": "Beethoven",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Ringo Starr ?",
+      "answer": "Batterie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Mistral Gagnant\" ?",
+      "answer": "Renaud",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"L'Envie d'aimer\" ?",
+      "answer": "Daniel Lévi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe a chanté \"Hotel California\" ?",
+      "answer": "The Eagles",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste joue de la guitare à l'envers (gaucher) ?",
+      "answer": "Jimi Hendrix",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de \"Angie\" ?",
+      "answer": "Mick Jagger",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur américain a été tué en 1996 ?",
+      "answer": "Tupac (2Pac)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Je t'aime... moi non plus\" ?",
+      "answer": "Serge Gainsbourg (et Jane Birkin)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument principal de Frédéric Chopin ?",
+      "answer": "Piano",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Sunday Bloody Sunday\" ?",
+      "answer": "U2",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chanteur de Nirvana ?",
+      "answer": "Kurt Cobain",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel compositeur est sourd à la fin de sa vie ?",
+      "answer": "Beethoven",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Californication\" ?",
+      "answer": "Red Hot Chili Peppers",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Respect\" ?",
+      "answer": "Aretha Franklin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a fondé le groupe NTM avec Kool Shen ?",
+      "answer": "JoeyStarr",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Quelqu'un m'a dit\" ?",
+      "answer": "Carla Bruni",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Sous le vent\" avec Garou ?",
+      "answer": "Céline Dion",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Eye of the Tiger\" ?",
+      "answer": "Survivor",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Chandelier\" ?",
+      "answer": "Sia",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"La Grenade\" ?",
+      "answer": "Clara Luciani",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Kenny G ?",
+      "answer": "Saxophone",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Zombie\" ?",
+      "answer": "The Cranberries",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de Indochine ?",
+      "answer": "Nicola Sirkis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Empire State of Mind\" ?",
+      "answer": "Jay-Z (et Alicia Keys)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Miles Davis ?",
+      "answer": "Trompette",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Femme libérée\" ?",
+      "answer": "Cookie Dingler",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Another Brick in the Wall\" ?",
+      "answer": "Pink Floyd",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Tous les cris les S.O.S.\" ?",
+      "answer": "Daniel Balavoine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Message in a Bottle\" ?",
+      "answer": "The Police",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Bella Ciao\" (remix récent ou chant partisan) ?",
+      "answer": "Maître Gims (ou Chant populaire)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Sweet Child O' Mine\" ?",
+      "answer": "Guns N' Roses",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Creep\" ?",
+      "answer": "Radiohead",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Je ne suis pas un héros\" ?",
+      "answer": "Daniel Balavoine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Video Games\" ?",
+      "answer": "Lana Del Rey",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Every Breath You Take\" ?",
+      "answer": "The Police",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Confessions Nocturnes\" ?",
+      "answer": "Diam's (et Vitaa)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chanteur de Coldplay ?",
+      "answer": "Chris Martin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Africa\" ?",
+      "answer": "Toto",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Caroline\" ?",
+      "answer": "MC Solaar",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"September\" ?",
+      "answer": "Earth Wind & Fire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"L'Hymne à la joie\" ?",
+      "answer": "Beethoven",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Ma philosophie\" ?",
+      "answer": "Amel Bent",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"La Foule\" ?",
+      "answer": "Edith Piaf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a sorti l'album \"L'École du micro d'argent\" ?",
+      "answer": "IAM",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Take Me to Church\" ?",
+      "answer": "Hozier",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Stairway to Heaven\" ?",
+      "answer": "Led Zeppelin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"The Sound of Silence\" ?",
+      "answer": "Simon and Garfunkel",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Drivers License\" ?",
+      "answer": "Olivia Rodrigo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Amsterdam\" ?",
+      "answer": "Jacques Brel",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Phil Collins ?",
+      "answer": "Batterie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Old Town Road\" ?",
+      "answer": "Lil Nas X",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Savoir aimer\" ?",
+      "answer": "Florent Pagny",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Eric Clapton ?",
+      "answer": "Guitare",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Should I Stay or Should I Go\" ?",
+      "answer": "The Clash",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Jean-Michel Jarre ?",
+      "answer": "Synthétiseur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Mon manège à moi\" ?",
+      "answer": "Edith Piaf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Royals\" ?",
+      "answer": "Lorde",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de \"Purple Haze\" ?",
+      "answer": "Jimi Hendrix",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Born to Die\" ?",
+      "answer": "Lana Del Rey",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Belle\" (Notre-Dame de Paris) ?",
+      "answer": "Garou Lavoine Patrick Fiori",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Wind of Change\" ?",
+      "answer": "Scorpions",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue BB King ?",
+      "answer": "Guitare",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Voyage Voyage\" ?",
+      "answer": "Desireless",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur chante \"DKR\" ?",
+      "answer": "Booba",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Dernière Danse\" ?",
+      "answer": "Indila",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Dance Monkey\" ?",
+      "answer": "Tones and I",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Manhattan-Kaboul\" ?",
+      "answer": "Renaud et Axelle Red",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Enter Sandman\" ?",
+      "answer": "Metallica",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"L'Aziza\" ?",
+      "answer": "Daniel Balavoine",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Keith Richards ?",
+      "answer": "Guitare",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Chanson sur ma drôle de vie\" ?",
+      "answer": "Véronique Sanson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur américain est aveugle et joue du piano (Soul) ?",
+      "answer": "Ray Charles",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/3/images/Amir.png",
+      "question": "Qui est-ce ?",
+      "answer": "Amir",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/3/images/Florent Pagny.png",
+      "question": "Qui est-ce ?",
+      "answer": "Florent Pagny",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/3/images/Mylene Farmer.png",
+      "question": "Qui est-ce ?",
+      "answer": "Mylene Farmer",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/3/images/Renaud.png",
+      "question": "Qui est-ce ?",
+      "answer": "Renaud",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/3/images/Zaho.png",
+      "question": "Qui est-ce ?",
+      "answer": "Zaho",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/3/images/Zaz.png",
+      "question": "Qui est-ce ?",
+      "answer": "Zaz",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de Beethoven ?",
+      "answer": "Ludwig",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Johnny Hallyday ?",
+      "answer": "Jean-Philippe Smet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur est surnommé \"The Boss\" ?",
+      "answer": "Bruce Springsteen",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a gagné l'Eurovision pour la France en 1977 (L'Oiseau et l'Enfant) ?",
+      "answer": "Marie Myriam",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument a 4 cordes et est plus gros qu'un violon ?",
+      "answer": "Violoncelle (ou Contrebasse)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Le Boléro\" ?",
+      "answer": "Ravel",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur français a écrit \"Comme d'habitude\" (My Way) ?",
+      "answer": "Claude François",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le chanteur de Linkin Park (décédé en 2017) ?",
+      "answer": "Chester Bennington",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel compositeur a écrit \"La Flûte enchantée\" ?",
+      "answer": "Mozart",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Smoke on the Water\" ?",
+      "answer": "Deep Purple",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Le Lac des cygnes\" ?",
+      "answer": "Tchaïkovski",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le batteur des Beatles ?",
+      "answer": "Ringo Starr",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel chanteur français est surnommé \"L'Amiral\" ?",
+      "answer": "Michel Polnareff",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Lang Lang ?",
+      "answer": "Piano",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Carmen\" ?",
+      "answer": "Bizet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Born to Run\" ?",
+      "answer": "Bruce Springsteen",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"One\" ?",
+      "answer": "U2 (ou Metallica)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Flea (Red Hot Chili Peppers) ?",
+      "answer": "Basse",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Losing My Religion\" ?",
+      "answer": "R.E.M.",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Where Is My Mind?\" ?",
+      "answer": "Pixies",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Respire\" ?",
+      "answer": "Mickey 3D",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chanteur de The Doors ?",
+      "answer": "Jim Morrison",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"La Marche Turque\" ?",
+      "answer": "Mozart",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a créé le label \"92i\" ?",
+      "answer": "Booba",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Sultans of Swing\" ?",
+      "answer": "Dire Straits",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la chanteuse de \"No Doubt\" ?",
+      "answer": "Gwen Stefani",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a chanté \"Le monde de demain\" ?",
+      "answer": "NTM",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Bitter Sweet Symphony\" ?",
+      "answer": "The Verve",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur chante \"Suicide Social\" ?",
+      "answer": "Orelsan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Dream On\" ?",
+      "answer": "Aerosmith",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Lizzo ?",
+      "answer": "Flûte traversière",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Stay\" (avec Justin Bieber) ?",
+      "answer": "The Kid LAROI",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Personal Jesus\" ?",
+      "answer": "Depeche Mode",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Paranoid\" ?",
+      "answer": "Black Sabbath",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Kashmir\" ?",
+      "answer": "Led Zeppelin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel instrument joue Mark Knopfler ?",
+      "answer": "Guitare",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"L'Aigle noir\" ?",
+      "answer": "Barbara",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/4/images/Doja Cat.png",
+      "question": "Qui est-ce ?",
+      "answer": "Doja Cat",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/4/images/Freddie Mercury.png",
+      "question": "Qui est-ce ?",
+      "answer": "Freddie Mercury",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/4/images/Madonna.png",
+      "question": "Qui est-ce ?",
+      "answer": "Madonna",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/musique/4/images/Mariah Carey.png",
+      "question": "Qui est-ce ?",
+      "answer": "Mariah Carey",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Yo-Yo Ma ?",
+      "answer": "Violoncelle",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui chante \"Hallelujah\" (version originale) ?",
+      "answer": "Leonard Cohen",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chanteur de Radiohead ?",
+      "answer": "Thom Yorke",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Les Noces de Figaro\" ?",
+      "answer": "Mozart",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"La Chevauchée des Walkyries\" ?",
+      "answer": "Wagner",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Le Clair de lune\" ?",
+      "answer": "Debussy",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"La Traviata\" ?",
+      "answer": "Verdi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Stéphane Grappelli ?",
+      "answer": "Violon",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Black Hole Sun\" ?",
+      "answer": "Soundgarden",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel rappeur a sorti \"L'étrange histoire de Mr. Anderson\" ?",
+      "answer": "Laylow",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"My Generation\" ?",
+      "answer": "The Who",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel groupe chante \"Buddy Holly\" ?",
+      "answer": "Weezer",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Mstislav Rostropovitch ?",
+      "answer": "Violoncelle",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Yehudi Menuhin ?",
+      "answer": "Violon",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Le Sacre du printemps\" ?",
+      "answer": "Stravinsky",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Le Messie\" (Alléluia) ?",
+      "answer": "Haendel",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Les Planètes\" ?",
+      "answer": "Holst",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est l'instrument de Ravi Shankar ?",
+      "answer": "Sitar",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"La Symphonie du Nouveau Monde\" ?",
+      "answer": "Dvorak",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Gymnopédies\" ?",
+      "answer": "Erik Satie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a composé \"Rhapsody in Blue\" ?",
+      "answer": "Gershwin",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

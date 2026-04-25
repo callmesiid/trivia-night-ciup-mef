@@ -1,0 +1,1901 @@
+{
+  "id": "harry_potter",
+  "label": "Harry Potter",
+  "icon": "icons/harry_potter.png",
+  "questions": [
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Albus Dumbledore.png",
+      "question": "Qui est-ce ?",
+      "answer": "Albus Dumbledore",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Draco Malfoy.png",
+      "question": "Qui est-ce ?",
+      "answer": "Draco Malfoy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Ginny Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ginny Weasley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Harry Potter.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Harry Potter",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Hermione Granger.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Hermione Granger",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Lord Voldemort Tom Riddle.png",
+      "question": "Qui est-ce ?",
+      "answer": "Lord Voldemort Tom Riddle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Ron Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Ron Weasley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Rubeus Hagrid.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rubeus Hagrid",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Severus Snape.png",
+      "question": "Qui est-ce ?",
+      "answer": "Severus Snape",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/1/images/Sirius Black.png",
+      "question": "Qui est-ce ?",
+      "answer": "Sirius Black",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom du cousin détestable de Harry Potter ?",
+      "answer": "Dudley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la maison de Harry Potter à Poudlard ?",
+      "answer": "Gryffondor",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la chouette de Harry ?",
+      "answer": "Hedwige",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de famille de Ron ?",
+      "answer": "Weasley",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le directeur de Poudlard au début de la saga ?",
+      "answer": "Albus Dumbledore",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle forme a la cicatrice de Harry ?",
+      "answer": "Éclair",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le sport pratiqué sur des balais volants ?",
+      "answer": "Quidditch",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de celui qu'on ne doit pas prononcer ?",
+      "answer": "Voldemort",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur principale de la maison Serpentard ?",
+      "answer": "Vert",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du garde-chasse géant de Poudlard ?",
+      "answer": "Hagrid",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel objet attrapeur doit-il saisir pour finir un match de Quidditch ?",
+      "answer": "Vif d'or",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment appelle-t-on les gens sans pouvoirs magiques ?",
+      "answer": "Moldus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de la mère de Harry Potter ?",
+      "answer": "Lily",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle plateforme de la gare King's Cross mène à Poudlard ?",
+      "answer": "9 3/4",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel professeur enseigne les potions au début de la saga ?",
+      "answer": "Severus Rogue",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a tué les parents de Harry Potter ?",
+      "answer": "Voldemort",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la banque des sorciers ?",
+      "answer": "Gringotts",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom du père de Harry ?",
+      "answer": "James",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'elfe de maison qui se libère avec une chaussette ?",
+      "answer": "Dobby",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la maison de Drago Malefoy ?",
+      "answer": "Serpentard",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel sortilège permet de désarmer son adversaire ?",
+      "answer": "Expelliarmus",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le parrain de Harry Potter ?",
+      "answer": "Sirius Black",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est \"Celui-qui-a-survécu\" ?",
+      "answer": "Harry Potter",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de la sœur de Ron ?",
+      "answer": "Ginny",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel sortilège fait léviter les objets ?",
+      "answer": "Wingardium Leviosa",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la prison des sorciers ?",
+      "answer": "Azkaban",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a écrit les livres Harry Potter (dans la réalité) ?",
+      "answer": "J.K. Rowling",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel objet magique choisit son sorcier ?",
+      "answer": "Baguette",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la rue commerçante des sorciers à Londres ?",
+      "answer": "Chemin de Traverse",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le poste de Harry au Quidditch ?",
+      "answer": "Attrapeur",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien y a-t-il de maisons à Poudlard ?",
+      "answer": "4",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel sortilège produit de la lumière au bout de la baguette ?",
+      "answer": "Lumos",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle coupe met-on son nom pour le Tournoi des Trois Sorciers ?",
+      "answer": "Coupe de Feu",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel objet rend invisible celui qui le porte ?",
+      "answer": "Cape d'invisibilité",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur des cheveux de la famille Weasley ?",
+      "answer": "Roux",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la société secrète de Voldemort ?",
+      "answer": "Les Mangemorts",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'oncle de Harry ?",
+      "answer": "Vernon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la tante de Harry ?",
+      "answer": "Pétunia",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la boisson populaire chez les sorciers ?",
+      "answer": "Bière au beurre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'acteur qui joue Harry Potter ?",
+      "answer": "Daniel Radcliffe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'actrice qui joue Hermione Granger ?",
+      "answer": "Emma Watson",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'acteur qui joue Ron Weasley ?",
+      "answer": "Rupert Grint",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Argus Filch.png",
+      "question": "Qui est-ce ?",
+      "answer": "Argus Filch",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Arthur Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Arthur Weasley",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Dobby.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dobby",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Dudley Dursley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dudley Dursley",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Gilderoy Lockhart.png",
+      "question": "Qui est-ce ?",
+      "answer": "Gilderoy Lockhart",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Hedwig.png",
+      "question": "Qui est-ce ?",
+      "answer": "Hedwig",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Molly Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Molly Weasley",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Neville Longbottom.png",
+      "question": "Qui est-ce ?",
+      "answer": "Neville Longbottom",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Petunia Dursley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Petunia Dursley",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/2/images/Vernon Dursley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Vernon Dursley",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "De quel animal le professeur McGonagall peut-elle prendre la forme ?",
+      "answer": "Chat",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du rat de Ron ?",
+      "answer": "Croûtard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chat d'Hermione ?",
+      "answer": "Pattenrond",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle potion permet de changer d'apparence ?",
+      "answer": "Polynectar",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du village sorcier près de Poudlard ?",
+      "answer": "Pré-au-Lard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'hippogriffe sauvé par Harry et Hermione ?",
+      "answer": "Buck",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle plante crie quand on la déterre ?",
+      "answer": "Mandragore",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du concierge de Poudlard ?",
+      "answer": "Rusard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du fantôme de Gryffondor ?",
+      "answer": "Nick Quasi-Sans-Tête",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le métier des parents d'Hermione ?",
+      "answer": "Dentistes",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le numéro de la chambre de Harry sous l'escalier ?",
+      "answer": "Placard sous l'escalier (Pas de numéro)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel tournoi a lieu dans le 4ème tome ?",
+      "answer": "Tournoi des Trois Sorciers",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la maison de Cédric Diggory ?",
+      "answer": "Poufsouffle",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du journal intime détruit par Harry dans le tome 2 ?",
+      "answer": "Tom Jedusor",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est le basilic ?",
+      "answer": "Un serpent géant",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui tue Albus Dumbledore ?",
+      "answer": "Severus Rogue",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du Seigneur des Ténèbres avant de devenir Voldemort ?",
+      "answer": "Tom Elvis Jedusor",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la formule du sortilège de la mort ?",
+      "answer": "Avada Kedavra",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel objet permet à Hermione de suivre tous ses cours en 3ème année ?",
+      "answer": "Retourneur de temps",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du loup-garou ami de James Potter ?",
+      "answer": "Remus Lupin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel bonbon peut avoir le goût de \"crotte de nez\" ?",
+      "answer": "Dragées surprises de Bertie Crochue",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'arbre violent dans le parc de Poudlard ?",
+      "answer": "Saule Cogneur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la journaliste à scandale agaçante ?",
+      "answer": "Rita Skeeter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du groupe de résistance fondé par Dumbledore ?",
+      "answer": "L'Ordre du Phénix",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui tue Sirius Black ?",
+      "answer": "Bellatrix Lestrange",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le patronus de Harry ?",
+      "answer": "Cerf",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la maison de Luna Lovegood ?",
+      "answer": "Serdaigle",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle créature garde la prison d'Azkaban ?",
+      "answer": "Détraqueurs",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le maître des baguettes (fabricant) le plus connu en Grande-Bretagne ?",
+      "answer": "Ollivander",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chien à trois têtes ?",
+      "answer": "Touffu",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la dame rose et cruelle envoyée par le Ministère en 5ème année ?",
+      "answer": "Dolores Ombrage",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'armée secrète formée par Harry à Poudlard ?",
+      "answer": "Armée de Dumbledore",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de Reliques de la Mort y a-t-il ?",
+      "answer": "3",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le fidèle serpent de Voldemort ?",
+      "answer": "Nagini",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mot de passe pour fermer la carte du Maraudeur ?",
+      "answer": "Méfait accompli",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle matière enseigne le professeur Trelawney ?",
+      "answer": "Divination",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a donné la cape d'invisibilité à Harry (de la part de son père) ?",
+      "answer": "Dumbledore",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la salle qui apparaît quand on en a vraiment besoin ?",
+      "answer": "Salle sur Demande",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la monnaie des sorciers (pièce d'or) ?",
+      "answer": "Gallion",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le fantôme des toilettes des filles ?",
+      "answer": "Mimi Geignarde",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la maison de la famille Weasley ?",
+      "answer": "Le Terrier",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a trahi les parents de Harry en les livrant à Voldemort ?",
+      "answer": "Peter Pettigrow",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du professeur de défense contre les forces du mal en 2ème année ?",
+      "answer": "Gilderoy Lockhart",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du sortilège pour déverrouiller une porte ?",
+      "answer": "Alohomora",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du sortilège pour faire venir un objet à soi ?",
+      "answer": "Accio",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chat de Rusard ?",
+      "answer": "Miss Teigne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la dame qui vend des friandises dans le train ?",
+      "answer": "La dame du chariot",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la baguette la plus puissante du monde ?",
+      "answer": "Baguette de Sureau",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la rue où habitent les Dursley ?",
+      "answer": "Privet Drive",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le numéro de la maison des Dursley ?",
+      "answer": "4",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la valeur du Vif d'or en points ?",
+      "answer": "150",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Cedric Diggory.png",
+      "question": "Qui est-ce ?",
+      "answer": "Cedric Diggory",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Cho Chang.png",
+      "question": "Qui est-ce ?",
+      "answer": "Cho Chang",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Colin Creevey.png",
+      "question": "Qui est-ce ?",
+      "answer": "Colin Creevey",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Fred & George Weasley .png",
+      "question": "Qui est-ce ?",
+      "answer": "Fred & George Weasley ",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Lucius Malfoy.png",
+      "question": "Qui est-ce ?",
+      "answer": "Lucius Malfoy",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Luna Lovegood.png",
+      "question": "Qui est-ce ?",
+      "answer": "Luna Lovegood",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Narcissa Malfoy.png",
+      "question": "Qui est-ce ?",
+      "answer": "Narcissa Malfoy",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/3/images/Seamus Finnigan.png",
+      "question": "Qui est-ce ?",
+      "answer": "Seamus Finnigan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mot de passe pour ouvrir la carte du Maraudeur ?",
+      "answer": "Je jure solennellement que mes intentions sont mauvaises",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le Prince de Sang-Mêlé ?",
+      "answer": "Severus Rogue",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Comment s'appelle le balai offert à Harry par Sirius Black ?",
+      "answer": "Éclair de Feu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la directrice de la maison Poufsouffle (prof de botanique) ?",
+      "answer": "Professeur Chourave",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'araignée géante d'Hagrid ?",
+      "answer": "Aragog",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'école de magie française ?",
+      "answer": "Beauxbâtons",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la gare de Poudlard ?",
+      "answer": "Pré-au-Lard (Hogsmeade Station)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle créature tire les calèches de Poudlard (visible par ceux qui ont vu la mort) ?",
+      "answer": "Sombrals",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le fantôme de la maison Serpentard ?",
+      "answer": "Le Baron Sanglant",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du miroir qui montre le désir le plus profond ?",
+      "answer": "Miroir du Riséd",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de balles sont utilisées dans un match de Quidditch ?",
+      "answer": "4",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de la mère de Drago Malefoy ?",
+      "answer": "Narcissa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la forme du patronus d'Hermione ?",
+      "answer": "Loutre",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le capitaine de l'équipe de Quidditch de Gryffondor (tome 1 à 3) ?",
+      "answer": "Olivier Dubois",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du pub à Pré-au-Lard ?",
+      "answer": "Les Trois Balais",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le deuxième prénom de Harry ?",
+      "answer": "James",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du professeur de vol sur balai ?",
+      "answer": "Madame Bibine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui remplace Dumbledore en tant que directeur dans le dernier tome ?",
+      "answer": "Severus Rogue",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle potion donne une chance incroyable ?",
+      "answer": "Felix Felicis",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a créé la Pierre Philosophale ?",
+      "answer": "Nicolas Flamel",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du sortilège de torture (Impardonnable) ?",
+      "answer": "Endoloris",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du village où habitaient les parents de Harry ?",
+      "answer": "Godric's Hollow",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle créature est Aragog ?",
+      "answer": "Acromantule",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'école de magie de Viktor Krum ?",
+      "answer": "Durmstrang",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le surnom de Peter Pettigrow ?",
+      "answer": "Queudver",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le surnom de Sirius Black ?",
+      "answer": "Patmol",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le surnom de James Potter ?",
+      "answer": "Cornedrue",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le surnom de Remus Lupin ?",
+      "answer": "Lunard",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel objet est le premier Horcruxe détruit ?",
+      "answer": "Le journal intime",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la petite amie de Ron à la 6ème année (avant Hermione) ?",
+      "answer": "Lavande Brown",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'hôpital des sorciers ?",
+      "answer": "Sainte-Mangouste",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le professeur d'histoire de la magie (c'est un fantôme) ?",
+      "answer": "Professeur Binns",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur du sortilège \"Avada Kedavra\" ?",
+      "answer": "Verte",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la directrice de Beauxbâtons ?",
+      "answer": "Madame Maxime",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la tante de Harry qui gonfle comme un ballon ?",
+      "answer": "Tante Marge",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le Ministre de la Magie au début de la saga ?",
+      "answer": "Cornelius Fudge",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la forme du patronus de Rogue ?",
+      "answer": "Biche",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Pourquoi le patronus de Rogue est-il une biche ?",
+      "answer": "Par amour pour Lily Potter",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le commentateur des matchs de Quidditch (élève) ?",
+      "answer": "Lee Jordan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du sortilège qui efface la mémoire ?",
+      "answer": "Oubliettes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a tué Bellatrix Lestrange ?",
+      "answer": "Molly Weasley",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la pierre qui permet de rappeler les morts ?",
+      "answer": "Pierre de Résurrection",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'elfe de maison de la famille Black ?",
+      "answer": "Kreattur",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle matière enseigne Horace Slughorn ?",
+      "answer": "Potions",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien de buts marque-t-on en passant le Souafle dans un anneau ?",
+      "answer": "10 points",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Alastor Mad Eye Moody.png",
+      "question": "Qui est-ce ?",
+      "answer": "Alastor Mad Eye Moody",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Barty Crouch Jr.png",
+      "question": "Qui est-ce ?",
+      "answer": "Barty Crouch Jr",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Bellatrix Lestrange.png",
+      "question": "Qui est-ce ?",
+      "answer": "Bellatrix Lestrange",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Bill Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Bill Weasley",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Buckbeak.png",
+      "question": "Qui est-ce ?",
+      "answer": "Buckbeak",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Dean Thomas.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dean Thomas",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Dolores Umbridge.png",
+      "question": "Qui est-ce ?",
+      "answer": "Dolores Umbridge",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Fang.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Fang",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Filius Flitwick.png",
+      "question": "Qui est-ce ?",
+      "answer": "Filius Flitwick",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Fleur Delacour.png",
+      "question": "Qui est-ce ?",
+      "answer": "Fleur Delacour",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Fluffy.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Fluffy",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Horace Slughorn.png",
+      "question": "Qui est-ce ?",
+      "answer": "Horace Slughorn",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Igor Karkaroff.png",
+      "question": "Qui est-ce ?",
+      "answer": "Igor Karkaroff",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Moaning Myrtle.png",
+      "question": "Qui est-ce ?",
+      "answer": "Moaning Myrtle",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Nearly Headless Nick.png",
+      "question": "Qui est-ce ?",
+      "answer": "Nearly Headless Nick",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Nymphadora Tonks.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Nymphadora Tonks",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Parvati Patil.png",
+      "question": "Qui est-ce ?",
+      "answer": "Parvati Patil",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Percy Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Percy Weasley",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Peter Pettigrew.png",
+      "question": "Qui est-ce ?",
+      "answer": "Peter Pettigrew",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Quirinus Quirrell.png",
+      "question": "Qui est-ce ?",
+      "answer": "Quirinus Quirrell",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/4/images/Remus Lupin.png",
+      "question": "Qui est-ce ?",
+      "answer": "Remus Lupin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du frère de Dumbledore ?",
+      "answer": "Abelforth",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du petit elfe de maison alcoolique (amie de Dobby) ?",
+      "answer": "Winky",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a détruit la coupe de Poufsouffle (Horcruxe) ?",
+      "answer": "Hermione Granger",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'équipe de Quidditch préférée de Ron ?",
+      "answer": "Canons de Chudley",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la seule personne que Peeves l'esprit frappeur craint ?",
+      "answer": "Le Baron Sanglant",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du dragon qu'affronte Harry lors du tournoi ?",
+      "answer": "Magyar à pointes",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le loup-garou qui a mordu Remus Lupin ?",
+      "answer": "Fenrir Greyback",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui pose l'énigme pour entrer dans la salle commune de Serdaigle ?",
+      "answer": "Un heurtoir en forme d'aigle",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a mis le nom de Harry dans la Coupe de Feu ?",
+      "answer": "Barty Croupton Jr.",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle créature pose des énigmes (tome 4) ?",
+      "answer": "Sphinx",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur du sortilège \"Expelliarmus\" ?",
+      "answer": "Rouge",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du conducteur du Magicobus ?",
+      "answer": "Ernie Danlmur",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du Ministre de la Magie qui succède à Fudge ?",
+      "answer": "Rufus Scrimgeour",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du frère géant de Hagrid ?",
+      "answer": "Graup",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la boutique de baguettes du mage noir (Allée des Embrumes) ?",
+      "answer": "Barjow et Beurk",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le fantôme de la maison Poufsouffle ?",
+      "answer": "Le Moine Gras",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le dernier Horcruxe à être détruit (avant Harry/Voldemort) ?",
+      "answer": "Nagini",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le maître de la Baguette de Sureau à la fin de la saga ?",
+      "answer": "Harry Potter",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du sortilège créé par le Prince de Sang-Mêlé (coupure) ?",
+      "answer": "Sectumsempra",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Aberforth Dumbledore.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Aberforth Dumbledore",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Arabella Figg.png",
+      "question": "Qui est-ce ?",
+      "answer": "Arabella Figg",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Bathilda Bagshot.png",
+      "question": "Qui est-ce ?",
+      "answer": "Bathilda Bagshot",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Bunty Broadacre.png",
+      "question": "Qui est-ce ?",
+      "answer": "Bunty Broadacre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Cornelius Fudge.png",
+      "question": "Qui est-ce ?",
+      "answer": "Cornelius Fudge",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Credence.png",
+      "question": "Qui est-ce ?",
+      "answer": "Credence",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Fenrir Greyback.png",
+      "question": "Qui est-ce ?",
+      "answer": "Fenrir Greyback",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Fred Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "Fred Weasley",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Garrick Ollivander.png",
+      "question": "Qui est-ce ?",
+      "answer": "Garrick Ollivander",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Gellert Grindelwald.png",
+      "question": "Qui est-ce ?",
+      "answer": "Gellert Grindelwald",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/George Weasley.png",
+      "question": "Qui est-ce ?",
+      "answer": "George Weasley",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Gregory Goyle.png",
+      "question": "Qui est-ce ?",
+      "answer": "Gregory Goyle",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Griphook.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Griphook",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Helga Hufflepuff.png",
+      "question": "Qui est-ce ?",
+      "answer": "Helga Hufflepuff",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Jacob Kowalski.png",
+      "question": "Qui est-ce ?",
+      "answer": "Jacob Kowalski",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/James Potter.png",
+      "question": "Qui est-ce ?",
+      "answer": "James Potter",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Kingsley Shacklebolt.png",
+      "question": "Qui est-ce ?",
+      "answer": "Kingsley Shacklebolt",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Lavender Brown.png",
+      "question": "Qui est-ce ?",
+      "answer": "Lavender Brown",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Marge Dursley.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Marge Dursley",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Minerva Mcgonagall.png",
+      "question": "Qui est-ce ?",
+      "answer": "Minerva Mcgonagall",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Mundungus Fletcher.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Mundungus Fletcher",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Nagini.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Nagini",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Newt Scamander.png",
+      "question": "Qui est-ce ?",
+      "answer": "Newt Scamander",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Nicolas Flamel.png",
+      "question": "Qui est-ce ?",
+      "answer": "Nicolas Flamel",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Norbert.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Norbert",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Oliver Wood.png",
+      "question": "Qui est-ce ?",
+      "answer": "Oliver Wood",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Olympe Maxime.png",
+      "question": "Qui est-ce ?",
+      "answer": "Olympe Maxime",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Padma Patil.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Padma Patil",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Peeves.png",
+      "question": "Qui est-ce ?",
+      "answer": "Peeves",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Pomona Sprout.png",
+      "question": "Qui est-ce ?",
+      "answer": "Pomona Sprout",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Poppy Pomfrey.png",
+      "question": "Qui est-ce ?",
+      "answer": "Poppy Pomfrey",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Queenie Goldstein.png",
+      "question": "Qui est-ce ?",
+      "answer": "Queenie Goldstein",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Rita Skeeter.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rita Skeeter",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Rolanda Hooch.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rolanda Hooch",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Rowena Ravenclaw.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rowena Ravenclaw",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Rufus Scrimgeour.png",
+      "question": "Qui est-ce ?",
+      "answer": "Rufus Scrimgeour",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Salazar Slytherin.png",
+      "question": "Qui est-ce ?",
+      "answer": "Salazar Slytherin",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Scabbers.png",
+      "question": "Qui est-ce ?",
+      "answer": "Scabbers",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Stan Shunpike.png",
+      "question": "Qui est-ce ?",
+      "answer": "Stan Shunpike",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Sybill Trelawney.png",
+      "question": "Qui est-ce ?",
+      "answer": "Sybill Trelawney",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Teddy.png",
+      "question": "Qui est-ce ?",
+      "answer": "Teddy",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/The Bloody Baron.png",
+      "question": "Qui est-ce ?",
+      "answer": "The Bloody Baron",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/The Fat Friar.png",
+      "question": "Qui est-ce ?",
+      "answer": "The Fat Friar",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/The Grey Lady.png",
+      "question": "Qui est-ce ?",
+      "answer": "The Grey Lady",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Viktor Krum.png",
+      "question": "Qui est-ce ?",
+      "answer": "Viktor Krum",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/harry_potter/5/images/Xenophilius Lovegood.jpg",
+      "question": "Qui est-ce ?",
+      "answer": "Xenophilius Lovegood",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a coupé l'oreille de George Weasley ?",
+      "answer": "Severus Rogue",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le professeur de soins aux créatures magiques avant Hagrid ?",
+      "answer": "Professeur Brûlopot",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a détruit le diadème de Serdaigle ?",
+      "answer": "Le Feudeymon (Invoqué par Crabbe/Goyle)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Combien d'escaliers y a-t-il à Poudlard (environ) ?",
+      "answer": "142",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la mère de Nymphadora Tonks ?",
+      "answer": "Andromeda Black",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

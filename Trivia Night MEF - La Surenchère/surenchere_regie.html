@@ -120,6 +120,7 @@
 <div id="top-bar">
     <h2>🎲 LA SURENCHÈRE</h2>
     <button type="button" class="btn-blue" onclick="openScreen()">📺 ÉCRAN</button>
+    <button type="button" id="btn-mode-surenchere" onclick="toggleDataMode()" style="background:#1a1a1a;border:1px solid #444;color:#888;padding:5px 10px;font-family:'Bebas Neue';font-size:.82rem;letter-spacing:1px;cursor:pointer;border-radius:3px;" title="Basculer entre base normale et base personnalisée">MODE: <span id="mode-label-surenchere">◉ NORMAL</span></button>
     <div class="sep"></div>
     <button type="button" class="btn-purple" onclick="playIntro()">🎬 GÉNÉRIQUE</button>
     <button type="button" class="btn-gray btn-sm" onclick="skipIntro()">⏭ SKIP</button>
@@ -262,7 +263,22 @@
 </div>
 
 <script src="surenchere_data.js"></script>
+<script src="surenchere_data_custom.js"></script>
 <script>
+// ── MODE DONNÉES (normal / personnalisé) ──────────────────────────────────
+(function() {
+    if (localStorage.getItem('surenchere_mode') === 'custom' && Array.isArray(THEMES_DATA_CUSTOM)) {
+        THEMES_DATA.length = 0;
+        THEMES_DATA_CUSTOM.forEach(t => THEMES_DATA.push(t));
+    }
+})();
+function toggleDataMode() {
+    const cur = localStorage.getItem('surenchere_mode') || 'normal';
+    localStorage.setItem('surenchere_mode', cur === 'normal' ? 'custom' : 'normal');
+    location.reload();
+}
+// ─────────────────────────────────────────────────────────────────────────
+
 // ================================================================
 // DÉFINITIONS BONUS & MALUS
 // ================================================================
@@ -882,6 +898,16 @@ function randomColor() {
 // Expose pour onclick inline
 window.addTeam=addTeam; window.removeTeam=removeTeam; window.moveTeam=moveTeam;
 window.adjustScore=adjustScore; window.activateBonus=activateBonus; window.activateMalus=activateMalus;
+
+// Init mode label
+(function() {
+    const mode = localStorage.getItem('surenchere_mode') || 'normal';
+    const lbl = document.getElementById('mode-label-surenchere');
+    const btn = document.getElementById('btn-mode-surenchere');
+    if (!lbl) return;
+    lbl.textContent = mode === 'custom' ? '◉ PERSONNALISÉ' : '◉ NORMAL';
+    if (mode === 'custom') { btn.style.color = '#d4af37'; btn.style.borderColor = '#d4af37'; }
+})();
 </script>
 </body>
 </html>

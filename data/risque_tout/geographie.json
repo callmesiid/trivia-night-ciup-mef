@@ -1,0 +1,4089 @@
+{
+  "id": "geographie",
+  "label": "Géographie",
+  "icon": "icons/geographie.png",
+  "questions": [
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Algérie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Algérie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Allemagne.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Allemagne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Argentine.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Argentine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Australie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Australie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Brésil.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Brésil",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Canada.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Canada",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Chili.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Chili",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Chine.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Chine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Espagne.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Espagne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Finlande.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Finlande",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/France.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "France",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Grèce.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Grèce",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Inde.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Inde",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Italie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Italie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Japon.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Japon",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Maroc.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Maroc",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Mexique.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Mexique",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Norvège.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Norvège",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Portugal.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Portugal",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Royaume-Uni.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Royaume Uni",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Russie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Russie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Suède.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Suède",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Sénégal.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Sénégal",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Tunisie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tunisie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Turquie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Turquie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Ukraine.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Ukraine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/Égypte.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Égypte",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/1/images/drapeau/États-Unis.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "États Unis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Sur quel continent se trouve la France ?",
+      "answer": "Europe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand pays du monde par la superficie ?",
+      "answer": "Russie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la planète sur laquelle nous vivons ?",
+      "answer": "Terre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel océan sépare l'Amérique de l'Europe ?",
+      "answer": "Atlantique",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la Tour Eiffel ?",
+      "answer": "France",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la forme géométrique souvent utilisée pour décrire l'Italie ?",
+      "answer": "Botte",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays peut-on voir les pyramides de Gizeh ?",
+      "answer": "Égypte",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de New York ?",
+      "answer": "États-Unis",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Sur quel continent se trouve le Brésil ?",
+      "answer": "Amérique du Sud",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la Grande Muraille ?",
+      "answer": "Chine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Venise ?",
+      "answer": "Italie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays a la forme d'un hexagone ?",
+      "answer": "France",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Sydney ?",
+      "answer": "Australie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Barcelone ?",
+      "answer": "Espagne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du fleuve qui traverse Paris ?",
+      "answer": "Seine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand pays d'Amérique du Sud ?",
+      "answer": "Brésil",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Allemagne ?",
+      "answer": "Berlin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Belgique ?",
+      "answer": "Bruxelles",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Chine ?",
+      "answer": "Pékin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Espagne ?",
+      "answer": "Madrid",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la France ?",
+      "answer": "Paris",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Grèce ?",
+      "answer": "Athènes",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Italie ?",
+      "answer": "Rome",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Japon ?",
+      "answer": "Tokyo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Luxembourg ?",
+      "answer": "Luxembourg",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Portugal ?",
+      "answer": "Lisbonne",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Royaume-Uni ?",
+      "answer": "Londres",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Autriche.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Autriche",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Belgique.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Belgique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Bolivie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bolivie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Bulgarie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bulgarie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Cameroun.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Cameroun",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Colombie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Colombie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Danemark.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Danemark",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Ghana.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Ghana",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Hongrie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Hongrie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Irlande.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Irlande",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Islande.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Islande",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Kenya.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Kenya",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Nigeria.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Nigeria",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Pays-Bas.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Pays Bas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Pologne.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Pologne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Pérou.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Pérou",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Qatar.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Qatar",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Roumanie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Roumanie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Suisse.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Suisse",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Tchéquie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tchéquie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Uruguay.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Uruguay",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Venezuela.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Venezuela",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Équateur.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Équateur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/2/images/drapeau/Éthiopie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Éthiopie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le pays le plus peuplé du monde (en 2023/2024) ?",
+      "answer": "Inde",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand océan du monde ?",
+      "answer": "Pacifique",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus long fleuve de France ?",
+      "answer": "La Loire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "answer": "Pyrénées",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "answer": "Sahara",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "answer": "Japon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+      "answer": "Méditerranée",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus haut sommet du monde ?",
+      "answer": "Mont Everest",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le Taj Mahal ?",
+      "answer": "Inde",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus petit pays du monde ?",
+      "answer": "Vatican",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville est surnommée la Grosse Pomme ?",
+      "answer": "New York",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Marrakech ?",
+      "answer": "Maroc",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fleuve traverse l'Égypte ?",
+      "answer": "Nil",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Rio de Janeiro ?",
+      "answer": "Brésil",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le point culminant de l'Europe occidentale ?",
+      "answer": "Mont Blanc",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel fleuve traverse la ville de Londres ?",
+      "answer": "Tamise",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la langue majoritairement parlée au Mexique ?",
+      "answer": "Espagnol",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la forêt amazonienne (majoritairement) ?",
+      "answer": "Brésil",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Québec ?",
+      "answer": "Canada",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Casablanca ?",
+      "answer": "Maroc",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Genève ?",
+      "answer": "Suisse",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le Mont Fuji ?",
+      "answer": "Japon",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Bombay (Mumbai) ?",
+      "answer": "Inde",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la place rouge ?",
+      "answer": "Russie",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Algérie ?",
+      "answer": "Alger",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Argentine ?",
+      "answer": "Buenos Aires",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Autriche ?",
+      "answer": "Vienne",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Corée du Sud ?",
+      "answer": "Séoul",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Danemark ?",
+      "answer": "Copenhague",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Égypte ?",
+      "answer": "Le Caire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des États-Unis ?",
+      "answer": "Washington D.C.",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Inde ?",
+      "answer": "New Delhi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Irlande ?",
+      "answer": "Dublin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Mexique ?",
+      "answer": "Mexico",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Monaco ?",
+      "answer": "Monaco",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Norvège ?",
+      "answer": "Oslo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Pays-Bas ?",
+      "answer": "Amsterdam",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la République tchèque ?",
+      "answer": "Prague",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Russie ?",
+      "answer": "Moscou",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Singapour ?",
+      "answer": "Singapour",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Suède ?",
+      "answer": "Stockholm",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Thaïlande ?",
+      "answer": "Bangkok",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Tunisie ?",
+      "answer": "Tunis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Vatican ?",
+      "answer": "Cité du Vatican",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Afghanistan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Afghanistan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Albanie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Albanie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Angleterre.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Angleterre",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Angola.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Angola",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Anguilla.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Anguilla",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Antarctique.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Antarctique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Arabie_Saoudite.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Arabie Saoudite",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Arménie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Arménie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Aruba.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Aruba",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Azerbaïdjan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Azerbaïdjan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Bahamas.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bahamas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Bahreïn.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bahreïn",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Bangladesh.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bangladesh",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Belize.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Belize",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Bermudes.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bermudes",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Bhoutan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bhoutan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Birmanie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Birmanie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Biélorussie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Biélorussie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Bosnie-Herzégovine.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bosnie Herzégovine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Botswana.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Botswana",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Brunei.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Brunei",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Burkina_Faso.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Burkina Faso",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Burundi.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Burundi",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Bénin.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Bénin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Cambodge.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Cambodge",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Chypre.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Chypre",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Congo.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Congo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Costa_Rica.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Costa Rica",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Croatie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Croatie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Cuba.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Cuba",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Curaçao.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Curaçao",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Côte_DIvoire.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Côte Divoire",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Djibouti.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Djibouti",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Dominique.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Dominique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Estonie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Estonie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Eswatini.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Eswatini",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Fidji.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Fidji",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Gabon.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Gabon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Gambie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Gambie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Gibraltar.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Gibraltar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Groenland.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Groenland",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guadeloupe.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guadeloupe",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guam.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guam",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guatemala.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guatemala",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guernesey.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guernesey",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guinée-Bissau.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guinée Bissau",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guinée.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guinée",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guinée_Équatoriale.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guinée Équatoriale",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guyana.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guyana",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Guyane.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Guyane",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Géorgie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Géorgie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Haïti.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Haïti",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Honduras.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Honduras",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Hong_Kong.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Hong Kong",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Indonésie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Indonésie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Irak.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Irak",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Iran.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Iran",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Jamaïque.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Jamaïque",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Jersey.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Jersey",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Jordanie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Jordanie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Kazakhstan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Kazakhstan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Kirghizistan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Kirghizistan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Kosovo.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Kosovo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Koweït.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Koweït",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Laos.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Laos",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Lesotho.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Lesotho",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Lettonie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Lettonie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Liban.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Liban",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Liberia.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Liberia",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Libye.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Libye",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Lituanie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Lituanie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Luxembourg.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Luxembourg",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Macao.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Macao",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Madagascar.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Madagascar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Malaisie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Malaisie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Malawi.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Malawi",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Maldives.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Maldives",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Mali.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Mali",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Martinique.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Martinique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Mauritanie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Mauritanie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Mayotte.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Mayotte",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Moldavie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Moldavie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Mongolie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Mongolie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Montserrat.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Montserrat",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Monténégro.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Monténégro",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Mozambique.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Mozambique",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Namibie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Namibie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Nicaragua.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Nicaragua",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Niger.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Niger",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Niue.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Niue",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Nouvelle-Calédonie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Nouvelle Calédonie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Nouvelle-Zélande.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Nouvelle Zélande",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Népal.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Népal",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Oman.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Oman",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Ouganda.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Ouganda",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Ouzbékistan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Ouzbékistan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Pakistan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Pakistan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Palestine.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Palestine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Panama.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Panama",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Paraguay.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Paraguay",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Philippines.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Philippines",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Polynésie_Française.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Polynésie Française",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Porto_Rico.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Porto Rico",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Rwanda.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Rwanda",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Réunion.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Réunion",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Sahara_Occidental.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Sahara Occidental",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Saint-Barthélemy.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Saint Barthélemy",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Salvador.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Salvador",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Samoa.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Samoa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Samoa_Américaines.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Samoa Américaines",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Serbie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Serbie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Sierra_Leone.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Sierra Leone",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Singapour.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Singapour",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Slovaquie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Slovaquie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Slovénie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Slovénie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Somalie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Somalie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Soudan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Soudan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Sri_Lanka.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Sri Lanka",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Suriname.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Suriname",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Syrie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Syrie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Tadjikistan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tadjikistan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Tanzanie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tanzanie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Taïwan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Taïwan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Tchad.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tchad",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Thaïlande.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Thaïlande",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Timor_Oriental.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Timor Oriental",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Togo.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Togo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Tokelau.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tokelau",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Tonga.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tonga",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Turkménistan.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Turkménistan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Vanuatu.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Vanuatu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Vatican.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Vatican",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Viêt_Nam.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Viêt Nam",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Yémen.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Yémen",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Zambie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Zambie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Zimbabwe.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Zimbabwe",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Åland.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Åland",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Écosse.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Écosse",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Érythrée.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Érythrée",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Caïmans.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Caïmans",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Cocos.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Cocos",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Cook.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Cook",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Féroé.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Féroé",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Malouines.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Malouines",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Marshall.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Marshall",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Pitcairn.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Pitcairn",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Salomon.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Salomon",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Île_Bouvet.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Île Bouvet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Île_Christmas.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Île Christmas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/3/images/drapeau/Île_Norfolk.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Île Norfolk",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la langue officielle du Brésil ?",
+      "answer": "Portugais",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel canal relie la mer Méditerranée à la mer Rouge ?",
+      "answer": "Suez",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand état des États-Unis par la superficie ?",
+      "answer": "Alaska",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la monnaie utilisée au Royaume-Uni ?",
+      "answer": "Livre Sterling",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le Machu Picchu ?",
+      "answer": "Pérou",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du détroit qui sépare le Royaume-Uni de la France ?",
+      "answer": "Pas de Calais",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la Bavière ?",
+      "answer": "Allemagne",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel océan se trouve l'île de Madagascar ?",
+      "answer": "Indien",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel détroit sépare l'Espagne du Maroc ?",
+      "answer": "Gibraltar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la monnaie du Japon ?",
+      "answer": "Yen",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville est construite sur deux continents (Europe et Asie) ?",
+      "answer": "Istanbul",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le mont Kilimandjaro ?",
+      "answer": "Tanzanie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle mer est connue pour sa salinité très élevée empêchant la vie ?",
+      "answer": "Mer Morte",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Dubaï ?",
+      "answer": "Émirats arabes unis",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la monnaie de la Suisse ?",
+      "answer": "Franc suisse",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Tchernobyl ?",
+      "answer": "Ukraine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la plus grande île du monde (hors continents) ?",
+      "answer": "Groenland",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la mer située entre la Suède et le Royaume-Uni ?",
+      "answer": "Mer du Nord",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la langue officielle de l'Autriche ?",
+      "answer": "Allemand",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel volcan a détruit la ville de Pompéi ?",
+      "answer": "Vésuve",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la région française située en Amérique du Sud ?",
+      "answer": "Guyane",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le fleuve le plus long du monde (souvent débattu avec le Nil) ?",
+      "answer": "Amazone",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouvent les chutes du Niagara (côté fer à cheval) ?",
+      "answer": "Canada",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le pays le plus long du monde (du nord au sud) ?",
+      "answer": "Chili",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de La Mecque ?",
+      "answer": "Arabie saoudite",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la région de la Patagonie ?",
+      "answer": "Argentine",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale européenne traversée par le Danube ?",
+      "answer": "Vienne",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve l'île de Bali ?",
+      "answer": "Indonésie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chaîne de montagnes traverse l'Amérique du Nord à l'Ouest ?",
+      "answer": "Rocheuses",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la deuxième ville la plus peuplée de France ?",
+      "answer": "Marseille",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Andorre ?",
+      "answer": "Andorre-la-Vieille",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Arabie saoudite ?",
+      "answer": "Riyad",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Australie ?",
+      "answer": "Canberra",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Brésil ?",
+      "answer": "Brasilia",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Bulgarie ?",
+      "answer": "Sofia",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Canada ?",
+      "answer": "Ottawa",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Chili ?",
+      "answer": "Santiago",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Colombie ?",
+      "answer": "Bogota",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Croatie ?",
+      "answer": "Zagreb",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Cuba ?",
+      "answer": "La Havane",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Djibouti ?",
+      "answer": "Djibouti",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Finlande ?",
+      "answer": "Helsinki",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Hongrie ?",
+      "answer": "Budapest",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Indonésie ?",
+      "answer": "Jakarta",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Irak ?",
+      "answer": "Bagdad",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Iran ?",
+      "answer": "Téhéran",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Kenya ?",
+      "answer": "Nairobi",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Koweït ?",
+      "answer": "Koweït",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Liban ?",
+      "answer": "Beyrouth",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Maroc ?",
+      "answer": "Rabat",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Panama ?",
+      "answer": "Panama",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Pérou ?",
+      "answer": "Lima",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Philippines ?",
+      "answer": "Manille",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Pologne ?",
+      "answer": "Varsovie",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Qatar ?",
+      "answer": "Doha",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Roumanie ?",
+      "answer": "Bucarest",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Sénégal ?",
+      "answer": "Dakar",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Serbie ?",
+      "answer": "Belgrade",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Suisse ?",
+      "answer": "Berne",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Turquie ?",
+      "answer": "Ankara",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Ukraine ?",
+      "answer": "Kiev",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Venezuela ?",
+      "answer": "Caracas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Vietnam ?",
+      "answer": "Hanoï",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Afrique_Du_Sud.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Afrique Du Sud",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Antigua-Et-Barbuda.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Antigua Et Barbuda",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Congo_rép_Dém.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Congo Rép Dém",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Corée_Du_Nord.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Corée Du Nord",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Corée_Du_Sud.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Corée Du Sud",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Géorgie_Du_Sud-Et-Les_Îles_Sandwich_Du_Sud.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Géorgie Du Sud Et Les Îles Sandwich Du Sud",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Irlande_Du_Nord.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Irlande Du Nord",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Macédoine_Du_Nord.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Macédoine Du Nord",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Papouasie-Nouvelle-Guinée.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Papouasie Nouvelle Guinée",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Pays-Bas_Caribéens.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Pays Bas Caribéens",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Pays_De_Galles.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Pays De Galles",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/République_Centrafricaine.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "République Centrafricaine",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/République_Dominicaine.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "République Dominicaine",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Christophe-Et-Niévès.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Saint Christophe Et Niévès",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Martin_antilles_Françaises.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Saint Martin Antilles Françaises",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Martin_royaume_Des_Pays-Bas.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Saint Martin Royaume Des Pays Bas",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Pierre-Et-Miquelon.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Saint Pierre Et Miquelon",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Vincent-Et-Les-Grenadines.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Saint Vincent Et Les Grenadines",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Sainte-Hélène-Ascension_Et_Tristan_Da_Cunha.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Sainte Hélène Ascension Et Tristan Da Cunha",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Sao_Tomé-Et-Principe.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Sao Tomé Et Principe",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Soudan_Du_Sud.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Soudan Du Sud",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Svalbard_Et_Jan_Mayen.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Svalbard Et Jan Mayen",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Terres_Australes_Et_Antarctiques_Françaises.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Terres Australes Et Antarctiques Françaises",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Territoire_Britannique_De_LOcéan_Indien.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Territoire Britannique De Locéan Indien",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Trinité-Et-Tobago.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Trinité Et Tobago",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Wallis-Et-Futuna.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Wallis Et Futuna",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Émirats_Arabes_Unis.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Émirats Arabes Unis",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Heard-Et-Macdonald.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Heard Et Macdonald",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Mariannes_Du_Nord.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Mariannes Du Nord",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Mineures_Éloignées_Des_États-Unis.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Mineures Éloignées Des États Unis",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Turques-Et-Caïques.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Turques Et Caïques",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Vierges_Britanniques.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Vierges Britanniques",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Vierges_Des_États-Unis.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Îles Vierges Des États Unis",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/4/images/drapeau/Île_De_Man.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Île De Man",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand lac du monde (en superficie) ?",
+      "answer": "Mer Caspienne",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chaîne de montagnes traverse l'Italie du nord au sud ?",
+      "answer": "Apennins",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus grand pays d'Afrique par la superficie ?",
+      "answer": "Algérie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays est composé de plus de 17 000 îles ?",
+      "answer": "Indonésie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la région de la Transylvanie ?",
+      "answer": "Roumanie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du supercontinent qui existait il y a 200 millions d'années ?",
+      "answer": "Pangée",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le fleuve le plus long d'Europe ?",
+      "answer": "Volga",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le site de Pétra ?",
+      "answer": "Jordanie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom des habitants de Madrid ?",
+      "answer": "Madrilènes",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle chaîne de montagnes sépare l'Europe de l'Asie ?",
+      "answer": "Oural",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le désert d'Atacama ?",
+      "answer": "Chili",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la plus grande île de la Méditerranée ?",
+      "answer": "Sicile",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouvent les ruines d'Angkor Wat ?",
+      "answer": "Cambodge",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du détroit séparant l'Alaska de la Russie ?",
+      "answer": "Béring",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve la ville de Tombouctou ?",
+      "answer": "Mali",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la devise monétaire de la Russie ?",
+      "answer": "Rouble",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du désert qui couvre une grande partie de la Mongolie ?",
+      "answer": "Gobi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le site historique de Carthage ?",
+      "answer": "Tunisie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul État des USA situé dans les tropiques ?",
+      "answer": "Hawaï",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le lac Titicaca ?",
+      "answer": "Pérou",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la péninsule où se trouvent l'Espagne et le Portugal ?",
+      "answer": "Ibérique",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Afghanistan ?",
+      "answer": "Kaboul",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Afrique du Sud ?",
+      "answer": "Pretoria",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Albanie ?",
+      "answer": "Tirana",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Azerbaïdjan ?",
+      "answer": "Bakou",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Bahamas ?",
+      "answer": "Nassau",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Bangladesh ?",
+      "answer": "Dacca",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Biélorussie ?",
+      "answer": "Minsk",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Bolivie ?",
+      "answer": "La Paz",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Bosnie-Herzégovine ?",
+      "answer": "Sarajevo",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Cambodge ?",
+      "answer": "Phnom Penh",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Cameroun ?",
+      "answer": "Yaoundé",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Chypre ?",
+      "answer": "Nicosie",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Congo-Brazzaville ?",
+      "answer": "Brazzaville",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Congo-Kinshasa (RDC) ?",
+      "answer": "Kinshasa",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Corée du Nord ?",
+      "answer": "Pyongyang",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Costa Rica ?",
+      "answer": "San José",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Émirats arabes unis ?",
+      "answer": "Abou Dabi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Équateur ?",
+      "answer": "Quito",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Estonie ?",
+      "answer": "Tallinn",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Éthiopie ?",
+      "answer": "Addis-Abeba",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Gabon ?",
+      "answer": "Libreville",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Ghana ?",
+      "answer": "Accra",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Guatemala ?",
+      "answer": "Guatemala",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Guinée ?",
+      "answer": "Conakry",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale d'Haïti ?",
+      "answer": "Port-au-Prince",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Islande ?",
+      "answer": "Reykjavik",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Jamaïque ?",
+      "answer": "Kingston",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Jordanie ?",
+      "answer": "Amman",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Kazakhstan ?",
+      "answer": "Astana",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Lettonie ?",
+      "answer": "Riga",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Libye ?",
+      "answer": "Tripoli",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Lituanie ?",
+      "answer": "Vilnius",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Madagascar ?",
+      "answer": "Antananarivo",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Malaisie ?",
+      "answer": "Kuala Lumpur",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Maldives ?",
+      "answer": "Malé",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Mali ?",
+      "answer": "Bamako",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Malte ?",
+      "answer": "La Valette",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Népal ?",
+      "answer": "Katmandou",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Nigeria ?",
+      "answer": "Abuja",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+      "answer": "Wellington",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Ouganda ?",
+      "answer": "Kampala",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Pakistan ?",
+      "answer": "Islamabad",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la République dominicaine ?",
+      "answer": "Saint-Domingue",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Rwanda ?",
+      "answer": "Kigali",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Saint-Marin ?",
+      "answer": "Saint-Marin",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Salvador ?",
+      "answer": "San Salvador",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Slovaquie ?",
+      "answer": "Bratislava",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Slovénie ?",
+      "answer": "Ljubljana",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Soudan ?",
+      "answer": "Khartoum",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Syrie ?",
+      "answer": "Damas",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Taïwan ?",
+      "answer": "Taipei",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Togo ?",
+      "answer": "Lomé",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Uruguay ?",
+      "answer": "Montevideo",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Yémen ?",
+      "answer": "Sanaa",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Andorre.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Andorre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Barbade.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Barbade",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Cap-Vert.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Cap Vert",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Comores.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Comores",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Grenade.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Grenade",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Kiribati.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Kiribati",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Liechtenstein.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Liechtenstein",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Malte.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Malte",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Maurice.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Maurice",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Micronésie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Micronésie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Monaco.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Monaco",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Nauru.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Nauru",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Palaos.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Palaos",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Saint-Marin.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Saint Marin",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Sainte-Lucie.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Sainte Lucie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Seychelles.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Seychelles",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "image",
+      "file": "Quizz/questions/geographie/5/images/drapeau/Tuvalu.png",
+      "question": "Quel pays a ce drapeau ?",
+      "answer": "Tuvalu",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le lac le plus profond du monde ?",
+      "answer": "Lac Baïkal",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le seul pays d'Amérique du Sud qui a l'anglais comme langue officielle ?",
+      "answer": "Guyana",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du fleuve qui traverse Bagdad ?",
+      "answer": "Tigre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel pays est entièrement enclavé dans l'Afrique du Sud ?",
+      "answer": "Lesotho",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le plus long fleuve d'Amérique du Nord ?",
+      "answer": "Missouri",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le point le plus bas de la Terre (sur la terre ferme) ?",
+      "answer": "Mer Morte",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom des chutes d'eau les plus hautes du monde ?",
+      "answer": "Salto Angel",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le Salto Angel ?",
+      "answer": "Venezuela",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Angola ?",
+      "answer": "Luanda",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale d'Antigua-et-Barbuda ?",
+      "answer": "Saint John's",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Arménie ?",
+      "answer": "Erevan",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Bahreïn ?",
+      "answer": "Manama",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Barbade ?",
+      "answer": "Bridgetown",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Belize ?",
+      "answer": "Belmopan",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Bénin ?",
+      "answer": "Porto-Novo",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Bhoutan ?",
+      "answer": "Thimphou",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Birmanie (Myanmar) ?",
+      "answer": "Naypyidaw",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Botswana ?",
+      "answer": "Gaborone",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Brunei ?",
+      "answer": "Bandar Seri Begawan",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Burkina Faso ?",
+      "answer": "Ouagadougou",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Burundi ?",
+      "answer": "Gitega",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Cap-Vert ?",
+      "answer": "Praia",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Centrafrique ?",
+      "answer": "Bangui",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Comores ?",
+      "answer": "Moroni",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Côte d'Ivoire ?",
+      "answer": "Yamoussoukro",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Dominique ?",
+      "answer": "Roseau",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Érythrée ?",
+      "answer": "Asmara",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Fidji ?",
+      "answer": "Suva",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Gambie ?",
+      "answer": "Banjul",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Géorgie ?",
+      "answer": "Tbilissi",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Grenade ?",
+      "answer": "Saint-Georges",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Guinée-Bissau ?",
+      "answer": "Bissau",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Guinée équatoriale ?",
+      "answer": "Malabo",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Guyana ?",
+      "answer": "Georgetown",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Honduras ?",
+      "answer": "Tegucigalpa",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Kirghizistan ?",
+      "answer": "Bichkek",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Kiribati ?",
+      "answer": "Tarawa-Sud",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Kosovo ?",
+      "answer": "Pristina",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Laos ?",
+      "answer": "Vientiane",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Lesotho ?",
+      "answer": "Maseru",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Liberia ?",
+      "answer": "Monrovia",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Liechtenstein ?",
+      "answer": "Vaduz",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Macédoine du Nord ?",
+      "answer": "Skopje",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Malawi ?",
+      "answer": "Lilongwe",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Îles Marshall ?",
+      "answer": "Majuro",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Maurice ?",
+      "answer": "Port-Louis",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Mauritanie ?",
+      "answer": "Nouakchott",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Micronésie ?",
+      "answer": "Palikir",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Moldavie ?",
+      "answer": "Chisinau",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Mongolie ?",
+      "answer": "Oulan-Bator",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Monténégro ?",
+      "answer": "Podgorica",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Mozambique ?",
+      "answer": "Maputo",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Namibie ?",
+      "answer": "Windhoek",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Nauru ?",
+      "answer": "Yaren",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Nicaragua ?",
+      "answer": "Managua",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Niger ?",
+      "answer": "Niamey",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale d'Oman ?",
+      "answer": "Mascate",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de l'Ouzbékistan ?",
+      "answer": "Tachkent",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Palaos ?",
+      "answer": "Ngerulmud",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Palestine ?",
+      "answer": "Ramallah",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Papouasie-Nouvelle-Guinée ?",
+      "answer": "Port Moresby",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Paraguay ?",
+      "answer": "Asuncion",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Saint-Christophe-et-Niévès ?",
+      "answer": "Basseterre",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Sainte-Lucie ?",
+      "answer": "Castries",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Saint-Vincent-et-les-Grenadines ?",
+      "answer": "Kingstown",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Îles Salomon ?",
+      "answer": "Honiara",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Samoa ?",
+      "answer": "Apia",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Sao Tomé-et-Principe ?",
+      "answer": "Sao Tomé",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Seychelles ?",
+      "answer": "Victoria",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Sierra Leone ?",
+      "answer": "Freetown",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Somalie ?",
+      "answer": "Mogadiscio",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Soudan du Sud ?",
+      "answer": "Djouba",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Sri Lanka ?",
+      "answer": "Sri Jayawardenepura Kotte",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Suriname ?",
+      "answer": "Paramaribo",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Tadjikistan ?",
+      "answer": "Douchanbé",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Tanzanie ?",
+      "answer": "Dodoma",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Tchad ?",
+      "answer": "N'Djaména",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Timor oriental ?",
+      "answer": "Dili",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Tonga ?",
+      "answer": "Nuku'alofa",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de Trinité-et-Tobago ?",
+      "answer": "Port-d'Espagne",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Turkménistan ?",
+      "answer": "Achgabat",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale des Tuvalu ?",
+      "answer": "Funafuti",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Vanuatu ?",
+      "answer": "Port-Vila",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale de la Zambie ?",
+      "answer": "Lusaka",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la capitale du Zimbabwe ?",
+      "answer": "Harare",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

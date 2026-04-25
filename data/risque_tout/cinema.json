@@ -1,0 +1,1365 @@
+{
+  "id": "cinema",
+  "label": "Cinéma",
+  "icon": "icons/cinema.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Quel film met en scène un paquebot qui coule en 1912 ?",
+      "answer": "Titanic",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est le père de Luke Skywalker ?",
+      "answer": "Dark Vador",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel agent secret porte le matricule 007 ?",
+      "answer": "James Bond",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on un requin tueur géant ?",
+      "answer": "Les Dents de la mer",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de l'ogre vert de DreamWorks ?",
+      "answer": "Shrek",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Jack Sparrow dans Pirates des Caraïbes ?",
+      "answer": "Johnny Depp",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel animal est Simba dans le Roi Lion ?",
+      "answer": "Un lion",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé le film \"E.T. l'extra-terrestre\" ?",
+      "answer": "Steven Spielberg",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur incarne Harry Potter ?",
+      "answer": "Daniel Radcliffe",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville se déroule l'action de \"Ratatouille\" ?",
+      "answer": "Paris",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle phrase culte est associée à Terminator ?",
+      "answer": "I'll be back (Je reviendrai)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film raconte l'histoire d'un boxeur nommé Rocky Balboa ?",
+      "answer": "Rocky",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle principal dans \"Forrest Gump\" ?",
+      "answer": "Tom Hanks",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel super-héros est un milliardaire habillé en chauve-souris ?",
+      "answer": "Batman",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation met en scène des jouets vivants ?",
+      "answer": "Toy Story",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel duo comique joue dans \"La Grande Vadrouille\" ?",
+      "answer": "Bourvil et de Funès",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français a eu un énorme succès avec Omar Sy en 2011 ?",
+      "answer": "Intouchables",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le métier d'Indiana Jones ?",
+      "answer": "Archéologue",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel dinosaure est la star de \"Jurassic Park\" ?",
+      "answer": "T-Rex (Tyrannosaure)",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'actrice principale de \"Pretty Woman\" ?",
+      "answer": "Julia Roberts",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour héros un petit robot compacteur de déchets ?",
+      "answer": "WALL-E",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la princesse dans \"La Guerre des Étoiles\" ?",
+      "answer": "Leia",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la planète Pandora ?",
+      "answer": "Avatar",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Rose dans Titanic ?",
+      "answer": "Kate Winslet",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle saga commence par \"L'École des sorciers\" ?",
+      "answer": "Harry Potter",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Gollum ?",
+      "answer": "Le Seigneur des Anneaux",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film de 1999 voit-on des gens connectés à une matrice ?",
+      "answer": "Matrix",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom du personnage joué par Harrison Ford dans Star Wars ?",
+      "answer": "Han",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film Tom Cruise est-il pilote de chasse ?",
+      "answer": "Top Gun",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on un DeLorean à voyager dans le temps ?",
+      "answer": "Retour vers le futur",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue dans \"Mission Impossible\" ?",
+      "answer": "Tom Cruise",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film entend-on la chanson \"My Heart Will Go On\" ?",
+      "answer": "Titanic",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la ville de Batman ?",
+      "answer": "Gotham City",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation a pour héros un poisson clown ?",
+      "answer": "Le Monde de Nemo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de l'acteur qui joue Charlot ?",
+      "answer": "Charlie Chaplin",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film entend-on \"Vers l'infini et au-delà\" ?",
+      "answer": "Toy Story",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réalisateur a fait \"Les Dents de la Mer\" ?",
+      "answer": "Steven Spielberg",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation met en scène des voitures qui parlent ?",
+      "answer": "Cars",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la baby-sitter aux pouvoirs magiques ?",
+      "answer": "Mary Poppins",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film se passe dans un parc d'attraction avec des clones de dinosaures ?",
+      "answer": "Jurassic Park",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film raconte l'histoire d'un rat qui veut devenir chef cuisinier ?",
+      "answer": "Ratatouille",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle couleur est associée à la pilule qui révèle la vérité dans Matrix ?",
+      "answer": "Rouge",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film une fille sort-elle d'un puits et d'une télé ?",
+      "answer": "Le Cercle (The Ring)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Avatar\" ?",
+      "answer": "James Cameron",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du hobbit porteur de l'anneau dans le Seigneur des Anneaux ?",
+      "answer": "Frodon Sacquet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film entend-on la réplique \"On ne laisse pas Bébé dans un coin\" ?",
+      "answer": "Dirty Dancing",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Pulp Fiction\" ?",
+      "answer": "Quentin Tarantino",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur français a un nez proéminent dans \"Cyrano de Bergerac\" (1990) ?",
+      "answer": "Gérard Depardieu",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film Dark Vador révèle-t-il son identité à Luke ?",
+      "answer": "L'Empire contre-attaque",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le Joker dans \"The Dark Knight\" (2008) ?",
+      "answer": "Heath Ledger",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film raconte l'histoire du fondateur de Facebook ?",
+      "answer": "The Social Network",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film voit-on une course de chars antique ?",
+      "answer": "Ben-Hur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Grand Bleu\" ?",
+      "answer": "Luc Besson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film entend-on \"C'est une bonne situation ça scribe ?\" ?",
+      "answer": "Astérix et Obélix : Mission Cléopâtre",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue Wolverine dans les films X-Men ?",
+      "answer": "Hugh Jackman",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'horreur se passe dans l'hôtel Overlook ?",
+      "answer": "Shining",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Les Temps modernes\" ?",
+      "answer": "Charlie Chaplin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du lion dans \"Madagascar\" ?",
+      "answer": "Alex",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réalisateur est connu pour ses films macabres comme \"Edward aux mains d'argent\" ?",
+      "answer": "Tim Burton",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Psychose\" ?",
+      "answer": "Alfred Hitchcock",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français se passe dans une épicerie de Montmartre ?",
+      "answer": "Le Fabuleux Destin d'Amélie Poulain",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue Iron Man ?",
+      "answer": "Robert Downey Jr.",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le film le plus vu de l'histoire du cinéma français (entrées France) ?",
+      "answer": "Bienvenue chez les Ch'tis",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Inception\" ?",
+      "answer": "Christopher Nolan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du clown dans le film \"Ça\" ?",
+      "answer": "Grippe-Sou (Pennywise)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice incarne Katniss Everdeen dans Hunger Games ?",
+      "answer": "Jennifer Lawrence",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le premier James Bond au cinéma ?",
+      "answer": "Sean Connery",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation japonais raconte l'histoire de Chihiro ?",
+      "answer": "Le Voyage de Chihiro",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film Brad Pitt et Edward Norton créent-ils un club de combat ?",
+      "answer": "Fight Club",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film raconte le débarquement allié en Normandie (Spielberg) ?",
+      "answer": "Il faut sauver le soldat Ryan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice a joué \"La Môme\" (Edith Piaf) ?",
+      "answer": "Marion Cotillard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du méchant dans \"Le Silence des Agneaux\" ?",
+      "answer": "Hannibal Lecter",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le premier long-métrage d'animation de Disney (1937) ?",
+      "answer": "Blanche-Neige et les Sept Nains",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Neo dans Matrix ?",
+      "answer": "Keanu Reeves",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film une équipe de bobsleigh jamaïcaine va aux JO ?",
+      "answer": "Rasta Rockett",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle principal dans \"Gladiator\" ?",
+      "answer": "Russell Crowe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film se déroule sur la planète Arrakis ?",
+      "answer": "Dune",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Les Oiseaux\" ?",
+      "answer": "Alfred Hitchcock",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Black Widow dans les Avengers ?",
+      "answer": "Scarlett Johansson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on un ballon nommé Wilson ?",
+      "answer": "Seul au monde",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue le rôle de \"Léon\" ?",
+      "answer": "Jean Reno",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film des raptors ouvrent-ils des portes ?",
+      "answer": "Jurassic Park",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Interstellar\" ?",
+      "answer": "Christopher Nolan",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle actrice joue Hermione Granger ?",
+      "answer": "Emma Watson",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film voit-on la scène de la douche (couteau) ?",
+      "answer": "Psychose",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film Robin Williams se déguise-t-il en femme de ménage ?",
+      "answer": "Madame Doubtfire",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le \"Bubba Gump Shrimp Company\" ?",
+      "answer": "Forrest Gump",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Kill Bill\" ?",
+      "answer": "Quentin Tarantino",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film met en scène des émotions dans la tête d'une petite fille ?",
+      "answer": "Vice-Versa",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Marty McFly ?",
+      "answer": "Michael J. Fox",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français raconte la vie d'adolescents lors d'une boum ?",
+      "answer": "La Boum",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue le rôle de Thor ?",
+      "answer": "Chris Hemsworth",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film voit-on la planète Tatooine ?",
+      "answer": "Star Wars",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a popularisé la chanson \"I Will Always Love You\" ?",
+      "answer": "Bodyguard",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Tony Montana ?",
+      "answer": "Scarface",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la réplique \"Tu ne passeras pas !\" ?",
+      "answer": "Le Seigneur des Anneaux",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a révélé Sophie Marceau ?",
+      "answer": "La Boum",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"La Liste de Schindler\" ?",
+      "answer": "Steven Spielberg",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film Jim Carrey découvre-t-il que sa vie est une émission télé ?",
+      "answer": "The Truman Show",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du panda dans \"Kung Fu Panda\" ?",
+      "answer": "Po",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Edward aux mains d'argent ?",
+      "answer": "Johnny Depp",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Sarah Connor ?",
+      "answer": "Terminator",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la réplique \"I see dead people\" (Je vois des gens morts) ?",
+      "answer": "Sixième Sens",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Captain America ?",
+      "answer": "Chris Evans",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a remporté l'Oscar du meilleur film en 1998 (romance tragique) ?",
+      "answer": "Titanic",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Deadpool ?",
+      "answer": "Ryan Reynolds",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Doc Brown ?",
+      "answer": "Retour vers le futur",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Amélie Poulain ?",
+      "answer": "Audrey Tautou",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Vito Corleone ?",
+      "answer": "Le Parrain",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la poupée tueuse dans le film d'horreur classique ?",
+      "answer": "Chucky",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Rey ?",
+      "answer": "Star Wars (Postlogie)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a remporté l'Oscar du meilleur film en 2020 (film coréen) ?",
+      "answer": "Parasite",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film Bill Murray revit-il sans cesse la même journée ?",
+      "answer": "Un jour sans fin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur incarne le \"Parrain\" (Vito Corleone) dans le premier film ?",
+      "answer": "Marlon Brando",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"2001 : L'Odyssée de l'espace\" ?",
+      "answer": "Stanley Kubrick",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du vaisseau de Han Solo ?",
+      "answer": "Faucon Millenium",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Fabuleux Destin d'Amélie Poulain\" ?",
+      "answer": "Jean-Pierre Jeunet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour réplique \"Tu causes à moi ?\" (Taxi Driver) ?",
+      "answer": "Taxi Driver",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on les personnages de Vincent Vega et Jules Winnfield ?",
+      "answer": "Pulp Fiction",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est la voix originale de l'Âne dans Shrek (version US) ?",
+      "answer": "Eddie Murphy",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Apocalypse Now\" ?",
+      "answer": "Francis Ford Coppola",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film français muet et en noir et blanc a gagné l'Oscar en 2012 ?",
+      "answer": "The Artist",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du gendarme joué par Louis de Funès ?",
+      "answer": "Cruchot",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film raconte l'histoire d'un pianiste juif polonais pendant la guerre ?",
+      "answer": "Le Pianiste",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Tyler Durden ?",
+      "answer": "Fight Club",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"La Haine\" ?",
+      "answer": "Mathieu Kassovitz",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le titre du premier Star Wars sorti en 1977 ?",
+      "answer": "Un nouvel espoir",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur incarne \"Le Magnifique\" ?",
+      "answer": "Jean-Paul Belmondo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Spiderman dans la trilogie des années 2000 ?",
+      "answer": "Tobey Maguire",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Parrain\" ?",
+      "answer": "Francis Ford Coppola",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Seven\" ?",
+      "answer": "David Fincher",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chat dans Alice au Pays des Merveilles ?",
+      "answer": "Le chat du Cheshire",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de la mariée dans Kill Bill ?",
+      "answer": "Uma Thurman",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue le rôle de Gandalf ?",
+      "answer": "Ian McKellen",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Ellen Ripley ?",
+      "answer": "Alien",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Blade Runner\" (1982) ?",
+      "answer": "Ridley Scott",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Norman Bates ?",
+      "answer": "Psychose",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Sixième Sens\" ?",
+      "answer": "M. Night Shyamalan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la réplique \"Say hello to my little friend\" ?",
+      "answer": "Scarface",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Les Affranchis\" ?",
+      "answer": "Martin Scorsese",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du robot doré dans Star Wars ?",
+      "answer": "C-3PO",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du tigre dans Le Livre de la Jungle ?",
+      "answer": "Shere Khan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur joue le rôle de Wolverine pour la dernière fois dans \"Logan\" ?",
+      "answer": "Hugh Jackman",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on la réplique \"Here's Johnny !\" ?",
+      "answer": "Shining",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'île dans King Kong ?",
+      "answer": "Skull Island",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation japonais a pour mascotte un gros animal gris et blanc ?",
+      "answer": "Mon Voisin Totoro",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Maximus Decimus Meridius ?",
+      "answer": "Gladiator",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Slumdog Millionaire\" ?",
+      "answer": "Danny Boyle",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de John McClane ?",
+      "answer": "Die Hard (Piège de Cristal)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Danny Ocean ?",
+      "answer": "Ocean's Eleven",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Mia Wallace ?",
+      "answer": "Uma Thurman",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'intelligence artificielle dans Iron Man ?",
+      "answer": "JARVIS",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Sens de la fête\" ?",
+      "answer": "Toledano et Nakache",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film d'animation a pour héros un panda roux ?",
+      "answer": "Alerte Rouge",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le vrai nom de Marilyn Monroe ?",
+      "answer": "Norma Jeane Baker",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"La La Land\" ?",
+      "answer": "Damien Chazelle",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel réalisateur espagnol a fait \"Tout sur ma mère\" ?",
+      "answer": "Pedro Almodovar",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la marionnette dans la saga \"Saw\" ?",
+      "answer": "Billy",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur du sabre laser de Luke Skywalker dans \"Le Retour du Jedi\" ?",
+      "answer": "Vert",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a reçu 11 Oscars (comme Titanic et Ben-Hur) ?",
+      "answer": "Le Seigneur des Anneaux : Le Retour du Roi",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Grand Budapest Hotel\" ?",
+      "answer": "Wes Anderson",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'ordinateur dans \"2001 : L'Odyssée de l'espace\" ?",
+      "answer": "HAL 9000",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Keyser Söze ?",
+      "answer": "Usual Suspects",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du capitaine du Titanic ?",
+      "answer": "Smith",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Citizen Kane\" ?",
+      "answer": "Orson Welles",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Travis Bickle ?",
+      "answer": "Taxi Driver",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"À bout de souffle\" ?",
+      "answer": "Jean-Luc Godard",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui joue le rôle de Catwoman dans \"Batman : Le Défi\" (1992) ?",
+      "answer": "Michelle Pfeiffer",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du héros de \"Avatar\" (l'humain) ?",
+      "answer": "Jake Sully",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Orange Mécanique\" ?",
+      "answer": "Stanley Kubrick",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de l'inspecteur joué par Louis de Funès dans Fantômas ?",
+      "answer": "Juve",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de McLovin ?",
+      "answer": "Supergrave",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Silence des Agneaux\" ?",
+      "answer": "Jonathan Demme",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Drive\" ?",
+      "answer": "Nicolas Winding Refn",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Les Tontons Flingueurs\" ?",
+      "answer": "Georges Lautner",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Walter Sobchak ?",
+      "answer": "The Big Lebowski",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a joué le rôle de Batman dans la version de Tim Burton (1989) ?",
+      "answer": "Michael Keaton",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a pour titre original \"Star Wars\" (sans épisode) ?",
+      "answer": "Un nouvel espoir",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Requiem for a Dream\" ?",
+      "answer": "Darren Aronofsky",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"12 Hommes en colère\" ?",
+      "answer": "Sidney Lumet",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur incarne \"Mad Max\" dans le film de 2015 (Fury Road) ?",
+      "answer": "Tom Hardy",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel film a gagné la Palme d'Or en 1994 (devant La Reine Margot) ?",
+      "answer": "Pulp Fiction",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Marla Singer ?",
+      "answer": "Fight Club",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Voyage dans la Lune\" (1902) ?",
+      "answer": "Georges Méliès",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel acteur a refusé le rôle de Neo dans Matrix ?",
+      "answer": "Will Smith",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Roma\" (2018) ?",
+      "answer": "Alfonso Cuaron",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Mulholland Drive\" ?",
+      "answer": "David Lynch",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la mère de Bambi ?",
+      "answer": "Elle n'a pas de nom (La Mère)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Old Boy\" (l'original coréen) ?",
+      "answer": "Park Chan-wook",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chien dans \"The Artist\" ?",
+      "answer": "Uggie",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"La Cité de la Peur\" ?",
+      "answer": "Alain Berbérian",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du bar dans Casablanca ?",
+      "answer": "Rick's Café",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel film trouve-t-on le personnage de Verbal Kint ?",
+      "answer": "Usual Suspects",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Y a-t-il un pilote dans l'avion ?\" ?",
+      "answer": "ZAZ (Zucker Abrahams Zucker)",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}

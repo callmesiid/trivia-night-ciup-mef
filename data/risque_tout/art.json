@@ -1,0 +1,1365 @@
+{
+  "id": "art",
+  "label": "Art",
+  "icon": "icons/art.png",
+  "questions": [
+    {
+      "type": "text",
+      "question": "Qui a peint la Joconde ?",
+      "answer": "Léonard de Vinci",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre néerlandais s'est coupé l'oreille ?",
+      "answer": "Vincent Van Gogh",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel musée se trouve la Joconde ?",
+      "answer": "Louvre",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Nuit étoilée\" ?",
+      "answer": "Vincent Van Gogh",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste est célèbre pour ses montres molles ?",
+      "answer": "Salvador Dali",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint le plafond de la Chapelle Sixtine ?",
+      "answer": "Michel-Ange",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Guernica\" ?",
+      "answer": "Pablo Picasso",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la sculpture la plus célèbre d'Auguste Rodin ?",
+      "answer": "Le Penseur",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint les boîtes de soupe Campbell ?",
+      "answer": "Andy Warhol",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste de street art garde son identité secrète ?",
+      "answer": "Banksy",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle statue antique n'a pas de bras ?",
+      "answer": "Vénus de Milo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre mexicain est célèbre pour ses autoportraits et ses monosourcils ?",
+      "answer": "Frida Kahlo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Cri\" ?",
+      "answer": "Edvard Munch",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur obtenue en mélangeant du bleu et du jaune ?",
+      "answer": "Vert",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de Picasso ?",
+      "answer": "Pablo",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays est né le mouvement Renaissance ?",
+      "answer": "Italie",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle couleur domine la \"Période bleue\" de Picasso ?",
+      "answer": "Bleu",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur obtenue en mélangeant du rouge et du bleu ?",
+      "answer": "Violet",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve l'armée de terre cuite (Xi'an) ?",
+      "answer": "Chine",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Salvador Dali ?",
+      "answer": "Espagnole",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Tournesols\" ?",
+      "answer": "Vincent Van Gogh",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville se trouve la statue du Christ Rédempteur ?",
+      "answer": "Rio de Janeiro",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mouvement artistique d'Andy Warhol ?",
+      "answer": "Pop Art",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note pour le quiz: Accepter Rembrandt comme réponse simple.",
+      "answer": "Rembrandt",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a représenté la guerre d'Espagne dans \"Guernica\" ?",
+      "answer": "Pablo Picasso",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la technique de peinture à l'eau sur papier ?",
+      "answer": "Aquarelle",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mouvement artistique est associé à Claude Monet ?",
+      "answer": "Impressionnisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Cène\" (Le dernier repas de Jésus) ?",
+      "answer": "Léonard de Vinci",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle ville abrite le musée du Prado ?",
+      "answer": "Madrid",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté le David (marbre blanc de 5 mètres) ?",
+      "answer": "Michel-Ange",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mouvement artistique utilise des formes géométriques déconstruites ?",
+      "answer": "Cubisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre espagnol est un maître du Surréalisme ?",
+      "answer": "Salvador Dali",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Jeune Fille à la perle\" ?",
+      "answer": "Johannes Vermeer",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste est connu pour ses danseuses de ballet (peinture et sculpture) ?",
+      "answer": "Edgar Degas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Nymphéas\" ?",
+      "answer": "Claude Monet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre français est célèbre pour ses affiches du Moulin Rouge ?",
+      "answer": "Toulouse-Lautrec",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Liberté guidant le peuple\" ?",
+      "answer": "Eugène Delacroix",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Naissance de Vénus\" (sortant d'un coquillage) ?",
+      "answer": "Sandro Botticelli",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Radeau de la Méduse\" ?",
+      "answer": "Théodore Géricault",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté \"Le Baiser\" (sculpture en marbre) ?",
+      "answer": "Auguste Rodin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a réalisé le tableau \"Le Baiser\" (doré) ?",
+      "answer": "Gustav Klimt",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Magritte ?",
+      "answer": "Belge",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est connu pour ses portraits constitués de fruits et légumes ?",
+      "answer": "Arcimboldo",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel musée new-yorkais trouve-t-on beaucoup d'art moderne ?",
+      "answer": "MoMA",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité des sculptures de Giacometti ?",
+      "answer": "Elles sont filiformes (très fines)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre français a vécu à Tahiti ?",
+      "answer": "Paul Gauguin",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "answer": "Pierre de Rosette",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé la statue de la Liberté (structure interne par Eiffel) ?",
+      "answer": "Bartholdi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Vincent Van Gogh ?",
+      "answer": "Néerlandaise",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Laitière\" ?",
+      "answer": "Johannes Vermeer",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel architecte a conçu la Sagrada Familia ?",
+      "answer": "Antoni Gaudi",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Trahison des images\" (Ceci n'est pas une pipe) ?",
+      "answer": "René Magritte",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel musée se trouve la Tapisserie de Bayeux ?",
+      "answer": "Musée de la Tapisserie (Bayeux)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Fils de l'homme\" (homme avec une pomme verte devant le visage) ?",
+      "answer": "René Magritte",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Grande Vague de Kanagawa\" ?",
+      "answer": "Hokusai",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Chambre à Arles\" ?",
+      "answer": "Vincent Van Gogh",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Jugement dernier\" (Chapelle Sixtine) ?",
+      "answer": "Michel-Ange",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a créé l'œuvre \"Girl with Balloon\" (qui s'est autodétruite) ?",
+      "answer": "Banksy",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a représenté Napoléon franchissant les Alpes ?",
+      "answer": "Jacques-Louis David",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la période artistique avant la Renaissance ?",
+      "answer": "Moyen Âge (ou Gothique)",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays se trouve le temple d'Angkor Wat ?",
+      "answer": "Cambodge",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est connu pour ses scènes de ballet et de courses de chevaux ?",
+      "answer": "Edgar Degas",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Terrasse du café le soir\" ?",
+      "answer": "Vincent Van Gogh",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mouvement artistique rejette toute représentation figurative ?",
+      "answer": "Abstrait",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Goya ?",
+      "answer": "Espagnole",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la colombe de la paix de Picasso ?",
+      "answer": "La Colombe",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de Monet ?",
+      "answer": "Claude",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du mouvement artistique de Dali et Magritte ?",
+      "answer": "Surréalisme",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a réalisé \"Le Désespéré\" (autoportrait) ?",
+      "answer": "Gustave Courbet",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel musée parisien trouve-t-on les œuvres impressionnistes ?",
+      "answer": "Musée d'Orsay",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la période artistique des années 1920 (Déco) ?",
+      "answer": "Art déco",
+      "difficulty": 2,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville se trouve le musée Guggenheim à l'architecture ondulée ?",
+      "answer": "Bilbao",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur complémentaire du rouge ?",
+      "answer": "Vert",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste contemporain est connu pour ses \"Ballon Dogs\" (chiens ballons) ?",
+      "answer": "Jeff Koons",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre américain est célèbre pour ses projections de peinture (Drip painting) ?",
+      "answer": "Jackson Pollock",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Ménines\" ?",
+      "answer": "Diego Vélasquez",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Ronde de nuit\" ?",
+      "answer": "Rembrandt",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a emballé le Pont-Neuf à Paris ?",
+      "answer": "Christo",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"American Gothic\" (couple avec une fourche) ?",
+      "answer": "Grant Wood",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'architecte de la Pyramide du Louvre ?",
+      "answer": "Ieoh Ming Pei",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Déjeuner sur l'herbe\" ?",
+      "answer": "Édouard Manet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"L'École d'Athènes\" ?",
+      "answer": "Raphaël",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est surnommé \"Le Douanier\" ?",
+      "answer": "Rousseau",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville peut-on voir \"La Cène\" de Léonard de Vinci ?",
+      "answer": "Milan",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a signé un urinoir sous le nom \"R. Mutt\" ?",
+      "answer": "Marcel Duchamp",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mouvement artistique privilégie l'émotion et la nature (19e siècle) ?",
+      "answer": "Romantisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'auteur de la sculpture \"L'Homme qui marche\" ?",
+      "answer": "Giacometti",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste américain est célèbre pour ses personnages de BD (Pop Art) ?",
+      "answer": "Roy Lichtenstein",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Demoiselles d'Avignon\" ?",
+      "answer": "Pablo Picasso",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a représenté la montagne Sainte-Victoire plus de 80 fois ?",
+      "answer": "Paul Cézanne",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste est connu pour ses graffitis de petits bonhommes blancs (années 80) ?",
+      "answer": "Keith Haring",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre anglais est célèbre pour ses paysages maritimes et ses ciels tourmentés ?",
+      "answer": "William Turner",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Bal du moulin de la Galette\" ?",
+      "answer": "Auguste Renoir",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a réalisé le plafond de l'Opéra Garnier à Paris ?",
+      "answer": "Marc Chagall",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Mort de Marat\" (dans sa baignoire) ?",
+      "answer": "Jacques-Louis David",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de l'artiste Basquiat ?",
+      "answer": "Jean-Michel",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est célèbre pour ses femmes à long cou ?",
+      "answer": "Modigliani",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Kandinsky ?",
+      "answer": "Russe",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la technique de peinture sur plâtre frais ?",
+      "answer": "Fresque",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste est associé aux \"Nanas\" (sculptures colorées) ?",
+      "answer": "Niki de Saint Phalle",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel musée de Londres peut-on voir la Pierre de Rosette ?",
+      "answer": "British Museum",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Gare Saint-Lazare\" ?",
+      "answer": "Claude Monet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Composition en rouge jaune bleu\" ?",
+      "answer": "Piet Mondrian",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a réalisé \"L'Origine du monde\" ?",
+      "answer": "Gustave Courbet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville italienne se trouve la Galerie des Offices ?",
+      "answer": "Florence",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Danse\" (ronde rouge) ?",
+      "answer": "Henri Matisse",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Joueurs de cartes\" ?",
+      "answer": "Paul Cézanne",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la nationalité de Rubens ?",
+      "answer": "Flamande (ou Belge)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel sculpteur a réalisé la porte de l'Enfer ?",
+      "answer": "Auguste Rodin",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du célèbre ours blanc sculpté par François Pompon ?",
+      "answer": "L'Ours blanc",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Dame à l'hermine\" ?",
+      "answer": "Léonard de Vinci",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville se trouve le Rijksmuseum ?",
+      "answer": "Amsterdam",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre américain a peint des boîtes de lessive Brillo ?",
+      "answer": "Andy Warhol",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de Manet ?",
+      "answer": "Édouard",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la technique utilisant des petits points de couleur ?",
+      "answer": "Pointillisme",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est connu pour ses perspectives impossibles (escaliers) ?",
+      "answer": "M.C. Escher",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de Renoir ?",
+      "answer": "Auguste (ou Pierre-Auguste)",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville peut-on visiter le musée de l'Ermitage ?",
+      "answer": "Saint-Pétersbourg",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"L'Angélus\" ?",
+      "answer": "Jean-François Millet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Printemps\" ?",
+      "answer": "Sandro Botticelli",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté \"La Petite Danseuse de quatorze ans\" ?",
+      "answer": "Edgar Degas",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel pays est né le mouvement Bauhaus ?",
+      "answer": "Allemagne",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a peint le plafond de l'Opéra de Paris (récent) ?",
+      "answer": "Marc Chagall",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est connu pour ses tableaux noirs (Outrenoir) ?",
+      "answer": "Pierre Soulages",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel musée se trouve le \"Radeau de la Méduse\" ?",
+      "answer": "Louvre",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a peint des séries de cathédrales de Rouen ?",
+      "answer": "Claude Monet",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle technique de peinture utilise de l'œuf comme liant ?",
+      "answer": "Tempera",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mouvement artistique est né à Zurich en 1916 (absurde) ?",
+      "answer": "Dadaisme (Dada)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Époux Arnolfini\" ?",
+      "answer": "Jan van Eyck",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est associé au Pointillisme ?",
+      "answer": "Georges Seurat",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Jardin des délices\" ?",
+      "answer": "Jérôme Bosch",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la technique de flou inventée par De Vinci ?",
+      "answer": "Sfumato",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la plus grande cathédrale gothique de France (volume) ?",
+      "answer": "Amiens",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'architecte de la Villa Savoye ?",
+      "answer": "Le Corbusier",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mouvement artistique d'Henri Matisse ?",
+      "answer": "Fauvisme",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté le Moïse (avec des cornes) ?",
+      "answer": "Michel-Ange",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste contemporain utilise des animaux morts dans du formol ?",
+      "answer": "Damien Hirst",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel architecte a conçu le musée Guggenheim de New York (spirale) ?",
+      "answer": "Frank Lloyd Wright",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la particularité de l'art Rococo ?",
+      "answer": "Surchargé (ou ornementé)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du célèbre triptyque de Jérôme Bosch ?",
+      "answer": "Le Jardin des délices",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a créé le \"Mobile\" (sculpture en mouvement) ?",
+      "answer": "Alexander Calder",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté la Victoire de Samothrace ?",
+      "answer": "Inconnu",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui est l'architecte du Centre Pompidou (avec Rogers) ?",
+      "answer": "Renzo Piano",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Raboteurs de parquet\" ?",
+      "answer": "Gustave Caillebotte",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Saturne dévorant un de ses fils\" ?",
+      "answer": "Francisco de Goya",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé la sculpture \"L'Araignée\" (Maman) ?",
+      "answer": "Louise Bourgeois",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est le chef de file du Réalisme ?",
+      "answer": "Gustave Courbet",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de Modigliani ?",
+      "answer": "Amedeo",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a peint des corps humains en bleu (IKB) ?",
+      "answer": "Yves Klein",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le mouvement artistique de la \"Tarte aux pommes\" de Cézanne ?",
+      "answer": "Postimpressionnisme",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Golconde\" (hommes qui pleuvent) ?",
+      "answer": "René Magritte",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a réalisé le portrait de Louis XIV en costume de sacre ?",
+      "answer": "Hyacinthe Rigaud",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quel musée se trouve \"La Naissance de Vénus\" ?",
+      "answer": "Galerie des Offices",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Tour de Babel\" ?",
+      "answer": "Pieter Brueghel l'Ancien",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a réalisé \"Le Vieux Guitariste aveugle\" ?",
+      "answer": "Pablo Picasso",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a créé le \"Ready-made\" ?",
+      "answer": "Marcel Duchamp",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Joconde\" avec une moustache (L.H.O.O.Q.) ?",
+      "answer": "Marcel Duchamp",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom de la muse et compagne de Dali ?",
+      "answer": "Gala",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Cloud Gate\" (le haricot à Chicago) ?",
+      "answer": "Anish Kapoor",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre est le maître du \"Clair-obscur\" ?",
+      "answer": "Le Caravage",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Grande Odalisque\" (au dos trop long) ?",
+      "answer": "Ingres",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Leçon d'anatomie du docteur Tulp\" ?",
+      "answer": "Rembrandt",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Trois Grâces\" ?",
+      "answer": "Rubens (ou Raphaël)",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Dans quelle ville se trouve le tableau \"Les Ménines\" ?",
+      "answer": "Madrid",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Pie\" (paysage de neige) ?",
+      "answer": "Claude Monet",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"La Chambre rouge\" ?",
+      "answer": "Henri Matisse",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Whaam!\" (avion de chasse) ?",
+      "answer": "Roy Lichtenstein",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Le Balcon\" ?",
+      "answer": "Édouard Manet",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le nom du chien cubiste de Picasso (souvent représenté) ?",
+      "answer": "Lump",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a construit le Parthénon ?",
+      "answer": "Phidias (supervision)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Trois personnages\" (tableau le plus cher vendu en France) ?",
+      "answer": "Francis Bacon",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quelle est la couleur des chevaux dans l'art de Franz Marc ?",
+      "answer": "Bleu",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Carré blanc sur fond blanc\" ?",
+      "answer": "Kasimir Malevitch",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé la fontaine de Trévi ?",
+      "answer": "Nicola Salvi",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel mouvement artistique est né en Russie en 1915 (formes géométriques pures) ?",
+      "answer": "Suprématisme",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a pour prénom Rembrandt ?",
+      "answer": "Harmenszoon (ou juste Rembrandt)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté le \"Génie de la Bastille\" ?",
+      "answer": "Auguste Dumont",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé le dôme de la cathédrale de Florence ?",
+      "answer": "Brunelleschi",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Ophélie\" (noyée dans une rivière) ?",
+      "answer": "John Everett Millais",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Verrou\" ?",
+      "answer": "Fragonard",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé la sculpture \"L'Extase de Sainte Thérèse\" ?",
+      "answer": "Le Bernin",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a sculpté la statue de Lincoln à Washington ?",
+      "answer": "Daniel Chester French",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Le Cauchemar\" (démon assis sur une femme) ?",
+      "answer": "Füssli",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé la coupole du Reichstag à Berlin ?",
+      "answer": "Norman Foster",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Note: Question remplacée: Qui a peint \"La Madeleine à la veilleuse\" ?",
+      "answer": "Georges de La Tour",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Les Ambassadeurs\" (avec un crâne déformé) ?",
+      "answer": "Hans Holbein",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Nu descendant un escalier\" ?",
+      "answer": "Marcel Duchamp",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel peintre a réalisé les fresques de la Villa des Mystères ?",
+      "answer": "Inconnu (Art romain)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé \"Spiral Jetty\" (Land Art) ?",
+      "answer": "Robert Smithson",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a réalisé la statue du David en bronze (avec un chapeau) ?",
+      "answer": "Donatello",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"L'Atelier du peintre\" ?",
+      "answer": "Gustave Courbet",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel artiste a réalisé la performance \"I Like America and America Likes Me\" (avec un coyote) ?",
+      "answer": "Joseph Beuys",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a peint \"Gabrielle d'Estrées et sa sœur\" (pincement de téton) ?",
+      "answer": "École de Fontainebleau (Inconnu)",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Quel est le prénom de l'architecte Le Corbusier ?",
+      "answer": "Charles-Édouard (Jeanneret)",
+      "difficulty": 5,
+      "validated": true
+    }
+  ]
+}
