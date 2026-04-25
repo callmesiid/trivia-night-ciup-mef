@@ -106,6 +106,19 @@
             20%,24%,55% { opacity:.1; text-shadow:none; }
         }
 
+        /* ── Notification Bonus / Malus sur écran ── */
+        .effect-notif {
+            position: fixed; top: 80px; right: -500px; z-index: 3500;
+            border-radius: 12px; padding: 16px 22px; min-width: 260px;
+            transition: right .5s cubic-bezier(.2,1,.4,1); text-align: center;
+        }
+        .effect-notif.bonus { background: linear-gradient(135deg,#1a2a5a,#2980b9); border: 3px solid #2980b9; }
+        .effect-notif.malus { background: linear-gradient(135deg,#3a0a0a,#c0392b); border: 3px solid #c0392b; }
+        .effect-notif.show  { right: 20px; }
+        .effect-emoji { font-size: 2.5rem; }
+        .effect-name  { font-family: 'Anton'; font-size: 1.4rem; color: #fff; }
+        .effect-team  { font-family: 'Roboto'; font-size: .8rem; color: rgba(255,255,255,.7); margin-top: 4px; }
+
         /* ══ FIN NOUVEAU GÉNÉRIQUE ══════════════════════════════════ */
 
         /* ── SCORES ÉQUIPES (header) ── */
@@ -219,10 +232,16 @@
     <div class="theme-header" id="game-theme-title">THÈME</div>
     <div class="question-display" id="game-question">PRÊT ?</div>
     <div class="counters-area">
-        <div class="score-display">RÉPONSES : <span id="score-val">0</span> <span id="score-total" style="color:#666;font-size:.6em;"> / ?</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="score-display">RÉPONSES : <span id="score-val">0</span><span id="score-total" style="color:#555;font-size:.6em;"> / ?</span></div>
+            <div id="mise-display-game" style="font-family:'Bebas Neue';font-size:1.8rem;color:#8e44ad;background:rgba(0,0,0,.5);padding:6px 18px;border-radius:8px;border:2px solid #8e44ad;"></div>
+        </div>
         <div class="timer-display" id="timer-val">30</div>
     </div>
 </div>
+
+<!-- Notification bonus/malus écran -->
+<div id="bonus-notif-screen" class="effect-notif"></div>
 
 <!-- Révélation -->
 <div id="reveal-overlay">
@@ -305,7 +324,9 @@ channel.onmessage = (event) => {
         case 'RESET_TO_LOGO':   showStaticLogo(); break;
         case 'START_SPIN':      runSpin(data.availableThemes); break;
         case 'REVEAL_THEME':    stopSpin(data.theme); break;
-        case 'SHOW_QUESTION':   setupGame(data.theme); break;
+        case 'SHOW_QUESTION':   setupGame(data.theme, data.mise); break;
+        case 'SHOW_BONUS':      showEffect(data.bonus, data.teamName, false); break;
+        case 'SHOW_MALUS':      showEffect(data.malus, data.byTeam,  true);  break;
         case 'UPDATE_SCORE':
             document.getElementById('score-val').textContent = data.count;
             if (data.total) document.getElementById('score-total').textContent = ` / ${data.total}`;
@@ -318,7 +339,7 @@ channel.onmessage = (event) => {
             playingIdx = data.playingIdx ?? -1;
             renderTeamsHeader();
             break;
-        case 'START_TIMER':     runTimer(); break;
+        case 'START_TIMER':     runTimer(data.duration || 30); break;
         case 'PAUSE_TIMER':     pauseTimer(); break;
         case 'RESET_TIMER':     resetTimer(); break;
         case 'SHOW_ALL_ANSWERS': showRevealGrid(data.answers, data.validatedIndices, data.total); break;
@@ -453,18 +474,34 @@ function stopSpin(selectedTheme) {
 }
 
 // ── JEU ──
-function setupGame(theme) {
+function setupGame(theme, mise) {
     selectorScreen.style.display = 'none'; gameScreen.style.display = 'flex';
     document.getElementById('game-theme-title').textContent = theme.title;
     document.getElementById('game-question').textContent = theme.question;
     document.getElementById('score-val').textContent = '0';
     document.getElementById('score-total').textContent = ` / ${theme.answers.length}`;
+    // Afficher la mise si elle est définie
+    const miseEl = document.getElementById('mise-display-game');
+    if (miseEl) { miseEl.textContent = mise > 0 ? `MISE : ${mise}` : ''; }
     resetTimerUI();
 }
 
+// Notification bonus/malus sur l'écran
+function showEffect(def, teamName, isMalus) {
+    // Réutiliser un overlay léger
+    const n = document.getElementById('bonus-notif-screen');
+    if (!n) return;
+    n.innerHTML = `<div class="effect-emoji">${def.emoji}</div><div class="effect-name">${def.name}</div><div class="effect-team">${isMalus?'MALUS':'BONUS'} · ${teamName}</div>`;
+    n.className = isMalus ? 'effect-notif malus show' : 'effect-notif bonus show';
+    setTimeout(() => n.classList.remove('show'), 4000);
+    new Audio('effets_sonores/selected.mp3').play().catch(()=>{});
+}
+
 // ── TIMER ──
-function runTimer() {
+function runTimer(duration) {
+    currentTime = duration || 30;
     audioTimer.currentTime = 0; audioTimer.play();
+    timerEl.textContent = currentTime; timerEl.style.color = '#D60000';
     if (timerInterval) clearInterval(timerInterval);
     timerInterval = setInterval(() => {
         currentTime--;
