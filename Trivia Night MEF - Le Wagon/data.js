@@ -72,9 +72,6 @@ const BONUSES = [
     { id: 7,  name: "RETARD SNCF",       emoji: "⏰", type: "AUTO",   timing: "PRE_QUESTION",
       desc: "+20 secondes au timer de la prochaine question.",
       how: "Activez avant le timer. Le timer sera allongé automatiquement." },
-    { id: 8,  name: "TUNNEL SOMBRE",     emoji: "🌑", type: "AUTO",   timing: "PRE_QUESTION",
-      desc: "La question est masquée à l'écran — réponse à l'aveugle (lu uniquement par le MC).",
-      how: "Activez avant le timer. L'écran n'affiche pas la question." },
     { id: 9,  name: "VOL DE BAGAGE",     emoji: "🧳", type: "AUTO",   timing: "IMMEDIATE",
       desc: "Vole 3 points à l'équipe en tête — effet immédiat.",
       how: "Appliqué automatiquement dès confirmation." },
@@ -102,7 +99,10 @@ const MALUS = [
       how: "Le bouton BANK sera désactivé pour la prochaine opportunité de cette équipe." },
     { id: 16, name: "TIMER RÉDUIT",     emoji: "⏩", type: "AUTO",   timing: "IMMEDIATE",
       desc: "Réduit le temps de réflexion de l'adversaire de 20 secondes pour sa prochaine question.",
-      how: "Appliqué automatiquement au prochain timer de l'équipe ciblée." }
+      how: "Appliqué automatiquement au prochain timer de l'équipe ciblée." },
+    { id: 17, name: "VOL DE BANQUE",    emoji: "🦹", type: "AUTO",   timing: "PRE_QUESTION",
+      desc: "Si l'équipe adverse choisit de BANQUER à son prochain palier, ses points vous reviennent. Si elle continue, le malus est perdu.",
+      how: "Activez avant que l'adversaire joue. Leur bank = vos points. Ils continuent = malus perdu." }
 ];
 
 // --- THÈMES & QUESTIONS (8 thèmes x 10 questions) ---

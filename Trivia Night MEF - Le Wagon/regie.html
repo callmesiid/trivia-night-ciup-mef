@@ -101,12 +101,36 @@
         .bonus-team-hd { font-weight: bold; margin-bottom: 5px; font-size: .85em; }
         .bonus-section-label { font-size: .7em; color: #666; text-transform: uppercase; letter-spacing: 1px; margin: 4px 0 3px; }
         .bonus-chips { display: flex; gap: 4px; flex-wrap: wrap; }
-        .bonus-chip { background: #3a1a5a; border: 1px solid #8e44ad; border-radius: 3px; padding: 2px 7px; font-size: .75em; cursor: pointer; transition: filter .15s; white-space: nowrap; }
-        .bonus-chip:hover { filter: brightness(1.4); }
-        .bonus-chip.used { background: #1a1a1a; border-color: #333; color: #555; cursor: not-allowed; text-decoration: line-through; }
-        .malus-chip { background: #3a0808; border: 1px solid #c0392b; border-radius: 3px; padding: 2px 7px; font-size: .75em; cursor: pointer; transition: filter .15s; white-space: nowrap; }
-        .malus-chip:hover { filter: brightness(1.4); }
-        .malus-chip.used { background: #1a1a1a; border-color: #333; color: #555; cursor: not-allowed; text-decoration: line-through; }
+
+        /* Chips colorées par timing */
+        .bonus-chip          { border-radius: 3px; padding: 2px 7px; font-size: .75em; cursor: pointer; transition: filter .15s; white-space: nowrap; border: 1px solid; }
+        .bonus-chip:hover    { filter: brightness(1.35); }
+        .bonus-chip.used     { background: #1a1a1a !important; border-color: #333 !important; color: #555 !important; cursor: not-allowed; text-decoration: line-through; }
+        /* IMMEDIATE → vert */
+        .chip-immediate  { background: #0f3a1a; border-color: #27ae60; color: #a8e6b8; }
+        /* PRE_QUESTION → bleu */
+        .chip-pre        { background: #0f1e3a; border-color: #2980b9; color: #90c0e8; }
+        /* POST_CORRECT → violet */
+        .chip-post       { background: #2a1a4a; border-color: #8e44ad; color: #c5a8e0; }
+        /* MANUAL → orange */
+        .chip-manual     { background: #2a1a00; border-color: #e67e22; color: #e0b890; }
+        /* MALUS → rouge */
+        .malus-chip          { background: #3a0808; border: 1px solid #c0392b; border-radius: 3px; padding: 2px 7px; font-size: .75em; cursor: pointer; transition: filter .15s; white-space: nowrap; color: #f0a0a0; }
+        .malus-chip:hover    { filter: brightness(1.4); }
+        .malus-chip.used     { background: #1a1a1a; border-color: #333; color: #555; cursor: not-allowed; text-decoration: line-through; }
+
+        /* Légende couleurs */
+        .chip-legend { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; padding: 6px; background: #111; border-radius: 4px; }
+        .leg-item { display: flex; align-items: center; gap: 4px; font-size: .65em; color: #aaa; }
+        .leg-dot { width: 8px; height: 8px; border-radius: 2px; }
+
+        /* Doc panel */
+        #doc-panel { background: #111; border: 1px solid #2a2a2a; border-radius: 6px; padding: 10px; margin-top: 6px; display: none; font-size: .75em; }
+        #doc-panel.show { display: block; }
+        .doc-section { margin-bottom: 10px; }
+        .doc-section h4 { color: #d4af37; font-family: 'Anton', sans-serif; font-size: .9em; letter-spacing: 1px; margin-bottom: 4px; }
+        .doc-scenario { background: #1a1a1a; border-left: 3px solid #444; padding: 5px 8px; margin-bottom: 4px; border-radius: 0 4px 4px 0; color: #ccc; line-height: 1.4; }
+        .doc-scenario strong { color: #d4af37; }
 
         /* Modals */
         .modal-backdrop { position: fixed; top:0;left:0;width:100%;height:100%; background: rgba(0,0,0,.85); z-index: 1000; display: none; align-items: center; justify-content: center; }
@@ -272,9 +296,48 @@
     <!-- BONUS & MALUS -->
     <div class="panel" id="bonus-panel">
         <h3>🎁 BONUS & MALUS
-            <small style="color:#666;font-size:.7em;font-family:Roboto;"> — Activer AVANT de lancer le timer de la prochaine question</small>
+            <button type="button" class="btn-sm" style="float:right;font-size:.65em;background:#111;" onclick="document.getElementById('doc-panel').classList.toggle('show')">? Aide</button>
         </h3>
+        <!-- Légende couleurs -->
+        <div class="chip-legend">
+            <span class="leg-item"><span class="leg-dot" style="background:#27ae60"></span>Immédiat</span>
+            <span class="leg-item"><span class="leg-dot" style="background:#2980b9"></span>Au timer</span>
+            <span class="leg-item"><span class="leg-dot" style="background:#8e44ad"></span>Si bonne rép.</span>
+            <span class="leg-item"><span class="leg-dot" style="background:#e67e22"></span>Manuel</span>
+            <span class="leg-item"><span class="leg-dot" style="background:#c0392b"></span>Malus</span>
+        </div>
         <div id="bonus-list"></div>
+        <!-- Doc panel -->
+        <div id="doc-panel">
+            <div class="doc-section">
+                <h4>🟢 IMMÉDIAT — s'applique dès confirmation</h4>
+                <div class="doc-scenario"><strong>WAGON BAR :</strong> L'équipe active le bonus → +5pts ajoutés immédiatement à son score. Peut être fait n'importe quand.</div>
+                <div class="doc-scenario"><strong>VOL DE BAGAGE :</strong> -3pts retirés au leader actuel dès confirmation.</div>
+                <div class="doc-scenario"><strong>GRIÈVE :</strong> Sélectionnez un wagon → il est bloqué pour ce tour. L'équipe adverse ne peut pas y entrer.</div>
+            </div>
+            <div class="doc-section">
+                <h4>🔵 AU TIMER — s'applique quand le timer démarre</h4>
+                <div class="doc-scenario"><strong>RETARD SNCF :</strong> Activez → quand l'équipe lance son timer, il dure 50s au lieu de 30s.</div>
+                <div class="doc-scenario"><strong>AIGUILLAGE :</strong> Activez → au lancement du timer, la question est automatiquement changée (reroll).</div>
+            </div>
+            <div class="doc-section">
+                <h4>🟣 SI BONNE RÉPONSE — s'applique après un CORRECT</h4>
+                <div class="doc-scenario"><strong>Si mauvaise réponse → bonus PERDU, rien ne se passe.</strong></div>
+                <div class="doc-scenario"><strong>TCHOU TCHOU :</strong> Équipe en Q4 (+2pts). Activez → si correct : +4pts (×2) en session. Si faux : bonus perdu.</div>
+                <div class="doc-scenario"><strong>CHARBON :</strong> Si bonne réponse → +3pts bonus ajoutés à la session en plus du gain normal.</div>
+                <div class="doc-scenario"><strong>PREMIÈRE CLASSE :</strong> Si Q3 est correcte (fin P1) → Q4 validée d'office, points de Q4 ajoutés. L'équipe peut banker ou continuer depuis Q5.</div>
+                <div class="doc-scenario"><strong>FREIN D'URGENCE :</strong> Si correct hors palier (ex: Q2) → le bouton BANQUER apparaît quand même. L'équipe peut sécuriser ses points.</div>
+                <div class="doc-scenario"><strong>TERMINUS :</strong> Si correct → bank forcé automatiquement, même hors palier.</div>
+            </div>
+            <div class="doc-section">
+                <h4>🔴 MALUS — ciblent un adversaire</h4>
+                <div class="doc-scenario"><strong>VOL DE TOUR :</strong> Votre équipe vole le tour actuel. Utile si vous voulez jouer avant que l'adversaire vous devance sur un wagon.</div>
+                <div class="doc-scenario"><strong>PASSE TON TOUR :</strong> L'équipe cible passera automatiquement son prochain tour (elle ne peut pas jouer).</div>
+                <div class="doc-scenario"><strong>BLOQUER LE BANK :</strong> L'équipe cible ne pourra pas banquer à son prochain palier — elle devra finir le wagon pour récupérer ses points.</div>
+                <div class="doc-scenario"><strong>TIMER RÉDUIT :</strong> -20s sur le prochain timer de l'adversaire ciblé.</div>
+                <div class="doc-scenario"><strong>VOL DE BANQUE :</strong> Si l'adversaire choisit de BANQUER à son prochain palier → ses points vous reviennent. S'il continue → malus perdu.</div>
+            </div>
+        </div>
     </div>
 
     <!-- WAGONS -->
@@ -398,7 +461,7 @@ function addTeam() {
     const malusItems = allMalusIds.slice(0, GAME_CONFIG.malusPerTeam).map(id => ({ id, used: false }));
     gameState.teams.push({
         name, color, score: 0, bonuses, malus: malusItems, qualified: false,
-        skipNextTurn: false, bankBlocked: false, timerReduction: 0
+        skipNextTurn: false, bankBlocked: false, timerReduction: 0, banqueVoleePar: null
     });
     document.getElementById('team-name-in').value = '';
     document.getElementById('team-color-in').value = randomColor();
@@ -601,14 +664,12 @@ function startTimerRegie() {
     }
 
     // Appliquer bonus PRE_QUESTION
-    let hideText = false;
     if (gameState.pendingBonus) {
         const b = gameState.pendingBonus.bonus;
         if (b.timing === 'PRE_QUESTION') {
             if (b.id === 7) { sec += 20; addLog(`⏰ RETARD SNCF: +20s → ${sec}s`, 'gold'); }
-            if (b.id === 8) { hideText = true; addLog(`🌑 TUNNEL SOMBRE: question cachée à l'écran`, 'gold'); }
             if (b.id === 3) { rerollQuestion(); addLog(`🔀 AIGUILLAGE: question changée au lancement`, 'gold'); }
-            // Bonus PRE_QUESTION consommé immédiatement
+            // Bonus PRE_QUESTION non-POST_CORRECT → consommé maintenant
             if (b.id !== 5 && b.id !== 1 && b.id !== 2 && b.id !== 6 && b.id !== 10) {
                 gameState.pendingBonus = null;
                 updatePendingBonusBar();
@@ -625,13 +686,12 @@ function startTimerRegie() {
         data: {
             wagonIndex: cq.wagonIndex,
             theme: w.theme, themeColor: w.themeColor,
-            question: hideText ? '???' : cq.question,
+            question: cq.question,
             level: cq.level + 1, depth: w.depth,
             points: cq.points,
             teamName: team.name, teamColor: team.color,
             pendingPoints: w.pendingPoints + gameState.sessionPoints,
-            tier: getTierForLevel(cq.level + 1),
-            hideText
+            tier: getTierForLevel(cq.level + 1)
         }
     });
     questionShownOnScreen = true;
@@ -846,7 +906,18 @@ function bankPoints() {
             w.windowStates[i].banked=true; w.windowStates[i].teamColor=team.color; w.windowStates[i].teamName=team.name;
         }
     }
-    team.score += total; w.pendingPoints=0; gameState.sessionPoints=0;
+    // VOL DE BANQUE : si l'équipe a un voleur actif, les points vont à lui
+    let scoreRecipient = team;
+    if (team.banqueVoleePar !== null && team.banqueVoleePar !== undefined) {
+        const voleur = gameState.teams[team.banqueVoleePar];
+        if (voleur) {
+            scoreRecipient = voleur;
+            channel.postMessage({ type:'SHOW_BONUS', data:{ bonus:{emoji:'🦹',name:'VOL DE BANQUE',desc:`${team.name} a banqué — points volés par ${voleur.name} !`}, teamName:voleur.name, teamColor:voleur.color } });
+            addLog(`🦹 VOL DE BANQUE! ${total}pts de ${team.name} volés par ${voleur.name}`, 'gold');
+        }
+        team.banqueVoleePar = null;
+    }
+    scoreRecipient.score += total; w.pendingPoints=0; gameState.sessionPoints=0;
     const threshold = parseInt(document.getElementById('cfg-threshold').value)||50;
     if (team.score >= threshold && !team.qualified) {
         team.qualified=true;
@@ -865,6 +936,12 @@ function continueWagon() {
     const { wagonIndex } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
     if (w.currentLevel >= w.depth) { addLog('Wagon terminé !', 'bad'); return; }
+    // VOL DE BANQUE perdu si l'équipe choisit de continuer
+    const curTeam = gameState.teams[gameState.currentTeamIndex];
+    if (curTeam.banqueVoleePar !== null && curTeam.banqueVoleePar !== undefined) {
+        addLog(`🦹 VOL DE BANQUE perdu — ${curTeam.name} a choisi de continuer`, 'info');
+        curTeam.banqueVoleePar = null;
+    }
     isAtPalierEnd=false; channel.postMessage({ type:'CONTINUE_WAGON' });
     setQuestionZone('LOADED'); resetTimerState(); updateTimerUI();
     openQuestion(wagonIndex, w.currentLevel);
@@ -903,18 +980,22 @@ function rerollQuestion() {
 // TOURS
 // ================================================================
 function nextTeamAuto() {
-    gameState.currentTeamIndex = (gameState.currentTeamIndex+1) % gameState.teams.length;
     gameState.sessionPoints=0; gameState.sessionStartLevel=0; gameState.selectedWagonIndex=null;
     gameState.wagons.forEach(w => { w.blockedForTurn=false; });
-    // Vérifier PASSE TON TOUR
-    const nextTeamObj = gameState.teams[gameState.currentTeamIndex];
-    if (nextTeamObj && nextTeamObj.skipNextTurn) {
-        nextTeamObj.skipNextTurn=false;
-        channel.postMessage({ type:'SKIP_TURN', data:{teamName:nextTeamObj.name} });
-        addLog(`⛔ ${nextTeamObj.name} passe son tour (malus)`, 'bad');
-        // Auto-skip to next team
-        gameState.currentTeamIndex = (gameState.currentTeamIndex+1) % gameState.teams.length;
+
+    // Calculer le prochain index AVANT d'assigner, pour gérer le skip proprement
+    let nextIdx = (gameState.currentTeamIndex + 1) % gameState.teams.length;
+
+    // PASSE TON TOUR : vérifier si la prochaine équipe doit sauter
+    if (gameState.teams[nextIdx] && gameState.teams[nextIdx].skipNextTurn) {
+        gameState.teams[nextIdx].skipNextTurn = false;
+        channel.postMessage({ type:'SKIP_TURN', data:{teamName:gameState.teams[nextIdx].name} });
+        addLog(`⛔ ${gameState.teams[nextIdx].name} passe son tour (malus)`, 'bad');
+        // Avancer encore d'un cran
+        nextIdx = (nextIdx + 1) % gameState.teams.length;
     }
+
+    gameState.currentTeamIndex = nextIdx;
     updateTurnDisplay(); renderTeamsList(); renderWagonsGrid();
     const t = gameState.teams[gameState.currentTeamIndex];
     channel.postMessage({ type:'NEXT_TURN', data:{teamIndex:gameState.currentTeamIndex, teamName:t.name, teamColor:t.color} });
@@ -970,16 +1051,24 @@ function replaceWagon(wagonIdx,themeIdx) {
 // ================================================================
 // BONUS & MALUS — système complet
 // ================================================================
+function timingClass(timing) {
+    if (timing==='IMMEDIATE')    return 'chip-immediate';
+    if (timing==='PRE_QUESTION') return 'chip-pre';
+    if (timing==='POST_CORRECT') return 'chip-post';
+    return 'chip-manual';
+}
+
 function renderBonusPanel() {
     const el=document.getElementById('bonus-list'); el.innerHTML='';
     gameState.teams.forEach((t,ti)=>{
         const card=document.createElement('div'); card.className='bonus-team-card';
-        // Bonus (violets)
+        // Bonus — colorés par timing
         const bonusChips=t.bonuses.map((b,bi)=>{
             const bonus=BONUSES.find(x=>x.id===b.id);
-            return `<span class="bonus-chip${b.used?' used':''}" onclick="showBonusModal(${ti},${bi},'bonus')" title="${bonus.desc}">${bonus.emoji} ${bonus.name}</span>`;
+            const tc=timingClass(bonus.timing);
+            return `<span class="bonus-chip ${tc}${b.used?' used':''}" onclick="showBonusModal(${ti},${bi},'bonus')" title="${bonus.desc}">${bonus.emoji} ${bonus.name}</span>`;
         }).join('');
-        // Malus (rouges)
+        // Malus (toujours rouges)
         const malusChips=(t.malus||[]).map((m,mi)=>{
             const mal=MALUS.find(x=>x.id===m.id);
             return `<span class="malus-chip${m.used?' used':''}" onclick="showBonusModal(${ti},${mi},'malus')" title="${mal.desc}">${mal.emoji} ${mal.name}</span>`;
@@ -1110,6 +1199,9 @@ function applyMalusOnTarget(targetIdx) {
         case 16: // TIMER RÉDUIT
             targetTeam.timerReduction=20;
             addLog(`⏩ ${targetTeam.name} aura 20s de moins pour sa prochaine question`,'bad'); break;
+        case 17: // VOL DE BANQUE — le bank de la cible ira à l'activant
+            targetTeam.banqueVoleePar=teamIdx;
+            addLog(`🦹 VOL DE BANQUE: si ${targetTeam.name} banque → points à ${activatingTeam.name}`,'gold'); break;
     }
     channel.postMessage({ type:'SHOW_BONUS', data:{bonus:def,teamName:activatingTeam.name,teamColor:activatingTeam.color} });
     saveHistory(`Malus ${def.name} → ${targetTeam.name}`);
@@ -1223,7 +1315,7 @@ function runTestScenario() {
         const bonuses=allBonusIds.slice(0,GAME_CONFIG.bonusPerTeam).map(id=>({id,used:false}));
         const allMalusIds=MALUS.map(m=>m.id).sort(()=>Math.random()-.5);
         const malus=allMalusIds.slice(0,GAME_CONFIG.malusPerTeam).map(id=>({id,used:false}));
-        gameState.teams.push({name:t.name,color:t.color,score:0,bonuses,malus,qualified:false,skipNextTurn:false,bankBlocked:false,timerReduction:0});
+        gameState.teams.push({name:t.name,color:t.color,score:0,bonuses,malus,qualified:false,skipNextTurn:false,bankBlocked:false,timerReduction:0,banqueVoleePar:null});
     });
     const themeNames=['football','musique','jeuxvideo'];
     themeNames.forEach(tid=>{ const idx=AVAILABLE_THEMES.findIndex(t=>t.id===tid); if(idx!==-1&&!selectedThemeIndices.includes(idx)) selectedThemeIndices.push(idx); });
