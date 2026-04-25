@@ -1,6 +1,6 @@
 {
   "id": "mystere",
   "label": "Mystère",
-  "icon": "icons/mystere.png",
+  "icon": "../assets/Images/mystere.png",
   "questions": []
 }

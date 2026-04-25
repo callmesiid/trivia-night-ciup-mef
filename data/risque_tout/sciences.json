@@ -1,7 +1,7 @@
 {
   "id": "sciences",
   "label": "Sciences",
-  "icon": "icons/sciences.png",
+  "icon": "../assets/Images/sciences.png",
   "questions": [
     {
       "type": "text",

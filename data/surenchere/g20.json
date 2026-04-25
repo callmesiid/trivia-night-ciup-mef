@@ -1,7 +1,7 @@
 {
   "id": "g20",
   "label": "PAYS DU G20",
-  "icon": "icons/histoire.png",
+  "icon": "../assets/Images/histoire.png",
   "prompt": "Citez un maximum de pays membres du G20.",
   "answers": [
     {

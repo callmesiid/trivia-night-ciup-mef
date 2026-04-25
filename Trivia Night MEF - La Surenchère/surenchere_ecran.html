@@ -259,7 +259,7 @@
 </div>
 
 <div id="game-footer">
-    INSPIRÉ DE <img src="images_front/popcorn.png" alt="Popcorn">
+    INSPIRÉ DE <img src="../assets/images_front/popcorn.png" alt="Popcorn">
 </div>
 
 <script src="surenchere_data.js"></script>
@@ -275,12 +275,12 @@ const slotReel       = document.getElementById('slot-reel');
 const timerEl        = document.getElementById('timer-val');
 const teamsHeader    = document.getElementById('teams-header');
 
-const audioIntro  = new Audio('effets_sonores/intro.mp3');
-const audioBreak  = new Audio('effets_sonores/break.mp3');
-const audioSpin   = new Audio('effets_sonores/spin.mp3');
-const audioTimer  = new Audio('effets_sonores/timer.mp3');
-const audioReveal = new Audio('effets_sonores/reveal.mp3');
-const audioWin    = new Audio('effets_sonores/selected.mp3');
+const audioIntro  = new Audio('../assets/effets_sonores/intro.mp3');
+const audioBreak  = new Audio('../assets/effets_sonores/break.mp3');
+const audioSpin   = new Audio('../assets/effets_sonores/spin.mp3');
+const audioTimer  = new Audio('../assets/effets_sonores/timer.mp3');
+const audioReveal = new Audio('../assets/effets_sonores/reveal.mp3');
+const audioWin    = new Audio('../assets/effets_sonores/selected.mp3');
 let currentFx = null;
 
 // Éléments du nouveau générique
@@ -380,7 +380,7 @@ function gavelHit(n) {
     gavelEl.classList.add('strike');
     flash();
     // Son de marteau
-    const snd = new Audio('effets_sonores/break.mp3');
+    const snd = new Audio('../assets/effets_sonores/break.mp3');
     snd.volume = .9; snd.play();
 }
 
@@ -516,7 +516,7 @@ function showEffect(def, teamName, isMalus) {
     n.innerHTML = `<div class="effect-emoji">${def.emoji}</div><div class="effect-name">${def.name}</div><div class="effect-team">${isMalus?'MALUS':'BONUS'} · ${teamName}</div>`;
     n.className = isMalus ? 'effect-notif malus show' : 'effect-notif bonus show';
     setTimeout(() => n.classList.remove('show'), 4000);
-    new Audio('effets_sonores/selected.mp3').play().catch(()=>{});
+    new Audio('../assets/effets_sonores/selected.mp3').play().catch(()=>{});
 }
 
 // ── TIMER ──
@@ -532,7 +532,7 @@ function runTimer(duration) {
         if (currentTime <= 0) {
             clearInterval(timerInterval); currentTime = 0;
             timerEl.textContent = '0'; audioTimer.pause();
-            new Audio('effets_sonores/break.mp3').play();
+            new Audio('../assets/effets_sonores/break.mp3').play();
         }
     }, 1000);
 }
@@ -568,7 +568,7 @@ function showRevealGrid(answers, validatedIndices, total) {
         setTimeout(() => {
             el.classList.add('visible');
             if (el.classList.contains('correct') && i % 3 === 0) {
-                new Audio('effets_sonores/selected.mp3').play();
+                new Audio('../assets/effets_sonores/selected.mp3').play();
             }
         }, i * DELAY_STEP + 200);
     });

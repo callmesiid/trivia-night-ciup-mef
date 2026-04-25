@@ -1,7 +1,7 @@
 {
   "id": "cinema",
   "label": "Cinéma",
-  "icon": "icons/cinema.png",
+  "icon": "../assets/Images/cinema.png",
   "questions": [
     {
       "type": "text",

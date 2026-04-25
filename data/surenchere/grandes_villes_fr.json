@@ -1,7 +1,7 @@
 {
   "id": "grandes_villes_fr",
   "label": "GRANDES VILLES FRANÇAISES",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum de grandes villes françaises (communes de +100 000 hab.).",
   "answers": [
     {

@@ -16,7 +16,7 @@ body {
     color: white;
     font-family: 'Anton', sans-serif;
     margin: 0; overflow: hidden; height: 100vh; display: flex; flex-direction: column;
-    cursor: url('images_front/cursor.png') 16 16, auto;
+    cursor: url('../assets/images_front/cursor.png') 16 16, auto;
 }
 
 /* ================== FOND MARQUEE (CORRIGÉ - 3 LIGNES) ================== */
@@ -209,7 +209,7 @@ header { text-align: left; padding: 20px 40px; z-index: 10; position: relative; 
 .row { display: flex; justify-content: center; gap: 20px; }
 
 /* Styles Buckets */
-.bucket { background: #ffffff; width: 170px; height: 75px; border-radius: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; cursor: url('images_front/cursor.png') 16 16, pointer; transition: all 0.15s ease-in-out; box-shadow: 0 6px 0 #b3b3b3, 0 10px 20px rgba(0,0,0,0.5); border: 2px solid #fff; }
+.bucket { background: #ffffff; width: 170px; height: 75px; border-radius: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; cursor: url('../assets/images_front/cursor.png') 16 16, pointer; transition: all 0.15s ease-in-out; box-shadow: 0 6px 0 #b3b3b3, 0 10px 20px rgba(0,0,0,0.5); border: 2px solid #fff; }
 .bucket:hover { transform: scale(1.05) translateY(-2px); background-color: #f2f2f2; border-color: var(--theme-red); }
 .bucket:active { transform: translateY(4px); box-shadow: 0 2px 0 #b3b3b3; background-color: var(--theme-red); }
 .bucket.hidden { opacity: 0; pointer-events: none; transform: scale(0); transition: 0.5s; }
@@ -243,7 +243,7 @@ header { text-align: left; padding: 20px 40px; z-index: 10; position: relative; 
 .trumpet-corner.br { bottom: -400px; right: -400px; transform: scaleX(-1) rotate(45deg); } .trumpet-corner.br.active { bottom: -50px; right: -50px; }
 
 #lose-screen { background: rgba(50, 0, 0, 0.7); z-index: 5000; }
-.glass-crack { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('images_front/crack.png'); background-size: cover; opacity: 0; transform: scale(1.1); pointer-events: none; }
+.glass-crack { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('../assets/images_front/crack.png'); background-size: cover; opacity: 0; transform: scale(1.1); pointer-events: none; }
 .glass-crack.shattered { opacity: 0.8; transform: scale(1); transition: all 0.1s;}
 .lose-stamp { font-size: 120px; border: 10px solid #c0392b; color: #c0392b; padding: 20px 60px; text-transform: uppercase; transform: rotate(15deg) scale(3); opacity: 0; animation: stampFall 0.2s forwards 0.1s; background: rgba(0,0,0,0.9); z-index: 5003; }
 .points-lost { margin-top: 50px; font-size: 50px; color: #fff; z-index: 5003; }

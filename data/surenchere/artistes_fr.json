@@ -1,7 +1,7 @@
 {
   "id": "artistes_fr",
   "label": "CHANTEURS / ARTISTES FRANÇAIS",
-  "icon": "icons/musique.png",
+  "icon": "../assets/Images/musique.png",
   "prompt": "Citez un maximum d'artistes ou chanteurs français (solo ou groupe).",
   "answers": [
     {

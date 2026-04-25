@@ -1,7 +1,7 @@
 {
   "id": "annees_2000",
   "label": "Années 2000",
-  "icon": "icons/annee_2000.png",
+  "icon": "../assets/Images/annee_2000.png",
   "questions": [
     {
       "type": "text",

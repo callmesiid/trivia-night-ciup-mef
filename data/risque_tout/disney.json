@@ -1,7 +1,7 @@
 {
   "id": "disney",
   "label": "Disney",
-  "icon": "icons/disney.png",
+  "icon": "../assets/Images/disney.png",
   "questions": [
     {
       "type": "image",

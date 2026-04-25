@@ -1,7 +1,7 @@
 {
   "id": "animaux",
   "label": "Animaux",
-  "icon": "icons/animaux.png",
+  "icon": "../assets/Images/animaux.png",
   "questions": [
     {
       "type": "image",

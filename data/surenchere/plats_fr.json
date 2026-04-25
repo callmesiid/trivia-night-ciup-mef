@@ -1,7 +1,7 @@
 {
   "id": "plats_fr",
   "label": "PLATS FRANÇAIS TRADITIONNELS",
-  "icon": "icons/cuisine.png",
+  "icon": "../assets/Images/cuisine.png",
   "prompt": "Citez un maximum de plats ou spécialités culinaires traditionnellement français.",
   "answers": [
     {

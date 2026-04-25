@@ -1,7 +1,7 @@
 {
   "id": "presidents_fr",
   "label": "PRÉSIDENTS DE LA Ve RÉPUBLIQUE",
-  "icon": "icons/histoire.png",
+  "icon": "../assets/Images/histoire.png",
   "prompt": "Citez les présidents de la Cinquième République française avec leur nom ou prénom.",
   "answers": [
     {

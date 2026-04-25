@@ -1,7 +1,7 @@
 {
   "id": "jeux_video",
   "label": "Jeux Vidéo",
-  "icon": "icons/jeux_video.png",
+  "icon": "../assets/Images/jeux_video.png",
   "questions": [
     {
       "type": "text",

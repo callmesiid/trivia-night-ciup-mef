@@ -1,7 +1,7 @@
 {
   "id": "ciup",
   "label": "MAISONS DE LA CIUP",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum de maisons de la Cité Internationale Universitaire de Paris.",
   "answers": [
     {

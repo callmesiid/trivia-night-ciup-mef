@@ -1,7 +1,7 @@
 {
   "id": "litterature",
   "label": "Littérature",
-  "icon": "icons/litterature.png",
+  "icon": "../assets/Images/litterature.png",
   "questions": [
     {
       "type": "text",

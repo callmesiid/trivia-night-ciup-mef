@@ -1,7 +1,7 @@
 {
   "id": "departements",
   "label": "DÉPARTEMENTS FRANÇAIS",
-  "icon": "icons/histoire.png",
+  "icon": "../assets/Images/histoire.png",
   "prompt": "Citez un maximum de départements français (par leur nom).",
   "answers": [
     {

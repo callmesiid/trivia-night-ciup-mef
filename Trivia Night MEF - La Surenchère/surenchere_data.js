@@ -2,7 +2,7 @@ const THEMES_DATA = [
   {
     "id": "afrique",
     "title": "PAYS D'AFRIQUE",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de pays du continent africain.",
     "answers": [
       "Afrique du Sud",
@@ -51,7 +51,7 @@ const THEMES_DATA = [
   {
     "id": "amerique_latine",
     "title": "PAYS D'AMÉRIQUE LATINE",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de pays d'Amérique latine.",
     "answers": [
       "Mexique",
@@ -83,7 +83,7 @@ const THEMES_DATA = [
   {
     "id": "animaux_fr",
     "title": "ANIMAUX DE LA FERME",
-    "icon": "icons/animaux.png",
+    "icon": "../assets/Images/animaux.png",
     "question": "Citez un maximum d'animaux qu'on trouve traditionnellement dans une ferme.",
     "answers": [
       "Vache",
@@ -121,7 +121,7 @@ const THEMES_DATA = [
   {
     "id": "artistes_fr",
     "title": "CHANTEURS / ARTISTES FRANÇAIS",
-    "icon": "icons/musique.png",
+    "icon": "../assets/Images/musique.png",
     "question": "Citez un maximum d'artistes ou chanteurs français (solo ou groupe).",
     "answers": [
       "Édith Piaf",
@@ -160,7 +160,7 @@ const THEMES_DATA = [
   {
     "id": "capitales_eu",
     "title": "CAPITALES EUROPÉENNES",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de capitales de pays européens.",
     "answers": [
       "Paris",
@@ -205,7 +205,7 @@ const THEMES_DATA = [
   {
     "id": "ciup",
     "title": "MAISONS DE LA CIUP",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de maisons de la Cité Internationale Universitaire de Paris.",
     "answers": [
       "Fondation Deutsch de la Meurthe",
@@ -237,7 +237,7 @@ const THEMES_DATA = [
   {
     "id": "departements",
     "title": "DÉPARTEMENTS FRANÇAIS",
-    "icon": "icons/histoire.png",
+    "icon": "../assets/Images/histoire.png",
     "question": "Citez un maximum de départements français (par leur nom).",
     "answers": [
       "Ain",
@@ -315,7 +315,7 @@ const THEMES_DATA = [
   {
     "id": "europe",
     "title": "PAYS D'EUROPE",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de pays du continent européen.",
     "answers": [
       "Albanie",
@@ -368,7 +368,7 @@ const THEMES_DATA = [
   {
     "id": "films_fr",
     "title": "FILMS FRANÇAIS CULTES",
-    "icon": "icons/cinema.png",
+    "icon": "../assets/Images/cinema.png",
     "question": "Citez un maximum de films français devenus cultes ou iconiques.",
     "answers": [
       "Intouchables",
@@ -403,7 +403,7 @@ const THEMES_DATA = [
   {
     "id": "g20",
     "title": "PAYS DU G20",
-    "icon": "icons/histoire.png",
+    "icon": "../assets/Images/histoire.png",
     "question": "Citez un maximum de pays membres du G20.",
     "answers": [
       "Afrique du Sud",
@@ -431,7 +431,7 @@ const THEMES_DATA = [
   {
     "id": "grandes_villes_fr",
     "title": "GRANDES VILLES FRANÇAISES",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de grandes villes françaises (communes de +100 000 hab.).",
     "answers": [
       "Paris",
@@ -469,7 +469,7 @@ const THEMES_DATA = [
   {
     "id": "instruments",
     "title": "INSTRUMENTS DE MUSIQUE",
-    "icon": "icons/musique.png",
+    "icon": "../assets/Images/musique.png",
     "question": "Citez un maximum d'instruments de musique (tous genres confondus).",
     "answers": [
       "Violon",
@@ -512,7 +512,7 @@ const THEMES_DATA = [
   {
     "id": "jo_sports",
     "title": "SPORTS AUX JO D'ÉTÉ",
-    "icon": "icons/sport.png",
+    "icon": "../assets/Images/sport.png",
     "question": "Citez un maximum de disciplines présentes aux Jeux Olympiques d'été.",
     "answers": [
       "Athlétisme",
@@ -555,7 +555,7 @@ const THEMES_DATA = [
   {
     "id": "langues",
     "title": "LANGUES LES PLUS PARLÉES",
-    "icon": "icons/histoire.png",
+    "icon": "../assets/Images/histoire.png",
     "question": "Citez un maximum de langues parmi les 30 plus parlées au monde.",
     "answers": [
       "Mandarin",
@@ -593,7 +593,7 @@ const THEMES_DATA = [
   {
     "id": "ligne8",
     "title": "ARRÊTS LIGNE 8 DU MÉTRO",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum d'arrêts de la ligne 8 du métro (Balard — Créteil-Pointe du Lac).",
     "answers": [
       "Balard",
@@ -638,7 +638,7 @@ const THEMES_DATA = [
   {
     "id": "ligue1",
     "title": "CLUBS DE LIGUE 1",
-    "icon": "icons/sport.png",
+    "icon": "../assets/Images/sport.png",
     "question": "Citez un maximum de clubs ayant joué en Ligue 1 depuis 2010.",
     "answers": [
       "Paris Saint-Germain",
@@ -677,7 +677,7 @@ const THEMES_DATA = [
   {
     "id": "metro_lignes",
     "title": "LIGNES DU MÉTRO PARISIEN",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de lignes du métro parisien (numéros et/ou noms de terminus).",
     "answers": [
       "Ligne 1",
@@ -711,7 +711,7 @@ const THEMES_DATA = [
   {
     "id": "parcs",
     "title": "PARCS ET JARDINS PARISIENS",
-    "icon": "icons/géographie.png",
+    "icon": "../assets/Images/géographie.png",
     "question": "Citez un maximum de parcs, jardins ou bois de Paris et sa petite couronne.",
     "answers": [
       "Jardin du Luxembourg",
@@ -741,7 +741,7 @@ const THEMES_DATA = [
   {
     "id": "plats_fr",
     "title": "PLATS FRANÇAIS TRADITIONNELS",
-    "icon": "icons/cuisine.png",
+    "icon": "../assets/Images/cuisine.png",
     "question": "Citez un maximum de plats ou spécialités culinaires traditionnellement français.",
     "answers": [
       "Bouillabaisse",
@@ -778,7 +778,7 @@ const THEMES_DATA = [
   {
     "id": "presidents_fr",
     "title": "PRÉSIDENTS DE LA Ve RÉPUBLIQUE",
-    "icon": "icons/histoire.png",
+    "icon": "../assets/Images/histoire.png",
     "question": "Citez les présidents de la Cinquième République française avec leur nom ou prénom.",
     "answers": [
       "De Gaulle",
@@ -802,7 +802,7 @@ const THEMES_DATA = [
   {
     "id": "series_fr",
     "title": "SÉRIES FRANÇAISES",
-    "icon": "icons/cinema.png",
+    "icon": "../assets/Images/cinema.png",
     "question": "Citez un maximum de séries françaises (tous supports : TV, streaming, etc.).",
     "answers": [
       "Lupin",
@@ -836,7 +836,7 @@ const THEMES_DATA = [
   {
     "id": "ue",
     "title": "PAYS DE L'UNION EUROPÉENNE",
-    "icon": "icons/histoire.png",
+    "icon": "../assets/Images/histoire.png",
     "question": "Citez un maximum de pays membres de l'Union Européenne (27 membres).",
     "answers": [
       "Allemagne",

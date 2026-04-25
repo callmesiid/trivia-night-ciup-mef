@@ -1,7 +1,7 @@
 {
   "id": "ligue1",
   "label": "CLUBS DE LIGUE 1",
-  "icon": "icons/sport.png",
+  "icon": "../assets/Images/sport.png",
   "prompt": "Citez un maximum de clubs ayant joué en Ligue 1 depuis 2010.",
   "answers": [
     {

@@ -320,7 +320,7 @@ let timerBonus     = 0;    // secondes nettes (positif=plus, négatif=moins)
 let divisionMalus  = false; // malus: ÷3 gains ou ×3 pertes
 let roundAwarded   = false; // empêche double-clic sur APPLIQUER
 
-const loseSounds = ['effets_sonores/wasted.mp3','effets_sonores/oh_le_con.mp3','effets_sonores/c_nul_homer.mp3','effets_sonores/wrong.mp3','effets_sonores/nope.mp3'];
+const loseSounds = ['../assets/effets_sonores/wasted.mp3','../assets/effets_sonores/oh_le_con.mp3','../assets/effets_sonores/c_nul_homer.mp3','../assets/effets_sonores/wrong.mp3','../assets/effets_sonores/nope.mp3'];
 
 // ================================================================
 // INIT
@@ -809,7 +809,7 @@ function awardPoints() {
     setTimeout(() => doResetRound(), 3000);
 }
 
-function playWin()  { channel.postMessage({ type: 'PLAY_FX', soundFile: 'effets_sonores/win2.mp3' }); }
+function playWin()  { channel.postMessage({ type: 'PLAY_FX', soundFile: '../assets/effets_sonores/win2.mp3' }); }
 function playLose() { const s = loseSounds[Math.floor(Math.random() * loseSounds.length)]; channel.postMessage({ type: 'PLAY_FX', soundFile: s }); }
 
 // ================================================================

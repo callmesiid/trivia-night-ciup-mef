@@ -1,7 +1,7 @@
 {
   "id": "harry_potter",
   "label": "Harry Potter",
-  "icon": "icons/harry_potter.png",
+  "icon": "../assets/Images/harry_potter.png",
   "questions": [
     {
       "type": "image",

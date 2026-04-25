@@ -1,7 +1,7 @@
 {
   "id": "metro_lignes",
   "label": "LIGNES DU MÉTRO PARISIEN",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum de lignes du métro parisien (numéros et/ou noms de terminus).",
   "answers": [
     {

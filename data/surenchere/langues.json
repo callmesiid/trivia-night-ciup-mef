@@ -1,7 +1,7 @@
 {
   "id": "langues",
   "label": "LANGUES LES PLUS PARLÉES",
-  "icon": "icons/histoire.png",
+  "icon": "../assets/Images/histoire.png",
   "prompt": "Citez un maximum de langues parmi les 30 plus parlées au monde.",
   "answers": [
     {

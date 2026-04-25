@@ -1,7 +1,7 @@
 {
   "id": "jo_sports",
   "label": "SPORTS AUX JO D'ÉTÉ",
-  "icon": "icons/sport.png",
+  "icon": "../assets/Images/sport.png",
   "prompt": "Citez un maximum de disciplines présentes aux Jeux Olympiques d'été.",
   "answers": [
     {

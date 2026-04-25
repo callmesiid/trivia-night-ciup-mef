@@ -1,7 +1,7 @@
 {
   "id": "instruments",
   "label": "INSTRUMENTS DE MUSIQUE",
-  "icon": "icons/musique.png",
+  "icon": "../assets/Images/musique.png",
   "prompt": "Citez un maximum d'instruments de musique (tous genres confondus).",
   "answers": [
     {

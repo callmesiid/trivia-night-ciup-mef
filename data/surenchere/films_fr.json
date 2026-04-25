@@ -1,7 +1,7 @@
 {
   "id": "films_fr",
   "label": "FILMS FRANÇAIS CULTES",
-  "icon": "icons/cinema.png",
+  "icon": "../assets/Images/cinema.png",
   "prompt": "Citez un maximum de films français devenus cultes ou iconiques.",
   "answers": [
     {

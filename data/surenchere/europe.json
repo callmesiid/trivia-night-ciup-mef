@@ -1,7 +1,7 @@
 {
   "id": "europe",
   "label": "PAYS D'EUROPE",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum de pays du continent européen.",
   "answers": [
     {

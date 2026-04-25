@@ -179,22 +179,22 @@
 
 <!-- ═══ SONS ═══ -->
 <!-- Mauvaise réponse (random parmi) -->
-<audio id="sfx-ciao"     src="effets_sonores/c_ciao.mp3"      preload="auto"></audio>
-<audio id="sfx-nul"      src="effets_sonores/c_nul_homer.mp3" preload="auto"></audio>
-<audio id="sfx-k"        src="effets_sonores/k.mp3"           preload="auto"></audio>
-<audio id="sfx-ohlecon"  src="effets_sonores/oh_le_con.mp3"   preload="auto"></audio>
-<audio id="sfx-tmauvais" src="effets_sonores/t_mauvais.mp3"   preload="auto"></audio>
+<audio id="sfx-ciao"     src="../assets/effets_sonores/c_ciao.mp3"      preload="auto"></audio>
+<audio id="sfx-nul"      src="../assets/effets_sonores/c_nul_homer.mp3" preload="auto"></audio>
+<audio id="sfx-k"        src="../assets/effets_sonores/k.mp3"           preload="auto"></audio>
+<audio id="sfx-ohlecon"  src="../assets/effets_sonores/oh_le_con.mp3"   preload="auto"></audio>
+<audio id="sfx-tmauvais" src="../assets/effets_sonores/t_mauvais.mp3"   preload="auto"></audio>
 <!-- Bonne réponse (random parmi) -->
-<audio id="sfx-pavard"   src="effets_sonores/pavard.mp3"      preload="auto"></audio>
-<audio id="sfx-gate"     src="effets_sonores/c un gaté ca.mp3" preload="auto"></audio>
-<audio id="sfx-f1"       src="effets_sonores/F1.mp3"          preload="auto"></audio>
+<audio id="sfx-pavard"   src="../assets/effets_sonores/pavard.mp3"      preload="auto"></audio>
+<audio id="sfx-gate"     src="../assets/effets_sonores/c un gaté ca.mp3" preload="auto"></audio>
+<audio id="sfx-f1"       src="../assets/effets_sonores/F1.mp3"          preload="auto"></audio>
 <!-- Autres -->
-<audio id="sfx-timer"    src="effets_sonores/timer.mp3"       preload="auto" loop></audio>
-<audio id="sfx-win"      src="effets_sonores/win2.mp3"        preload="auto"></audio>
-<audio id="sfx-break"    src="effets_sonores/break.mp3"       preload="auto"></audio>
-<audio id="sfx-reveal"   src="effets_sonores/reveal.mp3"      preload="auto"></audio>
-<audio id="sfx-selected" src="effets_sonores/selected.mp3"    preload="auto"></audio>
-<audio id="sfx-roulement" src="effets_sonores/roulement.mp3"  preload="auto"></audio>
+<audio id="sfx-timer"    src="../assets/effets_sonores/timer.mp3"       preload="auto" loop></audio>
+<audio id="sfx-win"      src="../assets/effets_sonores/win2.mp3"        preload="auto"></audio>
+<audio id="sfx-break"    src="../assets/effets_sonores/break.mp3"       preload="auto"></audio>
+<audio id="sfx-reveal"   src="../assets/effets_sonores/reveal.mp3"      preload="auto"></audio>
+<audio id="sfx-selected" src="../assets/effets_sonores/selected.mp3"    preload="auto"></audio>
+<audio id="sfx-roulement" src="../assets/effets_sonores/roulement.mp3"  preload="auto"></audio>
 
 <!-- Marquee fond -->
 <div id="bg-marquee">
@@ -257,10 +257,10 @@
 <!-- ═══ WIN ═══ -->
 <div id="win-screen">
     <div id="confetti-box"></div>
-    <img src="images_front/trompette.png" class="trumpet-corner tc-tl" id="t-tl" style="display:none;">
-    <img src="images_front/trompette.png" class="trumpet-corner tc-tr" id="t-tr" style="display:none;">
-    <img src="images_front/trompette.png" class="trumpet-corner tc-bl" id="t-bl" style="display:none;">
-    <img src="images_front/trompette.png" class="trumpet-corner tc-br" id="t-br" style="display:none;">
+    <img src="../assets/images_front/trompette.png" class="trumpet-corner tc-tl" id="t-tl" style="display:none;">
+    <img src="../assets/images_front/trompette.png" class="trumpet-corner tc-tr" id="t-tr" style="display:none;">
+    <img src="../assets/images_front/trompette.png" class="trumpet-corner tc-bl" id="t-bl" style="display:none;">
+    <img src="../assets/images_front/trompette.png" class="trumpet-corner tc-br" id="t-br" style="display:none;">
     <div class="big-result-text" id="win-text">BANQUÉ !</div>
     <div class="result-pts"      id="win-pts">+1</div>
 </div>
@@ -293,7 +293,7 @@
 </div>
 
 <div id="game-footer" style="position:fixed;bottom:15px;right:25px;display:flex;align-items:center;gap:12px;font-family:'Bebas Neue',sans-serif;font-size:22px;color:rgba(255,255,255,.6);z-index:3000;pointer-events:none;">
-    INSPIRÉ DE <img src="images_front/popcorn.png" alt="Popcorn" style="height:36px;filter:drop-shadow(2px 2px 2px black);">
+    INSPIRÉ DE <img src="../assets/images_front/popcorn.png" alt="Popcorn" style="height:36px;filter:drop-shadow(2px 2px 2px black);">
 </div>
 <div id="dot-status"></div>
 
@@ -772,7 +772,7 @@ function showResults(results) {
         row.id = `rank-${rank}`;
         // Qualifié = tout sauf le dernier, Éliminé = le dernier
         const isElim = (rank === n);
-        const badge = `<img src="images_front/${isElim?'elimine':'qualifie'}.png" class="stamp">`;
+        const badge = `<img src="../assets/images_front/${isElim?'elimine':'qualifie'}.png" class="stamp">`;
         row.innerHTML = `<span class="team-rank">#${rank}</span><span class="team-name">${team.name}</span><span class="team-score">${team.score} PTS</span>${badge}`;
         table.appendChild(row);
     });

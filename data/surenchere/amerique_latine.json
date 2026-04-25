@@ -1,7 +1,7 @@
 {
   "id": "amerique_latine",
   "label": "PAYS D'AMÉRIQUE LATINE",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum de pays d'Amérique latine.",
   "answers": [
     {

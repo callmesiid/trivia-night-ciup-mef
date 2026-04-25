@@ -1,7 +1,7 @@
 {
   "id": "animaux_fr",
   "label": "ANIMAUX DE LA FERME",
-  "icon": "icons/animaux.png",
+  "icon": "../assets/Images/animaux.png",
   "prompt": "Citez un maximum d'animaux qu'on trouve traditionnellement dans une ferme.",
   "answers": [
     {

@@ -1,7 +1,7 @@
 {
   "id": "capitales_eu",
   "label": "CAPITALES EUROPÉENNES",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum de capitales de pays européens.",
   "answers": [
     {

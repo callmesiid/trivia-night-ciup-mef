@@ -1,7 +1,7 @@
 {
   "id": "ligne8",
   "label": "ARRÊTS LIGNE 8 DU MÉTRO",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum d'arrêts de la ligne 8 du métro (Balard — Créteil-Pointe du Lac).",
   "answers": [
     {

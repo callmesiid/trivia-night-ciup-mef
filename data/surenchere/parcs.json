@@ -1,7 +1,7 @@
 {
   "id": "parcs",
   "label": "PARCS ET JARDINS PARISIENS",
-  "icon": "icons/géographie.png",
+  "icon": "../assets/Images/géographie.png",
   "prompt": "Citez un maximum de parcs, jardins ou bois de Paris et sa petite couronne.",
   "answers": [
     {

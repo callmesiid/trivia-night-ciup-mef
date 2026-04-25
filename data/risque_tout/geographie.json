@@ -1,7 +1,7 @@
 {
   "id": "geographie",
   "label": "Géographie",
-  "icon": "icons/geographie.png",
+  "icon": "../assets/Images/geographie.png",
   "questions": [
     {
       "type": "image",

@@ -1,7 +1,7 @@
 {
   "id": "musique",
   "label": "Musique",
-  "icon": "icons/musique.png",
+  "icon": "../assets/Images/musique.png",
   "questions": [
     {
       "type": "image",

@@ -1,7 +1,7 @@
 {
   "id": "histoire",
   "label": "Histoire",
-  "icon": "icons/histoire.png",
+  "icon": "../assets/Images/histoire.png",
   "questions": [
     {
       "type": "text",
