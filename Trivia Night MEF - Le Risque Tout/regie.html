@@ -149,11 +149,15 @@
                 <div style="background:#222; padding:5px; text-align:center; border:1px solid #444; margin-bottom:5px;">
                     <small style="color:#aaa">JOUEUR ACTIF</small><br>
                     <strong id="active-team-display" style="font-size:1.2em; color:#f1c40f">---</strong>
+                    <div style="font-size:0.7em; color:#888; margin-top:3px;">
+                        Direction: <span id="snake-dir-display" style="color:#f1c40f; font-weight:bold;">→</span>
+                    </div>
                 </div>
                 <div style="display:flex; gap:5px;">
                     <button style="flex:1" onclick="prevTurn()">⬅</button>
                     <button style="flex:1" onclick="nextTurn()">➡</button>
                 </div>
+                <button class="btn-warn" style="width:100%; margin-top:5px; font-size:0.75em;" id="btn-undo-score" onclick="undoLastScore()" disabled>↩ ANNULER DERNIER SCORE</button>
                 <button class="btn-danger" style="width:100%; margin-top:5px; font-size:0.8em;" onclick="unlockTeams()">🔓 MODIFIER ÉQUIPES</button>
             </div>
         </div>
@@ -216,9 +220,10 @@
         let snakeDirection = 1; 
         
         let isTeamsValidated = false;
-        let isAnimating = false; 
+        let isAnimating = false;
         let currentBucketId = null;
-        let bucketsMap = {}; 
+        let bucketsMap = {};
+        let lastScoreAction = null; // pour le undo score
 
         // --- LOGS ---
         function addLog(text, type='neutral') {
@@ -339,9 +344,20 @@
         function nextTurn() {
             if(!isTeamsValidated || teams.length === 0) return;
             let next = activeTeamIndex + snakeDirection;
-            if(next >= teams.length) { next = teams.length - 1; snakeDirection = -1; } 
+            if(next >= teams.length) { next = teams.length - 1; snakeDirection = -1; }
             else if (next < 0) { next = 0; snakeDirection = 1; }
             activeTeamIndex = next;
+            renderTeamsList();
+            // Afficher la direction du serpent
+            document.getElementById('snake-dir-display').textContent = snakeDirection === 1 ? '→' : '←';
+        }
+
+        function undoLastScore() {
+            if (!lastScoreAction) return;
+            teams[lastScoreAction.teamIndex].score -= lastScoreAction.delta;
+            addLog(`↩ Score annulé : ${lastScoreAction.teamName} ${lastScoreAction.delta > 0 ? '-' : '+'}${Math.abs(lastScoreAction.delta)}`, 'edit');
+            lastScoreAction = null;
+            document.getElementById('btn-undo-score').disabled = true;
             renderTeamsList();
         }
         function prevTurn() {
@@ -453,13 +469,18 @@
             if(!currentBucketId) return;
             const pts = bucketsMap[currentBucketId].level;
             const team = teams[activeTeamIndex];
+            const delta = isWin ? pts : -pts;
+
+            // Sauvegarder l'action pour pouvoir l'annuler
+            lastScoreAction = { teamIndex: activeTeamIndex, delta, teamName: team.name };
+            document.getElementById('btn-undo-score').disabled = false;
 
             if(isWin) {
                 team.score += pts;
                 send('ANIM_WIN', {points: pts});
                 addLog(`${team.name} : +${pts} (Vrai)`, 'good');
             } else {
-                team.score -= pts; 
+                team.score -= pts;
                 send('ANIM_LOSE', {points: pts});
                 addLog(`${team.name} : -${pts} (Faux)`, 'bad');
             }

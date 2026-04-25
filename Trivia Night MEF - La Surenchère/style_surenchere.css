@@ -109,30 +109,25 @@ body {
     overflow-y: auto; /* Scroll si vraiment trop de réponses */
 }
 
+/* .reveal-item entièrement géré par les styles inline dans surenchere_ecran.html
+   (version avec animations d'apparition échelonnée — ne pas redéfinir ici) */
 .reveal-item {
-    background: #111; 
-    border: 1px solid #333; 
-    color: #555;
-    /* On réduit le padding pour des boites plus fines */
-    padding: 8px 5px; 
-    /* Police un peu plus petite pour éviter les retours à la ligne moches */
-    font-size: 1rem; 
-    font-family: 'Bebas Neue'; 
-    text-align: center;
-    border-radius: 4px;
+    background: #111; border: 1px solid #2a2a2a; color: #444;
+    padding: 10px 8px; font-size: .95rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center; border-radius: 6px;
     transition: all 0.3s ease;
+    opacity: 0; transform: scale(0.8);
 }
-
+.reveal-item.visible { opacity: 1; transform: scale(1); }
 .reveal-item.correct {
-    background: #2ecc71; 
-    color: #000; 
-    border-color: #27ae60;
-    /* Glow beaucoup plus net et moins "baveux" */
-    box-shadow: 0 0 8px rgba(46, 204, 113, 0.6); 
-    /* SUPPRESSION du scale (agrandissement) pour éviter le chevauchement */
-    transform: scale(1); 
-    font-weight: bold;
+    background: #1a5a2a; color: #a8e6b8; border-color: #27ae60;
+    box-shadow: 0 0 12px rgba(46,204,113,0.4);
 }
+.reveal-item.correct.visible {
+    animation: popIn .4s cubic-bezier(.2,1.5,.4,1);
+}
+@keyframes popIn { 0%{transform:scale(.6);opacity:0;} 60%{transform:scale(1.08);} 100%{transform:scale(1);opacity:1;} }
 
 /* --- UI RÉGIE --- */
 .regie-body { background: #1a1a1a; overflow-y: auto; display: block; height: auto; padding: 20px;}

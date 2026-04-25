@@ -487,9 +487,17 @@ function calcDelta(em, ec) {
 function updateDeltaPreview() {
     const em = effectiveMise();
     const ec = effectiveCited();
-    if (em === 0) { document.getElementById('delta-preview').textContent = '—'; document.getElementById('delta-preview').style.color = '#888'; return; }
-    const d = calcDelta(em, ec);
     const el = document.getElementById('delta-preview');
+    if (em === 0) {
+        el.textContent = '—'; el.style.color = '#888'; return;
+    }
+    // Si aucune réponse validée et pas de coup de pouce → afficher neutre
+    if (currentScore === 0 && !coupDePouce) {
+        el.textContent = `Mise : ${em} — validez les réponses`;
+        el.style.color = '#888';
+        return;
+    }
+    const d = calcDelta(em, ec);
     el.textContent = (d >= 0 ? '+' : '') + d + ' pts';
     el.style.color = d >= 0 ? '#27ae60' : '#e74c3c';
 }

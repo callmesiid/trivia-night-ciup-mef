@@ -217,7 +217,7 @@
     <div class="panel">
         <h3>🚀 DÉMARRAGE</h3>
         <button type="button" class="btn-green w100" id="btn-start" onclick="startGame()">🚂 DÉMARRER LE JEU</button>
-        <button type="button" class="btn-sm w100" style="margin-top:4px;background:#1a1a1a;border-color:#555;font-size:.7em;" onclick="runTestScenario()">🧪 CHARGER SCÉNARIO TEST</button>
+        <!-- bouton test masqué en prod : <button type="button" onclick="runTestScenario()">🧪 TEST</button> -->
     </div>
 
     <div class="panel">
@@ -256,6 +256,9 @@
         <div class="a-display"    id="a-display">...</div>
         <div class="pts-display"  id="pts-display">+0 pts</div>
         <div class="pending-display" id="pending-display"></div>
+
+        <!-- CONTRÔLEUR banner -->
+        <div id="controleur-banner" style="display:none;background:#1a3a00;border:2px solid #27ae60;border-radius:5px;padding:7px 10px;margin-bottom:8px;font-size:.82em;color:#a8e6b8;"></div>
 
         <!-- Bonus queued indicator -->
         <div id="pending-bonus-bar">
@@ -503,11 +506,19 @@ function renderTeamsList() {
         div.className = 'team-item' + (isActive ? ' active-turn' : '') + (t.qualified ? ' qualified' : '');
         const tempPts = isActive ? gameState.sessionPoints : 0;
         const pendStr = tempPts > 0 ? `<span class="team-pending">(+${tempPts})</span>` : '';
+        // Indicateurs malus actifs
+        const malusFlags = [];
+        if (t.skipNextTurn)      malusFlags.push('<span style="color:#e74c3c;font-size:.62em;">⛔ PASSE TOUR</span>');
+        if (t.bankBlocked)       malusFlags.push('<span style="color:#e74c3c;font-size:.62em;">🚫 PAS DE BANK</span>');
+        if (t.timerReduction>0)  malusFlags.push(`<span style="color:#e74c3c;font-size:.62em;">⏩ -${t.timerReduction}s</span>`);
+        const malusStr = malusFlags.length ? `<div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:2px;">${malusFlags.join('')}</div>` : '';
+
         div.innerHTML = `
             <div class="team-dot" style="background:${t.color}"></div>
             <div class="team-info">
                 <div class="team-name-d">${t.name}${t.qualified?' ✓':''}</div>
                 <div class="team-score-d">${t.score} pts ${pendStr}</div>
+                ${malusStr}
             </div>
             <div class="team-actions-d">
                 ${gameState.phase === 'SETUP' ? `
@@ -1160,6 +1171,12 @@ function applyBonusImmediate(bonus, teamIdx) {
             if (gameState.selectedWagonIndex!==null) { gameState.wagons[gameState.selectedWagonIndex].blockedForTurn=true; renderWagonsGrid(); addLog(`🔒 Wagon bloqué`,'bad'); }
             else addLog('Sélectionnez un wagon pour GRIÈVE','bad');
             break;
+        case 4: { // CONTRÔLEUR — affiche banner dans la régie
+            const banner = document.getElementById('controleur-banner');
+            if (banner) { banner.textContent = `🎫 CONTRÔLEUR: une équipe adverse répond à la place de ${team.name} — gérez les points manuellement`; banner.style.display='block'; setTimeout(()=>banner.style.display='none', 15000); }
+            channel.postMessage({ type:'SHOW_BONUS', data:{bonus, teamName:team.name, teamColor:team.color} });
+            addLog(`🎫 CONTRÔLEUR actif pour ${team.name} — désignez l'adversaire verbalement`,'gold');
+            break; }
         default:
             addLog(`Manuel: ${bonus.how}`,'info');
     }

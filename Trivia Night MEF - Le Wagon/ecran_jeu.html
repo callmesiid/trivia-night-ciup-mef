@@ -292,6 +292,9 @@
     <div class="score-table-container" id="score-table"></div>
 </div>
 
+<div id="game-footer" style="position:fixed;bottom:15px;right:25px;display:flex;align-items:center;gap:12px;font-family:'Bebas Neue',sans-serif;font-size:22px;color:rgba(255,255,255,.6);z-index:3000;pointer-events:none;">
+    INSPIRÉ DE <img src="images_front/popcorn.png" alt="Popcorn" style="height:36px;filter:drop-shadow(2px 2px 2px black);">
+</div>
 <div id="dot-status"></div>
 
 <script src="data.js"></script>
@@ -363,7 +366,14 @@ function startGenerique() {
     const video  = document.getElementById('gen-video');
     screen.style.display = 'block';
     video.currentTime = 0;
-    video.play().catch(() => { skipGenerique(); }); // fallback si autoplay bloqué
+    video.play().catch(() => {
+        // Autoplay bloqué par le navigateur — afficher un bouton clic
+        const btn = document.createElement('div');
+        btn.style.cssText = 'position:fixed;inset:0;background:#000;z-index:99999;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:"Anton",sans-serif;font-size:2.5rem;color:#d4af37;letter-spacing:4px;text-shadow:3px 3px 0 #000;';
+        btn.textContent = '▶ CLIQUER POUR LANCER';
+        btn.onclick = () => { btn.remove(); video.play().catch(() => skipGenerique()); };
+        document.body.appendChild(btn);
+    });
     video.onended = () => skipGenerique();
 }
 
@@ -851,8 +861,7 @@ function showSkipTurnBanner(data) {
     setTimeout(() => { b.classList.remove('show'); txt.style.color = '#27ae60'; b.style.borderColor = '#27ae60'; }, 4000);
 }
 
-// Helper
-function isBankingAllowed(level,depth){const d=depth||10;const t1=Math.ceil(d*3/10),t2=Math.ceil(d*6/10),t3=Math.ceil(d*9/10);return level===t1||level===t2||level===t3||level===d;}
+// isBankingAllowed est défini dans data.js (inclus) — pas de redéfinition ici
 </script>
 </body>
 </html>
