@@ -322,6 +322,7 @@ channel.onmessage = (event) => {
         case 'PLAY_INTRO':      runIntro(); break;
         case 'SKIP_INTRO':      skipIntro(); break;
         case 'RESET_TO_LOGO':   showStaticLogo(); break;
+        case 'READY_FOR_SPIN':  showReadyForSpin(); break;
         case 'START_SPIN':      runSpin(data.availableThemes); break;
         case 'REVEAL_THEME':    stopSpin(data.theme); break;
         case 'SHOW_QUESTION':   setupGame(data.theme, data.mise); break;
@@ -394,6 +395,21 @@ function showStaticLogo() {
 }
 
 function skipIntro() { showStaticLogo(); }
+
+function showReadyForSpin() {
+    clearIntro();
+    introScreen.style.display    = 'none';
+    gameScreen.style.display     = 'none';
+    revealOverlay.style.display  = 'none';
+    document.getElementById('scores-screen').classList.remove('show');
+    // Afficher l'écran de la roue en état "prêt" (sans spinner actif)
+    selectorScreen.style.display = 'flex';
+    slotReel.innerHTML = `
+        <div class="slot-item" style="color:#d4af37;background:#111;font-size:2.5rem;letter-spacing:3px;">
+            🎰 PRÊT POUR LE TIRAGE
+        </div>`;
+    slotReel.style.transform = 'translateY(0)';
+}
 
 function runIntro() {
     clearIntro();

@@ -73,7 +73,7 @@
 
         .chip { border-radius: 3px; padding: 2px 7px; font-size: .72em; border: 1px solid; cursor: pointer; transition: filter .15s; white-space: nowrap; }
         .chip:hover { filter: brightness(1.4); }
-        .chip.used    { background: #1a1a1a !important; border-color: #333 !important; color: #555 !important; cursor: not-allowed; text-decoration: line-through; }
+        .chip.used    { background: #1a1a1a !important; border-color: #333 !important; color: #555 !important; cursor: not-allowed; text-decoration: line-through; pointer-events: none !important; }
         .chip.active  { outline: 2px solid #fff; }
         .chip-bonus   { background: #1a3a6a; border-color: #2980b9; color: #90c0ff; }
         .chip-malus   { background: #3a0a0a; border-color: #c0392b; color: #f0a0a0; }
@@ -267,15 +267,15 @@
 // DÉFINITIONS BONUS & MALUS
 // ================================================================
 const BONUS_POOL = [
-    { id: 'double', name: 'POINTS ×2',    emoji: '✖️2', desc: 'Si gain : ×2. Si perte : ×2 aussi. Joue double ou rien.' },
     { id: 'time',   name: 'PLUS DE TEMPS', emoji: '⏰+', desc: '+25 secondes au chrono.' },
-    { id: 'pouce',  name: 'COUP DE POUCE', emoji: '👍',  desc: '+5 réponses ajoutées aux citées (ex: citez 10, compté 15). Contre les malus +5 mise.' },
-    { id: 'adeux',  name: 'À DEUX',        emoji: '👫',  desc: 'Répondez en binôme avec l\'aide d\'un coéquipier ou du public — aucun effet sur le score.' }
+    { id: 'pouce',  name: 'COUP DE POUCE', emoji: '👍',  desc: '+5 réponses ajoutées aux citées (ex: citez 10, compté 15). Contre le malus +5 MISE.' },
+    { id: 'adeux',  name: 'À DEUX',        emoji: '👫',  desc: 'Répondez en binôme avec de l\'aide — aucun effet sur le score.' }
 ];
 const MALUS_POOL = [
-    { id: 'division', name: 'DIVISION',    emoji: '➗',  desc: 'Gains ÷3 (arrondi), pertes ×3 pour l\'adversaire.' },
-    { id: 'notime',   name: 'PAS DE TEMPS', emoji: '⏩',  desc: '-15 secondes au chrono de l\'adversaire.' },
-    { id: 'plusmise', name: '+5 MISE',      emoji: '📈',  desc: '+5 à la mise de l\'adversaire (jusqu\'au max des réponses dispo). Annulé par Coup de Pouce.' }
+    { id: 'double',   name: 'POINTS ×2',    emoji: '✖️2', desc: 'Gains ×2 pour l\'adversaire, pertes ×2 pour l\'adversaire. Joue double ou rien contre lui.' },
+    { id: 'division', name: 'DIVISION',      emoji: '➗',  desc: 'Gains ÷3 (arrondi), pertes ×3 pour l\'adversaire.' },
+    { id: 'notime',   name: 'PAS DE TEMPS',  emoji: '⏩',  desc: '-15 secondes au chrono de l\'adversaire.' },
+    { id: 'plusmise', name: '+5 MISE',        emoji: '📈',  desc: '+5 à la mise de l\'adversaire (jusqu\'au max des réponses dispo). Annulé par Coup de Pouce.' }
 ];
 
 // ================================================================
@@ -299,7 +299,7 @@ let answersLocked    = true;   // verrouillé jusqu'au lancement du chrono
 let mise           = 0;
 let plusMiseMalus  = 0;    // ajout à la mise via malus
 let coupDePouce    = false; // bonus: +5 aux citées
-let doublePoints   = false; // bonus: ×2
+let doubleMalus    = false; // malus: ×2 gains ET ×2 pertes
 let timerBonus     = 0;    // secondes nettes (positif=plus, négatif=moins)
 let divisionMalus  = false; // malus: ÷3 gains ou ×3 pertes
 let roundAwarded   = false; // empêche double-clic sur APPLIQUER
@@ -451,7 +451,7 @@ function updateMiseDisplay() {
     const parts = [`Mise: ${mise}`];
     if (plusMiseMalus > 0) parts.push(`+${plusMiseMalus} malus`);
     if (coupDePouce)       parts.push('+5 coup de pouce (citées)');
-    if (doublePoints)      parts.push('×2 points');
+    if (doubleMalus)       parts.push('MALUS ×2 pts');
     if (divisionMalus)     parts.push('÷3 gains / ×3 pertes');
     if (timerBonus !== 0)  parts.push(`${timerBonus>0?'+':''}${timerBonus}s chrono`);
     document.getElementById('mise-breakdown').textContent = parts.join(' · ');
@@ -470,16 +470,15 @@ function updateMiseDisplay() {
 
 function calcDelta(em, ec) {
     if (ec >= em) {
-        // GAGNÉ : on score TOUT ce qu'on a cité (pas juste la mise)
-        // Citer plus que la mise = bonus de points !
+        // GAGNÉ : on score TOUT ce qu'on a cité (citer plus = bonus)
         let d = ec;
-        if (doublePoints)  d *= 2;
+        if (doubleMalus)   d *= 2;
         if (divisionMalus) d = Math.floor(d / 3);
         return d;
     } else {
         // PERDU : on perd la différence mise - citées
         let d = -(em - ec);
-        if (doublePoints)  d *= 2;
+        if (doubleMalus)   d *= 2;
         if (divisionMalus) d *= 3;
         return d;
     }
@@ -536,7 +535,7 @@ function updateBmPanel() {
     // Effets actifs
     const activeEl = document.getElementById('active-effects');
     activeEl.innerHTML = '';
-    if (doublePoints)    activeEl.innerHTML += `<span style="background:#1a3a6a;border:1px solid #2980b9;color:#90c0ff;border-radius:3px;padding:2px 7px;font-size:.72em;">✖️2 ACTIF</span> `;
+    if (doubleMalus)     activeEl.innerHTML += `<span style="background:#3a0a0a;border:1px solid #c0392b;color:#f0a0a0;border-radius:3px;padding:2px 7px;font-size:.72em;">✖️2 MALUS ACTIF</span> `;
     if (coupDePouce)     activeEl.innerHTML += `<span style="background:#1a3a6a;border:1px solid #2980b9;color:#90c0ff;border-radius:3px;padding:2px 7px;font-size:.72em;">👍 +5 ACTIF</span> `;
     if (timerBonus > 0)  activeEl.innerHTML += `<span style="background:#1a3a6a;border:1px solid #2980b9;color:#90c0ff;border-radius:3px;padding:2px 7px;font-size:.72em;">⏰ +${timerBonus}s ACTIF</span> `;
     if (divisionMalus)   activeEl.innerHTML += `<span style="background:#3a0a0a;border:1px solid #c0392b;color:#f0a0a0;border-radius:3px;padding:2px 7px;font-size:.72em;">➗ MALUS ACTIF</span> `;
@@ -555,7 +554,7 @@ function activateBonus(teamIdx, bonusIdx) {
 
     b.used = true;
     switch (def.id) {
-        case 'double': doublePoints = true; log(`✖️2 Points doubles activé par ${teams[teamIdx].name}`, 'gold'); break;
+        // 'double' est maintenant un malus — pas de case ici
         case 'time':   timerBonus += 25;    log(`⏰ +25s au chrono activé par ${teams[teamIdx].name}`, 'gold'); break;
         case 'pouce':  coupDePouce = true;  log(`👍 Coup de pouce activé (+5 citées) — annule aussi un malus +5 MISE`, 'gold'); break;
         case 'adeux':  log(`👫 À DEUX activé par ${teams[teamIdx].name} — réponse en binôme autorisée !`, 'gold'); break;
@@ -574,6 +573,11 @@ function activateMalus(teamIdx, malusIdx) {
     const def = MALUS_POOL.find(x => x.id === m.id);
 
     switch (def.id) {
+        case 'double':
+            m.used = true;
+            doubleMalus = true;
+            log(`✖️2 Malus POINTS ×2 activé par ${teams[teamIdx].name} → ${teams[playingTeamIdx].name}`, 'bad');
+            break;
         case 'division':
             m.used = true;
             divisionMalus = true;
@@ -653,7 +657,9 @@ function startTimer() {
     // Re-lire la mise depuis l'input (en cas de non-déclenchement de oninput)
     mise = Math.max(0, parseInt(document.getElementById('mise-input').value) || 0);
     if (mise <= 0) { alert('⚠️ Déclarez la mise avant de lancer le chrono !'); return; }
-    const duration = Math.max(10, 30 + timerBonus);
+    const raw = 30 + timerBonus;
+    const duration = Math.max(5, raw); // minimum 5s même si malus empilés
+    if (raw <= 0) { log(`⚠️ Temps cumulé négatif (${raw}s) → durée minimale de 5s`, 'bad'); }
     channel.postMessage({ type: 'START_TIMER', duration });
     answersLocked = false;
     document.getElementById('grid-lock-banner').classList.remove('show');
@@ -811,7 +817,7 @@ function doResetRound() {
     currentTheme = null; validatedIndices = []; currentScore = 0;
     isRevealOpen = false; lastValidatedBtn = null; answersLocked = true;
     playingTeamIdx = -1;
-    mise = 0; plusMiseMalus = 0; coupDePouce = false; doublePoints = false;
+    mise = 0; plusMiseMalus = 0; coupDePouce = false; doubleMalus = false;
     timerBonus = 0; divisionMalus = false; roundAwarded = false;
 
     // Réinitialiser les bonus/malus des équipes pour le nouveau round
@@ -827,7 +833,7 @@ function doResetRound() {
 
     channel.postMessage({ type: 'HIDE_ALL_ANSWERS' });
     channel.postMessage({ type: 'RESET_TIMER' });
-    channel.postMessage({ type: 'RESET_TO_LOGO' });
+    channel.postMessage({ type: 'READY_FOR_SPIN' }); // retour à l'écran roue
     log('--- Nouveau round ---');
 }
 
