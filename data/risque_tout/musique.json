@@ -5,7 +5,7 @@
   "questions": [
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Ariana Grande.png",
+      "file": "data/assets/images/Ariana Grande.png",
       "question": "Qui est-ce ?",
       "answer": "Ariana Grande",
       "difficulty": 1,
@@ -13,7 +13,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Aya Nakamura.png",
+      "file": "data/assets/images/Aya Nakamura.png",
       "question": "Qui est-ce ?",
       "answer": "Aya Nakamura",
       "difficulty": 1,
@@ -21,7 +21,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Benjamin Biolay.png",
+      "file": "data/assets/images/Benjamin Biolay.png",
       "question": "Qui est-ce ?",
       "answer": "Benjamin Biolay",
       "difficulty": 1,
@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Beyonce.png",
+      "file": "data/assets/images/Beyonce.png",
       "question": "Qui est-ce ?",
       "answer": "Beyonce",
       "difficulty": 1,
@@ -37,7 +37,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Bigflo.png",
+      "file": "data/assets/images/Bigflo.png",
       "question": "Qui est-ce ?",
       "answer": "Bigflo",
       "difficulty": 1,
@@ -45,7 +45,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Billie Eilish.png",
+      "file": "data/assets/images/Billie Eilish.png",
       "question": "Qui est-ce ?",
       "answer": "Billie Eilish",
       "difficulty": 1,
@@ -53,7 +53,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Britney Spears.png",
+      "file": "data/assets/images/Britney Spears.png",
       "question": "Qui est-ce ?",
       "answer": "Britney Spears",
       "difficulty": 1,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Camila Cabello.png",
+      "file": "data/assets/images/Camila Cabello.png",
       "question": "Qui est-ce ?",
       "answer": "Camila Cabello",
       "difficulty": 1,
@@ -69,7 +69,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Cardi B.png",
+      "file": "data/assets/images/Cardi B.png",
       "question": "Qui est-ce ?",
       "answer": "Cardi B",
       "difficulty": 1,
@@ -77,7 +77,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Celine Dion.png",
+      "file": "data/assets/images/Celine Dion.png",
       "question": "Qui est-ce ?",
       "answer": "Celine Dion",
       "difficulty": 1,
@@ -85,7 +85,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Christophe Maé.png",
+      "file": "data/assets/images/Christophe Maé.png",
       "question": "Qui est-ce ?",
       "answer": "Christophe Maé",
       "difficulty": 1,
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Clara Luciani.png",
+      "file": "data/assets/images/Clara Luciani.png",
       "question": "Qui est-ce ?",
       "answer": "Clara Luciani",
       "difficulty": 1,
@@ -101,7 +101,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Dadju.png",
+      "file": "data/assets/images/Dadju.png",
       "question": "Qui est-ce ?",
       "answer": "Dadju",
       "difficulty": 1,
@@ -109,7 +109,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Dua Lipa.png",
+      "file": "data/assets/images/Dua Lipa.png",
       "question": "Qui est-ce ?",
       "answer": "Dua Lipa",
       "difficulty": 1,
@@ -117,7 +117,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Ed Sheeran.png",
+      "file": "data/assets/images/Ed Sheeran.png",
       "question": "Qui est-ce ?",
       "answer": "Ed Sheeran",
       "difficulty": 1,
@@ -125,7 +125,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Eminem.png",
+      "file": "data/assets/images/Eminem.png",
       "question": "Qui est-ce ?",
       "answer": "Eminem",
       "difficulty": 1,
@@ -133,7 +133,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Gims.png",
+      "file": "data/assets/images/Gims.png",
       "question": "Qui est-ce ?",
       "answer": "Gims",
       "difficulty": 1,
@@ -141,7 +141,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Harry Styles.png",
+      "file": "data/assets/images/Harry Styles.png",
       "question": "Qui est-ce ?",
       "answer": "Harry Styles",
       "difficulty": 1,
@@ -149,7 +149,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Julien Dore.png",
+      "file": "data/assets/images/Julien Dore.png",
       "question": "Qui est-ce ?",
       "answer": "Julien Dore",
       "difficulty": 1,
@@ -157,7 +157,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Juliette Armanet.png",
+      "file": "data/assets/images/Juliette Armanet.png",
       "question": "Qui est-ce ?",
       "answer": "Juliette Armanet",
       "difficulty": 1,
@@ -165,7 +165,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Justin Bieber.png",
+      "file": "data/assets/images/Justin Bieber.png",
       "question": "Qui est-ce ?",
       "answer": "Justin Bieber",
       "difficulty": 1,
@@ -173,7 +173,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Justin Timberlake.png",
+      "file": "data/assets/images/Justin Timberlake.png",
       "question": "Qui est-ce ?",
       "answer": "Justin Timberlake",
       "difficulty": 1,
@@ -181,7 +181,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Kanye West.png",
+      "file": "data/assets/images/Kanye West.png",
       "question": "Qui est-ce ?",
       "answer": "Kanye West",
       "difficulty": 1,
@@ -189,7 +189,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Katy Perry.png",
+      "file": "data/assets/images/Katy Perry.png",
       "question": "Qui est-ce ?",
       "answer": "Katy Perry",
       "difficulty": 1,
@@ -197,7 +197,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Kendji Girac.png",
+      "file": "data/assets/images/Kendji Girac.png",
       "question": "Qui est-ce ?",
       "answer": "Kendji Girac",
       "difficulty": 1,
@@ -205,7 +205,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Lady Gaga.png",
+      "file": "data/assets/images/Lady Gaga.png",
       "question": "Qui est-ce ?",
       "answer": "Lady Gaga",
       "difficulty": 1,
@@ -213,7 +213,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Louane.png",
+      "file": "data/assets/images/Louane.png",
       "question": "Qui est-ce ?",
       "answer": "Louane",
       "difficulty": 1,
@@ -221,7 +221,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Miley Cyrus.png",
+      "file": "data/assets/images/Miley Cyrus.png",
       "question": "Qui est-ce ?",
       "answer": "Miley Cyrus",
       "difficulty": 1,
@@ -229,7 +229,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Nicki Minaj.png",
+      "file": "data/assets/images/Nicki Minaj.png",
       "question": "Qui est-ce ?",
       "answer": "Nicki Minaj",
       "difficulty": 1,
@@ -237,7 +237,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Ninho.png",
+      "file": "data/assets/images/Ninho.png",
       "question": "Qui est-ce ?",
       "answer": "Ninho",
       "difficulty": 1,
@@ -245,7 +245,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Pascal Obispo.png",
+      "file": "data/assets/images/Pascal Obispo.png",
       "question": "Qui est-ce ?",
       "answer": "Pascal Obispo",
       "difficulty": 1,
@@ -253,7 +253,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Patrick Bruel.png",
+      "file": "data/assets/images/Patrick Bruel.png",
       "question": "Qui est-ce ?",
       "answer": "Patrick Bruel",
       "difficulty": 1,
@@ -261,7 +261,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Post Malone.png",
+      "file": "data/assets/images/Post Malone.png",
       "question": "Qui est-ce ?",
       "answer": "Post Malone",
       "difficulty": 1,
@@ -269,7 +269,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Shakira.png",
+      "file": "data/assets/images/Shakira.png",
       "question": "Qui est-ce ?",
       "answer": "Shakira",
       "difficulty": 1,
@@ -277,7 +277,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Slimane.png",
+      "file": "data/assets/images/Slimane.png",
       "question": "Qui est-ce ?",
       "answer": "Slimane",
       "difficulty": 1,
@@ -285,7 +285,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Stromae.png",
+      "file": "data/assets/images/Stromae.png",
       "question": "Qui est-ce ?",
       "answer": "Stromae",
       "difficulty": 1,
@@ -293,7 +293,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Taylor Swift.png",
+      "file": "data/assets/images/Taylor Swift.png",
       "question": "Qui est-ce ?",
       "answer": "Taylor Swift",
       "difficulty": 1,
@@ -301,7 +301,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/The Weeknd.png",
+      "file": "data/assets/images/The Weeknd.png",
       "question": "Qui est-ce ?",
       "answer": "The Weeknd",
       "difficulty": 1,
@@ -309,7 +309,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Vianney.png",
+      "file": "data/assets/images/Vianney.png",
       "question": "Qui est-ce ?",
       "answer": "Vianney",
       "difficulty": 1,
@@ -317,7 +317,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/1/images/Vitaa.png",
+      "file": "data/assets/images/Vitaa.png",
       "question": "Qui est-ce ?",
       "answer": "Vitaa",
       "difficulty": 1,
@@ -1025,7 +1025,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/2/images/Bad Bunny.png",
+      "file": "data/assets/images/Bad Bunny.png",
       "question": "Qui est-ce ?",
       "answer": "Bad Bunny",
       "difficulty": 2,
@@ -1033,7 +1033,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/2/images/Olivia Rodrigo.png",
+      "file": "data/assets/images/Olivia Rodrigo.png",
       "question": "Qui est-ce ?",
       "answer": "Olivia Rodrigo",
       "difficulty": 2,
@@ -1041,7 +1041,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/2/images/Rihanna.png",
+      "file": "data/assets/images/Rihanna.png",
       "question": "Qui est-ce ?",
       "answer": "Rihanna",
       "difficulty": 2,
@@ -1049,7 +1049,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/2/images/Selena Gomez.png",
+      "file": "data/assets/images/Selena Gomez.png",
       "question": "Qui est-ce ?",
       "answer": "Selena Gomez",
       "difficulty": 2,
@@ -1057,7 +1057,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/2/images/Shawn Mendes.png",
+      "file": "data/assets/images/Shawn Mendes.png",
       "question": "Qui est-ce ?",
       "answer": "Shawn Mendes",
       "difficulty": 2,
@@ -1065,7 +1065,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/2/images/Sia.png",
+      "file": "data/assets/images/Sia.png",
       "question": "Qui est-ce ?",
       "answer": "Sia",
       "difficulty": 2,
@@ -1626,7 +1626,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/3/images/Amir.png",
+      "file": "data/assets/images/Amir.png",
       "question": "Qui est-ce ?",
       "answer": "Amir",
       "difficulty": 3,
@@ -1634,7 +1634,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/3/images/Florent Pagny.png",
+      "file": "data/assets/images/Florent Pagny.png",
       "question": "Qui est-ce ?",
       "answer": "Florent Pagny",
       "difficulty": 3,
@@ -1642,7 +1642,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/3/images/Mylene Farmer.png",
+      "file": "data/assets/images/Mylene Farmer.png",
       "question": "Qui est-ce ?",
       "answer": "Mylene Farmer",
       "difficulty": 3,
@@ -1650,7 +1650,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/3/images/Renaud.png",
+      "file": "data/assets/images/Renaud.png",
       "question": "Qui est-ce ?",
       "answer": "Renaud",
       "difficulty": 3,
@@ -1658,7 +1658,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/3/images/Zaho.png",
+      "file": "data/assets/images/Zaho.png",
       "question": "Qui est-ce ?",
       "answer": "Zaho",
       "difficulty": 3,
@@ -1666,7 +1666,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/3/images/Zaz.png",
+      "file": "data/assets/images/Zaz.png",
       "question": "Qui est-ce ?",
       "answer": "Zaz",
       "difficulty": 3,
@@ -1933,7 +1933,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/4/images/Doja Cat.png",
+      "file": "data/assets/images/Doja Cat.png",
       "question": "Qui est-ce ?",
       "answer": "Doja Cat",
       "difficulty": 4,
@@ -1941,7 +1941,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/4/images/Freddie Mercury.png",
+      "file": "data/assets/images/Freddie Mercury.png",
       "question": "Qui est-ce ?",
       "answer": "Freddie Mercury",
       "difficulty": 4,
@@ -1949,7 +1949,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/4/images/Madonna.png",
+      "file": "data/assets/images/Madonna.png",
       "question": "Qui est-ce ?",
       "answer": "Madonna",
       "difficulty": 4,
@@ -1957,7 +1957,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/musique/4/images/Mariah Carey.png",
+      "file": "data/assets/images/Mariah Carey.png",
       "question": "Qui est-ce ?",
       "answer": "Mariah Carey",
       "difficulty": 4,

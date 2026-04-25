@@ -28,6 +28,13 @@ def write_js(path, var_name, data, indent=2):
     print(f"  ✓ {rel}")
 
 
+def to_game_path(path):
+    """Convert repo-root-relative data/assets/ path to game-subfolder-relative ../data/assets/ path."""
+    if isinstance(path, str) and path.startswith("data/assets/"):
+        return "../" + path
+    return path
+
+
 def list_theme_files(game, custom=False):
     """Returns sorted list of JSON files for a game, normal or custom."""
     src_dir = os.path.join(DATA_DIR, game)
@@ -67,9 +74,9 @@ def build_risque_tout():
             diff = str(max(1, min(5, q.get('difficulty', 1))))
             qtype = q.get('type', 'text')
             if qtype == 'image':
-                levels[diff]['images'].append({"file": q['file'], "question": q['question'], "answer": q['answer']})
+                levels[diff]['images'].append({"file": to_game_path(q['file']), "question": q['question'], "answer": q['answer']})
             elif qtype == 'sound':
-                levels[diff]['sounds'].append({"file": q['file'], "question": q['question'], "answer": q['answer']})
+                levels[diff]['sounds'].append({"file": to_game_path(q['file']), "question": q['question'], "answer": q['answer']})
             else:
                 levels[diff]['text'].append({"question": q['question'], "answer": q['answer']})
             total += 1
@@ -202,7 +209,7 @@ def build_snapshot():
 
     data = read_json(src_path)
     photos = [
-        {"file": p['file'], "name": p['name']}
+        {"file": to_game_path(p['file']), "name": p['name']}
         for p in data.get('photos', [])
         if p.get('validated', True)
     ]

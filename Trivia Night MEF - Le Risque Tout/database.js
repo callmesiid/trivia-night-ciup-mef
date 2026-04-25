@@ -3,194 +3,194 @@ const QUESTION_DATABASE = {
     "1": {
       "images": [
         {
-          "file": "Quizz/questions/animaux/1/images/aigle_royal.jpg",
+          "file": "../data/assets/images/aigle_royal.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Aigle Royal"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/alligator_d_amerique.jpg",
+          "file": "../data/assets/images/alligator_d_amerique.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Alligator D Amerique"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/ane_de_provence.jpg",
+          "file": "../data/assets/images/ane_de_provence.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ane De Provence"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/canard_mandarin.jpg",
+          "file": "../data/assets/images/canard_mandarin.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Canard Mandarin"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/chevre_montagnes_rocheuses.jpg",
+          "file": "../data/assets/images/chevre_montagnes_rocheuses.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chevre Montagnes Rocheuses"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/chien_de_prairie.jpg",
+          "file": "../data/assets/images/chien_de_prairie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chien De Prairie"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/cigale_commune.jpg",
+          "file": "../data/assets/images/cigale_commune.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Cigale Commune"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/ecureuil_roux.jpg",
+          "file": "../data/assets/images/ecureuil_roux.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ecureuil Roux"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/elephant_d_afrique.jpg",
+          "file": "../data/assets/images/elephant_d_afrique.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Elephant D Afrique"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/grenouille_verte.jpg",
+          "file": "../data/assets/images/grenouille_verte.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Grenouille Verte"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/hibou_grand_duc.jpg",
+          "file": "../data/assets/images/hibou_grand_duc.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Hibou Grand Duc"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/hippopotame.jpg",
+          "file": "../data/assets/images/hippopotame.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Hippopotame"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/hippotrague_noir.jpg",
+          "file": "../data/assets/images/hippotrague_noir.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Hippotrague Noir"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/lievre_d_europe.jpg",
+          "file": "../data/assets/images/lievre_d_europe.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Lievre D Europe"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/loup_gris.jpg",
+          "file": "../data/assets/images/loup_gris.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup Gris"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/ours_brun.jpg",
+          "file": "../data/assets/images/ours_brun.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ours Brun"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/paresseux_a_deux_doigts.jpg",
+          "file": "../data/assets/images/paresseux_a_deux_doigts.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Paresseux A Deux Doigts"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/paresseux_a_gorge_brune.jpg",
+          "file": "../data/assets/images/paresseux_a_gorge_brune.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Paresseux A Gorge Brune"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/raton_laveur.jpg",
+          "file": "../data/assets/images/raton_laveur.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Raton Laveur"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/renard_roux.jpg",
+          "file": "../data/assets/images/renard_roux.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Renard Roux"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/renne.jpg",
+          "file": "../data/assets/images/renne.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Renne"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/rhinoceros_noir.jpg",
+          "file": "../data/assets/images/rhinoceros_noir.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Rhinoceros Noir"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/sanglier_commun.jpg",
+          "file": "../data/assets/images/sanglier_commun.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Sanglier Commun"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/serval.jpg",
+          "file": "../data/assets/images/serval.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Serval"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/tigre_du_bengale.jpg",
+          "file": "../data/assets/images/tigre_du_bengale.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tigre Du Bengale"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/tortue_geante.jpg",
+          "file": "../data/assets/images/tortue_geante.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tortue Geante"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/tortue_molle.jpg",
+          "file": "../data/assets/images/tortue_molle.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tortue Molle"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/tortue_verte.jpg",
+          "file": "../data/assets/images/tortue_verte.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tortue Verte"
         },
         {
-          "file": "Quizz/questions/animaux/1/images/tyrannosaure_rex.jpg",
+          "file": "../data/assets/images/tyrannosaure_rex.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tyrannosaure Rex"
         }
       ],
       "sounds": [
         {
-          "file": "Quizz/questions/animaux/1/sons/Canard.mp3",
+          "file": "../data/assets/sons/Canard.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Canard"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Cheval.mp3",
+          "file": "../data/assets/sons/Cheval.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Cheval"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Chien.mp3",
+          "file": "../data/assets/sons/Chien.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Chien"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Chèvre.mp3",
+          "file": "../data/assets/sons/Chèvre.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Chèvre"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Elephant.mp3",
+          "file": "../data/assets/sons/Elephant.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Elephant"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Mouette.mp3",
+          "file": "../data/assets/sons/Mouette.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Mouette"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Poule.mp3",
+          "file": "../data/assets/sons/Poule.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Poule"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Singe.mp3",
+          "file": "../data/assets/sons/Singe.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Singe"
         },
         {
-          "file": "Quizz/questions/animaux/1/sons/Vache.mp3",
+          "file": "../data/assets/sons/Vache.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Vache"
         }
@@ -429,109 +429,109 @@ const QUESTION_DATABASE = {
     "2": {
       "images": [
         {
-          "file": "Quizz/questions/animaux/2/images/alpaga.jpg",
+          "file": "../data/assets/images/alpaga.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Alpaga"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/leopard_des_mers.jpg",
+          "file": "../data/assets/images/leopard_des_mers.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Leopard Des Mers"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/leopard_des_neiges.jpg",
+          "file": "../data/assets/images/leopard_des_neiges.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Leopard Des Neiges"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/leopard_d_afrique.jpg",
+          "file": "../data/assets/images/leopard_d_afrique.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Leopard D Afrique"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/lynx_boreal.jpg",
+          "file": "../data/assets/images/lynx_boreal.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Lynx Boreal"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/lynx_du_desert.jpg",
+          "file": "../data/assets/images/lynx_du_desert.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Lynx Du Desert"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/lynx_roux.jpg",
+          "file": "../data/assets/images/lynx_roux.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Lynx Roux"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/mammouth_laineux.jpg",
+          "file": "../data/assets/images/mammouth_laineux.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Mammouth Laineux"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/otarie_de_californie.jpg",
+          "file": "../data/assets/images/otarie_de_californie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Otarie De Californie"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/pangolin_de_chine.jpg",
+          "file": "../data/assets/images/pangolin_de_chine.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pangolin De Chine"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/pangolin_geant.jpg",
+          "file": "../data/assets/images/pangolin_geant.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pangolin Geant"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/requin_baleine.jpg",
+          "file": "../data/assets/images/requin_baleine.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Requin Baleine"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/requin_blanc.jpg",
+          "file": "../data/assets/images/requin_blanc.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Requin Blanc"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/requin_marteau.jpg",
+          "file": "../data/assets/images/requin_marteau.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Requin Marteau"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/shiba_inu.jpg",
+          "file": "../data/assets/images/shiba_inu.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Shiba Inu"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/siamois.jpg",
+          "file": "../data/assets/images/siamois.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Siamois"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/siberian_husky.jpg",
+          "file": "../data/assets/images/siberian_husky.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Siberian Husky"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/sphynx.jpg",
+          "file": "../data/assets/images/sphynx.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Sphynx"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/thon_rouge.jpg",
+          "file": "../data/assets/images/thon_rouge.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Thon Rouge"
         },
         {
-          "file": "Quizz/questions/animaux/2/images/truite_fario.jpg",
+          "file": "../data/assets/images/truite_fario.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Truite Fario"
         }
       ],
       "sounds": [
         {
-          "file": "Quizz/questions/animaux/2/sons/Agneau.mp3",
+          "file": "../data/assets/sons/Agneau.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Agneau"
         }
@@ -682,134 +682,134 @@ const QUESTION_DATABASE = {
     "3": {
       "images": [
         {
-          "file": "Quizz/questions/animaux/3/images/chauve_souris_geante_d_inde.jpg",
+          "file": "../data/assets/images/chauve_souris_geante_d_inde.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chauve Souris Geante D Inde"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/dragon_de_komodo.jpg",
+          "file": "../data/assets/images/dragon_de_komodo.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Dragon De Komodo"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/jaguar.jpg",
+          "file": "../data/assets/images/jaguar.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Jaguar"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/kiwi_austral.jpg",
+          "file": "../data/assets/images/kiwi_austral.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Kiwi Austral"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/lerot.jpg",
+          "file": "../data/assets/images/lerot.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Lerot"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/lezard_jesus.jpg",
+          "file": "../data/assets/images/lezard_jesus.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Lezard Jesus"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/marmotte_des_alpes.jpg",
+          "file": "../data/assets/images/marmotte_des_alpes.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Marmotte Des Alpes"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/ours_noir.jpg",
+          "file": "../data/assets/images/ours_noir.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ours Noir"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/ours_polaire.jpg",
+          "file": "../data/assets/images/ours_polaire.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ours Polaire"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/paon_bleu.jpg",
+          "file": "../data/assets/images/paon_bleu.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Paon Bleu"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/paon_du_jour.jpg",
+          "file": "../data/assets/images/paon_du_jour.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Paon Du Jour"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/pelican_blanc.jpg",
+          "file": "../data/assets/images/pelican_blanc.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pelican Blanc"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/pelican_frise.jpg",
+          "file": "../data/assets/images/pelican_frise.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pelican Frise"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/pic_epeiche.jpg",
+          "file": "../data/assets/images/pic_epeiche.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pic Epeiche"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/pic_flamboyant.jpg",
+          "file": "../data/assets/images/pic_flamboyant.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pic Flamboyant"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/pic_vert.jpg",
+          "file": "../data/assets/images/pic_vert.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pic Vert"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/pie_bavarde.jpg",
+          "file": "../data/assets/images/pie_bavarde.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pie Bavarde"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/puma.jpg",
+          "file": "../data/assets/images/puma.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Puma"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/putois_a_pieds_noirs.jpg",
+          "file": "../data/assets/images/putois_a_pieds_noirs.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Putois A Pieds Noirs"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/putois_d_europe.jpg",
+          "file": "../data/assets/images/putois_d_europe.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Putois D Europe"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/suricate.jpg",
+          "file": "../data/assets/images/suricate.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Suricate"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/toucan_a_carene.jpg",
+          "file": "../data/assets/images/toucan_a_carene.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Toucan A Carene"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/toucan_toco.jpg",
+          "file": "../data/assets/images/toucan_toco.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Toucan Toco"
         },
         {
-          "file": "Quizz/questions/animaux/3/images/vipere_aspic.jpg",
+          "file": "../data/assets/images/vipere_aspic.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vipere Aspic"
         }
       ],
       "sounds": [
         {
-          "file": "Quizz/questions/animaux/3/sons/Corbeau.mp3",
+          "file": "../data/assets/sons/Corbeau.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Corbeau"
         },
         {
-          "file": "Quizz/questions/animaux/3/sons/Hibou.mp3",
+          "file": "../data/assets/sons/Hibou.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Hibou"
         }
@@ -944,199 +944,199 @@ const QUESTION_DATABASE = {
     "4": {
       "images": [
         {
-          "file": "Quizz/questions/animaux/4/images/cerf_de_virginie.jpg",
+          "file": "../data/assets/images/cerf_de_virginie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Cerf De Virginie"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/cerf_elaphe.jpg",
+          "file": "../data/assets/images/cerf_elaphe.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Cerf Elaphe"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/chat_des_sables.jpg",
+          "file": "../data/assets/images/chat_des_sables.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chat Des Sables"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/chat_de_pallas.jpg",
+          "file": "../data/assets/images/chat_de_pallas.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chat De Pallas"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/chat_de_temminck.jpg",
+          "file": "../data/assets/images/chat_de_temminck.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chat De Temminck"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/chat_pecheur.jpg",
+          "file": "../data/assets/images/chat_pecheur.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chat Pecheur"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/chat_sauvage.jpg",
+          "file": "../data/assets/images/chat_sauvage.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chat Sauvage"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/elephant_de_mer.jpg",
+          "file": "../data/assets/images/elephant_de_mer.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Elephant De Mer"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/elephant_d_asie.jpg",
+          "file": "../data/assets/images/elephant_d_asie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Elephant D Asie"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_arctique.jpg",
+          "file": "../data/assets/images/loup_arctique.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup Arctique"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_a_criniere.jpg",
+          "file": "../data/assets/images/loup_a_criniere.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup A Criniere"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_des_indes.jpg",
+          "file": "../data/assets/images/loup_des_indes.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup Des Indes"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_de_l_est.jpg",
+          "file": "../data/assets/images/loup_de_l_est.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup De L Est"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_de_mongolie.jpg",
+          "file": "../data/assets/images/loup_de_mongolie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup De Mongolie"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_du_mexique.jpg",
+          "file": "../data/assets/images/loup_du_mexique.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup Du Mexique"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_d_abyssinie.jpg",
+          "file": "../data/assets/images/loup_d_abyssinie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup D Abyssinie"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_iberique.jpg",
+          "file": "../data/assets/images/loup_iberique.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup Iberique"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/loup_rouge.jpg",
+          "file": "../data/assets/images/loup_rouge.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Loup Rouge"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/porc_epic_du_cap.jpg",
+          "file": "../data/assets/images/porc_epic_du_cap.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Porc Epic Du Cap"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/porc_epic_d_amerique_du_nord.jpg",
+          "file": "../data/assets/images/porc_epic_d_amerique_du_nord.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Porc Epic D Amerique Du Nord"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/raie_manta.jpg",
+          "file": "../data/assets/images/raie_manta.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Raie Manta"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/renard_corsac.jpg",
+          "file": "../data/assets/images/renard_corsac.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Renard Corsac"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/renard_crabier.jpg",
+          "file": "../data/assets/images/renard_crabier.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Renard Crabier"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/renard_des_sables.jpg",
+          "file": "../data/assets/images/renard_des_sables.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Renard Des Sables"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/renard_gris.jpg",
+          "file": "../data/assets/images/renard_gris.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Renard Gris"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/renard_polaire.jpg",
+          "file": "../data/assets/images/renard_polaire.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Renard Polaire"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/setter_irlandais.jpg",
+          "file": "../data/assets/images/setter_irlandais.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Setter Irlandais"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/shar_pei.jpg",
+          "file": "../data/assets/images/shar_pei.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Shar Pei"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/shetland.jpg",
+          "file": "../data/assets/images/shetland.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Shetland"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/spilogale.jpg",
+          "file": "../data/assets/images/spilogale.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Spilogale"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/spizaete_orne.jpg",
+          "file": "../data/assets/images/spizaete_orne.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Spizaete Orne"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/springbok.jpg",
+          "file": "../data/assets/images/springbok.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Springbok"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/steenbok.jpg",
+          "file": "../data/assets/images/steenbok.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Steenbok"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/vautour_africain.jpg",
+          "file": "../data/assets/images/vautour_africain.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vautour Africain"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/vautour_fauve.jpg",
+          "file": "../data/assets/images/vautour_fauve.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vautour Fauve"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/vautour_pape.jpg",
+          "file": "../data/assets/images/vautour_pape.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vautour Pape"
         },
         {
-          "file": "Quizz/questions/animaux/4/images/vautour_percnoptere.jpg",
+          "file": "../data/assets/images/vautour_percnoptere.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vautour Percnoptere"
         }
       ],
       "sounds": [
         {
-          "file": "Quizz/questions/animaux/4/sons/Leopard.mp3",
+          "file": "../data/assets/sons/Leopard.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Leopard"
         },
         {
-          "file": "Quizz/questions/animaux/4/sons/Tigre.mp3",
+          "file": "../data/assets/sons/Tigre.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Tigre"
         }
@@ -1223,614 +1223,614 @@ const QUESTION_DATABASE = {
     "5": {
       "images": [
         {
-          "file": "Quizz/questions/animaux/5/images/chevre_naine.jpg",
+          "file": "../data/assets/images/chevre_naine.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chevre Naine"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/chien_chinois_a_crete.jpg",
+          "file": "../data/assets/images/chien_chinois_a_crete.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chien Chinois A Crete"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/chien_des_buissons.jpg",
+          "file": "../data/assets/images/chien_des_buissons.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chien Des Buissons"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/chien_loup_tchecoslovaque.jpg",
+          "file": "../data/assets/images/chien_loup_tchecoslovaque.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chien Loup Tchecoslovaque"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/chien_viverrin.jpg",
+          "file": "../data/assets/images/chien_viverrin.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chien Viverrin"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/ecureuil_de_barbarie.jpg",
+          "file": "../data/assets/images/ecureuil_de_barbarie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ecureuil De Barbarie"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/ecureuil_de_prevost.jpg",
+          "file": "../data/assets/images/ecureuil_de_prevost.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ecureuil De Prevost"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/ecureuil_du_yucatan.jpg",
+          "file": "../data/assets/images/ecureuil_du_yucatan.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ecureuil Du Yucatan"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/ecureuil_fouisseur.jpg",
+          "file": "../data/assets/images/ecureuil_fouisseur.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ecureuil Fouisseur"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/ecureuil_geant.jpg",
+          "file": "../data/assets/images/ecureuil_geant.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ecureuil Geant"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/ecureuil_gris.jpg",
+          "file": "../data/assets/images/ecureuil_gris.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Ecureuil Gris"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/grenouille_fraise.jpg",
+          "file": "../data/assets/images/grenouille_fraise.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Grenouille Fraise"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/grenouille_taureau.jpg",
+          "file": "../data/assets/images/grenouille_taureau.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Grenouille Taureau"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nandinie.jpg",
+          "file": "../data/assets/images/nandinie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nandinie"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nandou.jpg",
+          "file": "../data/assets/images/nandou.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nandou"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/narval.jpg",
+          "file": "../data/assets/images/narval.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Narval"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nasique.jpg",
+          "file": "../data/assets/images/nasique.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nasique"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nautile.jpg",
+          "file": "../data/assets/images/nautile.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nautile"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nebelung.jpg",
+          "file": "../data/assets/images/nebelung.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nebelung"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nestor_kea.jpg",
+          "file": "../data/assets/images/nestor_kea.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nestor Kea"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nette_rousse.jpg",
+          "file": "../data/assets/images/nette_rousse.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nette Rousse"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nicator_a_gorge_grise.jpg",
+          "file": "../data/assets/images/nicator_a_gorge_grise.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nicator A Gorge Grise"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nicobar.jpg",
+          "file": "../data/assets/images/nicobar.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nicobar"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nilgaut.jpg",
+          "file": "../data/assets/images/nilgaut.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nilgaut"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/niverolle.jpg",
+          "file": "../data/assets/images/niverolle.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Niverolle"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/noctuelle.jpg",
+          "file": "../data/assets/images/noctuelle.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Noctuelle"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/noctule.jpg",
+          "file": "../data/assets/images/noctule.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Noctule"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/noddi_brun.jpg",
+          "file": "../data/assets/images/noddi_brun.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Noddi Brun"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/norvegien.jpg",
+          "file": "../data/assets/images/norvegien.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Norvegien"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nothocrax_nocturne.jpg",
+          "file": "../data/assets/images/nothocrax_nocturne.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nothocrax Nocturne"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/numbat.jpg",
+          "file": "../data/assets/images/numbat.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Numbat"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nyala.jpg",
+          "file": "../data/assets/images/nyala.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nyala"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/nyctale.jpg",
+          "file": "../data/assets/images/nyctale.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nyctale"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/rhinoceros_blanc.jpg",
+          "file": "../data/assets/images/rhinoceros_blanc.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Rhinoceros Blanc"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/rhinoceros_de_sumatra.jpg",
+          "file": "../data/assets/images/rhinoceros_de_sumatra.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Rhinoceros De Sumatra"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/rhinoceros_indien.jpg",
+          "file": "../data/assets/images/rhinoceros_indien.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Rhinoceros Indien"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/saiga.jpg",
+          "file": "../data/assets/images/saiga.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Saiga"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/saimiri_a_tete_noire.jpg",
+          "file": "../data/assets/images/saimiri_a_tete_noire.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Saimiri A Tete Noire"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/saola.jpg",
+          "file": "../data/assets/images/saola.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Saola"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/sapajou_apelle.jpg",
+          "file": "../data/assets/images/sapajou_apelle.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Sapajou Apelle"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/scinque.jpg",
+          "file": "../data/assets/images/scinque.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Scinque"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/scolie_des_jardins.jpg",
+          "file": "../data/assets/images/scolie_des_jardins.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Scolie Des Jardins"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/scottish_terrier.jpg",
+          "file": "../data/assets/images/scottish_terrier.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Scottish Terrier"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/selkirk_rex.jpg",
+          "file": "../data/assets/images/selkirk_rex.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Selkirk Rex"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/selle_francais.jpg",
+          "file": "../data/assets/images/selle_francais.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Selle Francais"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/semnopitheque.jpg",
+          "file": "../data/assets/images/semnopitheque.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Semnopitheque"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/serpentaire_bacha.jpg",
+          "file": "../data/assets/images/serpentaire_bacha.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Serpentaire Bacha"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/silure_glane.jpg",
+          "file": "../data/assets/images/silure_glane.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Silure Glane"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/singe_hurleur_noir.jpg",
+          "file": "../data/assets/images/singe_hurleur_noir.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Singe Hurleur Noir"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/sitelle_a_poitrine_blanche.jpg",
+          "file": "../data/assets/images/sitelle_a_poitrine_blanche.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Sitelle A Poitrine Blanche"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/sitelle_torchepot.jpg",
+          "file": "../data/assets/images/sitelle_torchepot.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Sitelle Torchepot"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/sizerin_flamme.jpg",
+          "file": "../data/assets/images/sizerin_flamme.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Sizerin Flamme"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/smilodon.jpg",
+          "file": "../data/assets/images/smilodon.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Smilodon"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/somali.jpg",
+          "file": "../data/assets/images/somali.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Somali"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/sorraia.jpg",
+          "file": "../data/assets/images/sorraia.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Sorraia"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/souris_rayee.jpg",
+          "file": "../data/assets/images/souris_rayee.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Souris Rayee"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/spatule_rose.jpg",
+          "file": "../data/assets/images/spatule_rose.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Spatule Rose"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/spermophile_raye.jpg",
+          "file": "../data/assets/images/spermophile_raye.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Spermophile Raye"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/takin.jpg",
+          "file": "../data/assets/images/takin.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Takin"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tamandua.jpg",
+          "file": "../data/assets/images/tamandua.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tamandua"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tamanoir.jpg",
+          "file": "../data/assets/images/tamanoir.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tamanoir"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tamarin_a_mains_dorees.jpg",
+          "file": "../data/assets/images/tamarin_a_mains_dorees.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tamarin A Mains Dorees"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tamarin_empereur.jpg",
+          "file": "../data/assets/images/tamarin_empereur.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tamarin Empereur"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tamarin_lion_dore.jpg",
+          "file": "../data/assets/images/tamarin_lion_dore.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tamarin Lion Dore"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tamia_raye.jpg",
+          "file": "../data/assets/images/tamia_raye.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tamia Raye"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tangara_emeraude.jpg",
+          "file": "../data/assets/images/tangara_emeraude.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tangara Emeraude"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tangara_eveque.jpg",
+          "file": "../data/assets/images/tangara_eveque.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tangara Eveque"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tantale_ibis.jpg",
+          "file": "../data/assets/images/tantale_ibis.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tantale Ibis"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tapir_de_malaisie.jpg",
+          "file": "../data/assets/images/tapir_de_malaisie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tapir De Malaisie"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tapir_du_bresil.jpg",
+          "file": "../data/assets/images/tapir_du_bresil.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tapir Du Bresil"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tarier_patre.jpg",
+          "file": "../data/assets/images/tarier_patre.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tarier Patre"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tarine.jpg",
+          "file": "../data/assets/images/tarine.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tarine"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tarsier.jpg",
+          "file": "../data/assets/images/tarsier.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tarsier"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tatou_a_neuf_bandes.jpg",
+          "file": "../data/assets/images/tatou_a_neuf_bandes.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tatou A Neuf Bandes"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/taupe_a_nez_etoile.jpg",
+          "file": "../data/assets/images/taupe_a_nez_etoile.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Taupe A Nez Etoile"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/taupe_d_europe.jpg",
+          "file": "../data/assets/images/taupe_d_europe.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Taupe D Europe"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tchitrec_de_paradis.jpg",
+          "file": "../data/assets/images/tchitrec_de_paradis.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tchitrec De Paradis"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tenrec_zebre.jpg",
+          "file": "../data/assets/images/tenrec_zebre.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tenrec Zebre"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tetras_des_prairies.jpg",
+          "file": "../data/assets/images/tetras_des_prairies.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tetras Des Prairies"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tetras_lyre.jpg",
+          "file": "../data/assets/images/tetras_lyre.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tetras Lyre"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tigre_blanc.jpg",
+          "file": "../data/assets/images/tigre_blanc.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tigre Blanc"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tigre_de_siberie.jpg",
+          "file": "../data/assets/images/tigre_de_siberie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tigre De Siberie"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tigre_de_sumatra.jpg",
+          "file": "../data/assets/images/tigre_de_sumatra.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tigre De Sumatra"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tigre_dore.jpg",
+          "file": "../data/assets/images/tigre_dore.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tigre Dore"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tisserin_gendarme.jpg",
+          "file": "../data/assets/images/tisserin_gendarme.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tisserin Gendarme"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/topi.jpg",
+          "file": "../data/assets/images/topi.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Topi"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tortue_luth.jpg",
+          "file": "../data/assets/images/tortue_luth.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tortue Luth"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/touraco_vert.jpg",
+          "file": "../data/assets/images/touraco_vert.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Touraco Vert"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/triton_alpestre.jpg",
+          "file": "../data/assets/images/triton_alpestre.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Triton Alpestre"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/troglodyte_des_marais.jpg",
+          "file": "../data/assets/images/troglodyte_des_marais.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Troglodyte Des Marais"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/troglodyte_mignon.jpg",
+          "file": "../data/assets/images/troglodyte_mignon.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Troglodyte Mignon"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/trogon_de_cuba.jpg",
+          "file": "../data/assets/images/trogon_de_cuba.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Trogon De Cuba"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/tropidacris_cristata.jpg",
+          "file": "../data/assets/images/tropidacris_cristata.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tropidacris Cristata"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/unau.jpg",
+          "file": "../data/assets/images/unau.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Unau"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/urodele.jpg",
+          "file": "../data/assets/images/urodele.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Urodele"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/urubu.jpg",
+          "file": "../data/assets/images/urubu.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Urubu"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/vampire_d_azara.jpg",
+          "file": "../data/assets/images/vampire_d_azara.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vampire D Azara"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/varan_bigarre.jpg",
+          "file": "../data/assets/images/varan_bigarre.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Varan Bigarre"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/verdier_d_europe.jpg",
+          "file": "../data/assets/images/verdier_d_europe.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Verdier D Europe"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/vigogne.jpg",
+          "file": "../data/assets/images/vigogne.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vigogne"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/vipere_a_cornes.jpg",
+          "file": "../data/assets/images/vipere_a_cornes.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vipere A Cornes"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/viscache_des_plaines.jpg",
+          "file": "../data/assets/images/viscache_des_plaines.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Viscache Des Plaines"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/vison_d_europe.jpg",
+          "file": "../data/assets/images/vison_d_europe.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vison D Europe"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/wallaby_des_rochers.jpg",
+          "file": "../data/assets/images/wallaby_des_rochers.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Wallaby Des Rochers"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/wallaby_de_bennett.jpg",
+          "file": "../data/assets/images/wallaby_de_bennett.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Wallaby De Bennett"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/wapiti.jpg",
+          "file": "../data/assets/images/wapiti.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Wapiti"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/waterbuck.jpg",
+          "file": "../data/assets/images/waterbuck.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Waterbuck"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/welsh_corgi.jpg",
+          "file": "../data/assets/images/welsh_corgi.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Welsh Corgi"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/west_highland_terrier.jpg",
+          "file": "../data/assets/images/west_highland_terrier.jpg",
           "question": "Quel est cet animal ?",
           "answer": "West Highland Terrier"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/wombat_commun.jpg",
+          "file": "../data/assets/images/wombat_commun.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Wombat Commun"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/xantusie_du_desert.jpg",
+          "file": "../data/assets/images/xantusie_du_desert.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Xantusie Du Desert"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/xerus.jpg",
+          "file": "../data/assets/images/xerus.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Xerus"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/xylocope_violacee.jpg",
+          "file": "../data/assets/images/xylocope_violacee.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Xylocope Violacee"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/yack.jpg",
+          "file": "../data/assets/images/yack.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Yack"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/yapock.jpg",
+          "file": "../data/assets/images/yapock.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Yapock"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/yorkshire_terrier.jpg",
+          "file": "../data/assets/images/yorkshire_terrier.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Yorkshire Terrier"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/zebu.jpg",
+          "file": "../data/assets/images/zebu.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Zebu"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/zibeline.jpg",
+          "file": "../data/assets/images/zibeline.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Zibeline"
         },
         {
-          "file": "Quizz/questions/animaux/5/images/zorille_du_cap.jpg",
+          "file": "../data/assets/images/zorille_du_cap.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Zorille Du Cap"
         }
       ],
       "sounds": [
         {
-          "file": "Quizz/questions/animaux/5/sons/Lion.mp3",
+          "file": "../data/assets/sons/Lion.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Lion"
         },
         {
-          "file": "Quizz/questions/animaux/5/sons/Rhinocéros.mp3",
+          "file": "../data/assets/sons/Rhinocéros.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Rhinocéros"
         },
         {
-          "file": "Quizz/questions/animaux/5/sons/Serpent-à-sonnette.mp3",
+          "file": "../data/assets/sons/Serpent-à-sonnette.mp3",
           "question": "À quel animal ce bruit est-il associé ?",
           "answer": "Serpent À Sonnette"
         }
@@ -6211,147 +6211,147 @@ const QUESTION_DATABASE = {
     "1": {
       "images": [
         {
-          "file": "Quizz/questions/disney/1/images/Anna.webp",
+          "file": "../data/assets/images/Anna.webp",
           "question": "Qui est-ce ?",
           "answer": "Anna"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Ariel.webp",
+          "file": "../data/assets/images/Ariel.webp",
           "question": "Qui est-ce ?",
           "answer": "Ariel"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Bambi.webp",
+          "file": "../data/assets/images/Bambi.webp",
           "question": "Qui est-ce ?",
           "answer": "Bambi"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Belle.webp",
+          "file": "../data/assets/images/Belle.webp",
           "question": "Qui est-ce ?",
           "answer": "Belle"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Black_Panther.jpeg",
+          "file": "../data/assets/images/Black_Panther.jpeg",
           "question": "Qui est-ce ?",
           "answer": "Black Panther"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Black_Widow.webp",
+          "file": "../data/assets/images/Black_Widow.webp",
           "question": "Qui est-ce ?",
           "answer": "Black Widow"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Buzz_L_Eclair.webp",
+          "file": "../data/assets/images/Buzz_L_Eclair.webp",
           "question": "Qui est-ce ?",
           "answer": "Buzz L Eclair"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Captain_America.jpg",
+          "file": "../data/assets/images/Captain_America.jpg",
           "question": "Qui est-ce ?",
           "answer": "Captain America"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Dingo.webp",
+          "file": "../data/assets/images/Dingo.webp",
           "question": "Qui est-ce ?",
           "answer": "Dingo"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Doctor_Strange.webp",
+          "file": "../data/assets/images/Doctor_Strange.webp",
           "question": "Qui est-ce ?",
           "answer": "Doctor Strange"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Donald_Duck.webp",
+          "file": "../data/assets/images/Donald_Duck.webp",
           "question": "Qui est-ce ?",
           "answer": "Donald Duck"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Dory.webp",
+          "file": "../data/assets/images/Dory.webp",
           "question": "Qui est-ce ?",
           "answer": "Dory"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Elsa.webp",
+          "file": "../data/assets/images/Elsa.webp",
           "question": "Qui est-ce ?",
           "answer": "Elsa"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Flash_McQueen.webp",
+          "file": "../data/assets/images/Flash_McQueen.webp",
           "question": "Qui est-ce ?",
           "answer": "Flash Mcqueen"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Hulk.webp",
+          "file": "../data/assets/images/Hulk.webp",
           "question": "Qui est-ce ?",
           "answer": "Hulk"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Iron_Man.webp",
+          "file": "../data/assets/images/Iron_Man.webp",
           "question": "Qui est-ce ?",
           "answer": "Iron Man"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Joie.webp",
+          "file": "../data/assets/images/Joie.webp",
           "question": "Qui est-ce ?",
           "answer": "Joie"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Loki.webp",
+          "file": "../data/assets/images/Loki.webp",
           "question": "Qui est-ce ?",
           "answer": "Loki"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Mickey_Mouse.webp",
+          "file": "../data/assets/images/Mickey_Mouse.webp",
           "question": "Qui est-ce ?",
           "answer": "Mickey Mouse"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Minnie_Mouse.webp",
+          "file": "../data/assets/images/Minnie_Mouse.webp",
           "question": "Qui est-ce ?",
           "answer": "Minnie Mouse"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Nemo.webp",
+          "file": "../data/assets/images/Nemo.webp",
           "question": "Qui est-ce ?",
           "answer": "Nemo"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Pluto.webp",
+          "file": "../data/assets/images/Pluto.webp",
           "question": "Qui est-ce ?",
           "answer": "Pluto"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Pumbaa.webp",
+          "file": "../data/assets/images/Pumbaa.webp",
           "question": "Qui est-ce ?",
           "answer": "Pumbaa"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Simba.webp",
+          "file": "../data/assets/images/Simba.webp",
           "question": "Qui est-ce ?",
           "answer": "Simba"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Spider-Man.webp",
+          "file": "../data/assets/images/Spider-Man.webp",
           "question": "Qui est-ce ?",
           "answer": "Spider Man"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Thanos.webp",
+          "file": "../data/assets/images/Thanos.webp",
           "question": "Qui est-ce ?",
           "answer": "Thanos"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Thor.webp",
+          "file": "../data/assets/images/Thor.webp",
           "question": "Qui est-ce ?",
           "answer": "Thor"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Timon.webp",
+          "file": "../data/assets/images/Timon.webp",
           "question": "Qui est-ce ?",
           "answer": "Timon"
         },
         {
-          "file": "Quizz/questions/disney/1/images/Woody.webp",
+          "file": "../data/assets/images/Woody.webp",
           "question": "Qui est-ce ?",
           "answer": "Woody"
         }
@@ -6555,137 +6555,137 @@ const QUESTION_DATABASE = {
     "2": {
       "images": [
         {
-          "file": "Quizz/questions/disney/2/images/Aladdin.webp",
+          "file": "../data/assets/images/Aladdin.webp",
           "question": "Qui est-ce ?",
           "answer": "Aladdin"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Ant-Man.webp",
+          "file": "../data/assets/images/Ant-Man.webp",
           "question": "Qui est-ce ?",
           "answer": "Ant Man"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Blanche_Neige.webp",
+          "file": "../data/assets/images/Blanche_Neige.webp",
           "question": "Qui est-ce ?",
           "answer": "Blanche Neige"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Captain_Marvel.webp",
+          "file": "../data/assets/images/Captain_Marvel.webp",
           "question": "Qui est-ce ?",
           "answer": "Captain Marvel"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Carl_Fredricksen.webp",
+          "file": "../data/assets/images/Carl_Fredricksen.webp",
           "question": "Qui est-ce ?",
           "answer": "Carl Fredricksen"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Clochette.webp",
+          "file": "../data/assets/images/Clochette.webp",
           "question": "Qui est-ce ?",
           "answer": "Clochette"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Gamora.webp",
+          "file": "../data/assets/images/Gamora.webp",
           "question": "Qui est-ce ?",
           "answer": "Gamora"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Genie.webp",
+          "file": "../data/assets/images/Genie.webp",
           "question": "Qui est-ce ?",
           "answer": "Genie"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Groot.webp",
+          "file": "../data/assets/images/Groot.webp",
           "question": "Qui est-ce ?",
           "answer": "Groot"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Jasmine.webp",
+          "file": "../data/assets/images/Jasmine.webp",
           "question": "Qui est-ce ?",
           "answer": "Jasmine"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Jessie.webp",
+          "file": "../data/assets/images/Jessie.webp",
           "question": "Qui est-ce ?",
           "answer": "Jessie"
         },
         {
-          "file": "Quizz/questions/disney/2/images/La_Guepe.webp",
+          "file": "../data/assets/images/La_Guepe.webp",
           "question": "Qui est-ce ?",
           "answer": "La Guepe"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Miguel_Rivera.webp",
+          "file": "../data/assets/images/Miguel_Rivera.webp",
           "question": "Qui est-ce ?",
           "answer": "Miguel Rivera"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Mike_Wazowski.webp",
+          "file": "../data/assets/images/Mike_Wazowski.webp",
           "question": "Qui est-ce ?",
           "answer": "Mike Wazowski"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Mulan.webp",
+          "file": "../data/assets/images/Mulan.webp",
           "question": "Qui est-ce ?",
           "answer": "Mulan"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Nick_Fury.webp",
+          "file": "../data/assets/images/Nick_Fury.webp",
           "question": "Qui est-ce ?",
           "answer": "Nick Fury"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Oeil_de_Faucon.webp",
+          "file": "../data/assets/images/Oeil_de_Faucon.webp",
           "question": "Qui est-ce ?",
           "answer": "Oeil De Faucon"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Raiponce.webp",
+          "file": "../data/assets/images/Raiponce.webp",
           "question": "Qui est-ce ?",
           "answer": "Raiponce"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Remy.webp",
+          "file": "../data/assets/images/Remy.webp",
           "question": "Qui est-ce ?",
           "answer": "Remy"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Russell.webp",
+          "file": "../data/assets/images/Russell.webp",
           "question": "Qui est-ce ?",
           "answer": "Russell"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Scarlet_Witch.webp",
+          "file": "../data/assets/images/Scarlet_Witch.webp",
           "question": "Qui est-ce ?",
           "answer": "Scarlet Witch"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Star-Lord.webp",
+          "file": "../data/assets/images/Star-Lord.webp",
           "question": "Qui est-ce ?",
           "answer": "Star Lord"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Stitch.webp",
+          "file": "../data/assets/images/Stitch.webp",
           "question": "Qui est-ce ?",
           "answer": "Stitch"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Tristesse.jpg",
+          "file": "../data/assets/images/Tristesse.jpg",
           "question": "Qui est-ce ?",
           "answer": "Tristesse"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Violette_Parr.webp",
+          "file": "../data/assets/images/Violette_Parr.webp",
           "question": "Qui est-ce ?",
           "answer": "Violette Parr"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Vision.webp",
+          "file": "../data/assets/images/Vision.webp",
           "question": "Qui est-ce ?",
           "answer": "Vision"
         },
         {
-          "file": "Quizz/questions/disney/2/images/Winnie_l_Ourson.webp",
+          "file": "../data/assets/images/Winnie_l_Ourson.webp",
           "question": "Qui est-ce ?",
           "answer": "Winnie L Ourson"
         }
@@ -6805,122 +6805,122 @@ const QUESTION_DATABASE = {
     "3": {
       "images": [
         {
-          "file": "Quizz/questions/disney/3/images/Bing_Bong.webp",
+          "file": "../data/assets/images/Bing_Bong.webp",
           "question": "Qui est-ce ?",
           "answer": "Bing Bong"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Boo.webp",
+          "file": "../data/assets/images/Boo.webp",
           "question": "Qui est-ce ?",
           "answer": "Boo"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Capitaine_Crochet.webp",
+          "file": "../data/assets/images/Capitaine_Crochet.webp",
           "question": "Qui est-ce ?",
           "answer": "Capitaine Crochet"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Colere.jpg",
+          "file": "../data/assets/images/Colere.jpg",
           "question": "Qui est-ce ?",
           "answer": "Colere"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Degout.jpg",
+          "file": "../data/assets/images/Degout.jpg",
           "question": "Qui est-ce ?",
           "answer": "Degout"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Edna_Mode.webp",
+          "file": "../data/assets/images/Edna_Mode.webp",
           "question": "Qui est-ce ?",
           "answer": "Edna Mode"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Faucon.webp",
+          "file": "../data/assets/images/Faucon.webp",
           "question": "Qui est-ce ?",
           "answer": "Faucon"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Hades.webp",
+          "file": "../data/assets/images/Hades.webp",
           "question": "Qui est-ce ?",
           "answer": "Hades"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Jafar.webp",
+          "file": "../data/assets/images/Jafar.webp",
           "question": "Qui est-ce ?",
           "answer": "Jafar"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Malefique.webp",
+          "file": "../data/assets/images/Malefique.webp",
           "question": "Qui est-ce ?",
           "answer": "Malefique"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Merida.webp",
+          "file": "../data/assets/images/Merida.webp",
           "question": "Qui est-ce ?",
           "answer": "Merida"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Mufasa.webp",
+          "file": "../data/assets/images/Mufasa.webp",
           "question": "Qui est-ce ?",
           "answer": "Mufasa"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Nebula.webp",
+          "file": "../data/assets/images/Nebula.webp",
           "question": "Qui est-ce ?",
           "answer": "Nebula"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Peter_Pan.webp",
+          "file": "../data/assets/images/Peter_Pan.webp",
           "question": "Qui est-ce ?",
           "answer": "Peter Pan"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Peur.jpg",
+          "file": "../data/assets/images/Peur.jpg",
           "question": "Qui est-ce ?",
           "answer": "Peur"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Rocket_Raton_Laveur.webp",
+          "file": "../data/assets/images/Rocket_Raton_Laveur.webp",
           "question": "Qui est-ce ?",
           "answer": "Rocket Raton Laveur"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Roz.webp",
+          "file": "../data/assets/images/Roz.webp",
           "question": "Qui est-ce ?",
           "answer": "Roz"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Scar.webp",
+          "file": "../data/assets/images/Scar.webp",
           "question": "Qui est-ce ?",
           "answer": "Scar"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Soldat_de_l_Hiver.webp",
+          "file": "../data/assets/images/Soldat_de_l_Hiver.webp",
           "question": "Qui est-ce ?",
           "answer": "Soldat De L Hiver"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Tigrou.webp",
+          "file": "../data/assets/images/Tigrou.webp",
           "question": "Qui est-ce ?",
           "answer": "Tigrou"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Tilt.webp",
+          "file": "../data/assets/images/Tilt.webp",
           "question": "Qui est-ce ?",
           "answer": "Tilt"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Ursula.webp",
+          "file": "../data/assets/images/Ursula.webp",
           "question": "Qui est-ce ?",
           "answer": "Ursula"
         },
         {
-          "file": "Quizz/questions/disney/3/images/War_Machine.webp",
+          "file": "../data/assets/images/War_Machine.webp",
           "question": "Qui est-ce ?",
           "answer": "War Machine"
         },
         {
-          "file": "Quizz/questions/disney/3/images/Yondu.webp",
+          "file": "../data/assets/images/Yondu.webp",
           "question": "Qui est-ce ?",
           "answer": "Yondu"
         }
@@ -7012,102 +7012,102 @@ const QUESTION_DATABASE = {
     "4": {
       "images": [
         {
-          "file": "Quizz/questions/disney/4/images/Anton_Ego.webp",
+          "file": "../data/assets/images/Anton_Ego.webp",
           "question": "Qui est-ce ?",
           "answer": "Anton Ego"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Aurore.webp",
+          "file": "../data/assets/images/Aurore.webp",
           "question": "Qui est-ce ?",
           "answer": "Aurore"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Crane_Rouge.webp",
+          "file": "../data/assets/images/Crane_Rouge.webp",
           "question": "Qui est-ce ?",
           "answer": "Crane Rouge"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Doug.webp",
+          "file": "../data/assets/images/Doug.webp",
           "question": "Qui est-ce ?",
           "answer": "Doug"
         },
         {
-          "file": "Quizz/questions/disney/4/images/EVE.webp",
+          "file": "../data/assets/images/EVE.webp",
           "question": "Qui est-ce ?",
           "answer": "Eve"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Hank.webp",
+          "file": "../data/assets/images/Hank.webp",
           "question": "Qui est-ce ?",
           "answer": "Hank"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Heimdall.webp",
+          "file": "../data/assets/images/Heimdall.webp",
           "question": "Qui est-ce ?",
           "answer": "Heimdall"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Joe_Gardner.webp",
+          "file": "../data/assets/images/Joe_Gardner.webp",
           "question": "Qui est-ce ?",
           "answer": "Joe Gardner"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Korg.webp",
+          "file": "../data/assets/images/Korg.webp",
           "question": "Qui est-ce ?",
           "answer": "Korg"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Marlin.webp",
+          "file": "../data/assets/images/Marlin.webp",
           "question": "Qui est-ce ?",
           "answer": "Marlin"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Megara.webp",
+          "file": "../data/assets/images/Megara.webp",
           "question": "Qui est-ce ?",
           "answer": "Megara"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Merida.webp",
+          "file": "../data/assets/images/Merida.webp",
           "question": "Qui est-ce ?",
           "answer": "Merida"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Pepper_Potts.webp",
+          "file": "../data/assets/images/Pepper_Potts.webp",
           "question": "Qui est-ce ?",
           "answer": "Pepper Potts"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Pocahontas.webp",
+          "file": "../data/assets/images/Pocahontas.webp",
           "question": "Qui est-ce ?",
           "answer": "Pocahontas"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Shang-Chi.webp",
+          "file": "../data/assets/images/Shang-Chi.webp",
           "question": "Qui est-ce ?",
           "answer": "Shang Chi"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Tiana.webp",
+          "file": "../data/assets/images/Tiana.webp",
           "question": "Qui est-ce ?",
           "answer": "Tiana"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Ultron.webp",
+          "file": "../data/assets/images/Ultron.webp",
           "question": "Qui est-ce ?",
           "answer": "Ultron"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Vaiana.webp",
+          "file": "../data/assets/images/Vaiana.webp",
           "question": "Qui est-ce ?",
           "answer": "Vaiana"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Valkyrie.webp",
+          "file": "../data/assets/images/Valkyrie.webp",
           "question": "Qui est-ce ?",
           "answer": "Valkyrie"
         },
         {
-          "file": "Quizz/questions/disney/4/images/Wong.webp",
+          "file": "../data/assets/images/Wong.webp",
           "question": "Qui est-ce ?",
           "answer": "Wong"
         }
@@ -7139,97 +7139,97 @@ const QUESTION_DATABASE = {
     "5": {
       "images": [
         {
-          "file": "Quizz/questions/disney/5/images/Alberto_Scorfano.webp",
+          "file": "../data/assets/images/Alberto_Scorfano.webp",
           "question": "Qui est-ce ?",
           "answer": "Alberto Scorfano"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Alfredo_Linguini.jpg",
+          "file": "../data/assets/images/Alfredo_Linguini.jpg",
           "question": "Qui est-ce ?",
           "answer": "Alfredo Linguini"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Alice.webp",
+          "file": "../data/assets/images/Alice.webp",
           "question": "Qui est-ce ?",
           "answer": "Alice"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Arlo.webp",
+          "file": "../data/assets/images/Arlo.webp",
           "question": "Qui est-ce ?",
           "answer": "Arlo"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Balthazar_Picsou.webp",
+          "file": "../data/assets/images/Balthazar_Picsou.webp",
           "question": "Qui est-ce ?",
           "answer": "Balthazar Picsou"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Bouffon_Vert.webp",
+          "file": "../data/assets/images/Bouffon_Vert.webp",
           "question": "Qui est-ce ?",
           "answer": "Bouffon Vert"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Daisy_Duck.webp",
+          "file": "../data/assets/images/Daisy_Duck.webp",
           "question": "Qui est-ce ?",
           "answer": "Daisy Duck"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Docteur_Octopus.webp",
+          "file": "../data/assets/images/Docteur_Octopus.webp",
           "question": "Qui est-ce ?",
           "answer": "Docteur Octopus"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Giulia_Marcovaldo.webp",
+          "file": "../data/assets/images/Giulia_Marcovaldo.webp",
           "question": "Qui est-ce ?",
           "answer": "Giulia Marcovaldo"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Hela.webp",
+          "file": "../data/assets/images/Hela.webp",
           "question": "Qui est-ce ?",
           "answer": "Hela"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Jiminy_Cricket.webp",
+          "file": "../data/assets/images/Jiminy_Cricket.webp",
           "question": "Qui est-ce ?",
           "answer": "Jiminy Cricket"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Luca_Paguro.webp",
+          "file": "../data/assets/images/Luca_Paguro.webp",
           "question": "Qui est-ce ?",
           "answer": "Luca Paguro"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Mantis.webp",
+          "file": "../data/assets/images/Mantis.webp",
           "question": "Qui est-ce ?",
           "answer": "Mantis"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Maria_Hill.webp",
+          "file": "../data/assets/images/Maria_Hill.webp",
           "question": "Qui est-ce ?",
           "answer": "Maria Hill"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Mysterio.webp",
+          "file": "../data/assets/images/Mysterio.webp",
           "question": "Qui est-ce ?",
           "answer": "Mysterio"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Panpan.webp",
+          "file": "../data/assets/images/Panpan.webp",
           "question": "Qui est-ce ?",
           "answer": "Panpan"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Pinocchio.webp",
+          "file": "../data/assets/images/Pinocchio.webp",
           "question": "Qui est-ce ?",
           "answer": "Pinocchio"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Quicksilver.webp",
+          "file": "../data/assets/images/Quicksilver.webp",
           "question": "Qui est-ce ?",
           "answer": "Quicksilver"
         },
         {
-          "file": "Quizz/questions/disney/5/images/Reine_de_Coeur.webp",
+          "file": "../data/assets/images/Reine_de_Coeur.webp",
           "question": "Qui est-ce ?",
           "answer": "Reine De Coeur"
         }
@@ -7255,142 +7255,142 @@ const QUESTION_DATABASE = {
     "1": {
       "images": [
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Algérie.png",
+          "file": "../data/assets/images/Algérie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Algérie"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Allemagne.png",
+          "file": "../data/assets/images/Allemagne.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Allemagne"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Argentine.png",
+          "file": "../data/assets/images/Argentine.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Argentine"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Australie.png",
+          "file": "../data/assets/images/Australie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Australie"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Brésil.png",
+          "file": "../data/assets/images/Brésil.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Brésil"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Canada.png",
+          "file": "../data/assets/images/Canada.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Canada"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Chili.png",
+          "file": "../data/assets/images/Chili.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Chili"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Chine.png",
+          "file": "../data/assets/images/Chine.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Chine"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Espagne.png",
+          "file": "../data/assets/images/Espagne.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Espagne"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Finlande.png",
+          "file": "../data/assets/images/Finlande.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Finlande"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/France.png",
+          "file": "../data/assets/images/France.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "France"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Grèce.png",
+          "file": "../data/assets/images/Grèce.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Grèce"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Inde.png",
+          "file": "../data/assets/images/Inde.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Inde"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Italie.png",
+          "file": "../data/assets/images/Italie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Italie"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Japon.png",
+          "file": "../data/assets/images/Japon.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Japon"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Maroc.png",
+          "file": "../data/assets/images/Maroc.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Maroc"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Mexique.png",
+          "file": "../data/assets/images/Mexique.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Mexique"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Norvège.png",
+          "file": "../data/assets/images/Norvège.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Norvège"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Portugal.png",
+          "file": "../data/assets/images/Portugal.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Portugal"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Royaume-Uni.png",
+          "file": "../data/assets/images/Royaume-Uni.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Royaume Uni"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Russie.png",
+          "file": "../data/assets/images/Russie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Russie"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Suède.png",
+          "file": "../data/assets/images/Suède.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Suède"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Sénégal.png",
+          "file": "../data/assets/images/Sénégal.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Sénégal"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Tunisie.png",
+          "file": "../data/assets/images/Tunisie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tunisie"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Turquie.png",
+          "file": "../data/assets/images/Turquie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Turquie"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Ukraine.png",
+          "file": "../data/assets/images/Ukraine.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Ukraine"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/Égypte.png",
+          "file": "../data/assets/images/Égypte.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Égypte"
         },
         {
-          "file": "Quizz/questions/geographie/1/images/drapeau/États-Unis.png",
+          "file": "../data/assets/images/États-Unis.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "États Unis"
         }
@@ -7510,122 +7510,122 @@ const QUESTION_DATABASE = {
     "2": {
       "images": [
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Autriche.png",
+          "file": "../data/assets/images/Autriche.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Autriche"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Belgique.png",
+          "file": "../data/assets/images/Belgique.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Belgique"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Bolivie.png",
+          "file": "../data/assets/images/Bolivie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bolivie"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Bulgarie.png",
+          "file": "../data/assets/images/Bulgarie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bulgarie"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Cameroun.png",
+          "file": "../data/assets/images/Cameroun.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Cameroun"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Colombie.png",
+          "file": "../data/assets/images/Colombie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Colombie"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Danemark.png",
+          "file": "../data/assets/images/Danemark.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Danemark"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Ghana.png",
+          "file": "../data/assets/images/Ghana.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Ghana"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Hongrie.png",
+          "file": "../data/assets/images/Hongrie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Hongrie"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Irlande.png",
+          "file": "../data/assets/images/Irlande.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Irlande"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Islande.png",
+          "file": "../data/assets/images/Islande.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Islande"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Kenya.png",
+          "file": "../data/assets/images/Kenya.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Kenya"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Nigeria.png",
+          "file": "../data/assets/images/Nigeria.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Nigeria"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Pays-Bas.png",
+          "file": "../data/assets/images/Pays-Bas.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Pays Bas"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Pologne.png",
+          "file": "../data/assets/images/Pologne.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Pologne"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Pérou.png",
+          "file": "../data/assets/images/Pérou.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Pérou"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Qatar.png",
+          "file": "../data/assets/images/Qatar.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Qatar"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Roumanie.png",
+          "file": "../data/assets/images/Roumanie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Roumanie"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Suisse.png",
+          "file": "../data/assets/images/Suisse.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Suisse"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Tchéquie.png",
+          "file": "../data/assets/images/Tchéquie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tchéquie"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Uruguay.png",
+          "file": "../data/assets/images/Uruguay.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Uruguay"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Venezuela.png",
+          "file": "../data/assets/images/Venezuela.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Venezuela"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Équateur.png",
+          "file": "../data/assets/images/Équateur.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Équateur"
         },
         {
-          "file": "Quizz/questions/geographie/2/images/drapeau/Éthiopie.png",
+          "file": "../data/assets/images/Éthiopie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Éthiopie"
         }
@@ -7813,752 +7813,752 @@ const QUESTION_DATABASE = {
     "3": {
       "images": [
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Afghanistan.png",
+          "file": "../data/assets/images/Afghanistan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Afghanistan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Albanie.png",
+          "file": "../data/assets/images/Albanie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Albanie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Angleterre.png",
+          "file": "../data/assets/images/Angleterre.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Angleterre"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Angola.png",
+          "file": "../data/assets/images/Angola.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Angola"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Anguilla.png",
+          "file": "../data/assets/images/Anguilla.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Anguilla"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Antarctique.png",
+          "file": "../data/assets/images/Antarctique.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Antarctique"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Arabie_Saoudite.png",
+          "file": "../data/assets/images/Arabie_Saoudite.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Arabie Saoudite"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Arménie.png",
+          "file": "../data/assets/images/Arménie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Arménie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Aruba.png",
+          "file": "../data/assets/images/Aruba.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Aruba"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Azerbaïdjan.png",
+          "file": "../data/assets/images/Azerbaïdjan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Azerbaïdjan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Bahamas.png",
+          "file": "../data/assets/images/Bahamas.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bahamas"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Bahreïn.png",
+          "file": "../data/assets/images/Bahreïn.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bahreïn"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Bangladesh.png",
+          "file": "../data/assets/images/Bangladesh.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bangladesh"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Belize.png",
+          "file": "../data/assets/images/Belize.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Belize"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Bermudes.png",
+          "file": "../data/assets/images/Bermudes.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bermudes"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Bhoutan.png",
+          "file": "../data/assets/images/Bhoutan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bhoutan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Birmanie.png",
+          "file": "../data/assets/images/Birmanie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Birmanie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Biélorussie.png",
+          "file": "../data/assets/images/Biélorussie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Biélorussie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Bosnie-Herzégovine.png",
+          "file": "../data/assets/images/Bosnie-Herzégovine.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bosnie Herzégovine"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Botswana.png",
+          "file": "../data/assets/images/Botswana.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Botswana"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Brunei.png",
+          "file": "../data/assets/images/Brunei.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Brunei"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Burkina_Faso.png",
+          "file": "../data/assets/images/Burkina_Faso.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Burkina Faso"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Burundi.png",
+          "file": "../data/assets/images/Burundi.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Burundi"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Bénin.png",
+          "file": "../data/assets/images/Bénin.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Bénin"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Cambodge.png",
+          "file": "../data/assets/images/Cambodge.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Cambodge"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Chypre.png",
+          "file": "../data/assets/images/Chypre.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Chypre"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Congo.png",
+          "file": "../data/assets/images/Congo.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Congo"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Costa_Rica.png",
+          "file": "../data/assets/images/Costa_Rica.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Costa Rica"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Croatie.png",
+          "file": "../data/assets/images/Croatie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Croatie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Cuba.png",
+          "file": "../data/assets/images/Cuba.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Cuba"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Curaçao.png",
+          "file": "../data/assets/images/Curaçao.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Curaçao"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Côte_DIvoire.png",
+          "file": "../data/assets/images/Côte_DIvoire.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Côte Divoire"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Djibouti.png",
+          "file": "../data/assets/images/Djibouti.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Djibouti"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Dominique.png",
+          "file": "../data/assets/images/Dominique.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Dominique"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Estonie.png",
+          "file": "../data/assets/images/Estonie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Estonie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Eswatini.png",
+          "file": "../data/assets/images/Eswatini.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Eswatini"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Fidji.png",
+          "file": "../data/assets/images/Fidji.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Fidji"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Gabon.png",
+          "file": "../data/assets/images/Gabon.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Gabon"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Gambie.png",
+          "file": "../data/assets/images/Gambie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Gambie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Gibraltar.png",
+          "file": "../data/assets/images/Gibraltar.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Gibraltar"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Groenland.png",
+          "file": "../data/assets/images/Groenland.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Groenland"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guadeloupe.png",
+          "file": "../data/assets/images/Guadeloupe.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guadeloupe"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guam.png",
+          "file": "../data/assets/images/Guam.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guam"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guatemala.png",
+          "file": "../data/assets/images/Guatemala.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guatemala"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guernesey.png",
+          "file": "../data/assets/images/Guernesey.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guernesey"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guinée-Bissau.png",
+          "file": "../data/assets/images/Guinée-Bissau.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guinée Bissau"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guinée.png",
+          "file": "../data/assets/images/Guinée.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guinée"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guinée_Équatoriale.png",
+          "file": "../data/assets/images/Guinée_Équatoriale.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guinée Équatoriale"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guyana.png",
+          "file": "../data/assets/images/Guyana.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guyana"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Guyane.png",
+          "file": "../data/assets/images/Guyane.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Guyane"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Géorgie.png",
+          "file": "../data/assets/images/Géorgie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Géorgie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Haïti.png",
+          "file": "../data/assets/images/Haïti.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Haïti"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Honduras.png",
+          "file": "../data/assets/images/Honduras.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Honduras"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Hong_Kong.png",
+          "file": "../data/assets/images/Hong_Kong.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Hong Kong"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Indonésie.png",
+          "file": "../data/assets/images/Indonésie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Indonésie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Irak.png",
+          "file": "../data/assets/images/Irak.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Irak"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Iran.png",
+          "file": "../data/assets/images/Iran.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Iran"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Jamaïque.png",
+          "file": "../data/assets/images/Jamaïque.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Jamaïque"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Jersey.png",
+          "file": "../data/assets/images/Jersey.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Jersey"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Jordanie.png",
+          "file": "../data/assets/images/Jordanie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Jordanie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Kazakhstan.png",
+          "file": "../data/assets/images/Kazakhstan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Kazakhstan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Kirghizistan.png",
+          "file": "../data/assets/images/Kirghizistan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Kirghizistan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Kosovo.png",
+          "file": "../data/assets/images/Kosovo.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Kosovo"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Koweït.png",
+          "file": "../data/assets/images/Koweït.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Koweït"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Laos.png",
+          "file": "../data/assets/images/Laos.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Laos"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Lesotho.png",
+          "file": "../data/assets/images/Lesotho.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Lesotho"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Lettonie.png",
+          "file": "../data/assets/images/Lettonie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Lettonie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Liban.png",
+          "file": "../data/assets/images/Liban.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Liban"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Liberia.png",
+          "file": "../data/assets/images/Liberia.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Liberia"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Libye.png",
+          "file": "../data/assets/images/Libye.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Libye"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Lituanie.png",
+          "file": "../data/assets/images/Lituanie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Lituanie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Luxembourg.png",
+          "file": "../data/assets/images/Luxembourg.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Luxembourg"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Macao.png",
+          "file": "../data/assets/images/Macao.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Macao"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Madagascar.png",
+          "file": "../data/assets/images/Madagascar.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Madagascar"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Malaisie.png",
+          "file": "../data/assets/images/Malaisie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Malaisie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Malawi.png",
+          "file": "../data/assets/images/Malawi.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Malawi"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Maldives.png",
+          "file": "../data/assets/images/Maldives.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Maldives"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Mali.png",
+          "file": "../data/assets/images/Mali.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Mali"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Martinique.png",
+          "file": "../data/assets/images/Martinique.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Martinique"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Mauritanie.png",
+          "file": "../data/assets/images/Mauritanie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Mauritanie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Mayotte.png",
+          "file": "../data/assets/images/Mayotte.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Mayotte"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Moldavie.png",
+          "file": "../data/assets/images/Moldavie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Moldavie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Mongolie.png",
+          "file": "../data/assets/images/Mongolie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Mongolie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Montserrat.png",
+          "file": "../data/assets/images/Montserrat.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Montserrat"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Monténégro.png",
+          "file": "../data/assets/images/Monténégro.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Monténégro"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Mozambique.png",
+          "file": "../data/assets/images/Mozambique.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Mozambique"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Namibie.png",
+          "file": "../data/assets/images/Namibie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Namibie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Nicaragua.png",
+          "file": "../data/assets/images/Nicaragua.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Nicaragua"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Niger.png",
+          "file": "../data/assets/images/Niger.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Niger"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Niue.png",
+          "file": "../data/assets/images/Niue.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Niue"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Nouvelle-Calédonie.png",
+          "file": "../data/assets/images/Nouvelle-Calédonie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Nouvelle Calédonie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Nouvelle-Zélande.png",
+          "file": "../data/assets/images/Nouvelle-Zélande.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Nouvelle Zélande"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Népal.png",
+          "file": "../data/assets/images/Népal.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Népal"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Oman.png",
+          "file": "../data/assets/images/Oman.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Oman"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Ouganda.png",
+          "file": "../data/assets/images/Ouganda.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Ouganda"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Ouzbékistan.png",
+          "file": "../data/assets/images/Ouzbékistan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Ouzbékistan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Pakistan.png",
+          "file": "../data/assets/images/Pakistan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Pakistan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Palestine.png",
+          "file": "../data/assets/images/Palestine.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Palestine"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Panama.png",
+          "file": "../data/assets/images/Panama.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Panama"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Paraguay.png",
+          "file": "../data/assets/images/Paraguay.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Paraguay"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Philippines.png",
+          "file": "../data/assets/images/Philippines.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Philippines"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Polynésie_Française.png",
+          "file": "../data/assets/images/Polynésie_Française.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Polynésie Française"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Porto_Rico.png",
+          "file": "../data/assets/images/Porto_Rico.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Porto Rico"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Rwanda.png",
+          "file": "../data/assets/images/Rwanda.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Rwanda"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Réunion.png",
+          "file": "../data/assets/images/Réunion.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Réunion"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Sahara_Occidental.png",
+          "file": "../data/assets/images/Sahara_Occidental.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Sahara Occidental"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Saint-Barthélemy.png",
+          "file": "../data/assets/images/Saint-Barthélemy.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Saint Barthélemy"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Salvador.png",
+          "file": "../data/assets/images/Salvador.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Salvador"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Samoa.png",
+          "file": "../data/assets/images/Samoa.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Samoa"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Samoa_Américaines.png",
+          "file": "../data/assets/images/Samoa_Américaines.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Samoa Américaines"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Serbie.png",
+          "file": "../data/assets/images/Serbie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Serbie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Sierra_Leone.png",
+          "file": "../data/assets/images/Sierra_Leone.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Sierra Leone"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Singapour.png",
+          "file": "../data/assets/images/Singapour.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Singapour"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Slovaquie.png",
+          "file": "../data/assets/images/Slovaquie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Slovaquie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Slovénie.png",
+          "file": "../data/assets/images/Slovénie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Slovénie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Somalie.png",
+          "file": "../data/assets/images/Somalie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Somalie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Soudan.png",
+          "file": "../data/assets/images/Soudan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Soudan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Sri_Lanka.png",
+          "file": "../data/assets/images/Sri_Lanka.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Sri Lanka"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Suriname.png",
+          "file": "../data/assets/images/Suriname.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Suriname"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Syrie.png",
+          "file": "../data/assets/images/Syrie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Syrie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Tadjikistan.png",
+          "file": "../data/assets/images/Tadjikistan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tadjikistan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Tanzanie.png",
+          "file": "../data/assets/images/Tanzanie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tanzanie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Taïwan.png",
+          "file": "../data/assets/images/Taïwan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Taïwan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Tchad.png",
+          "file": "../data/assets/images/Tchad.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tchad"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Thaïlande.png",
+          "file": "../data/assets/images/Thaïlande.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Thaïlande"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Timor_Oriental.png",
+          "file": "../data/assets/images/Timor_Oriental.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Timor Oriental"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Togo.png",
+          "file": "../data/assets/images/Togo.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Togo"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Tokelau.png",
+          "file": "../data/assets/images/Tokelau.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tokelau"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Tonga.png",
+          "file": "../data/assets/images/Tonga.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tonga"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Turkménistan.png",
+          "file": "../data/assets/images/Turkménistan.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Turkménistan"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Vanuatu.png",
+          "file": "../data/assets/images/Vanuatu.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Vanuatu"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Vatican.png",
+          "file": "../data/assets/images/Vatican.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Vatican"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Viêt_Nam.png",
+          "file": "../data/assets/images/Viêt_Nam.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Viêt Nam"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Yémen.png",
+          "file": "../data/assets/images/Yémen.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Yémen"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Zambie.png",
+          "file": "../data/assets/images/Zambie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Zambie"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Zimbabwe.png",
+          "file": "../data/assets/images/Zimbabwe.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Zimbabwe"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Åland.png",
+          "file": "../data/assets/images/Åland.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Åland"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Écosse.png",
+          "file": "../data/assets/images/Écosse.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Écosse"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Érythrée.png",
+          "file": "../data/assets/images/Érythrée.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Érythrée"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Caïmans.png",
+          "file": "../data/assets/images/Îles_Caïmans.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Caïmans"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Cocos.png",
+          "file": "../data/assets/images/Îles_Cocos.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Cocos"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Cook.png",
+          "file": "../data/assets/images/Îles_Cook.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Cook"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Féroé.png",
+          "file": "../data/assets/images/Îles_Féroé.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Féroé"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Malouines.png",
+          "file": "../data/assets/images/Îles_Malouines.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Malouines"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Marshall.png",
+          "file": "../data/assets/images/Îles_Marshall.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Marshall"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Pitcairn.png",
+          "file": "../data/assets/images/Îles_Pitcairn.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Pitcairn"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Salomon.png",
+          "file": "../data/assets/images/Îles_Salomon.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Salomon"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Île_Bouvet.png",
+          "file": "../data/assets/images/Île_Bouvet.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Île Bouvet"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Île_Christmas.png",
+          "file": "../data/assets/images/Île_Christmas.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Île Christmas"
         },
         {
-          "file": "Quizz/questions/geographie/3/images/drapeau/Île_Norfolk.png",
+          "file": "../data/assets/images/Île_Norfolk.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Île Norfolk"
         }
@@ -8822,172 +8822,172 @@ const QUESTION_DATABASE = {
     "4": {
       "images": [
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Afrique_Du_Sud.png",
+          "file": "../data/assets/images/Afrique_Du_Sud.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Afrique Du Sud"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Antigua-Et-Barbuda.png",
+          "file": "../data/assets/images/Antigua-Et-Barbuda.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Antigua Et Barbuda"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Congo_rép_Dém.png",
+          "file": "../data/assets/images/Congo_rép_Dém.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Congo Rép Dém"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Corée_Du_Nord.png",
+          "file": "../data/assets/images/Corée_Du_Nord.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Corée Du Nord"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Corée_Du_Sud.png",
+          "file": "../data/assets/images/Corée_Du_Sud.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Corée Du Sud"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Géorgie_Du_Sud-Et-Les_Îles_Sandwich_Du_Sud.png",
+          "file": "../data/assets/images/Géorgie_Du_Sud-Et-Les_Îles_Sandwich_Du_Sud.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Géorgie Du Sud Et Les Îles Sandwich Du Sud"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Irlande_Du_Nord.png",
+          "file": "../data/assets/images/Irlande_Du_Nord.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Irlande Du Nord"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Macédoine_Du_Nord.png",
+          "file": "../data/assets/images/Macédoine_Du_Nord.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Macédoine Du Nord"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Papouasie-Nouvelle-Guinée.png",
+          "file": "../data/assets/images/Papouasie-Nouvelle-Guinée.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Papouasie Nouvelle Guinée"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Pays-Bas_Caribéens.png",
+          "file": "../data/assets/images/Pays-Bas_Caribéens.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Pays Bas Caribéens"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Pays_De_Galles.png",
+          "file": "../data/assets/images/Pays_De_Galles.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Pays De Galles"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/République_Centrafricaine.png",
+          "file": "../data/assets/images/République_Centrafricaine.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "République Centrafricaine"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/République_Dominicaine.png",
+          "file": "../data/assets/images/République_Dominicaine.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "République Dominicaine"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Christophe-Et-Niévès.png",
+          "file": "../data/assets/images/Saint-Christophe-Et-Niévès.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Saint Christophe Et Niévès"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Martin_antilles_Françaises.png",
+          "file": "../data/assets/images/Saint-Martin_antilles_Françaises.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Saint Martin Antilles Françaises"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Martin_royaume_Des_Pays-Bas.png",
+          "file": "../data/assets/images/Saint-Martin_royaume_Des_Pays-Bas.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Saint Martin Royaume Des Pays Bas"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Pierre-Et-Miquelon.png",
+          "file": "../data/assets/images/Saint-Pierre-Et-Miquelon.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Saint Pierre Et Miquelon"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Vincent-Et-Les-Grenadines.png",
+          "file": "../data/assets/images/Saint-Vincent-Et-Les-Grenadines.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Saint Vincent Et Les Grenadines"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Sainte-Hélène-Ascension_Et_Tristan_Da_Cunha.png",
+          "file": "../data/assets/images/Sainte-Hélène-Ascension_Et_Tristan_Da_Cunha.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Sainte Hélène Ascension Et Tristan Da Cunha"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Sao_Tomé-Et-Principe.png",
+          "file": "../data/assets/images/Sao_Tomé-Et-Principe.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Sao Tomé Et Principe"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Soudan_Du_Sud.png",
+          "file": "../data/assets/images/Soudan_Du_Sud.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Soudan Du Sud"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Svalbard_Et_Jan_Mayen.png",
+          "file": "../data/assets/images/Svalbard_Et_Jan_Mayen.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Svalbard Et Jan Mayen"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Terres_Australes_Et_Antarctiques_Françaises.png",
+          "file": "../data/assets/images/Terres_Australes_Et_Antarctiques_Françaises.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Terres Australes Et Antarctiques Françaises"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Territoire_Britannique_De_LOcéan_Indien.png",
+          "file": "../data/assets/images/Territoire_Britannique_De_LOcéan_Indien.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Territoire Britannique De Locéan Indien"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Trinité-Et-Tobago.png",
+          "file": "../data/assets/images/Trinité-Et-Tobago.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Trinité Et Tobago"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Wallis-Et-Futuna.png",
+          "file": "../data/assets/images/Wallis-Et-Futuna.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Wallis Et Futuna"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Émirats_Arabes_Unis.png",
+          "file": "../data/assets/images/Émirats_Arabes_Unis.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Émirats Arabes Unis"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Heard-Et-Macdonald.png",
+          "file": "../data/assets/images/Îles_Heard-Et-Macdonald.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Heard Et Macdonald"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Mariannes_Du_Nord.png",
+          "file": "../data/assets/images/Îles_Mariannes_Du_Nord.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Mariannes Du Nord"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Mineures_Éloignées_Des_États-Unis.png",
+          "file": "../data/assets/images/Îles_Mineures_Éloignées_Des_États-Unis.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Mineures Éloignées Des États Unis"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Turques-Et-Caïques.png",
+          "file": "../data/assets/images/Îles_Turques-Et-Caïques.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Turques Et Caïques"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Vierges_Britanniques.png",
+          "file": "../data/assets/images/Îles_Vierges_Britanniques.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Vierges Britanniques"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Vierges_Des_États-Unis.png",
+          "file": "../data/assets/images/Îles_Vierges_Des_États-Unis.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Îles Vierges Des États Unis"
         },
         {
-          "file": "Quizz/questions/geographie/4/images/drapeau/Île_De_Man.png",
+          "file": "../data/assets/images/Île_De_Man.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Île De Man"
         }
@@ -9299,87 +9299,87 @@ const QUESTION_DATABASE = {
     "5": {
       "images": [
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Andorre.png",
+          "file": "../data/assets/images/Andorre.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Andorre"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Barbade.png",
+          "file": "../data/assets/images/Barbade.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Barbade"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Cap-Vert.png",
+          "file": "../data/assets/images/Cap-Vert.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Cap Vert"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Comores.png",
+          "file": "../data/assets/images/Comores.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Comores"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Grenade.png",
+          "file": "../data/assets/images/Grenade.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Grenade"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Kiribati.png",
+          "file": "../data/assets/images/Kiribati.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Kiribati"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Liechtenstein.png",
+          "file": "../data/assets/images/Liechtenstein.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Liechtenstein"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Malte.png",
+          "file": "../data/assets/images/Malte.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Malte"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Maurice.png",
+          "file": "../data/assets/images/Maurice.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Maurice"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Micronésie.png",
+          "file": "../data/assets/images/Micronésie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Micronésie"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Monaco.png",
+          "file": "../data/assets/images/Monaco.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Monaco"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Nauru.png",
+          "file": "../data/assets/images/Nauru.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Nauru"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Palaos.png",
+          "file": "../data/assets/images/Palaos.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Palaos"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Saint-Marin.png",
+          "file": "../data/assets/images/Saint-Marin.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Saint Marin"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Sainte-Lucie.png",
+          "file": "../data/assets/images/Sainte-Lucie.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Sainte Lucie"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Seychelles.png",
+          "file": "../data/assets/images/Seychelles.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Seychelles"
         },
         {
-          "file": "Quizz/questions/geographie/5/images/drapeau/Tuvalu.png",
+          "file": "../data/assets/images/Tuvalu.png",
           "question": "Quel pays a ce drapeau ?",
           "answer": "Tuvalu"
         }
@@ -9733,52 +9733,52 @@ const QUESTION_DATABASE = {
     "1": {
       "images": [
         {
-          "file": "Quizz/questions/harry_potter/1/images/Albus Dumbledore.png",
+          "file": "../data/assets/images/Albus Dumbledore.png",
           "question": "Qui est-ce ?",
           "answer": "Albus Dumbledore"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Draco Malfoy.png",
+          "file": "../data/assets/images/Draco Malfoy.png",
           "question": "Qui est-ce ?",
           "answer": "Draco Malfoy"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Ginny Weasley.png",
+          "file": "../data/assets/images/Ginny Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "Ginny Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Harry Potter.jpg",
+          "file": "../data/assets/images/Harry Potter.jpg",
           "question": "Qui est-ce ?",
           "answer": "Harry Potter"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Hermione Granger.jpg",
+          "file": "../data/assets/images/Hermione Granger.jpg",
           "question": "Qui est-ce ?",
           "answer": "Hermione Granger"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Lord Voldemort Tom Riddle.png",
+          "file": "../data/assets/images/Lord Voldemort Tom Riddle.png",
           "question": "Qui est-ce ?",
           "answer": "Lord Voldemort Tom Riddle"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Ron Weasley.png",
+          "file": "../data/assets/images/Ron Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "Ron Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Rubeus Hagrid.png",
+          "file": "../data/assets/images/Rubeus Hagrid.png",
           "question": "Qui est-ce ?",
           "answer": "Rubeus Hagrid"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Severus Snape.png",
+          "file": "../data/assets/images/Severus Snape.png",
           "question": "Qui est-ce ?",
           "answer": "Severus Snape"
         },
         {
-          "file": "Quizz/questions/harry_potter/1/images/Sirius Black.png",
+          "file": "../data/assets/images/Sirius Black.png",
           "question": "Qui est-ce ?",
           "answer": "Sirius Black"
         }
@@ -9958,52 +9958,52 @@ const QUESTION_DATABASE = {
     "2": {
       "images": [
         {
-          "file": "Quizz/questions/harry_potter/2/images/Argus Filch.png",
+          "file": "../data/assets/images/Argus Filch.png",
           "question": "Qui est-ce ?",
           "answer": "Argus Filch"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Arthur Weasley.png",
+          "file": "../data/assets/images/Arthur Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "Arthur Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Dobby.png",
+          "file": "../data/assets/images/Dobby.png",
           "question": "Qui est-ce ?",
           "answer": "Dobby"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Dudley Dursley.png",
+          "file": "../data/assets/images/Dudley Dursley.png",
           "question": "Qui est-ce ?",
           "answer": "Dudley Dursley"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Gilderoy Lockhart.png",
+          "file": "../data/assets/images/Gilderoy Lockhart.png",
           "question": "Qui est-ce ?",
           "answer": "Gilderoy Lockhart"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Hedwig.png",
+          "file": "../data/assets/images/Hedwig.png",
           "question": "Qui est-ce ?",
           "answer": "Hedwig"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Molly Weasley.png",
+          "file": "../data/assets/images/Molly Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "Molly Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Neville Longbottom.png",
+          "file": "../data/assets/images/Neville Longbottom.png",
           "question": "Qui est-ce ?",
           "answer": "Neville Longbottom"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Petunia Dursley.png",
+          "file": "../data/assets/images/Petunia Dursley.png",
           "question": "Qui est-ce ?",
           "answer": "Petunia Dursley"
         },
         {
-          "file": "Quizz/questions/harry_potter/2/images/Vernon Dursley.png",
+          "file": "../data/assets/images/Vernon Dursley.png",
           "question": "Qui est-ce ?",
           "answer": "Vernon Dursley"
         }
@@ -10219,42 +10219,42 @@ const QUESTION_DATABASE = {
     "3": {
       "images": [
         {
-          "file": "Quizz/questions/harry_potter/3/images/Cedric Diggory.png",
+          "file": "../data/assets/images/Cedric Diggory.png",
           "question": "Qui est-ce ?",
           "answer": "Cedric Diggory"
         },
         {
-          "file": "Quizz/questions/harry_potter/3/images/Cho Chang.png",
+          "file": "../data/assets/images/Cho Chang.png",
           "question": "Qui est-ce ?",
           "answer": "Cho Chang"
         },
         {
-          "file": "Quizz/questions/harry_potter/3/images/Colin Creevey.png",
+          "file": "../data/assets/images/Colin Creevey.png",
           "question": "Qui est-ce ?",
           "answer": "Colin Creevey"
         },
         {
-          "file": "Quizz/questions/harry_potter/3/images/Fred & George Weasley .png",
+          "file": "../data/assets/images/Fred & George Weasley .png",
           "question": "Qui est-ce ?",
           "answer": "Fred & George Weasley "
         },
         {
-          "file": "Quizz/questions/harry_potter/3/images/Lucius Malfoy.png",
+          "file": "../data/assets/images/Lucius Malfoy.png",
           "question": "Qui est-ce ?",
           "answer": "Lucius Malfoy"
         },
         {
-          "file": "Quizz/questions/harry_potter/3/images/Luna Lovegood.png",
+          "file": "../data/assets/images/Luna Lovegood.png",
           "question": "Qui est-ce ?",
           "answer": "Luna Lovegood"
         },
         {
-          "file": "Quizz/questions/harry_potter/3/images/Narcissa Malfoy.png",
+          "file": "../data/assets/images/Narcissa Malfoy.png",
           "question": "Qui est-ce ?",
           "answer": "Narcissa Malfoy"
         },
         {
-          "file": "Quizz/questions/harry_potter/3/images/Seamus Finnigan.png",
+          "file": "../data/assets/images/Seamus Finnigan.png",
           "question": "Qui est-ce ?",
           "answer": "Seamus Finnigan"
         }
@@ -10446,107 +10446,107 @@ const QUESTION_DATABASE = {
     "4": {
       "images": [
         {
-          "file": "Quizz/questions/harry_potter/4/images/Alastor Mad Eye Moody.png",
+          "file": "../data/assets/images/Alastor Mad Eye Moody.png",
           "question": "Qui est-ce ?",
           "answer": "Alastor Mad Eye Moody"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Barty Crouch Jr.png",
+          "file": "../data/assets/images/Barty Crouch Jr.png",
           "question": "Qui est-ce ?",
           "answer": "Barty Crouch Jr"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Bellatrix Lestrange.png",
+          "file": "../data/assets/images/Bellatrix Lestrange.png",
           "question": "Qui est-ce ?",
           "answer": "Bellatrix Lestrange"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Bill Weasley.png",
+          "file": "../data/assets/images/Bill Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "Bill Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Buckbeak.png",
+          "file": "../data/assets/images/Buckbeak.png",
           "question": "Qui est-ce ?",
           "answer": "Buckbeak"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Dean Thomas.png",
+          "file": "../data/assets/images/Dean Thomas.png",
           "question": "Qui est-ce ?",
           "answer": "Dean Thomas"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Dolores Umbridge.png",
+          "file": "../data/assets/images/Dolores Umbridge.png",
           "question": "Qui est-ce ?",
           "answer": "Dolores Umbridge"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Fang.jpg",
+          "file": "../data/assets/images/Fang.jpg",
           "question": "Qui est-ce ?",
           "answer": "Fang"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Filius Flitwick.png",
+          "file": "../data/assets/images/Filius Flitwick.png",
           "question": "Qui est-ce ?",
           "answer": "Filius Flitwick"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Fleur Delacour.png",
+          "file": "../data/assets/images/Fleur Delacour.png",
           "question": "Qui est-ce ?",
           "answer": "Fleur Delacour"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Fluffy.jpg",
+          "file": "../data/assets/images/Fluffy.jpg",
           "question": "Qui est-ce ?",
           "answer": "Fluffy"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Horace Slughorn.png",
+          "file": "../data/assets/images/Horace Slughorn.png",
           "question": "Qui est-ce ?",
           "answer": "Horace Slughorn"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Igor Karkaroff.png",
+          "file": "../data/assets/images/Igor Karkaroff.png",
           "question": "Qui est-ce ?",
           "answer": "Igor Karkaroff"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Moaning Myrtle.png",
+          "file": "../data/assets/images/Moaning Myrtle.png",
           "question": "Qui est-ce ?",
           "answer": "Moaning Myrtle"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Nearly Headless Nick.png",
+          "file": "../data/assets/images/Nearly Headless Nick.png",
           "question": "Qui est-ce ?",
           "answer": "Nearly Headless Nick"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Nymphadora Tonks.jpg",
+          "file": "../data/assets/images/Nymphadora Tonks.jpg",
           "question": "Qui est-ce ?",
           "answer": "Nymphadora Tonks"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Parvati Patil.png",
+          "file": "../data/assets/images/Parvati Patil.png",
           "question": "Qui est-ce ?",
           "answer": "Parvati Patil"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Percy Weasley.png",
+          "file": "../data/assets/images/Percy Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "Percy Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Peter Pettigrew.png",
+          "file": "../data/assets/images/Peter Pettigrew.png",
           "question": "Qui est-ce ?",
           "answer": "Peter Pettigrew"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Quirinus Quirrell.png",
+          "file": "../data/assets/images/Quirinus Quirrell.png",
           "question": "Qui est-ce ?",
           "answer": "Quirinus Quirrell"
         },
         {
-          "file": "Quizz/questions/harry_potter/4/images/Remus Lupin.png",
+          "file": "../data/assets/images/Remus Lupin.png",
           "question": "Qui est-ce ?",
           "answer": "Remus Lupin"
         }
@@ -10634,232 +10634,232 @@ const QUESTION_DATABASE = {
     "5": {
       "images": [
         {
-          "file": "Quizz/questions/harry_potter/5/images/Aberforth Dumbledore.jpg",
+          "file": "../data/assets/images/Aberforth Dumbledore.jpg",
           "question": "Qui est-ce ?",
           "answer": "Aberforth Dumbledore"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Arabella Figg.png",
+          "file": "../data/assets/images/Arabella Figg.png",
           "question": "Qui est-ce ?",
           "answer": "Arabella Figg"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Bathilda Bagshot.png",
+          "file": "../data/assets/images/Bathilda Bagshot.png",
           "question": "Qui est-ce ?",
           "answer": "Bathilda Bagshot"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Bunty Broadacre.png",
+          "file": "../data/assets/images/Bunty Broadacre.png",
           "question": "Qui est-ce ?",
           "answer": "Bunty Broadacre"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Cornelius Fudge.png",
+          "file": "../data/assets/images/Cornelius Fudge.png",
           "question": "Qui est-ce ?",
           "answer": "Cornelius Fudge"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Credence.png",
+          "file": "../data/assets/images/Credence.png",
           "question": "Qui est-ce ?",
           "answer": "Credence"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Fenrir Greyback.png",
+          "file": "../data/assets/images/Fenrir Greyback.png",
           "question": "Qui est-ce ?",
           "answer": "Fenrir Greyback"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Fred Weasley.png",
+          "file": "../data/assets/images/Fred Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "Fred Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Garrick Ollivander.png",
+          "file": "../data/assets/images/Garrick Ollivander.png",
           "question": "Qui est-ce ?",
           "answer": "Garrick Ollivander"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Gellert Grindelwald.png",
+          "file": "../data/assets/images/Gellert Grindelwald.png",
           "question": "Qui est-ce ?",
           "answer": "Gellert Grindelwald"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/George Weasley.png",
+          "file": "../data/assets/images/George Weasley.png",
           "question": "Qui est-ce ?",
           "answer": "George Weasley"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Gregory Goyle.png",
+          "file": "../data/assets/images/Gregory Goyle.png",
           "question": "Qui est-ce ?",
           "answer": "Gregory Goyle"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Griphook.jpg",
+          "file": "../data/assets/images/Griphook.jpg",
           "question": "Qui est-ce ?",
           "answer": "Griphook"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Helga Hufflepuff.png",
+          "file": "../data/assets/images/Helga Hufflepuff.png",
           "question": "Qui est-ce ?",
           "answer": "Helga Hufflepuff"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Jacob Kowalski.png",
+          "file": "../data/assets/images/Jacob Kowalski.png",
           "question": "Qui est-ce ?",
           "answer": "Jacob Kowalski"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/James Potter.png",
+          "file": "../data/assets/images/James Potter.png",
           "question": "Qui est-ce ?",
           "answer": "James Potter"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Kingsley Shacklebolt.png",
+          "file": "../data/assets/images/Kingsley Shacklebolt.png",
           "question": "Qui est-ce ?",
           "answer": "Kingsley Shacklebolt"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Lavender Brown.png",
+          "file": "../data/assets/images/Lavender Brown.png",
           "question": "Qui est-ce ?",
           "answer": "Lavender Brown"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Marge Dursley.jpg",
+          "file": "../data/assets/images/Marge Dursley.jpg",
           "question": "Qui est-ce ?",
           "answer": "Marge Dursley"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Minerva Mcgonagall.png",
+          "file": "../data/assets/images/Minerva Mcgonagall.png",
           "question": "Qui est-ce ?",
           "answer": "Minerva Mcgonagall"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Mundungus Fletcher.jpg",
+          "file": "../data/assets/images/Mundungus Fletcher.jpg",
           "question": "Qui est-ce ?",
           "answer": "Mundungus Fletcher"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Nagini.jpg",
+          "file": "../data/assets/images/Nagini.jpg",
           "question": "Qui est-ce ?",
           "answer": "Nagini"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Newt Scamander.png",
+          "file": "../data/assets/images/Newt Scamander.png",
           "question": "Qui est-ce ?",
           "answer": "Newt Scamander"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Nicolas Flamel.png",
+          "file": "../data/assets/images/Nicolas Flamel.png",
           "question": "Qui est-ce ?",
           "answer": "Nicolas Flamel"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Norbert.jpg",
+          "file": "../data/assets/images/Norbert.jpg",
           "question": "Qui est-ce ?",
           "answer": "Norbert"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Oliver Wood.png",
+          "file": "../data/assets/images/Oliver Wood.png",
           "question": "Qui est-ce ?",
           "answer": "Oliver Wood"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Olympe Maxime.png",
+          "file": "../data/assets/images/Olympe Maxime.png",
           "question": "Qui est-ce ?",
           "answer": "Olympe Maxime"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Padma Patil.jpg",
+          "file": "../data/assets/images/Padma Patil.jpg",
           "question": "Qui est-ce ?",
           "answer": "Padma Patil"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Peeves.png",
+          "file": "../data/assets/images/Peeves.png",
           "question": "Qui est-ce ?",
           "answer": "Peeves"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Pomona Sprout.png",
+          "file": "../data/assets/images/Pomona Sprout.png",
           "question": "Qui est-ce ?",
           "answer": "Pomona Sprout"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Poppy Pomfrey.png",
+          "file": "../data/assets/images/Poppy Pomfrey.png",
           "question": "Qui est-ce ?",
           "answer": "Poppy Pomfrey"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Queenie Goldstein.png",
+          "file": "../data/assets/images/Queenie Goldstein.png",
           "question": "Qui est-ce ?",
           "answer": "Queenie Goldstein"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Rita Skeeter.png",
+          "file": "../data/assets/images/Rita Skeeter.png",
           "question": "Qui est-ce ?",
           "answer": "Rita Skeeter"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Rolanda Hooch.png",
+          "file": "../data/assets/images/Rolanda Hooch.png",
           "question": "Qui est-ce ?",
           "answer": "Rolanda Hooch"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Rowena Ravenclaw.png",
+          "file": "../data/assets/images/Rowena Ravenclaw.png",
           "question": "Qui est-ce ?",
           "answer": "Rowena Ravenclaw"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Rufus Scrimgeour.png",
+          "file": "../data/assets/images/Rufus Scrimgeour.png",
           "question": "Qui est-ce ?",
           "answer": "Rufus Scrimgeour"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Salazar Slytherin.png",
+          "file": "../data/assets/images/Salazar Slytherin.png",
           "question": "Qui est-ce ?",
           "answer": "Salazar Slytherin"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Scabbers.png",
+          "file": "../data/assets/images/Scabbers.png",
           "question": "Qui est-ce ?",
           "answer": "Scabbers"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Stan Shunpike.png",
+          "file": "../data/assets/images/Stan Shunpike.png",
           "question": "Qui est-ce ?",
           "answer": "Stan Shunpike"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Sybill Trelawney.png",
+          "file": "../data/assets/images/Sybill Trelawney.png",
           "question": "Qui est-ce ?",
           "answer": "Sybill Trelawney"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Teddy.png",
+          "file": "../data/assets/images/Teddy.png",
           "question": "Qui est-ce ?",
           "answer": "Teddy"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/The Bloody Baron.png",
+          "file": "../data/assets/images/The Bloody Baron.png",
           "question": "Qui est-ce ?",
           "answer": "The Bloody Baron"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/The Fat Friar.png",
+          "file": "../data/assets/images/The Fat Friar.png",
           "question": "Qui est-ce ?",
           "answer": "The Fat Friar"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/The Grey Lady.png",
+          "file": "../data/assets/images/The Grey Lady.png",
           "question": "Qui est-ce ?",
           "answer": "The Grey Lady"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Viktor Krum.png",
+          "file": "../data/assets/images/Viktor Krum.png",
           "question": "Qui est-ce ?",
           "answer": "Viktor Krum"
         },
         {
-          "file": "Quizz/questions/harry_potter/5/images/Xenophilius Lovegood.jpg",
+          "file": "../data/assets/images/Xenophilius Lovegood.jpg",
           "question": "Qui est-ce ?",
           "answer": "Xenophilius Lovegood"
         }
@@ -13005,202 +13005,202 @@ const QUESTION_DATABASE = {
     "1": {
       "images": [
         {
-          "file": "Quizz/questions/musique/1/images/Ariana Grande.png",
+          "file": "../data/assets/images/Ariana Grande.png",
           "question": "Qui est-ce ?",
           "answer": "Ariana Grande"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Aya Nakamura.png",
+          "file": "../data/assets/images/Aya Nakamura.png",
           "question": "Qui est-ce ?",
           "answer": "Aya Nakamura"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Benjamin Biolay.png",
+          "file": "../data/assets/images/Benjamin Biolay.png",
           "question": "Qui est-ce ?",
           "answer": "Benjamin Biolay"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Beyonce.png",
+          "file": "../data/assets/images/Beyonce.png",
           "question": "Qui est-ce ?",
           "answer": "Beyonce"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Bigflo.png",
+          "file": "../data/assets/images/Bigflo.png",
           "question": "Qui est-ce ?",
           "answer": "Bigflo"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Billie Eilish.png",
+          "file": "../data/assets/images/Billie Eilish.png",
           "question": "Qui est-ce ?",
           "answer": "Billie Eilish"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Britney Spears.png",
+          "file": "../data/assets/images/Britney Spears.png",
           "question": "Qui est-ce ?",
           "answer": "Britney Spears"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Camila Cabello.png",
+          "file": "../data/assets/images/Camila Cabello.png",
           "question": "Qui est-ce ?",
           "answer": "Camila Cabello"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Cardi B.png",
+          "file": "../data/assets/images/Cardi B.png",
           "question": "Qui est-ce ?",
           "answer": "Cardi B"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Celine Dion.png",
+          "file": "../data/assets/images/Celine Dion.png",
           "question": "Qui est-ce ?",
           "answer": "Celine Dion"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Christophe Maé.png",
+          "file": "../data/assets/images/Christophe Maé.png",
           "question": "Qui est-ce ?",
           "answer": "Christophe Maé"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Clara Luciani.png",
+          "file": "../data/assets/images/Clara Luciani.png",
           "question": "Qui est-ce ?",
           "answer": "Clara Luciani"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Dadju.png",
+          "file": "../data/assets/images/Dadju.png",
           "question": "Qui est-ce ?",
           "answer": "Dadju"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Dua Lipa.png",
+          "file": "../data/assets/images/Dua Lipa.png",
           "question": "Qui est-ce ?",
           "answer": "Dua Lipa"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Ed Sheeran.png",
+          "file": "../data/assets/images/Ed Sheeran.png",
           "question": "Qui est-ce ?",
           "answer": "Ed Sheeran"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Eminem.png",
+          "file": "../data/assets/images/Eminem.png",
           "question": "Qui est-ce ?",
           "answer": "Eminem"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Gims.png",
+          "file": "../data/assets/images/Gims.png",
           "question": "Qui est-ce ?",
           "answer": "Gims"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Harry Styles.png",
+          "file": "../data/assets/images/Harry Styles.png",
           "question": "Qui est-ce ?",
           "answer": "Harry Styles"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Julien Dore.png",
+          "file": "../data/assets/images/Julien Dore.png",
           "question": "Qui est-ce ?",
           "answer": "Julien Dore"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Juliette Armanet.png",
+          "file": "../data/assets/images/Juliette Armanet.png",
           "question": "Qui est-ce ?",
           "answer": "Juliette Armanet"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Justin Bieber.png",
+          "file": "../data/assets/images/Justin Bieber.png",
           "question": "Qui est-ce ?",
           "answer": "Justin Bieber"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Justin Timberlake.png",
+          "file": "../data/assets/images/Justin Timberlake.png",
           "question": "Qui est-ce ?",
           "answer": "Justin Timberlake"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Kanye West.png",
+          "file": "../data/assets/images/Kanye West.png",
           "question": "Qui est-ce ?",
           "answer": "Kanye West"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Katy Perry.png",
+          "file": "../data/assets/images/Katy Perry.png",
           "question": "Qui est-ce ?",
           "answer": "Katy Perry"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Kendji Girac.png",
+          "file": "../data/assets/images/Kendji Girac.png",
           "question": "Qui est-ce ?",
           "answer": "Kendji Girac"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Lady Gaga.png",
+          "file": "../data/assets/images/Lady Gaga.png",
           "question": "Qui est-ce ?",
           "answer": "Lady Gaga"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Louane.png",
+          "file": "../data/assets/images/Louane.png",
           "question": "Qui est-ce ?",
           "answer": "Louane"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Miley Cyrus.png",
+          "file": "../data/assets/images/Miley Cyrus.png",
           "question": "Qui est-ce ?",
           "answer": "Miley Cyrus"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Nicki Minaj.png",
+          "file": "../data/assets/images/Nicki Minaj.png",
           "question": "Qui est-ce ?",
           "answer": "Nicki Minaj"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Ninho.png",
+          "file": "../data/assets/images/Ninho.png",
           "question": "Qui est-ce ?",
           "answer": "Ninho"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Pascal Obispo.png",
+          "file": "../data/assets/images/Pascal Obispo.png",
           "question": "Qui est-ce ?",
           "answer": "Pascal Obispo"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Patrick Bruel.png",
+          "file": "../data/assets/images/Patrick Bruel.png",
           "question": "Qui est-ce ?",
           "answer": "Patrick Bruel"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Post Malone.png",
+          "file": "../data/assets/images/Post Malone.png",
           "question": "Qui est-ce ?",
           "answer": "Post Malone"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Shakira.png",
+          "file": "../data/assets/images/Shakira.png",
           "question": "Qui est-ce ?",
           "answer": "Shakira"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Slimane.png",
+          "file": "../data/assets/images/Slimane.png",
           "question": "Qui est-ce ?",
           "answer": "Slimane"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Stromae.png",
+          "file": "../data/assets/images/Stromae.png",
           "question": "Qui est-ce ?",
           "answer": "Stromae"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Taylor Swift.png",
+          "file": "../data/assets/images/Taylor Swift.png",
           "question": "Qui est-ce ?",
           "answer": "Taylor Swift"
         },
         {
-          "file": "Quizz/questions/musique/1/images/The Weeknd.png",
+          "file": "../data/assets/images/The Weeknd.png",
           "question": "Qui est-ce ?",
           "answer": "The Weeknd"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Vianney.png",
+          "file": "../data/assets/images/Vianney.png",
           "question": "Qui est-ce ?",
           "answer": "Vianney"
         },
         {
-          "file": "Quizz/questions/musique/1/images/Vitaa.png",
+          "file": "../data/assets/images/Vitaa.png",
           "question": "Qui est-ce ?",
           "answer": "Vitaa"
         }
@@ -13612,32 +13612,32 @@ const QUESTION_DATABASE = {
     "2": {
       "images": [
         {
-          "file": "Quizz/questions/musique/2/images/Bad Bunny.png",
+          "file": "../data/assets/images/Bad Bunny.png",
           "question": "Qui est-ce ?",
           "answer": "Bad Bunny"
         },
         {
-          "file": "Quizz/questions/musique/2/images/Olivia Rodrigo.png",
+          "file": "../data/assets/images/Olivia Rodrigo.png",
           "question": "Qui est-ce ?",
           "answer": "Olivia Rodrigo"
         },
         {
-          "file": "Quizz/questions/musique/2/images/Rihanna.png",
+          "file": "../data/assets/images/Rihanna.png",
           "question": "Qui est-ce ?",
           "answer": "Rihanna"
         },
         {
-          "file": "Quizz/questions/musique/2/images/Selena Gomez.png",
+          "file": "../data/assets/images/Selena Gomez.png",
           "question": "Qui est-ce ?",
           "answer": "Selena Gomez"
         },
         {
-          "file": "Quizz/questions/musique/2/images/Shawn Mendes.png",
+          "file": "../data/assets/images/Shawn Mendes.png",
           "question": "Qui est-ce ?",
           "answer": "Shawn Mendes"
         },
         {
-          "file": "Quizz/questions/musique/2/images/Sia.png",
+          "file": "../data/assets/images/Sia.png",
           "question": "Qui est-ce ?",
           "answer": "Sia"
         }
@@ -13965,32 +13965,32 @@ const QUESTION_DATABASE = {
     "3": {
       "images": [
         {
-          "file": "Quizz/questions/musique/3/images/Amir.png",
+          "file": "../data/assets/images/Amir.png",
           "question": "Qui est-ce ?",
           "answer": "Amir"
         },
         {
-          "file": "Quizz/questions/musique/3/images/Florent Pagny.png",
+          "file": "../data/assets/images/Florent Pagny.png",
           "question": "Qui est-ce ?",
           "answer": "Florent Pagny"
         },
         {
-          "file": "Quizz/questions/musique/3/images/Mylene Farmer.png",
+          "file": "../data/assets/images/Mylene Farmer.png",
           "question": "Qui est-ce ?",
           "answer": "Mylene Farmer"
         },
         {
-          "file": "Quizz/questions/musique/3/images/Renaud.png",
+          "file": "../data/assets/images/Renaud.png",
           "question": "Qui est-ce ?",
           "answer": "Renaud"
         },
         {
-          "file": "Quizz/questions/musique/3/images/Zaho.png",
+          "file": "../data/assets/images/Zaho.png",
           "question": "Qui est-ce ?",
           "answer": "Zaho"
         },
         {
-          "file": "Quizz/questions/musique/3/images/Zaz.png",
+          "file": "../data/assets/images/Zaz.png",
           "question": "Qui est-ce ?",
           "answer": "Zaz"
         }
@@ -14150,22 +14150,22 @@ const QUESTION_DATABASE = {
     "4": {
       "images": [
         {
-          "file": "Quizz/questions/musique/4/images/Doja Cat.png",
+          "file": "../data/assets/images/Doja Cat.png",
           "question": "Qui est-ce ?",
           "answer": "Doja Cat"
         },
         {
-          "file": "Quizz/questions/musique/4/images/Freddie Mercury.png",
+          "file": "../data/assets/images/Freddie Mercury.png",
           "question": "Qui est-ce ?",
           "answer": "Freddie Mercury"
         },
         {
-          "file": "Quizz/questions/musique/4/images/Madonna.png",
+          "file": "../data/assets/images/Madonna.png",
           "question": "Qui est-ce ?",
           "answer": "Madonna"
         },
         {
-          "file": "Quizz/questions/musique/4/images/Mariah Carey.png",
+          "file": "../data/assets/images/Mariah Carey.png",
           "question": "Qui est-ce ?",
           "answer": "Mariah Carey"
         }
@@ -15108,182 +15108,182 @@ const QUESTION_DATABASE = {
     "1": {
       "images": [
         {
-          "file": "Quizz/questions/sport/1/images/Arjen Robben.png",
+          "file": "../data/assets/images/Arjen Robben.png",
           "question": "Qui est-ce ?",
           "answer": "Arjen Robben"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Aryna Sabalenka.png",
+          "file": "../data/assets/images/Aryna Sabalenka.png",
           "question": "Qui est-ce ?",
           "answer": "Aryna Sabalenka"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Carles Puyol.png",
+          "file": "../data/assets/images/Carles Puyol.png",
           "question": "Qui est-ce ?",
           "answer": "Carles Puyol"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Carlos Alcaraz.png",
+          "file": "../data/assets/images/Carlos Alcaraz.png",
           "question": "Qui est-ce ?",
           "answer": "Carlos Alcaraz"
         },
         {
-          "file": "Quizz/questions/sport/1/images/David Beckham.png",
+          "file": "../data/assets/images/David Beckham.png",
           "question": "Qui est-ce ?",
           "answer": "David Beckham"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Diego Maradona.png",
+          "file": "../data/assets/images/Diego Maradona.png",
           "question": "Qui est-ce ?",
           "answer": "Diego Maradona"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Erling Haaland.png",
+          "file": "../data/assets/images/Erling Haaland.png",
           "question": "Qui est-ce ?",
           "answer": "Erling Haaland"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Frank Lampard.png",
+          "file": "../data/assets/images/Frank Lampard.png",
           "question": "Qui est-ce ?",
           "answer": "Frank Lampard"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Gerard Pique.png",
+          "file": "../data/assets/images/Gerard Pique.png",
           "question": "Qui est-ce ?",
           "answer": "Gerard Pique"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Gianluigi Buffon.png",
+          "file": "../data/assets/images/Gianluigi Buffon.png",
           "question": "Qui est-ce ?",
           "answer": "Gianluigi Buffon"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Iker Casillas.png",
+          "file": "../data/assets/images/Iker Casillas.png",
           "question": "Qui est-ce ?",
           "answer": "Iker Casillas"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Jannik Sinner.png",
+          "file": "../data/assets/images/Jannik Sinner.png",
           "question": "Qui est-ce ?",
           "answer": "Jannik Sinner"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Johan Cruyff.png",
+          "file": "../data/assets/images/Johan Cruyff.png",
           "question": "Qui est-ce ?",
           "answer": "Johan Cruyff"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Karim Benzema.png",
+          "file": "../data/assets/images/Karim Benzema.png",
           "question": "Qui est-ce ?",
           "answer": "Karim Benzema"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Kylian Mbappe.png",
+          "file": "../data/assets/images/Kylian Mbappe.png",
           "question": "Qui est-ce ?",
           "answer": "Kylian Mbappe"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Luis Suarez.png",
+          "file": "../data/assets/images/Luis Suarez.png",
           "question": "Qui est-ce ?",
           "answer": "Luis Suarez"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Luka Modric.png",
+          "file": "../data/assets/images/Luka Modric.png",
           "question": "Qui est-ce ?",
           "answer": "Luka Modric"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Marco Reus.png",
+          "file": "../data/assets/images/Marco Reus.png",
           "question": "Qui est-ce ?",
           "answer": "Marco Reus"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Mesut Ozil.png",
+          "file": "../data/assets/images/Mesut Ozil.png",
           "question": "Qui est-ce ?",
           "answer": "Mesut Ozil"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Mohamed Salah.png",
+          "file": "../data/assets/images/Mohamed Salah.png",
           "question": "Qui est-ce ?",
           "answer": "Mohamed Salah"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Neymar.png",
+          "file": "../data/assets/images/Neymar.png",
           "question": "Qui est-ce ?",
           "answer": "Neymar"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Novak Djokovic.png",
+          "file": "../data/assets/images/Novak Djokovic.png",
           "question": "Qui est-ce ?",
           "answer": "Novak Djokovic"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Paolo Maldini.png",
+          "file": "../data/assets/images/Paolo Maldini.png",
           "question": "Qui est-ce ?",
           "answer": "Paolo Maldini"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Paul Pogba.png",
+          "file": "../data/assets/images/Paul Pogba.png",
           "question": "Qui est-ce ?",
           "answer": "Paul Pogba"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Paulo Dybala.png",
+          "file": "../data/assets/images/Paulo Dybala.png",
           "question": "Qui est-ce ?",
           "answer": "Paulo Dybala"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Pele.png",
+          "file": "../data/assets/images/Pele.png",
           "question": "Qui est-ce ?",
           "answer": "Pele"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Rafael Nadal.png",
+          "file": "../data/assets/images/Rafael Nadal.png",
           "question": "Qui est-ce ?",
           "answer": "Rafael Nadal"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Ricardo Kaka.png",
+          "file": "../data/assets/images/Ricardo Kaka.png",
           "question": "Qui est-ce ?",
           "answer": "Ricardo Kaka"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Robert Lewandowski.png",
+          "file": "../data/assets/images/Robert Lewandowski.png",
           "question": "Qui est-ce ?",
           "answer": "Robert Lewandowski"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Roger Federer.png",
+          "file": "../data/assets/images/Roger Federer.png",
           "question": "Qui est-ce ?",
           "answer": "Roger Federer"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Ronaldinho.png",
+          "file": "../data/assets/images/Ronaldinho.png",
           "question": "Qui est-ce ?",
           "answer": "Ronaldinho"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Ronaldo Nazario.png",
+          "file": "../data/assets/images/Ronaldo Nazario.png",
           "question": "Qui est-ce ?",
           "answer": "Ronaldo Nazario"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Serena Williams.png",
+          "file": "../data/assets/images/Serena Williams.png",
           "question": "Qui est-ce ?",
           "answer": "Serena Williams"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Thierry Henry.png",
+          "file": "../data/assets/images/Thierry Henry.png",
           "question": "Qui est-ce ?",
           "answer": "Thierry Henry"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Zinedine Zidane.png",
+          "file": "../data/assets/images/Zinedine Zidane.png",
           "question": "Qui est-ce ?",
           "answer": "Zinedine Zidane"
         },
         {
-          "file": "Quizz/questions/sport/1/images/Zlatan Ibrahimovic.png",
+          "file": "../data/assets/images/Zlatan Ibrahimovic.png",
           "question": "Qui est-ce ?",
           "answer": "Zlatan Ibrahimovic"
         }
@@ -15591,147 +15591,147 @@ const QUESTION_DATABASE = {
     "2": {
       "images": [
         {
-          "file": "Quizz/questions/sport/2/images/Ada Hegerberg.png",
+          "file": "../data/assets/images/Ada Hegerberg.png",
           "question": "Qui est-ce ?",
           "answer": "Ada Hegerberg"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Aitana Bonmati.png",
+          "file": "../data/assets/images/Aitana Bonmati.png",
           "question": "Qui est-ce ?",
           "answer": "Aitana Bonmati"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Alexia Putellas.png",
+          "file": "../data/assets/images/Alexia Putellas.png",
           "question": "Qui est-ce ?",
           "answer": "Alexia Putellas"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Andrea Pirlo.png",
+          "file": "../data/assets/images/Andrea Pirlo.png",
           "question": "Qui est-ce ?",
           "answer": "Andrea Pirlo"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Andriy Shevchenko.png",
+          "file": "../data/assets/images/Andriy Shevchenko.png",
           "question": "Qui est-ce ?",
           "answer": "Andriy Shevchenko"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Andy Murray.png",
+          "file": "../data/assets/images/Andy Murray.png",
           "question": "Qui est-ce ?",
           "answer": "Andy Murray"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Angel Di Maria.png",
+          "file": "../data/assets/images/Angel Di Maria.png",
           "question": "Qui est-ce ?",
           "answer": "Angel Di Maria"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Clarence Seedorf.png",
+          "file": "../data/assets/images/Clarence Seedorf.png",
           "question": "Qui est-ce ?",
           "answer": "Clarence Seedorf"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Dani Alves.png",
+          "file": "../data/assets/images/Dani Alves.png",
           "question": "Qui est-ce ?",
           "answer": "Dani Alves"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Daniil Medvedev.png",
+          "file": "../data/assets/images/Daniil Medvedev.png",
           "question": "Qui est-ce ?",
           "answer": "Daniil Medvedev"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Didier Drogba.png",
+          "file": "../data/assets/images/Didier Drogba.png",
           "question": "Qui est-ce ?",
           "answer": "Didier Drogba"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Dominic Thiem.png",
+          "file": "../data/assets/images/Dominic Thiem.png",
           "question": "Qui est-ce ?",
           "answer": "Dominic Thiem"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Franck Ribery.png",
+          "file": "../data/assets/images/Franck Ribery.png",
           "question": "Qui est-ce ?",
           "answer": "Franck Ribery"
         },
         {
-          "file": "Quizz/questions/sport/2/images/James Harden.png",
+          "file": "../data/assets/images/James Harden.png",
           "question": "Qui est-ce ?",
           "answer": "James Harden"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Kevin Durant.png",
+          "file": "../data/assets/images/Kevin Durant.png",
           "question": "Qui est-ce ?",
           "answer": "Kevin Durant"
         },
         {
-          "file": "Quizz/questions/sport/2/images/LeBron James.png",
+          "file": "../data/assets/images/LeBron James.png",
           "question": "Qui est-ce ?",
           "answer": "Lebron James"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Luka Doncic.png",
+          "file": "../data/assets/images/Luka Doncic.png",
           "question": "Qui est-ce ?",
           "answer": "Luka Doncic"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Maria Sharapova.png",
+          "file": "../data/assets/images/Maria Sharapova.png",
           "question": "Qui est-ce ?",
           "answer": "Maria Sharapova"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Megan Rapinoe.png",
+          "file": "../data/assets/images/Megan Rapinoe.png",
           "question": "Qui est-ce ?",
           "answer": "Megan Rapinoe"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Nikola Jokic.png",
+          "file": "../data/assets/images/Nikola Jokic.png",
           "question": "Qui est-ce ?",
           "answer": "Nikola Jokic"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Sergio Aguero.png",
+          "file": "../data/assets/images/Sergio Aguero.png",
           "question": "Qui est-ce ?",
           "answer": "Sergio Aguero"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Sergio Busquets.png",
+          "file": "../data/assets/images/Sergio Busquets.png",
           "question": "Qui est-ce ?",
           "answer": "Sergio Busquets"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Simona Halep.png",
+          "file": "../data/assets/images/Simona Halep.png",
           "question": "Qui est-ce ?",
           "answer": "Simona Halep"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Stan Wawrinka.png",
+          "file": "../data/assets/images/Stan Wawrinka.png",
           "question": "Qui est-ce ?",
           "answer": "Stan Wawrinka"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Stephen Curry.png",
+          "file": "../data/assets/images/Stephen Curry.png",
           "question": "Qui est-ce ?",
           "answer": "Stephen Curry"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Venus Williams.png",
+          "file": "../data/assets/images/Venus Williams.png",
           "question": "Qui est-ce ?",
           "answer": "Venus Williams"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Victor Wembanyama.png",
+          "file": "../data/assets/images/Victor Wembanyama.png",
           "question": "Qui est-ce ?",
           "answer": "Victor Wembanyama"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Xabi Alonso.png",
+          "file": "../data/assets/images/Xabi Alonso.png",
           "question": "Qui est-ce ?",
           "answer": "Xabi Alonso"
         },
         {
-          "file": "Quizz/questions/sport/2/images/Yaya Toure.png",
+          "file": "../data/assets/images/Yaya Toure.png",
           "question": "Qui est-ce ?",
           "answer": "Yaya Toure"
         }
@@ -16019,87 +16019,87 @@ const QUESTION_DATABASE = {
     "3": {
       "images": [
         {
-          "file": "Quizz/questions/sport/3/images/Alessandro Del Piero.png",
+          "file": "../data/assets/images/Alessandro Del Piero.png",
           "question": "Qui est-ce ?",
           "answer": "Alessandro Del Piero"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Alexander Zverev.png",
+          "file": "../data/assets/images/Alexander Zverev.png",
           "question": "Qui est-ce ?",
           "answer": "Alexander Zverev"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Casper Ruud.png",
+          "file": "../data/assets/images/Casper Ruud.png",
           "question": "Qui est-ce ?",
           "answer": "Casper Ruud"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Coco Gauff.png",
+          "file": "../data/assets/images/Coco Gauff.png",
           "question": "Qui est-ce ?",
           "answer": "Coco Gauff"
         },
         {
-          "file": "Quizz/questions/sport/3/images/David Villa.png",
+          "file": "../data/assets/images/David Villa.png",
           "question": "Qui est-ce ?",
           "answer": "David Villa"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Elena Rybakina.png",
+          "file": "../data/assets/images/Elena Rybakina.png",
           "question": "Qui est-ce ?",
           "answer": "Elena Rybakina"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Fabio Cannavaro.png",
+          "file": "../data/assets/images/Fabio Cannavaro.png",
           "question": "Qui est-ce ?",
           "answer": "Fabio Cannavaro"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Francesco Totti.png",
+          "file": "../data/assets/images/Francesco Totti.png",
           "question": "Qui est-ce ?",
           "answer": "Francesco Totti"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Iga Swiatek.png",
+          "file": "../data/assets/images/Iga Swiatek.png",
           "question": "Qui est-ce ?",
           "answer": "Iga Swiatek"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Naomi Osaka.png",
+          "file": "../data/assets/images/Naomi Osaka.png",
           "question": "Qui est-ce ?",
           "answer": "Naomi Osaka"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Petra Kvitova.png",
+          "file": "../data/assets/images/Petra Kvitova.png",
           "question": "Qui est-ce ?",
           "answer": "Petra Kvitova"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Rivaldo.png",
+          "file": "../data/assets/images/Rivaldo.png",
           "question": "Qui est-ce ?",
           "answer": "Rivaldo"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Samuel Eto o.png",
+          "file": "../data/assets/images/Samuel Eto o.png",
           "question": "Qui est-ce ?",
           "answer": "Samuel Eto O"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Stefanos Tsitsipas.png",
+          "file": "../data/assets/images/Stefanos Tsitsipas.png",
           "question": "Qui est-ce ?",
           "answer": "Stefanos Tsitsipas"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Wayne Rooney.png",
+          "file": "../data/assets/images/Wayne Rooney.png",
           "question": "Qui est-ce ?",
           "answer": "Wayne Rooney"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Wendie Renard.png",
+          "file": "../data/assets/images/Wendie Renard.png",
           "question": "Qui est-ce ?",
           "answer": "Wendie Renard"
         },
         {
-          "file": "Quizz/questions/sport/3/images/Wesley Sneijder.png",
+          "file": "../data/assets/images/Wesley Sneijder.png",
           "question": "Qui est-ce ?",
           "answer": "Wesley Sneijder"
         }
@@ -16239,37 +16239,37 @@ const QUESTION_DATABASE = {
     "4": {
       "images": [
         {
-          "file": "Quizz/questions/sport/4/images/Anthony Davis.png",
+          "file": "../data/assets/images/Anthony Davis.png",
           "question": "Qui est-ce ?",
           "answer": "Anthony Davis"
         },
         {
-          "file": "Quizz/questions/sport/4/images/Chris Paul.png",
+          "file": "../data/assets/images/Chris Paul.png",
           "question": "Qui est-ce ?",
           "answer": "Chris Paul"
         },
         {
-          "file": "Quizz/questions/sport/4/images/Damian Lillard.png",
+          "file": "../data/assets/images/Damian Lillard.png",
           "question": "Qui est-ce ?",
           "answer": "Damian Lillard"
         },
         {
-          "file": "Quizz/questions/sport/4/images/Giannis Antetokounmpo.png",
+          "file": "../data/assets/images/Giannis Antetokounmpo.png",
           "question": "Qui est-ce ?",
           "answer": "Giannis Antetokounmpo"
         },
         {
-          "file": "Quizz/questions/sport/4/images/Jayson Tatum.png",
+          "file": "../data/assets/images/Jayson Tatum.png",
           "question": "Qui est-ce ?",
           "answer": "Jayson Tatum"
         },
         {
-          "file": "Quizz/questions/sport/4/images/Joel Embiid.png",
+          "file": "../data/assets/images/Joel Embiid.png",
           "question": "Qui est-ce ?",
           "answer": "Joel Embiid"
         },
         {
-          "file": "Quizz/questions/sport/4/images/Kawhi Leonard.png",
+          "file": "../data/assets/images/Kawhi Leonard.png",
           "question": "Qui est-ce ?",
           "answer": "Kawhi Leonard"
         }
@@ -16337,77 +16337,77 @@ const QUESTION_DATABASE = {
     "5": {
       "images": [
         {
-          "file": "Quizz/questions/sport/5/images/Franz Beckenbauer.png",
+          "file": "../data/assets/images/Franz Beckenbauer.png",
           "question": "Qui est-ce ?",
           "answer": "Franz Beckenbauer"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Garrincha.png",
+          "file": "../data/assets/images/Garrincha.png",
           "question": "Qui est-ce ?",
           "answer": "Garrincha"
         },
         {
-          "file": "Quizz/questions/sport/5/images/George Best.png",
+          "file": "../data/assets/images/George Best.png",
           "question": "Qui est-ce ?",
           "answer": "George Best"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Kadidiatou Diani.png",
+          "file": "../data/assets/images/Kadidiatou Diani.png",
           "question": "Qui est-ce ?",
           "answer": "Kadidiatou Diani"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Lucy Bronze.png",
+          "file": "../data/assets/images/Lucy Bronze.png",
           "question": "Qui est-ce ?",
           "answer": "Lucy Bronze"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Mapi Leon.png",
+          "file": "../data/assets/images/Mapi Leon.png",
           "question": "Qui est-ce ?",
           "answer": "Mapi Leon"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Marco van Basten.png",
+          "file": "../data/assets/images/Marco van Basten.png",
           "question": "Qui est-ce ?",
           "answer": "Marco Van Basten"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Michel Platini.png",
+          "file": "../data/assets/images/Michel Platini.png",
           "question": "Qui est-ce ?",
           "answer": "Michel Platini"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Philipp Lahm.png",
+          "file": "../data/assets/images/Philipp Lahm.png",
           "question": "Qui est-ce ?",
           "answer": "Philipp Lahm"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Raul.png",
+          "file": "../data/assets/images/Raul.png",
           "question": "Qui est-ce ?",
           "answer": "Raul"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Romario.png",
+          "file": "../data/assets/images/Romario.png",
           "question": "Qui est-ce ?",
           "answer": "Romario"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Sam Kerr.png",
+          "file": "../data/assets/images/Sam Kerr.png",
           "question": "Qui est-ce ?",
           "answer": "Sam Kerr"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Steven Gerrard.png",
+          "file": "../data/assets/images/Steven Gerrard.png",
           "question": "Qui est-ce ?",
           "answer": "Steven Gerrard"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Trinity Rodman.png",
+          "file": "../data/assets/images/Trinity Rodman.png",
           "question": "Qui est-ce ?",
           "answer": "Trinity Rodman"
         },
         {
-          "file": "Quizz/questions/sport/5/images/Zico.png",
+          "file": "../data/assets/images/Zico.png",
           "question": "Qui est-ce ?",
           "answer": "Zico"
         }

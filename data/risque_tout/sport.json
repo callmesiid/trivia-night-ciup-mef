@@ -5,7 +5,7 @@
   "questions": [
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Arjen Robben.png",
+      "file": "data/assets/images/Arjen Robben.png",
       "question": "Qui est-ce ?",
       "answer": "Arjen Robben",
       "difficulty": 1,
@@ -13,7 +13,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Aryna Sabalenka.png",
+      "file": "data/assets/images/Aryna Sabalenka.png",
       "question": "Qui est-ce ?",
       "answer": "Aryna Sabalenka",
       "difficulty": 1,
@@ -21,7 +21,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Carles Puyol.png",
+      "file": "data/assets/images/Carles Puyol.png",
       "question": "Qui est-ce ?",
       "answer": "Carles Puyol",
       "difficulty": 1,
@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Carlos Alcaraz.png",
+      "file": "data/assets/images/Carlos Alcaraz.png",
       "question": "Qui est-ce ?",
       "answer": "Carlos Alcaraz",
       "difficulty": 1,
@@ -37,7 +37,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/David Beckham.png",
+      "file": "data/assets/images/David Beckham.png",
       "question": "Qui est-ce ?",
       "answer": "David Beckham",
       "difficulty": 1,
@@ -45,7 +45,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Diego Maradona.png",
+      "file": "data/assets/images/Diego Maradona.png",
       "question": "Qui est-ce ?",
       "answer": "Diego Maradona",
       "difficulty": 1,
@@ -53,7 +53,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Erling Haaland.png",
+      "file": "data/assets/images/Erling Haaland.png",
       "question": "Qui est-ce ?",
       "answer": "Erling Haaland",
       "difficulty": 1,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Frank Lampard.png",
+      "file": "data/assets/images/Frank Lampard.png",
       "question": "Qui est-ce ?",
       "answer": "Frank Lampard",
       "difficulty": 1,
@@ -69,7 +69,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Gerard Pique.png",
+      "file": "data/assets/images/Gerard Pique.png",
       "question": "Qui est-ce ?",
       "answer": "Gerard Pique",
       "difficulty": 1,
@@ -77,7 +77,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Gianluigi Buffon.png",
+      "file": "data/assets/images/Gianluigi Buffon.png",
       "question": "Qui est-ce ?",
       "answer": "Gianluigi Buffon",
       "difficulty": 1,
@@ -85,7 +85,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Iker Casillas.png",
+      "file": "data/assets/images/Iker Casillas.png",
       "question": "Qui est-ce ?",
       "answer": "Iker Casillas",
       "difficulty": 1,
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Jannik Sinner.png",
+      "file": "data/assets/images/Jannik Sinner.png",
       "question": "Qui est-ce ?",
       "answer": "Jannik Sinner",
       "difficulty": 1,
@@ -101,7 +101,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Johan Cruyff.png",
+      "file": "data/assets/images/Johan Cruyff.png",
       "question": "Qui est-ce ?",
       "answer": "Johan Cruyff",
       "difficulty": 1,
@@ -109,7 +109,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Karim Benzema.png",
+      "file": "data/assets/images/Karim Benzema.png",
       "question": "Qui est-ce ?",
       "answer": "Karim Benzema",
       "difficulty": 1,
@@ -117,7 +117,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Kylian Mbappe.png",
+      "file": "data/assets/images/Kylian Mbappe.png",
       "question": "Qui est-ce ?",
       "answer": "Kylian Mbappe",
       "difficulty": 1,
@@ -125,7 +125,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Luis Suarez.png",
+      "file": "data/assets/images/Luis Suarez.png",
       "question": "Qui est-ce ?",
       "answer": "Luis Suarez",
       "difficulty": 1,
@@ -133,7 +133,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Luka Modric.png",
+      "file": "data/assets/images/Luka Modric.png",
       "question": "Qui est-ce ?",
       "answer": "Luka Modric",
       "difficulty": 1,
@@ -141,7 +141,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Marco Reus.png",
+      "file": "data/assets/images/Marco Reus.png",
       "question": "Qui est-ce ?",
       "answer": "Marco Reus",
       "difficulty": 1,
@@ -149,7 +149,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Mesut Ozil.png",
+      "file": "data/assets/images/Mesut Ozil.png",
       "question": "Qui est-ce ?",
       "answer": "Mesut Ozil",
       "difficulty": 1,
@@ -157,7 +157,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Mohamed Salah.png",
+      "file": "data/assets/images/Mohamed Salah.png",
       "question": "Qui est-ce ?",
       "answer": "Mohamed Salah",
       "difficulty": 1,
@@ -165,7 +165,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Neymar.png",
+      "file": "data/assets/images/Neymar.png",
       "question": "Qui est-ce ?",
       "answer": "Neymar",
       "difficulty": 1,
@@ -173,7 +173,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Novak Djokovic.png",
+      "file": "data/assets/images/Novak Djokovic.png",
       "question": "Qui est-ce ?",
       "answer": "Novak Djokovic",
       "difficulty": 1,
@@ -181,7 +181,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Paolo Maldini.png",
+      "file": "data/assets/images/Paolo Maldini.png",
       "question": "Qui est-ce ?",
       "answer": "Paolo Maldini",
       "difficulty": 1,
@@ -189,7 +189,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Paul Pogba.png",
+      "file": "data/assets/images/Paul Pogba.png",
       "question": "Qui est-ce ?",
       "answer": "Paul Pogba",
       "difficulty": 1,
@@ -197,7 +197,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Paulo Dybala.png",
+      "file": "data/assets/images/Paulo Dybala.png",
       "question": "Qui est-ce ?",
       "answer": "Paulo Dybala",
       "difficulty": 1,
@@ -205,7 +205,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Pele.png",
+      "file": "data/assets/images/Pele.png",
       "question": "Qui est-ce ?",
       "answer": "Pele",
       "difficulty": 1,
@@ -213,7 +213,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Rafael Nadal.png",
+      "file": "data/assets/images/Rafael Nadal.png",
       "question": "Qui est-ce ?",
       "answer": "Rafael Nadal",
       "difficulty": 1,
@@ -221,7 +221,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Ricardo Kaka.png",
+      "file": "data/assets/images/Ricardo Kaka.png",
       "question": "Qui est-ce ?",
       "answer": "Ricardo Kaka",
       "difficulty": 1,
@@ -229,7 +229,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Robert Lewandowski.png",
+      "file": "data/assets/images/Robert Lewandowski.png",
       "question": "Qui est-ce ?",
       "answer": "Robert Lewandowski",
       "difficulty": 1,
@@ -237,7 +237,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Roger Federer.png",
+      "file": "data/assets/images/Roger Federer.png",
       "question": "Qui est-ce ?",
       "answer": "Roger Federer",
       "difficulty": 1,
@@ -245,7 +245,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Ronaldinho.png",
+      "file": "data/assets/images/Ronaldinho.png",
       "question": "Qui est-ce ?",
       "answer": "Ronaldinho",
       "difficulty": 1,
@@ -253,7 +253,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Ronaldo Nazario.png",
+      "file": "data/assets/images/Ronaldo Nazario.png",
       "question": "Qui est-ce ?",
       "answer": "Ronaldo Nazario",
       "difficulty": 1,
@@ -261,7 +261,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Serena Williams.png",
+      "file": "data/assets/images/Serena Williams.png",
       "question": "Qui est-ce ?",
       "answer": "Serena Williams",
       "difficulty": 1,
@@ -269,7 +269,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Thierry Henry.png",
+      "file": "data/assets/images/Thierry Henry.png",
       "question": "Qui est-ce ?",
       "answer": "Thierry Henry",
       "difficulty": 1,
@@ -277,7 +277,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Zinedine Zidane.png",
+      "file": "data/assets/images/Zinedine Zidane.png",
       "question": "Qui est-ce ?",
       "answer": "Zinedine Zidane",
       "difficulty": 1,
@@ -285,7 +285,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/1/images/Zlatan Ibrahimovic.png",
+      "file": "data/assets/images/Zlatan Ibrahimovic.png",
       "question": "Qui est-ce ?",
       "answer": "Zlatan Ibrahimovic",
       "difficulty": 1,
@@ -811,7 +811,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Ada Hegerberg.png",
+      "file": "data/assets/images/Ada Hegerberg.png",
       "question": "Qui est-ce ?",
       "answer": "Ada Hegerberg",
       "difficulty": 2,
@@ -819,7 +819,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Aitana Bonmati.png",
+      "file": "data/assets/images/Aitana Bonmati.png",
       "question": "Qui est-ce ?",
       "answer": "Aitana Bonmati",
       "difficulty": 2,
@@ -827,7 +827,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Alexia Putellas.png",
+      "file": "data/assets/images/Alexia Putellas.png",
       "question": "Qui est-ce ?",
       "answer": "Alexia Putellas",
       "difficulty": 2,
@@ -835,7 +835,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Andrea Pirlo.png",
+      "file": "data/assets/images/Andrea Pirlo.png",
       "question": "Qui est-ce ?",
       "answer": "Andrea Pirlo",
       "difficulty": 2,
@@ -843,7 +843,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Andriy Shevchenko.png",
+      "file": "data/assets/images/Andriy Shevchenko.png",
       "question": "Qui est-ce ?",
       "answer": "Andriy Shevchenko",
       "difficulty": 2,
@@ -851,7 +851,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Andy Murray.png",
+      "file": "data/assets/images/Andy Murray.png",
       "question": "Qui est-ce ?",
       "answer": "Andy Murray",
       "difficulty": 2,
@@ -859,7 +859,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Angel Di Maria.png",
+      "file": "data/assets/images/Angel Di Maria.png",
       "question": "Qui est-ce ?",
       "answer": "Angel Di Maria",
       "difficulty": 2,
@@ -867,7 +867,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Clarence Seedorf.png",
+      "file": "data/assets/images/Clarence Seedorf.png",
       "question": "Qui est-ce ?",
       "answer": "Clarence Seedorf",
       "difficulty": 2,
@@ -875,7 +875,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Dani Alves.png",
+      "file": "data/assets/images/Dani Alves.png",
       "question": "Qui est-ce ?",
       "answer": "Dani Alves",
       "difficulty": 2,
@@ -883,7 +883,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Daniil Medvedev.png",
+      "file": "data/assets/images/Daniil Medvedev.png",
       "question": "Qui est-ce ?",
       "answer": "Daniil Medvedev",
       "difficulty": 2,
@@ -891,7 +891,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Didier Drogba.png",
+      "file": "data/assets/images/Didier Drogba.png",
       "question": "Qui est-ce ?",
       "answer": "Didier Drogba",
       "difficulty": 2,
@@ -899,7 +899,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Dominic Thiem.png",
+      "file": "data/assets/images/Dominic Thiem.png",
       "question": "Qui est-ce ?",
       "answer": "Dominic Thiem",
       "difficulty": 2,
@@ -907,7 +907,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Franck Ribery.png",
+      "file": "data/assets/images/Franck Ribery.png",
       "question": "Qui est-ce ?",
       "answer": "Franck Ribery",
       "difficulty": 2,
@@ -915,7 +915,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/James Harden.png",
+      "file": "data/assets/images/James Harden.png",
       "question": "Qui est-ce ?",
       "answer": "James Harden",
       "difficulty": 2,
@@ -923,7 +923,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Kevin Durant.png",
+      "file": "data/assets/images/Kevin Durant.png",
       "question": "Qui est-ce ?",
       "answer": "Kevin Durant",
       "difficulty": 2,
@@ -931,7 +931,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/LeBron James.png",
+      "file": "data/assets/images/LeBron James.png",
       "question": "Qui est-ce ?",
       "answer": "Lebron James",
       "difficulty": 2,
@@ -939,7 +939,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Luka Doncic.png",
+      "file": "data/assets/images/Luka Doncic.png",
       "question": "Qui est-ce ?",
       "answer": "Luka Doncic",
       "difficulty": 2,
@@ -947,7 +947,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Maria Sharapova.png",
+      "file": "data/assets/images/Maria Sharapova.png",
       "question": "Qui est-ce ?",
       "answer": "Maria Sharapova",
       "difficulty": 2,
@@ -955,7 +955,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Megan Rapinoe.png",
+      "file": "data/assets/images/Megan Rapinoe.png",
       "question": "Qui est-ce ?",
       "answer": "Megan Rapinoe",
       "difficulty": 2,
@@ -963,7 +963,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Nikola Jokic.png",
+      "file": "data/assets/images/Nikola Jokic.png",
       "question": "Qui est-ce ?",
       "answer": "Nikola Jokic",
       "difficulty": 2,
@@ -971,7 +971,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Sergio Aguero.png",
+      "file": "data/assets/images/Sergio Aguero.png",
       "question": "Qui est-ce ?",
       "answer": "Sergio Aguero",
       "difficulty": 2,
@@ -979,7 +979,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Sergio Busquets.png",
+      "file": "data/assets/images/Sergio Busquets.png",
       "question": "Qui est-ce ?",
       "answer": "Sergio Busquets",
       "difficulty": 2,
@@ -987,7 +987,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Simona Halep.png",
+      "file": "data/assets/images/Simona Halep.png",
       "question": "Qui est-ce ?",
       "answer": "Simona Halep",
       "difficulty": 2,
@@ -995,7 +995,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Stan Wawrinka.png",
+      "file": "data/assets/images/Stan Wawrinka.png",
       "question": "Qui est-ce ?",
       "answer": "Stan Wawrinka",
       "difficulty": 2,
@@ -1003,7 +1003,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Stephen Curry.png",
+      "file": "data/assets/images/Stephen Curry.png",
       "question": "Qui est-ce ?",
       "answer": "Stephen Curry",
       "difficulty": 2,
@@ -1011,7 +1011,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Venus Williams.png",
+      "file": "data/assets/images/Venus Williams.png",
       "question": "Qui est-ce ?",
       "answer": "Venus Williams",
       "difficulty": 2,
@@ -1019,7 +1019,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Victor Wembanyama.png",
+      "file": "data/assets/images/Victor Wembanyama.png",
       "question": "Qui est-ce ?",
       "answer": "Victor Wembanyama",
       "difficulty": 2,
@@ -1027,7 +1027,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Xabi Alonso.png",
+      "file": "data/assets/images/Xabi Alonso.png",
       "question": "Qui est-ce ?",
       "answer": "Xabi Alonso",
       "difficulty": 2,
@@ -1035,7 +1035,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/2/images/Yaya Toure.png",
+      "file": "data/assets/images/Yaya Toure.png",
       "question": "Qui est-ce ?",
       "answer": "Yaya Toure",
       "difficulty": 2,
@@ -1526,7 +1526,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Alessandro Del Piero.png",
+      "file": "data/assets/images/Alessandro Del Piero.png",
       "question": "Qui est-ce ?",
       "answer": "Alessandro Del Piero",
       "difficulty": 3,
@@ -1534,7 +1534,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Alexander Zverev.png",
+      "file": "data/assets/images/Alexander Zverev.png",
       "question": "Qui est-ce ?",
       "answer": "Alexander Zverev",
       "difficulty": 3,
@@ -1542,7 +1542,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Casper Ruud.png",
+      "file": "data/assets/images/Casper Ruud.png",
       "question": "Qui est-ce ?",
       "answer": "Casper Ruud",
       "difficulty": 3,
@@ -1550,7 +1550,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Coco Gauff.png",
+      "file": "data/assets/images/Coco Gauff.png",
       "question": "Qui est-ce ?",
       "answer": "Coco Gauff",
       "difficulty": 3,
@@ -1558,7 +1558,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/David Villa.png",
+      "file": "data/assets/images/David Villa.png",
       "question": "Qui est-ce ?",
       "answer": "David Villa",
       "difficulty": 3,
@@ -1566,7 +1566,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Elena Rybakina.png",
+      "file": "data/assets/images/Elena Rybakina.png",
       "question": "Qui est-ce ?",
       "answer": "Elena Rybakina",
       "difficulty": 3,
@@ -1574,7 +1574,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Fabio Cannavaro.png",
+      "file": "data/assets/images/Fabio Cannavaro.png",
       "question": "Qui est-ce ?",
       "answer": "Fabio Cannavaro",
       "difficulty": 3,
@@ -1582,7 +1582,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Francesco Totti.png",
+      "file": "data/assets/images/Francesco Totti.png",
       "question": "Qui est-ce ?",
       "answer": "Francesco Totti",
       "difficulty": 3,
@@ -1590,7 +1590,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Iga Swiatek.png",
+      "file": "data/assets/images/Iga Swiatek.png",
       "question": "Qui est-ce ?",
       "answer": "Iga Swiatek",
       "difficulty": 3,
@@ -1598,7 +1598,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Naomi Osaka.png",
+      "file": "data/assets/images/Naomi Osaka.png",
       "question": "Qui est-ce ?",
       "answer": "Naomi Osaka",
       "difficulty": 3,
@@ -1606,7 +1606,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Petra Kvitova.png",
+      "file": "data/assets/images/Petra Kvitova.png",
       "question": "Qui est-ce ?",
       "answer": "Petra Kvitova",
       "difficulty": 3,
@@ -1614,7 +1614,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Rivaldo.png",
+      "file": "data/assets/images/Rivaldo.png",
       "question": "Qui est-ce ?",
       "answer": "Rivaldo",
       "difficulty": 3,
@@ -1622,7 +1622,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Samuel Eto o.png",
+      "file": "data/assets/images/Samuel Eto o.png",
       "question": "Qui est-ce ?",
       "answer": "Samuel Eto O",
       "difficulty": 3,
@@ -1630,7 +1630,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Stefanos Tsitsipas.png",
+      "file": "data/assets/images/Stefanos Tsitsipas.png",
       "question": "Qui est-ce ?",
       "answer": "Stefanos Tsitsipas",
       "difficulty": 3,
@@ -1638,7 +1638,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Wayne Rooney.png",
+      "file": "data/assets/images/Wayne Rooney.png",
       "question": "Qui est-ce ?",
       "answer": "Wayne Rooney",
       "difficulty": 3,
@@ -1646,7 +1646,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Wendie Renard.png",
+      "file": "data/assets/images/Wendie Renard.png",
       "question": "Qui est-ce ?",
       "answer": "Wendie Renard",
       "difficulty": 3,
@@ -1654,7 +1654,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/3/images/Wesley Sneijder.png",
+      "file": "data/assets/images/Wesley Sneijder.png",
       "question": "Qui est-ce ?",
       "answer": "Wesley Sneijder",
       "difficulty": 3,
@@ -1886,7 +1886,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/4/images/Anthony Davis.png",
+      "file": "data/assets/images/Anthony Davis.png",
       "question": "Qui est-ce ?",
       "answer": "Anthony Davis",
       "difficulty": 4,
@@ -1894,7 +1894,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/4/images/Chris Paul.png",
+      "file": "data/assets/images/Chris Paul.png",
       "question": "Qui est-ce ?",
       "answer": "Chris Paul",
       "difficulty": 4,
@@ -1902,7 +1902,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/4/images/Damian Lillard.png",
+      "file": "data/assets/images/Damian Lillard.png",
       "question": "Qui est-ce ?",
       "answer": "Damian Lillard",
       "difficulty": 4,
@@ -1910,7 +1910,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/4/images/Giannis Antetokounmpo.png",
+      "file": "data/assets/images/Giannis Antetokounmpo.png",
       "question": "Qui est-ce ?",
       "answer": "Giannis Antetokounmpo",
       "difficulty": 4,
@@ -1918,7 +1918,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/4/images/Jayson Tatum.png",
+      "file": "data/assets/images/Jayson Tatum.png",
       "question": "Qui est-ce ?",
       "answer": "Jayson Tatum",
       "difficulty": 4,
@@ -1926,7 +1926,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/4/images/Joel Embiid.png",
+      "file": "data/assets/images/Joel Embiid.png",
       "question": "Qui est-ce ?",
       "answer": "Joel Embiid",
       "difficulty": 4,
@@ -1934,7 +1934,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/4/images/Kawhi Leonard.png",
+      "file": "data/assets/images/Kawhi Leonard.png",
       "question": "Qui est-ce ?",
       "answer": "Kawhi Leonard",
       "difficulty": 4,
@@ -2040,7 +2040,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Franz Beckenbauer.png",
+      "file": "data/assets/images/Franz Beckenbauer.png",
       "question": "Qui est-ce ?",
       "answer": "Franz Beckenbauer",
       "difficulty": 5,
@@ -2048,7 +2048,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Garrincha.png",
+      "file": "data/assets/images/Garrincha.png",
       "question": "Qui est-ce ?",
       "answer": "Garrincha",
       "difficulty": 5,
@@ -2056,7 +2056,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/George Best.png",
+      "file": "data/assets/images/George Best.png",
       "question": "Qui est-ce ?",
       "answer": "George Best",
       "difficulty": 5,
@@ -2064,7 +2064,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Kadidiatou Diani.png",
+      "file": "data/assets/images/Kadidiatou Diani.png",
       "question": "Qui est-ce ?",
       "answer": "Kadidiatou Diani",
       "difficulty": 5,
@@ -2072,7 +2072,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Lucy Bronze.png",
+      "file": "data/assets/images/Lucy Bronze.png",
       "question": "Qui est-ce ?",
       "answer": "Lucy Bronze",
       "difficulty": 5,
@@ -2080,7 +2080,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Mapi Leon.png",
+      "file": "data/assets/images/Mapi Leon.png",
       "question": "Qui est-ce ?",
       "answer": "Mapi Leon",
       "difficulty": 5,
@@ -2088,7 +2088,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Marco van Basten.png",
+      "file": "data/assets/images/Marco van Basten.png",
       "question": "Qui est-ce ?",
       "answer": "Marco Van Basten",
       "difficulty": 5,
@@ -2096,7 +2096,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Michel Platini.png",
+      "file": "data/assets/images/Michel Platini.png",
       "question": "Qui est-ce ?",
       "answer": "Michel Platini",
       "difficulty": 5,
@@ -2104,7 +2104,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Philipp Lahm.png",
+      "file": "data/assets/images/Philipp Lahm.png",
       "question": "Qui est-ce ?",
       "answer": "Philipp Lahm",
       "difficulty": 5,
@@ -2112,7 +2112,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Raul.png",
+      "file": "data/assets/images/Raul.png",
       "question": "Qui est-ce ?",
       "answer": "Raul",
       "difficulty": 5,
@@ -2120,7 +2120,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Romario.png",
+      "file": "data/assets/images/Romario.png",
       "question": "Qui est-ce ?",
       "answer": "Romario",
       "difficulty": 5,
@@ -2128,7 +2128,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Sam Kerr.png",
+      "file": "data/assets/images/Sam Kerr.png",
       "question": "Qui est-ce ?",
       "answer": "Sam Kerr",
       "difficulty": 5,
@@ -2136,7 +2136,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Steven Gerrard.png",
+      "file": "data/assets/images/Steven Gerrard.png",
       "question": "Qui est-ce ?",
       "answer": "Steven Gerrard",
       "difficulty": 5,
@@ -2144,7 +2144,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Trinity Rodman.png",
+      "file": "data/assets/images/Trinity Rodman.png",
       "question": "Qui est-ce ?",
       "answer": "Trinity Rodman",
       "difficulty": 5,
@@ -2152,7 +2152,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/sport/5/images/Zico.png",
+      "file": "data/assets/images/Zico.png",
       "question": "Qui est-ce ?",
       "answer": "Zico",
       "difficulty": 5,

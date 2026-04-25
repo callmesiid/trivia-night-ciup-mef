@@ -5,7 +5,7 @@
   "questions": [
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Anna.webp",
+      "file": "data/assets/images/Anna.webp",
       "question": "Qui est-ce ?",
       "answer": "Anna",
       "difficulty": 1,
@@ -13,7 +13,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Ariel.webp",
+      "file": "data/assets/images/Ariel.webp",
       "question": "Qui est-ce ?",
       "answer": "Ariel",
       "difficulty": 1,
@@ -21,7 +21,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Bambi.webp",
+      "file": "data/assets/images/Bambi.webp",
       "question": "Qui est-ce ?",
       "answer": "Bambi",
       "difficulty": 1,
@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Belle.webp",
+      "file": "data/assets/images/Belle.webp",
       "question": "Qui est-ce ?",
       "answer": "Belle",
       "difficulty": 1,
@@ -37,7 +37,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Black_Panther.jpeg",
+      "file": "data/assets/images/Black_Panther.jpeg",
       "question": "Qui est-ce ?",
       "answer": "Black Panther",
       "difficulty": 1,
@@ -45,7 +45,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Black_Widow.webp",
+      "file": "data/assets/images/Black_Widow.webp",
       "question": "Qui est-ce ?",
       "answer": "Black Widow",
       "difficulty": 1,
@@ -53,7 +53,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Buzz_L_Eclair.webp",
+      "file": "data/assets/images/Buzz_L_Eclair.webp",
       "question": "Qui est-ce ?",
       "answer": "Buzz L Eclair",
       "difficulty": 1,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Captain_America.jpg",
+      "file": "data/assets/images/Captain_America.jpg",
       "question": "Qui est-ce ?",
       "answer": "Captain America",
       "difficulty": 1,
@@ -69,7 +69,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Dingo.webp",
+      "file": "data/assets/images/Dingo.webp",
       "question": "Qui est-ce ?",
       "answer": "Dingo",
       "difficulty": 1,
@@ -77,7 +77,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Doctor_Strange.webp",
+      "file": "data/assets/images/Doctor_Strange.webp",
       "question": "Qui est-ce ?",
       "answer": "Doctor Strange",
       "difficulty": 1,
@@ -85,7 +85,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Donald_Duck.webp",
+      "file": "data/assets/images/Donald_Duck.webp",
       "question": "Qui est-ce ?",
       "answer": "Donald Duck",
       "difficulty": 1,
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Dory.webp",
+      "file": "data/assets/images/Dory.webp",
       "question": "Qui est-ce ?",
       "answer": "Dory",
       "difficulty": 1,
@@ -101,7 +101,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Elsa.webp",
+      "file": "data/assets/images/Elsa.webp",
       "question": "Qui est-ce ?",
       "answer": "Elsa",
       "difficulty": 1,
@@ -109,7 +109,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Flash_McQueen.webp",
+      "file": "data/assets/images/Flash_McQueen.webp",
       "question": "Qui est-ce ?",
       "answer": "Flash Mcqueen",
       "difficulty": 1,
@@ -117,7 +117,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Hulk.webp",
+      "file": "data/assets/images/Hulk.webp",
       "question": "Qui est-ce ?",
       "answer": "Hulk",
       "difficulty": 1,
@@ -125,7 +125,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Iron_Man.webp",
+      "file": "data/assets/images/Iron_Man.webp",
       "question": "Qui est-ce ?",
       "answer": "Iron Man",
       "difficulty": 1,
@@ -133,7 +133,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Joie.webp",
+      "file": "data/assets/images/Joie.webp",
       "question": "Qui est-ce ?",
       "answer": "Joie",
       "difficulty": 1,
@@ -141,7 +141,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Loki.webp",
+      "file": "data/assets/images/Loki.webp",
       "question": "Qui est-ce ?",
       "answer": "Loki",
       "difficulty": 1,
@@ -149,7 +149,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Mickey_Mouse.webp",
+      "file": "data/assets/images/Mickey_Mouse.webp",
       "question": "Qui est-ce ?",
       "answer": "Mickey Mouse",
       "difficulty": 1,
@@ -157,7 +157,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Minnie_Mouse.webp",
+      "file": "data/assets/images/Minnie_Mouse.webp",
       "question": "Qui est-ce ?",
       "answer": "Minnie Mouse",
       "difficulty": 1,
@@ -165,7 +165,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Nemo.webp",
+      "file": "data/assets/images/Nemo.webp",
       "question": "Qui est-ce ?",
       "answer": "Nemo",
       "difficulty": 1,
@@ -173,7 +173,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Pluto.webp",
+      "file": "data/assets/images/Pluto.webp",
       "question": "Qui est-ce ?",
       "answer": "Pluto",
       "difficulty": 1,
@@ -181,7 +181,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Pumbaa.webp",
+      "file": "data/assets/images/Pumbaa.webp",
       "question": "Qui est-ce ?",
       "answer": "Pumbaa",
       "difficulty": 1,
@@ -189,7 +189,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Simba.webp",
+      "file": "data/assets/images/Simba.webp",
       "question": "Qui est-ce ?",
       "answer": "Simba",
       "difficulty": 1,
@@ -197,7 +197,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Spider-Man.webp",
+      "file": "data/assets/images/Spider-Man.webp",
       "question": "Qui est-ce ?",
       "answer": "Spider Man",
       "difficulty": 1,
@@ -205,7 +205,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Thanos.webp",
+      "file": "data/assets/images/Thanos.webp",
       "question": "Qui est-ce ?",
       "answer": "Thanos",
       "difficulty": 1,
@@ -213,7 +213,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Thor.webp",
+      "file": "data/assets/images/Thor.webp",
       "question": "Qui est-ce ?",
       "answer": "Thor",
       "difficulty": 1,
@@ -221,7 +221,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Timon.webp",
+      "file": "data/assets/images/Timon.webp",
       "question": "Qui est-ce ?",
       "answer": "Timon",
       "difficulty": 1,
@@ -229,7 +229,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/1/images/Woody.webp",
+      "file": "data/assets/images/Woody.webp",
       "question": "Qui est-ce ?",
       "answer": "Woody",
       "difficulty": 1,
@@ -573,7 +573,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Aladdin.webp",
+      "file": "data/assets/images/Aladdin.webp",
       "question": "Qui est-ce ?",
       "answer": "Aladdin",
       "difficulty": 2,
@@ -581,7 +581,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Ant-Man.webp",
+      "file": "data/assets/images/Ant-Man.webp",
       "question": "Qui est-ce ?",
       "answer": "Ant Man",
       "difficulty": 2,
@@ -589,7 +589,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Blanche_Neige.webp",
+      "file": "data/assets/images/Blanche_Neige.webp",
       "question": "Qui est-ce ?",
       "answer": "Blanche Neige",
       "difficulty": 2,
@@ -597,7 +597,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Captain_Marvel.webp",
+      "file": "data/assets/images/Captain_Marvel.webp",
       "question": "Qui est-ce ?",
       "answer": "Captain Marvel",
       "difficulty": 2,
@@ -605,7 +605,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Carl_Fredricksen.webp",
+      "file": "data/assets/images/Carl_Fredricksen.webp",
       "question": "Qui est-ce ?",
       "answer": "Carl Fredricksen",
       "difficulty": 2,
@@ -613,7 +613,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Clochette.webp",
+      "file": "data/assets/images/Clochette.webp",
       "question": "Qui est-ce ?",
       "answer": "Clochette",
       "difficulty": 2,
@@ -621,7 +621,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Gamora.webp",
+      "file": "data/assets/images/Gamora.webp",
       "question": "Qui est-ce ?",
       "answer": "Gamora",
       "difficulty": 2,
@@ -629,7 +629,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Genie.webp",
+      "file": "data/assets/images/Genie.webp",
       "question": "Qui est-ce ?",
       "answer": "Genie",
       "difficulty": 2,
@@ -637,7 +637,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Groot.webp",
+      "file": "data/assets/images/Groot.webp",
       "question": "Qui est-ce ?",
       "answer": "Groot",
       "difficulty": 2,
@@ -645,7 +645,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Jasmine.webp",
+      "file": "data/assets/images/Jasmine.webp",
       "question": "Qui est-ce ?",
       "answer": "Jasmine",
       "difficulty": 2,
@@ -653,7 +653,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Jessie.webp",
+      "file": "data/assets/images/Jessie.webp",
       "question": "Qui est-ce ?",
       "answer": "Jessie",
       "difficulty": 2,
@@ -661,7 +661,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/La_Guepe.webp",
+      "file": "data/assets/images/La_Guepe.webp",
       "question": "Qui est-ce ?",
       "answer": "La Guepe",
       "difficulty": 2,
@@ -669,7 +669,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Miguel_Rivera.webp",
+      "file": "data/assets/images/Miguel_Rivera.webp",
       "question": "Qui est-ce ?",
       "answer": "Miguel Rivera",
       "difficulty": 2,
@@ -677,7 +677,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Mike_Wazowski.webp",
+      "file": "data/assets/images/Mike_Wazowski.webp",
       "question": "Qui est-ce ?",
       "answer": "Mike Wazowski",
       "difficulty": 2,
@@ -685,7 +685,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Mulan.webp",
+      "file": "data/assets/images/Mulan.webp",
       "question": "Qui est-ce ?",
       "answer": "Mulan",
       "difficulty": 2,
@@ -693,7 +693,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Nick_Fury.webp",
+      "file": "data/assets/images/Nick_Fury.webp",
       "question": "Qui est-ce ?",
       "answer": "Nick Fury",
       "difficulty": 2,
@@ -701,7 +701,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Oeil_de_Faucon.webp",
+      "file": "data/assets/images/Oeil_de_Faucon.webp",
       "question": "Qui est-ce ?",
       "answer": "Oeil De Faucon",
       "difficulty": 2,
@@ -709,7 +709,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Raiponce.webp",
+      "file": "data/assets/images/Raiponce.webp",
       "question": "Qui est-ce ?",
       "answer": "Raiponce",
       "difficulty": 2,
@@ -717,7 +717,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Remy.webp",
+      "file": "data/assets/images/Remy.webp",
       "question": "Qui est-ce ?",
       "answer": "Remy",
       "difficulty": 2,
@@ -725,7 +725,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Russell.webp",
+      "file": "data/assets/images/Russell.webp",
       "question": "Qui est-ce ?",
       "answer": "Russell",
       "difficulty": 2,
@@ -733,7 +733,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Scarlet_Witch.webp",
+      "file": "data/assets/images/Scarlet_Witch.webp",
       "question": "Qui est-ce ?",
       "answer": "Scarlet Witch",
       "difficulty": 2,
@@ -741,7 +741,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Star-Lord.webp",
+      "file": "data/assets/images/Star-Lord.webp",
       "question": "Qui est-ce ?",
       "answer": "Star Lord",
       "difficulty": 2,
@@ -749,7 +749,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Stitch.webp",
+      "file": "data/assets/images/Stitch.webp",
       "question": "Qui est-ce ?",
       "answer": "Stitch",
       "difficulty": 2,
@@ -757,7 +757,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Tristesse.jpg",
+      "file": "data/assets/images/Tristesse.jpg",
       "question": "Qui est-ce ?",
       "answer": "Tristesse",
       "difficulty": 2,
@@ -765,7 +765,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Violette_Parr.webp",
+      "file": "data/assets/images/Violette_Parr.webp",
       "question": "Qui est-ce ?",
       "answer": "Violette Parr",
       "difficulty": 2,
@@ -773,7 +773,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Vision.webp",
+      "file": "data/assets/images/Vision.webp",
       "question": "Qui est-ce ?",
       "answer": "Vision",
       "difficulty": 2,
@@ -781,7 +781,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/2/images/Winnie_l_Ourson.webp",
+      "file": "data/assets/images/Winnie_l_Ourson.webp",
       "question": "Qui est-ce ?",
       "answer": "Winnie L Ourson",
       "difficulty": 2,
@@ -978,7 +978,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Bing_Bong.webp",
+      "file": "data/assets/images/Bing_Bong.webp",
       "question": "Qui est-ce ?",
       "answer": "Bing Bong",
       "difficulty": 3,
@@ -986,7 +986,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Boo.webp",
+      "file": "data/assets/images/Boo.webp",
       "question": "Qui est-ce ?",
       "answer": "Boo",
       "difficulty": 3,
@@ -994,7 +994,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Capitaine_Crochet.webp",
+      "file": "data/assets/images/Capitaine_Crochet.webp",
       "question": "Qui est-ce ?",
       "answer": "Capitaine Crochet",
       "difficulty": 3,
@@ -1002,7 +1002,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Colere.jpg",
+      "file": "data/assets/images/Colere.jpg",
       "question": "Qui est-ce ?",
       "answer": "Colere",
       "difficulty": 3,
@@ -1010,7 +1010,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Degout.jpg",
+      "file": "data/assets/images/Degout.jpg",
       "question": "Qui est-ce ?",
       "answer": "Degout",
       "difficulty": 3,
@@ -1018,7 +1018,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Edna_Mode.webp",
+      "file": "data/assets/images/Edna_Mode.webp",
       "question": "Qui est-ce ?",
       "answer": "Edna Mode",
       "difficulty": 3,
@@ -1026,7 +1026,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Faucon.webp",
+      "file": "data/assets/images/Faucon.webp",
       "question": "Qui est-ce ?",
       "answer": "Faucon",
       "difficulty": 3,
@@ -1034,7 +1034,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Hades.webp",
+      "file": "data/assets/images/Hades.webp",
       "question": "Qui est-ce ?",
       "answer": "Hades",
       "difficulty": 3,
@@ -1042,7 +1042,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Jafar.webp",
+      "file": "data/assets/images/Jafar.webp",
       "question": "Qui est-ce ?",
       "answer": "Jafar",
       "difficulty": 3,
@@ -1050,7 +1050,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Malefique.webp",
+      "file": "data/assets/images/Malefique.webp",
       "question": "Qui est-ce ?",
       "answer": "Malefique",
       "difficulty": 3,
@@ -1058,7 +1058,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Merida.webp",
+      "file": "data/assets/images/Merida.webp",
       "question": "Qui est-ce ?",
       "answer": "Merida",
       "difficulty": 3,
@@ -1066,7 +1066,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Mufasa.webp",
+      "file": "data/assets/images/Mufasa.webp",
       "question": "Qui est-ce ?",
       "answer": "Mufasa",
       "difficulty": 3,
@@ -1074,7 +1074,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Nebula.webp",
+      "file": "data/assets/images/Nebula.webp",
       "question": "Qui est-ce ?",
       "answer": "Nebula",
       "difficulty": 3,
@@ -1082,7 +1082,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Peter_Pan.webp",
+      "file": "data/assets/images/Peter_Pan.webp",
       "question": "Qui est-ce ?",
       "answer": "Peter Pan",
       "difficulty": 3,
@@ -1090,7 +1090,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Peur.jpg",
+      "file": "data/assets/images/Peur.jpg",
       "question": "Qui est-ce ?",
       "answer": "Peur",
       "difficulty": 3,
@@ -1098,7 +1098,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Rocket_Raton_Laveur.webp",
+      "file": "data/assets/images/Rocket_Raton_Laveur.webp",
       "question": "Qui est-ce ?",
       "answer": "Rocket Raton Laveur",
       "difficulty": 3,
@@ -1106,7 +1106,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Roz.webp",
+      "file": "data/assets/images/Roz.webp",
       "question": "Qui est-ce ?",
       "answer": "Roz",
       "difficulty": 3,
@@ -1114,7 +1114,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Scar.webp",
+      "file": "data/assets/images/Scar.webp",
       "question": "Qui est-ce ?",
       "answer": "Scar",
       "difficulty": 3,
@@ -1122,7 +1122,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Soldat_de_l_Hiver.webp",
+      "file": "data/assets/images/Soldat_de_l_Hiver.webp",
       "question": "Qui est-ce ?",
       "answer": "Soldat De L Hiver",
       "difficulty": 3,
@@ -1130,7 +1130,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Tigrou.webp",
+      "file": "data/assets/images/Tigrou.webp",
       "question": "Qui est-ce ?",
       "answer": "Tigrou",
       "difficulty": 3,
@@ -1138,7 +1138,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Tilt.webp",
+      "file": "data/assets/images/Tilt.webp",
       "question": "Qui est-ce ?",
       "answer": "Tilt",
       "difficulty": 3,
@@ -1146,7 +1146,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Ursula.webp",
+      "file": "data/assets/images/Ursula.webp",
       "question": "Qui est-ce ?",
       "answer": "Ursula",
       "difficulty": 3,
@@ -1154,7 +1154,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/War_Machine.webp",
+      "file": "data/assets/images/War_Machine.webp",
       "question": "Qui est-ce ?",
       "answer": "War Machine",
       "difficulty": 3,
@@ -1162,7 +1162,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/3/images/Yondu.webp",
+      "file": "data/assets/images/Yondu.webp",
       "question": "Qui est-ce ?",
       "answer": "Yondu",
       "difficulty": 3,
@@ -1310,7 +1310,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Anton_Ego.webp",
+      "file": "data/assets/images/Anton_Ego.webp",
       "question": "Qui est-ce ?",
       "answer": "Anton Ego",
       "difficulty": 4,
@@ -1318,7 +1318,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Aurore.webp",
+      "file": "data/assets/images/Aurore.webp",
       "question": "Qui est-ce ?",
       "answer": "Aurore",
       "difficulty": 4,
@@ -1326,7 +1326,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Crane_Rouge.webp",
+      "file": "data/assets/images/Crane_Rouge.webp",
       "question": "Qui est-ce ?",
       "answer": "Crane Rouge",
       "difficulty": 4,
@@ -1334,7 +1334,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Doug.webp",
+      "file": "data/assets/images/Doug.webp",
       "question": "Qui est-ce ?",
       "answer": "Doug",
       "difficulty": 4,
@@ -1342,7 +1342,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/EVE.webp",
+      "file": "data/assets/images/EVE.webp",
       "question": "Qui est-ce ?",
       "answer": "Eve",
       "difficulty": 4,
@@ -1350,7 +1350,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Hank.webp",
+      "file": "data/assets/images/Hank.webp",
       "question": "Qui est-ce ?",
       "answer": "Hank",
       "difficulty": 4,
@@ -1358,7 +1358,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Heimdall.webp",
+      "file": "data/assets/images/Heimdall.webp",
       "question": "Qui est-ce ?",
       "answer": "Heimdall",
       "difficulty": 4,
@@ -1366,7 +1366,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Joe_Gardner.webp",
+      "file": "data/assets/images/Joe_Gardner.webp",
       "question": "Qui est-ce ?",
       "answer": "Joe Gardner",
       "difficulty": 4,
@@ -1374,7 +1374,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Korg.webp",
+      "file": "data/assets/images/Korg.webp",
       "question": "Qui est-ce ?",
       "answer": "Korg",
       "difficulty": 4,
@@ -1382,7 +1382,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Marlin.webp",
+      "file": "data/assets/images/Marlin.webp",
       "question": "Qui est-ce ?",
       "answer": "Marlin",
       "difficulty": 4,
@@ -1390,7 +1390,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Megara.webp",
+      "file": "data/assets/images/Megara.webp",
       "question": "Qui est-ce ?",
       "answer": "Megara",
       "difficulty": 4,
@@ -1398,7 +1398,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Merida.webp",
+      "file": "data/assets/images/Merida.webp",
       "question": "Qui est-ce ?",
       "answer": "Merida",
       "difficulty": 4,
@@ -1406,7 +1406,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Pepper_Potts.webp",
+      "file": "data/assets/images/Pepper_Potts.webp",
       "question": "Qui est-ce ?",
       "answer": "Pepper Potts",
       "difficulty": 4,
@@ -1414,7 +1414,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Pocahontas.webp",
+      "file": "data/assets/images/Pocahontas.webp",
       "question": "Qui est-ce ?",
       "answer": "Pocahontas",
       "difficulty": 4,
@@ -1422,7 +1422,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Shang-Chi.webp",
+      "file": "data/assets/images/Shang-Chi.webp",
       "question": "Qui est-ce ?",
       "answer": "Shang Chi",
       "difficulty": 4,
@@ -1430,7 +1430,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Tiana.webp",
+      "file": "data/assets/images/Tiana.webp",
       "question": "Qui est-ce ?",
       "answer": "Tiana",
       "difficulty": 4,
@@ -1438,7 +1438,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Ultron.webp",
+      "file": "data/assets/images/Ultron.webp",
       "question": "Qui est-ce ?",
       "answer": "Ultron",
       "difficulty": 4,
@@ -1446,7 +1446,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Vaiana.webp",
+      "file": "data/assets/images/Vaiana.webp",
       "question": "Qui est-ce ?",
       "answer": "Vaiana",
       "difficulty": 4,
@@ -1454,7 +1454,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Valkyrie.webp",
+      "file": "data/assets/images/Valkyrie.webp",
       "question": "Qui est-ce ?",
       "answer": "Valkyrie",
       "difficulty": 4,
@@ -1462,7 +1462,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/4/images/Wong.webp",
+      "file": "data/assets/images/Wong.webp",
       "question": "Qui est-ce ?",
       "answer": "Wong",
       "difficulty": 4,
@@ -1505,7 +1505,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Alberto_Scorfano.webp",
+      "file": "data/assets/images/Alberto_Scorfano.webp",
       "question": "Qui est-ce ?",
       "answer": "Alberto Scorfano",
       "difficulty": 5,
@@ -1513,7 +1513,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Alfredo_Linguini.jpg",
+      "file": "data/assets/images/Alfredo_Linguini.jpg",
       "question": "Qui est-ce ?",
       "answer": "Alfredo Linguini",
       "difficulty": 5,
@@ -1521,7 +1521,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Alice.webp",
+      "file": "data/assets/images/Alice.webp",
       "question": "Qui est-ce ?",
       "answer": "Alice",
       "difficulty": 5,
@@ -1529,7 +1529,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Arlo.webp",
+      "file": "data/assets/images/Arlo.webp",
       "question": "Qui est-ce ?",
       "answer": "Arlo",
       "difficulty": 5,
@@ -1537,7 +1537,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Balthazar_Picsou.webp",
+      "file": "data/assets/images/Balthazar_Picsou.webp",
       "question": "Qui est-ce ?",
       "answer": "Balthazar Picsou",
       "difficulty": 5,
@@ -1545,7 +1545,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Bouffon_Vert.webp",
+      "file": "data/assets/images/Bouffon_Vert.webp",
       "question": "Qui est-ce ?",
       "answer": "Bouffon Vert",
       "difficulty": 5,
@@ -1553,7 +1553,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Daisy_Duck.webp",
+      "file": "data/assets/images/Daisy_Duck.webp",
       "question": "Qui est-ce ?",
       "answer": "Daisy Duck",
       "difficulty": 5,
@@ -1561,7 +1561,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Docteur_Octopus.webp",
+      "file": "data/assets/images/Docteur_Octopus.webp",
       "question": "Qui est-ce ?",
       "answer": "Docteur Octopus",
       "difficulty": 5,
@@ -1569,7 +1569,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Giulia_Marcovaldo.webp",
+      "file": "data/assets/images/Giulia_Marcovaldo.webp",
       "question": "Qui est-ce ?",
       "answer": "Giulia Marcovaldo",
       "difficulty": 5,
@@ -1577,7 +1577,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Hela.webp",
+      "file": "data/assets/images/Hela.webp",
       "question": "Qui est-ce ?",
       "answer": "Hela",
       "difficulty": 5,
@@ -1585,7 +1585,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Jiminy_Cricket.webp",
+      "file": "data/assets/images/Jiminy_Cricket.webp",
       "question": "Qui est-ce ?",
       "answer": "Jiminy Cricket",
       "difficulty": 5,
@@ -1593,7 +1593,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Luca_Paguro.webp",
+      "file": "data/assets/images/Luca_Paguro.webp",
       "question": "Qui est-ce ?",
       "answer": "Luca Paguro",
       "difficulty": 5,
@@ -1601,7 +1601,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Mantis.webp",
+      "file": "data/assets/images/Mantis.webp",
       "question": "Qui est-ce ?",
       "answer": "Mantis",
       "difficulty": 5,
@@ -1609,7 +1609,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Maria_Hill.webp",
+      "file": "data/assets/images/Maria_Hill.webp",
       "question": "Qui est-ce ?",
       "answer": "Maria Hill",
       "difficulty": 5,
@@ -1617,7 +1617,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Mysterio.webp",
+      "file": "data/assets/images/Mysterio.webp",
       "question": "Qui est-ce ?",
       "answer": "Mysterio",
       "difficulty": 5,
@@ -1625,7 +1625,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Panpan.webp",
+      "file": "data/assets/images/Panpan.webp",
       "question": "Qui est-ce ?",
       "answer": "Panpan",
       "difficulty": 5,
@@ -1633,7 +1633,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Pinocchio.webp",
+      "file": "data/assets/images/Pinocchio.webp",
       "question": "Qui est-ce ?",
       "answer": "Pinocchio",
       "difficulty": 5,
@@ -1641,7 +1641,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Quicksilver.webp",
+      "file": "data/assets/images/Quicksilver.webp",
       "question": "Qui est-ce ?",
       "answer": "Quicksilver",
       "difficulty": 5,
@@ -1649,7 +1649,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/disney/5/images/Reine_de_Coeur.webp",
+      "file": "data/assets/images/Reine_de_Coeur.webp",
       "question": "Qui est-ce ?",
       "answer": "Reine De Coeur",
       "difficulty": 5,

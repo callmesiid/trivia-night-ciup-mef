@@ -5,7 +5,7 @@
   "questions": [
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Albus Dumbledore.png",
+      "file": "data/assets/images/Albus Dumbledore.png",
       "question": "Qui est-ce ?",
       "answer": "Albus Dumbledore",
       "difficulty": 1,
@@ -13,7 +13,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Draco Malfoy.png",
+      "file": "data/assets/images/Draco Malfoy.png",
       "question": "Qui est-ce ?",
       "answer": "Draco Malfoy",
       "difficulty": 1,
@@ -21,7 +21,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Ginny Weasley.png",
+      "file": "data/assets/images/Ginny Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Ginny Weasley",
       "difficulty": 1,
@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Harry Potter.jpg",
+      "file": "data/assets/images/Harry Potter.jpg",
       "question": "Qui est-ce ?",
       "answer": "Harry Potter",
       "difficulty": 1,
@@ -37,7 +37,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Hermione Granger.jpg",
+      "file": "data/assets/images/Hermione Granger.jpg",
       "question": "Qui est-ce ?",
       "answer": "Hermione Granger",
       "difficulty": 1,
@@ -45,7 +45,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Lord Voldemort Tom Riddle.png",
+      "file": "data/assets/images/Lord Voldemort Tom Riddle.png",
       "question": "Qui est-ce ?",
       "answer": "Lord Voldemort Tom Riddle",
       "difficulty": 1,
@@ -53,7 +53,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Ron Weasley.png",
+      "file": "data/assets/images/Ron Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Ron Weasley",
       "difficulty": 1,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Rubeus Hagrid.png",
+      "file": "data/assets/images/Rubeus Hagrid.png",
       "question": "Qui est-ce ?",
       "answer": "Rubeus Hagrid",
       "difficulty": 1,
@@ -69,7 +69,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Severus Snape.png",
+      "file": "data/assets/images/Severus Snape.png",
       "question": "Qui est-ce ?",
       "answer": "Severus Snape",
       "difficulty": 1,
@@ -77,7 +77,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/1/images/Sirius Black.png",
+      "file": "data/assets/images/Sirius Black.png",
       "question": "Qui est-ce ?",
       "answer": "Sirius Black",
       "difficulty": 1,
@@ -379,7 +379,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Argus Filch.png",
+      "file": "data/assets/images/Argus Filch.png",
       "question": "Qui est-ce ?",
       "answer": "Argus Filch",
       "difficulty": 2,
@@ -387,7 +387,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Arthur Weasley.png",
+      "file": "data/assets/images/Arthur Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Arthur Weasley",
       "difficulty": 2,
@@ -395,7 +395,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Dobby.png",
+      "file": "data/assets/images/Dobby.png",
       "question": "Qui est-ce ?",
       "answer": "Dobby",
       "difficulty": 2,
@@ -403,7 +403,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Dudley Dursley.png",
+      "file": "data/assets/images/Dudley Dursley.png",
       "question": "Qui est-ce ?",
       "answer": "Dudley Dursley",
       "difficulty": 2,
@@ -411,7 +411,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Gilderoy Lockhart.png",
+      "file": "data/assets/images/Gilderoy Lockhart.png",
       "question": "Qui est-ce ?",
       "answer": "Gilderoy Lockhart",
       "difficulty": 2,
@@ -419,7 +419,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Hedwig.png",
+      "file": "data/assets/images/Hedwig.png",
       "question": "Qui est-ce ?",
       "answer": "Hedwig",
       "difficulty": 2,
@@ -427,7 +427,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Molly Weasley.png",
+      "file": "data/assets/images/Molly Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Molly Weasley",
       "difficulty": 2,
@@ -435,7 +435,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Neville Longbottom.png",
+      "file": "data/assets/images/Neville Longbottom.png",
       "question": "Qui est-ce ?",
       "answer": "Neville Longbottom",
       "difficulty": 2,
@@ -443,7 +443,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Petunia Dursley.png",
+      "file": "data/assets/images/Petunia Dursley.png",
       "question": "Qui est-ce ?",
       "answer": "Petunia Dursley",
       "difficulty": 2,
@@ -451,7 +451,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/2/images/Vernon Dursley.png",
+      "file": "data/assets/images/Vernon Dursley.png",
       "question": "Qui est-ce ?",
       "answer": "Vernon Dursley",
       "difficulty": 2,
@@ -816,7 +816,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Cedric Diggory.png",
+      "file": "data/assets/images/Cedric Diggory.png",
       "question": "Qui est-ce ?",
       "answer": "Cedric Diggory",
       "difficulty": 3,
@@ -824,7 +824,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Cho Chang.png",
+      "file": "data/assets/images/Cho Chang.png",
       "question": "Qui est-ce ?",
       "answer": "Cho Chang",
       "difficulty": 3,
@@ -832,7 +832,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Colin Creevey.png",
+      "file": "data/assets/images/Colin Creevey.png",
       "question": "Qui est-ce ?",
       "answer": "Colin Creevey",
       "difficulty": 3,
@@ -840,7 +840,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Fred & George Weasley .png",
+      "file": "data/assets/images/Fred & George Weasley .png",
       "question": "Qui est-ce ?",
       "answer": "Fred & George Weasley ",
       "difficulty": 3,
@@ -848,7 +848,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Lucius Malfoy.png",
+      "file": "data/assets/images/Lucius Malfoy.png",
       "question": "Qui est-ce ?",
       "answer": "Lucius Malfoy",
       "difficulty": 3,
@@ -856,7 +856,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Luna Lovegood.png",
+      "file": "data/assets/images/Luna Lovegood.png",
       "question": "Qui est-ce ?",
       "answer": "Luna Lovegood",
       "difficulty": 3,
@@ -864,7 +864,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Narcissa Malfoy.png",
+      "file": "data/assets/images/Narcissa Malfoy.png",
       "question": "Qui est-ce ?",
       "answer": "Narcissa Malfoy",
       "difficulty": 3,
@@ -872,7 +872,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/3/images/Seamus Finnigan.png",
+      "file": "data/assets/images/Seamus Finnigan.png",
       "question": "Qui est-ce ?",
       "answer": "Seamus Finnigan",
       "difficulty": 3,
@@ -1195,7 +1195,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Alastor Mad Eye Moody.png",
+      "file": "data/assets/images/Alastor Mad Eye Moody.png",
       "question": "Qui est-ce ?",
       "answer": "Alastor Mad Eye Moody",
       "difficulty": 4,
@@ -1203,7 +1203,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Barty Crouch Jr.png",
+      "file": "data/assets/images/Barty Crouch Jr.png",
       "question": "Qui est-ce ?",
       "answer": "Barty Crouch Jr",
       "difficulty": 4,
@@ -1211,7 +1211,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Bellatrix Lestrange.png",
+      "file": "data/assets/images/Bellatrix Lestrange.png",
       "question": "Qui est-ce ?",
       "answer": "Bellatrix Lestrange",
       "difficulty": 4,
@@ -1219,7 +1219,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Bill Weasley.png",
+      "file": "data/assets/images/Bill Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Bill Weasley",
       "difficulty": 4,
@@ -1227,7 +1227,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Buckbeak.png",
+      "file": "data/assets/images/Buckbeak.png",
       "question": "Qui est-ce ?",
       "answer": "Buckbeak",
       "difficulty": 4,
@@ -1235,7 +1235,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Dean Thomas.png",
+      "file": "data/assets/images/Dean Thomas.png",
       "question": "Qui est-ce ?",
       "answer": "Dean Thomas",
       "difficulty": 4,
@@ -1243,7 +1243,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Dolores Umbridge.png",
+      "file": "data/assets/images/Dolores Umbridge.png",
       "question": "Qui est-ce ?",
       "answer": "Dolores Umbridge",
       "difficulty": 4,
@@ -1251,7 +1251,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Fang.jpg",
+      "file": "data/assets/images/Fang.jpg",
       "question": "Qui est-ce ?",
       "answer": "Fang",
       "difficulty": 4,
@@ -1259,7 +1259,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Filius Flitwick.png",
+      "file": "data/assets/images/Filius Flitwick.png",
       "question": "Qui est-ce ?",
       "answer": "Filius Flitwick",
       "difficulty": 4,
@@ -1267,7 +1267,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Fleur Delacour.png",
+      "file": "data/assets/images/Fleur Delacour.png",
       "question": "Qui est-ce ?",
       "answer": "Fleur Delacour",
       "difficulty": 4,
@@ -1275,7 +1275,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Fluffy.jpg",
+      "file": "data/assets/images/Fluffy.jpg",
       "question": "Qui est-ce ?",
       "answer": "Fluffy",
       "difficulty": 4,
@@ -1283,7 +1283,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Horace Slughorn.png",
+      "file": "data/assets/images/Horace Slughorn.png",
       "question": "Qui est-ce ?",
       "answer": "Horace Slughorn",
       "difficulty": 4,
@@ -1291,7 +1291,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Igor Karkaroff.png",
+      "file": "data/assets/images/Igor Karkaroff.png",
       "question": "Qui est-ce ?",
       "answer": "Igor Karkaroff",
       "difficulty": 4,
@@ -1299,7 +1299,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Moaning Myrtle.png",
+      "file": "data/assets/images/Moaning Myrtle.png",
       "question": "Qui est-ce ?",
       "answer": "Moaning Myrtle",
       "difficulty": 4,
@@ -1307,7 +1307,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Nearly Headless Nick.png",
+      "file": "data/assets/images/Nearly Headless Nick.png",
       "question": "Qui est-ce ?",
       "answer": "Nearly Headless Nick",
       "difficulty": 4,
@@ -1315,7 +1315,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Nymphadora Tonks.jpg",
+      "file": "data/assets/images/Nymphadora Tonks.jpg",
       "question": "Qui est-ce ?",
       "answer": "Nymphadora Tonks",
       "difficulty": 4,
@@ -1323,7 +1323,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Parvati Patil.png",
+      "file": "data/assets/images/Parvati Patil.png",
       "question": "Qui est-ce ?",
       "answer": "Parvati Patil",
       "difficulty": 4,
@@ -1331,7 +1331,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Percy Weasley.png",
+      "file": "data/assets/images/Percy Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Percy Weasley",
       "difficulty": 4,
@@ -1339,7 +1339,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Peter Pettigrew.png",
+      "file": "data/assets/images/Peter Pettigrew.png",
       "question": "Qui est-ce ?",
       "answer": "Peter Pettigrew",
       "difficulty": 4,
@@ -1347,7 +1347,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Quirinus Quirrell.png",
+      "file": "data/assets/images/Quirinus Quirrell.png",
       "question": "Qui est-ce ?",
       "answer": "Quirinus Quirrell",
       "difficulty": 4,
@@ -1355,7 +1355,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/4/images/Remus Lupin.png",
+      "file": "data/assets/images/Remus Lupin.png",
       "question": "Qui est-ce ?",
       "answer": "Remus Lupin",
       "difficulty": 4,
@@ -1496,7 +1496,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Aberforth Dumbledore.jpg",
+      "file": "data/assets/images/Aberforth Dumbledore.jpg",
       "question": "Qui est-ce ?",
       "answer": "Aberforth Dumbledore",
       "difficulty": 5,
@@ -1504,7 +1504,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Arabella Figg.png",
+      "file": "data/assets/images/Arabella Figg.png",
       "question": "Qui est-ce ?",
       "answer": "Arabella Figg",
       "difficulty": 5,
@@ -1512,7 +1512,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Bathilda Bagshot.png",
+      "file": "data/assets/images/Bathilda Bagshot.png",
       "question": "Qui est-ce ?",
       "answer": "Bathilda Bagshot",
       "difficulty": 5,
@@ -1520,7 +1520,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Bunty Broadacre.png",
+      "file": "data/assets/images/Bunty Broadacre.png",
       "question": "Qui est-ce ?",
       "answer": "Bunty Broadacre",
       "difficulty": 5,
@@ -1528,7 +1528,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Cornelius Fudge.png",
+      "file": "data/assets/images/Cornelius Fudge.png",
       "question": "Qui est-ce ?",
       "answer": "Cornelius Fudge",
       "difficulty": 5,
@@ -1536,7 +1536,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Credence.png",
+      "file": "data/assets/images/Credence.png",
       "question": "Qui est-ce ?",
       "answer": "Credence",
       "difficulty": 5,
@@ -1544,7 +1544,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Fenrir Greyback.png",
+      "file": "data/assets/images/Fenrir Greyback.png",
       "question": "Qui est-ce ?",
       "answer": "Fenrir Greyback",
       "difficulty": 5,
@@ -1552,7 +1552,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Fred Weasley.png",
+      "file": "data/assets/images/Fred Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Fred Weasley",
       "difficulty": 5,
@@ -1560,7 +1560,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Garrick Ollivander.png",
+      "file": "data/assets/images/Garrick Ollivander.png",
       "question": "Qui est-ce ?",
       "answer": "Garrick Ollivander",
       "difficulty": 5,
@@ -1568,7 +1568,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Gellert Grindelwald.png",
+      "file": "data/assets/images/Gellert Grindelwald.png",
       "question": "Qui est-ce ?",
       "answer": "Gellert Grindelwald",
       "difficulty": 5,
@@ -1576,7 +1576,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/George Weasley.png",
+      "file": "data/assets/images/George Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "George Weasley",
       "difficulty": 5,
@@ -1584,7 +1584,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Gregory Goyle.png",
+      "file": "data/assets/images/Gregory Goyle.png",
       "question": "Qui est-ce ?",
       "answer": "Gregory Goyle",
       "difficulty": 5,
@@ -1592,7 +1592,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Griphook.jpg",
+      "file": "data/assets/images/Griphook.jpg",
       "question": "Qui est-ce ?",
       "answer": "Griphook",
       "difficulty": 5,
@@ -1600,7 +1600,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Helga Hufflepuff.png",
+      "file": "data/assets/images/Helga Hufflepuff.png",
       "question": "Qui est-ce ?",
       "answer": "Helga Hufflepuff",
       "difficulty": 5,
@@ -1608,7 +1608,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Jacob Kowalski.png",
+      "file": "data/assets/images/Jacob Kowalski.png",
       "question": "Qui est-ce ?",
       "answer": "Jacob Kowalski",
       "difficulty": 5,
@@ -1616,7 +1616,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/James Potter.png",
+      "file": "data/assets/images/James Potter.png",
       "question": "Qui est-ce ?",
       "answer": "James Potter",
       "difficulty": 5,
@@ -1624,7 +1624,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Kingsley Shacklebolt.png",
+      "file": "data/assets/images/Kingsley Shacklebolt.png",
       "question": "Qui est-ce ?",
       "answer": "Kingsley Shacklebolt",
       "difficulty": 5,
@@ -1632,7 +1632,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Lavender Brown.png",
+      "file": "data/assets/images/Lavender Brown.png",
       "question": "Qui est-ce ?",
       "answer": "Lavender Brown",
       "difficulty": 5,
@@ -1640,7 +1640,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Marge Dursley.jpg",
+      "file": "data/assets/images/Marge Dursley.jpg",
       "question": "Qui est-ce ?",
       "answer": "Marge Dursley",
       "difficulty": 5,
@@ -1648,7 +1648,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Minerva Mcgonagall.png",
+      "file": "data/assets/images/Minerva Mcgonagall.png",
       "question": "Qui est-ce ?",
       "answer": "Minerva Mcgonagall",
       "difficulty": 5,
@@ -1656,7 +1656,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Mundungus Fletcher.jpg",
+      "file": "data/assets/images/Mundungus Fletcher.jpg",
       "question": "Qui est-ce ?",
       "answer": "Mundungus Fletcher",
       "difficulty": 5,
@@ -1664,7 +1664,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Nagini.jpg",
+      "file": "data/assets/images/Nagini.jpg",
       "question": "Qui est-ce ?",
       "answer": "Nagini",
       "difficulty": 5,
@@ -1672,7 +1672,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Newt Scamander.png",
+      "file": "data/assets/images/Newt Scamander.png",
       "question": "Qui est-ce ?",
       "answer": "Newt Scamander",
       "difficulty": 5,
@@ -1680,7 +1680,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Nicolas Flamel.png",
+      "file": "data/assets/images/Nicolas Flamel.png",
       "question": "Qui est-ce ?",
       "answer": "Nicolas Flamel",
       "difficulty": 5,
@@ -1688,7 +1688,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Norbert.jpg",
+      "file": "data/assets/images/Norbert.jpg",
       "question": "Qui est-ce ?",
       "answer": "Norbert",
       "difficulty": 5,
@@ -1696,7 +1696,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Oliver Wood.png",
+      "file": "data/assets/images/Oliver Wood.png",
       "question": "Qui est-ce ?",
       "answer": "Oliver Wood",
       "difficulty": 5,
@@ -1704,7 +1704,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Olympe Maxime.png",
+      "file": "data/assets/images/Olympe Maxime.png",
       "question": "Qui est-ce ?",
       "answer": "Olympe Maxime",
       "difficulty": 5,
@@ -1712,7 +1712,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Padma Patil.jpg",
+      "file": "data/assets/images/Padma Patil.jpg",
       "question": "Qui est-ce ?",
       "answer": "Padma Patil",
       "difficulty": 5,
@@ -1720,7 +1720,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Peeves.png",
+      "file": "data/assets/images/Peeves.png",
       "question": "Qui est-ce ?",
       "answer": "Peeves",
       "difficulty": 5,
@@ -1728,7 +1728,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Pomona Sprout.png",
+      "file": "data/assets/images/Pomona Sprout.png",
       "question": "Qui est-ce ?",
       "answer": "Pomona Sprout",
       "difficulty": 5,
@@ -1736,7 +1736,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Poppy Pomfrey.png",
+      "file": "data/assets/images/Poppy Pomfrey.png",
       "question": "Qui est-ce ?",
       "answer": "Poppy Pomfrey",
       "difficulty": 5,
@@ -1744,7 +1744,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Queenie Goldstein.png",
+      "file": "data/assets/images/Queenie Goldstein.png",
       "question": "Qui est-ce ?",
       "answer": "Queenie Goldstein",
       "difficulty": 5,
@@ -1752,7 +1752,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Rita Skeeter.png",
+      "file": "data/assets/images/Rita Skeeter.png",
       "question": "Qui est-ce ?",
       "answer": "Rita Skeeter",
       "difficulty": 5,
@@ -1760,7 +1760,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Rolanda Hooch.png",
+      "file": "data/assets/images/Rolanda Hooch.png",
       "question": "Qui est-ce ?",
       "answer": "Rolanda Hooch",
       "difficulty": 5,
@@ -1768,7 +1768,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Rowena Ravenclaw.png",
+      "file": "data/assets/images/Rowena Ravenclaw.png",
       "question": "Qui est-ce ?",
       "answer": "Rowena Ravenclaw",
       "difficulty": 5,
@@ -1776,7 +1776,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Rufus Scrimgeour.png",
+      "file": "data/assets/images/Rufus Scrimgeour.png",
       "question": "Qui est-ce ?",
       "answer": "Rufus Scrimgeour",
       "difficulty": 5,
@@ -1784,7 +1784,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Salazar Slytherin.png",
+      "file": "data/assets/images/Salazar Slytherin.png",
       "question": "Qui est-ce ?",
       "answer": "Salazar Slytherin",
       "difficulty": 5,
@@ -1792,7 +1792,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Scabbers.png",
+      "file": "data/assets/images/Scabbers.png",
       "question": "Qui est-ce ?",
       "answer": "Scabbers",
       "difficulty": 5,
@@ -1800,7 +1800,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Stan Shunpike.png",
+      "file": "data/assets/images/Stan Shunpike.png",
       "question": "Qui est-ce ?",
       "answer": "Stan Shunpike",
       "difficulty": 5,
@@ -1808,7 +1808,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Sybill Trelawney.png",
+      "file": "data/assets/images/Sybill Trelawney.png",
       "question": "Qui est-ce ?",
       "answer": "Sybill Trelawney",
       "difficulty": 5,
@@ -1816,7 +1816,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Teddy.png",
+      "file": "data/assets/images/Teddy.png",
       "question": "Qui est-ce ?",
       "answer": "Teddy",
       "difficulty": 5,
@@ -1824,7 +1824,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/The Bloody Baron.png",
+      "file": "data/assets/images/The Bloody Baron.png",
       "question": "Qui est-ce ?",
       "answer": "The Bloody Baron",
       "difficulty": 5,
@@ -1832,7 +1832,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/The Fat Friar.png",
+      "file": "data/assets/images/The Fat Friar.png",
       "question": "Qui est-ce ?",
       "answer": "The Fat Friar",
       "difficulty": 5,
@@ -1840,7 +1840,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/The Grey Lady.png",
+      "file": "data/assets/images/The Grey Lady.png",
       "question": "Qui est-ce ?",
       "answer": "The Grey Lady",
       "difficulty": 5,
@@ -1848,7 +1848,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Viktor Krum.png",
+      "file": "data/assets/images/Viktor Krum.png",
       "question": "Qui est-ce ?",
       "answer": "Viktor Krum",
       "difficulty": 5,
@@ -1856,7 +1856,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/harry_potter/5/images/Xenophilius Lovegood.jpg",
+      "file": "data/assets/images/Xenophilius Lovegood.jpg",
       "question": "Qui est-ce ?",
       "answer": "Xenophilius Lovegood",
       "difficulty": 5,

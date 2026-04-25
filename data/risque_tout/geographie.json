@@ -5,7 +5,7 @@
   "questions": [
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Algérie.png",
+      "file": "data/assets/images/Algérie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Algérie",
       "difficulty": 1,
@@ -13,7 +13,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Allemagne.png",
+      "file": "data/assets/images/Allemagne.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Allemagne",
       "difficulty": 1,
@@ -21,7 +21,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Argentine.png",
+      "file": "data/assets/images/Argentine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Argentine",
       "difficulty": 1,
@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Australie.png",
+      "file": "data/assets/images/Australie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Australie",
       "difficulty": 1,
@@ -37,7 +37,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Brésil.png",
+      "file": "data/assets/images/Brésil.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Brésil",
       "difficulty": 1,
@@ -45,7 +45,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Canada.png",
+      "file": "data/assets/images/Canada.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Canada",
       "difficulty": 1,
@@ -53,7 +53,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Chili.png",
+      "file": "data/assets/images/Chili.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Chili",
       "difficulty": 1,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Chine.png",
+      "file": "data/assets/images/Chine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Chine",
       "difficulty": 1,
@@ -69,7 +69,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Espagne.png",
+      "file": "data/assets/images/Espagne.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Espagne",
       "difficulty": 1,
@@ -77,7 +77,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Finlande.png",
+      "file": "data/assets/images/Finlande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Finlande",
       "difficulty": 1,
@@ -85,7 +85,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/France.png",
+      "file": "data/assets/images/France.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "France",
       "difficulty": 1,
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Grèce.png",
+      "file": "data/assets/images/Grèce.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Grèce",
       "difficulty": 1,
@@ -101,7 +101,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Inde.png",
+      "file": "data/assets/images/Inde.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Inde",
       "difficulty": 1,
@@ -109,7 +109,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Italie.png",
+      "file": "data/assets/images/Italie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Italie",
       "difficulty": 1,
@@ -117,7 +117,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Japon.png",
+      "file": "data/assets/images/Japon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Japon",
       "difficulty": 1,
@@ -125,7 +125,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Maroc.png",
+      "file": "data/assets/images/Maroc.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Maroc",
       "difficulty": 1,
@@ -133,7 +133,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Mexique.png",
+      "file": "data/assets/images/Mexique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mexique",
       "difficulty": 1,
@@ -141,7 +141,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Norvège.png",
+      "file": "data/assets/images/Norvège.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Norvège",
       "difficulty": 1,
@@ -149,7 +149,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Portugal.png",
+      "file": "data/assets/images/Portugal.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Portugal",
       "difficulty": 1,
@@ -157,7 +157,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Royaume-Uni.png",
+      "file": "data/assets/images/Royaume-Uni.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Royaume Uni",
       "difficulty": 1,
@@ -165,7 +165,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Russie.png",
+      "file": "data/assets/images/Russie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Russie",
       "difficulty": 1,
@@ -173,7 +173,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Suède.png",
+      "file": "data/assets/images/Suède.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Suède",
       "difficulty": 1,
@@ -181,7 +181,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Sénégal.png",
+      "file": "data/assets/images/Sénégal.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sénégal",
       "difficulty": 1,
@@ -189,7 +189,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Tunisie.png",
+      "file": "data/assets/images/Tunisie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tunisie",
       "difficulty": 1,
@@ -197,7 +197,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Turquie.png",
+      "file": "data/assets/images/Turquie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Turquie",
       "difficulty": 1,
@@ -205,7 +205,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Ukraine.png",
+      "file": "data/assets/images/Ukraine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ukraine",
       "difficulty": 1,
@@ -213,7 +213,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/Égypte.png",
+      "file": "data/assets/images/Égypte.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Égypte",
       "difficulty": 1,
@@ -221,7 +221,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/1/images/drapeau/États-Unis.png",
+      "file": "data/assets/images/États-Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "États Unis",
       "difficulty": 1,
@@ -418,7 +418,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Autriche.png",
+      "file": "data/assets/images/Autriche.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Autriche",
       "difficulty": 2,
@@ -426,7 +426,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Belgique.png",
+      "file": "data/assets/images/Belgique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Belgique",
       "difficulty": 2,
@@ -434,7 +434,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Bolivie.png",
+      "file": "data/assets/images/Bolivie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bolivie",
       "difficulty": 2,
@@ -442,7 +442,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Bulgarie.png",
+      "file": "data/assets/images/Bulgarie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bulgarie",
       "difficulty": 2,
@@ -450,7 +450,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Cameroun.png",
+      "file": "data/assets/images/Cameroun.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cameroun",
       "difficulty": 2,
@@ -458,7 +458,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Colombie.png",
+      "file": "data/assets/images/Colombie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Colombie",
       "difficulty": 2,
@@ -466,7 +466,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Danemark.png",
+      "file": "data/assets/images/Danemark.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Danemark",
       "difficulty": 2,
@@ -474,7 +474,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Ghana.png",
+      "file": "data/assets/images/Ghana.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ghana",
       "difficulty": 2,
@@ -482,7 +482,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Hongrie.png",
+      "file": "data/assets/images/Hongrie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Hongrie",
       "difficulty": 2,
@@ -490,7 +490,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Irlande.png",
+      "file": "data/assets/images/Irlande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Irlande",
       "difficulty": 2,
@@ -498,7 +498,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Islande.png",
+      "file": "data/assets/images/Islande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Islande",
       "difficulty": 2,
@@ -506,7 +506,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Kenya.png",
+      "file": "data/assets/images/Kenya.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kenya",
       "difficulty": 2,
@@ -514,7 +514,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Nigeria.png",
+      "file": "data/assets/images/Nigeria.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nigeria",
       "difficulty": 2,
@@ -522,7 +522,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Pays-Bas.png",
+      "file": "data/assets/images/Pays-Bas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pays Bas",
       "difficulty": 2,
@@ -530,7 +530,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Pologne.png",
+      "file": "data/assets/images/Pologne.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pologne",
       "difficulty": 2,
@@ -538,7 +538,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Pérou.png",
+      "file": "data/assets/images/Pérou.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pérou",
       "difficulty": 2,
@@ -546,7 +546,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Qatar.png",
+      "file": "data/assets/images/Qatar.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Qatar",
       "difficulty": 2,
@@ -554,7 +554,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Roumanie.png",
+      "file": "data/assets/images/Roumanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Roumanie",
       "difficulty": 2,
@@ -562,7 +562,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Suisse.png",
+      "file": "data/assets/images/Suisse.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Suisse",
       "difficulty": 2,
@@ -570,7 +570,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Tchéquie.png",
+      "file": "data/assets/images/Tchéquie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tchéquie",
       "difficulty": 2,
@@ -578,7 +578,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Uruguay.png",
+      "file": "data/assets/images/Uruguay.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Uruguay",
       "difficulty": 2,
@@ -586,7 +586,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Venezuela.png",
+      "file": "data/assets/images/Venezuela.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Venezuela",
       "difficulty": 2,
@@ -594,7 +594,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Équateur.png",
+      "file": "data/assets/images/Équateur.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Équateur",
       "difficulty": 2,
@@ -602,7 +602,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/2/images/drapeau/Éthiopie.png",
+      "file": "data/assets/images/Éthiopie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Éthiopie",
       "difficulty": 2,
@@ -918,7 +918,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Afghanistan.png",
+      "file": "data/assets/images/Afghanistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Afghanistan",
       "difficulty": 3,
@@ -926,7 +926,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Albanie.png",
+      "file": "data/assets/images/Albanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Albanie",
       "difficulty": 3,
@@ -934,7 +934,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Angleterre.png",
+      "file": "data/assets/images/Angleterre.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Angleterre",
       "difficulty": 3,
@@ -942,7 +942,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Angola.png",
+      "file": "data/assets/images/Angola.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Angola",
       "difficulty": 3,
@@ -950,7 +950,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Anguilla.png",
+      "file": "data/assets/images/Anguilla.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Anguilla",
       "difficulty": 3,
@@ -958,7 +958,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Antarctique.png",
+      "file": "data/assets/images/Antarctique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Antarctique",
       "difficulty": 3,
@@ -966,7 +966,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Arabie_Saoudite.png",
+      "file": "data/assets/images/Arabie_Saoudite.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Arabie Saoudite",
       "difficulty": 3,
@@ -974,7 +974,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Arménie.png",
+      "file": "data/assets/images/Arménie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Arménie",
       "difficulty": 3,
@@ -982,7 +982,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Aruba.png",
+      "file": "data/assets/images/Aruba.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Aruba",
       "difficulty": 3,
@@ -990,7 +990,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Azerbaïdjan.png",
+      "file": "data/assets/images/Azerbaïdjan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Azerbaïdjan",
       "difficulty": 3,
@@ -998,7 +998,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Bahamas.png",
+      "file": "data/assets/images/Bahamas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bahamas",
       "difficulty": 3,
@@ -1006,7 +1006,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Bahreïn.png",
+      "file": "data/assets/images/Bahreïn.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bahreïn",
       "difficulty": 3,
@@ -1014,7 +1014,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Bangladesh.png",
+      "file": "data/assets/images/Bangladesh.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bangladesh",
       "difficulty": 3,
@@ -1022,7 +1022,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Belize.png",
+      "file": "data/assets/images/Belize.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Belize",
       "difficulty": 3,
@@ -1030,7 +1030,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Bermudes.png",
+      "file": "data/assets/images/Bermudes.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bermudes",
       "difficulty": 3,
@@ -1038,7 +1038,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Bhoutan.png",
+      "file": "data/assets/images/Bhoutan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bhoutan",
       "difficulty": 3,
@@ -1046,7 +1046,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Birmanie.png",
+      "file": "data/assets/images/Birmanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Birmanie",
       "difficulty": 3,
@@ -1054,7 +1054,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Biélorussie.png",
+      "file": "data/assets/images/Biélorussie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Biélorussie",
       "difficulty": 3,
@@ -1062,7 +1062,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Bosnie-Herzégovine.png",
+      "file": "data/assets/images/Bosnie-Herzégovine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bosnie Herzégovine",
       "difficulty": 3,
@@ -1070,7 +1070,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Botswana.png",
+      "file": "data/assets/images/Botswana.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Botswana",
       "difficulty": 3,
@@ -1078,7 +1078,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Brunei.png",
+      "file": "data/assets/images/Brunei.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Brunei",
       "difficulty": 3,
@@ -1086,7 +1086,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Burkina_Faso.png",
+      "file": "data/assets/images/Burkina_Faso.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Burkina Faso",
       "difficulty": 3,
@@ -1094,7 +1094,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Burundi.png",
+      "file": "data/assets/images/Burundi.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Burundi",
       "difficulty": 3,
@@ -1102,7 +1102,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Bénin.png",
+      "file": "data/assets/images/Bénin.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bénin",
       "difficulty": 3,
@@ -1110,7 +1110,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Cambodge.png",
+      "file": "data/assets/images/Cambodge.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cambodge",
       "difficulty": 3,
@@ -1118,7 +1118,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Chypre.png",
+      "file": "data/assets/images/Chypre.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Chypre",
       "difficulty": 3,
@@ -1126,7 +1126,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Congo.png",
+      "file": "data/assets/images/Congo.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Congo",
       "difficulty": 3,
@@ -1134,7 +1134,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Costa_Rica.png",
+      "file": "data/assets/images/Costa_Rica.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Costa Rica",
       "difficulty": 3,
@@ -1142,7 +1142,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Croatie.png",
+      "file": "data/assets/images/Croatie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Croatie",
       "difficulty": 3,
@@ -1150,7 +1150,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Cuba.png",
+      "file": "data/assets/images/Cuba.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cuba",
       "difficulty": 3,
@@ -1158,7 +1158,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Curaçao.png",
+      "file": "data/assets/images/Curaçao.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Curaçao",
       "difficulty": 3,
@@ -1166,7 +1166,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Côte_DIvoire.png",
+      "file": "data/assets/images/Côte_DIvoire.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Côte Divoire",
       "difficulty": 3,
@@ -1174,7 +1174,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Djibouti.png",
+      "file": "data/assets/images/Djibouti.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Djibouti",
       "difficulty": 3,
@@ -1182,7 +1182,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Dominique.png",
+      "file": "data/assets/images/Dominique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Dominique",
       "difficulty": 3,
@@ -1190,7 +1190,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Estonie.png",
+      "file": "data/assets/images/Estonie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Estonie",
       "difficulty": 3,
@@ -1198,7 +1198,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Eswatini.png",
+      "file": "data/assets/images/Eswatini.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Eswatini",
       "difficulty": 3,
@@ -1206,7 +1206,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Fidji.png",
+      "file": "data/assets/images/Fidji.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Fidji",
       "difficulty": 3,
@@ -1214,7 +1214,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Gabon.png",
+      "file": "data/assets/images/Gabon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Gabon",
       "difficulty": 3,
@@ -1222,7 +1222,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Gambie.png",
+      "file": "data/assets/images/Gambie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Gambie",
       "difficulty": 3,
@@ -1230,7 +1230,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Gibraltar.png",
+      "file": "data/assets/images/Gibraltar.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Gibraltar",
       "difficulty": 3,
@@ -1238,7 +1238,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Groenland.png",
+      "file": "data/assets/images/Groenland.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Groenland",
       "difficulty": 3,
@@ -1246,7 +1246,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guadeloupe.png",
+      "file": "data/assets/images/Guadeloupe.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guadeloupe",
       "difficulty": 3,
@@ -1254,7 +1254,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guam.png",
+      "file": "data/assets/images/Guam.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guam",
       "difficulty": 3,
@@ -1262,7 +1262,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guatemala.png",
+      "file": "data/assets/images/Guatemala.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guatemala",
       "difficulty": 3,
@@ -1270,7 +1270,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guernesey.png",
+      "file": "data/assets/images/Guernesey.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guernesey",
       "difficulty": 3,
@@ -1278,7 +1278,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guinée-Bissau.png",
+      "file": "data/assets/images/Guinée-Bissau.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guinée Bissau",
       "difficulty": 3,
@@ -1286,7 +1286,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guinée.png",
+      "file": "data/assets/images/Guinée.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guinée",
       "difficulty": 3,
@@ -1294,7 +1294,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guinée_Équatoriale.png",
+      "file": "data/assets/images/Guinée_Équatoriale.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guinée Équatoriale",
       "difficulty": 3,
@@ -1302,7 +1302,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guyana.png",
+      "file": "data/assets/images/Guyana.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guyana",
       "difficulty": 3,
@@ -1310,7 +1310,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Guyane.png",
+      "file": "data/assets/images/Guyane.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guyane",
       "difficulty": 3,
@@ -1318,7 +1318,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Géorgie.png",
+      "file": "data/assets/images/Géorgie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Géorgie",
       "difficulty": 3,
@@ -1326,7 +1326,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Haïti.png",
+      "file": "data/assets/images/Haïti.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Haïti",
       "difficulty": 3,
@@ -1334,7 +1334,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Honduras.png",
+      "file": "data/assets/images/Honduras.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Honduras",
       "difficulty": 3,
@@ -1342,7 +1342,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Hong_Kong.png",
+      "file": "data/assets/images/Hong_Kong.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Hong Kong",
       "difficulty": 3,
@@ -1350,7 +1350,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Indonésie.png",
+      "file": "data/assets/images/Indonésie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Indonésie",
       "difficulty": 3,
@@ -1358,7 +1358,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Irak.png",
+      "file": "data/assets/images/Irak.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Irak",
       "difficulty": 3,
@@ -1366,7 +1366,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Iran.png",
+      "file": "data/assets/images/Iran.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Iran",
       "difficulty": 3,
@@ -1374,7 +1374,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Jamaïque.png",
+      "file": "data/assets/images/Jamaïque.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Jamaïque",
       "difficulty": 3,
@@ -1382,7 +1382,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Jersey.png",
+      "file": "data/assets/images/Jersey.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Jersey",
       "difficulty": 3,
@@ -1390,7 +1390,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Jordanie.png",
+      "file": "data/assets/images/Jordanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Jordanie",
       "difficulty": 3,
@@ -1398,7 +1398,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Kazakhstan.png",
+      "file": "data/assets/images/Kazakhstan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kazakhstan",
       "difficulty": 3,
@@ -1406,7 +1406,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Kirghizistan.png",
+      "file": "data/assets/images/Kirghizistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kirghizistan",
       "difficulty": 3,
@@ -1414,7 +1414,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Kosovo.png",
+      "file": "data/assets/images/Kosovo.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kosovo",
       "difficulty": 3,
@@ -1422,7 +1422,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Koweït.png",
+      "file": "data/assets/images/Koweït.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Koweït",
       "difficulty": 3,
@@ -1430,7 +1430,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Laos.png",
+      "file": "data/assets/images/Laos.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Laos",
       "difficulty": 3,
@@ -1438,7 +1438,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Lesotho.png",
+      "file": "data/assets/images/Lesotho.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Lesotho",
       "difficulty": 3,
@@ -1446,7 +1446,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Lettonie.png",
+      "file": "data/assets/images/Lettonie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Lettonie",
       "difficulty": 3,
@@ -1454,7 +1454,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Liban.png",
+      "file": "data/assets/images/Liban.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Liban",
       "difficulty": 3,
@@ -1462,7 +1462,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Liberia.png",
+      "file": "data/assets/images/Liberia.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Liberia",
       "difficulty": 3,
@@ -1470,7 +1470,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Libye.png",
+      "file": "data/assets/images/Libye.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Libye",
       "difficulty": 3,
@@ -1478,7 +1478,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Lituanie.png",
+      "file": "data/assets/images/Lituanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Lituanie",
       "difficulty": 3,
@@ -1486,7 +1486,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Luxembourg.png",
+      "file": "data/assets/images/Luxembourg.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Luxembourg",
       "difficulty": 3,
@@ -1494,7 +1494,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Macao.png",
+      "file": "data/assets/images/Macao.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Macao",
       "difficulty": 3,
@@ -1502,7 +1502,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Madagascar.png",
+      "file": "data/assets/images/Madagascar.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Madagascar",
       "difficulty": 3,
@@ -1510,7 +1510,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Malaisie.png",
+      "file": "data/assets/images/Malaisie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Malaisie",
       "difficulty": 3,
@@ -1518,7 +1518,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Malawi.png",
+      "file": "data/assets/images/Malawi.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Malawi",
       "difficulty": 3,
@@ -1526,7 +1526,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Maldives.png",
+      "file": "data/assets/images/Maldives.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Maldives",
       "difficulty": 3,
@@ -1534,7 +1534,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Mali.png",
+      "file": "data/assets/images/Mali.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mali",
       "difficulty": 3,
@@ -1542,7 +1542,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Martinique.png",
+      "file": "data/assets/images/Martinique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Martinique",
       "difficulty": 3,
@@ -1550,7 +1550,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Mauritanie.png",
+      "file": "data/assets/images/Mauritanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mauritanie",
       "difficulty": 3,
@@ -1558,7 +1558,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Mayotte.png",
+      "file": "data/assets/images/Mayotte.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mayotte",
       "difficulty": 3,
@@ -1566,7 +1566,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Moldavie.png",
+      "file": "data/assets/images/Moldavie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Moldavie",
       "difficulty": 3,
@@ -1574,7 +1574,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Mongolie.png",
+      "file": "data/assets/images/Mongolie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mongolie",
       "difficulty": 3,
@@ -1582,7 +1582,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Montserrat.png",
+      "file": "data/assets/images/Montserrat.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Montserrat",
       "difficulty": 3,
@@ -1590,7 +1590,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Monténégro.png",
+      "file": "data/assets/images/Monténégro.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Monténégro",
       "difficulty": 3,
@@ -1598,7 +1598,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Mozambique.png",
+      "file": "data/assets/images/Mozambique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mozambique",
       "difficulty": 3,
@@ -1606,7 +1606,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Namibie.png",
+      "file": "data/assets/images/Namibie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Namibie",
       "difficulty": 3,
@@ -1614,7 +1614,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Nicaragua.png",
+      "file": "data/assets/images/Nicaragua.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nicaragua",
       "difficulty": 3,
@@ -1622,7 +1622,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Niger.png",
+      "file": "data/assets/images/Niger.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Niger",
       "difficulty": 3,
@@ -1630,7 +1630,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Niue.png",
+      "file": "data/assets/images/Niue.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Niue",
       "difficulty": 3,
@@ -1638,7 +1638,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Nouvelle-Calédonie.png",
+      "file": "data/assets/images/Nouvelle-Calédonie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nouvelle Calédonie",
       "difficulty": 3,
@@ -1646,7 +1646,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Nouvelle-Zélande.png",
+      "file": "data/assets/images/Nouvelle-Zélande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nouvelle Zélande",
       "difficulty": 3,
@@ -1654,7 +1654,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Népal.png",
+      "file": "data/assets/images/Népal.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Népal",
       "difficulty": 3,
@@ -1662,7 +1662,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Oman.png",
+      "file": "data/assets/images/Oman.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Oman",
       "difficulty": 3,
@@ -1670,7 +1670,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Ouganda.png",
+      "file": "data/assets/images/Ouganda.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ouganda",
       "difficulty": 3,
@@ -1678,7 +1678,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Ouzbékistan.png",
+      "file": "data/assets/images/Ouzbékistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ouzbékistan",
       "difficulty": 3,
@@ -1686,7 +1686,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Pakistan.png",
+      "file": "data/assets/images/Pakistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pakistan",
       "difficulty": 3,
@@ -1694,7 +1694,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Palestine.png",
+      "file": "data/assets/images/Palestine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Palestine",
       "difficulty": 3,
@@ -1702,7 +1702,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Panama.png",
+      "file": "data/assets/images/Panama.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Panama",
       "difficulty": 3,
@@ -1710,7 +1710,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Paraguay.png",
+      "file": "data/assets/images/Paraguay.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Paraguay",
       "difficulty": 3,
@@ -1718,7 +1718,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Philippines.png",
+      "file": "data/assets/images/Philippines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Philippines",
       "difficulty": 3,
@@ -1726,7 +1726,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Polynésie_Française.png",
+      "file": "data/assets/images/Polynésie_Française.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Polynésie Française",
       "difficulty": 3,
@@ -1734,7 +1734,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Porto_Rico.png",
+      "file": "data/assets/images/Porto_Rico.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Porto Rico",
       "difficulty": 3,
@@ -1742,7 +1742,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Rwanda.png",
+      "file": "data/assets/images/Rwanda.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Rwanda",
       "difficulty": 3,
@@ -1750,7 +1750,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Réunion.png",
+      "file": "data/assets/images/Réunion.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Réunion",
       "difficulty": 3,
@@ -1758,7 +1758,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Sahara_Occidental.png",
+      "file": "data/assets/images/Sahara_Occidental.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sahara Occidental",
       "difficulty": 3,
@@ -1766,7 +1766,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Saint-Barthélemy.png",
+      "file": "data/assets/images/Saint-Barthélemy.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Barthélemy",
       "difficulty": 3,
@@ -1774,7 +1774,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Salvador.png",
+      "file": "data/assets/images/Salvador.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Salvador",
       "difficulty": 3,
@@ -1782,7 +1782,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Samoa.png",
+      "file": "data/assets/images/Samoa.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Samoa",
       "difficulty": 3,
@@ -1790,7 +1790,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Samoa_Américaines.png",
+      "file": "data/assets/images/Samoa_Américaines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Samoa Américaines",
       "difficulty": 3,
@@ -1798,7 +1798,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Serbie.png",
+      "file": "data/assets/images/Serbie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Serbie",
       "difficulty": 3,
@@ -1806,7 +1806,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Sierra_Leone.png",
+      "file": "data/assets/images/Sierra_Leone.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sierra Leone",
       "difficulty": 3,
@@ -1814,7 +1814,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Singapour.png",
+      "file": "data/assets/images/Singapour.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Singapour",
       "difficulty": 3,
@@ -1822,7 +1822,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Slovaquie.png",
+      "file": "data/assets/images/Slovaquie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Slovaquie",
       "difficulty": 3,
@@ -1830,7 +1830,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Slovénie.png",
+      "file": "data/assets/images/Slovénie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Slovénie",
       "difficulty": 3,
@@ -1838,7 +1838,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Somalie.png",
+      "file": "data/assets/images/Somalie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Somalie",
       "difficulty": 3,
@@ -1846,7 +1846,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Soudan.png",
+      "file": "data/assets/images/Soudan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Soudan",
       "difficulty": 3,
@@ -1854,7 +1854,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Sri_Lanka.png",
+      "file": "data/assets/images/Sri_Lanka.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sri Lanka",
       "difficulty": 3,
@@ -1862,7 +1862,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Suriname.png",
+      "file": "data/assets/images/Suriname.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Suriname",
       "difficulty": 3,
@@ -1870,7 +1870,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Syrie.png",
+      "file": "data/assets/images/Syrie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Syrie",
       "difficulty": 3,
@@ -1878,7 +1878,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Tadjikistan.png",
+      "file": "data/assets/images/Tadjikistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tadjikistan",
       "difficulty": 3,
@@ -1886,7 +1886,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Tanzanie.png",
+      "file": "data/assets/images/Tanzanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tanzanie",
       "difficulty": 3,
@@ -1894,7 +1894,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Taïwan.png",
+      "file": "data/assets/images/Taïwan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Taïwan",
       "difficulty": 3,
@@ -1902,7 +1902,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Tchad.png",
+      "file": "data/assets/images/Tchad.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tchad",
       "difficulty": 3,
@@ -1910,7 +1910,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Thaïlande.png",
+      "file": "data/assets/images/Thaïlande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Thaïlande",
       "difficulty": 3,
@@ -1918,7 +1918,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Timor_Oriental.png",
+      "file": "data/assets/images/Timor_Oriental.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Timor Oriental",
       "difficulty": 3,
@@ -1926,7 +1926,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Togo.png",
+      "file": "data/assets/images/Togo.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Togo",
       "difficulty": 3,
@@ -1934,7 +1934,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Tokelau.png",
+      "file": "data/assets/images/Tokelau.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tokelau",
       "difficulty": 3,
@@ -1942,7 +1942,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Tonga.png",
+      "file": "data/assets/images/Tonga.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tonga",
       "difficulty": 3,
@@ -1950,7 +1950,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Turkménistan.png",
+      "file": "data/assets/images/Turkménistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Turkménistan",
       "difficulty": 3,
@@ -1958,7 +1958,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Vanuatu.png",
+      "file": "data/assets/images/Vanuatu.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Vanuatu",
       "difficulty": 3,
@@ -1966,7 +1966,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Vatican.png",
+      "file": "data/assets/images/Vatican.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Vatican",
       "difficulty": 3,
@@ -1974,7 +1974,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Viêt_Nam.png",
+      "file": "data/assets/images/Viêt_Nam.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Viêt Nam",
       "difficulty": 3,
@@ -1982,7 +1982,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Yémen.png",
+      "file": "data/assets/images/Yémen.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Yémen",
       "difficulty": 3,
@@ -1990,7 +1990,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Zambie.png",
+      "file": "data/assets/images/Zambie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Zambie",
       "difficulty": 3,
@@ -1998,7 +1998,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Zimbabwe.png",
+      "file": "data/assets/images/Zimbabwe.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Zimbabwe",
       "difficulty": 3,
@@ -2006,7 +2006,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Åland.png",
+      "file": "data/assets/images/Åland.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Åland",
       "difficulty": 3,
@@ -2014,7 +2014,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Écosse.png",
+      "file": "data/assets/images/Écosse.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Écosse",
       "difficulty": 3,
@@ -2022,7 +2022,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Érythrée.png",
+      "file": "data/assets/images/Érythrée.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Érythrée",
       "difficulty": 3,
@@ -2030,7 +2030,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Caïmans.png",
+      "file": "data/assets/images/Îles_Caïmans.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Caïmans",
       "difficulty": 3,
@@ -2038,7 +2038,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Cocos.png",
+      "file": "data/assets/images/Îles_Cocos.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Cocos",
       "difficulty": 3,
@@ -2046,7 +2046,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Cook.png",
+      "file": "data/assets/images/Îles_Cook.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Cook",
       "difficulty": 3,
@@ -2054,7 +2054,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Féroé.png",
+      "file": "data/assets/images/Îles_Féroé.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Féroé",
       "difficulty": 3,
@@ -2062,7 +2062,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Malouines.png",
+      "file": "data/assets/images/Îles_Malouines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Malouines",
       "difficulty": 3,
@@ -2070,7 +2070,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Marshall.png",
+      "file": "data/assets/images/Îles_Marshall.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Marshall",
       "difficulty": 3,
@@ -2078,7 +2078,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Pitcairn.png",
+      "file": "data/assets/images/Îles_Pitcairn.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Pitcairn",
       "difficulty": 3,
@@ -2086,7 +2086,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Îles_Salomon.png",
+      "file": "data/assets/images/Îles_Salomon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Salomon",
       "difficulty": 3,
@@ -2094,7 +2094,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Île_Bouvet.png",
+      "file": "data/assets/images/Île_Bouvet.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île Bouvet",
       "difficulty": 3,
@@ -2102,7 +2102,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Île_Christmas.png",
+      "file": "data/assets/images/Île_Christmas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île Christmas",
       "difficulty": 3,
@@ -2110,7 +2110,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/3/images/drapeau/Île_Norfolk.png",
+      "file": "data/assets/images/Île_Norfolk.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île Norfolk",
       "difficulty": 3,
@@ -2559,7 +2559,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Afrique_Du_Sud.png",
+      "file": "data/assets/images/Afrique_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Afrique Du Sud",
       "difficulty": 4,
@@ -2567,7 +2567,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Antigua-Et-Barbuda.png",
+      "file": "data/assets/images/Antigua-Et-Barbuda.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Antigua Et Barbuda",
       "difficulty": 4,
@@ -2575,7 +2575,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Congo_rép_Dém.png",
+      "file": "data/assets/images/Congo_rép_Dém.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Congo Rép Dém",
       "difficulty": 4,
@@ -2583,7 +2583,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Corée_Du_Nord.png",
+      "file": "data/assets/images/Corée_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Corée Du Nord",
       "difficulty": 4,
@@ -2591,7 +2591,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Corée_Du_Sud.png",
+      "file": "data/assets/images/Corée_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Corée Du Sud",
       "difficulty": 4,
@@ -2599,7 +2599,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Géorgie_Du_Sud-Et-Les_Îles_Sandwich_Du_Sud.png",
+      "file": "data/assets/images/Géorgie_Du_Sud-Et-Les_Îles_Sandwich_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Géorgie Du Sud Et Les Îles Sandwich Du Sud",
       "difficulty": 4,
@@ -2607,7 +2607,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Irlande_Du_Nord.png",
+      "file": "data/assets/images/Irlande_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Irlande Du Nord",
       "difficulty": 4,
@@ -2615,7 +2615,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Macédoine_Du_Nord.png",
+      "file": "data/assets/images/Macédoine_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Macédoine Du Nord",
       "difficulty": 4,
@@ -2623,7 +2623,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Papouasie-Nouvelle-Guinée.png",
+      "file": "data/assets/images/Papouasie-Nouvelle-Guinée.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Papouasie Nouvelle Guinée",
       "difficulty": 4,
@@ -2631,7 +2631,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Pays-Bas_Caribéens.png",
+      "file": "data/assets/images/Pays-Bas_Caribéens.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pays Bas Caribéens",
       "difficulty": 4,
@@ -2639,7 +2639,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Pays_De_Galles.png",
+      "file": "data/assets/images/Pays_De_Galles.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pays De Galles",
       "difficulty": 4,
@@ -2647,7 +2647,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/République_Centrafricaine.png",
+      "file": "data/assets/images/République_Centrafricaine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "République Centrafricaine",
       "difficulty": 4,
@@ -2655,7 +2655,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/République_Dominicaine.png",
+      "file": "data/assets/images/République_Dominicaine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "République Dominicaine",
       "difficulty": 4,
@@ -2663,7 +2663,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Christophe-Et-Niévès.png",
+      "file": "data/assets/images/Saint-Christophe-Et-Niévès.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Christophe Et Niévès",
       "difficulty": 4,
@@ -2671,7 +2671,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Martin_antilles_Françaises.png",
+      "file": "data/assets/images/Saint-Martin_antilles_Françaises.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Martin Antilles Françaises",
       "difficulty": 4,
@@ -2679,7 +2679,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Martin_royaume_Des_Pays-Bas.png",
+      "file": "data/assets/images/Saint-Martin_royaume_Des_Pays-Bas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Martin Royaume Des Pays Bas",
       "difficulty": 4,
@@ -2687,7 +2687,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Pierre-Et-Miquelon.png",
+      "file": "data/assets/images/Saint-Pierre-Et-Miquelon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Pierre Et Miquelon",
       "difficulty": 4,
@@ -2695,7 +2695,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Saint-Vincent-Et-Les-Grenadines.png",
+      "file": "data/assets/images/Saint-Vincent-Et-Les-Grenadines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Vincent Et Les Grenadines",
       "difficulty": 4,
@@ -2703,7 +2703,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Sainte-Hélène-Ascension_Et_Tristan_Da_Cunha.png",
+      "file": "data/assets/images/Sainte-Hélène-Ascension_Et_Tristan_Da_Cunha.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sainte Hélène Ascension Et Tristan Da Cunha",
       "difficulty": 4,
@@ -2711,7 +2711,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Sao_Tomé-Et-Principe.png",
+      "file": "data/assets/images/Sao_Tomé-Et-Principe.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sao Tomé Et Principe",
       "difficulty": 4,
@@ -2719,7 +2719,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Soudan_Du_Sud.png",
+      "file": "data/assets/images/Soudan_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Soudan Du Sud",
       "difficulty": 4,
@@ -2727,7 +2727,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Svalbard_Et_Jan_Mayen.png",
+      "file": "data/assets/images/Svalbard_Et_Jan_Mayen.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Svalbard Et Jan Mayen",
       "difficulty": 4,
@@ -2735,7 +2735,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Terres_Australes_Et_Antarctiques_Françaises.png",
+      "file": "data/assets/images/Terres_Australes_Et_Antarctiques_Françaises.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Terres Australes Et Antarctiques Françaises",
       "difficulty": 4,
@@ -2743,7 +2743,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Territoire_Britannique_De_LOcéan_Indien.png",
+      "file": "data/assets/images/Territoire_Britannique_De_LOcéan_Indien.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Territoire Britannique De Locéan Indien",
       "difficulty": 4,
@@ -2751,7 +2751,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Trinité-Et-Tobago.png",
+      "file": "data/assets/images/Trinité-Et-Tobago.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Trinité Et Tobago",
       "difficulty": 4,
@@ -2759,7 +2759,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Wallis-Et-Futuna.png",
+      "file": "data/assets/images/Wallis-Et-Futuna.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Wallis Et Futuna",
       "difficulty": 4,
@@ -2767,7 +2767,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Émirats_Arabes_Unis.png",
+      "file": "data/assets/images/Émirats_Arabes_Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Émirats Arabes Unis",
       "difficulty": 4,
@@ -2775,7 +2775,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Heard-Et-Macdonald.png",
+      "file": "data/assets/images/Îles_Heard-Et-Macdonald.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Heard Et Macdonald",
       "difficulty": 4,
@@ -2783,7 +2783,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Mariannes_Du_Nord.png",
+      "file": "data/assets/images/Îles_Mariannes_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Mariannes Du Nord",
       "difficulty": 4,
@@ -2791,7 +2791,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Mineures_Éloignées_Des_États-Unis.png",
+      "file": "data/assets/images/Îles_Mineures_Éloignées_Des_États-Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Mineures Éloignées Des États Unis",
       "difficulty": 4,
@@ -2799,7 +2799,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Turques-Et-Caïques.png",
+      "file": "data/assets/images/Îles_Turques-Et-Caïques.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Turques Et Caïques",
       "difficulty": 4,
@@ -2807,7 +2807,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Vierges_Britanniques.png",
+      "file": "data/assets/images/Îles_Vierges_Britanniques.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Vierges Britanniques",
       "difficulty": 4,
@@ -2815,7 +2815,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Îles_Vierges_Des_États-Unis.png",
+      "file": "data/assets/images/Îles_Vierges_Des_États-Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Vierges Des États Unis",
       "difficulty": 4,
@@ -2823,7 +2823,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/4/images/drapeau/Île_De_Man.png",
+      "file": "data/assets/images/Île_De_Man.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île De Man",
       "difficulty": 4,
@@ -3356,7 +3356,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Andorre.png",
+      "file": "data/assets/images/Andorre.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Andorre",
       "difficulty": 5,
@@ -3364,7 +3364,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Barbade.png",
+      "file": "data/assets/images/Barbade.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Barbade",
       "difficulty": 5,
@@ -3372,7 +3372,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Cap-Vert.png",
+      "file": "data/assets/images/Cap-Vert.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cap Vert",
       "difficulty": 5,
@@ -3380,7 +3380,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Comores.png",
+      "file": "data/assets/images/Comores.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Comores",
       "difficulty": 5,
@@ -3388,7 +3388,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Grenade.png",
+      "file": "data/assets/images/Grenade.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Grenade",
       "difficulty": 5,
@@ -3396,7 +3396,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Kiribati.png",
+      "file": "data/assets/images/Kiribati.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kiribati",
       "difficulty": 5,
@@ -3404,7 +3404,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Liechtenstein.png",
+      "file": "data/assets/images/Liechtenstein.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Liechtenstein",
       "difficulty": 5,
@@ -3412,7 +3412,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Malte.png",
+      "file": "data/assets/images/Malte.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Malte",
       "difficulty": 5,
@@ -3420,7 +3420,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Maurice.png",
+      "file": "data/assets/images/Maurice.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Maurice",
       "difficulty": 5,
@@ -3428,7 +3428,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Micronésie.png",
+      "file": "data/assets/images/Micronésie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Micronésie",
       "difficulty": 5,
@@ -3436,7 +3436,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Monaco.png",
+      "file": "data/assets/images/Monaco.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Monaco",
       "difficulty": 5,
@@ -3444,7 +3444,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Nauru.png",
+      "file": "data/assets/images/Nauru.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nauru",
       "difficulty": 5,
@@ -3452,7 +3452,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Palaos.png",
+      "file": "data/assets/images/Palaos.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Palaos",
       "difficulty": 5,
@@ -3460,7 +3460,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Saint-Marin.png",
+      "file": "data/assets/images/Saint-Marin.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Marin",
       "difficulty": 5,
@@ -3468,7 +3468,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Sainte-Lucie.png",
+      "file": "data/assets/images/Sainte-Lucie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sainte Lucie",
       "difficulty": 5,
@@ -3476,7 +3476,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Seychelles.png",
+      "file": "data/assets/images/Seychelles.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Seychelles",
       "difficulty": 5,
@@ -3484,7 +3484,7 @@
     },
     {
       "type": "image",
-      "file": "Quizz/questions/geographie/5/images/drapeau/Tuvalu.png",
+      "file": "data/assets/images/Tuvalu.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tuvalu",
       "difficulty": 5,

@@ -526,7 +526,7 @@ function renderSidebar() {
   list.innerHTML = '';
 
   if (currentGame === 'risque_tout') {
-    addBtn.style.display = 'none';
+    addBtn.style.display = 'block'; addBtn.textContent = '+ NOUVEAU THÈME';
     const themes = Object.values(gameData.risque_tout).sort((a, b) => a.label.localeCompare(b.label));
     if (!themes.length) { list.innerHTML = '<div style="padding:12px;color:#555;font-size:.75rem">Aucune donnée. Lancez migrate.py</div>'; return; }
     themes.forEach(t => {
@@ -535,7 +535,7 @@ function renderSidebar() {
       list.appendChild(makeThemeEntry(t.id, t.label, `${val}/${total}`));
     });
   } else if (currentGame === 'wagon') {
-    addBtn.style.display = 'none';
+    addBtn.style.display = 'block'; addBtn.textContent = '+ NOUVEAU THÈME';
     const themes = Array.isArray(gameData.wagon.themes) ? gameData.wagon.themes : [];
     themes.forEach(t => {
       const total = t.questions.length;
@@ -584,9 +584,9 @@ function renderMain() {
     main.innerHTML = '<div id="welcome"><h2>←</h2><p>Sélectionnez un thème</p></div>';
     return;
   }
-  if (currentGame === 'risque_tout' || currentGame === 'wagon') renderQAPanel();
+  if (currentGame === 'risque_tout' || currentGame === 'wagon') { renderQAPanel(); setTimeout(loadMediaPreviews, 50); }
   else if (currentGame === 'surenchere') renderSurencherePanel();
-  else if (currentGame === 'snapshot') renderSnapshotPanel();
+  else if (currentGame === 'snapshot') { renderSnapshotPanel(); setTimeout(loadMediaPreviews, 50); }
 }
 
 // ── Q&A PANEL (Risque Tout + Wagon) ──────────────────────────────────────────
@@ -651,16 +651,21 @@ function renderQAPanel() {
 
 function renderQuestionCard(q, idx) {
   const diffDots = Array.from({length:5}, (_,i) => `<div class="diff-dot ${i < (q.difficulty||1) ? 'filled' : ''}"></div>`).join('');
-  const fileInfo = (q.type !== 'text' && q.file) ? `<div class="q-file">📎 ${q.file}</div>` : '';
+  let mediaHtml = '';
+  if (q.type === 'image' && q.file) {
+    mediaHtml = `<img class="q-media-img" data-asset="${escHtml(q.file)}" src="" alt="" style="width:100%;max-height:120px;object-fit:contain;border-radius:4px;background:#111;display:none;">`;
+  } else if (q.type === 'sound' && q.file) {
+    mediaHtml = `<div style="display:flex;gap:6px;align-items:center"><button class="q-btn" style="flex:0" onclick="playAssetSound('${escHtml(q.file)}')">▶ Écouter</button><span style="font-size:.65rem;color:var(--muted)">${q.file.split('/').pop()}</span></div>`;
+  }
   return `
     <div class="q-card ${q.validated ? 'validated' : 'invalidated'}" data-idx="${idx}">
       <div class="q-card-top">
         <span class="type-badge ${q.type}">${q.type}</span>
         <div class="diff-dots">${diffDots}</div>
       </div>
+      ${mediaHtml}
       <div class="q-question">${escHtml(q.question || '')}</div>
       <div class="q-answer">${escHtml(q.answer || '')}</div>
-      ${fileInfo}
       <div class="q-actions">
         <button class="q-btn validate-btn ${q.validated?'active':''}" onclick="toggleValidated(${idx})">
           ${q.validated ? '✅ Validée' : '⏳ Non validée'}
@@ -799,7 +804,7 @@ function renderSnapshotPanel() {
         const realIdx = photos.indexOf(p);
         return `
           <div class="photo-card ${p.validated?'':'invalidated'}" data-idx="${realIdx}">
-            <div class="photo-thumb" style="display:flex;align-items:center;justify-content:center;padding:8px;font-size:.65rem;color:#555">${escHtml(p.file)}</div>
+            <img class="photo-thumb q-media-img" data-asset="${escHtml(p.file)}" src="" alt="${escHtml(p.name)}" style="display:none;object-fit:cover;width:100%;aspect-ratio:1;background:#111;">
             <input class="photo-name-input" type="text" value="${escHtml(p.name)}" onchange="updatePhotoName(${realIdx}, this.value)" onblur="saveTheme('snapshot', 'all')">
             <div class="photo-actions">
               <button class="photo-btn ${p.validated?'active':''}" onclick="togglePhoto(${realIdx})">${p.validated?'✅':' ⏳'}</button>
@@ -972,24 +977,53 @@ function bulkImport() {
   renderSidebar();
 }
 
-// ── ADD THEME (Surenchère) ────────────────────────────────────────────────────
+// ── ADD THEME (Surenchère / Risque Tout / Wagon) ─────────────────────────────
 document.getElementById('add-theme-btn').onclick = () => {
-  const id = prompt('ID du thème (ex: mes_capitales, sans espaces, sans accents)');
-  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide. Utilisez uniquement a-z, 0-9, _'); return; }
+  if (currentGame === 'surenchere') addThemeSurenchere();
+  else if (currentGame === 'risque_tout') addThemeRisqueTout();
+  else if (currentGame === 'wagon') addThemeWagon();
+};
+
+function addThemeSurenchere() {
+  const id = prompt('ID du thème (ex: mes_capitales — a-z, 0-9, _ uniquement)');
+  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide.'); return; }
   if (gameData.surenchere[id]) { alert('Ce thème existe déjà'); return; }
   const label = prompt('Nom affiché (ex: Capitales d\'Asie)');
   if (!label) return;
-  const prompt2 = prompt('Question (ex: Citez des capitales d\'Asie)');
-  if (!prompt2) return;
-  gameData.surenchere[id] = {
-    id, label, icon: 'assets/Images/geographie.png',
-    prompt: prompt2, answers: []
-  };
+  const p = prompt('Question affichée (ex: Citez des capitales d\'Asie)');
+  if (!p) return;
+  gameData.surenchere[id] = { id, label, icon: 'assets/Images/geographie.png', prompt: p, answers: [] };
   currentThemeId = id;
   saveTheme('surenchere', id);
-  renderSidebar();
-  renderMain();
-};
+  renderSidebar(); renderMain();
+}
+
+function addThemeRisqueTout() {
+  const id = prompt('ID du thème (ex: marvel — a-z, 0-9, _ uniquement)');
+  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide.'); return; }
+  if (gameData.risque_tout[id]) { alert('Ce thème existe déjà'); return; }
+  const label = prompt('Nom affiché (ex: Marvel)');
+  if (!label) return;
+  gameData.risque_tout[id] = { id, label, icon: 'assets/Images/mystere.png', questions: [] };
+  currentThemeId = id;
+  saveTheme('risque_tout', id);
+  renderSidebar(); renderMain();
+}
+
+function addThemeWagon() {
+  const id = prompt('ID du thème (ex: cinema — a-z, 0-9, _ uniquement)');
+  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide.'); return; }
+  const themes = gameData.wagon.themes || [];
+  if (themes.find(t => t.id === id)) { alert('Ce thème existe déjà'); return; }
+  const name = prompt('Nom affiché avec emoji (ex: 🎬 Cinéma)');
+  if (!name) return;
+  const color = prompt('Couleur hex (ex: #3498db)') || '#3498db';
+  themes.push({ id, name, color, questions: [] });
+  gameData.wagon.themes = themes;
+  currentThemeId = id;
+  saveTheme('wagon', id);
+  renderSidebar(); renderMain();
+}
 
 // ════════════════════════════════════════════════════════════════
 // ACTIONS — SNAPSHOT
@@ -1070,6 +1104,39 @@ document.querySelectorAll('.game-tab').forEach(btn => {
 // ════════════════════════════════════════════════════════════════
 // UTILS
 // ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════════════
+// MEDIA PREVIEW (File System Access API)
+// ════════════════════════════════════════════════════════════════
+async function getAssetObjectURL(assetPath) {
+  if (!rootHandle) return null;
+  try {
+    // assetPath is repo-root-relative: "data/assets/images/lion.webp"
+    const parts = assetPath.split('/');
+    let h = rootHandle;
+    for (const p of parts.slice(0, -1)) h = await h.getDirectoryHandle(p);
+    const fh = await h.getFileHandle(parts[parts.length - 1]);
+    return URL.createObjectURL(await fh.getFile());
+  } catch { return null; }
+}
+
+async function loadMediaPreviews() {
+  const imgs = document.querySelectorAll('img.q-media-img[data-asset]');
+  for (const img of imgs) {
+    const url = await getAssetObjectURL(img.dataset.asset);
+    if (url) { img.src = url; img.style.display = ''; }
+    else { img.style.display = 'none'; }
+  }
+}
+
+let currentAudio = null;
+async function playAssetSound(assetPath) {
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  const url = await getAssetObjectURL(assetPath);
+  if (!url) { showToast('Fichier audio introuvable', true); return; }
+  currentAudio = new Audio(url);
+  currentAudio.play();
+}
+
 function escHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }

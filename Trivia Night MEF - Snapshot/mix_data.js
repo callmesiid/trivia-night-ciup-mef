@@ -1,1650 +1,1650 @@
 const MIX_PHOTOS = [
   {
-    "file": "Mix & Twist/Aamir Khan.png",
+    "file": "../data/assets/images/Aamir Khan.png",
     "name": "Aamir Khan"
   },
   {
-    "file": "Mix & Twist/Ada Hegerberg.png",
+    "file": "../data/assets/images/Ada Hegerberg.png",
     "name": "Ada Hegerberg"
   },
   {
-    "file": "Mix & Twist/Adèle Exarchopoulos.png",
+    "file": "../data/assets/images/Adèle Exarchopoulos.png",
     "name": "Adèle Exarchopoulos"
   },
   {
-    "file": "Mix & Twist/Aitana Bonmati.png",
+    "file": "../data/assets/images/Aitana Bonmati.png",
     "name": "Aitana Bonmati"
   },
   {
-    "file": "Mix & Twist/Al Pacino.png",
+    "file": "../data/assets/images/Al Pacino.png",
     "name": "Al Pacino"
   },
   {
-    "file": "Mix & Twist/Aladdin.webp",
+    "file": "../data/assets/images/Aladdin.webp",
     "name": "Aladdin"
   },
   {
-    "file": "Mix & Twist/Alan Rickman.png",
+    "file": "../data/assets/images/Alan Rickman.png",
     "name": "Alan Rickman"
   },
   {
-    "file": "Mix & Twist/Alessandro Del Piero.png",
+    "file": "../data/assets/images/Alessandro Del Piero.png",
     "name": "Alessandro Del Piero"
   },
   {
-    "file": "Mix & Twist/Alexander Zverev.png",
+    "file": "../data/assets/images/Alexander Zverev.png",
     "name": "Alexander Zverev"
   },
   {
-    "file": "Mix & Twist/Alexia Putellas.png",
+    "file": "../data/assets/images/Alexia Putellas.png",
     "name": "Alexia Putellas"
   },
   {
-    "file": "Mix & Twist/Alfredo_Linguini.jpg",
+    "file": "../data/assets/images/Alfredo_Linguini.jpg",
     "name": "Alfredo Linguini"
   },
   {
-    "file": "Mix & Twist/Alice.webp",
+    "file": "../data/assets/images/Alice.webp",
     "name": "Alice"
   },
   {
-    "file": "Mix & Twist/Amir.png",
+    "file": "../data/assets/images/Amir.png",
     "name": "Amir"
   },
   {
-    "file": "Mix & Twist/Amy Adams.png",
+    "file": "../data/assets/images/Amy Adams.png",
     "name": "Amy Adams"
   },
   {
-    "file": "Mix & Twist/Andrea Pirlo.png",
+    "file": "../data/assets/images/Andrea Pirlo.png",
     "name": "Andrea Pirlo"
   },
   {
-    "file": "Mix & Twist/Andrew Garfield.png",
+    "file": "../data/assets/images/Andrew Garfield.png",
     "name": "Andrew Garfield"
   },
   {
-    "file": "Mix & Twist/Andriy Shevchenko.png",
+    "file": "../data/assets/images/Andriy Shevchenko.png",
     "name": "Andriy Shevchenko"
   },
   {
-    "file": "Mix & Twist/Andy Murray.png",
+    "file": "../data/assets/images/Andy Murray.png",
     "name": "Andy Murray"
   },
   {
-    "file": "Mix & Twist/Angel Di Maria.png",
+    "file": "../data/assets/images/Angel Di Maria.png",
     "name": "Angel Di Maria"
   },
   {
-    "file": "Mix & Twist/Angelina Jolie.png",
+    "file": "../data/assets/images/Angelina Jolie.png",
     "name": "Angelina Jolie"
   },
   {
-    "file": "Mix & Twist/Anna.webp",
+    "file": "../data/assets/images/Anna.webp",
     "name": "Anna"
   },
   {
-    "file": "Mix & Twist/Anne Hathaway.png",
+    "file": "../data/assets/images/Anne Hathaway.png",
     "name": "Anne Hathaway"
   },
   {
-    "file": "Mix & Twist/Anne Hidalgo.png",
+    "file": "../data/assets/images/Anne Hidalgo.png",
     "name": "Anne Hidalgo"
   },
   {
-    "file": "Mix & Twist/Anthony Davis.png",
+    "file": "../data/assets/images/Anthony Davis.png",
     "name": "Anthony Davis"
   },
   {
-    "file": "Mix & Twist/Anthony Hopkins.png",
+    "file": "../data/assets/images/Anthony Hopkins.png",
     "name": "Anthony Hopkins"
   },
   {
-    "file": "Mix & Twist/Antonio Banderas.png",
+    "file": "../data/assets/images/Antonio Banderas.png",
     "name": "Antonio Banderas"
   },
   {
-    "file": "Mix & Twist/Anya Taylor Joy.png",
+    "file": "../data/assets/images/Anya Taylor Joy.png",
     "name": "Anya Taylor Joy"
   },
   {
-    "file": "Mix & Twist/Ariana Grande.png",
+    "file": "../data/assets/images/Ariana Grande.png",
     "name": "Ariana Grande"
   },
   {
-    "file": "Mix & Twist/Ariel.webp",
+    "file": "../data/assets/images/Ariel.webp",
     "name": "Ariel"
   },
   {
-    "file": "Mix & Twist/Arjen Robben.png",
+    "file": "../data/assets/images/Arjen Robben.png",
     "name": "Arjen Robben"
   },
   {
-    "file": "Mix & Twist/Arnold Schwarzenegger.png",
+    "file": "../data/assets/images/Arnold Schwarzenegger.png",
     "name": "Arnold Schwarzenegger"
   },
   {
-    "file": "Mix & Twist/Aryna Sabalenka.png",
+    "file": "../data/assets/images/Aryna Sabalenka.png",
     "name": "Aryna Sabalenka"
   },
   {
-    "file": "Mix & Twist/Audrey Tautou.png",
+    "file": "../data/assets/images/Audrey Tautou.png",
     "name": "Audrey Tautou"
   },
   {
-    "file": "Mix & Twist/Aurora.webp",
+    "file": "../data/assets/images/Aurora.webp",
     "name": "Aurora"
   },
   {
-    "file": "Mix & Twist/Aya Nakamura.png",
+    "file": "../data/assets/images/Aya Nakamura.png",
     "name": "Aya Nakamura"
   },
   {
-    "file": "Mix & Twist/Bad Bunny.png",
+    "file": "../data/assets/images/Bad Bunny.png",
     "name": "Bad Bunny"
   },
   {
-    "file": "Mix & Twist/Baghera Jones.png",
+    "file": "../data/assets/images/Baghera Jones.png",
     "name": "Baghera Jones"
   },
   {
-    "file": "Mix & Twist/Bambi.webp",
+    "file": "../data/assets/images/Bambi.webp",
     "name": "Bambi"
   },
   {
-    "file": "Mix & Twist/Belle.webp",
+    "file": "../data/assets/images/Belle.webp",
     "name": "Belle"
   },
   {
-    "file": "Mix & Twist/Ben Affleck.png",
+    "file": "../data/assets/images/Ben Affleck.png",
     "name": "Ben Affleck"
   },
   {
-    "file": "Mix & Twist/Benedict Cumberbatch.png",
+    "file": "../data/assets/images/Benedict Cumberbatch.png",
     "name": "Benedict Cumberbatch"
   },
   {
-    "file": "Mix & Twist/Benedict Wong.png",
+    "file": "../data/assets/images/Benedict Wong.png",
     "name": "Benedict Wong"
   },
   {
-    "file": "Mix & Twist/Benjamin Biolay.png",
+    "file": "../data/assets/images/Benjamin Biolay.png",
     "name": "Benjamin Biolay"
   },
   {
-    "file": "Mix & Twist/Berenice Bejo.png",
+    "file": "../data/assets/images/Berenice Bejo.png",
     "name": "Berenice Bejo"
   },
   {
-    "file": "Mix & Twist/Beyonce.png",
+    "file": "../data/assets/images/Beyonce.png",
     "name": "Beyonce"
   },
   {
-    "file": "Mix & Twist/Bigflo.png",
+    "file": "../data/assets/images/Bigflo.png",
     "name": "Bigflo"
   },
   {
-    "file": "Mix & Twist/Bill Nighy.png",
+    "file": "../data/assets/images/Bill Nighy.png",
     "name": "Bill Nighy"
   },
   {
-    "file": "Mix & Twist/Billie Eilish.png",
+    "file": "../data/assets/images/Billie Eilish.png",
     "name": "Billie Eilish"
   },
   {
-    "file": "Mix & Twist/Bing_Bong.webp",
+    "file": "../data/assets/images/Bing_Bong.webp",
     "name": "Bing Bong"
   },
   {
-    "file": "Mix & Twist/Black_Panther.jpeg",
+    "file": "../data/assets/images/Black_Panther.jpeg",
     "name": "Black Panther"
   },
   {
-    "file": "Mix & Twist/Bob Dylan.png",
+    "file": "../data/assets/images/Bob Dylan.png",
     "name": "Bob Dylan"
   },
   {
-    "file": "Mix & Twist/Bonnie Wright.png",
+    "file": "../data/assets/images/Bonnie Wright.png",
     "name": "Bonnie Wright"
   },
   {
-    "file": "Mix & Twist/Bono.png",
+    "file": "../data/assets/images/Bono.png",
     "name": "Bono"
   },
   {
-    "file": "Mix & Twist/Boo.webp",
+    "file": "../data/assets/images/Boo.webp",
     "name": "Boo"
   },
   {
-    "file": "Mix & Twist/Brad Pitt.png",
+    "file": "../data/assets/images/Brad Pitt.png",
     "name": "Brad Pitt"
   },
   {
-    "file": "Mix & Twist/Brendan Gleeson.png",
+    "file": "../data/assets/images/Brendan Gleeson.png",
     "name": "Brendan Gleeson"
   },
   {
-    "file": "Mix & Twist/Britney Spears.png",
+    "file": "../data/assets/images/Britney Spears.png",
     "name": "Britney Spears"
   },
   {
-    "file": "Mix & Twist/Bruce Willis.png",
+    "file": "../data/assets/images/Bruce Willis.png",
     "name": "Bruce Willis"
   },
   {
-    "file": "Mix & Twist/Bruno Le Maire.png",
+    "file": "../data/assets/images/Bruno Le Maire.png",
     "name": "Bruno Le Maire"
   },
   {
-    "file": "Mix & Twist/Buzz_Lightyear.webp",
+    "file": "../data/assets/images/Buzz_Lightyear.webp",
     "name": "Buzz Lightyear"
   },
   {
-    "file": "Mix & Twist/Camila Cabello.png",
+    "file": "../data/assets/images/Camila Cabello.png",
     "name": "Camila Cabello"
   },
   {
-    "file": "Mix & Twist/Camille Cottin.png",
+    "file": "../data/assets/images/Camille Cottin.png",
     "name": "Camille Cottin"
   },
   {
-    "file": "Mix & Twist/Captain_Hook.webp",
+    "file": "../data/assets/images/Captain_Hook.webp",
     "name": "Captain Hook"
   },
   {
-    "file": "Mix & Twist/Cardi B.png",
+    "file": "../data/assets/images/Cardi B.png",
     "name": "Cardi B"
   },
   {
-    "file": "Mix & Twist/Carles Puyol.png",
+    "file": "../data/assets/images/Carles Puyol.png",
     "name": "Carles Puyol"
   },
   {
-    "file": "Mix & Twist/Carlos Alcaraz.png",
+    "file": "../data/assets/images/Carlos Alcaraz.png",
     "name": "Carlos Alcaraz"
   },
   {
-    "file": "Mix & Twist/Carl_Fredricksen.webp",
+    "file": "../data/assets/images/Carl_Fredricksen.webp",
     "name": "Carl Fredricksen"
   },
   {
-    "file": "Mix & Twist/Casper Ruud.png",
+    "file": "../data/assets/images/Casper Ruud.png",
     "name": "Casper Ruud"
   },
   {
-    "file": "Mix & Twist/Celine Dion.png",
+    "file": "../data/assets/images/Celine Dion.png",
     "name": "Celine Dion"
   },
   {
-    "file": "Mix & Twist/Charlize Theron.png",
+    "file": "../data/assets/images/Charlize Theron.png",
     "name": "Charlize Theron"
   },
   {
-    "file": "Mix & Twist/Charlotte Gainsbourg.png",
+    "file": "../data/assets/images/Charlotte Gainsbourg.png",
     "name": "Charlotte Gainsbourg"
   },
   {
-    "file": "Mix & Twist/Chris Evans.png",
+    "file": "../data/assets/images/Chris Evans.png",
     "name": "Chris Evans"
   },
   {
-    "file": "Mix & Twist/Chris Hemsworth.png",
+    "file": "../data/assets/images/Chris Hemsworth.png",
     "name": "Chris Hemsworth"
   },
   {
-    "file": "Mix & Twist/Chris Paul.png",
+    "file": "../data/assets/images/Chris Paul.png",
     "name": "Chris Paul"
   },
   {
-    "file": "Mix & Twist/Chris Pratt.png",
+    "file": "../data/assets/images/Chris Pratt.png",
     "name": "Chris Pratt"
   },
   {
-    "file": "Mix & Twist/Christian Bale.png",
+    "file": "../data/assets/images/Christian Bale.png",
     "name": "Christian Bale"
   },
   {
-    "file": "Mix & Twist/Christophe Maé.png",
+    "file": "../data/assets/images/Christophe Maé.png",
     "name": "Christophe Maé"
   },
   {
-    "file": "Mix & Twist/Cillian Murphy.png",
+    "file": "../data/assets/images/Cillian Murphy.png",
     "name": "Cillian Murphy"
   },
   {
-    "file": "Mix & Twist/Clara Luciani.png",
+    "file": "../data/assets/images/Clara Luciani.png",
     "name": "Clara Luciani"
   },
   {
-    "file": "Mix & Twist/Clarence Seedorf.png",
+    "file": "../data/assets/images/Clarence Seedorf.png",
     "name": "Clarence Seedorf"
   },
   {
-    "file": "Mix & Twist/Clémence Poésy.png",
+    "file": "../data/assets/images/Clémence Poésy.png",
     "name": "Clémence Poésy"
   },
   {
-    "file": "Mix & Twist/Coco Gauff.png",
+    "file": "../data/assets/images/Coco Gauff.png",
     "name": "Coco Gauff"
   },
   {
-    "file": "Mix & Twist/Daddy Yankee.png",
+    "file": "../data/assets/images/Daddy Yankee.png",
     "name": "Daddy Yankee"
   },
   {
-    "file": "Mix & Twist/Dadju.png",
+    "file": "../data/assets/images/Dadju.png",
     "name": "Dadju"
   },
   {
-    "file": "Mix & Twist/Damian Lillard.png",
+    "file": "../data/assets/images/Damian Lillard.png",
     "name": "Damian Lillard"
   },
   {
-    "file": "Mix & Twist/Dani Alves.png",
+    "file": "../data/assets/images/Dani Alves.png",
     "name": "Dani Alves"
   },
   {
-    "file": "Mix & Twist/Daniel Auteuil.png",
+    "file": "../data/assets/images/Daniel Auteuil.png",
     "name": "Daniel Auteuil"
   },
   {
-    "file": "Mix & Twist/Daniel Craig.png",
+    "file": "../data/assets/images/Daniel Craig.png",
     "name": "Daniel Craig"
   },
   {
-    "file": "Mix & Twist/Daniel Kaluuya.png",
+    "file": "../data/assets/images/Daniel Kaluuya.png",
     "name": "Daniel Kaluuya"
   },
   {
-    "file": "Mix & Twist/Daniel Radcliffe.jpg",
+    "file": "../data/assets/images/Daniel Radcliffe.jpg",
     "name": "Daniel Radcliffe"
   },
   {
-    "file": "Mix & Twist/Daniil Medvedev.png",
+    "file": "../data/assets/images/Daniil Medvedev.png",
     "name": "Daniil Medvedev"
   },
   {
-    "file": "Mix & Twist/Dany Boon.png",
+    "file": "../data/assets/images/Dany Boon.png",
     "name": "Dany Boon"
   },
   {
-    "file": "Mix & Twist/David Beckham.png",
+    "file": "../data/assets/images/David Beckham.png",
     "name": "David Beckham"
   },
   {
-    "file": "Mix & Twist/David Tennant.png",
+    "file": "../data/assets/images/David Tennant.png",
     "name": "David Tennant"
   },
   {
-    "file": "Mix & Twist/David Thewlis.png",
+    "file": "../data/assets/images/David Thewlis.png",
     "name": "David Thewlis"
   },
   {
-    "file": "Mix & Twist/David Villa.png",
+    "file": "../data/assets/images/David Villa.png",
     "name": "David Villa"
   },
   {
-    "file": "Mix & Twist/Deepika Padukone.png",
+    "file": "../data/assets/images/Deepika Padukone.png",
     "name": "Deepika Padukone"
   },
   {
-    "file": "Mix & Twist/Denzel Washington.png",
+    "file": "../data/assets/images/Denzel Washington.png",
     "name": "Denzel Washington"
   },
   {
-    "file": "Mix & Twist/Didier Drogba.png",
+    "file": "../data/assets/images/Didier Drogba.png",
     "name": "Didier Drogba"
   },
   {
-    "file": "Mix & Twist/Diego Maradona.png",
+    "file": "../data/assets/images/Diego Maradona.png",
     "name": "Diego Maradona"
   },
   {
-    "file": "Mix & Twist/Doigby.png",
+    "file": "../data/assets/images/Doigby.png",
     "name": "Doigby"
   },
   {
-    "file": "Mix & Twist/Doja Cat.png",
+    "file": "../data/assets/images/Doja Cat.png",
     "name": "Doja Cat"
   },
   {
-    "file": "Mix & Twist/Domhnall Gleeson.png",
+    "file": "../data/assets/images/Domhnall Gleeson.png",
     "name": "Domhnall Gleeson"
   },
   {
-    "file": "Mix & Twist/Dominic Thiem.png",
+    "file": "../data/assets/images/Dominic Thiem.png",
     "name": "Dominic Thiem"
   },
   {
-    "file": "Mix & Twist/Donald Trump.png",
+    "file": "../data/assets/images/Donald Trump.png",
     "name": "Donald Trump"
   },
   {
-    "file": "Mix & Twist/Donald_Duck.webp",
+    "file": "../data/assets/images/Donald_Duck.webp",
     "name": "Donald Duck"
   },
   {
-    "file": "Mix & Twist/Donnie Yen.png",
+    "file": "../data/assets/images/Donnie Yen.png",
     "name": "Donnie Yen"
   },
   {
-    "file": "Mix & Twist/Dory.webp",
+    "file": "../data/assets/images/Dory.webp",
     "name": "Dory"
   },
   {
-    "file": "Mix & Twist/Dua Lipa.png",
+    "file": "../data/assets/images/Dua Lipa.png",
     "name": "Dua Lipa"
   },
   {
-    "file": "Mix & Twist/Dwayne Johnson.png",
+    "file": "../data/assets/images/Dwayne Johnson.png",
     "name": "Dwayne Johnson"
   },
   {
-    "file": "Mix & Twist/Ed Sheeran.png",
+    "file": "../data/assets/images/Ed Sheeran.png",
     "name": "Ed Sheeran"
   },
   {
-    "file": "Mix & Twist/Eddie Redmayne.png",
+    "file": "../data/assets/images/Eddie Redmayne.png",
     "name": "Eddie Redmayne"
   },
   {
-    "file": "Mix & Twist/Edna_Mode.webp",
+    "file": "../data/assets/images/Edna_Mode.webp",
     "name": "Edna Mode"
   },
   {
-    "file": "Mix & Twist/Edouard Philippe.png",
+    "file": "../data/assets/images/Edouard Philippe.png",
     "name": "Edouard Philippe"
   },
   {
-    "file": "Mix & Twist/Elena Rybakina.png",
+    "file": "../data/assets/images/Elena Rybakina.png",
     "name": "Elena Rybakina"
   },
   {
-    "file": "Mix & Twist/Elsa.webp",
+    "file": "../data/assets/images/Elsa.webp",
     "name": "Elsa"
   },
   {
-    "file": "Mix & Twist/Elton John.png",
+    "file": "../data/assets/images/Elton John.png",
     "name": "Elton John"
   },
   {
-    "file": "Mix & Twist/Emily Blunt.png",
+    "file": "../data/assets/images/Emily Blunt.png",
     "name": "Emily Blunt"
   },
   {
-    "file": "Mix & Twist/Eminem.png",
+    "file": "../data/assets/images/Eminem.png",
     "name": "Eminem"
   },
   {
-    "file": "Mix & Twist/Emma Stone.png",
+    "file": "../data/assets/images/Emma Stone.png",
     "name": "Emma Stone"
   },
   {
-    "file": "Mix & Twist/Emma Watson.jpg",
+    "file": "../data/assets/images/Emma Watson.jpg",
     "name": "Emma Watson"
   },
   {
-    "file": "Mix & Twist/Emmanuel Macron.png",
+    "file": "../data/assets/images/Emmanuel Macron.png",
     "name": "Emmanuel Macron"
   },
   {
-    "file": "Mix & Twist/Emmanuelle Beart.png",
+    "file": "../data/assets/images/Emmanuelle Beart.png",
     "name": "Emmanuelle Beart"
   },
   {
-    "file": "Mix & Twist/Erling Haaland.png",
+    "file": "../data/assets/images/Erling Haaland.png",
     "name": "Erling Haaland"
   },
   {
-    "file": "Mix & Twist/Eva Green.png",
+    "file": "../data/assets/images/Eva Green.png",
     "name": "Eva Green"
   },
   {
-    "file": "Mix & Twist/Evanna Lynch.png",
+    "file": "../data/assets/images/Evanna Lynch.png",
     "name": "Evanna Lynch"
   },
   {
-    "file": "Mix & Twist/Fabio Cannavaro.png",
+    "file": "../data/assets/images/Fabio Cannavaro.png",
     "name": "Fabio Cannavaro"
   },
   {
-    "file": "Mix & Twist/Fear.jpg",
+    "file": "../data/assets/images/Fear.jpg",
     "name": "Fear"
   },
   {
-    "file": "Mix & Twist/Flik.webp",
+    "file": "../data/assets/images/Flik.webp",
     "name": "Flik"
   },
   {
-    "file": "Mix & Twist/Florence Pugh.png",
+    "file": "../data/assets/images/Florence Pugh.png",
     "name": "Florence Pugh"
   },
   {
-    "file": "Mix & Twist/Florent Pagny.png",
+    "file": "../data/assets/images/Florent Pagny.png",
     "name": "Florent Pagny"
   },
   {
-    "file": "Mix & Twist/Frances de la Tour.png",
+    "file": "../data/assets/images/Frances de la Tour.png",
     "name": "Frances De La Tour"
   },
   {
-    "file": "Mix & Twist/Franck Ribery.png",
+    "file": "../data/assets/images/Franck Ribery.png",
     "name": "Franck Ribery"
   },
   {
-    "file": "Mix & Twist/Francois Bayrou.png",
+    "file": "../data/assets/images/Francois Bayrou.png",
     "name": "Francois Bayrou"
   },
   {
-    "file": "Mix & Twist/Francois Cluzet.png",
+    "file": "../data/assets/images/Francois Cluzet.png",
     "name": "Francois Cluzet"
   },
   {
-    "file": "Mix & Twist/Frank Lampard.png",
+    "file": "../data/assets/images/Frank Lampard.png",
     "name": "Frank Lampard"
   },
   {
-    "file": "Mix & Twist/Franz Beckenbauer.png",
+    "file": "../data/assets/images/Franz Beckenbauer.png",
     "name": "Franz Beckenbauer"
   },
   {
-    "file": "Mix & Twist/Freddie Mercury.png",
+    "file": "../data/assets/images/Freddie Mercury.png",
     "name": "Freddie Mercury"
   },
   {
-    "file": "Mix & Twist/Gabriel Attal.png",
+    "file": "../data/assets/images/Gabriel Attal.png",
     "name": "Gabriel Attal"
   },
   {
-    "file": "Mix & Twist/Gad Elmaleh.png",
+    "file": "../data/assets/images/Gad Elmaleh.png",
     "name": "Gad Elmaleh"
   },
   {
-    "file": "Mix & Twist/Gal Gadot.png",
+    "file": "../data/assets/images/Gal Gadot.png",
     "name": "Gal Gadot"
   },
   {
-    "file": "Mix & Twist/Garrincha.png",
+    "file": "../data/assets/images/Garrincha.png",
     "name": "Garrincha"
   },
   {
-    "file": "Mix & Twist/Gary Oldman.png",
+    "file": "../data/assets/images/Gary Oldman.png",
     "name": "Gary Oldman"
   },
   {
-    "file": "Mix & Twist/Genie.webp",
+    "file": "../data/assets/images/Genie.webp",
     "name": "Genie"
   },
   {
-    "file": "Mix & Twist/George Best.png",
+    "file": "../data/assets/images/George Best.png",
     "name": "George Best"
   },
   {
-    "file": "Mix & Twist/George Clooney.png",
+    "file": "../data/assets/images/George Clooney.png",
     "name": "George Clooney"
   },
   {
-    "file": "Mix & Twist/George Harris.png",
+    "file": "../data/assets/images/George Harris.png",
     "name": "George Harris"
   },
   {
-    "file": "Mix & Twist/Gerald Darmanin.png",
+    "file": "../data/assets/images/Gerald Darmanin.png",
     "name": "Gerald Darmanin"
   },
   {
-    "file": "Mix & Twist/Gerard Pique.png",
+    "file": "../data/assets/images/Gerard Pique.png",
     "name": "Gerard Pique"
   },
   {
-    "file": "Mix & Twist/Gianluigi Buffon.png",
+    "file": "../data/assets/images/Gianluigi Buffon.png",
     "name": "Gianluigi Buffon"
   },
   {
-    "file": "Mix & Twist/Giannis Antetokounmpo.png",
+    "file": "../data/assets/images/Giannis Antetokounmpo.png",
     "name": "Giannis Antetokounmpo"
   },
   {
-    "file": "Mix & Twist/Gims.png",
+    "file": "../data/assets/images/Gims.png",
     "name": "Gims"
   },
   {
-    "file": "Mix & Twist/Giorgia Meloni.png",
+    "file": "../data/assets/images/Giorgia Meloni.png",
     "name": "Giorgia Meloni"
   },
   {
-    "file": "Mix & Twist/Goofy.webp",
+    "file": "../data/assets/images/Goofy.webp",
     "name": "Goofy"
   },
   {
-    "file": "Mix & Twist/Gotaga.png",
+    "file": "../data/assets/images/Gotaga.png",
     "name": "Gotaga"
   },
   {
-    "file": "Mix & Twist/Groot.webp",
+    "file": "../data/assets/images/Groot.webp",
     "name": "Groot"
   },
   {
-    "file": "Mix & Twist/Guillaume Canet.png",
+    "file": "../data/assets/images/Guillaume Canet.png",
     "name": "Guillaume Canet"
   },
   {
-    "file": "Mix & Twist/Gwendoline Christie.png",
+    "file": "../data/assets/images/Gwendoline Christie.png",
     "name": "Gwendoline Christie"
   },
   {
-    "file": "Mix & Twist/Hades.webp",
+    "file": "../data/assets/images/Hades.webp",
     "name": "Hades"
   },
   {
-    "file": "Mix & Twist/Halle Berry.png",
+    "file": "../data/assets/images/Halle Berry.png",
     "name": "Halle Berry"
   },
   {
-    "file": "Mix & Twist/Harrison Ford.png",
+    "file": "../data/assets/images/Harrison Ford.png",
     "name": "Harrison Ford"
   },
   {
-    "file": "Mix & Twist/Harry Styles.png",
+    "file": "../data/assets/images/Harry Styles.png",
     "name": "Harry Styles"
   },
   {
-    "file": "Mix & Twist/Helen McCrory.png",
+    "file": "../data/assets/images/Helen McCrory.png",
     "name": "Helen Mccrory"
   },
   {
-    "file": "Mix & Twist/Helena Bonham Carter.png",
+    "file": "../data/assets/images/Helena Bonham Carter.png",
     "name": "Helena Bonham Carter"
   },
   {
-    "file": "Mix & Twist/Hugh Grant.png",
+    "file": "../data/assets/images/Hugh Grant.png",
     "name": "Hugh Grant"
   },
   {
-    "file": "Mix & Twist/Hugh Jackman.png",
+    "file": "../data/assets/images/Hugh Jackman.png",
     "name": "Hugh Jackman"
   },
   {
-    "file": "Mix & Twist/Ian McKellen.png",
+    "file": "../data/assets/images/Ian McKellen.png",
     "name": "Ian Mckellen"
   },
   {
-    "file": "Mix & Twist/Idris Elba.png",
+    "file": "../data/assets/images/Idris Elba.png",
     "name": "Idris Elba"
   },
   {
-    "file": "Mix & Twist/Iga Swiatek.png",
+    "file": "../data/assets/images/Iga Swiatek.png",
     "name": "Iga Swiatek"
   },
   {
-    "file": "Mix & Twist/Iker Casillas.png",
+    "file": "../data/assets/images/Iker Casillas.png",
     "name": "Iker Casillas"
   },
   {
-    "file": "Mix & Twist/Inoxtag.png",
+    "file": "../data/assets/images/Inoxtag.png",
     "name": "Inoxtag"
   },
   {
-    "file": "Mix & Twist/Isabelle Huppert.png",
+    "file": "../data/assets/images/Isabelle Huppert.png",
     "name": "Isabelle Huppert"
   },
   {
-    "file": "Mix & Twist/Jack Nicholson.png",
+    "file": "../data/assets/images/Jack Nicholson.png",
     "name": "Jack Nicholson"
   },
   {
-    "file": "Mix & Twist/Jackie Chan.png",
+    "file": "../data/assets/images/Jackie Chan.png",
     "name": "Jackie Chan"
   },
   {
-    "file": "Mix & Twist/Jafar.webp",
+    "file": "../data/assets/images/Jafar.webp",
     "name": "Jafar"
   },
   {
-    "file": "Mix & Twist/Jake Gyllenhaal.png",
+    "file": "../data/assets/images/Jake Gyllenhaal.png",
     "name": "Jake Gyllenhaal"
   },
   {
-    "file": "Mix & Twist/James Harden.png",
+    "file": "../data/assets/images/James Harden.png",
     "name": "James Harden"
   },
   {
-    "file": "Mix & Twist/Jannik Sinner.png",
+    "file": "../data/assets/images/Jannik Sinner.png",
     "name": "Jannik Sinner"
   },
   {
-    "file": "Mix & Twist/Jasmine.webp",
+    "file": "../data/assets/images/Jasmine.webp",
     "name": "Jasmine"
   },
   {
-    "file": "Mix & Twist/Jason Isaacs.png",
+    "file": "../data/assets/images/Jason Isaacs.png",
     "name": "Jason Isaacs"
   },
   {
-    "file": "Mix & Twist/Jason Statham.png",
+    "file": "../data/assets/images/Jason Statham.png",
     "name": "Jason Statham"
   },
   {
-    "file": "Mix & Twist/Javier Bardem.png",
+    "file": "../data/assets/images/Javier Bardem.png",
     "name": "Javier Bardem"
   },
   {
-    "file": "Mix & Twist/Jay Z.png",
+    "file": "../data/assets/images/Jay Z.png",
     "name": "Jay Z"
   },
   {
-    "file": "Mix & Twist/Jayson Tatum.png",
+    "file": "../data/assets/images/Jayson Tatum.png",
     "name": "Jayson Tatum"
   },
   {
-    "file": "Mix & Twist/Jean Claude Van Damme.png",
+    "file": "../data/assets/images/Jean Claude Van Damme.png",
     "name": "Jean Claude Van Damme"
   },
   {
-    "file": "Mix & Twist/Jean Dujardin.png",
+    "file": "../data/assets/images/Jean Dujardin.png",
     "name": "Jean Dujardin"
   },
   {
-    "file": "Mix & Twist/Jean Luc Melenchon.png",
+    "file": "../data/assets/images/Jean Luc Melenchon.png",
     "name": "Jean Luc Melenchon"
   },
   {
-    "file": "Mix & Twist/Jean Reno.png",
+    "file": "../data/assets/images/Jean Reno.png",
     "name": "Jean Reno"
   },
   {
-    "file": "Mix & Twist/Jenna Ortega.png",
+    "file": "../data/assets/images/Jenna Ortega.png",
     "name": "Jenna Ortega"
   },
   {
-    "file": "Mix & Twist/Jennifer Lawrence.png",
+    "file": "../data/assets/images/Jennifer Lawrence.png",
     "name": "Jennifer Lawrence"
   },
   {
-    "file": "Mix & Twist/Jessica Chastain.png",
+    "file": "../data/assets/images/Jessica Chastain.png",
     "name": "Jessica Chastain"
   },
   {
-    "file": "Mix & Twist/Jessie Cave.png",
+    "file": "../data/assets/images/Jessie Cave.png",
     "name": "Jessie Cave"
   },
   {
-    "file": "Mix & Twist/Jessie.webp",
+    "file": "../data/assets/images/Jessie.webp",
     "name": "Jessie"
   },
   {
-    "file": "Mix & Twist/Jet Li.png",
+    "file": "../data/assets/images/Jet Li.png",
     "name": "Jet Li"
   },
   {
-    "file": "Mix & Twist/Jim Broadbent.png",
+    "file": "../data/assets/images/Jim Broadbent.png",
     "name": "Jim Broadbent"
   },
   {
-    "file": "Mix & Twist/Jiminy_Cricket.webp",
+    "file": "../data/assets/images/Jiminy_Cricket.webp",
     "name": "Jiminy Cricket"
   },
   {
-    "file": "Mix & Twist/Joaquin Phoenix.png",
+    "file": "../data/assets/images/Joaquin Phoenix.png",
     "name": "Joaquin Phoenix"
   },
   {
-    "file": "Mix & Twist/Jodie Foster.png",
+    "file": "../data/assets/images/Jodie Foster.png",
     "name": "Jodie Foster"
   },
   {
-    "file": "Mix & Twist/Joe Biden.png",
+    "file": "../data/assets/images/Joe Biden.png",
     "name": "Joe Biden"
   },
   {
-    "file": "Mix & Twist/Joel Embiid.png",
+    "file": "../data/assets/images/Joel Embiid.png",
     "name": "Joel Embiid"
   },
   {
-    "file": "Mix & Twist/Johan Cruyff.png",
+    "file": "../data/assets/images/Johan Cruyff.png",
     "name": "Johan Cruyff"
   },
   {
-    "file": "Mix & Twist/Johnny Depp.png",
+    "file": "../data/assets/images/Johnny Depp.png",
     "name": "Johnny Depp"
   },
   {
-    "file": "Mix & Twist/Jude Law.png",
+    "file": "../data/assets/images/Jude Law.png",
     "name": "Jude Law"
   },
   {
-    "file": "Mix & Twist/Julia Roberts.png",
+    "file": "../data/assets/images/Julia Roberts.png",
     "name": "Julia Roberts"
   },
   {
-    "file": "Mix & Twist/Julien Dore.png",
+    "file": "../data/assets/images/Julien Dore.png",
     "name": "Julien Dore"
   },
   {
-    "file": "Mix & Twist/Juliette Armanet.png",
+    "file": "../data/assets/images/Juliette Armanet.png",
     "name": "Juliette Armanet"
   },
   {
-    "file": "Mix & Twist/Juliette Binoche.png",
+    "file": "../data/assets/images/Juliette Binoche.png",
     "name": "Juliette Binoche"
   },
   {
-    "file": "Mix & Twist/Justin Bieber.png",
+    "file": "../data/assets/images/Justin Bieber.png",
     "name": "Justin Bieber"
   },
   {
-    "file": "Mix & Twist/Justin Timberlake.png",
+    "file": "../data/assets/images/Justin Timberlake.png",
     "name": "Justin Timberlake"
   },
   {
-    "file": "Mix & Twist/Justin Trudeau.png",
+    "file": "../data/assets/images/Justin Trudeau.png",
     "name": "Justin Trudeau"
   },
   {
-    "file": "Mix & Twist/Kad Merad.png",
+    "file": "../data/assets/images/Kad Merad.png",
     "name": "Kad Merad"
   },
   {
-    "file": "Mix & Twist/Kadidiatou Diani.png",
+    "file": "../data/assets/images/Kadidiatou Diani.png",
     "name": "Kadidiatou Diani"
   },
   {
-    "file": "Mix & Twist/Kameto.png",
+    "file": "../data/assets/images/Kameto.png",
     "name": "Kameto"
   },
   {
-    "file": "Mix & Twist/Kanye West.png",
+    "file": "../data/assets/images/Kanye West.png",
     "name": "Kanye West"
   },
   {
-    "file": "Mix & Twist/Karim Benzema.png",
+    "file": "../data/assets/images/Karim Benzema.png",
     "name": "Karim Benzema"
   },
   {
-    "file": "Mix & Twist/Karol G.png",
+    "file": "../data/assets/images/Karol G.png",
     "name": "Karol G"
   },
   {
-    "file": "Mix & Twist/Kate Winslet.png",
+    "file": "../data/assets/images/Kate Winslet.png",
     "name": "Kate Winslet"
   },
   {
-    "file": "Mix & Twist/Katie Leung.png",
+    "file": "../data/assets/images/Katie Leung.png",
     "name": "Katie Leung"
   },
   {
-    "file": "Mix & Twist/Katy Perry.png",
+    "file": "../data/assets/images/Katy Perry.png",
     "name": "Katy Perry"
   },
   {
-    "file": "Mix & Twist/Kawhi Leonard.png",
+    "file": "../data/assets/images/Kawhi Leonard.png",
     "name": "Kawhi Leonard"
   },
   {
-    "file": "Mix & Twist/Ke Huy Quan.png",
+    "file": "../data/assets/images/Ke Huy Quan.png",
     "name": "Ke Huy Quan"
   },
   {
-    "file": "Mix & Twist/Keanu Reeves.png",
+    "file": "../data/assets/images/Keanu Reeves.png",
     "name": "Keanu Reeves"
   },
   {
-    "file": "Mix & Twist/Keir Starmer.png",
+    "file": "../data/assets/images/Keir Starmer.png",
     "name": "Keir Starmer"
   },
   {
-    "file": "Mix & Twist/Kendji Girac.png",
+    "file": "../data/assets/images/Kendji Girac.png",
     "name": "Kendji Girac"
   },
   {
-    "file": "Mix & Twist/Kevin Durant.png",
+    "file": "../data/assets/images/Kevin Durant.png",
     "name": "Kevin Durant"
   },
   {
-    "file": "Mix & Twist/Kristen Stewart.png",
+    "file": "../data/assets/images/Kristen Stewart.png",
     "name": "Kristen Stewart"
   },
   {
-    "file": "Mix & Twist/Kylian Mbappe.png",
+    "file": "../data/assets/images/Kylian Mbappe.png",
     "name": "Kylian Mbappe"
   },
   {
-    "file": "Mix & Twist/Lady Gaga.png",
+    "file": "../data/assets/images/Lady Gaga.png",
     "name": "Lady Gaga"
   },
   {
-    "file": "Mix & Twist/Lakeith Stanfield.png",
+    "file": "../data/assets/images/Lakeith Stanfield.png",
     "name": "Lakeith Stanfield"
   },
   {
-    "file": "Mix & Twist/Lea Seydoux.png",
+    "file": "../data/assets/images/Lea Seydoux.png",
     "name": "Lea Seydoux"
   },
   {
-    "file": "Mix & Twist/LeBouseuh.png",
+    "file": "../data/assets/images/LeBouseuh.png",
     "name": "Lebouseuh"
   },
   {
-    "file": "Mix & Twist/LeBron James.png",
+    "file": "../data/assets/images/LeBron James.png",
     "name": "Lebron James"
   },
   {
-    "file": "Mix & Twist/Leonardo DiCaprio.png",
+    "file": "../data/assets/images/Leonardo DiCaprio.png",
     "name": "Leonardo Dicaprio"
   },
   {
-    "file": "Mix & Twist/LittleBigWhale.png",
+    "file": "../data/assets/images/LittleBigWhale.png",
     "name": "Littlebigwhale"
   },
   {
-    "file": "Mix & Twist/Lizzo.png",
+    "file": "../data/assets/images/Lizzo.png",
     "name": "Lizzo"
   },
   {
-    "file": "Mix & Twist/Louis Garrel.png",
+    "file": "../data/assets/images/Louis Garrel.png",
     "name": "Louis Garrel"
   },
   {
-    "file": "Mix & Twist/Lucy Bronze.png",
+    "file": "../data/assets/images/Lucy Bronze.png",
     "name": "Lucy Bronze"
   },
   {
-    "file": "Mix & Twist/Luis Fonsi.png",
+    "file": "../data/assets/images/Luis Fonsi.png",
     "name": "Luis Fonsi"
   },
   {
-    "file": "Mix & Twist/Luis Suarez.png",
+    "file": "../data/assets/images/Luis Suarez.png",
     "name": "Luis Suarez"
   },
   {
-    "file": "Mix & Twist/Luka Doncic.png",
+    "file": "../data/assets/images/Luka Doncic.png",
     "name": "Luka Doncic"
   },
   {
-    "file": "Mix & Twist/Luka Modric.png",
+    "file": "../data/assets/images/Luka Modric.png",
     "name": "Luka Modric"
   },
   {
-    "file": "Mix & Twist/Madonna.png",
+    "file": "../data/assets/images/Madonna.png",
     "name": "Madonna"
   },
   {
-    "file": "Mix & Twist/Mads Mikkelsen.png",
+    "file": "../data/assets/images/Mads Mikkelsen.png",
     "name": "Mads Mikkelsen"
   },
   {
-    "file": "Mix & Twist/Maggie Smith.png",
+    "file": "../data/assets/images/Maggie Smith.png",
     "name": "Maggie Smith"
   },
   {
-    "file": "Mix & Twist/Mahershala Ali.png",
+    "file": "../data/assets/images/Mahershala Ali.png",
     "name": "Mahershala Ali"
   },
   {
-    "file": "Mix & Twist/Maleficent.webp",
+    "file": "../data/assets/images/Maleficent.webp",
     "name": "Maleficent"
   },
   {
-    "file": "Mix & Twist/Mapi Leon.png",
+    "file": "../data/assets/images/Mapi Leon.png",
     "name": "Mapi Leon"
   },
   {
-    "file": "Mix & Twist/Marco Reus.png",
+    "file": "../data/assets/images/Marco Reus.png",
     "name": "Marco Reus"
   },
   {
-    "file": "Mix & Twist/Marco van Basten.png",
+    "file": "../data/assets/images/Marco van Basten.png",
     "name": "Marco Van Basten"
   },
   {
-    "file": "Mix & Twist/Margot Robbie.png",
+    "file": "../data/assets/images/Margot Robbie.png",
     "name": "Margot Robbie"
   },
   {
-    "file": "Mix & Twist/Maria Sharapova.png",
+    "file": "../data/assets/images/Maria Sharapova.png",
     "name": "Maria Sharapova"
   },
   {
-    "file": "Mix & Twist/Mariah Carey.png",
+    "file": "../data/assets/images/Mariah Carey.png",
     "name": "Mariah Carey"
   },
   {
-    "file": "Mix & Twist/Marine Le Pen.png",
+    "file": "../data/assets/images/Marine Le Pen.png",
     "name": "Marine Le Pen"
   },
   {
-    "file": "Mix & Twist/Marion Cotillard.png",
+    "file": "../data/assets/images/Marion Cotillard.png",
     "name": "Marion Cotillard"
   },
   {
-    "file": "Mix & Twist/Mark Wahlberg.png",
+    "file": "../data/assets/images/Mark Wahlberg.png",
     "name": "Mark Wahlberg"
   },
   {
-    "file": "Mix & Twist/Matt Damon.png",
+    "file": "../data/assets/images/Matt Damon.png",
     "name": "Matt Damon"
   },
   {
-    "file": "Mix & Twist/Megan Rapinoe.png",
+    "file": "../data/assets/images/Megan Rapinoe.png",
     "name": "Megan Rapinoe"
   },
   {
-    "file": "Mix & Twist/Megara.webp",
+    "file": "../data/assets/images/Megara.webp",
     "name": "Megara"
   },
   {
-    "file": "Mix & Twist/Melanie Laurent.png",
+    "file": "../data/assets/images/Melanie Laurent.png",
     "name": "Melanie Laurent"
   },
   {
-    "file": "Mix & Twist/Merida.webp",
+    "file": "../data/assets/images/Merida.webp",
     "name": "Merida"
   },
   {
-    "file": "Mix & Twist/Meryl Streep.png",
+    "file": "../data/assets/images/Meryl Streep.png",
     "name": "Meryl Streep"
   },
   {
-    "file": "Mix & Twist/Mesut Ozil.png",
+    "file": "../data/assets/images/Mesut Ozil.png",
     "name": "Mesut Ozil"
   },
   {
-    "file": "Mix & Twist/Michael B Jordan.png",
+    "file": "../data/assets/images/Michael B Jordan.png",
     "name": "Michael B Jordan"
   },
   {
-    "file": "Mix & Twist/Michael Douglas.png",
+    "file": "../data/assets/images/Michael Douglas.png",
     "name": "Michael Douglas"
   },
   {
-    "file": "Mix & Twist/Michel Platini.png",
+    "file": "../data/assets/images/Michel Platini.png",
     "name": "Michel Platini"
   },
   {
-    "file": "Mix & Twist/Michelle Yeoh.png",
+    "file": "../data/assets/images/Michelle Yeoh.png",
     "name": "Michelle Yeoh"
   },
   {
-    "file": "Mix & Twist/Mickey_Mouse.webp",
+    "file": "../data/assets/images/Mickey_Mouse.webp",
     "name": "Mickey Mouse"
   },
   {
-    "file": "Mix & Twist/Miguel_Rivera.webp",
+    "file": "../data/assets/images/Miguel_Rivera.webp",
     "name": "Miguel Rivera"
   },
   {
-    "file": "Mix & Twist/Mike_Wazowski.webp",
+    "file": "../data/assets/images/Mike_Wazowski.webp",
     "name": "Mike Wazowski"
   },
   {
-    "file": "Mix & Twist/Miley Cyrus.png",
+    "file": "../data/assets/images/Miley Cyrus.png",
     "name": "Miley Cyrus"
   },
   {
-    "file": "Mix & Twist/Minnie_Mouse.webp",
+    "file": "../data/assets/images/Minnie_Mouse.webp",
     "name": "Minnie Mouse"
   },
   {
-    "file": "Mix & Twist/Miranda Richardson.png",
+    "file": "../data/assets/images/Miranda Richardson.png",
     "name": "Miranda Richardson"
   },
   {
-    "file": "Mix & Twist/MisterMV.png",
+    "file": "../data/assets/images/MisterMV.png",
     "name": "Mistermv"
   },
   {
-    "file": "Mix & Twist/Mohamed Salah.png",
+    "file": "../data/assets/images/Mohamed Salah.png",
     "name": "Mohamed Salah"
   },
   {
-    "file": "Mix & Twist/Morgan Freeman.png",
+    "file": "../data/assets/images/Morgan Freeman.png",
     "name": "Morgan Freeman"
   },
   {
-    "file": "Mix & Twist/Mufasa.webp",
+    "file": "../data/assets/images/Mufasa.webp",
     "name": "Mufasa"
   },
   {
-    "file": "Mix & Twist/Mulan.webp",
+    "file": "../data/assets/images/Mulan.webp",
     "name": "Mulan"
   },
   {
-    "file": "Mix & Twist/Mylene Farmer.png",
+    "file": "../data/assets/images/Mylene Farmer.png",
     "name": "Mylene Farmer"
   },
   {
-    "file": "Mix & Twist/Naomi Osaka.png",
+    "file": "../data/assets/images/Naomi Osaka.png",
     "name": "Naomi Osaka"
   },
   {
-    "file": "Mix & Twist/Natalie Portman.png",
+    "file": "../data/assets/images/Natalie Portman.png",
     "name": "Natalie Portman"
   },
   {
-    "file": "Mix & Twist/Nebula.webp",
+    "file": "../data/assets/images/Nebula.webp",
     "name": "Nebula"
   },
   {
-    "file": "Mix & Twist/Nemo.webp",
+    "file": "../data/assets/images/Nemo.webp",
     "name": "Nemo"
   },
   {
-    "file": "Mix & Twist/Nicki Minaj.png",
+    "file": "../data/assets/images/Nicki Minaj.png",
     "name": "Nicki Minaj"
   },
   {
-    "file": "Mix & Twist/Nicole Kidman.png",
+    "file": "../data/assets/images/Nicole Kidman.png",
     "name": "Nicole Kidman"
   },
   {
-    "file": "Mix & Twist/Nikola Jokic.png",
+    "file": "../data/assets/images/Nikola Jokic.png",
     "name": "Nikola Jokic"
   },
   {
-    "file": "Mix & Twist/Ninho.png",
+    "file": "../data/assets/images/Ninho.png",
     "name": "Ninho"
   },
   {
-    "file": "Mix & Twist/Novak Djokovic.png",
+    "file": "../data/assets/images/Novak Djokovic.png",
     "name": "Novak Djokovic"
   },
   {
-    "file": "Mix & Twist/Olaf Scholz.png",
+    "file": "../data/assets/images/Olaf Scholz.png",
     "name": "Olaf Scholz"
   },
   {
-    "file": "Mix & Twist/Olivia Rodrigo.png",
+    "file": "../data/assets/images/Olivia Rodrigo.png",
     "name": "Olivia Rodrigo"
   },
   {
-    "file": "Mix & Twist/Omar Sy.png",
+    "file": "../data/assets/images/Omar Sy.png",
     "name": "Omar Sy"
   },
   {
-    "file": "Mix & Twist/Paolo Maldini.png",
+    "file": "../data/assets/images/Paolo Maldini.png",
     "name": "Paolo Maldini"
   },
   {
-    "file": "Mix & Twist/Pascal Obispo.png",
+    "file": "../data/assets/images/Pascal Obispo.png",
     "name": "Pascal Obispo"
   },
   {
-    "file": "Mix & Twist/Patrick Bruel.png",
+    "file": "../data/assets/images/Patrick Bruel.png",
     "name": "Patrick Bruel"
   },
   {
-    "file": "Mix & Twist/Paul Mescal.png",
+    "file": "../data/assets/images/Paul Mescal.png",
     "name": "Paul Mescal"
   },
   {
-    "file": "Mix & Twist/Paul Pogba.png",
+    "file": "../data/assets/images/Paul Pogba.png",
     "name": "Paul Pogba"
   },
   {
-    "file": "Mix & Twist/Paulo Dybala.png",
+    "file": "../data/assets/images/Paulo Dybala.png",
     "name": "Paulo Dybala"
   },
   {
-    "file": "Mix & Twist/Pedro Pascal.png",
+    "file": "../data/assets/images/Pedro Pascal.png",
     "name": "Pedro Pascal"
   },
   {
-    "file": "Mix & Twist/Pedro Sanchez.png",
+    "file": "../data/assets/images/Pedro Sanchez.png",
     "name": "Pedro Sanchez"
   },
   {
-    "file": "Mix & Twist/Pele.png",
+    "file": "../data/assets/images/Pele.png",
     "name": "Pele"
   },
   {
-    "file": "Mix & Twist/Penelope Cruz.png",
+    "file": "../data/assets/images/Penelope Cruz.png",
     "name": "Penelope Cruz"
   },
   {
-    "file": "Mix & Twist/Peter_Pan.webp",
+    "file": "../data/assets/images/Peter_Pan.webp",
     "name": "Peter Pan"
   },
   {
-    "file": "Mix & Twist/Petra Kvitova.png",
+    "file": "../data/assets/images/Petra Kvitova.png",
     "name": "Petra Kvitova"
   },
   {
-    "file": "Mix & Twist/Philipp Lahm.png",
+    "file": "../data/assets/images/Philipp Lahm.png",
     "name": "Philipp Lahm"
   },
   {
-    "file": "Mix & Twist/Pierre Niney.png",
+    "file": "../data/assets/images/Pierre Niney.png",
     "name": "Pierre Niney"
   },
   {
-    "file": "Mix & Twist/Pinocchio.webp",
+    "file": "../data/assets/images/Pinocchio.webp",
     "name": "Pinocchio"
   },
   {
-    "file": "Mix & Twist/Pio Marmai.png",
+    "file": "../data/assets/images/Pio Marmai.png",
     "name": "Pio Marmai"
   },
   {
-    "file": "Mix & Twist/Pluto.webp",
+    "file": "../data/assets/images/Pluto.webp",
     "name": "Pluto"
   },
   {
-    "file": "Mix & Twist/Pocahontas.webp",
+    "file": "../data/assets/images/Pocahontas.webp",
     "name": "Pocahontas"
   },
   {
-    "file": "Mix & Twist/Post Malone.png",
+    "file": "../data/assets/images/Post Malone.png",
     "name": "Post Malone"
   },
   {
-    "file": "Mix & Twist/Prince.png",
+    "file": "../data/assets/images/Prince.png",
     "name": "Prince"
   },
   {
-    "file": "Mix & Twist/Priyanka Chopra.png",
+    "file": "../data/assets/images/Priyanka Chopra.png",
     "name": "Priyanka Chopra"
   },
   {
-    "file": "Mix & Twist/Pumbaa.webp",
+    "file": "../data/assets/images/Pumbaa.webp",
     "name": "Pumbaa"
   },
   {
-    "file": "Mix & Twist/Rachel McAdams.png",
+    "file": "../data/assets/images/Rachel McAdams.png",
     "name": "Rachel Mcadams"
   },
   {
-    "file": "Mix & Twist/Rafael Nadal.png",
+    "file": "../data/assets/images/Rafael Nadal.png",
     "name": "Rafael Nadal"
   },
   {
-    "file": "Mix & Twist/Rami Malek.png",
+    "file": "../data/assets/images/Rami Malek.png",
     "name": "Rami Malek"
   },
   {
-    "file": "Mix & Twist/Rapunzel.webp",
+    "file": "../data/assets/images/Rapunzel.webp",
     "name": "Rapunzel"
   },
   {
-    "file": "Mix & Twist/Raul.png",
+    "file": "../data/assets/images/Raul.png",
     "name": "Raul"
   },
   {
-    "file": "Mix & Twist/Reda Kateb.png",
+    "file": "../data/assets/images/Reda Kateb.png",
     "name": "Reda Kateb"
   },
   {
-    "file": "Mix & Twist/Reese Witherspoon.png",
+    "file": "../data/assets/images/Reese Witherspoon.png",
     "name": "Reese Witherspoon"
   },
   {
-    "file": "Mix & Twist/Remy.webp",
+    "file": "../data/assets/images/Remy.webp",
     "name": "Remy"
   },
   {
-    "file": "Mix & Twist/Renaud.png",
+    "file": "../data/assets/images/Renaud.png",
     "name": "Renaud"
   },
   {
-    "file": "Mix & Twist/Ricardo Kaka.png",
+    "file": "../data/assets/images/Ricardo Kaka.png",
     "name": "Ricardo Kaka"
   },
   {
-    "file": "Mix & Twist/Richard Harris.png",
+    "file": "../data/assets/images/Richard Harris.png",
     "name": "Richard Harris"
   },
   {
-    "file": "Mix & Twist/Rihanna.png",
+    "file": "../data/assets/images/Rihanna.png",
     "name": "Rihanna"
   },
   {
-    "file": "Mix & Twist/Rishi Sunak.png",
+    "file": "../data/assets/images/Rishi Sunak.png",
     "name": "Rishi Sunak"
   },
   {
-    "file": "Mix & Twist/Robbie Coltrane.png",
+    "file": "../data/assets/images/Robbie Coltrane.png",
     "name": "Robbie Coltrane"
   },
   {
-    "file": "Mix & Twist/Robert De Niro.png",
+    "file": "../data/assets/images/Robert De Niro.png",
     "name": "Robert De Niro"
   },
   {
-    "file": "Mix & Twist/Robert Downey Jr.png",
+    "file": "../data/assets/images/Robert Downey Jr.png",
     "name": "Robert Downey Jr"
   },
   {
-    "file": "Mix & Twist/Robert Lewandowski.png",
+    "file": "../data/assets/images/Robert Lewandowski.png",
     "name": "Robert Lewandowski"
   },
   {
-    "file": "Mix & Twist/Robert Pattinson.png",
+    "file": "../data/assets/images/Robert Pattinson.png",
     "name": "Robert Pattinson"
   },
   {
-    "file": "Mix & Twist/Roger Federer.png",
+    "file": "../data/assets/images/Roger Federer.png",
     "name": "Roger Federer"
   },
   {
-    "file": "Mix & Twist/Romain Duris.png",
+    "file": "../data/assets/images/Romain Duris.png",
     "name": "Romain Duris"
   },
   {
-    "file": "Mix & Twist/Romario.png",
+    "file": "../data/assets/images/Romario.png",
     "name": "Romario"
   },
   {
-    "file": "Mix & Twist/Ronaldinho.png",
+    "file": "../data/assets/images/Ronaldinho.png",
     "name": "Ronaldinho"
   },
   {
-    "file": "Mix & Twist/Ronaldo Nazario.png",
+    "file": "../data/assets/images/Ronaldo Nazario.png",
     "name": "Ronaldo Nazario"
   },
   {
-    "file": "Mix & Twist/Rupert Grint.png",
+    "file": "../data/assets/images/Rupert Grint.png",
     "name": "Rupert Grint"
   },
   {
-    "file": "Mix & Twist/Russell Crowe.png",
+    "file": "../data/assets/images/Russell Crowe.png",
     "name": "Russell Crowe"
   },
   {
-    "file": "Mix & Twist/Russell.webp",
+    "file": "../data/assets/images/Russell.webp",
     "name": "Russell"
   },
   {
-    "file": "Mix & Twist/Ruud Gullit.png",
+    "file": "../data/assets/images/Ruud Gullit.png",
     "name": "Ruud Gullit"
   },
   {
-    "file": "Mix & Twist/Ryan Gosling.png",
+    "file": "../data/assets/images/Ryan Gosling.png",
     "name": "Ryan Gosling"
   },
   {
-    "file": "Mix & Twist/Salma Hayek.png",
+    "file": "../data/assets/images/Salma Hayek.png",
     "name": "Salma Hayek"
   },
   {
-    "file": "Mix & Twist/Sam Smith.png",
+    "file": "../data/assets/images/Sam Smith.png",
     "name": "Sam Smith"
   },
   {
-    "file": "Mix & Twist/Samuel Eto o.png",
+    "file": "../data/assets/images/Samuel Eto o.png",
     "name": "Samuel Eto O"
   },
   {
-    "file": "Mix & Twist/Samuel L Jackson.png",
+    "file": "../data/assets/images/Samuel L Jackson.png",
     "name": "Samuel L Jackson"
   },
   {
-    "file": "Mix & Twist/Sandra Bullock.png",
+    "file": "../data/assets/images/Sandra Bullock.png",
     "name": "Sandra Bullock"
   },
   {
-    "file": "Mix & Twist/Saoirse Ronan.png",
+    "file": "../data/assets/images/Saoirse Ronan.png",
     "name": "Saoirse Ronan"
   },
   {
-    "file": "Mix & Twist/Scar.webp",
+    "file": "../data/assets/images/Scar.webp",
     "name": "Scar"
   },
   {
-    "file": "Mix & Twist/Scarlett Johansson.png",
+    "file": "../data/assets/images/Scarlett Johansson.png",
     "name": "Scarlett Johansson"
   },
   {
-    "file": "Mix & Twist/Selena Gomez.png",
+    "file": "../data/assets/images/Selena Gomez.png",
     "name": "Selena Gomez"
   },
   {
-    "file": "Mix & Twist/Serena Williams.png",
+    "file": "../data/assets/images/Serena Williams.png",
     "name": "Serena Williams"
   },
   {
-    "file": "Mix & Twist/Sergio Aguero.png",
+    "file": "../data/assets/images/Sergio Aguero_2.png",
     "name": "Sergio Aguero"
   },
   {
-    "file": "Mix & Twist/Sergio Busquets.png",
+    "file": "../data/assets/images/Sergio Busquets.png",
     "name": "Sergio Busquets"
   },
   {
-    "file": "Mix & Twist/Shah Rukh Khan.png",
+    "file": "../data/assets/images/Shah Rukh Khan.png",
     "name": "Shah Rukh Khan"
   },
   {
-    "file": "Mix & Twist/Shakira.png",
+    "file": "../data/assets/images/Shakira.png",
     "name": "Shakira"
   },
   {
-    "file": "Mix & Twist/Shawn Mendes.png",
+    "file": "../data/assets/images/Shawn Mendes.png",
     "name": "Shawn Mendes"
   },
   {
-    "file": "Mix & Twist/Shefali Chowdhury.png",
+    "file": "../data/assets/images/Shefali Chowdhury.png",
     "name": "Shefali Chowdhury"
   },
   {
-    "file": "Mix & Twist/Sia.png",
+    "file": "../data/assets/images/Sia.png",
     "name": "Sia"
   },
   {
-    "file": "Mix & Twist/Simba.webp",
+    "file": "../data/assets/images/Simba.webp",
     "name": "Simba"
   },
   {
-    "file": "Mix & Twist/Simona Halep.png",
+    "file": "../data/assets/images/Simona Halep.png",
     "name": "Simona Halep"
   },
   {
-    "file": "Mix & Twist/Slimane.png",
+    "file": "../data/assets/images/Slimane.png",
     "name": "Slimane"
   },
   {
-    "file": "Mix & Twist/Snow_White.webp",
+    "file": "../data/assets/images/Snow_White.webp",
     "name": "Snow White"
   },
   {
-    "file": "Mix & Twist/Song Kang ho.png",
+    "file": "../data/assets/images/Song Kang ho.png",
     "name": "Song Kang Ho"
   },
   {
-    "file": "Mix & Twist/Squeezie.png",
+    "file": "../data/assets/images/Squeezie.png",
     "name": "Squeezie"
   },
   {
-    "file": "Mix & Twist/Stan Wawrinka.png",
+    "file": "../data/assets/images/Stan Wawrinka.png",
     "name": "Stan Wawrinka"
   },
   {
-    "file": "Mix & Twist/Stanislav Ianevski.png",
+    "file": "../data/assets/images/Stanislav Ianevski.png",
     "name": "Stanislav Ianevski"
   },
   {
-    "file": "Mix & Twist/Stefanos Tsitsipas.png",
+    "file": "../data/assets/images/Stefanos Tsitsipas.png",
     "name": "Stefanos Tsitsipas"
   },
   {
-    "file": "Mix & Twist/Stellan Skarsgard.png",
+    "file": "../data/assets/images/Stellan Skarsgard.png",
     "name": "Stellan Skarsgard"
   },
   {
-    "file": "Mix & Twist/Steven Gerrard.png",
+    "file": "../data/assets/images/Steven Gerrard.png",
     "name": "Steven Gerrard"
   },
   {
-    "file": "Mix & Twist/Stitch.webp",
+    "file": "../data/assets/images/Stitch.webp",
     "name": "Stitch"
   },
   {
-    "file": "Mix & Twist/Stromae.png",
+    "file": "../data/assets/images/Stromae.png",
     "name": "Stromae"
   },
   {
-    "file": "Mix & Twist/Sylvester Stallone.png",
+    "file": "../data/assets/images/Sylvester Stallone.png",
     "name": "Sylvester Stallone"
   },
   {
-    "file": "Mix & Twist/Tahar Rahim.png",
+    "file": "../data/assets/images/Tahar Rahim.png",
     "name": "Tahar Rahim"
   },
   {
-    "file": "Mix & Twist/Taylor Swift.png",
+    "file": "../data/assets/images/Taylor Swift.png",
     "name": "Taylor Swift"
   },
   {
-    "file": "Mix & Twist/The Weeknd.png",
+    "file": "../data/assets/images/The Weeknd.png",
     "name": "The Weeknd"
   },
   {
-    "file": "Mix & Twist/Thierry Henry.png",
+    "file": "../data/assets/images/Thierry Henry.png",
     "name": "Thierry Henry"
   },
   {
-    "file": "Mix & Twist/Tiana.webp",
+    "file": "../data/assets/images/Tiana.webp",
     "name": "Tiana"
   },
   {
-    "file": "Mix & Twist/Tigger.webp",
+    "file": "../data/assets/images/Tigger.webp",
     "name": "Tigger"
   },
   {
-    "file": "Mix & Twist/Tilda Swinton.png",
+    "file": "../data/assets/images/Tilda Swinton.png",
     "name": "Tilda Swinton"
   },
   {
-    "file": "Mix & Twist/Timon.webp",
+    "file": "../data/assets/images/Timon.webp",
     "name": "Timon"
   },
   {
-    "file": "Mix & Twist/Timothee Chalamet.png",
+    "file": "../data/assets/images/Timothee Chalamet.png",
     "name": "Timothee Chalamet"
   },
   {
-    "file": "Mix & Twist/Tinker_Bell.webp",
+    "file": "../data/assets/images/Tinker_Bell.webp",
     "name": "Tinker Bell"
   },
   {
-    "file": "Mix & Twist/Tom Cruise.png",
+    "file": "../data/assets/images/Tom Cruise.png",
     "name": "Tom Cruise"
   },
   {
-    "file": "Mix & Twist/Tom Felton.png",
+    "file": "../data/assets/images/Tom Felton.png",
     "name": "Tom Felton"
   },
   {
-    "file": "Mix & Twist/Tom Hanks.png",
+    "file": "../data/assets/images/Tom Hanks.png",
     "name": "Tom Hanks"
   },
   {
-    "file": "Mix & Twist/Trinity Rodman.png",
+    "file": "../data/assets/images/Trinity Rodman.png",
     "name": "Trinity Rodman"
   },
   {
-    "file": "Mix & Twist/Ultia.png",
+    "file": "../data/assets/images/Ultia.png",
     "name": "Ultia"
   },
   {
-    "file": "Mix & Twist/Ursula von der Leyen.png",
+    "file": "../data/assets/images/Ursula von der Leyen.png",
     "name": "Ursula Von Der Leyen"
   },
   {
-    "file": "Mix & Twist/Ursula.webp",
+    "file": "../data/assets/images/Ursula.webp",
     "name": "Ursula"
   },
   {
-    "file": "Mix & Twist/Usher.png",
+    "file": "../data/assets/images/Usher.png",
     "name": "Usher"
   },
   {
-    "file": "Mix & Twist/Valerie Pecresse.png",
+    "file": "../data/assets/images/Valerie Pecresse.png",
     "name": "Valerie Pecresse"
   },
   {
-    "file": "Mix & Twist/Venus Williams.png",
+    "file": "../data/assets/images/Venus Williams.png",
     "name": "Venus Williams"
   },
   {
-    "file": "Mix & Twist/Vianney.png",
+    "file": "../data/assets/images/Vianney.png",
     "name": "Vianney"
   },
   {
-    "file": "Mix & Twist/Victor Wembanyama.png",
+    "file": "../data/assets/images/Victor Wembanyama_2.png",
     "name": "Victor Wembanyama"
   },
   {
-    "file": "Mix & Twist/Vin Diesel.png",
+    "file": "../data/assets/images/Vin Diesel.png",
     "name": "Vin Diesel"
   },
   {
-    "file": "Mix & Twist/Vincent Cassel.png",
+    "file": "../data/assets/images/Vincent Cassel.png",
     "name": "Vincent Cassel"
   },
   {
-    "file": "Mix & Twist/Viola Davis.png",
+    "file": "../data/assets/images/Viola Davis.png",
     "name": "Viola Davis"
   },
   {
-    "file": "Mix & Twist/Vitaa.png",
+    "file": "../data/assets/images/Vitaa.png",
     "name": "Vitaa"
   },
   {
-    "file": "Mix & Twist/Volodymyr Zelenskyy.png",
+    "file": "../data/assets/images/Volodymyr Zelenskyy.png",
     "name": "Volodymyr Zelenskyy"
   },
   {
-    "file": "Mix & Twist/Wayne Rooney.png",
+    "file": "../data/assets/images/Wayne Rooney.png",
     "name": "Wayne Rooney"
   },
   {
-    "file": "Mix & Twist/Wendie Renard.png",
+    "file": "../data/assets/images/Wendie Renard_2.png",
     "name": "Wendie Renard"
   },
   {
-    "file": "Mix & Twist/Will Smith.png",
+    "file": "../data/assets/images/Will Smith.png",
     "name": "Will Smith"
   },
   {
-    "file": "Mix & Twist/Winnie_the_Pooh.webp",
+    "file": "../data/assets/images/Winnie_the_Pooh.webp",
     "name": "Winnie The Pooh"
   },
   {
-    "file": "Mix & Twist/Woody.webp",
+    "file": "../data/assets/images/Woody.webp",
     "name": "Woody"
   },
   {
-    "file": "Mix & Twist/Xabi Alonso.png",
+    "file": "../data/assets/images/Xabi Alonso.png",
     "name": "Xabi Alonso"
   },
   {
-    "file": "Mix & Twist/Yaya Toure.png",
+    "file": "../data/assets/images/Yaya Toure.png",
     "name": "Yaya Toure"
   },
   {
-    "file": "Mix & Twist/Zaho.png",
+    "file": "../data/assets/images/Zaho.png",
     "name": "Zaho"
   },
   {
-    "file": "Mix & Twist/Zaz.png",
+    "file": "../data/assets/images/Zaz.png",
     "name": "Zaz"
   },
   {
-    "file": "Mix & Twist/Zendaya.png",
+    "file": "../data/assets/images/Zendaya.png",
     "name": "Zendaya"
   },
   {
-    "file": "Mix & Twist/ZeratoR.png",
+    "file": "../data/assets/images/ZeratoR.png",
     "name": "Zerator"
   },
   {
-    "file": "Mix & Twist/Zico.png",
+    "file": "../data/assets/images/Zico.png",
     "name": "Zico"
   },
   {
-    "file": "Mix & Twist/Zinedine Zidane.png",
+    "file": "../data/assets/images/Zinedine Zidane.png",
     "name": "Zinedine Zidane"
   },
   {
-    "file": "Mix & Twist/Zlatan Ibrahimovic.png",
+    "file": "../data/assets/images/Zlatan Ibrahimovic.png",
     "name": "Zlatan Ibrahimovic"
   }
 ];
