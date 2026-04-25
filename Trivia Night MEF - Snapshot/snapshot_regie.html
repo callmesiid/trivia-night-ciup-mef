@@ -153,6 +153,9 @@
 
         function triggerWrong() {
             sfxBreak.currentTime = 0; sfxBreak.play();
+            let reduction = (currentMode === 'NORMAL') ? 0.5 : 0.8;
+            if (turnDuration > 5) turnDuration -= reduction;
+            document.getElementById('current-max-time').innerText = turnDuration.toFixed(1);
             fullResetTimer();
         }
 

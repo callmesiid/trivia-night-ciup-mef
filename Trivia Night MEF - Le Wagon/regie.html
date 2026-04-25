@@ -1013,14 +1013,18 @@ function nextTeamAuto() {
     // Calculer le prochain index AVANT d'assigner, pour gérer le skip proprement
     let nextIdx = (gameState.currentTeamIndex + 1) % gameState.teams.length;
 
-    // PASSE TON TOUR : vérifier si la prochaine équipe doit sauter
-    if (gameState.teams[nextIdx] && gameState.teams[nextIdx].skipNextTurn) {
+    // PASSE TON TOUR : vérifier si la prochaine équipe doit sauter (jusqu'à trouver une équipe active)
+    let skipGuard = 0;
+    while (gameState.teams[nextIdx] && gameState.teams[nextIdx].skipNextTurn && skipGuard < gameState.teams.length) {
+        const skippedName = gameState.teams[nextIdx].name;
         gameState.teams[nextIdx].skipNextTurn = false;
-        channel.postMessage({ type:'SKIP_TURN', data:{teamName:gameState.teams[nextIdx].name} });
-        addLog(`⛔ ${gameState.teams[nextIdx].name} passe son tour (malus)`, 'bad');
-        // Avancer encore d'un cran
+        channel.postMessage({ type:'SKIP_TURN', data:{teamName: skippedName} });
+        addLog(`⛔ ${skippedName} passe son tour (malus PASSE TON TOUR)`, 'bad');
         nextIdx = (nextIdx + 1) % gameState.teams.length;
+        skipGuard++;
     }
+    // Sécurité : si tous les joueurs ont skipNextTurn, on prend le suivant quand même
+    if (skipGuard >= gameState.teams.length) nextIdx = (gameState.currentTeamIndex + 1) % gameState.teams.length;
 
     gameState.currentTeamIndex = nextIdx;
     updateTurnDisplay(); renderTeamsList(); renderWagonsGrid();
@@ -1108,6 +1112,10 @@ function renderBonusPanel() {
 }
 
 function showBonusModal(teamIdx, itemIdx, itemType) {
+    if (questionPhase === 'ACTIVE' || questionPhase === 'PAUSED') {
+        addLog('⚠ Bonus/Malus indisponibles pendant une question — stoppez le timer d\'abord', 'bad');
+        return;
+    }
     const team = gameState.teams[teamIdx];
     const item = itemType==='bonus' ? team.bonuses[itemIdx] : team.malus[itemIdx];
     if (item.used) return;

@@ -223,6 +223,7 @@
                 // 2. SÉLECTION
                 case 'TRIGGER_SPIN': triggerSpinSequence(); break;
                 case 'FORCE_START_BOARD': startGame(); break;
+                case 'STOP_TIMER': clearInterval(timerInterval); stopSound(audioTimer); break;
 
                 // 3. JEU (OUVERTURE CASE)
                 case 'OPEN_BUCKET': 
@@ -239,9 +240,8 @@
                 case 'CLOSE_QUESTION': resetQuestionState(); break; // Stop timer clean
 
                 // 5. FIN
-                case 'SHOW_SCORES_FINAL': 
-                    // On met à jour le tableau JS local avec les équipes reçues de la régie
-                    runScoreSequence(data.teams);
+                case 'SHOW_SCORES_FINAL':
+                    runScoreSequence(data.teams, data.threshold || 3);
                     // On affiche l'écran
                     document.getElementById('game-board').style.display = 'none';
                     document.getElementById('game-header').style.display = 'none';
@@ -886,16 +886,15 @@
             document.getElementById('overlay').style.display = 'none';
         }
 
-        function runScoreSequence(teams) {
+        function runScoreSequence(teams, threshold = 3) {
             scoreTable.innerHTML = '';
-            // Si la régie n'a pas trié, on trie ici
             const sortedTeams = [...teams].sort((a,b) => b.score - a.score);
-            const top5 = sortedTeams.slice(0, 5); 
-            
+            const top5 = sortedTeams.slice(0, 5);
+
             top5.forEach((team, index) => {
                 const rank = index + 1;
                 const row = document.createElement('div'); row.className = `score-row rank-${rank}`; row.id = `rank-${rank}`;
-                let badge = rank <= 4 ? '<img src="../assets/images_front/qualifie.png" class="stamp">' : '<img src="../assets/images_front/elimine.png" class="stamp">';
+                let badge = rank <= threshold ? '<img src="../assets/images_front/qualifie.png" class="stamp">' : '<img src="../assets/images_front/elimine.png" class="stamp">';
                 row.innerHTML = `<span class="team-rank">#${rank}</span><span class="team-name">${team.name}</span><span class="team-score">${team.score} PTS</span>${badge}`;
                 scoreTable.appendChild(row);
             });
