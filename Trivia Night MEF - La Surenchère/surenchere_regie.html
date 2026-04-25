@@ -310,6 +310,7 @@ let validatedIndices = [];
 let lastValidatedBtn = null;
 let isRevealOpen       = false;
 let revealHasBeenShown = false; // APPLIQUER désactivé tant que la révélation n'a pas été ouverte
+let questionVisible    = false; // true après showQuestion(), false après doResetRound()
 let answersLocked    = true;   // verrouillé jusqu'au lancement du chrono
 
 // Mise & effets actifs pour le round
@@ -455,6 +456,9 @@ function broadcastTeams() {
 function onMiseChange() {
     mise = Math.max(0, parseInt(document.getElementById('mise-input').value) || 0);
     updateMiseDisplay();
+    if (questionVisible) {
+        channel.postMessage({ type: 'UPDATE_MISE', mise: effectiveMise() });
+    }
 }
 
 function effectiveMise() { return mise + plusMiseMalus; }
@@ -668,9 +672,10 @@ function stopAutoSpin() {
 function showQuestion() {
     if (!currentTheme) return;
     channel.postMessage({ type: 'SHOW_QUESTION', theme: currentTheme, mise: effectiveMise() });
+    questionVisible = true;
     document.getElementById('btn-show-q').disabled  = true;
     document.getElementById('btn-timer').disabled   = false;
-    document.getElementById('btn-reveal').disabled  = false;
+    document.getElementById('btn-reveal').disabled  = true; // bloqué jusqu'à ce que le timer soit lancé et mis en pause
     answersLocked = true;
     document.getElementById('grid-lock-banner').classList.add('show');
     lockAnswerButtons(true);
@@ -688,12 +693,16 @@ function startTimer() {
     if (raw <= 0) { log(`⚠️ Temps cumulé négatif (${raw}s) → durée minimale de 5s`, 'bad'); }
     channel.postMessage({ type: 'START_TIMER', duration });
     answersLocked = false;
+    document.getElementById('btn-reveal').disabled = true; // re-bloqué pendant le chrono
     document.getElementById('grid-lock-banner').classList.remove('show');
     lockAnswerButtons(false);
     updateBmPanel(); // rerender (bonuses now inactive - timer running)
     log(`Chrono lancé — ${duration}s — réponses déverrouillées`);
 }
-function pauseTimer()  { channel.postMessage({ type: 'PAUSE_TIMER' }); }
+function pauseTimer()  {
+    channel.postMessage({ type: 'PAUSE_TIMER' });
+    document.getElementById('btn-reveal').disabled = false; // révélation disponible seulement après pause
+}
 function resetTimer()  { channel.postMessage({ type: 'RESET_TIMER' }); }
 
 // ================================================================
@@ -843,7 +852,7 @@ function doResetRound() {
 
     // Reset état
     currentTheme = null; validatedIndices = []; currentScore = 0;
-    isRevealOpen = false; revealHasBeenShown = false; lastValidatedBtn = null; answersLocked = true;
+    isRevealOpen = false; revealHasBeenShown = false; questionVisible = false; lastValidatedBtn = null; answersLocked = true;
     playingTeamIdx = -1;
     mise = 0; plusMiseMalus = 0; coupDePouce = false; doubleMalus = 0;
     timerBonus = 0; divisionMalus = false; roundAwarded = false;

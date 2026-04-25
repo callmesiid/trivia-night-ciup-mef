@@ -326,6 +326,11 @@ channel.onmessage = (event) => {
         case 'START_SPIN':      runSpin(data.availableThemes); break;
         case 'REVEAL_THEME':    stopSpin(data.theme); break;
         case 'SHOW_QUESTION':   setupGame(data.theme, data.mise); break;
+        case 'UPDATE_MISE': {
+            const mEl = document.getElementById('mise-display-game');
+            if (mEl) mEl.textContent = data.mise > 0 ? `MISE : ${data.mise}` : '';
+            break;
+        }
         case 'SHOW_BONUS':      showEffect(data.bonus, data.teamName, false); break;
         case 'SHOW_MALUS':      showEffect(data.malus, data.byTeam,  true);  break;
         case 'UPDATE_SCORE':

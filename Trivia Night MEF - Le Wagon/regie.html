@@ -1153,10 +1153,16 @@ function confirmBonus() {
     if (itemType==='malus') {
         if (def.id===13) {
             // VOL DE TOUR : la team activante vole le tour actuel
+            if (teamIdx === gameState.currentTeamIndex) {
+                // Self-activation : restore chip and cancel
+                item.used = false; renderBonusPanel();
+                addLog('🎯 VOL DE TOUR : vous avez déjà la main — chip restauré', 'bad');
+                pendingBonusActivation = null; return;
+            }
             saveHistory(`Malus VOL DE TOUR`);
             gameState.currentTeamIndex=teamIdx;
             channel.postMessage({ type:'NEXT_TURN', data:{teamIndex:teamIdx,teamName:team.name,teamColor:team.color} });
-            updateTurnDisplay(); renderTeamsList();
+            updateTurnDisplay(); renderTeamsList(); renderBonusPanel(); broadcastState();
             channel.postMessage({ type:'SHOW_BONUS', data:{bonus:def,teamName:team.name,teamColor:team.color} });
             addLog(`🎯 VOL DE TOUR: ${team.name} prend la main !`,'gold');
         } else {
@@ -1176,7 +1182,7 @@ function confirmBonus() {
     }
 
     // Bonus QUEUED (PRE_QUESTION ou POST_CORRECT)
-    gameState.pendingBonus = { bonus: def, teamIdx };
+    gameState.pendingBonus = { bonus: def, teamIdx, itemIdx };
     updatePendingBonusBar();
     channel.postMessage({ type:'SHOW_BONUS', data:{bonus:def,teamName:team.name,teamColor:team.color} });
     addLog(`⏳ "${def.name}" queued — s'applique à la prochaine question`,'gold');
@@ -1192,9 +1198,21 @@ function applyBonusImmediate(bonus, teamIdx) {
             break; }
         case 11: // WAGON BAR +5
             team.score+=5; broadcastState(); addLog(`🍸 +5pts pour ${team.name}`,'gold'); break;
-        case 12: // GRIÈVE
-            if (gameState.selectedWagonIndex!==null) { gameState.wagons[gameState.selectedWagonIndex].blockedForTurn=true; renderWagonsGrid(); addLog(`🔒 Wagon bloqué`,'bad'); }
-            else addLog('Sélectionnez un wagon pour GRIÈVE','bad');
+        case 12: { // GRIÈVE — bloque le wagon actuellement sélectionné
+            if (gameState.selectedWagonIndex !== null) {
+                gameState.wagons[gameState.selectedWagonIndex].blockedForTurn = true;
+                renderWagonsGrid();
+                addLog(`🔒 Wagon "${gameState.wagons[gameState.selectedWagonIndex].theme}" bloqué pour ce tour`, 'bad');
+            } else {
+                // Pas de wagon sélectionné → restaurer le chip
+                const { teamIdx: gti, itemIdx: gii } = pendingBonusActivation || {};
+                if (gti !== undefined && gii !== undefined) {
+                    gameState.teams[gti].bonuses[gii].used = false; renderBonusPanel();
+                }
+                addLog('⚠ GRIÈVE : sélectionnez d\'abord un wagon (cliquez dessus) puis activez le bonus', 'bad');
+            }
+            break;
+        }
             break;
         case 4: { // CONTRÔLEUR — affiche banner dans la régie
             const banner = document.getElementById('controleur-banner');
@@ -1227,14 +1245,30 @@ function showTargetModal(def, activatingTeamIdx) {
 
 function applyMalusOnTarget(targetIdx) {
     if (!pendingMalusActivation) return;
-    const {def, teamIdx} = pendingMalusActivation;
+    const {def, teamIdx, itemIdx} = pendingMalusActivation;
     const targetTeam=gameState.teams[targetIdx];
     const activatingTeam=gameState.teams[teamIdx];
+
+    // Bloquer le ciblage de sa propre équipe
+    if (targetIdx === teamIdx) {
+        gameState.teams[teamIdx].malus[itemIdx].used = false;
+        renderBonusPanel();
+        addLog('Impossible de cibler votre propre équipe — chip restauré', 'bad');
+        closeModal('target-modal'); pendingMalusActivation=null; return;
+    }
+
     closeModal('target-modal');
     switch(def.id) {
         case 14: // PASSE TON TOUR
-            targetTeam.skipNextTurn=true;
-            addLog(`⛔ ${targetTeam.name} passera son prochain tour`,'bad'); break;
+            if (targetIdx === gameState.currentTeamIndex) {
+                // La cible a la main → perd la main immédiatement
+                addLog(`⛔ ${targetTeam.name} perd la main immédiatement (PASSE TON TOUR)`, 'bad');
+                closeQuestionPanel(); nextTeamAuto();
+            } else {
+                targetTeam.skipNextTurn = true;
+                addLog(`⛔ ${targetTeam.name} passera son prochain tour`, 'bad');
+            }
+            break;
         case 15: // BLOQUER LE BANK
             targetTeam.bankBlocked=true;
             addLog(`🚫 ${targetTeam.name} ne pourra pas banquer au prochain palier`,'bad'); break;
@@ -1248,11 +1282,20 @@ function applyMalusOnTarget(targetIdx) {
     channel.postMessage({ type:'SHOW_BONUS', data:{bonus:def,teamName:activatingTeam.name,teamColor:activatingTeam.color} });
     saveHistory(`Malus ${def.name} → ${targetTeam.name}`);
     pendingMalusActivation=null;
+    renderTeamsList(); renderBonusPanel(); broadcastState(); // mise à jour visuelle immédiate
 }
 
 function cancelPendingBonus() {
-    gameState.pendingBonus=null; updatePendingBonusBar();
-    addLog('Bonus annulé','info');
+    if (gameState.pendingBonus) {
+        const { teamIdx, itemIdx } = gameState.pendingBonus;
+        if (teamIdx !== undefined && itemIdx !== undefined && gameState.teams[teamIdx]) {
+            gameState.teams[teamIdx].bonuses[itemIdx].used = false;
+            renderBonusPanel();
+        }
+        gameState.pendingBonus = null;
+        updatePendingBonusBar();
+        addLog('Bonus annulé — chip restauré dans le kit', 'info');
+    }
 }
 function updatePendingBonusBar() {
     const bar=document.getElementById('pending-bonus-bar');
