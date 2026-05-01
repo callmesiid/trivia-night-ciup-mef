@@ -1398,14 +1398,6 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Merida.webp",
-      "question": "Qui est-ce ?",
-      "answer": "Merida",
-      "difficulty": 4,
-      "validated": true
-    },
-    {
-      "type": "image",
       "file": "data/assets/images/Pepper_Potts.webp",
       "question": "Qui est-ce ?",
       "answer": "Pepper Potts",

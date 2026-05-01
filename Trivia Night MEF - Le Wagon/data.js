@@ -165,8 +165,8 @@ const BONUSES = [
         "emoji": "🎫",
         "type": "AUTO",
         "timing": "IMMEDIATE",
-        "desc": "Revient d'une question en arrière dans le wagon actuel — la question ratée peut être retentée.",
-        "how": "Activez depuis votre wagon en cours. Vous reculez d'une case et retentez la question précédente."
+        "desc": "Revient d'une question en arrière dans le wagon actuel — la question ratée peut être retentée, les points de session sont ajustés.",
+        "how": "Activez depuis votre wagon en cours. Vous reculez d'une case et pouvez retenter la question précédente."
     }
 ];
 
@@ -227,36 +227,36 @@ const AVAILABLE_THEMES = [
         "color": "#e84393",
         "questions": [
             {
-                "q": "Quelle fleur est le symbole universel de l'amour ?",
-                "a": "La rose"
-            },
-            {
                 "q": "De quelle couleur est le tournesol ?",
                 "a": "Jaune"
+            },
+            {
+                "q": "Quelle fleur est le symbole universel de l'amour ?",
+                "a": "La rose"
             },
             {
                 "q": "Quelle fleur blanche de mai sent très fort et porte bonheur ?",
                 "a": "Le muguet"
             },
             {
-                "q": "Quelle fleur néerlandaise a causé une bulle spéculative au XVIIe siècle ?",
-                "a": "La tulipe"
-            },
-            {
                 "q": "Quelle fleur carnivore referme ses mâchoires sur les insectes ?",
                 "a": "La dionée (Venus flytrap)"
-            },
-            {
-                "q": "Comment appelle-t-on l'étude scientifique des fleurs et des plantes ?",
-                "a": "La botanique"
             },
             {
                 "q": "Quelle fleur japonaise symbolise la beauté éphémère du printemps ?",
                 "a": "Le cerisier (sakura)"
             },
             {
+                "q": "Comment appelle-t-on l'étude scientifique des fleurs et des plantes ?",
+                "a": "La botanique"
+            },
+            {
                 "q": "Quelle fleur produit l'opium quand on en incise la capsule ?",
                 "a": "Le pavot"
+            },
+            {
+                "q": "Quelle fleur néerlandaise a causé une bulle spéculative au XVIIe siècle ?",
+                "a": "La tulipe"
             },
             {
                 "q": "Quelle plante fleurit une fois tous les 100 ans selon la légende ?",
@@ -274,12 +274,20 @@ const AVAILABLE_THEMES = [
         "color": "#3498db",
         "questions": [
             {
-                "q": "Combien y a-t-il de cases sur un échiquier ?",
-                "a": "64"
-            },
-            {
                 "q": "Quel jeu de société fait jouer de petits chevaux colorés ?",
                 "a": "Le jeu des petits chevaux"
+            },
+            {
+                "q": "Dans quel jeu cherche-t-on à faire couler les bateaux adverses ?",
+                "a": "La Bataille navale"
+            },
+            {
+                "q": "Quel jeu de société coopératif médical vous demande d'opérer un patient ?",
+                "a": "Docteur Maboul"
+            },
+            {
+                "q": "Combien y a-t-il de cases sur un échiquier ?",
+                "a": "64"
             },
             {
                 "q": "Dans le Monopoly, quelle est la rue la plus chère en version française ?",
@@ -290,28 +298,20 @@ const AVAILABLE_THEMES = [
                 "a": "10 points"
             },
             {
-                "q": "Qui a inventé le Rubik's Cube ?",
-                "a": "Ernő Rubik (en 1974)"
+                "q": "Quel jeu de plateau lancé en 1995 se joue sur une île avec des routes et des villes ?",
+                "a": "Les Colons de Catane"
             },
             {
                 "q": "Dans les échecs, quel est le seul coup où on déplace deux pièces simultanément ?",
                 "a": "Le roque"
             },
             {
-                "q": "Quel jeu de société coopératif médical vous demande d'opérer un patient ?",
-                "a": "Docteur Maboul"
-            },
-            {
                 "q": "Combien de propriétés y a-t-il dans un Monopoly standard ?",
                 "a": "28"
             },
             {
-                "q": "Dans quel jeu cherche-t-on à faire couler les bateaux adverses ?",
-                "a": "La Bataille navale"
-            },
-            {
-                "q": "Quel jeu de plateau lancé en 1995 se joue sur une île avec des routes et des villes ?",
-                "a": "Les Colons de Catane"
+                "q": "Qui a inventé le Rubik's Cube ?",
+                "a": "Ernő Rubik (en 1974)"
             }
         ]
     },
@@ -325,40 +325,40 @@ const AVAILABLE_THEMES = [
                 "a": "Le chaton"
             },
             {
-                "q": "Quelle race de chien de chasse a de très longues oreilles tombantes ?",
-                "a": "Le basset hound"
-            },
-            {
                 "q": "Les chats voient-ils les couleurs comme les humains ?",
                 "a": "Non, ils voient en nuances limitées (dichromates)"
-            },
-            {
-                "q": "Quel est le chien de course le plus rapide au monde ?",
-                "a": "Le lévrier (greyhound)"
-            },
-            {
-                "q": "Combien de dents a un chat adulte ?",
-                "a": "30 dents"
-            },
-            {
-                "q": "Quelle race de chat n'a pas de poils ?",
-                "a": "Le Sphynx"
             },
             {
                 "q": "Combien d'heures par jour un chat dort-il en moyenne ?",
                 "a": "12 à 16 heures"
             },
             {
-                "q": "Quelle race de chien est connue pour son pelage 'dreadlock' appelé corded ?",
-                "a": "Le Komondor ou le Puli"
+                "q": "Quel est le chien de course le plus rapide au monde ?",
+                "a": "Le lévrier (greyhound)"
+            },
+            {
+                "q": "Quelle race de chat n'a pas de poils ?",
+                "a": "Le Sphynx"
+            },
+            {
+                "q": "Combien de dents a un chat adulte ?",
+                "a": "30 dents"
+            },
+            {
+                "q": "Quelle race de chien de chasse a de très longues oreilles tombantes ?",
+                "a": "Le basset hound"
+            },
+            {
+                "q": "Quel chien de berger australien est souvent confondu avec le Colley mais est d'origine américaine ?",
+                "a": "L'Australian Shepherd (Berger australien)"
             },
             {
                 "q": "Quel organe unique les chats ont-ils dans la gorge qui leur permet de ronronner ?",
                 "a": "Le larynx (muscles laryngés)"
             },
             {
-                "q": "Quel chien de berger australien est souvent confondu avec le Colley mais est d'origine américaine ?",
-                "a": "L'Australian Shepherd (Berger australien)"
+                "q": "Quelle race de chien est connue pour son pelage 'dreadlock' appelé corded ?",
+                "a": "Le Komondor ou le Puli"
             }
         ]
     },
@@ -368,12 +368,16 @@ const AVAILABLE_THEMES = [
         "color": "#27ae60",
         "questions": [
             {
+                "q": "De quelle couleur est un carton d'expulsion ?",
+                "a": "Rouge"
+            },
+            {
                 "q": "Combien de joueurs y a-t-il dans une équipe de football sur le terrain ?",
                 "a": "11 joueurs"
             },
             {
-                "q": "De quelle couleur est un carton d'expulsion ?",
-                "a": "Rouge"
+                "q": "Combien de temps dure un match de football réglementaire ?",
+                "a": "90 minutes (2×45)"
             },
             {
                 "q": "Qui a gagné la Coupe du Monde 2018 ?",
@@ -384,20 +388,16 @@ const AVAILABLE_THEMES = [
                 "a": "Le Brésil (5 titres)"
             },
             {
-                "q": "Combien de temps dure un match de football réglementaire ?",
-                "a": "90 minutes (2×45)"
-            },
-            {
                 "q": "Quel joueur détient le record du nombre de Ballons d'Or ?",
                 "a": "Lionel Messi (8 Ballons d'Or)"
             },
             {
-                "q": "En quelle année a eu lieu la première Coupe du Monde de football ?",
-                "a": "1930 (en Uruguay)"
-            },
-            {
                 "q": "Quel club a remporté le plus de Ligues des Champions ?",
                 "a": "Le Real Madrid"
+            },
+            {
+                "q": "En quelle année a eu lieu la première Coupe du Monde de football ?",
+                "a": "1930 (en Uruguay)"
             },
             {
                 "q": "Quel est le record de buts marqués lors d'une seule Coupe du Monde par un joueur ?",
@@ -419,40 +419,40 @@ const AVAILABLE_THEMES = [
                 "a": "Mario"
             },
             {
-                "q": "Dans quel jeu construit-on des structures avec des blocs de terrain cubiques ?",
-                "a": "Minecraft"
-            },
-            {
                 "q": "Quel hérisson bleu court à la vitesse du son ?",
                 "a": "Sonic"
             },
             {
-                "q": "Qui a créé la franchise Pokémon ?",
-                "a": "Satoshi Tajiri (Nintendo/Game Freak)"
+                "q": "Dans quel jeu construit-on des structures avec des blocs de terrain cubiques ?",
+                "a": "Minecraft"
             },
             {
                 "q": "Quel jeu se déroule dans le royaume de Hyrule avec une jeune elfe en vert ?",
                 "a": "The Legend of Zelda"
             },
             {
-                "q": "Quel est le jeu vidéo le plus vendu de tous les temps (toutes plateformes) ?",
-                "a": "Minecraft"
+                "q": "Quel studio a développé la saga Grand Theft Auto ?",
+                "a": "Rockstar Games"
+            },
+            {
+                "q": "Quel est le vrai nom du personnage principal de la saga The Legend of Zelda (souvent confondu avec le titre) ?",
+                "a": "Link (pas Zelda, qui est la princesse)"
+            },
+            {
+                "q": "Qui a créé la franchise Pokémon ?",
+                "a": "Satoshi Tajiri (Nintendo/Game Freak)"
+            },
+            {
+                "q": "Quel jeu de Valve lancé en 2012 est considéré comme le MOBA le plus joué au monde ?",
+                "a": "Dota 2"
             },
             {
                 "q": "En quelle année est sorti le premier jeu Donkey Kong, premier apparition de Mario ?",
                 "a": "1981"
             },
             {
-                "q": "Quel studio a développé la saga Grand Theft Auto ?",
-                "a": "Rockstar Games"
-            },
-            {
                 "q": "Qui est le créateur de la saga Metal Gear Solid ?",
                 "a": "Hideo Kojima"
-            },
-            {
-                "q": "Quel jeu de Valve lancé en 2012 est considéré comme le MOBA le plus joué au monde ?",
-                "a": "Dota 2"
             }
         ]
     },
@@ -478,10 +478,6 @@ const AVAILABLE_THEMES = [
                 "a": "Naples"
             },
             {
-                "q": "Quel chef français cumule le plus d'étoiles Michelin au monde ?",
-                "a": "Alain Ducasse (20+ étoiles)"
-            },
-            {
                 "q": "Quel est le fromage français qui sent le plus fort et est protégé par une AOC ?",
                 "a": "Le Munster (ou l'Époisses)"
             },
@@ -494,12 +490,16 @@ const AVAILABLE_THEMES = [
                 "a": "L'Éthiopie"
             },
             {
+                "q": "Quel fruit tropical contient une enzyme (bromélaïne) qui empêche la gélatine de prendre ?",
+                "a": "L'ananas"
+            },
+            {
                 "q": "Combien de litres de lait faut-il environ pour faire 1 kilo de fromage ?",
                 "a": "Environ 10 litres"
             },
             {
-                "q": "Quel fruit tropical contient une enzyme (bromélaïne) qui empêche la gélatine de prendre ?",
-                "a": "L'ananas"
+                "q": "Quel chef français cumule le plus d'étoiles Michelin au monde ?",
+                "a": "Alain Ducasse (20+ étoiles)"
             }
         ]
     },
@@ -513,36 +513,36 @@ const AVAILABLE_THEMES = [
                 "a": "Le Fabuleux Destin d'Amélie Poulain"
             },
             {
-                "q": "Qui a réalisé 'La Haine' en 1995 ?",
-                "a": "Mathieu Kassovitz"
-            },
-            {
                 "q": "Quel acteur français joue le tueur à gages dans 'Léon' de Luc Besson ?",
                 "a": "Jean Reno"
-            },
-            {
-                "q": "Qui a composé la bande originale du Fabuleux Destin d'Amélie Poulain ?",
-                "a": "Yann Tiersen"
             },
             {
                 "q": "Dans quel film de 2011 un riche tétraplégique engage un homme de banlieue pour le soigner ?",
                 "a": "Intouchables"
             },
             {
+                "q": "Quel acteur incarne Astérix dans 'Mission Cléopâtre' aux côtés de Jamel Debbouze ?",
+                "a": "Christian Clavier"
+            },
+            {
                 "q": "Quel film de Jean-Marie Poiré met en scène un chevalier medieval transporté de nos jours ?",
                 "a": "Les Visiteurs"
             },
             {
+                "q": "Qui a réalisé 'La Haine' en 1995 ?",
+                "a": "Mathieu Kassovitz"
+            },
+            {
+                "q": "Quel film avec Anémone et Thierry Lhermitte se déroule la nuit de Noël dans une permanence téléphonique ?",
+                "a": "Le Père Noël est une ordure"
+            },
+            {
+                "q": "Qui a composé la bande originale du Fabuleux Destin d'Amélie Poulain ?",
+                "a": "Yann Tiersen"
+            },
+            {
                 "q": "Quelle Palme d'Or française de 2008 se déroule dans un collège difficile de Paris ?",
                 "a": "Entre les murs"
-            },
-            {
-                "q": "Quel film de 1985 avec Depardieu et Anémone raconte une histoire de bébé échangé ?",
-                "a": "Le Père Noël est une ordure (1982) ou Trois hommes et un couffin"
-            },
-            {
-                "q": "Quel acteur incarne Astérix dans 'Mission Cléopâtre' aux côtés de Jamel Debbouze ?",
-                "a": "Christian Clavier"
             },
             {
                 "q": "Quel film de François Truffaut, sorti en 1959, marque le début de la Nouvelle Vague ?",
@@ -556,6 +556,10 @@ const AVAILABLE_THEMES = [
         "color": "#e67e22",
         "questions": [
             {
+                "q": "Quelle chanteuse française a popularisé 'La Vie en rose' dans les années 40 ?",
+                "a": "Édith Piaf"
+            },
+            {
                 "q": "Combien de cordes a une guitare classique standard ?",
                 "a": "6 cordes"
             },
@@ -568,28 +572,24 @@ const AVAILABLE_THEMES = [
                 "a": "Queen"
             },
             {
-                "q": "Qui a composé la Symphonie n°9 malgré sa surdité ?",
-                "a": "Ludwig van Beethoven"
-            },
-            {
-                "q": "Quel rappeur français a sorti 'Bande Organisée' avec Jul, SCH, Naps et autres ?",
-                "a": "SCH, Jul, Naps, Kofs, Elams, Solda, Houari, Soso Maness"
-            },
-            {
-                "q": "Quelle chanteuse française a popularisé 'La Vie en rose' dans les années 40 ?",
-                "a": "Édith Piaf"
-            },
-            {
-                "q": "Qui a gagné l'Eurovision 2021 pour l'Italie ?",
-                "a": "Måneskin"
+                "q": "Combien de touches (notes) possède un piano de concert standard ?",
+                "a": "88 touches"
             },
             {
                 "q": "Quel instrument à cordes pincées est associé au flamenco espagnol ?",
                 "a": "La guitare flamenca"
             },
             {
-                "q": "Combien de touches (notes) possède un piano de concert standard ?",
-                "a": "88 touches"
+                "q": "Qui a composé la Symphonie n°9 malgré sa surdité ?",
+                "a": "Ludwig van Beethoven"
+            },
+            {
+                "q": "Qui a gagné l'Eurovision 2021 pour l'Italie ?",
+                "a": "Måneskin"
+            },
+            {
+                "q": "Quel rappeur français a sorti 'Bande Organisée' avec Jul, SCH, Naps et autres ?",
+                "a": "SCH, Jul, Naps, Kofs, Elams, Solda, Houari, Soso Maness"
             },
             {
                 "q": "Quel est le vrai nom du chanteur Stromae ?",

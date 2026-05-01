@@ -280,6 +280,37 @@ function toggleDataMode() {
 // ─────────────────────────────────────────────────────────────────────────
 
 // ================================================================
+// SESSION LOG — exclure les thèmes déjà joués, reset quand tous joués
+// ================================================================
+const SESSION_LOG_KEY = 'mef_surenchere_seen';
+
+function sessionLog_load() {
+    try { return JSON.parse(localStorage.getItem(SESSION_LOG_KEY)) || []; } catch { return []; }
+}
+function sessionLog_save(ids) {
+    localStorage.setItem(SESSION_LOG_KEY, JSON.stringify(ids));
+}
+function sessionLog_buildAvailable(allThemes) {
+    let seen = sessionLog_load();
+    const allIds = allThemes.map(t => t.id);
+    // Si tous les thèmes ont déjà été vus, on repart de zéro
+    if (allIds.every(id => seen.includes(id))) {
+        seen = [];
+        sessionLog_save(seen);
+        log('🔄 Toutes les questions ont été posées — réinitialisation du log', 'gold');
+    }
+    return allThemes.filter(t => !seen.includes(t.id));
+}
+function sessionLog_markPlayed(themeId) {
+    const seen = sessionLog_load();
+    if (!seen.includes(themeId)) {
+        seen.push(themeId);
+        sessionLog_save(seen);
+    }
+}
+// ─────────────────────────────────────────────────────────────────────────
+
+// ================================================================
 // DÉFINITIONS BONUS & MALUS
 // ================================================================
 const BONUS_POOL = [
@@ -303,7 +334,7 @@ let teams       = [];
 let phase       = 'SETUP'; // 'SETUP' | 'GAME'
 let playingTeamIdx = -1;
 
-let availableThemes  = [...THEMES_DATA];
+let availableThemes  = sessionLog_buildAvailable(THEMES_DATA);
 let currentTheme     = null;
 let currentScore     = 0;
 let validatedIndices = [];
@@ -649,7 +680,7 @@ function skipIntro()   { channel.postMessage({ type: 'SKIP_INTRO' }); }
 
 function startAutoSpin() {
     if (phase !== 'GAME') { alert('Validez les équipes d\'abord !'); return; }
-    if (!availableThemes.length) { alert('Plus de thèmes disponibles ! Démarrez une nouvelle partie.'); return; }
+    if (!availableThemes.length) { alert('Plus de thèmes disponibles pour cette session ! Redémarrez pour réinitialiser.'); return; }
     document.getElementById('btn-spin').disabled = true;
     document.getElementById('answers-grid').innerHTML = '<div style="color:#f39c12;grid-column:1/-1;">Tirage en cours...</div>';
     channel.postMessage({ type: 'START_SPIN', availableThemes });
@@ -659,6 +690,7 @@ function stopAutoSpin() {
     const idx     = Math.floor(Math.random() * availableThemes.length);
     currentTheme  = availableThemes[idx];
     availableThemes.splice(idx, 1);
+    sessionLog_markPlayed(currentTheme.id);
     channel.postMessage({ type: 'REVEAL_THEME', theme: currentTheme });
     document.getElementById('grid-theme-title').textContent = currentTheme.title;
     document.getElementById('btn-show-q').disabled  = false;

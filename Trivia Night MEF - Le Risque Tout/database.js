@@ -23,16 +23,6 @@ const QUESTION_DATABASE = {
           "answer": "Canard Mandarin"
         },
         {
-          "file": "../data/assets/images/chevre_montagnes_rocheuses.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Chevre Montagnes Rocheuses"
-        },
-        {
-          "file": "../data/assets/images/chien_de_prairie.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Chien De Prairie"
-        },
-        {
           "file": "../data/assets/images/cigale_commune.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Cigale Commune"
@@ -131,16 +121,6 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/tortue_geante.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tortue Geante"
-        },
-        {
-          "file": "../data/assets/images/tortue_molle.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Tortue Molle"
-        },
-        {
-          "file": "../data/assets/images/tortue_verte.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Tortue Verte"
         },
         {
           "file": "../data/assets/images/tyrannosaure_rex.jpg",
@@ -682,6 +662,16 @@ const QUESTION_DATABASE = {
     "3": {
       "images": [
         {
+          "file": "../data/assets/images/chien_de_prairie.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Chien De Prairie"
+        },
+        {
+          "file": "../data/assets/images/tortue_verte.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Tortue Verte"
+        },
+        {
           "file": "../data/assets/images/chauve_souris_geante_d_inde.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Chauve Souris Geante D Inde"
@@ -800,6 +790,26 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/vipere_aspic.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vipere Aspic"
+        },
+        {
+          "file": "../data/assets/images/chevre_naine.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Chevre Naine"
+        },
+        {
+          "file": "../data/assets/images/ecureuil_gris.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Ecureuil Gris"
+        },
+        {
+          "file": "../data/assets/images/grenouille_taureau.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Grenouille Taureau"
+        },
+        {
+          "file": "../data/assets/images/nandou.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Nandou"
         }
       ],
       "sounds": [
@@ -1127,6 +1137,21 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/vautour_percnoptere.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Vautour Percnoptere"
+        },
+        {
+          "file": "../data/assets/images/ecureuil_geant.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Ecureuil Geant"
+        },
+        {
+          "file": "../data/assets/images/grenouille_fraise.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Grenouille Fraise"
+        },
+        {
+          "file": "../data/assets/images/narval.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Narval"
         }
       ],
       "sounds": [
@@ -1223,9 +1248,14 @@ const QUESTION_DATABASE = {
     "5": {
       "images": [
         {
-          "file": "../data/assets/images/chevre_naine.jpg",
+          "file": "../data/assets/images/chevre_montagnes_rocheuses.jpg",
           "question": "Quel est cet animal ?",
-          "answer": "Chevre Naine"
+          "answer": "Chevre Montagnes Rocheuses"
+        },
+        {
+          "file": "../data/assets/images/tortue_molle.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Tortue Molle"
         },
         {
           "file": "../data/assets/images/chien_chinois_a_crete.jpg",
@@ -1268,39 +1298,9 @@ const QUESTION_DATABASE = {
           "answer": "Ecureuil Fouisseur"
         },
         {
-          "file": "../data/assets/images/ecureuil_geant.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Ecureuil Geant"
-        },
-        {
-          "file": "../data/assets/images/ecureuil_gris.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Ecureuil Gris"
-        },
-        {
-          "file": "../data/assets/images/grenouille_fraise.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Grenouille Fraise"
-        },
-        {
-          "file": "../data/assets/images/grenouille_taureau.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Grenouille Taureau"
-        },
-        {
           "file": "../data/assets/images/nandinie.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Nandinie"
-        },
-        {
-          "file": "../data/assets/images/nandou.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Nandou"
-        },
-        {
-          "file": "../data/assets/images/narval.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Narval"
         },
         {
           "file": "../data/assets/images/nasique.jpg",
@@ -7065,11 +7065,6 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/Megara.webp",
           "question": "Qui est-ce ?",
           "answer": "Megara"
-        },
-        {
-          "file": "../data/assets/images/Merida.webp",
-          "question": "Qui est-ce ?",
-          "answer": "Merida"
         },
         {
           "file": "../data/assets/images/Pepper_Potts.webp",
@@ -13260,10 +13255,6 @@ const QUESTION_DATABASE = {
           "answer": "Céline Dion"
         },
         {
-          "question": "Quel groupe a chanté \"Satisfaction\" ?",
-          "answer": "The Rolling Stones"
-        },
-        {
           "question": "Qui chante \"Djadja\" ?",
           "answer": "Aya Nakamura"
         },
@@ -13408,10 +13399,6 @@ const QUESTION_DATABASE = {
           "answer": "Rihanna"
         },
         {
-          "question": "Qui chante \"Joe le taxi\" ?",
-          "answer": "Vanessa Paradis"
-        },
-        {
           "question": "Qui chante \"Santé\" ?",
           "answer": "Stromae"
         },
@@ -13422,10 +13409,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui chante \"Shape of You\" ?",
           "answer": "Ed Sheeran"
-        },
-        {
-          "question": "Qui chante \"L'Aventurier\" ?",
-          "answer": "Indochine"
         },
         {
           "question": "Quel est l'instrument de Ray Charles ?",
@@ -13440,16 +13423,8 @@ const QUESTION_DATABASE = {
           "answer": "John Williams"
         },
         {
-          "question": "Qui chante \"La Boulette\" ?",
-          "answer": "Diam's"
-        },
-        {
           "question": "Quel instrument joue Carlos Santana ?",
           "answer": "Guitare"
-        },
-        {
-          "question": "Qui chante \"Thriller\" ?",
-          "answer": "Michael Jackson"
         },
         {
           "question": "Qui chante \"Basique\" ?",
@@ -13462,10 +13437,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui chante \"Rolling in the Deep\" ?",
           "answer": "Adele"
-        },
-        {
-          "question": "Qui chante \"J'ai demandé à la lune\" ?",
-          "answer": "Indochine"
         },
         {
           "question": "Quel est l'instrument de Slash ?",
@@ -13484,7 +13455,7 @@ const QUESTION_DATABASE = {
           "answer": "Jean-Jacques Goldman"
         },
         {
-          "question": "Quel instrument joue Elton Ray ?",
+          "question": "Quel instrument joue Elton John ?",
           "answer": "Piano"
         },
         {
@@ -13496,24 +13467,8 @@ const QUESTION_DATABASE = {
           "answer": "Dua Lipa"
         },
         {
-          "question": "Qui chante \"Il changeait la vie\" ?",
-          "answer": "Jean-Jacques Goldman"
-        },
-        {
           "question": "Qui chante \"Hips Don't Lie\" ?",
           "answer": "Shakira"
-        },
-        {
-          "question": "Quel groupe chante \"Seven Nation Army\" ?",
-          "answer": "The White Stripes"
-        },
-        {
-          "question": "Qui chante \"Résiste\" ?",
-          "answer": "France Gall"
-        },
-        {
-          "question": "Quel groupe chante \"Imagine Dragons\" ?",
-          "answer": "Imagine Dragons"
         },
         {
           "question": "Qui chante \"I Kissed a Girl\" ?",
@@ -13526,10 +13481,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui chante \"Wrecking Ball\" ?",
           "answer": "Miley Cyrus"
-        },
-        {
-          "question": "Qui chante \"Envole-moi\" ?",
-          "answer": "Jean-Jacques Goldman"
         },
         {
           "question": "Qui chante \"Bad Romance\" ?",
@@ -13546,18 +13497,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel groupe chante \"Thunderstruck\" ?",
           "answer": "AC/DC"
-        },
-        {
-          "question": "Qui chante \"La Kiffance\" ?",
-          "answer": "Naps"
-        },
-        {
-          "question": "Quel rappeur est membre de la Sexion d'Assaut ?",
-          "answer": "Maître Gims (ou Black M)"
-        },
-        {
-          "question": "Qui chante \"Tomber la chemise\" ?",
-          "answer": "Zebda"
         },
         {
           "question": "Qui chante \"Watermelon Sugar\" ?",
@@ -13590,10 +13529,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui chante \"Don't Start Now\" ?",
           "answer": "Dua Lipa"
-        },
-        {
-          "question": "Qui chante \"J't'emmène au vent\" ?",
-          "answer": "Louise Attaque"
         },
         {
           "question": "Quel groupe chante \"Numb\" ?",
@@ -13645,24 +13580,68 @@ const QUESTION_DATABASE = {
       "sounds": [],
       "text": [
         {
+          "question": "Quel groupe a chanté \"Satisfaction\" ?",
+          "answer": "The Rolling Stones"
+        },
+        {
+          "question": "Qui chante \"Joe le taxi\" ?",
+          "answer": "Vanessa Paradis"
+        },
+        {
+          "question": "Qui chante \"L'Aventurier\" ?",
+          "answer": "Indochine"
+        },
+        {
+          "question": "Qui chante \"La Boulette\" ?",
+          "answer": "Diam's"
+        },
+        {
+          "question": "Qui chante \"J'ai demandé à la lune\" ?",
+          "answer": "Indochine"
+        },
+        {
+          "question": "Qui chante \"Il changeait la vie\" ?",
+          "answer": "Jean-Jacques Goldman"
+        },
+        {
+          "question": "Quel groupe chante \"Seven Nation Army\" ?",
+          "answer": "The White Stripes"
+        },
+        {
+          "question": "Qui chante \"Résiste\" ?",
+          "answer": "France Gall"
+        },
+        {
+          "question": "Quel groupe chante \"Radioactive\" et \"Believer\" ?",
+          "answer": "Imagine Dragons"
+        },
+        {
+          "question": "Qui chante \"Envole-moi\" ?",
+          "answer": "Jean-Jacques Goldman"
+        },
+        {
+          "question": "Qui chante \"La Kiffance\" ?",
+          "answer": "Naps"
+        },
+        {
+          "question": "Quel rappeur est membre de la Sexion d'Assaut ?",
+          "answer": "Maître Gims (ou Black M)"
+        },
+        {
+          "question": "Qui chante \"Tomber la chemise\" ?",
+          "answer": "Zebda"
+        },
+        {
+          "question": "Qui chante \"J't'emmène au vent\" ?",
+          "answer": "Louise Attaque"
+        },
+        {
           "question": "Quel est le prénom de Mozart ?",
           "answer": "Wolfgang"
         },
         {
-          "question": "Qui chante \"Ne me quitte pas\" ?",
-          "answer": "Jacques Brel"
-        },
-        {
           "question": "Qui a composé \"Les Quatre Saisons\" ?",
           "answer": "Vivaldi"
-        },
-        {
-          "question": "Qui chante \"Je te donne\" avec Jean-Jacques Goldman ?",
-          "answer": "Michael Jones"
-        },
-        {
-          "question": "Quel artiste a chanté \"Purple Rain\" ?",
-          "answer": "Prince"
         },
         {
           "question": "Qui est le chanteur de U2 ?",
@@ -13675,30 +13654,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel instrument joue Ringo Starr ?",
           "answer": "Batterie"
-        },
-        {
-          "question": "Qui chante \"Mistral Gagnant\" ?",
-          "answer": "Renaud"
-        },
-        {
-          "question": "Qui chante \"L'Envie d'aimer\" ?",
-          "answer": "Daniel Lévi"
-        },
-        {
-          "question": "Quel groupe a chanté \"Hotel California\" ?",
-          "answer": "The Eagles"
-        },
-        {
-          "question": "Quel artiste joue de la guitare à l'envers (gaucher) ?",
-          "answer": "Jimi Hendrix"
-        },
-        {
-          "question": "Qui est le chanteur de \"Angie\" ?",
-          "answer": "Mick Jagger"
-        },
-        {
-          "question": "Quel rappeur américain a été tué en 1996 ?",
-          "answer": "Tupac (2Pac)"
         },
         {
           "question": "Qui chante \"Je t'aime... moi non plus\" ?",
@@ -13998,6 +13953,42 @@ const QUESTION_DATABASE = {
       "sounds": [],
       "text": [
         {
+          "question": "Qui chante \"Ne me quitte pas\" ?",
+          "answer": "Jacques Brel"
+        },
+        {
+          "question": "Qui chante \"Je te donne\" avec Jean-Jacques Goldman ?",
+          "answer": "Michael Jones"
+        },
+        {
+          "question": "Quel artiste a chanté \"Purple Rain\" ?",
+          "answer": "Prince"
+        },
+        {
+          "question": "Qui chante \"Mistral Gagnant\" ?",
+          "answer": "Renaud"
+        },
+        {
+          "question": "Qui chante \"L'Envie d'aimer\" ?",
+          "answer": "Daniel Lévi"
+        },
+        {
+          "question": "Quel groupe a chanté \"Hotel California\" ?",
+          "answer": "The Eagles"
+        },
+        {
+          "question": "Quel artiste joue de la guitare à l'envers (gaucher) ?",
+          "answer": "Jimi Hendrix"
+        },
+        {
+          "question": "Qui est le chanteur de \"Angie\" ?",
+          "answer": "Mick Jagger"
+        },
+        {
+          "question": "Quel rappeur américain a été tué en 1996 ?",
+          "answer": "Tupac (2Pac)"
+        },
+        {
           "question": "Quel est le prénom de Beethoven ?",
           "answer": "Ludwig"
         },
@@ -14018,28 +14009,8 @@ const QUESTION_DATABASE = {
           "answer": "Violoncelle (ou Contrebasse)"
         },
         {
-          "question": "Qui a composé \"Le Boléro\" ?",
-          "answer": "Ravel"
-        },
-        {
           "question": "Quel chanteur français a écrit \"Comme d'habitude\" (My Way) ?",
           "answer": "Claude François"
-        },
-        {
-          "question": "Qui est le chanteur de Linkin Park (décédé en 2017) ?",
-          "answer": "Chester Bennington"
-        },
-        {
-          "question": "Quel compositeur a écrit \"La Flûte enchantée\" ?",
-          "answer": "Mozart"
-        },
-        {
-          "question": "Quel groupe chante \"Smoke on the Water\" ?",
-          "answer": "Deep Purple"
-        },
-        {
-          "question": "Qui a composé \"Le Lac des cygnes\" ?",
-          "answer": "Tchaïkovski"
         },
         {
           "question": "Qui est le batteur des Beatles ?",
@@ -14048,10 +14019,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel chanteur français est surnommé \"L'Amiral\" ?",
           "answer": "Michel Polnareff"
-        },
-        {
-          "question": "Quel est l'instrument de Lang Lang ?",
-          "answer": "Piano"
         },
         {
           "question": "Qui a composé \"Carmen\" ?",
@@ -14173,16 +14140,32 @@ const QUESTION_DATABASE = {
       "sounds": [],
       "text": [
         {
-          "question": "Quel est l'instrument de Yo-Yo Ma ?",
-          "answer": "Violoncelle"
+          "question": "Qui a composé \"Le Boléro\" ?",
+          "answer": "Ravel"
+        },
+        {
+          "question": "Qui est le chanteur de Linkin Park (décédé en 2017) ?",
+          "answer": "Chester Bennington"
+        },
+        {
+          "question": "Quel compositeur a écrit \"La Flûte enchantée\" ?",
+          "answer": "Mozart"
+        },
+        {
+          "question": "Quel groupe chante \"Smoke on the Water\" ?",
+          "answer": "Deep Purple"
+        },
+        {
+          "question": "Qui a composé \"Le Lac des cygnes\" ?",
+          "answer": "Tchaïkovski"
+        },
+        {
+          "question": "Quel est l'instrument de Lang Lang ?",
+          "answer": "Piano"
         },
         {
           "question": "Qui chante \"Hallelujah\" (version originale) ?",
           "answer": "Leonard Cohen"
-        },
-        {
-          "question": "Quel est le nom du chanteur de Radiohead ?",
-          "answer": "Thom Yorke"
         },
         {
           "question": "Qui a composé \"Les Noces de Figaro\" ?",
@@ -14205,14 +14188,6 @@ const QUESTION_DATABASE = {
           "answer": "Violon"
         },
         {
-          "question": "Quel groupe chante \"Black Hole Sun\" ?",
-          "answer": "Soundgarden"
-        },
-        {
-          "question": "Quel rappeur a sorti \"L'étrange histoire de Mr. Anderson\" ?",
-          "answer": "Laylow"
-        },
-        {
           "question": "Quel groupe chante \"My Generation\" ?",
           "answer": "The Who"
         },
@@ -14226,6 +14201,22 @@ const QUESTION_DATABASE = {
       "images": [],
       "sounds": [],
       "text": [
+        {
+          "question": "Quel est l'instrument de Yo-Yo Ma ?",
+          "answer": "Violoncelle"
+        },
+        {
+          "question": "Quel est le nom du chanteur de Radiohead ?",
+          "answer": "Thom Yorke"
+        },
+        {
+          "question": "Quel groupe chante \"Black Hole Sun\" ?",
+          "answer": "Soundgarden"
+        },
+        {
+          "question": "Quel rappeur a sorti \"L'étrange histoire de Mr. Anderson\" ?",
+          "answer": "Laylow"
+        },
         {
           "question": "Quel est l'instrument de Mstislav Rostropovitch ?",
           "answer": "Violoncelle"

@@ -418,7 +418,7 @@
       "type": "text",
       "question": "Quel groupe a chanté \"Satisfaction\" ?",
       "answer": "The Rolling Stones",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -677,7 +677,7 @@
       "type": "text",
       "question": "Qui chante \"Joe le taxi\" ?",
       "answer": "Vanessa Paradis",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -705,7 +705,7 @@
       "type": "text",
       "question": "Qui chante \"L'Aventurier\" ?",
       "answer": "Indochine",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -733,20 +733,13 @@
       "type": "text",
       "question": "Qui chante \"La Boulette\" ?",
       "answer": "Diam's",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel instrument joue Carlos Santana ?",
       "answer": "Guitare",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Qui chante \"Thriller\" ?",
-      "answer": "Michael Jackson",
       "difficulty": 1,
       "validated": true
     },
@@ -775,7 +768,7 @@
       "type": "text",
       "question": "Qui chante \"J'ai demandé à la lune\" ?",
       "answer": "Indochine",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -808,7 +801,7 @@
     },
     {
       "type": "text",
-      "question": "Quel instrument joue Elton Ray ?",
+      "question": "Quel instrument joue Elton John ?",
       "answer": "Piano",
       "difficulty": 1,
       "validated": true
@@ -831,7 +824,7 @@
       "type": "text",
       "question": "Qui chante \"Il changeait la vie\" ?",
       "answer": "Jean-Jacques Goldman",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -845,21 +838,21 @@
       "type": "text",
       "question": "Quel groupe chante \"Seven Nation Army\" ?",
       "answer": "The White Stripes",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
       "type": "text",
       "question": "Qui chante \"Résiste\" ?",
       "answer": "France Gall",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
       "type": "text",
-      "question": "Quel groupe chante \"Imagine Dragons\" ?",
+      "question": "Quel groupe chante \"Radioactive\" et \"Believer\" ?",
       "answer": "Imagine Dragons",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -887,7 +880,7 @@
       "type": "text",
       "question": "Qui chante \"Envole-moi\" ?",
       "answer": "Jean-Jacques Goldman",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -922,21 +915,21 @@
       "type": "text",
       "question": "Qui chante \"La Kiffance\" ?",
       "answer": "Naps",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel rappeur est membre de la Sexion d'Assaut ?",
       "answer": "Maître Gims (ou Black M)",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
       "type": "text",
       "question": "Qui chante \"Tomber la chemise\" ?",
       "answer": "Zebda",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -999,7 +992,7 @@
       "type": "text",
       "question": "Qui chante \"J't'emmène au vent\" ?",
       "answer": "Louise Attaque",
-      "difficulty": 1,
+      "difficulty": 2,
       "validated": true
     },
     {
@@ -1082,7 +1075,7 @@
       "type": "text",
       "question": "Qui chante \"Ne me quitte pas\" ?",
       "answer": "Jacques Brel",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -1096,14 +1089,14 @@
       "type": "text",
       "question": "Qui chante \"Je te donne\" avec Jean-Jacques Goldman ?",
       "answer": "Michael Jones",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel artiste a chanté \"Purple Rain\" ?",
       "answer": "Prince",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -1131,42 +1124,42 @@
       "type": "text",
       "question": "Qui chante \"Mistral Gagnant\" ?",
       "answer": "Renaud",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
       "type": "text",
       "question": "Qui chante \"L'Envie d'aimer\" ?",
       "answer": "Daniel Lévi",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel groupe a chanté \"Hotel California\" ?",
       "answer": "The Eagles",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel artiste joue de la guitare à l'envers (gaucher) ?",
       "answer": "Jimi Hendrix",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
       "type": "text",
       "question": "Qui est le chanteur de \"Angie\" ?",
       "answer": "Mick Jagger",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel rappeur américain a été tué en 1996 ?",
       "answer": "Tupac (2Pac)",
-      "difficulty": 2,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -1711,7 +1704,7 @@
       "type": "text",
       "question": "Qui a composé \"Le Boléro\" ?",
       "answer": "Ravel",
-      "difficulty": 3,
+      "difficulty": 4,
       "validated": true
     },
     {
@@ -1725,28 +1718,28 @@
       "type": "text",
       "question": "Qui est le chanteur de Linkin Park (décédé en 2017) ?",
       "answer": "Chester Bennington",
-      "difficulty": 3,
+      "difficulty": 4,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel compositeur a écrit \"La Flûte enchantée\" ?",
       "answer": "Mozart",
-      "difficulty": 3,
+      "difficulty": 4,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel groupe chante \"Smoke on the Water\" ?",
       "answer": "Deep Purple",
-      "difficulty": 3,
+      "difficulty": 4,
       "validated": true
     },
     {
       "type": "text",
       "question": "Qui a composé \"Le Lac des cygnes\" ?",
       "answer": "Tchaïkovski",
-      "difficulty": 3,
+      "difficulty": 4,
       "validated": true
     },
     {
@@ -1767,7 +1760,7 @@
       "type": "text",
       "question": "Quel est l'instrument de Lang Lang ?",
       "answer": "Piano",
-      "difficulty": 3,
+      "difficulty": 4,
       "validated": true
     },
     {
@@ -1967,7 +1960,7 @@
       "type": "text",
       "question": "Quel est l'instrument de Yo-Yo Ma ?",
       "answer": "Violoncelle",
-      "difficulty": 4,
+      "difficulty": 5,
       "validated": true
     },
     {
@@ -1981,7 +1974,7 @@
       "type": "text",
       "question": "Quel est le nom du chanteur de Radiohead ?",
       "answer": "Thom Yorke",
-      "difficulty": 4,
+      "difficulty": 5,
       "validated": true
     },
     {
@@ -2023,14 +2016,14 @@
       "type": "text",
       "question": "Quel groupe chante \"Black Hole Sun\" ?",
       "answer": "Soundgarden",
-      "difficulty": 4,
+      "difficulty": 5,
       "validated": true
     },
     {
       "type": "text",
       "question": "Quel rappeur a sorti \"L'étrange histoire de Mr. Anderson\" ?",
       "answer": "Laylow",
-      "difficulty": 4,
+      "difficulty": 5,
       "validated": true
     },
     {

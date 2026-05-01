@@ -40,7 +40,7 @@
       "file": "data/assets/images/chevre_montagnes_rocheuses.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Chevre Montagnes Rocheuses",
-      "difficulty": 1,
+      "difficulty": 5,
       "validated": true
     },
     {
@@ -48,7 +48,7 @@
       "file": "data/assets/images/chien_de_prairie.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Chien De Prairie",
-      "difficulty": 1,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -216,7 +216,7 @@
       "file": "data/assets/images/tortue_molle.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Tortue Molle",
-      "difficulty": 1,
+      "difficulty": 5,
       "validated": true
     },
     {
@@ -224,7 +224,7 @@
       "file": "data/assets/images/tortue_verte.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Tortue Verte",
-      "difficulty": 1,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -1994,7 +1994,7 @@
       "file": "data/assets/images/chevre_naine.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Chevre Naine",
-      "difficulty": 5,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -2066,7 +2066,7 @@
       "file": "data/assets/images/ecureuil_geant.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Ecureuil Geant",
-      "difficulty": 5,
+      "difficulty": 4,
       "validated": true
     },
     {
@@ -2074,7 +2074,7 @@
       "file": "data/assets/images/ecureuil_gris.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Ecureuil Gris",
-      "difficulty": 5,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -2082,7 +2082,7 @@
       "file": "data/assets/images/grenouille_fraise.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Grenouille Fraise",
-      "difficulty": 5,
+      "difficulty": 4,
       "validated": true
     },
     {
@@ -2090,7 +2090,7 @@
       "file": "data/assets/images/grenouille_taureau.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Grenouille Taureau",
-      "difficulty": 5,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -2106,7 +2106,7 @@
       "file": "data/assets/images/nandou.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Nandou",
-      "difficulty": 5,
+      "difficulty": 3,
       "validated": true
     },
     {
@@ -2114,7 +2114,7 @@
       "file": "data/assets/images/narval.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Narval",
-      "difficulty": 5,
+      "difficulty": 4,
       "validated": true
     },
     {

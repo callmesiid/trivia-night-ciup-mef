@@ -1,0 +1,31 @@
+{
+  "id": "ligne3",
+  "label": "ARRÊTS LIGNE 3 DU MÉTRO",
+  "icon": "../assets/Images/geographie.png",
+  "prompt": "Citez un maximum d'arrêts de la ligne 3 du métro (Pont de Levallois-Bécon — Gallieni).",
+  "answers": [
+    { "value": "Pont de Levallois - Bécon", "validated": true },
+    { "value": "Anatole France", "validated": true },
+    { "value": "Louise Michel", "validated": true },
+    { "value": "Porte de Champerret", "validated": true },
+    { "value": "Pereire", "validated": true },
+    { "value": "Wagram", "validated": true },
+    { "value": "Malesherbes", "validated": true },
+    { "value": "Villiers", "validated": true },
+    { "value": "Europe", "validated": true },
+    { "value": "Saint-Lazare", "validated": true },
+    { "value": "Havre - Caumartin", "validated": true },
+    { "value": "Opéra", "validated": true },
+    { "value": "Quatre-Septembre", "validated": true },
+    { "value": "Bourse", "validated": true },
+    { "value": "Sentier", "validated": true },
+    { "value": "Arts et Métiers", "validated": true },
+    { "value": "Temple", "validated": true },
+    { "value": "République", "validated": true },
+    { "value": "Parmentier", "validated": true },
+    { "value": "Père Lachaise", "validated": true },
+    { "value": "Gambetta", "validated": true },
+    { "value": "Porte de Bagnolet", "validated": true },
+    { "value": "Gallieni", "validated": true }
+  ]
+}

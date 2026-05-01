@@ -1,0 +1,33 @@
+{
+  "id": "ligne1",
+  "label": "ARRÊTS LIGNE 1 DU MÉTRO",
+  "icon": "../assets/Images/geographie.png",
+  "prompt": "Citez un maximum d'arrêts de la ligne 1 du métro (La Défense — Château de Vincennes).",
+  "answers": [
+    { "value": "La Défense", "validated": true },
+    { "value": "Esplanade de la Défense", "validated": true },
+    { "value": "Pont de Neuilly", "validated": true },
+    { "value": "Les Sablons", "validated": true },
+    { "value": "Porte Maillot", "validated": true },
+    { "value": "Argentine", "validated": true },
+    { "value": "Charles de Gaulle - Étoile", "validated": true },
+    { "value": "George V", "validated": true },
+    { "value": "Franklin D. Roosevelt", "validated": true },
+    { "value": "Champs-Élysées - Clemenceau", "validated": true },
+    { "value": "Concorde", "validated": true },
+    { "value": "Tuileries", "validated": true },
+    { "value": "Palais Royal - Musée du Louvre", "validated": true },
+    { "value": "Louvre - Rivoli", "validated": true },
+    { "value": "Châtelet", "validated": true },
+    { "value": "Hôtel de Ville", "validated": true },
+    { "value": "Saint-Paul", "validated": true },
+    { "value": "Bastille", "validated": true },
+    { "value": "Gare de Lyon", "validated": true },
+    { "value": "Reuilly - Diderot", "validated": true },
+    { "value": "Nation", "validated": true },
+    { "value": "Porte de Vincennes", "validated": true },
+    { "value": "Saint-Mandé", "validated": true },
+    { "value": "Berault", "validated": true },
+    { "value": "Château de Vincennes", "validated": true }
+  ]
+}

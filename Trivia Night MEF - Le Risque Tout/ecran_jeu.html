@@ -205,6 +205,44 @@
         // ──────────────────────────────────────────────────────────────────
 
         // =================================================================
+        // SESSION LOG — exclure les questions déjà posées
+        // Clé localStorage : "mef_rt_seen"
+        // Structure : { "animaux": { "1": ["Aigle Royal", ...], ... }, ... }
+        // =================================================================
+        const RT_LOG_KEY = 'mef_rt_seen';
+
+        function rtLog_load() {
+            try { return JSON.parse(localStorage.getItem(RT_LOG_KEY)) || {}; } catch { return {}; }
+        }
+        function rtLog_save(log) {
+            localStorage.setItem(RT_LOG_KEY, JSON.stringify(log));
+        }
+        // Retourne les questions filtrées (non encore vues). Si toutes vues → reset ce bucket et retourne tout.
+        function rtLog_filterQuestions(themeId, level, questions) {
+            const log = rtLog_load();
+            const seen = (log[themeId] && log[themeId][level]) ? log[themeId][level] : [];
+            const available = questions.filter(q => !seen.includes(q.answer || q.question));
+            if (available.length === 0) {
+                // Toutes vues pour ce thème+niveau → reset ce bucket
+                if (log[themeId]) delete log[themeId][level];
+                rtLog_save(log);
+                return questions; // tout disponible
+            }
+            return available;
+        }
+        function rtLog_markSeen(themeId, level, question) {
+            if (!themeId || !question) return;
+            const key = question.answer || question.question;
+            if (!key) return;
+            const log = rtLog_load();
+            if (!log[themeId]) log[themeId] = {};
+            if (!log[themeId][level]) log[themeId][level] = [];
+            if (!log[themeId][level].includes(key)) log[themeId][level].push(key);
+            rtLog_save(log);
+        }
+        // ──────────────────────────────────────────────────────────────────
+
+        // =================================================================
         // CONNEXION RÉGIE (LE CERVEAU EST DÉPLACÉ ICI)
         // =================================================================
         const channel = new BroadcastChannel('buckets_channel');
@@ -688,22 +726,20 @@
                     } else {
                         rowLevels = [1, 2, 3, 4, 5];
                         if(typeof QUESTION_DATABASE !== 'undefined' && QUESTION_DATABASE[safeId]) {
-                            let allQuestions = [];
-                            for(let l=1; l<=5; l++) {
-                                let c = QUESTION_DATABASE[safeId][l.toString()];
-                                if(c) {
-                                    if(c.images) c.images.forEach(obj => allQuestions.push({level:l, type:'image', ...obj}));
-                                    if(c.sounds) c.sounds.forEach(obj => allQuestions.push({level:l, type:'audio', ...obj}));
-                                    if(c.text) c.text.forEach(t => allQuestions.push({level:l, type:'text', ...t}));
-                                }
-                            }
-                            allQuestions = allQuestions.filter((v,i,a)=>a.findIndex(t=>(t.file === v.file && t.question === v.question))===i);
-                            allQuestions.sort(() => Math.random() - 0.5);
                             for(let i=1; i<=5; i++) {
-                                let index = allQuestions.findIndex(q => q.level === i);
-                                if(index === -1) index = 0; 
-                                if(allQuestions.length > 0) { questionsForThisRow.push(allQuestions[index]); allQuestions.splice(index, 1); } 
-                                else { questionsForThisRow.push({type:'text', question:`(Vide Niv ${i})`, answer:'...'}); }
+                                let c = QUESTION_DATABASE[safeId][i.toString()];
+                                let pool = [];
+                                if(c) {
+                                    if(c.images) c.images.forEach(obj => pool.push({level:i, type:'image', theme:safeId, ...obj}));
+                                    if(c.sounds) c.sounds.forEach(obj => pool.push({level:i, type:'audio', theme:safeId, ...obj}));
+                                    if(c.text)   c.text.forEach(t   => pool.push({level:i, type:'text',  theme:safeId, ...t}));
+                                }
+                                // Dédupliquer par question+fichier
+                                pool = pool.filter((v,j,a)=>a.findIndex(t=>(t.file===v.file&&t.question===v.question))===j);
+                                // Exclure déjà vus (reset auto si tous vus)
+                                pool = rtLog_filterQuestions(safeId, i, pool);
+                                pool.sort(() => Math.random() - 0.5);
+                                questionsForThisRow.push(pool.length > 0 ? pool[0] : {type:'text', question:`(Vide Niv ${i})`, answer:'...'});
                             }
                         } else {
                             for(let i=0; i<5; i++) questionsForThisRow.push({type:'text', question:'Pas de questions', answer:'...'});
@@ -793,13 +829,18 @@
         // =============================================================
         function openQuestion(btn, data, forcedLevel) {
             currentBucket = btn;
-            
+
             if(forcedLevel) currentLevel = forcedLevel;
             else {
                 let txt = btn.querySelector('.bucket-score').innerText.replace('x','');
                 currentLevel = (txt === '?') ? Math.floor(Math.random() * 5) + 6 : parseInt(txt);
             }
-            
+
+            // Enregistrer dans le session log (thème déduit du bucket si possible)
+            if (data && data.theme && currentLevel <= 5) {
+                rtLog_markSeen(data.theme, currentLevel, data);
+            }
+
             state = 'QUESTION';
             const container = document.getElementById('question-text');
             container.innerHTML = "";
