@@ -106,6 +106,44 @@
             20%,24%,55% { opacity:.1; text-shadow:none; }
         }
 
+        /* ─── RIDEAUX (style Le Risque Tout) ───────────────────────────── */
+        #sur-curtains {
+            position: fixed; inset: 0; z-index: 5000;
+            display: none; pointer-events: none;
+        }
+        #sur-curtains.active { display: flex; }
+        .sur-curtain {
+            flex: 1; position: relative; overflow: hidden; background: #090909;
+            transition: transform 1.4s cubic-bezier(.75,0,.25,1);
+        }
+        .sur-curtain.left.open  { transform: translateX(-100%); }
+        .sur-curtain.right.open { transform: translateX(100%); }
+        .sur-strips { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-around; }
+        .sur-srow { display: flex; white-space: nowrap; overflow: hidden; font-family: 'Anton', sans-serif; color: rgba(231,76,60,.08); letter-spacing: 5px; font-size: 1.25rem; }
+        .sur-srow-inner { flex-shrink: 0; animation: surScroll 9s linear infinite; }
+        .sur-srow-inner:nth-child(2) { animation-delay: -4.5s; }
+        .sur-srow.rev .sur-srow-inner { animation-direction: reverse; }
+        @keyframes surScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+        .sur-accent-l { position: absolute; left:  0; top: 0; bottom: 0; width: 14px; background: linear-gradient(#8b0000,#c0392b,#8b0000); }
+        .sur-accent-r { position: absolute; right: 0; top: 0; bottom: 0; width: 14px; background: linear-gradient(#8b0000,#c0392b,#8b0000); }
+
+        /* intro-screen au-dessus des rideaux */
+        #intro-screen { position: fixed !important; inset: 0 !important; z-index: 5100; background: transparent !important; }
+
+        /* Marteaux volants */
+        .sur-hammer-fly {
+            position: fixed; font-size: 2.8rem; z-index: 5200; pointer-events: none;
+            animation: surHammerRise 2.3s ease-out forwards;
+        }
+        @keyframes surHammerRise {
+            0%   { transform: translateY(0) rotate(-20deg) scale(.6); opacity: 0; }
+            12%  { opacity: .9; }
+            78%  { opacity: .9; }
+            100% { transform: translateY(-88vh) rotate(22deg) scale(1.08); opacity: 0; }
+        }
+
+        /* ─── FIN RIDEAUX ────────────────────────────────────────────────── */
+
         /* ── Notification Bonus / Malus sur écran ── */
         .effect-notif {
             position: fixed; top: 80px; right: -500px; z-index: 3500;
@@ -204,6 +242,30 @@
 <!-- Flash overlay (coup de marteau) -->
 <div id="flash-el"></div>
 
+<!-- Rideaux (style Le Risque Tout) -->
+<div id="sur-curtains">
+    <div class="sur-curtain left" id="sur-curtain-left">
+        <div class="sur-accent-l"></div>
+        <div class="sur-strips">
+            <div class="sur-srow"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
+            <div class="sur-srow rev"><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div></div>
+            <div class="sur-srow"><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div></div>
+            <div class="sur-srow rev"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
+            <div class="sur-srow"><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div></div>
+        </div>
+    </div>
+    <div class="sur-curtain right" id="sur-curtain-right">
+        <div class="sur-accent-r"></div>
+        <div class="sur-strips">
+            <div class="sur-srow rev"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
+            <div class="sur-srow"><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div></div>
+            <div class="sur-srow rev"><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div></div>
+            <div class="sur-srow"><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div></div>
+            <div class="sur-srow rev"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
+        </div>
+    </div>
+</div>
+
 <!-- Intro -->
 <div id="intro-screen">
     <!-- Marteau de juge -->
@@ -275,7 +337,7 @@ const slotReel       = document.getElementById('slot-reel');
 const timerEl        = document.getElementById('timer-val');
 const teamsHeader    = document.getElementById('teams-header');
 
-const audioIntro  = new Audio('../assets/effets_sonores/intro.mp3');
+const audioIntro  = new Audio('Generique.mp3');
 const audioBreak  = new Audio('../assets/effets_sonores/break.mp3');
 const audioSpin   = new Audio('../assets/effets_sonores/spin.mp3');
 const audioTimer  = new Audio('../assets/effets_sonores/timer.mp3');
@@ -292,6 +354,7 @@ const flashEl  = document.getElementById('flash-el');
 let timerInterval, spinInterval;
 let currentTime = 30;
 let introTimeouts = [];
+let hammerInterval = null;
 
 // ── TEAMS ──
 let teamsData = [];
@@ -359,10 +422,20 @@ channel.onmessage = (event) => {
 function clearIntro() {
     introTimeouts.forEach(t => clearTimeout(t));
     introTimeouts = [];
-    // Stopper l'audio proprement (loop=false pour éviter les boucles)
+    // Stopper l'audio
     audioIntro.loop = false;
     audioIntro.pause();
     audioIntro.currentTime = 0;
+    // Stopper les marteaux volants
+    if (hammerInterval) { clearInterval(hammerInterval); hammerInterval = null; }
+    document.querySelectorAll('.sur-hammer-fly').forEach(e => e.remove());
+    // Reset rideaux
+    const surC = document.getElementById('sur-curtains');
+    if (surC) {
+        surC.classList.remove('active');
+        document.getElementById('sur-curtain-left').classList.remove('open');
+        document.getElementById('sur-curtain-right').classList.remove('open');
+    }
     // Reset éléments génériques
     gavelEl.className  = ''; gavelEl.style.opacity = '0';
     gavelBlk.className = '';
@@ -418,50 +491,69 @@ function showReadyForSpin() {
 
 function runIntro() {
     clearIntro();
+
+    // Rideaux
+    const surC = document.getElementById('sur-curtains');
+    surC.classList.add('active');
+
     introScreen.style.display = 'flex'; selectorScreen.style.display = 'none';
     gameScreen.style.display  = 'none'; revealOverlay.style.display  = 'none';
     document.getElementById('scores-screen').classList.remove('show');
 
-    // ─── SÉQUENCE GÉNÉRIQUE ───────────────────────────────────
-    // 0.6s : PREMIER COUP DE MARTEAU
-    let t1 = setTimeout(() => gavelHit(1), 600);
+    // Musique dès le départ
+    audioIntro.currentTime = 0;
+    audioIntro.volume = 1;
+    audioIntro.play().catch(() => {});
 
-    // 1.0s : recoil du marteau
-    let t2 = setTimeout(() => {
-        gavelEl.className = 'recoil';
-    }, 1000);
+    // Marteaux 🔨 volants (0s → 6.5s)
+    hammerInterval = setInterval(() => {
+        const h = document.createElement('div');
+        h.className = 'sur-hammer-fly';
+        h.textContent = '🔨';
+        h.style.left = (Math.random() * 86 + 4) + 'vw';
+        h.style.top  = '106vh';
+        document.body.appendChild(h);
+        setTimeout(() => { if (h.parentNode) h.remove(); }, 2400);
+    }, 370);
 
-    // 1.7s : DEUXIÈME COUP DE MARTEAU
-    let t3 = setTimeout(() => gavelHit(2), 1700);
-
-    // 2.1s : recoil final + marteau disparaît
-    let t4 = setTimeout(() => {
-        gavelEl.className = 'recoil';
-        gavelBlk.className = '';
-    }, 2100);
-
-    // 2.6s : "LA SURENCHÈRE" tombe depuis le haut
-    let t5 = setTimeout(() => {
+    // 6.5s : SPLASH — logo tombe depuis le haut
+    let t1 = setTimeout(() => {
+        if (hammerInterval) { clearInterval(hammerInterval); hammerInterval = null; }
         titleLogo.style.opacity = '1';
         titleLogo.className = 'title-logo-wrapper title-drop';
-    }, 2600);
+    }, 6500);
 
-    // 3.5s : ZOOM (style superBounce Le Risque Tout)
-    let t6 = setTimeout(() => {
-        titleLogo.className = 'title-logo-wrapper'; // reset
+    // 6.85s : coup de marteau synchronisé avec l'impact du logo
+    let t2 = setTimeout(() => gavelHit(1), 6850);
+
+    // 7.25s : zoom bounce
+    let t3 = setTimeout(() => {
+        titleLogo.className = 'title-logo-wrapper';
         void titleLogo.offsetWidth;
         titleLogo.className = 'title-logo-wrapper title-zoom';
-    }, 3500);
+    }, 7250);
 
-    // 5.2s : scintillement rouge + musique (pas de loop)
-    let t7 = setTimeout(() => {
+    // 7.65s : scintillement rouge + recoil marteau
+    let t4 = setTimeout(() => {
         titleLogo.className = 'title-logo-wrapper title-zoom title-flicker';
-        audioIntro.loop = false;
-        audioIntro.volume = .6;
-        audioIntro.play().catch(() => {});
-    }, 5200);
+        gavelEl.className = 'recoil';
+        gavelBlk.className = '';
+    }, 7650);
 
-    introTimeouts.push(t1, t2, t3, t4, t5, t6, t7);
+    // 8.1s : rideaux s'ouvrent
+    let t5 = setTimeout(() => {
+        document.getElementById('sur-curtain-left').classList.add('open');
+        document.getElementById('sur-curtain-right').classList.add('open');
+    }, 8100);
+
+    // 9.6s : nettoyage + prêt pour le tirage
+    let t6 = setTimeout(() => {
+        surC.classList.remove('active');
+        introScreen.style.display = 'none';
+        showReadyForSpin();
+    }, 9600);
+
+    introTimeouts.push(t1, t2, t3, t4, t5, t6);
 }
 
 // ── SPIN ──
