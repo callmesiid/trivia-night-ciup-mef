@@ -5,7 +5,60 @@
     <title>SNAPSHOT - JEU</title>
     <link rel="stylesheet" href="style_mix.css">
     <style>
-        .card-name { display: none; } 
+        .card-name { display: none; }
+
+        /* PODIUM */
+        #results-screen {
+            display: none; position: fixed; inset: 0; z-index: 900;
+            background: radial-gradient(ellipse at center, #1a0005 0%, #050005 70%);
+            flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+        }
+        #results-screen.show { display: flex; }
+        .res-title { font-family: 'Anton', sans-serif; font-size: 5rem; color: #d4af37;
+                     text-shadow: 0 0 40px rgba(212,175,55,.5); letter-spacing: 6px; }
+        .res-table { display: flex; flex-direction: column; gap: 12px; min-width: 480px; }
+        .res-row {
+            display: flex; align-items: center; gap: 16px; padding: 14px 32px;
+            border-radius: 10px; font-family: 'Anton', sans-serif;
+            opacity: 0; transform: translateX(-120px);
+            animation: slideInRes .5s cubic-bezier(.2,1,.4,1) forwards;
+        }
+        @keyframes slideInRes { to { opacity: 1; transform: translateX(0); } }
+        .res-row.r1 { background: linear-gradient(to right,#ffd700,#ffe88a); color: #000; font-size: 1.6rem; }
+        .res-row.r2 { background: linear-gradient(to right,#c0c0c0,#ddd); color: #111; font-size: 1.3rem; }
+        .res-row.r3 { background: linear-gradient(to right,#cd7f32,#daa070); color: #111; font-size: 1.2rem; }
+        .res-row.rn { background: #1a1a1a; color: #666; border: 1px solid #2a2a2a; font-size: 1rem; }
+        .res-rank { width: 50px; text-align: center; }
+        .res-dot  { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; }
+        .res-name { flex: 1; letter-spacing: 2px; }
+        .res-score { font-family: monospace; font-size: 1.4rem; }
+        .res-medal { font-size: 1.8rem; }
+
+        .snapshot-logo-container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+        }
+
+        .waiting-logo{
+            width:650px;
+            max-width:90%;
+            height:auto;
+            display:block;
+        }
+
+        .top-logo{
+            width:220px;
+            height:auto;
+            display:block;
+        }
+
+        #top-bar{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +85,7 @@
     </div>
 
     <div id="waiting-screen">
+        <!--
         <div class="snapshot-logo-container" style="transform: scale(1.2);">
             <span class="snap-letter letter-0">S</span>
             <span class="snap-letter letter-1">N</span>
@@ -42,9 +96,14 @@
             <span class="snap-letter letter-6">O</span>
             <span class="snap-letter letter-7">T</span>
         </div>
+        -->
+        <div class="snapshot-logo-container">
+            <img src="snapshot_logo.png" class="waiting-logo">
+        </div>
+
         <div class="click-instruction">EN ATTENTE DE LA RÉGIE...</div>
     </div>
-
+    <!--
     <div id="top-bar">
         <div class="snapshot-logo-container" style="transform: scale(0.35); transform-origin: center;">
             <span class="snap-letter letter-0">S</span>
@@ -57,6 +116,12 @@
             <span class="snap-letter letter-7">T</span>
         </div>
     </div>
+    -->
+    <div id="top-bar">
+        <div class="snapshot-logo-container">
+            <img src="snapshot_logo.png" class="top-logo">
+        </div>
+    </div>
 
     <div id="game-timer-display" class="corner-timer">24.0</div>
     <div id="memo-overlay" class="corner-timer">
@@ -64,6 +129,12 @@
     </div>
 
     <div id="grid-container"></div>
+
+    <!-- PODIUM SCREEN -->
+    <div id="results-screen">
+        <div class="res-title">CLASSEMENT FINAL</div>
+        <div class="res-table" id="res-table"></div>
+    </div>
 
     <div id="game-footer">
         INSPIRÉ DE POPCORN 
@@ -109,8 +180,15 @@
             }
             else if (data.type === 'REMOVE_CARD') {
                 const card = document.getElementById(`card-${data.index}`);
-                if(card) card.classList.add('removed');
+                if (card) card.classList.add('removed');
                 fullStopGameTimer();
+            }
+            else if (data.type === 'RESTORE_CARD') {
+                const card = document.getElementById(`card-${data.index}`);
+                if (card) card.classList.remove('removed');
+            }
+            else if (data.type === 'SHOW_RESULTS') {
+                showResultsScreen(data.data.results);
             }
             else if (data.type === 'START_TIMER') {
                 document.getElementById('game-timer-display').style.display = 'block';
@@ -197,6 +275,22 @@
 
         function fullStopGameTimer() {
             if(gameTimerInterval) clearInterval(gameTimerInterval);
+        }
+
+        function showResultsScreen(results) {
+            const medals = ['🥇','🥈','🥉'];
+            const rClasses = ['r1','r2','r3','rn'];
+            const table = document.getElementById('res-table');
+            table.innerHTML = results.map((r, i) => `
+                <div class="res-row ${rClasses[Math.min(i,3)]}" style="animation-delay:${i*0.18}s">
+                    <span class="res-rank">${r.rank}</span>
+                    <div class="res-dot" style="background:${r.color}"></div>
+                    <span class="res-name">${r.name}</span>
+                    <span class="res-score">${r.score} pts</span>
+                    <span class="res-medal">${medals[i] || ''}</span>
+                </div>
+            `).join('');
+            document.getElementById('results-screen').classList.add('show');
         }
     </script>
 </body>

@@ -1,265 +1,680 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>RÉGIE - SNAPSHOT</title>
-    <link rel="stylesheet" href="style_mix.css">
-    <style>
-        .card { cursor: pointer; }
-        .card:hover { border-color: #2ecc71; }
-        .card.removed { opacity: 0.3; pointer-events: none; } 
-        .card.hidden-state { background-color: transparent; border: 2px solid #333; }
-        .mystery-mark { display: none; }
-        body { background: #111; } 
-        #bg-game-marquee { display: none; }
-        .game-title { font-family: 'Anton'; font-size: 2rem; color: #d4af37; }
-    </style>
+<meta charset="UTF-8">
+<title>RÉGIE - SNAPSHOT</title>
+<link rel="stylesheet" href="style_mix.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #111; color: #eee; font-family: 'Roboto Mono', monospace; font-size: 13px; overflow: hidden; }
+
+/* ── SETUP SCREEN ── */
+#setup-screen {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  height: 100vh; gap: 16px; padding: 20px;
+}
+#setup-screen h1 { font-family: 'Anton', sans-serif; font-size: 2.2rem; color: #d4af37; letter-spacing: 4px; }
+#setup-screen h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; color: #888; letter-spacing: 2px; margin-bottom: 8px; }
+#teams-list { display: flex; flex-direction: column; gap: 6px; width: 520px; max-height: 320px; overflow-y: auto; }
+.team-row {
+  display: flex; align-items: center; gap: 8px; background: #1a1a1a; border: 1px solid #333;
+  border-radius: 5px; padding: 6px 10px;
+}
+.team-row input[type=text] { flex: 1; background: #111; border: 1px solid #444; color: #eee; padding: 5px 8px; border-radius: 3px; font-family: inherit; font-size: 0.85rem; }
+.team-row input[type=number] { width: 55px; background: #111; border: 1px solid #444; color: #eee; padding: 5px 6px; border-radius: 3px; font-family: inherit; text-align: center; }
+.team-row input[type=color] { width: 34px; height: 30px; border: none; border-radius: 3px; cursor: pointer; padding: 2px; background: none; }
+.team-row .del-btn { background: #3a1010; border: 1px solid #c0392b; color: #e74c3c; padding: 4px 9px; border-radius: 3px; cursor: pointer; font-size: 0.8rem; }
+.setup-config { display: flex; gap: 20px; align-items: center; background: #1a1a1a; border: 1px solid #333; border-radius: 5px; padding: 10px 16px; }
+.setup-config label { color: #888; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; }
+.setup-config input { background: #111; border: 1px solid #444; color: #eee; padding: 5px 8px; border-radius: 3px; width: 60px; text-align: center; font-family: inherit; }
+.btn-add-team { background: #1a3a1a; border: 1px dashed #27ae60; color: #27ae60; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 2px; width: 520px; }
+.btn-start-game { background: #5a3000; border: 2px solid #d4af37; color: #d4af37; padding: 12px 40px; border-radius: 5px; cursor: pointer; font-family: 'Anton', sans-serif; font-size: 1.3rem; letter-spacing: 3px; margin-top: 4px; transition: background .15s; }
+.btn-start-game:hover { background: #7a4a00; }
+
+/* ── GAME SCREEN ── */
+#game-screen { display: none; height: 100vh; flex-direction: column; }
+
+#game-header {
+  display: flex; align-items: center; gap: 16px; padding: 6px 14px;
+  background: #000; border-bottom: 2px solid #d4af37; flex-shrink: 0;
+}
+.gh-title { font-family: 'Anton', sans-serif; font-size: 1.1rem; color: #d4af37; letter-spacing: 2px; }
+.gh-round { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; color: #aaa; letter-spacing: 2px; }
+#gh-player { font-family: 'Anton', sans-serif; font-size: 1.1rem; padding: 4px 12px; border-radius: 4px; letter-spacing: 1px; }
+.gh-sep { color: #444; }
+
+#game-body { display: flex; flex: 1; overflow: hidden; }
+
+/* LEFT PANEL */
+#left-panel { width: 240px; flex-shrink: 0; background: #151515; border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; overflow: hidden; }
+#scores-panel { padding: 10px; border-bottom: 1px solid #2a2a2a; }
+#scores-panel h3 { font-family: 'Bebas Neue', sans-serif; color: #888; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 8px; }
+.score-row { display: flex; align-items: center; gap: 8px; padding: 5px 0; }
+.score-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.score-name { flex: 1; font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.score-pts { font-family: monospace; font-size: 1rem; font-weight: bold; color: #d4af37; }
+.score-qualified { color: #27ae60; font-size: 0.65rem; margin-left: 4px; }
+
+#order-panel { padding: 10px; flex: 1; overflow-y: auto; }
+#order-panel h3 { font-family: 'Bebas Neue', sans-serif; color: #888; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 8px; }
+.order-item { display: flex; align-items: center; gap: 7px; padding: 5px 8px; border-radius: 4px; margin-bottom: 3px; font-size: 0.82rem; transition: all .15s; border: 1px solid transparent; }
+.order-item.active { background: #2a2200; border-color: #d4af37; font-weight: bold; }
+.order-item.done { opacity: 0.4; text-decoration: line-through; }
+.order-item.elim { opacity: 0.25; font-style: italic; color: #e74c3c; }
+.order-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+/* CENTER: photo grid */
+#grid-center { flex: 1; overflow: auto; padding: 8px; }
+#grid-container { width: 100%; height: 100%; }
+.card { cursor: pointer; }
+.card:hover { border-color: #2ecc71; }
+.card.removed { opacity: 0.18; pointer-events: none; filter: grayscale(1); }
+.card.correct-flash { border-color: #27ae60 !important; box-shadow: 0 0 12px #27ae60; }
+
+/* RIGHT PANEL: controls */
+#right-panel { width: 172px; flex-shrink: 0; background: #151515; border-left: 1px solid #2a2a2a; display: flex; flex-direction: column; padding: 8px; gap: 5px; overflow-y: auto; }
+.ctrl-section { display: flex; flex-direction: column; gap: 4px; }
+.ctrl-divider { border: none; border-top: 1px solid #2a2a2a; margin: 2px 0; }
+.ctrl-btn {
+  width: 100%; padding: 7px 6px; font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem;
+  letter-spacing: 1px; border: 1px solid #333; background: #1e1e1e; color: #ddd;
+  border-radius: 4px; cursor: pointer; transition: filter .1s;
+}
+.ctrl-btn:hover:not(:disabled) { filter: brightness(1.4); }
+.ctrl-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.ctrl-btn.green  { background: #1a3a1a; border-color: #27ae60; color: #2ecc71; }
+.ctrl-btn.red    { background: #3a1010; border-color: #c0392b; color: #e74c3c; font-size: 1.1rem; padding: 10px; }
+.ctrl-btn.gold   { background: #3a2a00; border-color: #d4af37; color: #d4af37; }
+.ctrl-btn.purple { background: #2a1a3a; border-color: #9b59b6; color: #d7aef5; }
+.ctrl-btn.orange { background: #3a1a00; border-color: #e67e22; color: #f39c12; }
+
+/* BOTTOM BAR */
+#game-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 5px 14px; background: #0a0a0a; border-top: 1px solid #222; flex-shrink: 0;
+  font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 2px;
+}
+#footer-round { color: #d4af37; }
+#footer-timer { font-family: monospace; font-size: 1.1rem; font-weight: bold; color: #2ecc71; cursor: pointer; }
+#footer-undo  { color: #888; font-size: 0.75rem; }
+
+/* RESULTS OVERLAY */
+#results-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.9); z-index: 999;
+  flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+}
+#results-overlay.show { display: flex; }
+.results-title { font-family: 'Anton', sans-serif; font-size: 3rem; color: #d4af37; letter-spacing: 6px; }
+#results-table { display: flex; flex-direction: column; gap: 8px; min-width: 360px; }
+.result-row {
+  display: flex; align-items: center; gap: 12px; padding: 12px 24px;
+  border-radius: 8px; font-size: 1.1rem;
+}
+.result-row.rank-1 { background: linear-gradient(to right,#ffd700,#ffe88a); color: #000; font-weight: bold; font-size: 1.3rem; }
+.result-row.rank-2 { background: linear-gradient(to right,#c0c0c0,#ddd); color: #111; }
+.result-row.rank-3 { background: linear-gradient(to right,#cd7f32,#daa070); color: #111; }
+.result-row.rank-n { background: #222; color: #888; border: 1px solid #333; }
+.result-rank  { width: 36px; font-family: 'Anton', sans-serif; font-size: 1.5rem; }
+.result-dot   { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+.result-name  { flex: 1; font-family: 'Anton', sans-serif; letter-spacing: 1px; }
+.result-score { font-family: monospace; font-size: 1.3rem; font-weight: bold; }
+.result-medal { font-size: 1.5rem; }
+.btn-close-results { background: #333; border: 1px solid #555; color: #aaa; padding: 10px 30px; border-radius: 5px; cursor: pointer; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 2px; }
+</style>
 </head>
 <body>
-    <audio id="sfx-break" src="../assets/effets_sonores/break.mp3"></audio>
-    <audio id="sfx-selected" src="../assets/effets_sonores/selected.mp3"></audio>
-    <audio id="sfx-timer" src="../assets/effets_sonores/timer.mp3" loop></audio>
-    
-    <div id="top-bar" class="regie-header">
-        <div class="game-title">RÉGIE SNAPSHOT</div>
-        <div style="font-size: 1.2rem; margin-right: 20px;">Délai: <span id="current-max-time" style="font-weight:bold; color:#2ecc71">24.0</span>s</div>
-        <div class="regie-timer" id="turn-timer" onclick="toggleTurnTimer()">24.0</div>
+<audio id="sfx-break"    src="../assets/effets_sonores/break.mp3"></audio>
+<audio id="sfx-selected" src="../assets/effets_sonores/selected.mp3"></audio>
+<audio id="sfx-timer"    src="../assets/effets_sonores/timer.mp3" loop></audio>
+<audio id="sfx-win"      src="../assets/effets_sonores/win.mp3"></audio>
+
+<!-- ═══════════════════════════════ SETUP ═══════════════════════════════ -->
+<div id="setup-screen">
+  <h1>RÉGIE SNAPSHOT</h1>
+  <h2>CONFIGURATION DE LA PARTIE</h2>
+  <div id="teams-list"></div>
+  <button class="btn-add-team" onclick="addTeamRow()">+ AJOUTER UNE ÉQUIPE</button>
+  <div class="setup-config">
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <label>Rounds</label>
+      <input id="cfg-rounds" type="number" value="5" min="1" max="20">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <label>Équipes qualifiées (top)</label>
+      <input id="cfg-threshold" type="number" value="2" min="1">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <label>Joueurs/équipe (défaut)</label>
+      <input id="cfg-default-players" type="number" value="2" min="1" max="8">
+    </div>
+  </div>
+  <button class="btn-start-game" onclick="startGame()">▶ DÉMARRER LA PARTIE</button>
+  <button onclick="openDisplayWindow()" style="background:#222;border:1px solid #444;color:#888;padding:7px 20px;border-radius:4px;cursor:pointer;font-family:'Bebas Neue',sans-serif;letter-spacing:2px;">OUVRIR L'ÉCRAN</button>
+</div>
+
+<!-- ═══════════════════════════════ GAME ════════════════════════════════ -->
+<div id="game-screen">
+
+  <div id="game-header">
+    <span class="gh-title">SNAPSHOT</span>
+    <span class="gh-sep">|</span>
+    <span class="gh-round">ROUND <span id="gh-round-num">1</span>/<span id="gh-round-total">5</span></span>
+    <span class="gh-sep">|</span>
+    <span id="gh-player" style="background:#333;border-radius:4px;">—</span>
+    <div style="margin-left:auto;display:flex;gap:8px">
+      <button class="ctrl-btn purple" onclick="channel.postMessage({type:'START_INTRO'})">INTRO</button>
+      <button class="ctrl-btn" onclick="channel.postMessage({type:'SKIP_INTRO'})">SKIP</button>
+      <button class="ctrl-btn" onclick="openDisplayWindow()">ÉCRAN</button>
+      <button class="ctrl-btn" onclick="toggleDataMode()" style="font-size:.7rem;letter-spacing:0">MODE: <span id="mode-label-snapshot">NORMAL</span></button>
+    </div>
+  </div>
+
+  <div id="game-body">
+
+    <!-- LEFT -->
+    <div id="left-panel">
+      <div id="scores-panel">
+        <h3>SCORES</h3>
+        <div id="scores-list"></div>
+      </div>
+      <div id="order-panel">
+        <h3>ORDRE DU ROUND</h3>
+        <div id="order-list"></div>
+      </div>
     </div>
 
-    <div id="grid-container"></div>
-
-    <div class="admin-controls">
-        <button onclick="channel.postMessage({type:'START_INTRO'})" style="background:#4a1a6a;border:1px solid #9b59b6;color:#d7aef5;padding:6px 14px;border-radius:4px;cursor:pointer;font-weight:bold;letter-spacing:1px;">🎬 GÉNÉRIQUE</button>
-        <button onclick="channel.postMessage({type:'SKIP_INTRO'})" style="background:#333;border:1px solid #555;color:#aaa;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:.8em;">⏭</button>
-        <div style="width:10px;"></div>
-        <button class="btn-mode" onclick="initGame('NORMAL')">N</button>
-        <button class="btn-mode" onclick="initGame('HARD')">H</button>
-        <div style="width: 15px;"></div>
-        <button class="btn-memo" id="btn-launch-memo" onclick="startMemoSequence()" disabled>LANCER MÉMO</button>
-        <div style="width: 15px;"></div>
-        <button class="btn-start" id="btn-play-pause" onclick="toggleTurnTimer()" disabled>PLAY (ESP)</button>
-        <button class="btn-reset" onclick="resetTurnTimer()">RESET</button>
-        <div style="width: 15px;"></div>
-        <button class="btn-faux" onclick="triggerWrong()">FAUX</button>
-        <div style="width: 15px;"></div>
-        <button onclick="openDisplayWindow()" style="background:#555;">ÉCRAN</button>
-        <button id="btn-mode-snapshot" onclick="toggleDataMode()" style="background:#1a1a1a;border:1px solid #444;color:#888;padding:4px 10px;font-family:monospace;font-size:.75rem;cursor:pointer;border-radius:3px;" title="Basculer entre base normale et base personnalisée">MODE: <span id="mode-label-snapshot">◉ NORMAL</span></button>
+    <!-- CENTER -->
+    <div id="grid-center">
+      <div id="grid-container"></div>
     </div>
 
-    <script src="mix_data.js"></script>
-    <script src="mix_data_custom.js"></script>
-    <script>
-        // ── MODE DONNÉES (normal / personnalisé) ─────────────────────────
-        (function() {
-            if (localStorage.getItem('snapshot_mode') === 'custom' && Array.isArray(MIX_PHOTOS_CUSTOM)) {
-                MIX_PHOTOS.length = 0;
-                MIX_PHOTOS_CUSTOM.forEach(p => MIX_PHOTOS.push(p));
-            }
-        })();
-        // ── ROUND-ROBIN PHOTOS ────────────────────────────────────────────
-        // Garantit que chaque photo est montrée avant qu'une ne revienne.
-        const SNAP_KEY = 'mef_snap_rotation';
-        function snapLog_load() { try { return JSON.parse(localStorage.getItem(SNAP_KEY)) || []; } catch { return []; } }
-        function snapLog_save(l) { localStorage.setItem(SNAP_KEY, JSON.stringify(l)); }
-        function snapLog_pickPhotos(allPhotos, count) {
-            const valid = allPhotos.filter(p => p.validated !== false);
-            let seen = snapLog_load().filter(f => valid.some(p => p.file === f));
-            const unseen = valid.filter(p => !seen.includes(p.file));
-            // Si pas assez d'inédits → reset et reprend depuis le début
-            const pool = unseen.length >= count ? unseen : valid;
-            if (unseen.length < count) seen = [];
-            const shuffled = [...pool].sort(() => Math.random() - 0.5);
-            const picks = shuffled.slice(0, count);
-            snapLog_save([...seen, ...picks.map(p => p.file)]);
-            return picks;
-        }
-        // ─────────────────────────────────────────────────────────────────
+    <!-- RIGHT -->
+    <div id="right-panel">
+      <div class="ctrl-section">
+        <button class="ctrl-btn green" id="btn-newgrid" onclick="initGame()">🔄 NOUVELLE GRILLE</button>
+        <button class="ctrl-btn" id="btn-launch-memo" onclick="startMemoSequence()" disabled>MÉMO</button>
+        <button class="ctrl-btn" id="btn-play-pause" onclick="toggleTurnTimer()" disabled>PLAY ▶</button>
+        <button class="ctrl-btn" id="btn-reset-timer" onclick="resetTurnTimer()">RESET ⟳</button>
+      </div>
+      <hr class="ctrl-divider">
+      <div class="ctrl-section">
+        <button class="ctrl-btn red" id="btn-faux" onclick="markWrong()">✗ FAUX</button>
+        <button class="ctrl-btn orange" id="btn-undo" onclick="undoLast()">↩ ANNULER</button>
+      </div>
+      <hr class="ctrl-divider">
+      <div class="ctrl-section">
+        <button class="ctrl-btn gold" onclick="endRound()">▶ FIN DU ROUND</button>
+        <button class="ctrl-btn" onclick="showResults()">🏆 PODIUM</button>
+      </div>
+    </div>
+  </div>
 
-        function toggleDataMode() {
-            const cur = localStorage.getItem('snapshot_mode') || 'normal';
-            localStorage.setItem('snapshot_mode', cur === 'normal' ? 'custom' : 'normal');
-            location.reload();
-        }
-        // ──────────────────────────────────────────────────────────────────
+  <div id="game-footer">
+    <span id="footer-round">ROUND 1 / 5</span>
+    <span id="footer-timer" onclick="toggleTurnTimer()">24.0</span>
+    <span id="footer-undo">—</span>
+  </div>
 
-        const channel = new BroadcastChannel('snapshot_channel');
-        const sfxBreak = document.getElementById('sfx-break');
-        const sfxSelected = document.getElementById('sfx-selected');
-        const sfxTimer = document.getElementById('sfx-timer');
-        
-        let currentMode = 'NORMAL';
-        let turnDuration = 24.0;
-        let turnInterval;
-        let currentTime = 24.0;
-        let timerState = 'STOPPED';
-        let memoTimeout; 
+</div>
 
-        function openDisplayWindow() {
-            window.open('snapshot_ecran.html', 'SnapshotDisplay', 'width=1280,height=720');
-        }
+<!-- RESULTS OVERLAY -->
+<div id="results-overlay">
+  <div class="results-title">CLASSEMENT FINAL</div>
+  <div id="results-table"></div>
+  <button class="btn-close-results" onclick="document.getElementById('results-overlay').classList.remove('show')">FERMER</button>
+</div>
 
-        document.addEventListener('keydown', (e) => {
-            if(e.key.toLowerCase() === 'n') initGame('NORMAL');
-            if(e.key.toLowerCase() === 'h') initGame('HARD');
-            if(e.key.toLowerCase() === 'x') triggerWrong();
-            if(e.key === ' ') { e.preventDefault(); toggleTurnTimer(); }
-        });
+<script src="mix_data.js"></script>
+<script src="mix_data_custom.js"></script>
+<script>
+'use strict';
 
-        function initGame(mode) {
-            currentMode = mode;
-            stopSoundTimer();
-            if(memoTimeout) clearTimeout(memoTimeout);
+// ── DATA MODE ─────────────────────────────────────────────────────────────────
+(function() {
+  if (localStorage.getItem('snapshot_mode') === 'custom' && Array.isArray(MIX_PHOTOS_CUSTOM)) {
+    MIX_PHOTOS.length = 0; MIX_PHOTOS_CUSTOM.forEach(p => MIX_PHOTOS.push(p));
+  }
+})();
+function toggleDataMode() {
+  const cur = localStorage.getItem('snapshot_mode') || 'normal';
+  localStorage.setItem('snapshot_mode', cur === 'normal' ? 'custom' : 'normal');
+  location.reload();
+}
+(function() {
+  const mode = localStorage.getItem('snapshot_mode') || 'normal';
+  const lbl = document.getElementById('mode-label-snapshot');
+  if (lbl) lbl.textContent = mode === 'custom' ? 'PERSO' : 'NORMAL';
+})();
 
-            const container = document.getElementById('grid-container');
-            container.innerHTML = '';
-            
-            // MODIF : 32 cartes en Hard (4 lignes)
-            let count = (mode === 'NORMAL') ? 24 : 32;
-            // Round-robin : chaque photo n'est montrée qu'une fois par rotation complète
-            let selectedPhotos = snapLog_pickPhotos(MIX_PHOTOS, count);
+// ── ROUND-ROBIN PHOTOS ────────────────────────────────────────────────────────
+const SNAP_KEY = 'mef_snap_rotation';
+function snapLog_load() { try { return JSON.parse(localStorage.getItem(SNAP_KEY)) || []; } catch { return []; } }
+function snapLog_save(l) { localStorage.setItem(SNAP_KEY, JSON.stringify(l)); }
+function snapLog_pickPhotos(allPhotos, count) {
+  const valid = allPhotos.filter(p => p.validated !== false);
+  let seen = snapLog_load().filter(f => valid.some(p => p.file === f));
+  const unseen = valid.filter(p => !seen.includes(p.file));
+  const pool = unseen.length >= count ? unseen : valid;
+  if (unseen.length < count) seen = [];
+  const shuffled = [...pool].sort(() => Math.random() - 0.5);
+  const picks = shuffled.slice(0, count);
+  snapLog_save([...seen, ...picks.map(p => p.file)]);
+  return picks;
+}
 
-            const grid = document.createElement('div');
-            grid.className = `photo-grid ${mode === 'NORMAL' ? 'grid-normal' : 'grid-hard'}`;
+// ── CHANNEL ───────────────────────────────────────────────────────────────────
+const channel = new BroadcastChannel('snapshot_channel');
+channel.onmessage = e => { if (e.data.type === 'PING') channel.postMessage({ type: 'PONG' }); };
+function openDisplayWindow() { window.open('snapshot_ecran.html', 'SnapshotDisplay', 'width=1280,height=720'); }
 
-            selectedPhotos.forEach((photo, index) => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.id = `card-${index}`;
-                card.innerHTML = `<img src="${photo.file}"><div class="card-name">${photo.name}</div>`;
-                card.onclick = () => validateCard(index);
-                grid.appendChild(card);
-            });
-            container.appendChild(grid);
+// ── SOUNDS ────────────────────────────────────────────────────────────────────
+const sfxBreak    = document.getElementById('sfx-break');
+const sfxSelected = document.getElementById('sfx-selected');
+const sfxTimer    = document.getElementById('sfx-timer');
+const sfxWin      = document.getElementById('sfx-win');
+function snd(el) { el.currentTime = 0; el.play().catch(() => {}); }
+function stopSoundTimer() { sfxTimer.pause(); sfxTimer.currentTime = 0; }
 
-            document.getElementById('btn-launch-memo').disabled = false;
-            document.getElementById('btn-play-pause').disabled = true;
+// ── TIMER ─────────────────────────────────────────────────────────────────────
+let timerState = 'STOPPED', timerInterval = null, currentTime = 24, turnDuration = 24;
+let canAnswer = false; // les cartes ne comptent qu'après la phase mémo
+function toggleTurnTimer() {
+  if (document.getElementById('btn-play-pause').disabled) return;
+  if (timerState === 'RUNNING') {
+    clearInterval(timerInterval); timerState = 'PAUSED'; stopSoundTimer();
+    document.getElementById('btn-play-pause').textContent = 'RESUME ▶';
+    channel.postMessage({ type: 'PAUSE_TIMER' });
+  } else {
+    if (timerState === 'STOPPED') currentTime = turnDuration;
+    timerState = 'RUNNING';
+    sfxTimer.currentTime = 0; sfxTimer.play().catch(() => {});
+    document.getElementById('btn-play-pause').textContent = 'PAUSE ⏸';
+    channel.postMessage({ type: 'START_TIMER', duration: currentTime });
+    timerInterval = setInterval(() => {
+      currentTime = Math.max(0, currentTime - 0.1);
+      updateTimerDisplay(currentTime);
+      if (currentTime <= 0) { clearInterval(timerInterval); timerState = 'STOPPED'; stopSoundTimer(); markWrong(true); }
+    }, 100);
+  }
+}
+function resetTurnTimer() {
+  clearInterval(timerInterval); timerState = 'STOPPED'; currentTime = turnDuration; stopSoundTimer();
+  updateTimerDisplay(currentTime);
+  document.getElementById('btn-play-pause').textContent = 'PLAY ▶';
+  channel.postMessage({ type: 'RESET_TIMER', duration: currentTime });
+}
+function fullResetTimer() {
+  clearInterval(timerInterval); timerState = 'STOPPED'; currentTime = turnDuration; stopSoundTimer();
+  updateTimerDisplay(currentTime);
+  document.getElementById('btn-play-pause').textContent = 'PLAY ▶';
+  channel.postMessage({ type: 'STOP_TIMER' });
+}
+function updateTimerDisplay(v) { document.getElementById('footer-timer').textContent = v.toFixed(1); }
 
-            channel.postMessage({ type: 'INIT', mode: mode, photos: selectedPhotos });
+document.addEventListener('keydown', e => {
+  if (e.key === ' ') { e.preventDefault(); toggleTurnTimer(); }
+  if (e.key.toLowerCase() === 'x') markWrong();
+  if (e.key.toLowerCase() === 'z' && e.ctrlKey) { e.preventDefault(); undoLast(); }
+});
 
-            // MODIF : 30s en Hard, 24s en Normal
-            turnDuration = (mode === 'NORMAL') ? 24.0 : 30.0;
-            document.getElementById('current-max-time').innerText = turnDuration.toFixed(1);
-            fullResetTimer();
-        }
+// ══════════════════════════════════════════════════════════════════════════════
+// SETUP
+// ══════════════════════════════════════════════════════════════════════════════
+const PRESET_COLORS = ['#e74c3c','#3498db','#27ae60','#f39c12','#9b59b6','#e67e22','#1abc9c','#e91e63','#00bcd4','#ff5722'];
+let teamRowCount = 0;
 
-        function startMemoSequence() {
-            document.getElementById('btn-launch-memo').disabled = true;
-            playSoundTimer();
-            channel.postMessage({ type: 'START_MEMO_PHASE', mode: currentMode });
+function addTeamRow(name = '', color = null) {
+  const c = color || PRESET_COLORS[teamRowCount % PRESET_COLORS.length];
+  const defPlayers = document.getElementById('cfg-default-players')?.value || 2;
+  const idx = teamRowCount++;
+  const row = document.createElement('div');
+  row.className = 'team-row';
+  row.id = `team-row-${idx}`;
+  row.innerHTML = `
+    <input type="color" value="${c}" id="tc-${idx}">
+    <input type="text" placeholder="Nom de l'équipe" value="${name}" id="tn-${idx}">
+    <span style="color:#888;font-size:.75rem;white-space:nowrap">Joueurs :</span>
+    <input type="number" min="1" max="8" value="${defPlayers}" id="tp-${idx}" style="width:50px">
+    <button class="del-btn" onclick="document.getElementById('team-row-${idx}').remove()">✕</button>
+  `;
+  document.getElementById('teams-list').appendChild(row);
+}
 
-            // MODIF : 15s en Hard, 20s en Normal
-            let memoTime = (currentMode === 'NORMAL') ? 20000 : 15000;
-            if(memoTimeout) clearTimeout(memoTimeout);
-            memoTimeout = setTimeout(() => {
-                stopSoundTimer();
-                document.getElementById('btn-play-pause').disabled = false;
-            }, memoTime);
-        }
+// Pre-populate 2 teams
+addTeamRow('Équipe A');
+addTeamRow('Équipe B');
 
-        function validateCard(index) {
-            sfxSelected.currentTime = 0; sfxSelected.play();
-            const card = document.getElementById(`card-${index}`);
-            if(card) card.classList.add('removed');
-            channel.postMessage({ type: 'REMOVE_CARD', index: index });
+function startGame() {
+  const rows = document.querySelectorAll('.team-row');
+  if (rows.length < 2) { alert('Ajoutez au moins 2 équipes !'); return; }
 
-            fullResetTimer(); 
-            
-            // MODIF : -0.8s en Hard, -0.5s en Normal
-            let reduction = (currentMode === 'NORMAL') ? 0.5 : 0.8;
-            if(turnDuration > 5) turnDuration -= reduction;
-            
-            document.getElementById('current-max-time').innerText = turnDuration.toFixed(1);
-            currentTime = turnDuration;
-            updateTimerDisplay(currentTime);
-        }
+  const teams = [];
+  let valid = true;
+  rows.forEach(row => {
+    const idNum = row.id.split('-')[2];
+    const name  = document.getElementById(`tn-${idNum}`).value.trim();
+    const color = document.getElementById(`tc-${idNum}`).value;
+    const count = parseInt(document.getElementById(`tp-${idNum}`).value) || 2;
+    if (!name) { valid = false; return; }
+    teams.push({ name, color, playerCount: count });
+  });
+  if (!valid) { alert('Donnez un nom à chaque équipe !'); return; }
 
-        function triggerWrong() {
-            sfxBreak.currentTime = 0; sfxBreak.play();
-            let reduction = (currentMode === 'NORMAL') ? 0.5 : 0.8;
-            if (turnDuration > 5) turnDuration -= reduction;
-            document.getElementById('current-max-time').innerText = turnDuration.toFixed(1);
-            fullResetTimer();
-        }
+  const totalRounds = parseInt(document.getElementById('cfg-rounds').value) || 5;
+  const threshold   = parseInt(document.getElementById('cfg-threshold').value) || 10;
 
-        function toggleTurnTimer() {
-            if(document.getElementById('btn-play-pause').disabled) return;
+  initGameState(teams, totalRounds, threshold);
+  document.getElementById('setup-screen').style.display = 'none';
+  document.getElementById('game-screen').style.display  = 'flex';
+  document.getElementById('game-screen').style.flexDirection = 'column';
+  renderAll();
+}
 
-            if (timerState === 'RUNNING') {
-                clearInterval(turnInterval);
-                timerState = 'PAUSED';
-                stopSoundTimer();
-                document.getElementById('btn-play-pause').innerText = "RESUME";
-                document.getElementById('btn-play-pause').className = "btn-pause";
-                channel.postMessage({ type: 'PAUSE_TIMER' });
-            } else {
-                if (timerState === 'STOPPED') currentTime = turnDuration;
-                
-                timerState = 'RUNNING';
-                playSoundTimer(); 
-                document.getElementById('btn-play-pause').innerText = "PAUSE";
-                document.getElementById('btn-play-pause').className = "btn-faux";
-                
-                channel.postMessage({ type: 'START_TIMER', duration: currentTime });
+// ══════════════════════════════════════════════════════════════════════════════
+// GAME STATE
+// ══════════════════════════════════════════════════════════════════════════════
+let gs = {};
 
-                turnInterval = setInterval(() => {
-                    currentTime -= 0.1;
-                    if(currentTime <= 0) {
-                        currentTime = 0;
-                        triggerWrong();
-                    }
-                    updateTimerDisplay(currentTime);
-                }, 100);
-            }
-        }
+function initGameState(teams, totalRounds, threshold) {
+  gs = {
+    totalRounds,
+    threshold,
+    round: 1,
+    teams: teams.map((t, ti) => ({
+      name: t.name,
+      color: t.color,
+      score: 0,
+      players: Array.from({ length: t.playerCount }, (_, pi) => ({
+        id: `t${ti}p${pi}`,
+        label: `${t.name} ${pi + 1}`,
+        shortLabel: `${t.name.substring(0, 3)}${pi + 1}`,
+        alive: true
+      }))
+    })),
+    snake: [],    // current round order
+    pos: 0,
+    history: []
+  };
+  gs.snake = buildSnake();
+}
 
-        function resetTurnTimer() {
-            clearInterval(turnInterval);
-            timerState = 'STOPPED';
-            currentTime = turnDuration;
-            stopSoundTimer();
-            updateTimerDisplay(currentTime);
-            updateButtonUI();
-            channel.postMessage({ type: 'RESET_TIMER', duration: currentTime });
-        }
+// ── SNAKE BUILDER ─────────────────────────────────────────────────────────────
+// Slot 0 (even) → forward through teams, player[0] of each
+// Slot 1 (odd)  → backward through teams, player[1] of each
+// etc.
+function buildSnake() {
+  // Construit à partir de TOUS les joueurs (pas de filtre alive — élimination gérée dans gs.snake seulement)
+  const alive = gs.teams.map(t => t.players);
+  const maxSlot = Math.max(0, ...alive.map(a => a.length));
+  const order = [];
+  for (let slot = 0; slot < maxSlot; slot++) {
+    let batch = [];
+    gs.teams.forEach((team, ti) => {
+      const ap = alive[ti];
+      if (ap[slot]) batch.push({ teamIdx: ti, id: ap[slot].id, label: ap[slot].label, shortLabel: ap[slot].shortLabel, color: team.color });
+    });
+    if (slot % 2 === 1) batch.reverse();
+    order.push(...batch);
+  }
+  return order;
+}
 
-        function fullResetTimer() {
-            clearInterval(turnInterval);
-            timerState = 'STOPPED';
-            currentTime = turnDuration;
-            stopSoundTimer();
-            updateTimerDisplay(currentTime);
-            updateButtonUI();
-            channel.postMessage({ type: 'STOP_TIMER' });
-        }
+function currentPlayer() { return gs.snake.length ? gs.snake[gs.pos] : null; }
 
-        function updateButtonUI() {
-            const btn = document.getElementById('btn-play-pause');
-            btn.innerText = "PLAY (ESP)";
-            btn.className = "btn-start";
-        }
+// ── ACTIONS ───────────────────────────────────────────────────────────────────
+function markCorrect(cardIdx) {
+  if (!canAnswer || timerState !== 'RUNNING') return; // uniquement si le chrono tourne
+  const p = currentPlayer();
+  if (!p) return;
+  // Save undo entry
+  gs.history.push({ type: 'correct', teamIdx: p.teamIdx, cardIdx, pos: gs.pos, prevSnake: [...gs.snake] });
+  // Award point
+  gs.teams[p.teamIdx].score += 1;
+  // Remove card visually
+  const card = document.getElementById(`card-${cardIdx}`);
+  if (card) { card.classList.add('removed', 'correct-flash'); setTimeout(() => card.classList.remove('correct-flash'), 300); }
+  channel.postMessage({ type: 'REMOVE_CARD', index: cardIdx });
+  snd(sfxSelected);
+  // Advance snake
+  gs.pos = (gs.pos + 1);
+  if (gs.pos >= gs.snake.length) gs.pos = 0;
+  fullResetTimer();
+  renderAll();
+}
 
-        function updateTimerDisplay(val) {
-            document.getElementById('turn-timer').innerText = val.toFixed(1);
-        }
+// fromTimer=true : appelé par expiration automatique du chrono (ignore les gardes manuels)
+// fromTimer=false (défaut) : bouton FAUX ou clavier → vérifications strictes
+function markWrong(fromTimer = false) {
+  if (!canAnswer) return;
+  if (!fromTimer && (timerState !== 'RUNNING' || gs.snake.length <= 1)) return;
+  const p = currentPlayer();
+  if (!p) return;
+  // Sauvegarde pour undo — on ne modifie PAS gs.teams, juste le snake
+  gs.history.push({ type: 'wrong', teamIdx: p.teamIdx, id: p.id, pos: gs.pos, prevSnake: [...gs.snake] });
+  // Élimination DU ROUND UNIQUEMENT : retirer du snake, pas des équipes
+  gs.snake.splice(gs.pos, 1);
+  snd(sfxBreak);
+  fullResetTimer();
+  // Cas limite : plus aucun joueur → fin de round automatique
+  if (gs.snake.length === 0) { renderAll(); endRound(); return; }
+  if (gs.pos >= gs.snake.length) gs.pos = 0;
+  renderAll();
+}
 
-        function playSoundTimer() {
-            sfxTimer.currentTime = 0;
-            sfxTimer.play().catch(e => console.log(e));
-        }
-        function stopSoundTimer() {
-            sfxTimer.pause();
-            sfxTimer.currentTime = 0;
-        }
+function undoLast() {
+  if (!gs.history.length) return;
+  const action = gs.history.pop();
+  if (action.type === 'correct') {
+    // Reverse score
+    gs.teams[action.teamIdx].score = Math.max(0, gs.teams[action.teamIdx].score - 1);
+    // Restore card
+    const card = document.getElementById(`card-${action.cardIdx}`);
+    if (card) { card.classList.remove('removed'); channel.postMessage({ type: 'RESTORE_CARD', index: action.cardIdx }); }
+    // Restore snake position
+    gs.snake = action.prevSnake;
+    gs.pos = action.pos;
+  } else if (action.type === 'wrong') {
+    // Restaurer le snake tel qu'avant l'élimination (pas besoin de toucher gs.teams)
+    gs.snake = action.prevSnake;
+    gs.pos = action.pos;
+  }
+  renderAll();
+}
 
-        // Init mode label
-        (function() {
-            const mode = localStorage.getItem('snapshot_mode') || 'normal';
-            const lbl = document.getElementById('mode-label-snapshot');
-            const btn = document.getElementById('btn-mode-snapshot');
-            if (!lbl) return;
-            lbl.textContent = mode === 'custom' ? '◉ PERSONNALISÉ' : '◉ NORMAL';
-            if (mode === 'custom') { btn.style.color = '#d4af37'; btn.style.borderColor = '#d4af37'; }
-        })();
-    </script>
+function endRound() {
+  gs.history = [];
+  canAnswer = false; // désactive les clics cartes jusqu'au prochain MÉMO
+  document.getElementById('btn-launch-memo').disabled = false;
+  document.getElementById('btn-play-pause').disabled  = true;
+  if (gs.round < gs.totalRounds) {
+    gs.round++;
+    // REPÊCHAGE : buildSnake() repart de TOUS les joueurs (éliminations uniquement pour le round)
+    gs.snake = buildSnake();
+    gs.pos = 0;
+    renderAll();
+  } else {
+    showResults();
+  }
+}
+
+// ── GAME INIT (photo grid) ────────────────────────────────────────────────────
+let memoTimeout;
+
+function initGame() {
+  stopSoundTimer();
+  canAnswer = false;
+  if (memoTimeout) clearTimeout(memoTimeout);
+  const count = 24;
+  const selectedPhotos = snapLog_pickPhotos(MIX_PHOTOS, count);
+
+  const container = document.getElementById('grid-container');
+  container.innerHTML = '';
+  const grid = document.createElement('div');
+  grid.className = 'photo-grid grid-normal';
+  selectedPhotos.forEach((photo, index) => {
+    const card = document.createElement('div');
+    card.className = 'card'; card.id = `card-${index}`;
+    card.innerHTML = `<img src="${photo.file}"><div class="card-name">${photo.name}</div>`;
+    card.onclick = () => markCorrect(index);
+    grid.appendChild(card);
+  });
+  container.appendChild(grid);
+
+  document.getElementById('btn-launch-memo').disabled = false;
+  document.getElementById('btn-play-pause').disabled  = true;
+  channel.postMessage({ type: 'INIT', mode: 'NORMAL', photos: selectedPhotos });
+  turnDuration = 24; fullResetTimer();
+}
+
+function startMemoSequence() {
+  document.getElementById('btn-launch-memo').disabled = true;
+  sfxTimer.currentTime = 0; sfxTimer.play().catch(() => {});
+  channel.postMessage({ type: 'START_MEMO_PHASE', mode: 'NORMAL' });
+  if (memoTimeout) clearTimeout(memoTimeout);
+  memoTimeout = setTimeout(() => {
+    stopSoundTimer();
+    canAnswer = true; // ← les clics sur les cartes sont maintenant actifs
+    document.getElementById('btn-play-pause').disabled = false;
+  }, 20000);
+}
+
+// ── RENDER ────────────────────────────────────────────────────────────────────
+function renderAll() {
+  renderHeader();
+  renderScores();
+  renderOrder();
+  renderFooter();
+  renderUndoHint();
+  renderButtons();
+}
+
+function renderButtons() {
+  const canFaux = canAnswer && timerState === 'RUNNING' && gs.snake.length > 1;
+  document.getElementById('btn-faux').disabled = !canFaux;
+}
+
+function renderHeader() {
+  document.getElementById('gh-round-num').textContent   = gs.round;
+  document.getElementById('gh-round-total').textContent = gs.totalRounds;
+  const p = currentPlayer();
+  const el = document.getElementById('gh-player');
+  if (p) {
+    el.textContent = p.label;
+    el.style.background = p.color + '33';
+    el.style.color = p.color;
+    el.style.border = `1px solid ${p.color}`;
+  } else {
+    el.textContent = gs.snake.length === 0 ? 'Fin du round' : '—';
+    el.style.background = '#333'; el.style.color = '#888'; el.style.border = '1px solid #444';
+  }
+}
+
+function renderScores() {
+  const list = document.getElementById('scores-list');
+  list.innerHTML = '';
+  const sorted = [...gs.teams].sort((a, b) => b.score - a.score);
+  sorted.forEach((t, i) => {
+    const rank = i + 1;
+    const qualified = rank <= gs.threshold;
+    const div = document.createElement('div');
+    div.className = 'score-row';
+    div.innerHTML = `
+      <div class="score-dot" style="background:${t.color}"></div>
+      <span class="score-name">${t.name}</span>
+      <span class="score-pts">${t.score}</span>
+      ${qualified ? '<span class="score-qualified">✓ TOP ' + gs.threshold + '</span>' : ''}
+    `;
+    list.appendChild(div);
+    // Divider after last qualified team
+    if (rank === gs.threshold && gs.threshold < gs.teams.length) {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'border-top:1px dashed #27ae60;margin:3px 0;opacity:.5';
+      list.appendChild(sep);
+    }
+  });
+}
+
+function renderOrder() {
+  const list = document.getElementById('order-list');
+  list.innerHTML = '';
+  if (!gs.snake.length) {
+    list.innerHTML = '<div style="color:#555;font-size:.78rem;padding:4px">Aucun joueur actif</div>';
+    return;
+  }
+  gs.snake.forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'order-item' + (i === gs.pos ? ' active' : (i < gs.pos ? ' done' : ''));
+    div.innerHTML = `
+      <div class="order-dot" style="background:${p.color}"></div>
+      <span>${p.label}</span>
+      ${i === gs.pos ? '<span style="margin-left:auto;font-size:.7rem;color:#d4af37">← EN JEU</span>' : ''}
+    `;
+    list.appendChild(div);
+  });
+  // Show players eliminated this round (in original order, not in current snake)
+  const inSnake = new Set(gs.snake.map(p => p.id));
+  const allThisRound = buildSnake(); // tous les joueurs, ordre snake
+  const eliminated = allThisRound.filter(p => !inSnake.has(p.id));
+  if (eliminated.length) {
+    const sep = document.createElement('div');
+    sep.style.cssText = 'font-size:.68rem;color:#555;padding:6px 0 2px;letter-spacing:1px;';
+    sep.textContent = '── ÉLIMINÉS (round) ──';
+    list.appendChild(sep);
+    eliminated.forEach(p => {
+      const d = document.createElement('div');
+      d.className = 'order-item elim';
+      d.innerHTML = `<div class="order-dot" style="background:${p.color}"></div><span>✗ ${p.label}</span>`;
+      list.appendChild(d);
+    });
+  }
+}
+
+function renderFooter() {
+  document.getElementById('footer-round').textContent = `ROUND ${gs.round} / ${gs.totalRounds}`;
+}
+
+function renderUndoHint() {
+  const last = gs.history[gs.history.length - 1];
+  const el = document.getElementById('footer-undo');
+  if (!last) { el.textContent = '—'; return; }
+  const team = gs.teams[last.teamIdx];
+  if (last.type === 'correct') el.textContent = `Dernier : ✓ ${team.name} (+1)`;
+  else if (last.type === 'wrong') el.textContent = `Dernier : ✗ ${gs.teams[last.teamIdx].players.find(p => p.id === last.id)?.label || '?'} (élim)`;
+}
+
+// ── RESULTS ───────────────────────────────────────────────────────────────────
+function showResults() {
+  const sorted = [...gs.teams].sort((a, b) => b.score - a.score);
+  const medals = ['🥇','🥈','🥉'];
+  const rankClasses = ['rank-1','rank-2','rank-3','rank-n'];
+
+  const rows = sorted.map((t, i) => {
+    const rank = i + 1;
+    const qualified = rank <= gs.threshold;
+    const divider = (rank === gs.threshold && gs.threshold < sorted.length)
+      ? `<div style="border-top:2px dashed #27ae60;margin:6px 0 2px;opacity:.7;font-family:'Bebas Neue',sans-serif;font-size:.7rem;color:#27ae60;letter-spacing:2px;padding-top:4px;text-align:center">── QUALIFIÉS ──</div>`
+      : '';
+    return `
+      <div class="result-row ${rankClasses[Math.min(i, 3)]}">
+        <span class="result-rank">${rank}</span>
+        <div class="result-dot" style="background:${t.color}"></div>
+        <span class="result-name">${t.name}</span>
+        <span class="result-score">${t.score} pts</span>
+        <span class="result-medal">${medals[i] || ''}</span>
+        ${qualified ? '<span style="color:#27ae60;font-size:.75rem;margin-left:6px;font-family:monospace">✓ QUALIF</span>' : ''}
+      </div>
+      ${divider}
+    `;
+  }).join('');
+  document.getElementById('results-table').innerHTML = rows;
+  document.getElementById('results-overlay').classList.add('show');
+  snd(sfxWin);
+
+  // Send to ecran
+  channel.postMessage({ type: 'SHOW_RESULTS', data: {
+    results: sorted.map((t, i) => ({ rank: i + 1, name: t.name, color: t.color, score: t.score, qualified: (i + 1) <= gs.threshold }))
+  }});
+}
+</script>
 </body>
 </html>

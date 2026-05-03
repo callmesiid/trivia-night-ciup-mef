@@ -384,32 +384,13 @@ tl.to('#logo-wrap', { y: -17, duration: 0.925, yoyo: true, repeat: floatR, ease:
 
 window.__timelines['generique-snapshot'] = tl;
 
-(function() {
-  if (window.__hyperframesPlayer) return;
-  function start() {
-    document.removeEventListener('click', start);
-    var a = document.getElementById('bg-audio');
-    if (a) { a.currentTime = 0; a.play().catch(function() {}); }
+window.addEventListener('load', function() {
+  setTimeout(function() {
     tl.play();
-  }
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      tl.play();
-      var a = document.getElementById('bg-audio');
-      if (a) {
-        var p = a.play();
-        if (p && p.catch) p.catch(function() {
-          tl.pause(); tl.seek(0);
-          document.addEventListener('click', start);
-          var h = document.createElement('div');
-          h.textContent = '▶ Cliquer pour démarrer';
-          h.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#d4af37;font-family:Anton,sans-serif;font-size:1.5rem;letter-spacing:3px;z-index:9999;pointer-events:none;';
-          document.body.appendChild(h);
-        });
-      }
-    }, 400);
-  });
-})();
+    var a = document.getElementById('bg-audio');
+    if (a) a.play().catch(function() {});
+  }, 400);
+});
 </script>
 </body>
 </html>
