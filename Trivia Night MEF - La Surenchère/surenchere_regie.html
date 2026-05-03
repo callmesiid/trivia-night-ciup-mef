@@ -262,6 +262,7 @@
     <button type="button" class="btn-gray" onclick="document.getElementById('score-overlay').style.display='none'" style="margin-top:14px;">FERMER</button>
 </div>
 
+<script src="../teams_config.js"></script>
 <script src="surenchere_data.js"></script>
 <script src="surenchere_data_custom.js"></script>
 <script>
@@ -359,11 +360,24 @@ const loseSounds = ['../assets/effets_sonores/wasted.mp3','../assets/effets_sono
 // INIT
 // ================================================================
 document.addEventListener('DOMContentLoaded', () => {
+    preloadTeamsFromConfig();
     renderTeamsList();
     updatePlayingTeamSelect();
     updateMiseDisplay();
     updateBmPanel();
 });
+
+function preloadTeamsFromConfig() {
+    if (typeof TEAMS_CONFIG === 'undefined' || !TEAMS_CONFIG.length) return;
+    const nameIn  = document.getElementById('team-name-in');
+    const colorIn = document.getElementById('team-color-in');
+    if (!nameIn || !colorIn) return;
+    TEAMS_CONFIG.forEach(t => {
+        nameIn.value  = t.name;
+        colorIn.value = t.color;
+        addTeam();
+    });
+}
 
 // ================================================================
 // ÉQUIPES (style Le Wagon — pas de modal)

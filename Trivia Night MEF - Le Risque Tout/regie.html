@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>RÉGIE - MEF TRIVIA</title>
-    <link rel="stylesheet" href="style_mix.css"> 
+    <link rel="stylesheet" href="style_mix.css">
+    <script src="../teams_config.js"></script>
     <style>
         /* CSS SPÉCIFIQUE RÉGIE */
         body {
@@ -141,7 +142,8 @@
             
             <div id="team-edit-area">
                 <div style="display:flex; gap:5px;">
-                    <input type="text" id="new-team-input" placeholder="Nom Équipe" style="flex:1; padding:5px; background:#333; border:1px solid #555; color:white;">
+                    <input type="text" id="new-team-input" placeholder="Nom Équipe" style="flex:1; padding:5px; background:#333; border:1px solid #555; color:white;" onkeydown="if(event.key==='Enter')addTeam()">
+                    <input type="color" id="new-team-color" value="#e74c3c" style="width:36px;height:34px;border:1px solid #555;border-radius:3px;cursor:pointer;padding:2px;background:none;">
                     <button class="btn-valid" onclick="addTeam()">+</button>
                 </div>
                 <button class="btn-warn" style="width:100%; margin-top:5px;" onclick="validateTeams()">🔒 VALIDER LISTE</button>
@@ -229,7 +231,10 @@
         const channel = new BroadcastChannel('buckets_channel');
 
         // --- ETAT GLOBAL ---
-        let teams = [{ name: "Equipe 1", score: 0 }, { name: "Equipe 2", score: 0 }];
+        const RT_COLORS = ['#e74c3c','#3498db','#27ae60','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63'];
+        let teams = (typeof TEAMS_CONFIG !== 'undefined' && TEAMS_CONFIG.length)
+            ? TEAMS_CONFIG.map(t => ({ name: t.name, color: t.color, score: 0 }))
+            : [{ name: 'Equipe 1', color: '#e74c3c', score: 0 }, { name: 'Equipe 2', color: '#3498db', score: 0 }];
         let activeTeamIndex = 0;
         let snakeDirection = 1; 
         
@@ -265,9 +270,10 @@
                 const div = document.createElement('div');
                 div.className = `team-row ${isTeamsValidated && i === activeTeamIndex ? 'active' : ''}`;
                 
+                const dot = `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${t.color||'#888'};flex-shrink:0;margin-right:4px;"></span>`;
                 if(!isTeamsValidated) {
                     div.innerHTML = `
-                        <span class="team-name">${i+1}. ${t.name}</span>
+                        ${dot}<span class="team-name">${i+1}. ${t.name}</span>
                         <button class="btn-icon" onclick="moveTeam(${i}, -1)">⬆</button>
                         <button class="btn-icon" onclick="moveTeam(${i}, 1)">⬇</button>
                         <button class="btn-icon btn-danger" onclick="removeTeam(${i})">✖</button>
@@ -275,7 +281,7 @@
                 } else {
                     // Mode Jeu avec Édition Score
                     div.innerHTML = `
-                        <span class="team-name">${i+1}. ${t.name}</span>
+                        ${dot}<span class="team-name">${i+1}. ${t.name}</span>
                         <span class="team-score" id="score-val-${i}">${t.score}</span>
                         <button class="btn-icon" onclick="toggleEditScore(${i})" title="Modifier Score">✎</button>
                     `;
@@ -319,10 +325,12 @@
         }
 
         function addTeam() {
-            const input = document.getElementById('new-team-input');
-            if(input.value.trim()) {
-                teams.push({ name: input.value.trim(), score: 0 });
-                input.value = "";
+            const nameIn  = document.getElementById('new-team-input');
+            const colorIn = document.getElementById('new-team-color');
+            if (nameIn.value.trim()) {
+                teams.push({ name: nameIn.value.trim(), color: colorIn.value, score: 0 });
+                nameIn.value  = '';
+                colorIn.value = RT_COLORS[teams.length % RT_COLORS.length];
                 renderTeamsList();
             }
         }

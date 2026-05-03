@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>RÉGIE - SNAPSHOT</title>
 <link rel="stylesheet" href="style_mix.css">
+<script src="../teams_config.js"></script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: #111; color: #eee; font-family: 'Roboto Mono', monospace; font-size: 13px; overflow: hidden; }
@@ -340,9 +341,13 @@ function addTeamRow(name = '', color = null) {
   document.getElementById('teams-list').appendChild(row);
 }
 
-// Pre-populate 2 teams
-addTeamRow('Équipe A');
-addTeamRow('Équipe B');
+// Pré-charge depuis teams_config.js, sinon 2 équipes par défaut
+if (typeof TEAMS_CONFIG !== 'undefined' && TEAMS_CONFIG.length) {
+  TEAMS_CONFIG.forEach(t => addTeamRow(t.name, t.color));
+} else {
+  addTeamRow('Équipe A');
+  addTeamRow('Équipe B');
+}
 
 function startGame() {
   const rows = document.querySelectorAll('.team-row');

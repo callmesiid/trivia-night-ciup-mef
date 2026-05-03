@@ -392,6 +392,7 @@
     </div>
 </div>
 
+<script src="../teams_config.js"></script>
 <script src="data.js"></script>
 <script src="data_custom.js"></script>
 <script>
@@ -452,10 +453,23 @@ let timerRemaining = 0;
 // ================================================================
 document.addEventListener('DOMContentLoaded', () => {
     renderThemesGrid();
+    preloadTeamsFromConfig();
     renderTeamsList();
     setInterval(() => channel.postMessage({ type: 'PING' }), 4000);
     setInterval(() => { if (!connectedToScreen) updateConnStatus(false); connectedToScreen = false; }, 8000);
 });
+
+function preloadTeamsFromConfig() {
+    if (typeof TEAMS_CONFIG === 'undefined' || !TEAMS_CONFIG.length) return;
+    const nameIn  = document.getElementById('team-name-in');
+    const colorIn = document.getElementById('team-color-in');
+    if (!nameIn || !colorIn) return;
+    TEAMS_CONFIG.forEach(t => {
+        nameIn.value  = t.name;
+        colorIn.value = t.color;
+        addTeam();
+    });
+}
 
 function openScreen()  { window.open('ecran_jeu.html', 'WagonScreen', 'width=1280,height=720'); }
 function updateConnStatus(ok) {
