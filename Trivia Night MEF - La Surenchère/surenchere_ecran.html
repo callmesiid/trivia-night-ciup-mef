@@ -15,54 +15,104 @@
         #flash-el.flash { animation: screenFlash .35s ease-out forwards; }
         @keyframes screenFlash { 0%{opacity:.8;} 100%{opacity:0;} }
 
-        /* Marteau */
-        #gavel-el {
-            position: absolute; opacity: 0; z-index: 10;
-            transform-origin: 20% 80%;
-            filter: drop-shadow(4px 4px 0 #000);
-            margin-bottom: 40px;
-        }
-        #gavel-el img { width: 148px; height: auto; display: block; }
-        #gavel-el.strike {
-            animation: gavelStrike .32s cubic-bezier(0.15, 0, 0.1, 1) forwards;
-        }
-        #gavel-el.recoil {
-            animation: gavelRecoil .25s ease-out forwards;
-        }
-        @keyframes gavelStrike {
-            0%  { opacity: 0; transform: rotate(-75deg) translateY(-90px) scale(1.2); }
-            40% { opacity: 1; transform: rotate(18deg)  translateY(6px)   scale(1); }
-            70% { opacity: 1; transform: rotate(-8deg)  translateY(-8px); }
-            100%{ opacity: 1; transform: rotate(0deg)   translateY(0); }
-        }
-        @keyframes gavelRecoil {
-            0%  { opacity: 1; transform: rotate(0deg) translateY(0); }
-            100%{ opacity: 0; transform: rotate(-55deg) translateY(-70px) scale(.9); }
+        /* Conteneur générique */
+        #intro-screen {
+            position: fixed; inset: 0; z-index: 5000;
+            display: none; overflow: hidden;
+            background: radial-gradient(circle at center, #171717 0%, #050505 60%, #000 100%);
         }
 
-        /* Bloc de juge (dessous marteau) */
-        #gavel-block {
-            position: absolute;
-            width: 160px; height: 28px;
-            background: linear-gradient(to bottom, #8b6914, #5a3f00);
-            border-radius: 6px; margin-top: 90px;
-            box-shadow: 0 6px 0 #3a2700, 0 0 20px rgba(0,0,0,.6);
-            opacity: 0;
+        /* Marteaux volants */
+        .gavel {
+            position: absolute; width: 820px; height: 640px; z-index: 10;
+            opacity: 0; transform-origin: center center;
+            filter: drop-shadow(4px 5px 0 rgba(0,0,0,.9));
         }
-        #gavel-block.show { opacity: 1; }
+        .piece {
+            position: absolute; border: 8px solid #050403; box-sizing: border-box; transform-origin: center;
+        }
+        .bois-noir {
+            background: linear-gradient(145deg,#3a3024,#15110d 58%,#070604);
+            box-shadow: 10px 13px 0 rgba(0,0,0,.25), inset 8px 8px 0 rgba(255,255,255,.12), inset -8px -8px 0 rgba(0,0,0,.35);
+        }
+        .bois-blanc {
+            background: linear-gradient(145deg,#f7f7f7,#d6d6d6 58%,#9b9b9b);
+            box-shadow: 10px 13px 0 rgba(0,0,0,.25), inset 8px 8px 0 rgba(255,255,255,.55), inset -8px -8px 0 rgba(0,0,0,.2);
+        }
+        .or {
+            background: linear-gradient(90deg,#8b5607,#efb51f,#ffe680,#d89410);
+            box-shadow: 7px 9px 0 rgba(0,0,0,.25), inset 6px 0 0 rgba(255,255,255,.35);
+        }
+        .gavel.horizontal-ltr {
+            --hammer-scale: .18;
+            animation: flyLeftToRight var(--duration,3.2s) linear forwards, spinHammer .55s linear infinite;
+            animation-delay: var(--delay,0s), var(--delay,0s);
+            top: var(--y,30vh);
+        }
+        .gavel.horizontal-rtl {
+            --hammer-scale: .18;
+            animation: flyRightToLeft var(--duration,3.2s) linear forwards, spinHammerReverse .55s linear infinite;
+            animation-delay: var(--delay,0s), var(--delay,0s);
+            top: var(--y,30vh);
+        }
+        @keyframes flyLeftToRight {
+            0%   { opacity:0; left:var(--start-x,-180px); }
+            12%  { opacity:1; }
+            88%  { opacity:1; }
+            100% { opacity:0; left:var(--end-x,calc(100vw + 180px)); }
+        }
+        @keyframes flyRightToLeft {
+            0%   { opacity:0; left:var(--start-x,calc(100vw + 180px)); }
+            12%  { opacity:1; }
+            88%  { opacity:1; }
+            100% { opacity:0; left:var(--end-x,-180px); }
+        }
+        @keyframes spinHammer {
+            from { transform: translate(-50%,-50%) scale(var(--hammer-scale,.18)) rotate(0deg); }
+            to   { transform: translate(-50%,-50%) scale(var(--hammer-scale,.18)) rotate(360deg); }
+        }
+        @keyframes spinHammerReverse {
+            from { transform: translate(-50%,-50%) scale(var(--hammer-scale,.18)) rotate(360deg); }
+            to   { transform: translate(-50%,-50%) scale(var(--hammer-scale,.18)) rotate(0deg); }
+        }
+        .gavel.vertical-down {
+            --hammer-scale: .18;
+            animation: flyTopToBottom var(--duration,2.8s) linear forwards, spinHammer .55s linear infinite;
+            animation-delay: var(--delay,0s), var(--delay,0s);
+            left: var(--x,20vw);
+        }
+        .gavel.vertical-up {
+            --hammer-scale: .18;
+            animation: flyBottomToTop var(--duration,2.8s) linear forwards, spinHammerReverse .55s linear infinite;
+            animation-delay: var(--delay,0s), var(--delay,0s);
+            left: var(--x,20vw);
+        }
+        @keyframes flyTopToBottom {
+            0%   { opacity:0; top:var(--start-y,-14vh); }
+            12%  { opacity:1; }
+            88%  { opacity:1; }
+            100% { opacity:0; top:var(--end-y,114vh); }
+        }
+        @keyframes flyBottomToTop {
+            0%   { opacity:0; top:var(--start-y,114vh); }
+            12%  { opacity:1; }
+            88%  { opacity:1; }
+            100% { opacity:0; top:var(--end-y,-14vh); }
+        }
 
-        /* Logo structure — "LA" + "SURENCHÈRE" (style Le Risque Tout) */
+        /* Logo overlay (par-dessus le conteneur) */
         .title-logo-wrapper {
+            position: fixed; inset: 0; z-index: 5100;
             display: flex; flex-direction: column;
             align-items: center; justify-content: center;
-            opacity: 0; position: relative; user-select: none;
+            opacity: 0; user-select: none; pointer-events: none;
         }
         .title-la {
             font-family: 'Anton', sans-serif;
             font-size: 4.5rem; color: #d4af37;
             text-shadow: 3px 3px 0 #000, 0 0 30px rgba(212,175,55,.4);
             transform: rotate(-12deg);
-            align-self: flex-start; margin-left: 30px;
+            margin-left: -340px;
             margin-bottom: -18px; line-height: 1;
         }
         .title-main {
@@ -106,55 +156,6 @@
             20%,24%,55% { opacity:.1; text-shadow:none; }
         }
 
-        /* ─── RIDEAUX (style Le Risque Tout) ───────────────────────────── */
-        #sur-curtains {
-            position: fixed; inset: 0; z-index: 5000;
-            display: none; pointer-events: none;
-        }
-        #sur-curtains.active { display: flex; }
-        .sur-curtain {
-            flex: 1; position: relative; overflow: hidden; background: #090909;
-            transition: transform 1.4s cubic-bezier(.75,0,.25,1);
-        }
-        .sur-curtain.left.open  { transform: translateX(-100%); }
-        .sur-curtain.right.open { transform: translateX(100%); }
-        .sur-strips { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-around; }
-        .sur-srow { display: flex; white-space: nowrap; overflow: hidden; font-family: 'Anton', sans-serif; color: rgba(231,76,60,.08); letter-spacing: 5px; font-size: 1.25rem; }
-        .sur-srow-inner { flex-shrink: 0; animation: surScroll 9s linear infinite; }
-        .sur-srow-inner:nth-child(2) { animation-delay: -4.5s; }
-        .sur-srow.rev .sur-srow-inner { animation-direction: reverse; }
-        @keyframes surScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-        .sur-accent-l { position: absolute; left:  0; top: 0; bottom: 0; width: 14px; background: linear-gradient(#8b0000,#c0392b,#8b0000); }
-        .sur-accent-r { position: absolute; right: 0; top: 0; bottom: 0; width: 14px; background: linear-gradient(#8b0000,#c0392b,#8b0000); }
-
-        /* intro-screen au-dessus des rideaux */
-        #intro-screen { position: fixed !important; inset: 0 !important; z-index: 5100; background: transparent !important; }
-
-        /* Marteaux volants */
-        /* Token container — ancré en bas de l'écran intro */
-        #sur-token-container {
-            position: absolute; bottom: 0; left: 0; right: 0; height: 0;
-            pointer-events: none; z-index: 5;
-        }
-        /* Tokens volants — logique exacte Le Risque Tout */
-        .sur-token-img {
-            position: absolute; bottom: 0; left: var(--xPos);
-            width: 62px; height: auto;
-            opacity: 0; pointer-events: none;
-            filter: drop-shadow(2px 3px 6px rgba(0,0,0,.7));
-        }
-        .sur-token-img.launch {
-            animation: surTokenFly 3s cubic-bezier(0.15, 0.85, 0.35, 0.5) forwards;
-        }
-        @keyframes surTokenFly {
-            0%   { opacity: 0; transform: translateY(0) rotate(-15deg) scale(0.5); }
-            8%   { opacity: 1; transform: translateY(-12vh) rotate(8deg) scale(1); }
-            45%  { transform: translateY(-72vh) rotate(185deg) scale(1.1); opacity: 1; }
-            82%  { transform: translateY(-8vh) rotate(348deg) scale(0.88); opacity: 0.75; }
-            100% { transform: translateY(8vh) rotate(405deg) scale(0.6); opacity: 0; }
-        }
-
-        /* ─── FIN RIDEAUX ────────────────────────────────────────────────── */
 
         /* ── Notification Bonus / Malus sur écran ── */
         .effect-notif {
@@ -254,46 +255,13 @@
 <!-- Flash overlay (coup de marteau) -->
 <div id="flash-el"></div>
 
-<!-- Rideaux (style Le Risque Tout) -->
-<div id="sur-curtains">
-    <div class="sur-curtain left" id="sur-curtain-left">
-        <div class="sur-accent-l"></div>
-        <div class="sur-strips">
-            <div class="sur-srow"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
-            <div class="sur-srow rev"><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div></div>
-            <div class="sur-srow"><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div></div>
-            <div class="sur-srow rev"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
-            <div class="sur-srow"><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div></div>
-        </div>
-    </div>
-    <div class="sur-curtain right" id="sur-curtain-right">
-        <div class="sur-accent-r"></div>
-        <div class="sur-strips">
-            <div class="sur-srow rev"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
-            <div class="sur-srow"><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div><div class="sur-srow-inner">OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — OSEZ SURENCHÉRIR — READY ? — ÊTES-VOUS PRÊTS ? — </div></div>
-            <div class="sur-srow rev"><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div><div class="sur-srow-inner">WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — WIN OR GO HOME — LA SURENCHÈRE — </div></div>
-            <div class="sur-srow"><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div><div class="sur-srow-inner">BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — BATTLE ROYALE EDITION — MEF'S TRIVIA NIGHT — SOYEZ LES MEILLEURS — </div></div>
-            <div class="sur-srow rev"><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div><div class="sur-srow-inner">LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — LA SURENCHÈRE — QUI EN SAIT LE PLUS ? — CITEZ ! CITEZ ! — MEF TRIVIA NIGHT — </div></div>
-        </div>
-    </div>
-</div>
+<!-- Générique — conteneur dynamique -->
+<div id="intro-screen"></div>
 
-<!-- Intro -->
-<div id="intro-screen">
-    <!-- Marteau de juge -->
-    <div id="gavel-el"><img src="../assets/Images/suren_marteau.png" alt=""></div>
-
-    <!-- Bloc où le marteau frappe -->
-    <div id="gavel-block"></div>
-
-    <!-- Logo "LA SURENCHÈRE" -->
-    <div class="title-logo-wrapper" id="title-logo">
-        <div class="title-la">LA</div>
-        <div class="title-main">SURENCHÈRE</div>
-    </div>
-
-    <!-- Conteneur tokens volants (anchored bottom) -->
-    <div id="sur-token-container"></div>
+<!-- Logo overlay (séparé du conteneur) -->
+<div class="title-logo-wrapper" id="title-logo">
+    <div class="title-la">LA</div>
+    <div class="title-main">SURENCHÈRE</div>
 </div>
 
 <!-- Slot machine -->
@@ -360,16 +328,12 @@ const audioReveal = new Audio('../assets/effets_sonores/reveal.mp3');
 const audioWin    = new Audio('../assets/effets_sonores/selected.mp3');
 let currentFx = null;
 
-// Éléments du nouveau générique
-const gavelEl  = document.getElementById('gavel-el');
-const gavelBlk = document.getElementById('gavel-block');
-const titleLogo= document.getElementById('title-logo');
-const flashEl  = document.getElementById('flash-el');
+const titleLogo = document.getElementById('title-logo');
+const flashEl   = document.getElementById('flash-el');
 
 let timerInterval, spinInterval;
 let currentTime = 30;
 let introTimeouts = [];
-let hammerInterval = null;
 
 // ── TEAMS ──
 let teamsData = [];
@@ -433,44 +397,94 @@ channel.onmessage = (event) => {
     }
 };
 
+// ── GÉNÉRIQUES HELPERS ──────────────────────────────────────────────
+const verticalTrajectories = [
+    { direction:'top-to-bottom', x:18.43, delay:0, duration:2.6, startY:-8, endY:108 },
+    { direction:'bottom-to-top', x:40,    delay:0, duration:2.6, startY:108, endY:-8 },
+    { direction:'top-to-bottom', x:63.2,  delay:0, duration:2.6, startY:-8, endY:108 },
+    { direction:'bottom-to-top', x:84,    delay:0, duration:2.6, startY:108, endY:-8 }
+];
+const trajectories = [
+    { direction:'left-to-right', y:13.44, delay:0, duration:2.8, startX:-8, endX:108 },
+    { direction:'right-to-left', y:35.83, delay:0, duration:2.8, startX:108, endX:-8 },
+    { direction:'left-to-right', y:58.23, delay:0, duration:2.8, startX:-8, endX:108 },
+    { direction:'right-to-left', y:80.63, delay:0, duration:2.8, startX:108, endX:-8 }
+];
+
+function getWoodClass(i) { return i % 2 === 0 ? 'bois-noir' : 'bois-blanc'; }
+
+function hammerHTML(woodClass) {
+    return `
+        <div class="piece ${woodClass}" style="left:189.55px;top:144.57px;width:285px;height:85px;border-radius:30px;transform:rotate(22deg);"></div>
+        <div class="piece ${woodClass}" style="left:145px;top:230px;width:245px;height:202px;border-radius:18px;transform:rotate(22deg);"></div>
+        <div class="piece ${woodClass}" style="left:65.61px;top:431.53px;width:285px;height:85px;border-radius:30px;transform:rotate(22deg);"></div>
+        <div class="piece or" style="left:194px;top:217px;width:230px;height:28px;border-radius:999px;transform:rotate(22deg);"></div>
+        <div class="piece or" style="left:110.63px;top:415.20px;width:230px;height:28px;border-radius:999px;transform:rotate(22deg);"></div>
+        <div class="piece ${woodClass}" style="left:388.5px;top:407.75px;width:330px;height:68px;border-radius:20px;transform:rotate(22deg);"></div>
+        <div class="piece or" style="left:375.25px;top:330.75px;width:34px;height:92px;border-radius:14px;transform:rotate(22deg);"></div>
+        <div class="piece ${woodClass}" style="left:681.80px;top:464.11px;width:95px;height:95px;border-radius:24px;transform:rotate(22deg);"></div>
+    `;
+}
+
+function createGavelFromTrajectory(t, index) {
+    const g = document.createElement('div');
+    g.className = `gavel ${t.direction === 'right-to-left' ? 'horizontal-rtl' : 'horizontal-ltr'}`;
+    g.style.setProperty('--y', `${t.y}vh`);
+    g.style.setProperty('--delay', `${t.delay}ms`);
+    g.style.setProperty('--duration', `${t.duration}s`);
+    g.style.setProperty('--start-x', `${t.startX}vw`);
+    g.style.setProperty('--end-x', `${t.endX}vw`);
+    g.innerHTML = hammerHTML(getWoodClass(index));
+    introScreen.appendChild(g);
+    introTimeouts.push(setTimeout(() => g.remove(), t.delay + t.duration * 1000 + 500));
+}
+
+function createVerticalGavel(t, index) {
+    const g = document.createElement('div');
+    g.className = `gavel ${t.direction === 'bottom-to-top' ? 'vertical-up' : 'vertical-down'}`;
+    g.style.setProperty('--x', `${t.x}vw`);
+    g.style.setProperty('--start-y', `${t.startY}vh`);
+    g.style.setProperty('--end-y', `${t.endY}vh`);
+    g.style.setProperty('--delay', `${t.delay}ms`);
+    g.style.setProperty('--duration', `${t.duration}s`);
+    g.innerHTML = hammerHTML(getWoodClass(index + 4));
+    introScreen.appendChild(g);
+    introTimeouts.push(setTimeout(() => g.remove(), t.delay + t.duration * 1000 + 500));
+}
+
+function launchHorizontalPhase() { trajectories.forEach((t, i) => createGavelFromTrajectory(t, i)); }
+function launchVerticalPhase()   { verticalTrajectories.forEach((t, i) => createVerticalGavel(t, i)); }
+
+function showLogoFinal() {
+    titleLogo.style.opacity = '1';
+    titleLogo.className = 'title-logo-wrapper title-drop';
+    flash();
+    introTimeouts.push(setTimeout(() => {
+        titleLogo.className = 'title-logo-wrapper';
+        void titleLogo.offsetWidth;
+        titleLogo.className = 'title-logo-wrapper title-zoom';
+    }, 750));
+    introTimeouts.push(setTimeout(() => {
+        titleLogo.className = 'title-logo-wrapper title-zoom title-flicker';
+    }, 1200));
+}
+
 // ── INTRO ──
 function clearIntro() {
     introTimeouts.forEach(t => clearTimeout(t));
     introTimeouts = [];
-    // Stopper l'audio
-    audioIntro.loop = false;
     audioIntro.pause();
     audioIntro.currentTime = 0;
-    // Stopper les tokens volants
-    if (hammerInterval) { clearInterval(hammerInterval); hammerInterval = null; }
-    document.querySelectorAll('.sur-token-img').forEach(e => e.remove());
-    // Reset rideaux
-    const surC = document.getElementById('sur-curtains');
-    if (surC) {
-        surC.classList.remove('active');
-        document.getElementById('sur-curtain-left').classList.remove('open');
-        document.getElementById('sur-curtain-right').classList.remove('open');
-    }
-    // Reset éléments génériques
-    gavelEl.className  = ''; gavelEl.style.opacity = '0';
-    gavelBlk.className = '';
-    titleLogo.className= 'title-logo-wrapper';
+    introScreen.querySelectorAll('.gavel').forEach(e => e.remove());
+    titleLogo.className    = 'title-logo-wrapper';
     titleLogo.style.opacity = '0';
-    flashEl.className  = '';
+    flashEl.className      = '';
 }
 
 function flash() {
     flashEl.className = '';
     void flashEl.offsetWidth;
     flashEl.classList.add('flash');
-}
-
-function gavelHit(n) {
-    gavelEl.className = '';
-    gavelBlk.classList.add('show');
-    void gavelEl.offsetWidth;
-    gavelEl.classList.add('strike');
-    flash();
 }
 
 function showStaticLogo() {
@@ -503,75 +517,39 @@ function showReadyForSpin() {
 function runIntro() {
     clearIntro();
 
-    // Rideaux
-    const surC = document.getElementById('sur-curtains');
-    surC.classList.add('active');
-
-    introScreen.style.display = 'flex'; selectorScreen.style.display = 'none';
-    gameScreen.style.display  = 'none'; revealOverlay.style.display  = 'none';
+    introScreen.style.display = 'block';
+    selectorScreen.style.display = 'none';
+    gameScreen.style.display    = 'none';
+    revealOverlay.style.display = 'none';
     document.getElementById('scores-screen').classList.remove('show');
 
-    // Musique dès le départ
+    // Musique dès le début
     audioIntro.currentTime = 0;
     audioIntro.volume = 1;
     audioIntro.play().catch(() => {});
 
-    // Tokens volants — logique exacte Le Risque Tout (--xPos + classe launch)
-    const tokenSrcs = [
-        '../assets/Images/surench_1.png',
-        '../assets/Images/surench_2.png',
-        '../assets/Images/surench_3.png',
-        '../assets/Images/suren_marteau.png'
-    ];
-    const surTokenContainer = document.getElementById('sur-token-container');
-    hammerInterval = setInterval(() => {
-        const img = document.createElement('img');
-        img.src = tokenSrcs[Math.floor(Math.random() * tokenSrcs.length)];
-        img.className = 'sur-token-img';
-        img.style.setProperty('--xPos', `${Math.random() * 90}vw`);
-        if (surTokenContainer) surTokenContainer.appendChild(img);
-        requestAnimationFrame(() => { img.classList.add('launch'); });
-        setTimeout(() => { if (img.parentNode) img.remove(); }, 3100);
-    }, 750);
+    // Phase 1 : marteaux horizontaux (0s)
+    launchHorizontalPhase();
 
-    // 6.5s : SPLASH — logo tombe depuis le haut
+    // Phase 2 : marteaux verticaux (3.2s)
     let t1 = setTimeout(() => {
-        if (hammerInterval) { clearInterval(hammerInterval); hammerInterval = null; }
-        titleLogo.style.opacity = '1';
-        titleLogo.className = 'title-logo-wrapper title-drop';
-    }, 6500);
+        introScreen.querySelectorAll('.gavel').forEach(e => e.remove());
+        launchVerticalPhase();
+    }, 3200);
 
-    // 6.85s : coup de marteau synchronisé avec l'impact du logo
-    let t2 = setTimeout(() => gavelHit(1), 6850);
+    // Phase 3 : logo (6.4s — splash de la musique)
+    let t2 = setTimeout(() => {
+        introScreen.querySelectorAll('.gavel').forEach(e => e.remove());
+        showLogoFinal();
+    }, 6400);
 
-    // 7.25s : zoom bounce
+    // Fin : transition vers l'écran de jeu (9.8s)
     let t3 = setTimeout(() => {
-        titleLogo.className = 'title-logo-wrapper';
-        void titleLogo.offsetWidth;
-        titleLogo.className = 'title-logo-wrapper title-zoom';
-    }, 7250);
-
-    // 7.65s : scintillement rouge + recoil marteau
-    let t4 = setTimeout(() => {
-        titleLogo.className = 'title-logo-wrapper title-zoom title-flicker';
-        gavelEl.className = 'recoil';
-        gavelBlk.className = '';
-    }, 7650);
-
-    // 8.1s : rideaux s'ouvrent
-    let t5 = setTimeout(() => {
-        document.getElementById('sur-curtain-left').classList.add('open');
-        document.getElementById('sur-curtain-right').classList.add('open');
-    }, 8100);
-
-    // 9.6s : nettoyage + prêt pour le tirage
-    let t6 = setTimeout(() => {
-        surC.classList.remove('active');
         introScreen.style.display = 'none';
         showReadyForSpin();
-    }, 9600);
+    }, 9800);
 
-    introTimeouts.push(t1, t2, t3, t4, t5, t6);
+    introTimeouts.push(t1, t2, t3);
 }
 
 // ── SPIN ──
