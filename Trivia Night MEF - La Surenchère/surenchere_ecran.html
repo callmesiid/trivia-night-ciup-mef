@@ -17,12 +17,12 @@
 
         /* Marteau */
         #gavel-el {
-            position: absolute; font-size: 9rem; opacity: 0; z-index: 10;
+            position: absolute; opacity: 0; z-index: 10;
             transform-origin: 20% 80%;
             filter: drop-shadow(4px 4px 0 #000);
-            /* légèrement au-dessus du centre */
             margin-bottom: 40px;
         }
+        #gavel-el img { width: 148px; height: auto; display: block; }
         #gavel-el.strike {
             animation: gavelStrike .32s cubic-bezier(0.15, 0, 0.1, 1) forwards;
         }
@@ -132,9 +132,10 @@
 
         /* Marteaux volants */
         .sur-hammer-fly {
-            position: fixed; font-size: 2.8rem; z-index: 5200; pointer-events: none;
+            position: fixed; z-index: 5200; pointer-events: none;
             animation: surHammerRise 2.3s ease-out forwards;
         }
+        .sur-hammer-fly img { width: 68px; height: auto; display: block; filter: drop-shadow(2px 3px 5px rgba(0,0,0,.65)); }
         @keyframes surHammerRise {
             0%   { transform: translateY(0) rotate(-20deg) scale(.6); opacity: 0; }
             12%  { opacity: .9; }
@@ -269,7 +270,7 @@
 <!-- Intro -->
 <div id="intro-screen">
     <!-- Marteau de juge -->
-    <div id="gavel-el">🔨</div>
+    <div id="gavel-el"><img src="../assets/Images/suren_marteau.png" alt=""></div>
 
     <!-- Bloc où le marteau frappe -->
     <div id="gavel-block"></div>
@@ -505,11 +506,19 @@ function runIntro() {
     audioIntro.volume = 1;
     audioIntro.play().catch(() => {});
 
-    // Marteaux 🔨 volants (0s → 6.5s)
+    // Jetons + marteau volants (0s → 6.5s)
+    const tokenSrcs = [
+        '../assets/Images/surench_1.png',
+        '../assets/Images/surench_2.png',
+        '../assets/Images/surench_3.png',
+        '../assets/Images/suren_marteau.png'
+    ];
     hammerInterval = setInterval(() => {
         const h = document.createElement('div');
         h.className = 'sur-hammer-fly';
-        h.textContent = '🔨';
+        const img = document.createElement('img');
+        img.src = tokenSrcs[Math.floor(Math.random() * tokenSrcs.length)];
+        h.appendChild(img);
         h.style.left = (Math.random() * 86 + 4) + 'vw';
         h.style.top  = '106vh';
         document.body.appendChild(h);
