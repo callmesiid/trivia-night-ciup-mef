@@ -131,16 +131,27 @@
         #intro-screen { position: fixed !important; inset: 0 !important; z-index: 5100; background: transparent !important; }
 
         /* Marteaux volants */
-        .sur-hammer-fly {
-            position: fixed; z-index: 5200; pointer-events: none;
-            animation: surHammerRise 2.3s ease-out forwards;
+        /* Token container — ancré en bas de l'écran intro */
+        #sur-token-container {
+            position: absolute; bottom: 0; left: 0; right: 0; height: 0;
+            pointer-events: none; z-index: 5;
         }
-        .sur-hammer-fly img { width: 68px; height: auto; display: block; filter: drop-shadow(2px 3px 5px rgba(0,0,0,.65)); }
-        @keyframes surHammerRise {
-            0%   { transform: translateY(0) rotate(-20deg) scale(.6); opacity: 0; }
-            12%  { opacity: .9; }
-            78%  { opacity: .9; }
-            100% { transform: translateY(-88vh) rotate(22deg) scale(1.08); opacity: 0; }
+        /* Tokens volants — logique exacte Le Risque Tout */
+        .sur-token-img {
+            position: absolute; bottom: 0; left: var(--xPos);
+            width: 62px; height: auto;
+            opacity: 0; pointer-events: none;
+            filter: drop-shadow(2px 3px 6px rgba(0,0,0,.7));
+        }
+        .sur-token-img.launch {
+            animation: surTokenFly 3s cubic-bezier(0.15, 0.85, 0.35, 0.5) forwards;
+        }
+        @keyframes surTokenFly {
+            0%   { opacity: 0; transform: translateY(0) rotate(-15deg) scale(0.5); }
+            8%   { opacity: 1; transform: translateY(-12vh) rotate(8deg) scale(1); }
+            45%  { transform: translateY(-72vh) rotate(185deg) scale(1.1); opacity: 1; }
+            82%  { transform: translateY(-8vh) rotate(348deg) scale(0.88); opacity: 0.75; }
+            100% { transform: translateY(8vh) rotate(405deg) scale(0.6); opacity: 0; }
         }
 
         /* ─── FIN RIDEAUX ────────────────────────────────────────────────── */
@@ -280,6 +291,9 @@
         <div class="title-la">LA</div>
         <div class="title-main">SURENCHÈRE</div>
     </div>
+
+    <!-- Conteneur tokens volants (anchored bottom) -->
+    <div id="sur-token-container"></div>
 </div>
 
 <!-- Slot machine -->
@@ -427,9 +441,9 @@ function clearIntro() {
     audioIntro.loop = false;
     audioIntro.pause();
     audioIntro.currentTime = 0;
-    // Stopper les marteaux volants
+    // Stopper les tokens volants
     if (hammerInterval) { clearInterval(hammerInterval); hammerInterval = null; }
-    document.querySelectorAll('.sur-hammer-fly').forEach(e => e.remove());
+    document.querySelectorAll('.sur-token-img').forEach(e => e.remove());
     // Reset rideaux
     const surC = document.getElementById('sur-curtains');
     if (surC) {
@@ -452,15 +466,11 @@ function flash() {
 }
 
 function gavelHit(n) {
-    // Animer le marteau : recoil → strike
     gavelEl.className = '';
     gavelBlk.classList.add('show');
     void gavelEl.offsetWidth;
     gavelEl.classList.add('strike');
     flash();
-    // Son de marteau
-    const snd = new Audio('../assets/effets_sonores/break.mp3');
-    snd.volume = .9; snd.play();
 }
 
 function showStaticLogo() {
@@ -506,24 +516,23 @@ function runIntro() {
     audioIntro.volume = 1;
     audioIntro.play().catch(() => {});
 
-    // Jetons + marteau volants (0s → 6.5s)
+    // Tokens volants — logique exacte Le Risque Tout (--xPos + classe launch)
     const tokenSrcs = [
         '../assets/Images/surench_1.png',
         '../assets/Images/surench_2.png',
         '../assets/Images/surench_3.png',
         '../assets/Images/suren_marteau.png'
     ];
+    const surTokenContainer = document.getElementById('sur-token-container');
     hammerInterval = setInterval(() => {
-        const h = document.createElement('div');
-        h.className = 'sur-hammer-fly';
         const img = document.createElement('img');
         img.src = tokenSrcs[Math.floor(Math.random() * tokenSrcs.length)];
-        h.appendChild(img);
-        h.style.left = (Math.random() * 86 + 4) + 'vw';
-        h.style.top  = '106vh';
-        document.body.appendChild(h);
-        setTimeout(() => { if (h.parentNode) h.remove(); }, 2400);
-    }, 370);
+        img.className = 'sur-token-img';
+        img.style.setProperty('--xPos', `${Math.random() * 90}vw`);
+        if (surTokenContainer) surTokenContainer.appendChild(img);
+        requestAnimationFrame(() => { img.classList.add('launch'); });
+        setTimeout(() => { if (img.parentNode) img.remove(); }, 3100);
+    }, 750);
 
     // 6.5s : SPLASH — logo tombe depuis le haut
     let t1 = setTimeout(() => {
