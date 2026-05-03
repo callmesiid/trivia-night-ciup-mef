@@ -44,38 +44,244 @@
     ══════════════════════════════════════════════ */
     #game-board {
         position:fixed;top:60px;left:0;width:100%;bottom:0;
-        padding:7px;display:flex;flex-direction:column;gap:7px;overflow:hidden;z-index:10;
+        padding:7px 7px 18px;display:flex;flex-direction:column;gap:7px;
+        overflow:visible;z-index:10;
+        transition:background .6s ease;
     }
 
-    /* ── WAGON ROW (1 par ligne, flex égal) ── */
+    /* ══ WAGON ROW — Design 4 : TER MODERNE (CSS pur, pas de SVG) ══ */
     .wagon-row {
-        flex:1;min-height:0;
-        background:#0d0d1a;border-radius:10px;border:2px solid #1e1e2e;
-        overflow:hidden;position:relative;
-        transition:border-color .4s, box-shadow .4s;
+        flex: 1; min-height: 0;
+        position: relative;
+        overflow: visible; /* roues dépassent en bas */
+        transition: opacity .3s;
+        margin-bottom: 10px;
     }
-    .wagon-row.active-wagon  { border-color:#d4af37;box-shadow:0 0 22px rgba(212,175,55,.2); }
-    .wagon-row.completed-wagon { opacity:.45; }
+    .wagon-row.completed-wagon { opacity:.35; filter:grayscale(.5); }
 
-    /* Info overlay (nom + progression) en surimpression sur le SVG */
-    .wagon-overlay {
-        position:absolute;top:4px;left:0;right:0;z-index:5;
-        pointer-events:none;display:flex;justify-content:space-between;align-items:center;
-        padding:0 14px;
+    /* Corps du wagon (avec clip-path pour les coins coupés) */
+    .w-body {
+        position: absolute; inset: 0; bottom: 0;
+        background: #0f0f0f;
+        border: 2px solid #1a1a1a;
+        clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
+        transition: border-color .3s, box-shadow .3s;
     }
-    .wo-name { font-family:'Anton',sans-serif;font-size:.9rem;letter-spacing:1px;color:#fff;text-shadow:0 0 6px #000,1px 1px 3px #000; }
-    .wo-right { display:flex;gap:8px;align-items:center; }
-    .wo-prog  { font-family:'Roboto',sans-serif;font-size:.7rem;color:#888;text-shadow:1px 1px 2px #000; }
-    .wo-pend  { font-family:'Roboto',sans-serif;font-size:.7rem;color:#f39c12;font-weight:bold;text-shadow:1px 1px 2px #000; }
-    .wo-bank  { font-family:'Roboto',sans-serif;font-size:.7rem;color:#d4af37;font-weight:bold;text-shadow:1px 1px 2px #000; }
+    .wagon-row.active-wagon .w-body { border-color:#D60000; box-shadow:0 0 26px rgba(214,0,0,.22); }
 
-    /* Le SVG remplit tout le container */
-    .wagon-svg-wrap { width:100%;height:100%;display:flex;align-items:center; }
-    .wagon-svg-wrap svg { width:100%;height:100%; }
+    /* Accent rouge oblique gauche */
+    .w-accent {
+        position:absolute; top:0; bottom:0; left:0; width:52px;
+        background:linear-gradient(135deg,#D60000 0%,#900 100%);
+        clip-path:polygon(0% 12px, 12px 0%, 100% 0%, 82% 100%, 0% 100%);
+        z-index:2;
+    }
+
+    /* Ligne or */
+    .w-gold-line {
+        position:absolute; top:27px; left:52px; right:0; height:2px;
+        background:#d4af37; z-index:2;
+    }
+
+    /* Header: icône + nom + progression */
+    .w-header {
+        position:absolute; top:0; left:56px; right:10px; height:27px;
+        display:flex; align-items:center; gap:6px; z-index:3;
+    }
+    .w-icon  { font-size:.75rem; }
+    .w-name  { font-family:'Bebas Neue',sans-serif; font-size:.9rem; letter-spacing:5px; color:#d4af37;
+               flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .w-prog  { font-family:'Anton',sans-serif; font-size:.75rem; color:#d4af37; letter-spacing:1px; white-space:nowrap; }
+    .w-pend  { font-size:.6rem; color:#e67e22; font-weight:700; }
+    .w-badge { font-family:'Anton',sans-serif; font-size:.6rem; color:#000;
+               background:#d4af37; padding:1px 5px; border-radius:2px; letter-spacing:1px; }
+
+    /* Fenêtres */
+    .w-windows {
+        position:absolute; top:31px; bottom:10px; left:56px; right:10px;
+        display:flex; align-items:stretch; gap:3px; z-index:3;
+    }
+    .w-group { display:flex; gap:3px; flex:1; }
+    .w-sep   { width:6px; border-left:1px dashed #1e1e1e; flex-shrink:0; align-self:stretch; }
+    .w-win {
+        flex:1; background:#0a0a0a; border:1.5px solid #1e1e1e; border-radius:3px;
+        display:flex; align-items:center; justify-content:center;
+        font-family:'Anton',sans-serif; font-size:clamp(.65rem,1.4vw,.9rem); color:#222;
+        transition:all .25s ease; position:relative; overflow:hidden;
+    }
+    /* Reflet vitre sur fenêtres allumées */
+    .w-win.w-active::before,.w-win.w-reached::before,.w-win.w-banked::before {
+        content:''; position:absolute; top:2px; left:2px;
+        width:40%; height:35%; background:rgba(255,255,255,.22);
+        border-radius:2px 0 2px 0; pointer-events:none;
+    }
+    .w-win.w-active  { background:#fff;    border-color:#fff;    color:#000; box-shadow:0 0 10px rgba(255,255,255,.6); }
+    .w-win.w-reached { background:#d4af37; border-color:#ffe57a; color:#000; }
+    .w-win.w-banked  { color:#000; /* bg + border via inline style teamColor */ }
+
+    /* Barre de progression */
+    .w-dots {
+        position:absolute; bottom:10px; left:56px; right:10px;
+        display:flex; gap:3px; z-index:3;
+    }
+    .w-dot { flex:1; height:3px; background:#111; border-radius:1px; }
+    .w-dot.lit { background:#d4af37; }
+
+    /* ── ROUES ── (dépassent en bas du wagon) */
+    .w-wheels {
+        position:absolute; bottom:-9px; left:60px; right:14px;
+        display:flex; justify-content:space-between;
+        padding:0 14px; z-index:4; pointer-events:none;
+    }
+    .w-bogie {
+        display:flex; gap:9px; align-items:center; position:relative;
+    }
+    .w-bogie::before { /* essieu */
+        content:''; position:absolute;
+        top:50%; left:3px; right:3px; height:4px;
+        background:#181818; border-radius:2px;
+        transform:translateY(-50%); z-index:0;
+    }
+    .w-wheel {
+        width:20px; height:20px; border-radius:50%;
+        background:#0a0a0a; border:2.5px solid #3a3a3a;
+        position:relative; z-index:1; flex-shrink:0;
+        box-shadow:0 2px 4px rgba(0,0,0,.8);
+    }
+    .w-wheel::after { /* moyeu */
+        content:''; position:absolute;
+        top:50%; left:50%; transform:translate(-50%,-50%);
+        width:7px; height:7px; border-radius:50%;
+        background:#2a2a2a; border:1px solid #444;
+    }
+    /* Rail horizontal sous les roues */
+    .w-rail {
+        position:absolute; bottom:-1px; left:50px; right:8px;
+        height:2px; background:#161616; border-radius:1px; z-index:3;
+    }
 
     /* ══ QUESTION OVERLAY ══ */
-    #question-overlay { position:fixed;inset:0;background:rgba(0,0,0,.96);z-index:500;display:none;flex-direction:column;align-items:center;justify-content:center;padding:40px; }
-    #question-overlay.show { display:flex; }
+    #question-overlay {
+      position:fixed; inset:0; background:rgba(0,0,0,.96);
+      z-index:500; display:none; padding:0;
+    }
+    #question-overlay.show { display:block; }
+
+    /* Contenu question — au-dessus du theme-scene */
+    #q-content {
+      position:relative; z-index:2;
+      width:100%; height:100%;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      padding:40px;
+    }
+
+    /* ══ THEME SCENE (fond thématique, derrière le contenu) ══ */
+    #theme-scene {
+      position:absolute; inset:0; pointer-events:none; overflow:hidden;
+      opacity:0; transition:opacity .55s ease; z-index:1;
+    }
+    #question-overlay.show #theme-scene { opacity:1; }
+
+    /* ══ BOARD THEME SCENE — plein écran, derrière la question ══ */
+    #board-theme-scene {
+      position:fixed; inset:0; pointer-events:none; overflow:hidden;
+      opacity:0; transition:opacity .5s ease; z-index:9;
+    }
+    #board-theme-scene.active { opacity:1; }
+
+    /* Wagons : transition de disparition */
+    #game-board { transition: opacity .4s ease; }
+    .td { position:absolute;pointer-events:none;user-select:none;line-height:1; }
+
+    /* ─ FOOTBALL ─ terrain vu du dessus, lignes blanches classiques */
+    #theme-scene.football, #board-theme-scene.football {
+      background:
+        /* Buts (rectangle de but, centré sur chaque extrémité) */
+        linear-gradient(90deg, transparent 5%, rgba(255,255,255,.22) 5% 5.5%, transparent 5.5%),
+        linear-gradient(90deg, transparent 94.5%, rgba(255,255,255,.22) 94.5% 95%, transparent 95%),
+        /* Ligne de but gauche */
+        linear-gradient(90deg, transparent 8%, rgba(255,255,255,.3) 8% 8.5%, transparent 8.5%),
+        /* Ligne de but droite */
+        linear-gradient(90deg, transparent 91.5%, rgba(255,255,255,.3) 91.5% 92%, transparent 92%),
+        /* Surface de réparation gauche */
+        linear-gradient(0deg, transparent 22%, rgba(255,255,255,.18) 22% 22.5%, transparent 22.5%),
+        linear-gradient(0deg, transparent 77.5%, rgba(255,255,255,.18) 77.5% 78%, transparent 78%),
+        linear-gradient(90deg, transparent 18%, rgba(255,255,255,.18) 18% 18.5%, transparent 18.5%),
+        /* Surface de réparation droite */
+        linear-gradient(90deg, transparent 81.5%, rgba(255,255,255,.18) 81.5% 82%, transparent 82%),
+        /* Cercle central */
+        radial-gradient(circle 110px at 50% 50%, transparent 107px, rgba(255,255,255,.28) 107px 110px, transparent 110px),
+        /* Point central */
+        radial-gradient(circle 5px at 50% 50%, rgba(255,255,255,.5) 4px, transparent 4px),
+        /* Ligne médiane */
+        linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,.35) 50%, transparent calc(50% + 1px)),
+        /* Striures de gazon alternées */
+        repeating-linear-gradient(0deg, rgba(0,0,0,.12) 0 55px, transparent 55px 110px),
+        /* Fond vert terrain */
+        linear-gradient(180deg, #0b3d16 0%, #0e5020 50%, #0b3d16 100%);
+    }
+    /* ─ MUSIQUE ─ */
+    #theme-scene.musique, #board-theme-scene.musique {
+      background:
+        repeating-linear-gradient(180deg,
+          transparent 0 28px, rgba(255,255,255,.12) 28px 30px,
+          transparent 30px 34px, rgba(255,255,255,.12) 34px 36px,
+          transparent 36px 40px, rgba(255,255,255,.12) 40px 42px,
+          transparent 42px 46px, rgba(255,255,255,.12) 46px 48px,
+          transparent 48px 52px, rgba(255,255,255,.12) 52px 54px,
+          transparent 54px 100px),
+        radial-gradient(ellipse 60% 50% at 20% 50%, #1a0830 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 80% 50%, #0a0520 0%, transparent 70%),
+        #050510;
+    }
+    /* ─ FLEURS ─ */
+    #theme-scene.fleurs, #board-theme-scene.fleurs {
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 100%, #3d0e50 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 20% 20%, #420a2a 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 20%, #2d0a3a 0%, transparent 60%),
+        #1a0526;
+    }
+    /* ─ ANIMAUX ─ */
+    #theme-scene.animaux, #board-theme-scene.animaux {
+      background:
+        radial-gradient(ellipse 100% 40% at 50% 100%, #0f2d0a 0%, transparent 80%),
+        radial-gradient(ellipse 40% 60% at 15% 60%, #0a1f06 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 85% 60%, #0a1f06 0%, transparent 70%),
+        #060d04;
+    }
+    /* ─ JEUX DE SOCIÉTÉ ─ */
+    #theme-scene.jeux, #board-theme-scene.jeux {
+      background:
+        repeating-conic-gradient(#0e0e20 0% 25%, #1a1a30 0% 50%) 0 0 / 100px 100px,
+        #0c0c1a;
+    }
+    /* ─ JEUX VIDÉO ─ */
+    #theme-scene.jeuxvideo, #board-theme-scene.jeuxvideo {
+      background:
+        repeating-linear-gradient(90deg, rgba(0,255,80,.04) 0 1px, transparent 1px 40px),
+        repeating-linear-gradient(0deg, rgba(0,255,80,.04) 0 1px, transparent 1px 40px),
+        radial-gradient(ellipse 70% 50% at 50% 50%, #050520 0%, #000005 100%);
+    }
+    /* ─ NOURRITURE ─ */
+    #theme-scene.nourriture, #board-theme-scene.nourriture {
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 100%, #3d1200 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 20% 30%, #2a0d00 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 30%, #2a0d00 0%, transparent 60%),
+        #150800;
+    }
+    /* ─ FILMS FRANÇAIS ─ */
+    #theme-scene.cinema, #board-theme-scene.cinema {
+      background:
+        linear-gradient(90deg, #2a0005 0%, transparent 30%),
+        linear-gradient(270deg, #2a0005 0%, transparent 30%),
+        radial-gradient(ellipse 50% 80% at 50% 50%, #0a000f 0%, #05000a 100%);
+    }
+    /* ─ DEFAULT ─ */
+    #theme-scene.default, #board-theme-scene.default {
+      background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a14 100%);
+    }
     .q-theme-label { font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:6px;margin-bottom:6px; }
     .q-badges { display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:20px; }
     .q-badge         { background:#1a1a1a;border:2px solid #333;border-radius:20px;padding:4px 14px;font-family:'Roboto',sans-serif;font-size:.85rem;color:#aaa; }
@@ -173,6 +379,17 @@
     #dot-status { position:fixed;bottom:6px;right:6px;width:10px;height:10px;border-radius:50%;background:#c0392b;opacity:.5;z-index:9999;transition:background .5s; }
     #dot-status.ok { background:#27ae60; }
     @keyframes flashGold { 0%{opacity:1;}100%{opacity:0;} }
+
+    /* ── IMAGE QUESTION ── */
+    .q-image {
+        max-height: 46vh;
+        max-width: 82%;
+        border-radius: 10px;
+        object-fit: contain;
+        display: block;
+        margin: 8px auto 0;
+        box-shadow: 0 4px 24px rgba(0,0,0,.6);
+    }
     </style>
 </head>
 <body>
@@ -225,8 +442,15 @@
     <!-- wagons injectés par JS -->
 </div>
 
+<!-- Fond thématique visible dès le clic sur le wagon (avant la question) -->
+<div id="board-theme-scene"></div>
+
 <!-- ═══ QUESTION ═══ -->
 <div id="question-overlay">
+  <!-- Fond thématique DANS l'overlay (z-index:1, derrière le contenu) -->
+  <div id="theme-scene"></div>
+  <!-- Contenu de la question (z-index:2, au-dessus du fond) -->
+  <div id="q-content">
     <div class="q-theme-label" id="q-theme-el">THÈME</div>
     <div class="q-badges">
         <span class="q-badge"         id="q-level-el">Q1/10</span>
@@ -244,6 +468,7 @@
         </svg>
         <div id="timer-text-el">30</div>
     </div>
+  </div>
 </div>
 
 <!-- ═══ PALIER END ═══ -->
@@ -326,11 +551,29 @@ channel.onmessage = (e) => {
         case 'WRONG_ANSWER':    handleWrong(data); break;
         case 'BANK_POINTS':     handleBank(data); break;
         case 'PALIER_END':      handlePalierEnd(data); break;
-        case 'AWAIT_NEXT':      hidePalierScreen(); break;
-        case 'CONTINUE_WAGON':  hidePalierScreen(); break;
+        case 'AWAIT_NEXT':      hidePalierScreen(); clearThemeScene(); break;
+        case 'CONTINUE_WAGON':  hidePalierScreen(); clearThemeScene(); break;
         case 'HIDE_QUESTION':    hideQuestion(); break;
-        case 'QUESTION_LOADED':  showQuestionReady(); break;
-        case 'REROLL_QUESTION':  document.getElementById('question-text-el').textContent=data.question; break;
+        case 'QUESTION_LOADED':  showQuestionReady(data); break;
+        case 'REROLL_QUESTION': {
+            const _rEl = document.getElementById('question-text-el');
+            if (data.questionType === 'image' && data.questionFile) {
+                _rEl.innerHTML = '';
+                const _ri = document.createElement('img');
+                _ri.src = '../' + data.questionFile; _ri.className = 'q-image'; _ri.alt = data.question || '';
+                _rEl.appendChild(_ri);
+            } else if (data.questionType === 'sound' && data.questionFile) {
+                _rEl.innerHTML = '';
+                const _l = document.createElement('div');
+                _l.style.cssText = 'font-size:4rem;text-align:center;padding:12px;color:#d4af37;letter-spacing:4px;';
+                _l.textContent = '🎵 ' + (data.question || 'Quel est ce titre ?');
+                const _ra = document.createElement('audio');
+                _ra.src = '../' + data.questionFile; _ra.controls = true; _ra.autoplay = true;
+                _ra.style.cssText = 'display:block;width:80%;margin:12px auto;';
+                _rEl.appendChild(_l); _rEl.appendChild(_ra);
+            } else { _rEl.textContent = data.question; }
+            break;
+        }
         case 'PREMIERE_CLASSE':  handlePremiereClasse(data); break;
         case 'SKIP_TURN':        showSkipTurnBanner(data); break;
         case 'NEXT_TURN':       handleNextTurn(data); break;
@@ -414,143 +657,229 @@ function renderHeader() {
 ══════════════════════════════════════════ */
 function gPts(l){if(l<=3)return 1;if(l<=6)return 2;if(l<=9)return 3;return 5;}
 
-function makeWagonSVG(wagon) {
-    const VW=960, VH=128;
-    // Nez TGV long (110px chaque côté) → corps: x=110 à x=850
-    const BC='#1a1a2e', SC='#d4af37', DARK='#0d0d16', MED='#141428';
+function makeWagonHTML(wagon) {
+    const depth   = wagon.depth || 10;
+    const current = wagon.currentLevel;
+    // Extraire icône et nom du thème (ex: "⚽ Football" → icon="⚽", name="Football")
+    const parts = (wagon.theme || '').split(' ');
+    const icon  = /\p{Emoji}/u.test(parts[0]) ? parts[0] : '';
+    const name  = icon ? parts.slice(1).join(' ') : wagon.theme || '';
 
-    // Fenêtres — 4 groupes (P1: Q1-3, P2: Q4-6, P3: Q7-9, Q10)
-    // Répartition équilibrée dans le corps (110→850 = 740px)
-    // 3 portes de 32px + marges + 10 fenêtres de 52px + gaps de 8px
-    // P1: 130,190,250  | porte: 282-314 | P2: 322,382,442 | porte: 474-506 | P3: 514,574,634 | porte: 666-698 | Q10: 718,w=72
-    const winH=36, winY=29;
+    // Groupes de fenêtres par palier
+    const GROUPS = [[0,1,2],[3,4,5],[6,7,8],[9]];
+    let winsHTML = '';
+    GROUPS.forEach((group, gi) => {
+        if (gi > 0) winsHTML += '<div class="w-sep"></div>';
+        winsHTML += '<div class="w-group">';
+        group.forEach(qi => {
+            const pts = gPts(qi + 1);
+            if (qi >= depth) { winsHTML += `<div class="w-win w-empty" style="opacity:.15">${pts}</div>`; return; }
+            const ws  = wagon.windowStates?.[qi];
+            const isCurrent = (qi === current && !wagon.completed);
+            let cls = 'w-win', style = '';
+            if (ws?.banked && ws.teamColor) {
+                cls  += ' w-banked';
+                style = `background:${ws.teamColor};border-color:${ws.teamColor}90;`;
+            } else if (ws?.reached) {
+                cls += ' w-reached';
+            } else if (isCurrent) {
+                cls += ' w-active';
+            }
+            winsHTML += `<div class="${cls}"${style?` style="${style}"`:''} >${pts}</div>`;
+        });
+        winsHTML += '</div>';
+    });
+
+    // Barre de progression (points banqués)
+    const dotsHTML = Array.from({length: depth}, (_, i) =>
+        `<div class="w-dot${wagon.windowStates?.[i]?.banked?' lit':''}"></div>`
+    ).join('');
+
+    const bankable = isBankingAllowed(current, depth) && current > 0 && !wagon.completed;
+    const pending  = wagon.pendingPoints > 0;
+    const progress = wagon.completed ? '✓' : `${current}/${depth}`;
+
+    // 4 bogies, répartis sur la largeur
+    const bogieHTML = `
+        <div class="w-bogie"><div class="w-wheel"></div><div class="w-wheel"></div></div>
+        <div class="w-bogie"><div class="w-wheel"></div><div class="w-wheel"></div></div>
+        <div class="w-bogie"><div class="w-wheel"></div><div class="w-wheel"></div></div>
+        <div class="w-bogie"><div class="w-wheel"></div><div class="w-wheel"></div></div>`;
+
+    return `
+        <div class="w-body"></div>
+        <div class="w-accent"></div>
+        <div class="w-gold-line"></div>
+        <div class="w-header">
+            <span class="w-icon">${icon}</span>
+            <span class="w-name">${name}</span>
+            <span class="w-prog">${progress}</span>
+            ${pending  ? `<span class="w-pend">🪙${wagon.pendingPoints}pts</span>` : ''}
+            ${bankable ? `<span class="w-badge">💰 BANQUER</span>` : ''}
+        </div>
+        <div class="w-windows">${winsHTML}</div>
+        <div class="w-dots">${dotsHTML}</div>
+        <div class="w-wheels">${bogieHTML}</div>
+        <div class="w-rail"></div>`;
+}
+
+// === Ancien makeWagonSVG — gardé pour référence, remplacé par makeWagonHTML ===
+function makeWagonSVG(wagon) {
+    // ── TER MODERNE ── biseauté, bande rouge oblique, sobre, DA Risque Tout
+    const VW=960, VH=130;
+    const BODY='#0f0f0f', GOLD='#d4af37', RED='#D60000', DARK='#060606', MID='#141414';
+    // Corps entre les deux nez : x=80 → x=880
+    const NL=80, NR=880;
+
+    // ── Fenêtres — 4 groupes identiques au layout d'avant ──
+    // Corps x=80→880, soit 800px utiles
+    // P1(Q1-3): 100,164,228  │ sep: 260-292 │ P2(Q4-6): 300,364,428 │ sep: 460-492
+    // P3(Q7-9): 500,564,628  │ sep: 660-692 │ Q10: 706,w=72
+    const winH=38, winY=32;
     const groups = [
-        [{qi:0,x:130,w:52},{qi:1,x:190,w:52},{qi:2,x:250,w:52}],
-        [{qi:3,x:322,w:52},{qi:4,x:382,w:52},{qi:5,x:442,w:52}],
-        [{qi:6,x:514,w:52},{qi:7,x:574,w:52},{qi:8,x:634,w:52}],
-        [{qi:9,x:718,w:72}]
+        [{qi:0,x:100,w:56},{qi:1,x:164,w:56},{qi:2,x:228,w:56}],
+        [{qi:3,x:300,w:56},{qi:4,x:364,w:56},{qi:5,x:428,w:56}],
+        [{qi:6,x:500,w:56},{qi:7,x:564,w:56},{qi:8,x:628,w:56}],
+        [{qi:9,x:706,w:72}]
     ];
 
     function wCol(qi) {
-        if (qi >= (wagon.depth||10)) return '#06060e';
+        if (qi >= (wagon.depth||10)) return DARK;
         const ws = wagon.windowStates[qi];
-        if (!ws) return '#06060e';
+        if (!ws) return DARK;
         if (ws.banked && ws.teamColor) return ws.teamColor;
-        if (ws.reached) return '#e67e22';
-        return '#ffd54f';
+        if (ws.reached) return GOLD;
+        return '#333';   // verrou non encore atteint
     }
-    function wTxt(qi) {
-        const c=wCol(qi);
-        if(c==='#ffd54f') return '#7a5c00';
-        if(c==='#e67e22') return '#3a1500';
-        if(c==='#06060e') return '#1a1a1a';
-        return '#000';
+    function wStroke(qi, isActive) {
+        if (isActive) return ['#ffffff', 2.5];
+        const ws = wagon.windowStates[qi];
+        if (!ws) return ['#1e1e1e', .8];
+        if (ws.banked && ws.teamColor) return [ws.teamColor, 1.5];
+        if (ws.reached) return [GOLD, 1.5];
+        return ['#1e1e1e', .8];
+    }
+    function wTxtCol(qi, isActive) {
+        if (isActive) return '#000';
+        const ws = wagon.windowStates[qi];
+        if (!ws) return '#222';
+        if (ws.banked) return '#000';
+        if (ws.reached) return '#000';
+        return '#2a2a2a';
     }
 
     let winsHTML = '';
     groups.forEach(group => {
         group.forEach(({qi, x, w}) => {
-            const pts=gPts(qi+1), fill=wCol(qi), tc=wTxt(qi);
-            const isActive = (activeWagonIdx >= 0 && qi === wagon.currentLevel);
-            const af = isActive ? '#ffffff' : fill;
-            const glowAttr = (wagon.windowStates[qi]?.banked) ? 'filter="url(#wglow)"' : '';
+            const pts   = gPts(qi+1);
+            const isAct = (activeWagonIdx >= 0 && qi === wagon.currentLevel);
+            const fill  = isAct ? '#ffffff' : wCol(qi);
+            const [sc, sw] = wStroke(qi, isAct);
+            const tc    = wTxtCol(qi, isAct);
+            const glowId = (wagon.windowStates[qi]?.banked || isAct) ? 'url(#wglow)' : '';
+            // Reflet vitre (visible seulement sur fenêtres éclairées)
+            const lit = isAct || (wagon.windowStates[qi]?.banked) || (wagon.windowStates[qi]?.reached);
             winsHTML += `
-            <rect x="${x}" y="${winY}" width="${w}" height="${winH}" rx="5"
-                fill="${af}" stroke="${isActive?'rgba(255,255,255,.85)':'rgba(255,255,255,.07)'}"
-                stroke-width="${isActive?2.5:.8}" ${glowAttr}/>
-            <rect x="${x+4}" y="${winY+3}" width="${Math.floor(w/2)-3}" height="9" rx="3"
-                fill="rgba(255,255,255,.2)" pointer-events="none"/>
-            <text x="${x+w/2}" y="${winY+winH-6}" text-anchor="middle"
-                font-family="Anton,sans-serif" font-size="14" fill="${isActive?'#000':tc}">${pts}</text>`;
+            <rect x="${x}" y="${winY}" width="${w}" height="${winH}" rx="3"
+                fill="${fill}" stroke="${sc}" stroke-width="${sw}"
+                ${glowId?`filter="${glowId}"`:''}/>
+            ${lit?`<rect x="${x+3}" y="${winY+3}" width="${Math.floor(w*.45)}" height="10" rx="2"
+                fill="rgba(255,255,255,.22)" pointer-events="none"/>`:''}
+            <text x="${x+w/2}" y="${winY+winH-7}" text-anchor="middle"
+                font-family="Anton,sans-serif" font-size="14" fill="${tc}">${pts}</text>`;
         });
     });
 
-    const ly = winY+winH+12;
-    const palierLabels = `
-        <text x="190" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">PALIER 1 · 1pt</text>
-        <text x="382" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">PALIER 2 · 2pts</text>
-        <text x="574" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#3a3a3a">PALIER 3 · 3pts</text>
-        <text x="754" y="${ly}" text-anchor="middle" font-family="Roboto,sans-serif" font-size="9" fill="#9a7a00">★ 5 pts</text>`;
+    // Labels paliers (sous les fenêtres)
+    const ly = winY + winH + 10;
+    const palierLabels = [
+        [190, 'P.1 · 1pt',  '#2a2a2a'],
+        [382, 'P.2 · 2pts', '#2a2a2a'],
+        [572, 'P.3 · 3pts', '#2a2a2a'],
+        [742, '★ 5pts',     '#3a3000'],
+    ].map(([cx,lbl,col])=>
+        `<text x="${cx}" y="${ly}" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="9" letter-spacing="2" fill="${col}">${lbl}</text>`
+    ).join('');
 
-    // Bogies centrés sous le corps
-    const bogies = [155, 380, 580, 800].map(bx=>`
-        <rect x="${bx-22}" y="108" width="44" height="6" rx="2" fill="#1a1a1a"/>
-        <rect x="${bx-2}" y="106" width="4" height="9" fill="#222"/>
-        <circle cx="${bx-12}" cy="117" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
-        <circle cx="${bx-12}" cy="117" r="3" fill="#555"/>
-        <circle cx="${bx+12}" cy="117" r="8" fill="#111" stroke="#444" stroke-width="1.5"/>
-        <circle cx="${bx+12}" cy="117" r="3" fill="#555"/>`).join('');
+    // Séparateurs de palier (trait vertical fin entre groupes)
+    const seps = [[270,302],[462,494],[654,686]].map(([x1,x2])=>`
+        <rect x="${x1}" y="${winY-4}" width="${x2-x1}" height="${winH+8}" rx="1" fill="${DARK}"/>
+        <line x1="${Math.round((x1+x2)/2)}" y1="${winY+2}" x2="${Math.round((x1+x2)/2)}" y2="${winY+winH-2}"
+            stroke="#1e1e1e" stroke-width="1" stroke-dasharray="3,3"/>`).join('');
 
-    // Portes entre paliers (32px, bien marquées)
-    const doors = [[282,314],[474,506],[666,698]].map(([x1,x2])=>`
-        <rect x="${x1}" y="4" width="${x2-x1}" height="108" fill="${MED}" stroke="${DARK}" stroke-width="1"/>
-        <rect x="${x1+4}" y="12" width="${x2-x1-8}" height="90" rx="2" fill="${DARK}" opacity=".85"/>
-        <rect x="${x1+(x2-x1)/2-3}" y="52" width="6" height="10" rx="3" fill="#333"/>
-        <line x1="${x1}" y1="4" x2="${x1}" y2="112" stroke="rgba(212,175,55,.15)" stroke-width="1"/>
-        <line x1="${x2}" y1="4" x2="${x2}" y2="112" stroke="rgba(212,175,55,.15)" stroke-width="1"/>`).join('');
+    // Bogies — 4 positions
+    const bogies = [140, 370, 590, 820].map(bx=>`
+        <rect x="${bx-24}" y="114" width="48" height="5" rx="2" fill="#111" stroke="#1e1e1e" stroke-width=".8"/>
+        <circle cx="${bx-13}" cy="122" r="7" fill="#0a0a0a" stroke="#2a2a2a" stroke-width="1.5"/>
+        <circle cx="${bx-13}" cy="122" r="2.5" fill="#333"/>
+        <circle cx="${bx+13}" cy="122" r="7" fill="#0a0a0a" stroke="#2a2a2a" stroke-width="1.5"/>
+        <circle cx="${bx+13}" cy="122" r="2.5" fill="#333"/>
+        <rect x="${bx-2}" y="111" width="4" height="8" rx="1" fill="#1e1e1e"/>`).join('');
+
+    // Rails
+    const rails = `
+        <rect x="0" y="119" width="${VW}" height="4" rx="1" fill="#111"/>
+        <rect x="0" y="125" width="${VW}" height="3" rx="1" fill="#0d0d0d"/>
+        ${[...Array(32)].map((_,i)=>`<rect x="${i*30+2}" y="116" width="14" height="9" rx="1" fill="#0d0d0d"/>`).join('')}`;
 
     return `<svg viewBox="0 0 ${VW} ${VH}" width="100%" height="100%"
         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="display:block;">
 <defs>
-  <filter id="wglow" x="-30%" y="-30%" width="160%" height="160%">
-    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="rgba(255,255,255,.6)"/>
+  <filter id="wglow" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="rgba(255,255,255,.7)"/>
+  </filter>
+  <filter id="redglow" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="rgba(214,0,0,.9)"/>
   </filter>
 </defs>
 
-<!-- Rails et traverses -->
-<rect x="0" y="117" width="${VW}" height="5" rx="1" fill="#191919"/>
-<rect x="0" y="124" width="${VW}" height="3" rx="1" fill="#141414"/>
-${[...Array(33)].map((_,i)=>`<rect x="${i*30+3}" y="115" width="15" height="10" rx="1" fill="#111"/>`).join('')}
+${rails}
 
-<!-- Corps principal (entre les deux nez) -->
-<rect x="110" y="4" width="${VW-220}" height="108" fill="${BC}" stroke="${DARK}" stroke-width="1"/>
+<!-- ── Corps principal ── -->
+<rect x="${NL}" y="4" width="${NR-NL}" height="112" fill="${BODY}" stroke="#111" stroke-width="1"/>
 
-<!-- ── NEZ AVANT — style TGV pointu ── -->
-<!-- Coque principale effilée -->
-<path d="M110 4 C80 4 40 10 8 46 C4 52 2 58 2 64 C2 76 10 104 22 110 L110 110 Z"
-      fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
-<!-- Bande dorée avant (suit la forme) -->
-<path d="M110 13 C78 13 42 19 14 48" fill="none" stroke="${SC}" stroke-width="11" opacity=".88"/>
-<path d="M110 104 C78 104 42 99 18 84" fill="none" stroke="${SC}" stroke-width="5" opacity=".45"/>
+<!-- ── Nez avant biseauté ── -->
+<!-- Panneau principal du nez (triangle + trapèze) -->
+<polygon points="0,114 ${NL},4 ${NL},114" fill="${BODY}" stroke="#111" stroke-width="1"/>
+<!-- Accent rouge oblique (diagonale avant) -->
+<polygon points="4,114 ${NL},28 ${NL},70 28,114" fill="${RED}"/>
+<!-- Séparateur rouge / corps -->
+<line x1="${NL}" y1="4" x2="${NL}" y2="114" stroke="${RED}" stroke-width="2"/>
 <!-- Phare avant -->
-<ellipse cx="18" cy="64" rx="12" ry="9" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
-<ellipse cx="18" cy="64" rx="8"  ry="6" fill="#fffde7" opacity=".92"/>
-<ellipse cx="14" cy="61" rx="3"  ry="2" fill="white" opacity=".5"/>
-<!-- Pare-brise -->
-<path d="M110 22 C88 22 55 28 28 46 L28 60 C55 44 88 38 110 38"
-      fill="#0a1520" opacity=".8"/>
+<ellipse cx="22" cy="72" rx="13" ry="10" fill="${DARK}" stroke="#2a2a2a" stroke-width="1.5"/>
+<ellipse cx="22" cy="72" rx="9"  ry="7"  fill="#fffde7" opacity=".9"/>
+<ellipse cx="19" cy="69" rx="3.5" ry="2.5" fill="white" opacity=".45"/>
+<!-- Attelage avant -->
+<rect x="0" y="68" width="9" height="8" rx="2" fill="#2a2a2a"/>
 
-<!-- ── NEZ ARRIÈRE — miroir ── -->
-<path d="M${VW-110} 4 C${VW-80} 4 ${VW-40} 10 ${VW-8} 46 C${VW-4} 52 ${VW-2} 58 ${VW-2} 64 C${VW-2} 76 ${VW-10} 104 ${VW-22} 110 L${VW-110} 110 Z"
-      fill="${BC}" stroke="${DARK}" stroke-width="1.2"/>
-<path d="M${VW-110} 13 C${VW-78} 13 ${VW-42} 19 ${VW-14} 48" fill="none" stroke="${SC}" stroke-width="11" opacity=".88"/>
-<path d="M${VW-110} 104 C${VW-78} 104 ${VW-42} 99 ${VW-18} 84" fill="none" stroke="${SC}" stroke-width="5" opacity=".45"/>
-<ellipse cx="${VW-18}" cy="64" rx="12" ry="9" fill="${DARK}" stroke="${SC}" stroke-width="1.5"/>
-<ellipse cx="${VW-18}" cy="64" rx="8"  ry="6" fill="#fffde7" opacity=".92"/>
-<path d="M${VW-110} 22 C${VW-88} 22 ${VW-55} 28 ${VW-28} 46 L${VW-28} 60 C${VW-55} 44 ${VW-88} 38 ${VW-110} 38"
-      fill="#0a1520" opacity=".8"/>
+<!-- ── Nez arrière biseauté (miroir) ── -->
+<polygon points="${VW},114 ${NR},4 ${NR},114" fill="${BODY}" stroke="#111" stroke-width="1"/>
+<polygon points="${VW-4},114 ${NR},28 ${NR},70 ${VW-28},114" fill="${RED}"/>
+<line x1="${NR}" y1="4" x2="${NR}" y2="114" stroke="${RED}" stroke-width="2"/>
+<ellipse cx="${VW-22}" cy="72" rx="13" ry="10" fill="${DARK}" stroke="#2a2a2a" stroke-width="1.5"/>
+<ellipse cx="${VW-22}" cy="72" rx="9"  ry="7"  fill="#fffde7" opacity=".9"/>
+<rect x="${VW-9}" y="68" width="9" height="8" rx="2" fill="#2a2a2a"/>
 
-<!-- Bandes dorées sur le corps -->
-<rect x="110" y="10" width="${VW-220}" height="12" fill="${SC}" opacity=".9"/>
-<rect x="110" y="104" width="${VW-220}" height="5" fill="${SC}" opacity=".45"/>
-<rect x="110" y="4" width="${VW-220}" height="2" fill="rgba(255,255,255,.07)"/>
-<rect x="110" y="110" width="${VW-220}" height="6" fill="${DARK}"/>
+<!-- ── Bande or horizontale (toit) — DA Risque Tout ── -->
+<rect x="${NL}" y="4" width="${NR-NL}" height="22" fill="${GOLD}"/>
+<!-- Filet or en bas du corps -->
+<rect x="${NL}" y="110" width="${NR-NL}" height="4" fill="${GOLD}" opacity=".5"/>
+<!-- Ombre intérieure sous la bande or -->
+<rect x="${NL}" y="26" width="${NR-NL}" height="3" fill="rgba(0,0,0,.35)"/>
+<!-- Filet lumineux sous la bande or -->
+<rect x="${NL}" y="25" width="${NR-NL}" height="1.5" fill="rgba(255,255,255,.08)"/>
 
-<!-- Portes / séparateurs de palier -->
-${doors}
+<!-- ── Séparateurs de palier ── -->
+${seps}
 
-<!-- Fenêtres -->
+<!-- ── Fenêtres ── -->
 ${winsHTML}
 
-<!-- Labels palier -->
+<!-- ── Labels paliers ── -->
 ${palierLabels}
 
-<!-- Bogies & roues -->
+<!-- ── Bogies & roues ── -->
 ${bogies}
-
-<!-- Attelages -->
-<rect x="0"     y="60" width="8" height="7" rx="2" fill="#444"/>
-<rect x="${VW-8}" y="60" width="8" height="7" rx="2" fill="#444"/>
 </svg>`;
 }
 
@@ -567,21 +896,7 @@ function renderWagons() {
             + (w.completed         ? ' completed-wagon' : '');
         row.id = `wagon-row-${wi}`;
 
-        const depth   = w.depth || 10;
-        const pending = w.pendingPoints > 0 ? `<span class="wo-pend">🪙 ${w.pendingPoints}pts</span>` : '';
-        const bankable= isBankingAllowed(w.currentLevel, depth) && w.currentLevel > 0 && !w.completed;
-        const bank    = bankable ? `<span class="wo-bank">💰 BANQUABLE</span>` : '';
-        const progress= w.completed ? '✓' : `Q${w.currentLevel+1}/${depth}`;
-
-        row.innerHTML = `
-            <div class="wagon-overlay">
-                <span class="wo-name">${w.theme}</span>
-                <div class="wo-right">
-                    <span class="wo-prog">${progress}</span>
-                    ${pending}${bank}
-                </div>
-            </div>
-            <div class="wagon-svg-wrap">${makeWagonSVG(w)}</div>`;
+        row.innerHTML = makeWagonHTML(w);
         board.appendChild(row);
     });
 }
@@ -591,19 +906,162 @@ function renderWagons() {
 ══════════════════════════════════════════ */
 
 // Question "prête" : timer pas encore lancé — on montre juste une attente discrète
-function showQuestionReady() {
-    // L'écran attend que la régie lance le timer — rien de visible pour les joueurs
-    // (le MC voit la Q dans la régie)
+function showQuestionReady(data) {
+    // Le MC a chargé la Q (pas encore affichée aux joueurs)
+    // On affiche déjà le thème en fond pour créer l'ambiance
+    if (data && data.theme) applyBoardTheme(data.theme);
     hidePalierScreen();
 }
 
+/* ── THEME SCENE HELPERS ─────────────────────────────────── */
+const THEME_DECOS = {
+  football: [], // terrain dessiné en CSS pur, pas d'icônes
+  musique: [
+    { text:'♩', top:'10%', left:'8%',  size:'14rem', opacity:.13, rotate:'-15deg' },
+    { text:'♪', top:'55%', left:'70%', size:'11rem', opacity:.12, rotate:'10deg' },
+    { text:'♫', top:'25%', left:'55%', size:'16rem', opacity:.09, rotate:'-5deg' },
+    { text:'🎵', top:'70%', left:'15%', size:'9rem', opacity:.13, rotate:'8deg' },
+    { text:'🎹', top:'15%', left:'72%', size:'10rem', opacity:.12, rotate:'-8deg' },
+  ],
+  fleurs: [
+    { text:'🌸', top:'5%',  left:'5%',  size:'13rem', opacity:.2, rotate:'-10deg' },
+    { text:'🌺', top:'60%', left:'75%', size:'14rem', opacity:.18, rotate:'15deg' },
+    { text:'🌹', top:'70%', left:'10%', size:'11rem', opacity:.18, rotate:'-5deg' },
+    { text:'🌸', top:'20%', left:'65%', size:'10rem', opacity:.15, rotate:'20deg' },
+    { text:'🌼', top:'40%', left:'40%', size:'16rem', opacity:.08, rotate:'5deg' },
+  ],
+  animaux: [
+    { text:'🐾', top:'10%', left:'8%',  size:'12rem', opacity:.2, rotate:'-10deg' },
+    { text:'🐾', top:'65%', left:'72%', size:'10rem', opacity:.18, rotate:'20deg' },
+    { text:'🐾', top:'40%', left:'20%', size:'8rem',  opacity:.15, rotate:'5deg' },
+    { text:'🐕', top:'70%', left:'20%', size:'11rem', opacity:.15, rotate:'-5deg' },
+    { text:'🐈', top:'15%', left:'70%', size:'11rem', opacity:.15, rotate:'10deg' },
+  ],
+  jeux: [
+    { text:'🎲', top:'10%', left:'8%',  size:'12rem', opacity:.2, rotate:'-15deg' },
+    { text:'🎲', top:'60%', left:'75%', size:'14rem', opacity:.18, rotate:'20deg' },
+    { text:'♟', top:'70%', left:'15%', size:'13rem', opacity:.18, rotate:'0deg' },
+    { text:'🃏', top:'15%', left:'65%', size:'11rem', opacity:.17, rotate:'10deg' },
+    { text:'🎯', top:'40%', left:'42%', size:'16rem', opacity:.07, rotate:'0deg' },
+  ],
+  jeuxvideo: [
+    { text:'🎮', top:'10%', left:'5%',  size:'13rem', opacity:.2, rotate:'-10deg' },
+    { text:'👾', top:'60%', left:'72%', size:'12rem', opacity:.18, rotate:'5deg' },
+    { text:'🕹️', top:'70%', left:'12%', size:'11rem', opacity:.16, rotate:'-5deg' },
+    { text:'⭐', top:'20%', left:'65%', size:'10rem', opacity:.2, rotate:'15deg' },
+    { text:'🏆', top:'40%', left:'43%', size:'15rem', opacity:.06, rotate:'0deg' },
+  ],
+  nourriture: [
+    { text:'🍕', top:'10%', left:'7%',  size:'12rem', opacity:.2, rotate:'-10deg' },
+    { text:'🍔', top:'60%', left:'74%', size:'13rem', opacity:.18, rotate:'15deg' },
+    { text:'🍷', top:'72%', left:'12%', size:'10rem', opacity:.17, rotate:'-5deg' },
+    { text:'🥐', top:'15%', left:'68%', size:'11rem', opacity:.18, rotate:'10deg' },
+    { text:'🧀', top:'40%', left:'43%', size:'15rem', opacity:.06, rotate:'5deg' },
+  ],
+  cinema: [
+    { text:'🎬', top:'10%', left:'40%', size:'14rem', opacity:.22, rotate:'0deg' },
+    { text:'🎞️', top:'60%', left:'15%', size:'11rem', opacity:.17, rotate:'-10deg' },
+    { text:'🎭', top:'60%', left:'70%', size:'12rem', opacity:.17, rotate:'10deg' },
+    { text:'⭐', top:'20%', left:'10%', size:'8rem',  opacity:.2, rotate:'15deg' },
+    { text:'⭐', top:'25%', left:'80%', size:'8rem',  opacity:.2, rotate:'-8deg' },
+  ],
+  default: [
+    { text:'❓', top:'40%', left:'44%', size:'18rem', opacity:.06, rotate:'0deg' },
+  ],
+};
+
+function getThemeKey(name) {
+  const n = (name || '').toLowerCase()
+    .normalize('NFD').replace(/\p{Diacritic}/gu, '');
+  if (n.includes('football')) return 'football';
+  if (n.includes('musique'))  return 'musique';
+  if (n.includes('fleur'))    return 'fleurs';
+  if (n.includes('chien') || n.includes('chat') || n.includes('animal')) return 'animaux';
+  if (n.includes('video') || n.includes('vid') || n.includes('jeux v')) return 'jeuxvideo';
+  if (n.includes('jeux') || n.includes('jeu')) return 'jeux';
+  if (n.includes('nourri') || n.includes('food') || n.includes('repas')) return 'nourriture';
+  if (n.includes('film') || n.includes('cin'))  return 'cinema';
+  return 'default';
+}
+
+function buildThemeDecos(key) {
+  return (THEME_DECOS[key] || []).map(d =>
+    `<div class="td" style="top:${d.top};left:${d.left};font-size:${d.size};opacity:${d.opacity};transform:rotate(${d.rotate})">${d.text}</div>`
+  ).join('');
+}
+
+// Applique le fond thématique dans l'overlay question
+function applyThemeScene(themeName) {
+  const scene = document.getElementById('theme-scene');
+  if (!scene) return;
+  const key = getThemeKey(themeName);
+  scene.className = key;
+  scene.innerHTML = buildThemeDecos(key);
+}
+
+const BOARD_DEFAULT_BG = '#0a0a0a';
+
+// Entre dans un wagon : cache les wagons, affiche le fond thématique plein écran
+function applyBoardTheme(themeName) {
+  const board = document.getElementById('game-board');
+  const scene = document.getElementById('board-theme-scene');
+  if (!board || !scene) return;
+
+  const key = getThemeKey(themeName);
+
+  // Cache les wagons
+  board.style.opacity = '0';
+  board.style.pointerEvents = 'none';
+
+  // Affiche le fond thématique plein écran
+  scene.className = 'active ' + key;
+  scene.innerHTML = buildThemeDecos(key);
+}
+
+function clearThemeScene() {
+  // Remet les wagons visibles
+  const board = document.getElementById('game-board');
+  if (board) { board.style.opacity = '1'; board.style.pointerEvents = ''; }
+
+  // Cache les deux fonds thématiques
+  const scene = document.getElementById('theme-scene');
+  if (scene) { scene.className = ''; scene.innerHTML = ''; }
+
+  const boardScene = document.getElementById('board-theme-scene');
+  if (boardScene) { boardScene.className = ''; boardScene.innerHTML = ''; }
+}
+/* ─────────────────────────────────────────────────────── */
+
 function showQuestion(data) {
     activeWagonIdx = (data.wagonIndex !== undefined) ? data.wagonIndex : -1;
+    applyThemeScene(data.theme);
     document.getElementById('q-theme-el').textContent  = data.theme;
     document.getElementById('q-theme-el').style.color  = data.themeColor || '#888';
     document.getElementById('q-level-el').textContent  = `Q${data.level}/${data.depth} · Palier ${data.tier}`;
     document.getElementById('q-pts-el').textContent    = `+${data.points} pt${data.points>1?'s':''}`;
-    document.getElementById('question-text-el').textContent = data.question;
+    const _qTextEl = document.getElementById('question-text-el');
+    if (data.questionType === 'image' && data.questionFile) {
+        _qTextEl.innerHTML = '';
+        const _qImg = document.createElement('img');
+        _qImg.src = '../' + data.questionFile;
+        _qImg.className = 'q-image';
+        _qImg.alt = data.question || '';
+        _qTextEl.appendChild(_qImg);
+    } else if (data.questionType === 'sound' && data.questionFile) {
+        _qTextEl.innerHTML = '';
+        const _lbl = document.createElement('div');
+        _lbl.style.cssText = 'font-size:4rem;text-align:center;padding:12px;color:#d4af37;letter-spacing:4px;';
+        _lbl.textContent = '🎵 ' + (data.question || 'Quel est ce titre ?');
+        const _aud = document.createElement('audio');
+        _aud.src = '../' + data.questionFile;
+        _aud.controls = true;
+        _aud.autoplay = true;
+        _aud.style.cssText = 'display:block;width:80%;margin:12px auto;';
+        _qTextEl.appendChild(_lbl);
+        _qTextEl.appendChild(_aud);
+    } else {
+        _qTextEl.textContent = data.question;
+    }
     document.getElementById('answer-reveal').style.display  = 'none';
     document.getElementById('answer-reveal').textContent    = '';
 
@@ -622,6 +1080,7 @@ function showQuestion(data) {
 
 function hideQuestion() {
     activeWagonIdx = -1;
+    clearThemeScene();
     document.getElementById('question-overlay').classList.remove('show');
     document.getElementById('answer-reveal').style.display = 'none';
     hidePalierScreen(); stopTimer(); renderWagons();

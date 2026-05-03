@@ -236,7 +236,7 @@ const MIX_PHOTOS = [
     "name": "Bruno Le Maire"
   },
   {
-    "file": "../data/assets/images/Buzz_Lightyear.webp",
+    "file": "../data/assets/images/Buzz_Lightyear.png",
     "name": "Buzz Lightyear"
   },
   {
@@ -448,7 +448,7 @@ const MIX_PHOTOS = [
     "name": "Eddie Redmayne"
   },
   {
-    "file": "../data/assets/images/Edna_Mode.webp",
+    "file": "../data/assets/images/Edna_Mode.png",
     "name": "Edna Mode"
   },
   {
@@ -768,7 +768,7 @@ const MIX_PHOTOS = [
     "name": "Jessie Cave"
   },
   {
-    "file": "../data/assets/images/Jessie.webp",
+    "file": "../data/assets/images/Jessie.png",
     "name": "Jessie"
   },
   {
@@ -1200,7 +1200,7 @@ const MIX_PHOTOS = [
     "name": "Penelope Cruz"
   },
   {
-    "file": "../data/assets/images/Peter_Pan.webp",
+    "file": "../data/assets/images/Peter Pan.png",
     "name": "Peter Pan"
   },
   {
@@ -1260,7 +1260,7 @@ const MIX_PHOTOS = [
     "name": "Rami Malek"
   },
   {
-    "file": "../data/assets/images/Rapunzel.webp",
+    "file": "../data/assets/images/Rapunzel.png",
     "name": "Rapunzel"
   },
   {
@@ -1608,7 +1608,7 @@ const MIX_PHOTOS = [
     "name": "Winnie The Pooh"
   },
   {
-    "file": "../data/assets/images/Woody.webp",
+    "file": "../data/assets/images/Woody.png",
     "name": "Woody"
   },
   {

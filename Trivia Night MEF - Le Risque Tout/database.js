@@ -722,11 +722,6 @@ const QUESTION_DATABASE = {
           "answer": "Paon Bleu"
         },
         {
-          "file": "../data/assets/images/paon_du_jour.jpg",
-          "question": "Quel est cet animal ?",
-          "answer": "Paon Du Jour"
-        },
-        {
           "file": "../data/assets/images/pelican_blanc.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Pelican Blanc"
@@ -1256,6 +1251,11 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/tortue_molle.jpg",
           "question": "Quel est cet animal ?",
           "answer": "Tortue Molle"
+        },
+        {
+          "file": "../data/assets/images/paon_du_jour.jpg",
+          "question": "Quel est cet animal ?",
+          "answer": "Paon Du Jour"
         },
         {
           "file": "../data/assets/images/chien_chinois_a_crete.jpg",
@@ -7393,24 +7393,8 @@ const QUESTION_DATABASE = {
       "sounds": [],
       "text": [
         {
-          "question": "Sur quel continent se trouve la France ?",
-          "answer": "Europe"
-        },
-        {
-          "question": "Quel est le plus grand pays du monde par la superficie ?",
-          "answer": "Russie"
-        },
-        {
-          "question": "Quel est le nom de la planète sur laquelle nous vivons ?",
-          "answer": "Terre"
-        },
-        {
           "question": "Quel océan sépare l'Amérique de l'Europe ?",
           "answer": "Atlantique"
-        },
-        {
-          "question": "Dans quel pays se trouve la Tour Eiffel ?",
-          "answer": "France"
         },
         {
           "question": "Quelle est la forme géométrique souvent utilisée pour décrire l'Italie ?",
@@ -7425,28 +7409,12 @@ const QUESTION_DATABASE = {
           "answer": "États-Unis"
         },
         {
-          "question": "Sur quel continent se trouve le Brésil ?",
-          "answer": "Amérique du Sud"
-        },
-        {
-          "question": "Dans quel pays se trouve la Grande Muraille ?",
-          "answer": "Chine"
-        },
-        {
           "question": "Dans quel pays se trouve la ville de Venise ?",
           "answer": "Italie"
         },
         {
           "question": "Quel pays a la forme d'un hexagone ?",
           "answer": "France"
-        },
-        {
-          "question": "Dans quel pays se trouve la ville de Sydney ?",
-          "answer": "Australie"
-        },
-        {
-          "question": "Dans quel pays se trouve la ville de Barcelone ?",
-          "answer": "Espagne"
         },
         {
           "question": "Quel est le nom du fleuve qui traverse Paris ?",
@@ -7627,10 +7595,6 @@ const QUESTION_DATABASE = {
       ],
       "sounds": [],
       "text": [
-        {
-          "question": "Quel est le pays le plus peuplé du monde (en 2023/2024) ?",
-          "answer": "Inde"
-        },
         {
           "question": "Quel est le plus grand océan du monde ?",
           "answer": "Pacifique"
@@ -9947,6 +9911,10 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel est le nom de l'acteur qui joue Ron Weasley ?",
           "answer": "Rupert Grint"
+        },
+        {
+          "question": "Quel objet attrapeur faut-il saisir pour finir un match de Quidditch ?",
+          "answer": "Vif d'or"
         }
       ]
     },
@@ -10122,10 +10090,6 @@ const QUESTION_DATABASE = {
           "answer": "Ollivander"
         },
         {
-          "question": "Quel est le nom du chien à trois têtes ?",
-          "answer": "Touffu"
-        },
-        {
           "question": "Qui est la dame rose et cruelle envoyée par le Ministère en 5ème année ?",
           "answer": "Dolores Ombrage"
         },
@@ -10256,6 +10220,10 @@ const QUESTION_DATABASE = {
       ],
       "sounds": [],
       "text": [
+        {
+          "question": "Quel est le nom du chien à trois têtes ?",
+          "answer": "Touffu"
+        },
         {
           "question": "Quel est le mot de passe pour ouvrir la carte du Maraudeur ?",
           "answer": "Je jure solennellement que mes intentions sont mauvaises"
@@ -10435,6 +10403,10 @@ const QUESTION_DATABASE = {
         {
           "question": "Combien de buts marque-t-on en passant le Souafle dans un anneau ?",
           "answer": "10 points"
+        },
+        {
+          "question": "Quel est le nom du chien à trois têtes gardant la Pierre Philosophale ?",
+          "answer": "Touffu"
         }
       ]
     },
@@ -10622,6 +10594,10 @@ const QUESTION_DATABASE = {
         },
         {
           "question": "Quel est le nom du sortilège créé par le Prince de Sang-Mêlé (coupure) ?",
+          "answer": "Sectumsempra"
+        },
+        {
+          "question": "Quel est le nom du sortilège créé par le Prince de Sang-Mêlé pour couper ?",
           "answer": "Sectumsempra"
         }
       ]
@@ -10880,6 +10856,10 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui est la mère de Nymphadora Tonks ?",
           "answer": "Andromeda Black"
+        },
+        {
+          "question": "Qui a détruit le diadème de Serdaigle ?",
+          "answer": "Le Feudeymon (Crabbe/Goyle)"
         }
       ]
     }
@@ -12996,6 +12976,788 @@ const QUESTION_DATABASE = {
       ]
     }
   },
+  "logo": {
+    "1": {
+      "images": [
+        {
+          "file": "../data/assets/images/logos/1/Nike.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Nike"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Adidas.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Adidas"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Apple.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Apple"
+        },
+        {
+          "file": "../data/assets/images/logos/1/McDonalds.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "McDonald's"
+        },
+        {
+          "file": "../data/assets/images/logos/1/CocaCola.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Coca-Cola"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Pepsi.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Pepsi"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Amazon.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Amazon"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Google.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Google"
+        },
+        {
+          "file": "../data/assets/images/logos/1/YouTube.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "YouTube"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Instagram.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Instagram"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Facebook.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Facebook"
+        },
+        {
+          "file": "../data/assets/images/logos/1/TikTok.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "TikTok"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Starbucks.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Starbucks"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Puma.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Puma"
+        },
+        {
+          "file": "../data/assets/images/logos/1/BurgerKing.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Burger King"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Netflix.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Netflix"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Samsung.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Samsung"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Microsoft.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Microsoft"
+        },
+        {
+          "file": "../data/assets/images/logos/1/PlayStation.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "PlayStation"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Xbox.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Xbox"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Lego.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Lego"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Disney.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Disney"
+        },
+        {
+          "file": "../data/assets/images/logos/1/KFC.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "KFC"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Subway.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Subway"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Uber.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Uber"
+        },
+        {
+          "file": "../data/assets/images/logos/1/WhatsApp.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "WhatsApp"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Lacoste.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Lacoste"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Chanel.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Chanel"
+        },
+        {
+          "file": "../data/assets/images/logos/1/Gucci.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Gucci"
+        },
+        {
+          "file": "../data/assets/images/logos/1/LouisVuitton.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Louis Vuitton"
+        }
+      ],
+      "sounds": [],
+      "text": []
+    },
+    "2": {
+      "images": [
+        {
+          "file": "../data/assets/images/logos/2/Tesla.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Tesla"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Spotify.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Spotify"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Airbnb.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Airbnb"
+        },
+        {
+          "file": "../data/assets/images/logos/2/LinkedIn.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "LinkedIn"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Dropbox.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Dropbox"
+        },
+        {
+          "file": "../data/assets/images/logos/2/RedBull.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Red Bull"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Intel.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Intel"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Asics.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Asics"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Levis.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Levi's"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Snapchat.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Snapchat"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Discord.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Discord"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Twitch.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Twitch"
+        },
+        {
+          "file": "../data/assets/images/logos/2/eBay.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "eBay"
+        },
+        {
+          "file": "../data/assets/images/logos/2/PayPal.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "PayPal"
+        },
+        {
+          "file": "../data/assets/images/logos/2/FedEx.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "FedEx"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Vans.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Vans"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Reebok.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Reebok"
+        },
+        {
+          "file": "../data/assets/images/logos/2/NewBalance.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "New Balance"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Converse.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Converse"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Fila.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Fila"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Decathlon.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Decathlon"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Carrefour.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Carrefour"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Auchan.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Auchan"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Monoprix.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Monoprix"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Lidl.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Lidl"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Aldi.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Aldi"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Ikea.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "IKEA"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Zara.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Zara"
+        },
+        {
+          "file": "../data/assets/images/logos/2/HM.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "H&M"
+        },
+        {
+          "file": "../data/assets/images/logos/2/Uniqlo.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Uniqlo"
+        }
+      ],
+      "sounds": [],
+      "text": []
+    },
+    "3": {
+      "images": [
+        {
+          "file": "../data/assets/images/logos/3/Nvidia.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Nvidia"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Salesforce.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Salesforce"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Snowflake.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Snowflake"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Datadog.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Datadog"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Atlassian.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Atlassian"
+        },
+        {
+          "file": "../data/assets/images/logos/3/HubSpot.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "HubSpot"
+        },
+        {
+          "file": "../data/assets/images/logos/3/MongoDB.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "MongoDB"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Splunk.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Splunk"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Cloudflare.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Cloudflare"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Palantir.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Palantir"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Shopify.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Shopify"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Zendesk.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Zendesk"
+        },
+        {
+          "file": "../data/assets/images/logos/3/ServiceNow.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "ServiceNow"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Twilio.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Twilio"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Okta.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Okta"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Oracle.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Oracle"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Cisco.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Cisco"
+        },
+        {
+          "file": "../data/assets/images/logos/3/SAP.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "SAP"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Adobe.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Adobe"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Figma.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Figma"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Canva.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Canva"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Notion.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Notion"
+        },
+        {
+          "file": "../data/assets/images/logos/3/GitHub.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "GitHub"
+        },
+        {
+          "file": "../data/assets/images/logos/3/GitLab.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "GitLab"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Docker.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Docker"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Kubernetes.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Kubernetes"
+        },
+        {
+          "file": "../data/assets/images/logos/3/PostgreSQL.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "PostgreSQL"
+        },
+        {
+          "file": "../data/assets/images/logos/3/MySQL.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "MySQL"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Redis.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Redis"
+        },
+        {
+          "file": "../data/assets/images/logos/3/Elastic.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Elastic"
+        }
+      ],
+      "sounds": [],
+      "text": []
+    },
+    "4": {
+      "images": [
+        {
+          "file": "../data/assets/images/logos/4/Supreme.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Supreme"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Patagonia.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Patagonia"
+        },
+        {
+          "file": "../data/assets/images/logos/4/TheNorthFace.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "The North Face"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Timberland.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Timberland"
+        },
+        {
+          "file": "../data/assets/images/logos/4/UnderArmour.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Under Armour"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Quiksilver.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Quiksilver"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Billabong.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Billabong"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Champion.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Champion"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Umbro.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Umbro"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Kappa.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Kappa"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Mizuno.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Mizuno"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Salomon.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Salomon"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Oakley.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Oakley"
+        },
+        {
+          "file": "../data/assets/images/logos/4/RayBan.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Ray-Ban"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Seiko.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Seiko"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Casio.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Casio"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Garmin.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Garmin"
+        },
+        {
+          "file": "../data/assets/images/logos/4/GoPro.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "GoPro"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Canon.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Canon"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Nikon.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Nikon"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Philips.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Philips"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Panasonic.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Panasonic"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Yamaha.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Yamaha"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Kawasaki.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Kawasaki"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Ducati.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Ducati"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Subaru.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Subaru"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Mazda.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Mazda"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Volvo.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Volvo"
+        },
+        {
+          "file": "../data/assets/images/logos/4/Skoda.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Škoda"
+        },
+        {
+          "file": "../data/assets/images/logos/4/SEAT.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "SEAT"
+        }
+      ],
+      "sounds": [],
+      "text": []
+    },
+    "5": {
+      "images": [
+        {
+          "file": "../data/assets/images/logos/5/Snowpeak.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Snow Peak"
+        },
+        {
+          "file": "../data/assets/images/logos/5/ArcTeryx.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Arc'teryx"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Aesop.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Aesop"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Muji.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Muji"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Bialetti.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Bialetti"
+        },
+        {
+          "file": "../data/assets/images/logos/5/BangOlufsen.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Bang & Olufsen"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Sonos.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Sonos"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Bose.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Bose"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Sennheiser.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Sennheiser"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Marshall.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Marshall"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Razer.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Razer"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Logitech.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Logitech"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Corsair.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Corsair"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Alienware.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Alienware"
+        },
+        {
+          "file": "../data/assets/images/logos/5/MSI.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "MSI"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Acer.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Acer"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Lenovo.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Lenovo"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Asus.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Asus"
+        },
+        {
+          "file": "../data/assets/images/logos/5/BenQ.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "BenQ"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Synology.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Synology"
+        },
+        {
+          "file": "../data/assets/images/logos/5/QNAP.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "QNAP"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Ubiquiti.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Ubiquiti"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Fortinet.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Fortinet"
+        },
+        {
+          "file": "../data/assets/images/logos/5/JetBrains.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "JetBrains"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Terraform.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Terraform"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Grafana.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Grafana"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Prometheus.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Prometheus"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Ansible.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Ansible"
+        },
+        {
+          "file": "../data/assets/images/logos/5/Jenkins.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "Jenkins"
+        },
+        {
+          "file": "../data/assets/images/logos/5/SonarQube.png",
+          "question": "Reconnaissez-vous ce logo ?",
+          "answer": "SonarQube"
+        }
+      ],
+      "sounds": [],
+      "text": []
+    }
+  },
   "musique": {
     "1": {
       "images": [
@@ -13008,11 +13770,6 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/Aya Nakamura.png",
           "question": "Qui est-ce ?",
           "answer": "Aya Nakamura"
-        },
-        {
-          "file": "../data/assets/images/Benjamin Biolay.png",
-          "question": "Qui est-ce ?",
-          "answer": "Benjamin Biolay"
         },
         {
           "file": "../data/assets/images/Beyonce.png",
@@ -13130,11 +13887,6 @@ const QUESTION_DATABASE = {
           "answer": "Lady Gaga"
         },
         {
-          "file": "../data/assets/images/Louane.png",
-          "question": "Qui est-ce ?",
-          "answer": "Louane"
-        },
-        {
           "file": "../data/assets/images/Miley Cyrus.png",
           "question": "Qui est-ce ?",
           "answer": "Miley Cyrus"
@@ -13190,17 +13942,38 @@ const QUESTION_DATABASE = {
           "answer": "The Weeknd"
         },
         {
-          "file": "../data/assets/images/Vianney.png",
-          "question": "Qui est-ce ?",
-          "answer": "Vianney"
-        },
-        {
           "file": "../data/assets/images/Vitaa.png",
           "question": "Qui est-ce ?",
           "answer": "Vitaa"
         }
       ],
-      "sounds": [],
+      "sounds": [
+        {
+          "file": "../data/assets/sons/chansons/difficulte_1/Daft_Punk_Get_Lucky.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Get Lucky — Daft Punk"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_1/Jackson_5_ABC.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "ABC — Jackson 5"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_1/Michael_Jackson_Billie_Jean.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Billie Jean — Michael Jackson"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_1/Pharrell_Williams_Happy.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Happy — Pharrell Williams"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_1/Queen_We_Will_Rock_You.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "We Will Rock You — Queen"
+        }
+      ],
       "text": [
         {
           "question": "Qui est surnommé le \"King of Pop\" ?",
@@ -13247,14 +14020,6 @@ const QUESTION_DATABASE = {
           "answer": "Daft Punk"
         },
         {
-          "question": "Quel instrument joue Louis Armstrong ?",
-          "answer": "Trompette"
-        },
-        {
-          "question": "Quelle chanteuse a interprété \"My Heart Will Go On\" ?",
-          "answer": "Céline Dion"
-        },
-        {
           "question": "Qui chante \"Djadja\" ?",
           "answer": "Aya Nakamura"
         },
@@ -13279,28 +14044,12 @@ const QUESTION_DATABASE = {
           "answer": "Nirvana"
         },
         {
-          "question": "Qui chante \"Les Lacs du Connemara\" ?",
-          "answer": "Michel Sardou"
-        },
-        {
           "question": "Qui chante \"Thriller\" ?",
           "answer": "Michael Jackson"
         },
         {
-          "question": "Quelle chanteuse a popularisé \"Like a Virgin\" ?",
-          "answer": "Madonna"
-        },
-        {
-          "question": "Quel rappeur français fait le signe \"Jul\" avec ses mains ?",
+          "question": "Quel rappeur français fait le signe \"☝️👆\" avec ses mains ?",
           "answer": "Jul"
-        },
-        {
-          "question": "Qui chante \"I Will Always Love You\" (Bodyguard) ?",
-          "answer": "Whitney Houston"
-        },
-        {
-          "question": "Quel groupe suédois a chanté \"Dancing Queen\" ?",
-          "answer": "ABBA"
         },
         {
           "question": "Qui chante \"Wannabe\" ?",
@@ -13327,12 +14076,8 @@ const QUESTION_DATABASE = {
           "answer": "Lady Gaga"
         },
         {
-          "question": "Qui chante \"Alexandrie Alexandra\" ?",
-          "answer": "Claude François"
-        },
-        {
           "question": "Qui chante \"Uptown Funk\" ?",
-          "answer": "Bruno Mars"
+          "answer": "Mark Ronson ft. Bruno Mars"
         },
         {
           "question": "Quel DJ français a fait \"Titanium\" ?",
@@ -13355,10 +14100,6 @@ const QUESTION_DATABASE = {
           "answer": "Maître Gims"
         },
         {
-          "question": "Qui chante \"Imagine\" ?",
-          "answer": "John Lennon"
-        },
-        {
           "question": "Quel groupe chante \"Stayin' Alive\" ?",
           "answer": "Bee Gees"
         },
@@ -13377,10 +14118,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel groupe chante \"Let It Be\" ?",
           "answer": "The Beatles"
-        },
-        {
-          "question": "Qui est le \"Roi du Rock'n'roll\" ?",
-          "answer": "Elvis Presley"
         },
         {
           "question": "Qui chante \"Bad Guy\" ?",
@@ -13411,20 +14148,8 @@ const QUESTION_DATABASE = {
           "answer": "Ed Sheeran"
         },
         {
-          "question": "Quel est l'instrument de Ray Charles ?",
-          "answer": "Piano"
-        },
-        {
           "question": "Qui chante \"Shake It Off\" ?",
           "answer": "Taylor Swift"
-        },
-        {
-          "question": "Qui a composé la musique de \"Star Wars\" ?",
-          "answer": "John Williams"
-        },
-        {
-          "question": "Quel instrument joue Carlos Santana ?",
-          "answer": "Guitare"
         },
         {
           "question": "Qui chante \"Basique\" ?",
@@ -13439,24 +14164,12 @@ const QUESTION_DATABASE = {
           "answer": "Adele"
         },
         {
-          "question": "Quel est l'instrument de Slash ?",
-          "answer": "Guitare"
-        },
-        {
           "question": "Qui chante \"Blinding Lights\" ?",
           "answer": "The Weeknd"
         },
         {
           "question": "Qui chante \"Toxic\" ?",
           "answer": "Britney Spears"
-        },
-        {
-          "question": "Qui chante \"Je marche seul\" ?",
-          "answer": "Jean-Jacques Goldman"
-        },
-        {
-          "question": "Quel instrument joue Elton John ?",
-          "answer": "Piano"
         },
         {
           "question": "Quel groupe chante \"Don't Stop Me Now\" ?",
@@ -13475,20 +14188,12 @@ const QUESTION_DATABASE = {
           "answer": "Katy Perry"
         },
         {
-          "question": "Qui chante \"Color Gitano\" ?",
-          "answer": "Kendji Girac"
-        },
-        {
           "question": "Qui chante \"Wrecking Ball\" ?",
           "answer": "Miley Cyrus"
         },
         {
           "question": "Qui chante \"Bad Romance\" ?",
           "answer": "Lady Gaga"
-        },
-        {
-          "question": "Quel groupe chante \"Take On Me\" ?",
-          "answer": "A-ha"
         },
         {
           "question": "Qui chante \"Andalouse\" ?",
@@ -13505,10 +14210,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui chante \"Someone Like You\" ?",
           "answer": "Adele"
-        },
-        {
-          "question": "Qui chante \"Pour que tu m'aimes encore\" ?",
-          "answer": "Céline Dion"
         },
         {
           "question": "Quel chanteur a pour surnom \"The King of Rock and Roll\" ?",
@@ -13541,11 +14242,24 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui chante \"All I Want for Christmas Is You\" ?",
           "answer": "Mariah Carey"
+        },
+        {
+          "question": "Quel chanteur américain était surnommé le « King » du Rock'n'Roll ?",
+          "answer": "Elvis Presley"
+        },
+        {
+          "question": "Quel artiste américain est surnommé le « King of Pop » et a sorti l'album Thriller ?",
+          "answer": "Michael Jackson"
         }
       ]
     },
     "2": {
       "images": [
+        {
+          "file": "../data/assets/images/Vianney.png",
+          "question": "Qui est-ce ?",
+          "answer": "Vianney"
+        },
         {
           "file": "../data/assets/images/Bad Bunny.png",
           "question": "Qui est-ce ?",
@@ -13577,19 +14291,69 @@ const QUESTION_DATABASE = {
           "answer": "Sia"
         }
       ],
-      "sounds": [],
+      "sounds": [
+        {
+          "file": "../data/assets/sons/chansons/difficulte_2/ABBA_Dancing_Queen.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Dancing Queen — ABBA"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_2/Adele_Rolling_in_the_Deep.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Rolling in the Deep — Adele"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_2/Mark_Ronson_Uptown_Funk.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Uptown Funk — Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_2/Survivor_Eye_of_the_Tiger.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Eye of the Tiger — Survivor"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_2/The_Weeknd_Blinding_Lights.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Blinding Lights — The Weeknd"
+        }
+      ],
       "text": [
+        {
+          "question": "Quelle chanteuse a interprété \"My Heart Will Go On\" ?",
+          "answer": "Céline Dion"
+        },
+        {
+          "question": "Quelle chanteuse a popularisé \"Like a Virgin\" ?",
+          "answer": "Madonna"
+        },
+        {
+          "question": "Quel groupe suédois a chanté \"Dancing Queen\" ?",
+          "answer": "ABBA"
+        },
+        {
+          "question": "Qui chante \"Imagine\" ?",
+          "answer": "John Lennon"
+        },
+        {
+          "question": "Qui est le \"Roi du Rock'n'roll\" ?",
+          "answer": "Elvis Presley"
+        },
+        {
+          "question": "Quel instrument joue Elton John ?",
+          "answer": "Piano"
+        },
+        {
+          "question": "Qui chante \"Color Gitano\" ?",
+          "answer": "Kendji Girac"
+        },
+        {
+          "question": "Qui chante \"Pour que tu m'aimes encore\" ?",
+          "answer": "Céline Dion"
+        },
         {
           "question": "Quel groupe a chanté \"Satisfaction\" ?",
           "answer": "The Rolling Stones"
-        },
-        {
-          "question": "Qui chante \"Joe le taxi\" ?",
-          "answer": "Vanessa Paradis"
-        },
-        {
-          "question": "Qui chante \"L'Aventurier\" ?",
-          "answer": "Indochine"
         },
         {
           "question": "Qui chante \"La Boulette\" ?",
@@ -13600,24 +14364,8 @@ const QUESTION_DATABASE = {
           "answer": "Indochine"
         },
         {
-          "question": "Qui chante \"Il changeait la vie\" ?",
-          "answer": "Jean-Jacques Goldman"
-        },
-        {
-          "question": "Quel groupe chante \"Seven Nation Army\" ?",
-          "answer": "The White Stripes"
-        },
-        {
-          "question": "Qui chante \"Résiste\" ?",
-          "answer": "France Gall"
-        },
-        {
           "question": "Quel groupe chante \"Radioactive\" et \"Believer\" ?",
           "answer": "Imagine Dragons"
-        },
-        {
-          "question": "Qui chante \"Envole-moi\" ?",
-          "answer": "Jean-Jacques Goldman"
         },
         {
           "question": "Qui chante \"La Kiffance\" ?",
@@ -13628,44 +14376,8 @@ const QUESTION_DATABASE = {
           "answer": "Maître Gims (ou Black M)"
         },
         {
-          "question": "Qui chante \"Tomber la chemise\" ?",
-          "answer": "Zebda"
-        },
-        {
-          "question": "Qui chante \"J't'emmène au vent\" ?",
-          "answer": "Louise Attaque"
-        },
-        {
-          "question": "Quel est le prénom de Mozart ?",
-          "answer": "Wolfgang"
-        },
-        {
           "question": "Qui a composé \"Les Quatre Saisons\" ?",
           "answer": "Vivaldi"
-        },
-        {
-          "question": "Qui est le chanteur de U2 ?",
-          "answer": "Bono"
-        },
-        {
-          "question": "Qui a composé la \"Lettre à Élise\" ?",
-          "answer": "Beethoven"
-        },
-        {
-          "question": "Quel instrument joue Ringo Starr ?",
-          "answer": "Batterie"
-        },
-        {
-          "question": "Qui chante \"Je t'aime... moi non plus\" ?",
-          "answer": "Serge Gainsbourg (et Jane Birkin)"
-        },
-        {
-          "question": "Quel est l'instrument principal de Frédéric Chopin ?",
-          "answer": "Piano"
-        },
-        {
-          "question": "Quel groupe chante \"Sunday Bloody Sunday\" ?",
-          "answer": "U2"
         },
         {
           "question": "Quel est le nom du chanteur de Nirvana ?",
@@ -13678,18 +14390,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel groupe chante \"Californication\" ?",
           "answer": "Red Hot Chili Peppers"
-        },
-        {
-          "question": "Qui chante \"Respect\" ?",
-          "answer": "Aretha Franklin"
-        },
-        {
-          "question": "Quel rappeur a fondé le groupe NTM avec Kool Shen ?",
-          "answer": "JoeyStarr"
-        },
-        {
-          "question": "Qui chante \"Quelqu'un m'a dit\" ?",
-          "answer": "Carla Bruni"
         },
         {
           "question": "Qui chante \"Sous le vent\" avec Garou ?",
@@ -13708,10 +14408,6 @@ const QUESTION_DATABASE = {
           "answer": "Clara Luciani"
         },
         {
-          "question": "Quel instrument joue Kenny G ?",
-          "answer": "Saxophone"
-        },
-        {
           "question": "Quel groupe chante \"Zombie\" ?",
           "answer": "The Cranberries"
         },
@@ -13720,140 +14416,32 @@ const QUESTION_DATABASE = {
           "answer": "Nicola Sirkis"
         },
         {
-          "question": "Qui chante \"Empire State of Mind\" ?",
-          "answer": "Jay-Z (et Alicia Keys)"
-        },
-        {
-          "question": "Quel est l'instrument de Miles Davis ?",
-          "answer": "Trompette"
-        },
-        {
-          "question": "Qui chante \"Femme libérée\" ?",
-          "answer": "Cookie Dingler"
-        },
-        {
           "question": "Quel groupe chante \"Another Brick in the Wall\" ?",
           "answer": "Pink Floyd"
-        },
-        {
-          "question": "Qui chante \"Tous les cris les S.O.S.\" ?",
-          "answer": "Daniel Balavoine"
-        },
-        {
-          "question": "Quel groupe chante \"Message in a Bottle\" ?",
-          "answer": "The Police"
-        },
-        {
-          "question": "Qui chante \"Bella Ciao\" (remix récent ou chant partisan) ?",
-          "answer": "Maître Gims (ou Chant populaire)"
         },
         {
           "question": "Quel groupe chante \"Sweet Child O' Mine\" ?",
           "answer": "Guns N' Roses"
         },
         {
-          "question": "Quel groupe chante \"Creep\" ?",
-          "answer": "Radiohead"
-        },
-        {
-          "question": "Qui chante \"Je ne suis pas un héros\" ?",
-          "answer": "Daniel Balavoine"
-        },
-        {
           "question": "Qui chante \"Video Games\" ?",
           "answer": "Lana Del Rey"
-        },
-        {
-          "question": "Quel groupe chante \"Every Breath You Take\" ?",
-          "answer": "The Police"
         },
         {
           "question": "Qui chante \"Confessions Nocturnes\" ?",
           "answer": "Diam's (et Vitaa)"
         },
         {
-          "question": "Quel est le nom du chanteur de Coldplay ?",
-          "answer": "Chris Martin"
-        },
-        {
-          "question": "Quel groupe chante \"Africa\" ?",
-          "answer": "Toto"
-        },
-        {
-          "question": "Qui chante \"Caroline\" ?",
-          "answer": "MC Solaar"
-        },
-        {
-          "question": "Quel groupe chante \"September\" ?",
-          "answer": "Earth Wind & Fire"
-        },
-        {
           "question": "Qui a composé \"L'Hymne à la joie\" ?",
           "answer": "Beethoven"
-        },
-        {
-          "question": "Qui chante \"Ma philosophie\" ?",
-          "answer": "Amel Bent"
         },
         {
           "question": "Qui chante \"La Foule\" ?",
           "answer": "Edith Piaf"
         },
         {
-          "question": "Quel rappeur a sorti l'album \"L'École du micro d'argent\" ?",
-          "answer": "IAM"
-        },
-        {
-          "question": "Qui chante \"Take Me to Church\" ?",
-          "answer": "Hozier"
-        },
-        {
-          "question": "Quel groupe chante \"Stairway to Heaven\" ?",
-          "answer": "Led Zeppelin"
-        },
-        {
-          "question": "Quel groupe chante \"The Sound of Silence\" ?",
-          "answer": "Simon and Garfunkel"
-        },
-        {
-          "question": "Qui chante \"Drivers License\" ?",
-          "answer": "Olivia Rodrigo"
-        },
-        {
           "question": "Qui chante \"Amsterdam\" ?",
           "answer": "Jacques Brel"
-        },
-        {
-          "question": "Quel est l'instrument de Phil Collins ?",
-          "answer": "Batterie"
-        },
-        {
-          "question": "Qui chante \"Old Town Road\" ?",
-          "answer": "Lil Nas X"
-        },
-        {
-          "question": "Qui chante \"Savoir aimer\" ?",
-          "answer": "Florent Pagny"
-        },
-        {
-          "question": "Quel instrument joue Eric Clapton ?",
-          "answer": "Guitare"
-        },
-        {
-          "question": "Quel groupe chante \"Should I Stay or Should I Go\" ?",
-          "answer": "The Clash"
-        },
-        {
-          "question": "Quel est l'instrument de Jean-Michel Jarre ?",
-          "answer": "Synthétiseur"
-        },
-        {
-          "question": "Qui chante \"Mon manège à moi\" ?",
-          "answer": "Edith Piaf"
-        },
-        {
-          "question": "Qui chante \"Royals\" ?",
-          "answer": "Lorde"
         },
         {
           "question": "Qui est le chanteur de \"Purple Haze\" ?",
@@ -13868,57 +14456,22 @@ const QUESTION_DATABASE = {
           "answer": "Garou Lavoine Patrick Fiori"
         },
         {
-          "question": "Quel groupe chante \"Wind of Change\" ?",
-          "answer": "Scorpions"
+          "question": "Qui chante 'Formidable' en 2012 ?",
+          "answer": "Stromae"
         },
         {
-          "question": "Quel instrument joue BB King ?",
-          "answer": "Guitare"
-        },
-        {
-          "question": "Qui chante \"Voyage Voyage\" ?",
-          "answer": "Desireless"
-        },
-        {
-          "question": "Quel rappeur chante \"DKR\" ?",
-          "answer": "Booba"
-        },
-        {
-          "question": "Qui chante \"Dernière Danse\" ?",
-          "answer": "Indila"
-        },
-        {
-          "question": "Qui chante \"Dance Monkey\" ?",
-          "answer": "Tones and I"
-        },
-        {
-          "question": "Qui chante \"Manhattan-Kaboul\" ?",
-          "answer": "Renaud et Axelle Red"
-        },
-        {
-          "question": "Quel groupe chante \"Enter Sandman\" ?",
-          "answer": "Metallica"
-        },
-        {
-          "question": "Qui chante \"L'Aziza\" ?",
-          "answer": "Daniel Balavoine"
-        },
-        {
-          "question": "Quel est l'instrument de Keith Richards ?",
-          "answer": "Guitare"
-        },
-        {
-          "question": "Qui chante \"Chanson sur ma drôle de vie\" ?",
-          "answer": "Véronique Sanson"
-        },
-        {
-          "question": "Quel chanteur américain est aveugle et joue du piano (Soul) ?",
-          "answer": "Ray Charles"
+          "question": "Dans quel pays est né le style musical appelé « Reggae », porté par Bob Marley ?",
+          "answer": "La Jamaïque"
         }
       ]
     },
     "3": {
       "images": [
+        {
+          "file": "../data/assets/images/Benjamin Biolay.png",
+          "question": "Qui est-ce ?",
+          "answer": "Benjamin Biolay"
+        },
         {
           "file": "../data/assets/images/Amir.png",
           "question": "Qui est-ce ?",
@@ -13948,174 +14501,7 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/Zaz.png",
           "question": "Qui est-ce ?",
           "answer": "Zaz"
-        }
-      ],
-      "sounds": [],
-      "text": [
-        {
-          "question": "Qui chante \"Ne me quitte pas\" ?",
-          "answer": "Jacques Brel"
         },
-        {
-          "question": "Qui chante \"Je te donne\" avec Jean-Jacques Goldman ?",
-          "answer": "Michael Jones"
-        },
-        {
-          "question": "Quel artiste a chanté \"Purple Rain\" ?",
-          "answer": "Prince"
-        },
-        {
-          "question": "Qui chante \"Mistral Gagnant\" ?",
-          "answer": "Renaud"
-        },
-        {
-          "question": "Qui chante \"L'Envie d'aimer\" ?",
-          "answer": "Daniel Lévi"
-        },
-        {
-          "question": "Quel groupe a chanté \"Hotel California\" ?",
-          "answer": "The Eagles"
-        },
-        {
-          "question": "Quel artiste joue de la guitare à l'envers (gaucher) ?",
-          "answer": "Jimi Hendrix"
-        },
-        {
-          "question": "Qui est le chanteur de \"Angie\" ?",
-          "answer": "Mick Jagger"
-        },
-        {
-          "question": "Quel rappeur américain a été tué en 1996 ?",
-          "answer": "Tupac (2Pac)"
-        },
-        {
-          "question": "Quel est le prénom de Beethoven ?",
-          "answer": "Ludwig"
-        },
-        {
-          "question": "Quel est le vrai nom de Johnny Hallyday ?",
-          "answer": "Jean-Philippe Smet"
-        },
-        {
-          "question": "Quel chanteur est surnommé \"The Boss\" ?",
-          "answer": "Bruce Springsteen"
-        },
-        {
-          "question": "Qui a gagné l'Eurovision pour la France en 1977 (L'Oiseau et l'Enfant) ?",
-          "answer": "Marie Myriam"
-        },
-        {
-          "question": "Quel instrument a 4 cordes et est plus gros qu'un violon ?",
-          "answer": "Violoncelle (ou Contrebasse)"
-        },
-        {
-          "question": "Quel chanteur français a écrit \"Comme d'habitude\" (My Way) ?",
-          "answer": "Claude François"
-        },
-        {
-          "question": "Qui est le batteur des Beatles ?",
-          "answer": "Ringo Starr"
-        },
-        {
-          "question": "Quel chanteur français est surnommé \"L'Amiral\" ?",
-          "answer": "Michel Polnareff"
-        },
-        {
-          "question": "Qui a composé \"Carmen\" ?",
-          "answer": "Bizet"
-        },
-        {
-          "question": "Qui chante \"Born to Run\" ?",
-          "answer": "Bruce Springsteen"
-        },
-        {
-          "question": "Quel groupe chante \"One\" ?",
-          "answer": "U2 (ou Metallica)"
-        },
-        {
-          "question": "Quel instrument joue Flea (Red Hot Chili Peppers) ?",
-          "answer": "Basse"
-        },
-        {
-          "question": "Quel groupe chante \"Losing My Religion\" ?",
-          "answer": "R.E.M."
-        },
-        {
-          "question": "Quel groupe chante \"Where Is My Mind?\" ?",
-          "answer": "Pixies"
-        },
-        {
-          "question": "Qui chante \"Respire\" ?",
-          "answer": "Mickey 3D"
-        },
-        {
-          "question": "Quel est le nom du chanteur de The Doors ?",
-          "answer": "Jim Morrison"
-        },
-        {
-          "question": "Qui a composé \"La Marche Turque\" ?",
-          "answer": "Mozart"
-        },
-        {
-          "question": "Quel rappeur a créé le label \"92i\" ?",
-          "answer": "Booba"
-        },
-        {
-          "question": "Quel groupe chante \"Sultans of Swing\" ?",
-          "answer": "Dire Straits"
-        },
-        {
-          "question": "Qui est la chanteuse de \"No Doubt\" ?",
-          "answer": "Gwen Stefani"
-        },
-        {
-          "question": "Quel rappeur a chanté \"Le monde de demain\" ?",
-          "answer": "NTM"
-        },
-        {
-          "question": "Quel groupe chante \"Bitter Sweet Symphony\" ?",
-          "answer": "The Verve"
-        },
-        {
-          "question": "Quel rappeur chante \"Suicide Social\" ?",
-          "answer": "Orelsan"
-        },
-        {
-          "question": "Quel groupe chante \"Dream On\" ?",
-          "answer": "Aerosmith"
-        },
-        {
-          "question": "Quel est l'instrument de Lizzo ?",
-          "answer": "Flûte traversière"
-        },
-        {
-          "question": "Qui chante \"Stay\" (avec Justin Bieber) ?",
-          "answer": "The Kid LAROI"
-        },
-        {
-          "question": "Quel groupe chante \"Personal Jesus\" ?",
-          "answer": "Depeche Mode"
-        },
-        {
-          "question": "Quel groupe chante \"Paranoid\" ?",
-          "answer": "Black Sabbath"
-        },
-        {
-          "question": "Quel groupe chante \"Kashmir\" ?",
-          "answer": "Led Zeppelin"
-        },
-        {
-          "question": "Quel instrument joue Mark Knopfler ?",
-          "answer": "Guitare"
-        },
-        {
-          "question": "Qui chante \"L'Aigle noir\" ?",
-          "answer": "Barbara"
-        }
-      ]
-    },
-    "4": {
-      "images": [
         {
           "file": "../data/assets/images/Doja Cat.png",
           "question": "Qui est-ce ?",
@@ -14130,18 +14516,223 @@ const QUESTION_DATABASE = {
           "file": "../data/assets/images/Madonna.png",
           "question": "Qui est-ce ?",
           "answer": "Madonna"
+        }
+      ],
+      "sounds": [
+        {
+          "file": "../data/assets/sons/chansons/difficulte_3/Earth_Wind_Fire_September.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "September — Earth, Wind & Fire"
         },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_3/Eurythmics_Sweet_Dreams.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Sweet Dreams — Eurythmics"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_3/OutKast_Hey_Ya.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Hey Ya! — OutKast"
+        }
+      ],
+      "text": [
+        {
+          "question": "Quel instrument joue Louis Armstrong ?",
+          "answer": "Trompette"
+        },
+        {
+          "question": "Qui chante \"Les Lacs du Connemara\" ?",
+          "answer": "Michel Sardou"
+        },
+        {
+          "question": "Qui chante \"I Will Always Love You\" (Bodyguard) ?",
+          "answer": "Whitney Houston"
+        },
+        {
+          "question": "Qui chante \"Alexandrie Alexandra\" ?",
+          "answer": "Claude François"
+        },
+        {
+          "question": "Quel est l'instrument de Ray Charles ?",
+          "answer": "Piano"
+        },
+        {
+          "question": "Qui a composé la musique de \"Star Wars\" ?",
+          "answer": "John Williams"
+        },
+        {
+          "question": "Quel instrument joue Carlos Santana ?",
+          "answer": "Guitare"
+        },
+        {
+          "question": "Quel est l'instrument de Slash ?",
+          "answer": "Guitare"
+        },
+        {
+          "question": "Qui chante \"Je marche seul\" ?",
+          "answer": "Jean-Jacques Goldman"
+        },
+        {
+          "question": "Quel groupe chante \"Take On Me\" ?",
+          "answer": "A-ha"
+        },
+        {
+          "question": "Qui chante \"Joe le taxi\" ?",
+          "answer": "Vanessa Paradis"
+        },
+        {
+          "question": "Qui chante \"L'Aventurier\" ?",
+          "answer": "Indochine"
+        },
+        {
+          "question": "Qui chante \"Il changeait la vie\" ?",
+          "answer": "Jean-Jacques Goldman"
+        },
+        {
+          "question": "Quel groupe chante \"Seven Nation Army\" ?",
+          "answer": "The White Stripes"
+        },
+        {
+          "question": "Qui chante \"Envole-moi\" ?",
+          "answer": "Jean-Jacques Goldman"
+        },
+        {
+          "question": "Qui chante \"Tomber la chemise\" ?",
+          "answer": "Zebda"
+        },
+        {
+          "question": "Quel est le prénom de Mozart ?",
+          "answer": "Wolfgang"
+        },
+        {
+          "question": "Qui est le chanteur de U2 ?",
+          "answer": "Bono"
+        },
+        {
+          "question": "Qui a composé la \"Lettre à Élise\" ?",
+          "answer": "Beethoven"
+        },
+        {
+          "question": "Quel est le nom du chanteur de Coldplay ?",
+          "answer": "Chris Martin"
+        },
+        {
+          "question": "Qui chante \"Old Town Road\" ?",
+          "answer": "Lil Nas X"
+        },
+        {
+          "question": "Qui chante \"Savoir aimer\" ?",
+          "answer": "Florent Pagny"
+        },
+        {
+          "question": "Quel groupe chante \"Should I Stay or Should I Go\" ?",
+          "answer": "The Clash"
+        },
+        {
+          "question": "Qui chante \"Mon manège à moi\" ?",
+          "answer": "Edith Piaf"
+        },
+        {
+          "question": "Quel artiste a chanté \"Purple Rain\" ?",
+          "answer": "Prince"
+        },
+        {
+          "question": "Qui chante \"Mistral Gagnant\" ?",
+          "answer": "Renaud"
+        },
+        {
+          "question": "Quel groupe a chanté \"Hotel California\" ?",
+          "answer": "The Eagles"
+        },
+        {
+          "question": "Quel rappeur américain a été tué en 1996 ?",
+          "answer": "Tupac (2Pac)"
+        },
+        {
+          "question": "Quel instrument a 4 cordes et est plus gros qu'un violon ?",
+          "answer": "Violoncelle (ou Contrebasse)"
+        },
+        {
+          "question": "Quel rappeur chante \"Suicide Social\" ?",
+          "answer": "Orelsan"
+        },
+        {
+          "question": "Quel groupe chante \"Dream On\" ?",
+          "answer": "Aerosmith"
+        },
+        {
+          "question": "Qui a composé la Symphonie n°9 malgré sa surdité ?",
+          "answer": "Ludwig van Beethoven"
+        },
+        {
+          "question": "Comment appelle-t-on la vitesse ou le rythme d'une pièce musicale ?",
+          "answer": "Le tempo"
+        }
+      ]
+    },
+    "4": {
+      "images": [
         {
           "file": "../data/assets/images/Mariah Carey.png",
           "question": "Qui est-ce ?",
           "answer": "Mariah Carey"
         }
       ],
-      "sounds": [],
+      "sounds": [
+        {
+          "file": "../data/assets/sons/chansons/difficulte_4/Depeche_Mode_Enjoy_the_Silence.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Enjoy the Silence — Depeche Mode"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_4/Fleetwood_Mac_Dreams.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Dreams — Fleetwood Mac"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_4/Gorillaz_Clint_Eastwood.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Clint Eastwood — Gorillaz"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_4/Stevie_Wonder_Superstition.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Superstition — Stevie Wonder"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_4/The_Cure_Friday_Im_in_Love.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Friday I'm in Love — The Cure"
+        }
+      ],
       "text": [
         {
-          "question": "Qui a composé \"Le Boléro\" ?",
-          "answer": "Ravel"
+          "question": "Qui chante \"Résiste\" ?",
+          "answer": "France Gall"
+        },
+        {
+          "question": "Qui chante \"J't'emmène au vent\" ?",
+          "answer": "Louise Attaque"
+        },
+        {
+          "question": "Quel artiste joue de la guitare à l'envers (gaucher) ?",
+          "answer": "Jimi Hendrix"
+        },
+        {
+          "question": "Quel est le prénom de Beethoven ?",
+          "answer": "Ludwig"
+        },
+        {
+          "question": "Quel est le vrai nom de Johnny Hallyday ?",
+          "answer": "Jean-Philippe Smet"
+        },
+        {
+          "question": "Qui a composé \"La Marche Turque\" ?",
+          "answer": "Mozart"
+        },
+        {
+          "question": "Quel groupe de rock suédois a remporté l'Eurovision en 1974 avec Waterloo ?",
+          "answer": "ABBA"
         },
         {
           "question": "Qui est le chanteur de Linkin Park (décédé en 2017) ?",
@@ -14152,20 +14743,8 @@ const QUESTION_DATABASE = {
           "answer": "Mozart"
         },
         {
-          "question": "Quel groupe chante \"Smoke on the Water\" ?",
-          "answer": "Deep Purple"
-        },
-        {
           "question": "Qui a composé \"Le Lac des cygnes\" ?",
           "answer": "Tchaïkovski"
-        },
-        {
-          "question": "Quel est l'instrument de Lang Lang ?",
-          "answer": "Piano"
-        },
-        {
-          "question": "Qui chante \"Hallelujah\" (version originale) ?",
-          "answer": "Leonard Cohen"
         },
         {
           "question": "Qui a composé \"Les Noces de Figaro\" ?",
@@ -14174,14 +14753,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui a composé \"La Chevauchée des Walkyries\" ?",
           "answer": "Wagner"
-        },
-        {
-          "question": "Qui a composé \"Le Clair de lune\" ?",
-          "answer": "Debussy"
-        },
-        {
-          "question": "Qui a composé \"La Traviata\" ?",
-          "answer": "Verdi"
         },
         {
           "question": "Quel est l'instrument de Stéphane Grappelli ?",
@@ -14194,24 +14765,60 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel groupe chante \"Buddy Holly\" ?",
           "answer": "Weezer"
+        },
+        {
+          "question": "Combien de touches (notes) possède un piano de concert standard ?",
+          "answer": "88"
+        },
+        {
+          "question": "À quelle famille d'instruments appartiennent la trompette, le trombone et le tuba ?",
+          "answer": "Les cuivres"
         }
       ]
     },
     "5": {
       "images": [],
-      "sounds": [],
+      "sounds": [
+        {
+          "file": "../data/assets/sons/chansons/difficulte_5/Blur_Song_2.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Song 2 — Blur"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_5/MGMT_Kids.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Kids — MGMT"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_5/Talking_Heads_Psycho_Killer.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Psycho Killer — Talking Heads"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_5/The_Clash_Should_I_Stay_or_Should_I_Go.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Should I Stay or Should I Go — The Clash"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_5/The_Police_Every_Breath_You_Take.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Every Breath You Take — The Police"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_5/The_Strokes_Last_Nite.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Last Nite — The Strokes"
+        },
+        {
+          "file": "../data/assets/sons/chansons/difficulte_5/Toto_Africa.m4a",
+          "question": "Quel est ce titre ?",
+          "answer": "Africa — Toto"
+        }
+      ],
       "text": [
         {
-          "question": "Quel est l'instrument de Yo-Yo Ma ?",
-          "answer": "Violoncelle"
-        },
-        {
-          "question": "Quel est le nom du chanteur de Radiohead ?",
-          "answer": "Thom Yorke"
-        },
-        {
-          "question": "Quel groupe chante \"Black Hole Sun\" ?",
-          "answer": "Soundgarden"
+          "question": "Qui a composé \"Le Clair de lune\" ?",
+          "answer": "Debussy"
         },
         {
           "question": "Quel rappeur a sorti \"L'étrange histoire de Mr. Anderson\" ?",
@@ -14222,24 +14829,12 @@ const QUESTION_DATABASE = {
           "answer": "Violoncelle"
         },
         {
-          "question": "Quel est l'instrument de Yehudi Menuhin ?",
-          "answer": "Violon"
-        },
-        {
-          "question": "Qui a composé \"Le Sacre du printemps\" ?",
-          "answer": "Stravinsky"
-        },
-        {
           "question": "Qui a composé \"Le Messie\" (Alléluia) ?",
           "answer": "Haendel"
         },
         {
           "question": "Qui a composé \"Les Planètes\" ?",
           "answer": "Holst"
-        },
-        {
-          "question": "Quel est l'instrument de Ravi Shankar ?",
-          "answer": "Sitar"
         },
         {
           "question": "Qui a composé \"La Symphonie du Nouveau Monde\" ?",
@@ -14252,6 +14847,14 @@ const QUESTION_DATABASE = {
         {
           "question": "Qui a composé \"Rhapsody in Blue\" ?",
           "answer": "Gershwin"
+        },
+        {
+          "question": "Quel groupe de rock a été le premier à se produire sur les sept continents, y compris l'Antarctique ?",
+          "answer": "Metallica"
+        },
+        {
+          "question": "Comment appelle-t-on le silence qui dure l'équivalent de quatre temps dans une mesure ?",
+          "answer": "Une pause"
         }
       ]
     }

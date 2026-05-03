@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><title>Snapshot - Générique</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+
+#generique-snapshot {
+  position: absolute; top: 0; left: 0;
+  width: 1920px; height: 1080px;
+  transform-origin: top left;
+  overflow: hidden; background: #000;
+}
+
+#bg-dark {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    repeating-linear-gradient(90deg, transparent 0, transparent 119px, rgba(0,0,0,.06) 119px, rgba(0,0,0,.06) 120px),
+    repeating-linear-gradient(180deg, transparent 0, transparent 79px, rgba(0,0,0,.04) 79px, rgba(0,0,0,.04) 80px),
+    radial-gradient(ellipse 90% 70% at 50% 40%, #0b0d22 0%, #060810 55%, #010108 100%);
+}
+
+.pframe { position: absolute; width: 260px; z-index: 1; overflow: visible; }
+.pf-shell {
+  position: relative; padding: 22px;
+  background:
+    linear-gradient(135deg,
+      rgba(255,242,145,.52) 0%, rgba(255,224,85,.24) 16%,
+      rgba(118,78,8,.30) 50%, rgba(58,32,0,.48) 82%, transparent 100%),
+    repeating-linear-gradient(45deg,
+      #b48018 0px, #e8c258 4px, #9a6c14 8px,
+      #d4a830 12px, #ac7c1c 16px, #deba48 20px,
+      #886010 24px, #c09028 28px),
+    linear-gradient(160deg, #b08018 0%, #d0a030 25%, #9a6e14 50%, #d0a030 75%, #b08018 100%);
+  box-shadow:
+    inset 0 0 0 3px rgba(255,238,125,.42), inset 0 0 0 6px rgba(50,28,0,.58),
+    0 0 0 3px rgba(255,238,132,.32), 0 0 0 6px rgba(38,18,0,.78),
+    18px 22px 65px rgba(0,0,0,.97), 4px 6px 0 rgba(0,0,0,.55);
+}
+.pf-shell::before, .pf-shell::after {
+  content: '◆'; position: absolute; color: #f2d054; font-size: 19px; line-height: 1;
+  text-shadow: 0 0 8px rgba(255,215,80,.75), 0 0 22px rgba(255,195,40,.35);
+}
+.pf-shell::before { top: 5px; left: 8px; }
+.pf-shell::after  { bottom: 5px; right: 8px; transform: rotate(180deg); }
+.pf-corner-tr, .pf-corner-bl {
+  position: absolute; color: #f2d054; font-size: 19px; line-height: 1;
+  text-shadow: 0 0 8px rgba(255,215,80,.75); z-index: 2;
+}
+.pf-corner-tr { top: 5px; right: 8px; }
+.pf-corner-bl { bottom: 5px; left: 8px; }
+.pf-inner {
+  position: relative; overflow: hidden; background: #060202;
+  border: 3px solid rgba(80,48,4,.78); box-shadow: inset 0 0 22px rgba(0,0,0,.92);
+}
+.pf-inner img {
+  width: 100%; height: 100%; display: block;
+  object-fit: cover; object-position: top center;
+  filter: sepia(.22) brightness(.82) contrast(1.10);
+}
+.pf-vignette {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 55% 65% at 50% 40%,
+    transparent 0%, transparent 24%, rgba(0,0,0,.38) 55%, rgba(0,0,0,.92) 100%);
+  pointer-events: none; z-index: 3;
+}
+.pname { display: none; }
+
+#pf1 { left: 65px; top: 69px; }
+#pf2 { left: 546px; top: 315px; }
+#pf3 { left: 1025px; top: 65px; }
+#pf4 { left: 68px; top: 671px; }
+#pf5 { left: 1536px; top: 672px; }
+#pf6 { left: 1025px; top: 671px; }
+#pf7 { left: 1541px; top: 39px; }
+
+#cv {
+  position: absolute; inset: 0; z-index: 2;
+  width: 1920px; height: 1080px; pointer-events: none;
+}
+
+#flash { position: absolute; inset: 0; background: #fffce8; opacity: 0; z-index: 50; pointer-events: none; }
+
+#stage-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  opacity: 0;
+  overflow: hidden;
+  background: #000;
+}
+#stage-scene img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1.08);
+}
+
+#card-fan { position: absolute; left: 880px; top: 558px; z-index: 12; pointer-events: none; }
+.qcard {
+  position: absolute; left: 0; top: 0; width: 165px; height: 226px;
+  background: linear-gradient(155deg, #fbf5e2 0%, #f0e8ce 45%, #e8dcb8 100%);
+  border: 5px solid #c8a870; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Anton', sans-serif; font-size: 96px; color: #8a5e28;
+  box-shadow: 5px 8px 24px rgba(0,0,0,.62), inset 0 0 16px rgba(200,162,82,.14), inset 0 0 0 2px rgba(255,242,182,.16);
+  opacity: 0; transform-origin: 82px 226px;
+}
+.qcard::before { content: '?'; position: absolute; top: 10px; left: 13px; font-size: 24px; color: rgba(139,96,48,.36); }
+.qcard::after  { content: '?'; position: absolute; bottom: 10px; right: 13px; font-size: 24px; color: rgba(139,96,48,.36); transform: rotate(180deg); }
+
+#logo-wrap {
+  position: absolute; left: 560px; top: 182px; width: 800px;
+  z-index: 13; opacity: 0;
+  filter: drop-shadow(0 0 65px rgba(255,218,92,.42)) drop-shadow(0 14px 35px rgba(0,0,0,.82));
+}
+#logo-wrap img { width: 100%; display: block; }
+
+#tagline {
+  position: absolute; bottom: 118px; left: 0; right: 0; text-align: center;
+  font-family: 'Oswald', sans-serif; font-size: 34px; font-weight: 300;
+  color: rgba(200,175,110,0); letter-spacing: 12px; text-transform: uppercase;
+  z-index: 13;
+}
+</style>
+</head>
+<body>
+
+<div id="generique-snapshot"
+     data-composition-id="generique-snapshot"
+     data-width="1920" data-height="1080"
+     data-start="0">
+
+  <audio id="bg-audio" data-start="0" data-duration="18" data-track-index="2"
+         src="Generique_Snapshot.mp3" data-volume="1"></audio>
+
+  <div id="bg-dark"></div>
+
+  <div class="pframe" id="pf1">
+    <div class="pf-shell">
+      <div class="pf-corner-tr">◆</div><div class="pf-corner-bl">◆</div>
+      <div class="pf-inner" style="height:268px"><img id="pi1" alt=""><div class="pf-vignette"></div></div>
+    </div>
+  </div>
+  <div class="pframe" id="pf2">
+    <div class="pf-shell">
+      <div class="pf-corner-tr">◆</div><div class="pf-corner-bl">◆</div>
+      <div class="pf-inner" style="height:268px"><img id="pi2" alt=""><div class="pf-vignette"></div></div>
+    </div>
+  </div>
+  <div class="pframe" id="pf3">
+    <div class="pf-shell">
+      <div class="pf-corner-tr">◆</div><div class="pf-corner-bl">◆</div>
+      <div class="pf-inner" style="height:268px"><img id="pi3" alt=""><div class="pf-vignette"></div></div>
+    </div>
+  </div>
+  <div class="pframe" id="pf4">
+    <div class="pf-shell">
+      <div class="pf-corner-tr">◆</div><div class="pf-corner-bl">◆</div>
+      <div class="pf-inner" style="height:268px"><img id="pi4" alt=""><div class="pf-vignette"></div></div>
+    </div>
+  </div>
+  <div class="pframe" id="pf5">
+    <div class="pf-shell">
+      <div class="pf-corner-tr">◆</div><div class="pf-corner-bl">◆</div>
+      <div class="pf-inner" style="height:268px"><img id="pi5" alt=""><div class="pf-vignette"></div></div>
+    </div>
+  </div>
+  <div class="pframe" id="pf6">
+    <div class="pf-shell">
+      <div class="pf-corner-tr">◆</div><div class="pf-corner-bl">◆</div>
+      <div class="pf-inner" style="height:268px"><img id="pi6" alt=""><div class="pf-vignette"></div></div>
+    </div>
+  </div>
+  <div class="pframe" id="pf7">
+    <div class="pf-shell">
+      <div class="pf-corner-tr">◆</div><div class="pf-corner-bl">◆</div>
+      <div class="pf-inner" style="height:360px"><img id="pi7" alt=""><div class="pf-vignette"></div></div>
+    </div>
+  </div>
+
+  <canvas id="cv" width="1920" height="1080"></canvas>
+
+  <div id="flash"></div>
+
+  <div id="stage-scene">
+    <img src="scène.png" alt="Scène de théâtre">
+  </div>
+
+  <div id="card-fan">
+    <div class="qcard" id="qc1">?</div>
+    <div class="qcard" id="qc2">?</div>
+    <div class="qcard" id="qc3">?</div>
+    <div class="qcard" id="qc4">?</div>
+    <div class="qcard" id="qc5">?</div>
+  </div>
+  <div id="logo-wrap"><img src="snapshot_logo.png" alt="Snapshot"></div>
+  <div id="tagline">Qui reconnaît le plus ?</div>
+
+</div>
+
+<script src="mix_data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script>
+function scaleComposition() {
+  var el = document.getElementById('generique-snapshot');
+  var s  = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+  var x  = (window.innerWidth  - 1920 * s) / 2;
+  var y  = (window.innerHeight - 1080 * s) / 2;
+  el.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + s + ')';
+}
+scaleComposition();
+window.addEventListener('resize', scaleComposition);
+
+(function() {
+  if (typeof MIX_PHOTOS === 'undefined') return;
+  var valid = MIX_PHOTOS.filter(function(p) { return p.validated !== false; });
+  if (!valid.length) return;
+
+  for (var i = valid.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = valid[i]; valid[i] = valid[j]; valid[j] = tmp;
+  }
+
+  for (var k = 0; k < 7; k++) {
+    var img = document.getElementById('pi' + (k + 1));
+    if (img && valid[k]) img.src = valid[k].file;
+  }
+})();
+
+function hash(x, y) {
+  var n = x * 374761393 + y * 668265263;
+  n = (n ^ (n >> 13)) * 1274126177;
+  return ((n ^ (n >> 16)) & 0x7fffffff) / 0x7fffffff;
+}
+
+var canvas = document.getElementById('cv');
+var ctx    = canvas.getContext('2d');
+var W = 1920, H = 1080;
+
+function drawDarkness(sp) {
+  ctx.clearRect(0, 0, W, H);
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.fillStyle = '#030409';
+  ctx.fillRect(0, 0, W, H);
+
+  if (sp.flicker > 0.001) {
+    var x = sp.x, y = sp.y, r = sp.r, fl = sp.flicker;
+
+    ctx.globalCompositeOperation = 'destination-out';
+    var g = ctx.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0,    'rgba(0,0,0,' + (fl * 0.97) + ')');
+    g.addColorStop(0.30, 'rgba(0,0,0,' + (fl * 0.92) + ')');
+    g.addColorStop(0.58, 'rgba(0,0,0,' + (fl * 0.66) + ')');
+    g.addColorStop(0.80, 'rgba(0,0,0,' + (fl * 0.28) + ')');
+    g.addColorStop(1.00, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.globalCompositeOperation = 'source-over';
+    var halo = ctx.createRadialGradient(x, y, r * 0.55, x, y, r * 1.08);
+    halo.addColorStop(0,   'rgba(0,0,0,0)');
+    halo.addColorStop(0.5, 'rgba(55,32,4,' + (fl * 0.06) + ')');
+    halo.addColorStop(0.8, 'rgba(40,20,2,' + (fl * 0.18) + ')');
+    halo.addColorStop(1.0, 'rgba(0,0,0,0)');
+    ctx.fillStyle = halo;
+    ctx.fillRect(0, 0, W, H);
+
+    drawDust(x, y, r, fl, sp.dustT);
+  }
+  ctx.globalCompositeOperation = 'source-over';
+}
+
+function drawDust(cx, cy, r, bright, t) {
+  for (var i = 0; i < 52; i++) {
+    var baseAngle = hash(i, 10) * Math.PI * 2;
+    var baseR     = hash(i, 11) * r * 0.78;
+    var orbit     = t * (0.12 + hash(i, 12) * 0.22) + baseAngle;
+    var floatY    = (t * (16 + hash(i, 13) * 28)) % (r * 1.8) - r * 0.5;
+    var px = cx + Math.cos(orbit) * baseR * 0.38 + Math.cos(hash(i,14) * Math.PI * 2) * baseR * 0.72;
+    var py = cy + floatY + Math.sin(hash(i,15) * Math.PI * 2) * baseR * 0.22;
+    var d  = Math.sqrt((px - cx) * (px - cx) + (py - cy) * (py - cy));
+    if (d > r * 0.88) continue;
+    var edgeFade = Math.max(0, 1 - d / (r * 0.82));
+    var sz    = 0.7 + hash(i, 16) * 2.3;
+    var alpha = bright * edgeFade * (0.18 + hash(i, 17) * 0.52);
+    var warm  = Math.floor(218 + hash(i, 18) * 37);
+    ctx.beginPath();
+    ctx.arc(px, py, sz, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(' + warm + ',' + Math.floor(warm * 0.91) + ',' + Math.floor(warm * 0.70) + ',' + alpha + ')';
+    ctx.fill();
+  }
+}
+
+window.__timelines = window.__timelines || {};
+var TOTAL = 18;
+var sp = { x: 960, y: 540, r: 295, flicker: 0, dustT: 0 };
+drawDarkness(sp);
+
+var tl = gsap.timeline({ paused: true, onUpdate: function() { drawDarkness(sp); } });
+
+tl.to(sp, { dustT: TOTAL, duration: TOTAL, ease: 'none' }, 0);
+
+tl.to(sp, { flicker: 1, duration: 0.55, ease: 'power2.out' }, 0.3);
+
+tl.to(sp, { x: 194, y: 242, r: 295, duration: 1.4, ease: 'power2.inOut' }, 0.3);
+tl.fromTo('#pf1', { scale: 0.94, immediateRender: false }, { scale: 1, duration: 0.55, ease: 'power2.out' }, 1.56);
+
+tl.to(sp, { x: 676, y: 488, r: 295, duration: 1.58, ease: 'power2.inOut' }, 2.2);
+tl.fromTo('#pf2', { scale: 0.94, immediateRender: false }, { scale: 1, duration: 0.50, ease: 'expo.out' }, 3.64);
+
+tl.to(sp, { x: 1154, y: 237, r: 295, duration: 1.52, ease: 'power3.inOut' }, 3.8);
+tl.fromTo('#pf3', { scale: 0.94, immediateRender: false }, { scale: 1, duration: 0.50, ease: 'power2.out' }, 5.16);
+
+tl.to(sp, { x: 197, y: 843, r: 295, duration: 1.65, ease: 'sine.inOut' }, 5.9);
+tl.fromTo('#pf4', { scale: 0.94, immediateRender: false }, { scale: 1, duration: 0.50, ease: 'expo.out' }, 7.3);
+
+tl.to(sp, { x: 1154, y: 843, r: 295, duration: 1.50, ease: 'power2.inOut' }, 7.7);
+tl.fromTo('#pf6', { scale: 0.94, immediateRender: false }, { scale: 1, duration: 0.50, ease: 'power3.out' }, 9.0);
+
+tl.to(sp, { x: 1666, y: 845, r: 295, duration: 1.45, ease: 'power1.inOut' }, 9.2);
+tl.fromTo('#pf5', { scale: 0.94, immediateRender: false }, { scale: 1, duration: 0.50, ease: 'power2.out' }, 10.4);
+
+tl.to(sp, { x: 1670, y: 264, r: 330, duration: 1.25, ease: 'power1.inOut' }, 10.65);
+tl.fromTo('#pf7', { scale: 0.94, immediateRender: false }, { scale: 1, duration: 0.50, ease: 'power2.out' }, 11.10);
+
+var flick1 = [[.08,.14],[.07,1],[.10,.0],[.06,.92],[.09,.18],[.08,1]];
+var ft = 11.3;
+flick1.forEach(function(f){ tl.to(sp, { flicker: f[1], duration: f[0], ease: 'none' }, ft); ft += f[0]; });
+tl.to(sp, { x: 482, y: 615, duration: 0.34, ease: 'power4.inOut' }, 11.3);
+tl.to(sp, { x: 1515, y: 288, duration: 0.30, ease: 'expo.inOut' },  11.64);
+
+var flick2 = [
+  [.05,.0],[.09,1],[.04,.28],[.07,1],[.04,.0],[.05,.88],
+  [.06,.0],[.06,1],[.08,.12],[.05,.92],[.09,.0],[.11,1],
+  [.05,.0],[.07,.72],[.10,.0]
+];
+ft = 11.9;
+flick2.forEach(function(f){ tl.to(sp, { flicker: f[1], duration: f[0], ease: 'none' }, ft); ft += f[0]; });
+tl.to(sp, { x: 714, y: 815, duration: 0.27, ease: 'power4.inOut' }, 11.9);
+tl.to(sp, { x: 1210, y: 168, duration: 0.24, ease: 'expo.inOut' },  12.17);
+tl.to('#pf7', { filter: 'brightness(0.08)', duration: 0.28, ease: 'power3.in' }, 11.9);
+tl.set('#pf7', { visibility: 'hidden' }, 12.2);
+tl.to(sp, { r: 60, duration: 0.35, ease: 'power4.in' }, 12.55);
+
+tl.fromTo('#flash', { opacity: 0, immediateRender: false },
+                    { opacity: 1, duration: 0.20, ease: 'power4.in' }, 13.42);
+
+tl.fromTo('#stage-scene', { opacity: 0, immediateRender: false },
+                          { opacity: 1, duration: 0.30, ease: 'power2.out' }, 13.50);
+
+tl.to('#flash', { opacity: 0, duration: 0.55, ease: 'power2.out' }, 13.68);
+
+tl.fromTo('#logo-wrap',
+  { opacity: 0, y: -82, scale: 0.88, immediateRender: false },
+  { opacity: 1, y: 0,   scale: 1,    duration: 0.62, ease: 'back.out(1.4)' },
+  14.0
+);
+
+var cardRots = [-35, -17, 0, 17, 35];
+var cardTs   = [14.26, 14.34, 14.18, 14.34, 14.26];
+cardRots.forEach(function(rot, i) {
+  tl.fromTo('#qc' + (i + 1),
+    { opacity: 0, y: 62, scale: 0.70, rotation: rot, transformOrigin: '82px 226px', immediateRender: false },
+    { opacity: 1, y: 0,  scale: 1,    rotation: rot, transformOrigin: '82px 226px', duration: 0.55, ease: 'back.out(1.9)' },
+    cardTs[i]
+  );
+});
+
+tl.fromTo('#tagline',
+  { opacity: 0, y: 22, immediateRender: false },
+  { opacity: 1, y: 0, color: 'rgba(200,175,110,.78)', duration: 0.72, ease: 'power2.out' },
+  15.82
+);
+
+var floatR = Math.ceil((TOTAL - 14.82) / 1.85) * 2;
+tl.to('#logo-wrap', { y: -17, duration: 0.925, yoyo: true, repeat: floatR, ease: 'sine.inOut' }, 14.82);
+
+window.__timelines['generique-snapshot'] = tl;
+
+(function() {
+  if (window.__hyperframesPlayer) return;
+  function start() {
+    document.removeEventListener('click', start);
+    var a = document.getElementById('bg-audio');
+    if (a) { a.currentTime = 0; a.play().catch(function() {}); }
+    tl.play();
+  }
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      tl.play();
+      var a = document.getElementById('bg-audio');
+      if (a) {
+        var p = a.play();
+        if (p && p.catch) p.catch(function() {
+          tl.pause(); tl.seek(0);
+          document.addEventListener('click', start);
+          var h = document.createElement('div');
+          h.textContent = '▶ Cliquer pour démarrer';
+          h.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#d4af37;font-family:Anton,sans-serif;font-size:1.5rem;letter-spacing:3px;z-index:9999;pointer-events:none;';
+          document.body.appendChild(h);
+        });
+      }
+    }, 400);
+  });
+})();
+</script>
+</body>
+</html>

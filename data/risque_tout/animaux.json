@@ -1204,7 +1204,7 @@
       "file": "data/assets/images/paon_du_jour.jpg",
       "question": "Quel est cet animal ?",
       "answer": "Paon Du Jour",
-      "difficulty": 3,
+      "difficulty": 5,
       "validated": true
     },
     {

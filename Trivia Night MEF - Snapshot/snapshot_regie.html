@@ -29,6 +29,9 @@
     <div id="grid-container"></div>
 
     <div class="admin-controls">
+        <button onclick="channel.postMessage({type:'START_INTRO'})" style="background:#4a1a6a;border:1px solid #9b59b6;color:#d7aef5;padding:6px 14px;border-radius:4px;cursor:pointer;font-weight:bold;letter-spacing:1px;">🎬 GÉNÉRIQUE</button>
+        <button onclick="channel.postMessage({type:'SKIP_INTRO'})" style="background:#333;border:1px solid #555;color:#aaa;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:.8em;">⏭</button>
+        <div style="width:10px;"></div>
         <button class="btn-mode" onclick="initGame('NORMAL')">N</button>
         <button class="btn-mode" onclick="initGame('HARD')">H</button>
         <div style="width: 15px;"></div>
@@ -53,6 +56,25 @@
                 MIX_PHOTOS_CUSTOM.forEach(p => MIX_PHOTOS.push(p));
             }
         })();
+        // ── ROUND-ROBIN PHOTOS ────────────────────────────────────────────
+        // Garantit que chaque photo est montrée avant qu'une ne revienne.
+        const SNAP_KEY = 'mef_snap_rotation';
+        function snapLog_load() { try { return JSON.parse(localStorage.getItem(SNAP_KEY)) || []; } catch { return []; } }
+        function snapLog_save(l) { localStorage.setItem(SNAP_KEY, JSON.stringify(l)); }
+        function snapLog_pickPhotos(allPhotos, count) {
+            const valid = allPhotos.filter(p => p.validated !== false);
+            let seen = snapLog_load().filter(f => valid.some(p => p.file === f));
+            const unseen = valid.filter(p => !seen.includes(p.file));
+            // Si pas assez d'inédits → reset et reprend depuis le début
+            const pool = unseen.length >= count ? unseen : valid;
+            if (unseen.length < count) seen = [];
+            const shuffled = [...pool].sort(() => Math.random() - 0.5);
+            const picks = shuffled.slice(0, count);
+            snapLog_save([...seen, ...picks.map(p => p.file)]);
+            return picks;
+        }
+        // ─────────────────────────────────────────────────────────────────
+
         function toggleDataMode() {
             const cur = localStorage.getItem('snapshot_mode') || 'normal';
             localStorage.setItem('snapshot_mode', cur === 'normal' ? 'custom' : 'normal');
@@ -91,10 +113,10 @@
             const container = document.getElementById('grid-container');
             container.innerHTML = '';
             
-            let pool = [...MIX_PHOTOS].sort(() => Math.random() - 0.5);
             // MODIF : 32 cartes en Hard (4 lignes)
-            let count = (mode === 'NORMAL') ? 24 : 32; 
-            let selectedPhotos = pool.slice(0, count);
+            let count = (mode === 'NORMAL') ? 24 : 32;
+            // Round-robin : chaque photo n'est montrée qu'une fois par rotation complète
+            let selectedPhotos = snapLog_pickPhotos(MIX_PHOTOS, count);
 
             const grid = document.createElement('div');
             grid.className = `photo-grid ${mode === 'NORMAL' ? 'grid-normal' : 'grid-hard'}`;

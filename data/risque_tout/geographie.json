@@ -5,260 +5,232 @@
   "questions": [
     {
       "type": "image",
-      "file": "data/assets/images/Algérie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Algérie",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Algérie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Allemagne.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Allemagne",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Allemagne.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Argentine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Argentine",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Argentine.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Australie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Australie",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Australie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Brésil.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Brésil",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Brésil.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Canada.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Canada",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Canada.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Chili.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Chili",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Chili.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Chine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Chine",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Chine.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Espagne.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Espagne",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Espagne.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Finlande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Finlande",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Finlande.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/France.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "France",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/France.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Grèce.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Grèce",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Grèce.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Inde.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Inde",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Inde.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Italie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Italie",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Italie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Japon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Japon",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Japon.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Maroc.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Maroc",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Maroc.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Mexique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mexique",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Mexique.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Norvège.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Norvège",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Norvège.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Portugal.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Portugal",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Portugal.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Royaume-Uni.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Royaume Uni",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Royaume-Uni.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Russie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Russie",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Russie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Suède.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Suède",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Suède.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sénégal.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sénégal",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sénégal.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tunisie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tunisie",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tunisie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Turquie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Turquie",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Turquie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Ukraine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ukraine",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Ukraine.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Égypte.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Égypte",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Égypte.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/États-Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "États Unis",
       "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Sur quel continent se trouve la France ?",
-      "answer": "Europe",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel est le plus grand pays du monde par la superficie ?",
-      "answer": "Russie",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel est le nom de la planète sur laquelle nous vivons ?",
-      "answer": "Terre",
-      "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/États-Unis.png"
     },
     {
       "type": "text",
       "question": "Quel océan sépare l'Amérique de l'Europe ?",
       "answer": "Atlantique",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Dans quel pays se trouve la Tour Eiffel ?",
-      "answer": "France",
       "difficulty": 1,
       "validated": true
     },
@@ -285,20 +257,6 @@
     },
     {
       "type": "text",
-      "question": "Sur quel continent se trouve le Brésil ?",
-      "answer": "Amérique du Sud",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Dans quel pays se trouve la Grande Muraille ?",
-      "answer": "Chine",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Dans quel pays se trouve la ville de Venise ?",
       "answer": "Italie",
       "difficulty": 1,
@@ -308,20 +266,6 @@
       "type": "text",
       "question": "Quel pays a la forme d'un hexagone ?",
       "answer": "France",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Dans quel pays se trouve la ville de Sydney ?",
-      "answer": "Australie",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Dans quel pays se trouve la ville de Barcelone ?",
-      "answer": "Espagne",
       "difficulty": 1,
       "validated": true
     },
@@ -418,202 +362,195 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Autriche.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Autriche",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Autriche.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Belgique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Belgique",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Belgique.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bolivie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bolivie",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bolivie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bulgarie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bulgarie",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bulgarie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Cameroun.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cameroun",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Cameroun.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Colombie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Colombie",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Colombie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Danemark.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Danemark",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Danemark.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Ghana.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ghana",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Ghana.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Hongrie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Hongrie",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Hongrie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Irlande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Irlande",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Irlande.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Islande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Islande",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Islande.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Kenya.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kenya",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Kenya.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nigeria.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nigeria",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nigeria.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Pays-Bas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pays Bas",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Pays-Bas.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Pologne.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pologne",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Pologne.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Pérou.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pérou",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Pérou.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Qatar.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Qatar",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Qatar.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Roumanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Roumanie",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Roumanie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Suisse.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Suisse",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Suisse.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tchéquie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tchéquie",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tchéquie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Uruguay.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Uruguay",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Uruguay.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Venezuela.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Venezuela",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Venezuela.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Équateur.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Équateur",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Équateur.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Éthiopie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Éthiopie",
       "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel est le pays le plus peuplé du monde (en 2023/2024) ?",
-      "answer": "Inde",
-      "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Éthiopie.png"
     },
     {
       "type": "text",
@@ -918,1203 +855,1203 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Afghanistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Afghanistan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Afghanistan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Albanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Albanie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Albanie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Angleterre.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Angleterre",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Angleterre.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Angola.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Angola",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Angola.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Anguilla.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Anguilla",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Anguilla.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Antarctique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Antarctique",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Antarctique.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Arabie_Saoudite.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Arabie Saoudite",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Arabie_Saoudite.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Arménie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Arménie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Arménie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Aruba.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Aruba",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Aruba.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Azerbaïdjan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Azerbaïdjan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Azerbaïdjan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bahamas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bahamas",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bahamas.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bahreïn.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bahreïn",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bahreïn.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bangladesh.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bangladesh",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bangladesh.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Belize.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Belize",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Belize.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bermudes.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bermudes",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bermudes.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bhoutan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bhoutan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bhoutan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Birmanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Birmanie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Birmanie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Biélorussie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Biélorussie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Biélorussie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bosnie-Herzégovine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bosnie Herzégovine",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bosnie-Herzégovine.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Botswana.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Botswana",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Botswana.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Brunei.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Brunei",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Brunei.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Burkina_Faso.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Burkina Faso",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Burkina_Faso.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Burundi.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Burundi",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Burundi.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bénin.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Bénin",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bénin.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Cambodge.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cambodge",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Cambodge.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Chypre.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Chypre",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Chypre.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Congo.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Congo",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Congo.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Costa_Rica.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Costa Rica",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Costa_Rica.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Croatie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Croatie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Croatie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Cuba.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cuba",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Cuba.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Curaçao.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Curaçao",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Curaçao.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Côte_DIvoire.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Côte Divoire",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Côte_DIvoire.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Djibouti.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Djibouti",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Djibouti.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Dominique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Dominique",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Dominique.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Estonie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Estonie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Estonie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Eswatini.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Eswatini",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Eswatini.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Fidji.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Fidji",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Fidji.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Gabon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Gabon",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Gabon.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Gambie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Gambie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Gambie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Gibraltar.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Gibraltar",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Gibraltar.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Groenland.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Groenland",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Groenland.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guadeloupe.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guadeloupe",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guadeloupe.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guam.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guam",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guam.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guatemala.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guatemala",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guatemala.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guernesey.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guernesey",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guernesey.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guinée-Bissau.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guinée Bissau",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guinée-Bissau.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guinée.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guinée",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guinée.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guinée_Équatoriale.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guinée Équatoriale",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guinée_Équatoriale.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guyana.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guyana",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guyana.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Guyane.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Guyane",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Guyane.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Géorgie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Géorgie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Géorgie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Haïti.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Haïti",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Haïti.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Honduras.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Honduras",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Honduras.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Hong_Kong.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Hong Kong",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Hong_Kong.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Indonésie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Indonésie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Indonésie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Irak.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Irak",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Irak.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Iran.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Iran",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Iran.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Jamaïque.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Jamaïque",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Jamaïque.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Jersey.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Jersey",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Jersey.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Jordanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Jordanie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Jordanie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Kazakhstan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kazakhstan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Kazakhstan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Kirghizistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kirghizistan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Kirghizistan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Kosovo.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kosovo",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Kosovo.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Koweït.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Koweït",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Koweït.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Laos.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Laos",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Laos.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Lesotho.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Lesotho",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Lesotho.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Lettonie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Lettonie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Lettonie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Liban.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Liban",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Liban.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Liberia.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Liberia",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Liberia.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Libye.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Libye",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Libye.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Lituanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Lituanie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Lituanie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Luxembourg.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Luxembourg",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Luxembourg.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Macao.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Macao",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Macao.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Madagascar.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Madagascar",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Madagascar.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Malaisie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Malaisie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Malaisie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Malawi.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Malawi",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Malawi.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Maldives.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Maldives",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Maldives.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Mali.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mali",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Mali.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Martinique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Martinique",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Martinique.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Mauritanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mauritanie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Mauritanie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Mayotte.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mayotte",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Mayotte.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Moldavie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Moldavie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Moldavie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Mongolie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mongolie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Mongolie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Montserrat.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Montserrat",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Montserrat.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Monténégro.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Monténégro",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Monténégro.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Mozambique.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Mozambique",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Mozambique.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Namibie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Namibie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Namibie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nicaragua.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nicaragua",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nicaragua.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Niger.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Niger",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Niger.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Niue.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Niue",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Niue.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nouvelle-Calédonie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nouvelle Calédonie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nouvelle-Calédonie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nouvelle-Zélande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nouvelle Zélande",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nouvelle-Zélande.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Népal.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Népal",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Népal.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Oman.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Oman",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Oman.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Ouganda.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ouganda",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Ouganda.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Ouzbékistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Ouzbékistan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Ouzbékistan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Pakistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pakistan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Pakistan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Palestine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Palestine",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Palestine.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Panama.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Panama",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Panama.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Paraguay.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Paraguay",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Paraguay.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Philippines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Philippines",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Philippines.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Polynésie_Française.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Polynésie Française",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Polynésie_Française.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Porto_Rico.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Porto Rico",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Porto_Rico.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Rwanda.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Rwanda",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Rwanda.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Réunion.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Réunion",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Réunion.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sahara_Occidental.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sahara Occidental",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sahara_Occidental.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Saint-Barthélemy.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Barthélemy",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Saint-Barthélemy.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Salvador.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Salvador",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Salvador.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Samoa.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Samoa",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Samoa.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Samoa_Américaines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Samoa Américaines",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Samoa_Américaines.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Serbie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Serbie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Serbie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sierra_Leone.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sierra Leone",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sierra_Leone.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Singapour.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Singapour",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Singapour.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Slovaquie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Slovaquie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Slovaquie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Slovénie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Slovénie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Slovénie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Somalie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Somalie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Somalie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Soudan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Soudan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Soudan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sri_Lanka.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sri Lanka",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sri_Lanka.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Suriname.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Suriname",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Suriname.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Syrie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Syrie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Syrie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tadjikistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tadjikistan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tadjikistan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tanzanie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tanzanie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tanzanie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Taïwan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Taïwan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Taïwan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tchad.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tchad",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tchad.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Thaïlande.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Thaïlande",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Thaïlande.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Timor_Oriental.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Timor Oriental",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Timor_Oriental.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Togo.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Togo",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Togo.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tokelau.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tokelau",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tokelau.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tonga.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tonga",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tonga.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Turkménistan.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Turkménistan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Turkménistan.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Vanuatu.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Vanuatu",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Vanuatu.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Vatican.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Vatican",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Vatican.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Viêt_Nam.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Viêt Nam",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Viêt_Nam.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Yémen.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Yémen",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Yémen.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Zambie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Zambie",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Zambie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Zimbabwe.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Zimbabwe",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Zimbabwe.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Åland.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Åland",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Åland.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Écosse.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Écosse",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Écosse.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Érythrée.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Érythrée",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Érythrée.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Caïmans.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Caïmans",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Caïmans.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Cocos.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Cocos",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Cocos.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Cook.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Cook",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Cook.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Féroé.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Féroé",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Féroé.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Malouines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Malouines",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Malouines.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Marshall.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Marshall",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Marshall.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Pitcairn.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Pitcairn",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Pitcairn.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Salomon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Salomon",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Salomon.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Île_Bouvet.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île Bouvet",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Île_Bouvet.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Île_Christmas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île Christmas",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Île_Christmas.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Île_Norfolk.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île Norfolk",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Île_Norfolk.png"
     },
     {
       "type": "text",
@@ -2559,275 +2496,275 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Afrique_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Afrique Du Sud",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Afrique_Du_Sud.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Antigua-Et-Barbuda.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Antigua Et Barbuda",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Antigua-Et-Barbuda.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Congo_rép_Dém.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Congo Rép Dém",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Congo_rép_Dém.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Corée_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Corée Du Nord",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Corée_Du_Nord.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Corée_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Corée Du Sud",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Corée_Du_Sud.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Géorgie_Du_Sud-Et-Les_Îles_Sandwich_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Géorgie Du Sud Et Les Îles Sandwich Du Sud",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Géorgie_Du_Sud-Et-Les_Îles_Sandwich_Du_Sud.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Irlande_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Irlande Du Nord",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Irlande_Du_Nord.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Macédoine_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Macédoine Du Nord",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Macédoine_Du_Nord.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Papouasie-Nouvelle-Guinée.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Papouasie Nouvelle Guinée",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Papouasie-Nouvelle-Guinée.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Pays-Bas_Caribéens.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pays Bas Caribéens",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Pays-Bas_Caribéens.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Pays_De_Galles.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Pays De Galles",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Pays_De_Galles.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/République_Centrafricaine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "République Centrafricaine",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/République_Centrafricaine.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/République_Dominicaine.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "République Dominicaine",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/République_Dominicaine.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Saint-Christophe-Et-Niévès.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Christophe Et Niévès",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Saint-Christophe-Et-Niévès.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Saint-Martin_antilles_Françaises.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Martin Antilles Françaises",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Saint-Martin_antilles_Françaises.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Saint-Martin_royaume_Des_Pays-Bas.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Martin Royaume Des Pays Bas",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Saint-Martin_royaume_Des_Pays-Bas.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Saint-Pierre-Et-Miquelon.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Pierre Et Miquelon",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Saint-Pierre-Et-Miquelon.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Saint-Vincent-Et-Les-Grenadines.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Vincent Et Les Grenadines",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Saint-Vincent-Et-Les-Grenadines.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sainte-Hélène-Ascension_Et_Tristan_Da_Cunha.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sainte Hélène Ascension Et Tristan Da Cunha",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sainte-Hélène-Ascension_Et_Tristan_Da_Cunha.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sao_Tomé-Et-Principe.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sao Tomé Et Principe",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sao_Tomé-Et-Principe.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Soudan_Du_Sud.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Soudan Du Sud",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Soudan_Du_Sud.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Svalbard_Et_Jan_Mayen.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Svalbard Et Jan Mayen",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Svalbard_Et_Jan_Mayen.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Terres_Australes_Et_Antarctiques_Françaises.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Terres Australes Et Antarctiques Françaises",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Terres_Australes_Et_Antarctiques_Françaises.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Territoire_Britannique_De_LOcéan_Indien.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Territoire Britannique De Locéan Indien",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Territoire_Britannique_De_LOcéan_Indien.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Trinité-Et-Tobago.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Trinité Et Tobago",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Trinité-Et-Tobago.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Wallis-Et-Futuna.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Wallis Et Futuna",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Wallis-Et-Futuna.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Émirats_Arabes_Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Émirats Arabes Unis",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Émirats_Arabes_Unis.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Heard-Et-Macdonald.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Heard Et Macdonald",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Heard-Et-Macdonald.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Mariannes_Du_Nord.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Mariannes Du Nord",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Mariannes_Du_Nord.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Mineures_Éloignées_Des_États-Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Mineures Éloignées Des États Unis",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Mineures_Éloignées_Des_États-Unis.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Turques-Et-Caïques.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Turques Et Caïques",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Turques-Et-Caïques.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Vierges_Britanniques.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Vierges Britanniques",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Vierges_Britanniques.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Îles_Vierges_Des_États-Unis.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Îles Vierges Des États Unis",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Îles_Vierges_Des_États-Unis.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Île_De_Man.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Île De Man",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Île_De_Man.png"
     },
     {
       "type": "text",
@@ -3356,139 +3293,139 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Andorre.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Andorre",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Andorre.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Barbade.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Barbade",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Barbade.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Cap-Vert.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Cap Vert",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Cap-Vert.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Comores.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Comores",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Comores.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Grenade.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Grenade",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Grenade.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Kiribati.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Kiribati",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Kiribati.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Liechtenstein.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Liechtenstein",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Liechtenstein.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Malte.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Malte",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Malte.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Maurice.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Maurice",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Maurice.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Micronésie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Micronésie",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Micronésie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Monaco.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Monaco",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Monaco.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nauru.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Nauru",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nauru.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Palaos.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Palaos",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Palaos.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Saint-Marin.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Saint Marin",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Saint-Marin.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sainte-Lucie.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Sainte Lucie",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sainte-Lucie.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Seychelles.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Seychelles",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Seychelles.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Tuvalu.png",
       "question": "Quel pays a ce drapeau ?",
       "answer": "Tuvalu",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Tuvalu.png"
     },
     {
       "type": "text",

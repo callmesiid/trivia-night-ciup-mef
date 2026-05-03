@@ -561,14 +561,24 @@ function displayQuestion(wagonIndex, questionIndex) {
     document.getElementById('current-points-display').textContent = `+${points} pts`;
     document.getElementById('answer-display').classList.add('visible'); // TOUJOURS VISIBLE
     
-    // Broadcast à l'écran de jeu
+    // Broadcast à l'écran de jeu (données complètes)
+    const currentTeam = gameState.teams[gameState.currentTeamIndex] || {};
+    const tierNum = questionIndex < 3 ? 1 : questionIndex < 6 ? 2 : questionIndex < 9 ? 3 : 4;
     gameChannel.postMessage({
         type: 'SHOW_QUESTION',
         data: {
-            theme: wagon.theme,
-            question: question.q,
-            questionNum: questionIndex + 1,
-            points: points
+            theme:         wagon.theme,
+            themeColor:    wagon.color || '#d4af37',
+            question:      question.q,
+            level:         questionIndex,
+            depth:         wagon.depth || 10,
+            tier:          tierNum,
+            wagonIndex:    wagonIndex,
+            questionNum:   questionIndex + 1,
+            points:        points,
+            teamName:      currentTeam.name  || '',
+            teamColor:     currentTeam.color || '#ffffff',
+            pendingPoints: wagon.pendingPoints || 0
         }
     });
     

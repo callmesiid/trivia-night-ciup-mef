@@ -296,7 +296,7 @@
       "validated": true
     },
     {
-      "file": "data/assets/images/Buzz_Lightyear.webp",
+      "file": "data/assets/images/Buzz_Lightyear.png",
       "name": "Buzz Lightyear",
       "validated": true
     },
@@ -561,7 +561,7 @@
       "validated": true
     },
     {
-      "file": "data/assets/images/Edna_Mode.webp",
+      "file": "data/assets/images/Edna_Mode.png",
       "name": "Edna Mode",
       "validated": true
     },
@@ -961,7 +961,7 @@
       "validated": true
     },
     {
-      "file": "data/assets/images/Jessie.webp",
+      "file": "data/assets/images/Jessie.png",
       "name": "Jessie",
       "validated": true
     },
@@ -1501,7 +1501,7 @@
       "validated": true
     },
     {
-      "file": "data/assets/images/Peter_Pan.webp",
+      "file": "data/assets/images/Peter Pan.png",
       "name": "Peter Pan",
       "validated": true
     },
@@ -1576,7 +1576,7 @@
       "validated": true
     },
     {
-      "file": "data/assets/images/Rapunzel.webp",
+      "file": "data/assets/images/Rapunzel.png",
       "name": "Rapunzel",
       "validated": true
     },
@@ -2011,7 +2011,7 @@
       "validated": true
     },
     {
-      "file": "data/assets/images/Woody.webp",
+      "file": "data/assets/images/Woody.png",
       "name": "Woody",
       "validated": true
     },

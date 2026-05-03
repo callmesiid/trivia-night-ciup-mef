@@ -239,6 +239,31 @@
             if (!log[themeId][level]) log[themeId][level] = [];
             if (!log[themeId][level].includes(key)) log[themeId][level].push(key);
             rtLog_save(log);
+            // Aussi écrire dans le log cross-jeux
+            crossLog_markSeen(question.question || question.answer, question.answer || '');
+        }
+        // ── LOG CROSS-JEUX (partagé avec Le Wagon via localStorage) ───────
+        const CROSS_KEY = 'mef_cross_game_seen';
+        function crossLog_load() { try { return JSON.parse(localStorage.getItem(CROSS_KEY)) || {}; } catch { return {}; } }
+        function crossLog_save(l) { localStorage.setItem(CROSS_KEY, JSON.stringify(l)); }
+        function crossLog_fp(qText, aText) {
+            return (String(qText||'').toLowerCase().trim() + '§' + String(aText||'').toLowerCase().trim());
+        }
+        function crossLog_markSeen(qText, aText) {
+            if (!qText && !aText) return;
+            const l = crossLog_load();
+            const fp = crossLog_fp(qText, aText);
+            l[fp] = (l[fp] || 0) + 1;
+            crossLog_save(l);
+        }
+        // Filtre un pool en excluant les questions déjà vues dans n'importe quel jeu.
+        // Si tout a été vu → réinitialise silencieusement et retourne tout.
+        function crossLog_filterPool(pool, qField, aField) {
+            const l = crossLog_load();
+            if (!Object.keys(l).length) return pool;
+            const unseen = pool.filter(q => !l[crossLog_fp(q[qField]||'', q[aField]||'')]);
+            if (!unseen.length) { crossLog_save({}); return pool; }
+            return unseen;
         }
         // ──────────────────────────────────────────────────────────────────
 
@@ -722,7 +747,35 @@
 
                     if(isMystere) {
                         rowLevels = [6, 7, 8, 9, 10]; rowLevels.sort(() => Math.random() - 0.5);
-                        for(let i=0; i<5; i++) questionsForThisRow.push(mysteryPool.length > 0 ? mysteryPool.pop() : {type:'text', question:'Mystère...', answer:'...'});
+
+                        // Distributions de difficulté par valeur de bucket
+                        const MYST_WEIGHTS = {
+                            6:  [60, 20, 10,  9,  1],
+                            7:  [50, 30, 10,  9,  1],
+                            8:  [20, 20, 50,  9,  1],
+                            9:  [10, 10, 15, 60,  5],
+                            10: [ 1,  9, 15, 25, 50]
+                        };
+                        // Classer le pool par difficulté (champ .level)
+                        const poolByDiff = {1:[], 2:[], 3:[], 4:[], 5:[]};
+                        mysteryPool.forEach(q => { const d = q.level || 1; if (poolByDiff[d]) poolByDiff[d].push(q); });
+
+                        function pickMysteryQ(bucketVal) {
+                            const w = MYST_WEIGHTS[bucketVal] || [20,20,20,20,20];
+                            const total = w.reduce((a,b) => a+b, 0);
+                            let r = Math.random() * total, chosen = 1;
+                            for (let d=1; d<=5; d++) { r -= w[d-1]; if (r <= 0) { chosen = d; break; } }
+                            // Tenter la difficulté choisie, fallback sur les autres si vide
+                            for (let off=0; off<5; off++) {
+                                const d = ((chosen - 1 + off) % 5) + 1;
+                                if (poolByDiff[d] && poolByDiff[d].length > 0) {
+                                    const idx = Math.floor(Math.random() * poolByDiff[d].length);
+                                    return poolByDiff[d].splice(idx, 1)[0];
+                                }
+                            }
+                            return {type:'text', question:'Mystère...', answer:'...'};
+                        }
+                        for(let i=0; i<5; i++) questionsForThisRow.push(pickMysteryQ(rowLevels[i]));
                     } else {
                         rowLevels = [1, 2, 3, 4, 5];
                         if(typeof QUESTION_DATABASE !== 'undefined' && QUESTION_DATABASE[safeId]) {
@@ -736,8 +789,10 @@
                                 }
                                 // Dédupliquer par question+fichier
                                 pool = pool.filter((v,j,a)=>a.findIndex(t=>(t.file===v.file&&t.question===v.question))===j);
-                                // Exclure déjà vus (reset auto si tous vus)
+                                // Exclure déjà vus ce niveau (reset auto si tous vus)
                                 pool = rtLog_filterQuestions(safeId, i, pool);
+                                // Exclure vus dans n'importe quel jeu (cross-game log)
+                                pool = crossLog_filterPool(pool, 'question', 'answer');
                                 pool.sort(() => Math.random() - 0.5);
                                 questionsForThisRow.push(pool.length > 0 ? pool[0] : {type:'text', question:`(Vide Niv ${i})`, answer:'...'});
                             }

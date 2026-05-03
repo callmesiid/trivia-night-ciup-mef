@@ -5,83 +5,83 @@
   "questions": [
     {
       "type": "image",
-      "file": "data/assets/images/Albus Dumbledore.png",
       "question": "Qui est-ce ?",
       "answer": "Albus Dumbledore",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Albus Dumbledore.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Draco Malfoy.png",
       "question": "Qui est-ce ?",
       "answer": "Draco Malfoy",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Draco Malfoy.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Ginny Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Ginny Weasley",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Ginny Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Harry Potter.jpg",
       "question": "Qui est-ce ?",
       "answer": "Harry Potter",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Harry Potter.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Hermione Granger.jpg",
       "question": "Qui est-ce ?",
       "answer": "Hermione Granger",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Hermione Granger.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Lord Voldemort Tom Riddle.png",
       "question": "Qui est-ce ?",
       "answer": "Lord Voldemort Tom Riddle",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Lord Voldemort Tom Riddle.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Ron Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Ron Weasley",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Ron Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Rubeus Hagrid.png",
       "question": "Qui est-ce ?",
       "answer": "Rubeus Hagrid",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Rubeus Hagrid.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Severus Snape.png",
       "question": "Qui est-ce ?",
       "answer": "Severus Snape",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Severus Snape.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sirius Black.png",
       "question": "Qui est-ce ?",
       "answer": "Sirius Black",
       "difficulty": 1,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sirius Black.png"
     },
     {
       "type": "text",
@@ -378,84 +378,91 @@
       "validated": true
     },
     {
+      "type": "text",
+      "question": "Quel objet attrapeur faut-il saisir pour finir un match de Quidditch ?",
+      "answer": "Vif d'or",
+      "difficulty": 1,
+      "validated": true
+    },
+    {
       "type": "image",
-      "file": "data/assets/images/Argus Filch.png",
       "question": "Qui est-ce ?",
       "answer": "Argus Filch",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Argus Filch.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Arthur Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Arthur Weasley",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Arthur Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Dobby.png",
       "question": "Qui est-ce ?",
       "answer": "Dobby",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Dobby.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Dudley Dursley.png",
       "question": "Qui est-ce ?",
       "answer": "Dudley Dursley",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Dudley Dursley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Gilderoy Lockhart.png",
       "question": "Qui est-ce ?",
       "answer": "Gilderoy Lockhart",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Gilderoy Lockhart.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Hedwig.png",
       "question": "Qui est-ce ?",
       "answer": "Hedwig",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Hedwig.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Molly Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Molly Weasley",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Molly Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Neville Longbottom.png",
       "question": "Qui est-ce ?",
       "answer": "Neville Longbottom",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Neville Longbottom.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Petunia Dursley.png",
       "question": "Qui est-ce ?",
       "answer": "Petunia Dursley",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Petunia Dursley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Vernon Dursley.png",
       "question": "Qui est-ce ?",
       "answer": "Vernon Dursley",
       "difficulty": 2,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Vernon Dursley.png"
     },
     {
       "type": "text",
@@ -662,13 +669,6 @@
     },
     {
       "type": "text",
-      "question": "Quel est le nom du chien à trois têtes ?",
-      "answer": "Touffu",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Qui est la dame rose et cruelle envoyée par le Ministère en 5ème année ?",
       "answer": "Dolores Ombrage",
       "difficulty": 2,
@@ -815,68 +815,75 @@
       "validated": true
     },
     {
+      "type": "text",
+      "question": "Quel est le nom du chien à trois têtes ?",
+      "answer": "Touffu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
       "type": "image",
-      "file": "data/assets/images/Cedric Diggory.png",
       "question": "Qui est-ce ?",
       "answer": "Cedric Diggory",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Cedric Diggory.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Cho Chang.png",
       "question": "Qui est-ce ?",
       "answer": "Cho Chang",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Cho Chang.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Colin Creevey.png",
       "question": "Qui est-ce ?",
       "answer": "Colin Creevey",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Colin Creevey.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Fred & George Weasley .png",
       "question": "Qui est-ce ?",
       "answer": "Fred & George Weasley ",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Fred & George Weasley .png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Lucius Malfoy.png",
       "question": "Qui est-ce ?",
       "answer": "Lucius Malfoy",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Lucius Malfoy.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Luna Lovegood.png",
       "question": "Qui est-ce ?",
       "answer": "Luna Lovegood",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Luna Lovegood.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Narcissa Malfoy.png",
       "question": "Qui est-ce ?",
       "answer": "Narcissa Malfoy",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Narcissa Malfoy.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Seamus Finnigan.png",
       "question": "Qui est-ce ?",
       "answer": "Seamus Finnigan",
       "difficulty": 3,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Seamus Finnigan.png"
     },
     {
       "type": "text",
@@ -1194,172 +1201,179 @@
       "validated": true
     },
     {
+      "type": "text",
+      "question": "Quel est le nom du chien à trois têtes gardant la Pierre Philosophale ?",
+      "answer": "Touffu",
+      "difficulty": 3,
+      "validated": true
+    },
+    {
       "type": "image",
-      "file": "data/assets/images/Alastor Mad Eye Moody.png",
       "question": "Qui est-ce ?",
       "answer": "Alastor Mad Eye Moody",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Alastor Mad Eye Moody.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Barty Crouch Jr.png",
       "question": "Qui est-ce ?",
       "answer": "Barty Crouch Jr",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Barty Crouch Jr.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bellatrix Lestrange.png",
       "question": "Qui est-ce ?",
       "answer": "Bellatrix Lestrange",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bellatrix Lestrange.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bill Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Bill Weasley",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bill Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Buckbeak.png",
       "question": "Qui est-ce ?",
       "answer": "Buckbeak",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Buckbeak.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Dean Thomas.png",
       "question": "Qui est-ce ?",
       "answer": "Dean Thomas",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Dean Thomas.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Dolores Umbridge.png",
       "question": "Qui est-ce ?",
       "answer": "Dolores Umbridge",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Dolores Umbridge.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Fang.jpg",
       "question": "Qui est-ce ?",
       "answer": "Fang",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Fang.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Filius Flitwick.png",
       "question": "Qui est-ce ?",
       "answer": "Filius Flitwick",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Filius Flitwick.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Fleur Delacour.png",
       "question": "Qui est-ce ?",
       "answer": "Fleur Delacour",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Fleur Delacour.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Fluffy.jpg",
       "question": "Qui est-ce ?",
       "answer": "Fluffy",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Fluffy.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Horace Slughorn.png",
       "question": "Qui est-ce ?",
       "answer": "Horace Slughorn",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Horace Slughorn.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Igor Karkaroff.png",
       "question": "Qui est-ce ?",
       "answer": "Igor Karkaroff",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Igor Karkaroff.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Moaning Myrtle.png",
       "question": "Qui est-ce ?",
       "answer": "Moaning Myrtle",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Moaning Myrtle.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nearly Headless Nick.png",
       "question": "Qui est-ce ?",
       "answer": "Nearly Headless Nick",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nearly Headless Nick.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nymphadora Tonks.jpg",
       "question": "Qui est-ce ?",
       "answer": "Nymphadora Tonks",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nymphadora Tonks.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Parvati Patil.png",
       "question": "Qui est-ce ?",
       "answer": "Parvati Patil",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Parvati Patil.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Percy Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Percy Weasley",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Percy Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Peter Pettigrew.png",
       "question": "Qui est-ce ?",
       "answer": "Peter Pettigrew",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Peter Pettigrew.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Quirinus Quirrell.png",
       "question": "Qui est-ce ?",
       "answer": "Quirinus Quirrell",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Quirinus Quirrell.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Remus Lupin.png",
       "question": "Qui est-ce ?",
       "answer": "Remus Lupin",
       "difficulty": 4,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Remus Lupin.png"
     },
     {
       "type": "text",
@@ -1495,372 +1509,379 @@
       "validated": true
     },
     {
+      "type": "text",
+      "question": "Quel est le nom du sortilège créé par le Prince de Sang-Mêlé pour couper ?",
+      "answer": "Sectumsempra",
+      "difficulty": 4,
+      "validated": true
+    },
+    {
       "type": "image",
-      "file": "data/assets/images/Aberforth Dumbledore.jpg",
       "question": "Qui est-ce ?",
       "answer": "Aberforth Dumbledore",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Aberforth Dumbledore.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Arabella Figg.png",
       "question": "Qui est-ce ?",
       "answer": "Arabella Figg",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Arabella Figg.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bathilda Bagshot.png",
       "question": "Qui est-ce ?",
       "answer": "Bathilda Bagshot",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bathilda Bagshot.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Bunty Broadacre.png",
       "question": "Qui est-ce ?",
       "answer": "Bunty Broadacre",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Bunty Broadacre.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Cornelius Fudge.png",
       "question": "Qui est-ce ?",
       "answer": "Cornelius Fudge",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Cornelius Fudge.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Credence.png",
       "question": "Qui est-ce ?",
       "answer": "Credence",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Credence.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Fenrir Greyback.png",
       "question": "Qui est-ce ?",
       "answer": "Fenrir Greyback",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Fenrir Greyback.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Fred Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "Fred Weasley",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Fred Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Garrick Ollivander.png",
       "question": "Qui est-ce ?",
       "answer": "Garrick Ollivander",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Garrick Ollivander.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Gellert Grindelwald.png",
       "question": "Qui est-ce ?",
       "answer": "Gellert Grindelwald",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Gellert Grindelwald.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/George Weasley.png",
       "question": "Qui est-ce ?",
       "answer": "George Weasley",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/George Weasley.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Gregory Goyle.png",
       "question": "Qui est-ce ?",
       "answer": "Gregory Goyle",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Gregory Goyle.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Griphook.jpg",
       "question": "Qui est-ce ?",
       "answer": "Griphook",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Griphook.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Helga Hufflepuff.png",
       "question": "Qui est-ce ?",
       "answer": "Helga Hufflepuff",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Helga Hufflepuff.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Jacob Kowalski.png",
       "question": "Qui est-ce ?",
       "answer": "Jacob Kowalski",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Jacob Kowalski.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/James Potter.png",
       "question": "Qui est-ce ?",
       "answer": "James Potter",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/James Potter.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Kingsley Shacklebolt.png",
       "question": "Qui est-ce ?",
       "answer": "Kingsley Shacklebolt",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Kingsley Shacklebolt.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Lavender Brown.png",
       "question": "Qui est-ce ?",
       "answer": "Lavender Brown",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Lavender Brown.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Marge Dursley.jpg",
       "question": "Qui est-ce ?",
       "answer": "Marge Dursley",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Marge Dursley.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Minerva Mcgonagall.png",
       "question": "Qui est-ce ?",
       "answer": "Minerva Mcgonagall",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Minerva Mcgonagall.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Mundungus Fletcher.jpg",
       "question": "Qui est-ce ?",
       "answer": "Mundungus Fletcher",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Mundungus Fletcher.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nagini.jpg",
       "question": "Qui est-ce ?",
       "answer": "Nagini",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nagini.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Newt Scamander.png",
       "question": "Qui est-ce ?",
       "answer": "Newt Scamander",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Newt Scamander.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Nicolas Flamel.png",
       "question": "Qui est-ce ?",
       "answer": "Nicolas Flamel",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Nicolas Flamel.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Norbert.jpg",
       "question": "Qui est-ce ?",
       "answer": "Norbert",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Norbert.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Oliver Wood.png",
       "question": "Qui est-ce ?",
       "answer": "Oliver Wood",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Oliver Wood.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Olympe Maxime.png",
       "question": "Qui est-ce ?",
       "answer": "Olympe Maxime",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Olympe Maxime.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Padma Patil.jpg",
       "question": "Qui est-ce ?",
       "answer": "Padma Patil",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Padma Patil.jpg"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Peeves.png",
       "question": "Qui est-ce ?",
       "answer": "Peeves",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Peeves.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Pomona Sprout.png",
       "question": "Qui est-ce ?",
       "answer": "Pomona Sprout",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Pomona Sprout.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Poppy Pomfrey.png",
       "question": "Qui est-ce ?",
       "answer": "Poppy Pomfrey",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Poppy Pomfrey.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Queenie Goldstein.png",
       "question": "Qui est-ce ?",
       "answer": "Queenie Goldstein",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Queenie Goldstein.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Rita Skeeter.png",
       "question": "Qui est-ce ?",
       "answer": "Rita Skeeter",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Rita Skeeter.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Rolanda Hooch.png",
       "question": "Qui est-ce ?",
       "answer": "Rolanda Hooch",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Rolanda Hooch.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Rowena Ravenclaw.png",
       "question": "Qui est-ce ?",
       "answer": "Rowena Ravenclaw",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Rowena Ravenclaw.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Rufus Scrimgeour.png",
       "question": "Qui est-ce ?",
       "answer": "Rufus Scrimgeour",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Rufus Scrimgeour.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Salazar Slytherin.png",
       "question": "Qui est-ce ?",
       "answer": "Salazar Slytherin",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Salazar Slytherin.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Scabbers.png",
       "question": "Qui est-ce ?",
       "answer": "Scabbers",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Scabbers.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Stan Shunpike.png",
       "question": "Qui est-ce ?",
       "answer": "Stan Shunpike",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Stan Shunpike.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Sybill Trelawney.png",
       "question": "Qui est-ce ?",
       "answer": "Sybill Trelawney",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Sybill Trelawney.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Teddy.png",
       "question": "Qui est-ce ?",
       "answer": "Teddy",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Teddy.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/The Bloody Baron.png",
       "question": "Qui est-ce ?",
       "answer": "The Bloody Baron",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/The Bloody Baron.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/The Fat Friar.png",
       "question": "Qui est-ce ?",
       "answer": "The Fat Friar",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/The Fat Friar.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/The Grey Lady.png",
       "question": "Qui est-ce ?",
       "answer": "The Grey Lady",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/The Grey Lady.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Viktor Krum.png",
       "question": "Qui est-ce ?",
       "answer": "Viktor Krum",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Viktor Krum.png"
     },
     {
       "type": "image",
-      "file": "data/assets/images/Xenophilius Lovegood.jpg",
       "question": "Qui est-ce ?",
       "answer": "Xenophilius Lovegood",
       "difficulty": 5,
-      "validated": true
+      "validated": true,
+      "file": "data/assets/images/Xenophilius Lovegood.jpg"
     },
     {
       "type": "text",
@@ -1894,6 +1915,13 @@
       "type": "text",
       "question": "Qui est la mère de Nymphadora Tonks ?",
       "answer": "Andromeda Black",
+      "difficulty": 5,
+      "validated": true
+    },
+    {
+      "type": "text",
+      "question": "Qui a détruit le diadème de Serdaigle ?",
+      "answer": "Le Feudeymon (Crabbe/Goyle)",
       "difficulty": 5,
       "validated": true
     }

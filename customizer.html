@@ -337,6 +337,33 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
 
 </div>
 
+<!-- ADD THEME MODAL -->
+<div id="add-theme-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:201;align-items:center;justify-content:center;">
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:24px;width:420px;display:flex;flex-direction:column;gap:14px;">
+    <h3 style="font-family:'Bebas Neue';font-size:1.2rem;color:var(--gold)">NOUVEAU THÈME</h3>
+    <div class="form-group">
+      <label>ID interne (a-z, 0-9, _ uniquement)</label>
+      <input id="at-id" class="form-input" type="text" placeholder="ex: sport, harry_potter">
+    </div>
+    <div class="form-group" id="at-label-group">
+      <label>Nom affiché</label>
+      <input id="at-label" class="form-input" type="text" placeholder="ex: Harry Potter">
+    </div>
+    <div class="form-group" id="at-name-group" style="display:none">
+      <label>Nom affiché avec emoji (ex: 🎬 Cinéma)</label>
+      <input id="at-name" class="form-input" type="text" placeholder="ex: 🧙 Harry Potter">
+    </div>
+    <div class="form-group" id="at-color-group" style="display:none">
+      <label>Couleur</label>
+      <input id="at-color" type="color" value="#3498db" style="width:60px;height:32px;border:1px solid var(--border);border-radius:4px;cursor:pointer;padding:2px;background:var(--bg3);">
+    </div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:4px;">
+      <button class="btn-cancel" onclick="closeAddThemeModal()">Annuler</button>
+      <button class="btn-save" onclick="confirmAddTheme()">Créer</button>
+    </div>
+  </div>
+</div>
+
 <!-- EDIT MODAL -->
 <div id="modal-overlay">
   <div id="modal">
@@ -891,9 +918,9 @@ function addQuestion() {
   if (!q || !a) { showToast('Question et réponse obligatoires', true); return; }
   // Wagon uses q/a fields; all other games use question/answer
   const newQ = currentGame === 'wagon'
-    ? { q, a, validated: true }
+    ? { q, a, difficulty: addDiff, type: addType, validated: true }
     : { type: addType, question: q, answer: a, difficulty: addDiff, validated: true };
-  if (currentGame !== 'wagon' && addType !== 'text' && file) newQ.file = file;
+  if (addType !== 'text' && file) newQ.file = file;
   theme.questions.push(newQ);
   saveTheme(currentGame, currentThemeId);
   document.getElementById('add-q-question').value = '';
@@ -912,8 +939,8 @@ function openEditModal(idx) {
   if (!theme) return;
   const q = theme.questions[idx];
   editingCard = idx;
-  document.getElementById('modal-question').value = q.question || '';
-  document.getElementById('modal-answer').value = q.answer || '';
+  document.getElementById('modal-question').value = (q.question !== undefined ? q.question : (q.q || ''));
+  document.getElementById('modal-answer').value   = (q.answer   !== undefined ? q.answer   : (q.a || ''));
   document.querySelectorAll('#modal-diff-selector .diff-option').forEach(el => {
     el.classList.toggle('selected', parseInt(el.dataset.diff) === (q.difficulty || 1));
   });
@@ -1016,52 +1043,62 @@ function bulkImport() {
   renderSidebar();
 }
 
-// ── ADD THEME (Surenchère / Risque Tout / Wagon) ─────────────────────────────
+// ── ADD THEME MODAL ──────────────────────────────────────────────────────────
 document.getElementById('add-theme-btn').onclick = () => {
-  if (currentGame === 'surenchere') addThemeSurenchere();
-  else if (currentGame === 'risque_tout') addThemeRisqueTout();
-  else if (currentGame === 'wagon') addThemeWagon();
+  const ov = document.getElementById('add-theme-overlay');
+  document.getElementById('at-id').value = '';
+  document.getElementById('at-label').value = '';
+  document.getElementById('at-name').value = '';
+  document.getElementById('at-color').value = '#3498db';
+  const isWagon = currentGame === 'wagon';
+  const isSur   = currentGame === 'surenchere';
+  document.getElementById('at-label-group').style.display  = isWagon ? 'none' : 'flex';
+  document.getElementById('at-name-group').style.display   = isWagon ? 'flex' : 'none';
+  document.getElementById('at-color-group').style.display  = isWagon ? 'flex' : 'none';
+  ov.style.display = 'flex';
+  setTimeout(() => document.getElementById('at-id').focus(), 50);
 };
 
-function addThemeSurenchere() {
-  const id = prompt('ID du thème (ex: mes_capitales — a-z, 0-9, _ uniquement)');
-  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide.'); return; }
-  if (gameData.surenchere[id]) { alert('Ce thème existe déjà'); return; }
-  const label = prompt('Nom affiché (ex: Capitales d\'Asie)');
-  if (!label) return;
-  const p = prompt('Question affichée (ex: Citez des capitales d\'Asie)');
-  if (!p) return;
-  gameData.surenchere[id] = { id, label, icon: 'assets/Images/geographie.png', prompt: p, answers: [] };
-  currentThemeId = id;
-  saveTheme('surenchere', id);
-  renderSidebar(); renderMain();
+function closeAddThemeModal() {
+  document.getElementById('add-theme-overlay').style.display = 'none';
 }
 
-function addThemeRisqueTout() {
-  const id = prompt('ID du thème (ex: marvel — a-z, 0-9, _ uniquement)');
-  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide.'); return; }
-  if (gameData.risque_tout[id]) { alert('Ce thème existe déjà'); return; }
-  const label = prompt('Nom affiché (ex: Marvel)');
-  if (!label) return;
-  gameData.risque_tout[id] = { id, label, icon: 'assets/Images/mystere.png', questions: [] };
-  currentThemeId = id;
-  saveTheme('risque_tout', id);
-  renderSidebar(); renderMain();
-}
+function confirmAddTheme() {
+  const id = document.getElementById('at-id').value.trim().toLowerCase().replace(/\s+/g, '_');
+  if (!id || !/^[a-z0-9_]+$/.test(id)) { showToast('ID invalide (a-z, 0-9, _ uniquement)', true); return; }
 
-function addThemeWagon() {
-  const id = prompt('ID du thème (ex: cinema — a-z, 0-9, _ uniquement)');
-  if (!id || !/^[a-z0-9_]+$/.test(id)) { if (id !== null) alert('ID invalide.'); return; }
-  const themes = gameData.wagon.themes || [];
-  if (themes.find(t => t.id === id)) { alert('Ce thème existe déjà'); return; }
-  const name = prompt('Nom affiché avec emoji (ex: 🎬 Cinéma)');
-  if (!name) return;
-  const color = prompt('Couleur hex (ex: #3498db)') || '#3498db';
-  themes.push({ id, name, color, questions: [] });
-  gameData.wagon.themes = themes;
-  currentThemeId = id;
-  saveTheme('wagon', id);
+  if (currentGame === 'wagon') {
+    const themes = gameData.wagon.themes || [];
+    if (themes.find(t => t.id === id)) { showToast('Ce thème existe déjà', true); return; }
+    const name = document.getElementById('at-name').value.trim();
+    if (!name) { showToast('Nom obligatoire', true); return; }
+    const color = document.getElementById('at-color').value || '#3498db';
+    themes.push({ id, name, color, questions: [] });
+    gameData.wagon.themes = themes;
+    currentThemeId = id;
+    saveTheme('wagon', id);
+
+  } else if (currentGame === 'risque_tout') {
+    if (gameData.risque_tout[id]) { showToast('Ce thème existe déjà', true); return; }
+    const label = document.getElementById('at-label').value.trim();
+    if (!label) { showToast('Nom obligatoire', true); return; }
+    gameData.risque_tout[id] = { id, label, icon: 'assets/Images/mystere.png', questions: [] };
+    currentThemeId = id;
+    saveTheme('risque_tout', id);
+
+  } else if (currentGame === 'surenchere') {
+    if (gameData.surenchere[id]) { showToast('Ce thème existe déjà', true); return; }
+    const label = document.getElementById('at-label').value.trim();
+    if (!label) { showToast('Nom obligatoire', true); return; }
+    const p = label; // prompt par défaut = label
+    gameData.surenchere[id] = { id, label, icon: 'assets/Images/geographie.png', prompt: p, answers: [] };
+    currentThemeId = id;
+    saveTheme('surenchere', id);
+  }
+
+  closeAddThemeModal();
   renderSidebar(); renderMain();
+  showToast('Thème créé ✓');
 }
 
 // ════════════════════════════════════════════════════════════════

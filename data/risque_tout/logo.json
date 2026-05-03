@@ -1,0 +1,1207 @@
+{
+  "id": "logo",
+  "label": "Logos & Marques",
+  "icon": "../assets/Images/mystere.png",
+  "questions": [
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Nike",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Nike.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Adidas",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Adidas.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Apple",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Apple.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "McDonald's",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/McDonalds.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Coca-Cola",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/CocaCola.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Pepsi",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Pepsi.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Amazon",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Amazon.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Google",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Google.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "YouTube",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/YouTube.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Instagram",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Instagram.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Facebook",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Facebook.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "TikTok",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/TikTok.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Starbucks",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Starbucks.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Puma",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Puma.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Burger King",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/BurgerKing.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Netflix",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Netflix.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Samsung",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Samsung.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Microsoft",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Microsoft.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "PlayStation",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/PlayStation.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Xbox",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Xbox.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Lego",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Lego.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Disney",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Disney.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "KFC",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/KFC.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Subway",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Subway.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Uber",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Uber.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "WhatsApp",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/WhatsApp.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Lacoste",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Lacoste.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Chanel",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Chanel.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Gucci",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/Gucci.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Louis Vuitton",
+      "difficulty": 1,
+      "validated": true,
+      "file": "data/assets/images/logos/1/LouisVuitton.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Tesla",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Tesla.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Spotify",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Spotify.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Airbnb",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Airbnb.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "LinkedIn",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/LinkedIn.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Dropbox",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Dropbox.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Red Bull",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/RedBull.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Intel",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Intel.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Asics",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Asics.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Levi's",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Levis.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Snapchat",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Snapchat.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Discord",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Discord.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Twitch",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Twitch.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "eBay",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/eBay.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "PayPal",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/PayPal.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "FedEx",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/FedEx.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Vans",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Vans.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Reebok",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Reebok.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "New Balance",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/NewBalance.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Converse",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Converse.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Fila",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Fila.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Decathlon",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Decathlon.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Carrefour",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Carrefour.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Auchan",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Auchan.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Monoprix",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Monoprix.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Lidl",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Lidl.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Aldi",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Aldi.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "IKEA",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Ikea.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Zara",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Zara.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "H&M",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/HM.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Uniqlo",
+      "difficulty": 2,
+      "validated": true,
+      "file": "data/assets/images/logos/2/Uniqlo.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Nvidia",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Nvidia.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Salesforce",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Salesforce.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Snowflake",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Snowflake.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Datadog",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Datadog.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Atlassian",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Atlassian.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "HubSpot",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/HubSpot.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "MongoDB",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/MongoDB.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Splunk",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Splunk.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Cloudflare",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Cloudflare.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Palantir",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Palantir.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Shopify",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Shopify.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Zendesk",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Zendesk.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "ServiceNow",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/ServiceNow.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Twilio",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Twilio.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Okta",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Okta.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Oracle",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Oracle.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Cisco",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Cisco.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "SAP",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/SAP.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Adobe",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Adobe.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Figma",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Figma.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Canva",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Canva.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Notion",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Notion.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "GitHub",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/GitHub.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "GitLab",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/GitLab.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Docker",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Docker.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Kubernetes",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Kubernetes.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "PostgreSQL",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/PostgreSQL.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "MySQL",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/MySQL.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Redis",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Redis.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Elastic",
+      "difficulty": 3,
+      "validated": true,
+      "file": "data/assets/images/logos/3/Elastic.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Supreme",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Supreme.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Patagonia",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Patagonia.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "The North Face",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/TheNorthFace.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Timberland",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Timberland.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Under Armour",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/UnderArmour.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Quiksilver",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Quiksilver.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Billabong",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Billabong.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Champion",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Champion.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Umbro",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Umbro.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Kappa",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Kappa.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Mizuno",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Mizuno.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Salomon",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Salomon.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Oakley",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Oakley.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Ray-Ban",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/RayBan.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Seiko",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Seiko.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Casio",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Casio.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Garmin",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Garmin.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "GoPro",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/GoPro.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Canon",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Canon.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Nikon",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Nikon.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Philips",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Philips.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Panasonic",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Panasonic.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Yamaha",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Yamaha.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Kawasaki",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Kawasaki.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Ducati",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Ducati.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Subaru",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Subaru.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Mazda",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Mazda.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Volvo",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Volvo.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Škoda",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/Skoda.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "SEAT",
+      "difficulty": 4,
+      "validated": true,
+      "file": "data/assets/images/logos/4/SEAT.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Snow Peak",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Snowpeak.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Arc'teryx",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/ArcTeryx.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Aesop",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Aesop.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Muji",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Muji.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Bialetti",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Bialetti.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Bang & Olufsen",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/BangOlufsen.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Sonos",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Sonos.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Bose",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Bose.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Sennheiser",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Sennheiser.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Marshall",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Marshall.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Razer",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Razer.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Logitech",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Logitech.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Corsair",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Corsair.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Alienware",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Alienware.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "MSI",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/MSI.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Acer",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Acer.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Lenovo",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Lenovo.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Asus",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Asus.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "BenQ",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/BenQ.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Synology",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Synology.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "QNAP",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/QNAP.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Ubiquiti",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Ubiquiti.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Fortinet",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Fortinet.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "JetBrains",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/JetBrains.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Terraform",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Terraform.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Grafana",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Grafana.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Prometheus",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Prometheus.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Ansible",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Ansible.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "Jenkins",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/Jenkins.png"
+    },
+    {
+      "type": "image",
+      "question": "Reconnaissez-vous ce logo ?",
+      "answer": "SonarQube",
+      "difficulty": 5,
+      "validated": true,
+      "file": "data/assets/images/logos/5/SonarQube.png"
+    }
+  ]
+}

@@ -593,12 +593,57 @@ function validateThemes() {
     renderWagonsGrid(); renderBonusPanel();
     addLog(`Thèmes validés — ${gameState.wagons.length} wagons`, 'ok');
 }
+// ── LOG CROSS-JEUX ─────────────────────────────────────────────────────────
+const CROSS_KEY = 'mef_cross_game_seen';
+function crossLog_load() { try { return JSON.parse(localStorage.getItem(CROSS_KEY)) || {}; } catch { return {}; } }
+function crossLog_save(l) { localStorage.setItem(CROSS_KEY, JSON.stringify(l)); }
+function crossLog_fp(qText, aText) {
+    return String(qText||'').toLowerCase().trim() + '§' + String(aText||'').toLowerCase().trim();
+}
+function crossLog_markSeen(qText, aText) {
+    if (!qText && !aText) return;
+    const l = crossLog_load();
+    const fp = crossLog_fp(qText, aText);
+    l[fp] = (l[fp] || 0) + 1;
+    crossLog_save(l);
+}
+function crossLog_filterPool(pool) {
+    const l = crossLog_load();
+    if (!Object.keys(l).length) return pool;
+    const unseen = pool.filter(q => !l[crossLog_fp(q.q||'', q.a||'')]);
+    if (!unseen.length) { crossLog_save({}); return pool; }
+    return unseen;
+}
+// ───────────────────────────────────────────────────────────────────────────
+
 function createWagons() {
     const depth = parseInt(document.getElementById('cfg-depth').value) || 10;
     gameState.config.depth = depth;
+
+    // IDs sélectionnés (hors mystère) — sert pour le pool dynamique
+    const selectedIds = selectedThemeIndices
+        .map(ti => AVAILABLE_THEMES[ti].id)
+        .filter(id => id !== 'mystere');
+
     gameState.wagons = selectedThemeIndices.map(ti => {
         const theme = AVAILABLE_THEMES[ti];
-        const qs = [...theme.questions].slice(0, depth);
+
+        // Mystère : pool dynamique des thèmes NON sélectionnés dans cette partie
+        let sourceQuestions;
+        if (theme.id === 'mystere') {
+            const pool = [];
+            AVAILABLE_THEMES.forEach(t => {
+                if (!selectedIds.includes(t.id) && t.id !== 'mystere') pool.push(...t.questions);
+            });
+            pool.sort(() => Math.random() - 0.5);
+            sourceQuestions = pool;
+        } else {
+            sourceQuestions = theme.questions;
+        }
+
+        // Exclure les questions déjà vues dans n'importe quel jeu cette session
+        const filtered = crossLog_filterPool([...sourceQuestions]);
+        const qs = filtered.slice(0, depth);
         while (qs.length < depth) qs.push({ q: `Q${qs.length+1}`, a: 'N/A' });
         return {
             themeId: theme.id, theme: theme.name, themeColor: theme.color,
@@ -703,8 +748,12 @@ function startTimerRegie() {
                 addLog(`🚄 EXPRESS activé : 10s — points ×3 si correct !`, 'gold');
                 channel.postMessage({ type: 'SHOW_BONUS', data: { bonus: b, teamName: gameState.teams[gameState.currentTeamIndex].name, teamColor: gameState.teams[gameState.currentTeamIndex].color } });
             }
-            // Bonus PRE_QUESTION non-POST_CORRECT → consommé maintenant
-            if (b.id !== 5 && b.id !== 1 && b.id !== 2 && b.id !== 6 && b.id !== 10) {
+            // BILLET DE RETOUR (18) reste actif jusqu'à une mauvaise réponse
+            if (b.id === 18) {
+                addLog(`🎫 BILLET DE RETOUR actif — si raté, question changée automatiquement`, 'gold');
+            }
+            // Autres PRE_QUESTION (sauf POST_CORRECT et billet de retour) → consommés maintenant
+            if (b.id !== 5 && b.id !== 1 && b.id !== 2 && b.id !== 6 && b.id !== 10 && b.id !== 18) {
                 gameState.pendingBonus = null;
                 updatePendingBonusBar();
             }
@@ -721,6 +770,8 @@ function startTimerRegie() {
             wagonIndex: cq.wagonIndex,
             theme: w.theme, themeColor: w.themeColor,
             question: cq.question,
+            questionType: cq.type || 'text',
+            questionFile: cq.file || null,
             level: cq.level + 1, depth: w.depth,
             points: cq.points,
             teamName: team.name, teamColor: team.color,
@@ -779,9 +830,23 @@ function openQuestion(wagonIndex, level) {
     bankBlockedByMalus   = false;
     resetTimerState();
 
-    gameState.currentQuestion = { wagonIndex, level, question: q.q, answer: q.a, points: pts };
+    gameState.currentQuestion = { wagonIndex, level, question: q.q, answer: q.a, points: pts, type: q.type || 'text', file: q.file || null };
+    crossLog_markSeen(q.q, q.a);
 
-    document.getElementById('q-display').textContent  = q.q;
+    const _qDisp = document.getElementById('q-display');
+    _qDisp.textContent = q.q;
+    if (q.type === 'image' && q.file) {
+        const _img = document.createElement('img');
+        _img.src = '../' + q.file;
+        _img.style.cssText = 'max-height:110px;max-width:100%;display:block;margin-top:5px;border-radius:4px;object-fit:contain;';
+        _qDisp.appendChild(_img);
+    } else if (q.type === 'sound' && q.file) {
+        const _aud = document.createElement('audio');
+        _aud.src = '../' + q.file;
+        _aud.controls = true;
+        _aud.style.cssText = 'display:block;width:100%;margin-top:6px;';
+        _qDisp.appendChild(_aud);
+    }
     document.getElementById('a-display').textContent  = q.a;
     document.getElementById('pts-display').textContent = `+${pts} pts — Q${level+1}/${w.depth} — Palier ${getTierForLevel(level+1)}`;
     const pending = w.pendingPoints + gameState.sessionPoints;
@@ -794,8 +859,8 @@ function openQuestion(wagonIndex, level) {
     updatePendingBonusBar();
     document.getElementById('question-panel').style.display = 'block';
 
-    // La question n'est PAS envoyée à l'écran ici — seulement au lancement du timer
-    channel.postMessage({ type: 'QUESTION_LOADED' });
+    // La question n'est PAS affichée à l'écran ici — seulement le thème en fond
+    channel.postMessage({ type: 'QUESTION_LOADED', data: { theme: w.theme, themeColor: w.themeColor || '#d4af37' } });
     addLog(`Q${level+1} chargée — ${w.theme} (+${pts}pts) — lance le timer pour afficher`, 'info');
 }
 
@@ -940,11 +1005,26 @@ function answerWrong() {
     const { wagonIndex, level } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
     resetTimerState();
-    gameState.expressActive = false; // EXPRESS annulé si mauvaise réponse
+    gameState.expressActive = false;
+
+    // BILLET DE RETOUR : seconde chance — question changée automatiquement
+    if (gameState.pendingBonus && gameState.pendingBonus.bonus.id === 18) {
+        const b = gameState.pendingBonus.bonus;
+        const team = gameState.teams[gameState.currentTeamIndex];
+        gameState.pendingBonus = null;
+        updatePendingBonusBar();
+        channel.postMessage({ type: 'SHOW_BONUS', data: { bonus: b, teamName: team.name, teamColor: team.color } });
+        addLog(`🎫 BILLET DE RETOUR: nouvelle question — retentez !`, 'gold');
+        rerollQuestion();
+        setQuestionZone('LOADED');
+        updateTimerUI();
+        return; // on ne change pas de tour
+    }
+
+    // Mauvaise réponse normale
     w.pendingPoints += gameState.sessionPoints;
     gameState.sessionPoints = 0;
     isAtPalierEnd = false;
-    // Annuler bonus queued (non utilisé)
     if (gameState.pendingBonus) { gameState.pendingBonus = null; updatePendingBonusBar(); }
     channel.postMessage({ type: 'WRONG_ANSWER', data: { wagonIndex, level } });
     addLog(`✗ Q${level+1} ratée — ${w.pendingPoints}pts dans le wagon`, 'bad');
@@ -958,12 +1038,7 @@ function bankPoints() {
     const w    = gameState.wagons[wagonIndex];
     const team = gameState.teams[gameState.currentTeamIndex];
     const total = gameState.sessionPoints + w.pendingPoints;
-    for (let i=0; i<w.currentLevel; i++) {
-        if (w.windowStates[i].reached && !w.windowStates[i].banked) {
-            w.windowStates[i].banked=true; w.windowStates[i].teamColor=team.color; w.windowStates[i].teamName=team.name;
-        }
-    }
-    // VOL DE BANQUE : si l'équipe a un voleur actif, les points vont à lui
+    // Déterminer d'abord le vrai bénéficiaire (vol de banque éventuel)
     let scoreRecipient = team;
     if (team.banqueVoleePar !== null && team.banqueVoleePar !== undefined) {
         const voleur = gameState.teams[team.banqueVoleePar];
@@ -974,6 +1049,14 @@ function bankPoints() {
         }
         team.banqueVoleePar = null;
     }
+    // Colorier les fenêtres avec la couleur du VRAI bénéficiaire
+    for (let i=0; i<w.currentLevel; i++) {
+        if (w.windowStates[i].reached && !w.windowStates[i].banked) {
+            w.windowStates[i].banked    = true;
+            w.windowStates[i].teamColor = scoreRecipient.color;
+            w.windowStates[i].teamName  = scoreRecipient.name;
+        }
+    }
     scoreRecipient.score += total; w.pendingPoints=0; gameState.sessionPoints=0;
     const threshold = parseInt(document.getElementById('cfg-threshold').value)||50;
     if (team.score >= threshold && !team.qualified) {
@@ -982,7 +1065,7 @@ function bankPoints() {
         addLog(`🎉 ${team.name} QUALIFIÉ !`, 'gold');
     }
     if (w.currentLevel >= w.depth) { w.completed=true; addLog(`🏁 Wagon "${w.theme}" COMPLÉTÉ !`, 'gold'); }
-    channel.postMessage({ type:'BANK_POINTS', data:{wagonIndex,teamName:team.name,teamColor:team.color,points:total,score:team.score,windowStates:w.windowStates,currentLevel:w.currentLevel} });
+    channel.postMessage({ type:'BANK_POINTS', data:{wagonIndex,teamName:scoreRecipient.name,teamColor:scoreRecipient.color,points:total,score:scoreRecipient.score,windowStates:w.windowStates,currentLevel:w.currentLevel} });
     addLog(`💰 ${team.name} banque ${total} pts (total: ${team.score})`, 'gold');
     saveHistory(`Bank: ${team.name} +${total}pts`);
     closeQuestionPanel(); nextTeamAuto(); broadcastState();
@@ -1017,20 +1100,64 @@ function closeQuestionPanel() {
     renderWagonsGrid(); updateTimerUI();
 }
 
+function getDifficultyForLevel(level, depth) {
+    // level = 0-indexed position dans le wagon
+    const d = depth || 10;
+    if (level >= d - 1) return 5;                    // finale
+    if (level >= d - 3 && level < d - 1) return 4;  // 2e et 3e depuis la fin
+    if (level === d - 4) return 3;                   // 4e depuis la fin
+    // Paliers standard (10 questions)
+    const MAP = [1, 1, 2, 2, 2, 3, 3, 4, 4, 5];
+    if (level < MAP.length) return MAP[level];
+    // Fallback proportionnel
+    const pct = level / (d - 1);
+    if (pct < 0.25) return 1;
+    if (pct < 0.50) return 2;
+    if (pct < 0.75) return 3;
+    return 4;
+}
+
 function rerollQuestion() {
     if (!gameState.currentQuestion) return;
     const { wagonIndex, level } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
-    const theme = AVAILABLE_THEMES.find(t => t.id===w.themeId);
+    const theme = AVAILABLE_THEMES.find(t => t.id === w.themeId);
     if (!theme) return;
-    const pool = theme.questions.filter((_,i) => i!==level);
+
+    // Filtrer par même difficulté que le niveau courant
+    const targetDiff = getDifficultyForLevel(level, w.depth);
+    let pool = theme.questions.filter((q, i) => i !== level && (q.difficulty || 1) === targetDiff);
+    // Fallback : toutes les questions sauf la courante
+    if (!pool.length) pool = theme.questions.filter((_, i) => i !== level);
     if (!pool.length) return;
-    const newQ = pool[Math.floor(Math.random()*pool.length)];
-    w.questions[level]=newQ; gameState.currentQuestion.question=newQ.q; gameState.currentQuestion.answer=newQ.a;
-    document.getElementById('q-display').textContent=newQ.q;
-    document.getElementById('a-display').textContent=newQ.a;
-    if (questionShownOnScreen) channel.postMessage({ type:'REROLL_QUESTION', data:{question:newQ.q} });
-    addLog(`♻ Q${level+1} changée`, 'info');
+
+    const newQ = pool[Math.floor(Math.random() * pool.length)];
+    w.questions[level] = newQ;
+    gameState.currentQuestion.question = newQ.q;
+    gameState.currentQuestion.answer   = newQ.a;
+    gameState.currentQuestion.type     = newQ.type || 'text';
+    gameState.currentQuestion.file     = newQ.file || null;
+
+    const _qd = document.getElementById('q-display');
+    _qd.textContent = newQ.q;
+    if (newQ.type === 'image' && newQ.file) {
+        const _i = document.createElement('img');
+        _i.src = '../' + newQ.file;
+        _i.style.cssText = 'max-height:110px;max-width:100%;display:block;margin-top:5px;border-radius:4px;object-fit:contain;';
+        _qd.appendChild(_i);
+    } else if (newQ.type === 'sound' && newQ.file) {
+        const _a = document.createElement('audio');
+        _a.src = '../' + newQ.file;
+        _a.controls = true;
+        _a.style.cssText = 'display:block;width:100%;margin-top:6px;';
+        _qd.appendChild(_a);
+    }
+    document.getElementById('a-display').textContent = newQ.a;
+
+    if (questionShownOnScreen) channel.postMessage({ type: 'REROLL_QUESTION', data: {
+        question: newQ.q, questionType: newQ.type || 'text', questionFile: newQ.file || null
+    }});
+    addLog(`♻ Q${level+1} changée (difficulté ${targetDiff})`, 'info');
 }
 
 // ================================================================
@@ -1228,26 +1355,9 @@ function applyBonusImmediate(bonus, teamIdx) {
             break; }
         case 11: // WAGON BAR +5
             team.score+=5; broadcastState(); addLog(`🍸 +5pts pour ${team.name}`,'gold'); break;
-        case 18: { // BILLET DE RETOUR — recule d'une question dans le wagon actuel
-            const bwIdx = gameState.selectedWagonIndex;
-            const bw = bwIdx !== null ? gameState.wagons[bwIdx] : null;
-            if (!bw || bw.currentLevel <= 0) {
-                addLog('🎫 BILLET DE RETOUR : impossible (aucun wagon ou déjà Q1)', 'bad');
-                // Restaurer le chip
-                const { teamIdx: bti, itemIdx: bii } = pendingBonusActivation || {};
-                if (bti !== undefined && bii !== undefined) { gameState.teams[bti].bonuses[bii].used = false; renderBonusPanel(); }
-                break;
-            }
-            const prevLvl = bw.currentLevel - 1;
-            const prevPts = getPointsForLevel(prevLvl + 1);
-            bw.currentLevel = prevLvl;
-            bw.windowStates[prevLvl] = { reached: false, banked: false, teamColor: null, teamName: null };
-            gameState.sessionPoints = Math.max(0, gameState.sessionPoints - prevPts);
-            renderWagonsGrid(); broadcastState();
-            channel.postMessage({ type: 'SHOW_BONUS', data: { bonus: def, teamName: team.name, teamColor: team.color } });
-            addLog(`🎫 BILLET DE RETOUR: retour Q${prevLvl + 1} dans "${bw.theme}" — retentez !`, 'gold');
+        case 18: // BILLET DE RETOUR — maintenant PRE_QUESTION (géré dans answerWrong)
+            addLog('🎫 BILLET DE RETOUR queued — activez AVANT le timer', 'gold');
             break;
-        }
         case 12: { // GRIÈVE — bloque le wagon actuellement sélectionné
             if (gameState.selectedWagonIndex !== null) {
                 gameState.wagons[gameState.selectedWagonIndex].blockedForTurn = true;

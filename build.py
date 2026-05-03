@@ -7,17 +7,40 @@ Usage:
   python build.py --custom  -> builds custom mode JS files (*_custom.js)
 
 Run from the repo root after editing JSON files in data/ or after migrate.py.
+
+── SYNCHRONISATION WAGON ↔ RISQUE TOUT ──────────────────────────────────────
+Les thèmes communs (musique, harry_potter, geographie, logo) peuvent être
+synchronisés. Modifiez les deux booléens ci-dessous AVANT de lancer build.py :
+
+  WAGON_AS_MAIN = True  →  wagon (themes.json) → Risque Tout (.json)
+  RT_AS_MAIN    = True  →  Risque Tout (.json)  → wagon (themes.json)
+  Les deux à False      →  aucune sync, build normal
+
+Les thèmes à synchroniser sont définis dans data/wagon/themes_sync.json.
+─────────────────────────────────────────────────────────────────────────────
 """
 import os, json, re, sys, glob
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT     = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT, "data")
-CUSTOM = '--custom' in sys.argv
+CUSTOM   = '--custom' in sys.argv
+
+# ── FLAGS DE SYNCHRONISATION ─────────────────────────────────────────────────
+WAGON_AS_MAIN = False   # Mettre True  : wagon → Risque Tout  (les modifs wagon écrasent RT)
+RT_AS_MAIN    = False   # Mettre True  : Risque Tout → wagon  (les modifs RT écrasent wagon)
+#  → Les deux à False : build normal sans aucune synchronisation
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 def read_json(path):
-    with open(path, encoding='utf-8') as f:
+    with open(path, encoding='utf-8-sig') as f:  # utf-8-sig gère le BOM ajouté par PowerShell
         return json.load(f)
+
+
+def write_json_file(path, data):
+    """Écrit un fichier JSON (pas un fichier JS)."""
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 def write_js(path, var_name, data, indent=2):
@@ -26,6 +49,91 @@ def write_js(path, var_name, data, indent=2):
         f.write(content)
     rel = os.path.relpath(path, ROOT)
     print(f"  ✓ {rel}")
+
+
+def wagon_to_rt(q):
+    """Convertit une question wagon (q/a) → format Risque Tout (question/answer)."""
+    qobj = {
+        'type':       q.get('type', 'text'),
+        'question':   q.get('q', ''),
+        'answer':     q.get('a', ''),
+        'difficulty': q.get('difficulty', 1),
+        'validated':  q.get('validated', True)
+    }
+    if 'file' in q:
+        qobj['file'] = q['file']
+    return qobj
+
+
+def rt_to_wagon_q(q):
+    """Convertit une question Risque Tout → format wagon (q/a)."""
+    qobj = {
+        'q': q.get('question', q.get('q', '')),
+        'a': q.get('answer',   q.get('a', ''))
+    }
+    for field in ('type', 'file', 'difficulty', 'validated'):
+        if field in q:
+            qobj[field] = q[field]
+    return qobj
+
+
+def sync_themes():
+    """Synchronise les thèmes communs entre le wagon et le Risque Tout selon les flags."""
+    if not (WAGON_AS_MAIN or RT_AS_MAIN):
+        return
+    if CUSTOM:
+        return  # Pas de sync en mode custom
+
+    wagon_dir  = os.path.join(DATA_DIR, 'wagon')
+    sync_file  = os.path.join(wagon_dir, 'themes_sync.json')
+    if not os.path.exists(sync_file):
+        print("  /!\\ themes_sync.json introuvable — sync ignorée")
+        return
+
+    sync_map   = read_json(sync_file)
+    themes_path = os.path.join(wagon_dir, 'themes.json')
+    themes     = read_json(themes_path)
+    label      = "WAGON → RT" if WAGON_AS_MAIN else "RT → WAGON"
+    print(f"\n[SYNC {label}]")
+
+    if WAGON_AS_MAIN:
+        # Wagon est la source → met à jour les fichiers RT
+        for theme in themes:
+            tid = theme.get('id', '')
+            if tid not in sync_map:
+                continue
+            rt_path = os.path.join(DATA_DIR, sync_map[tid] + '.json')
+            if not os.path.exists(rt_path):
+                print(f"  /!\\ Source RT introuvable : {rt_path}")
+                continue
+            rt_data = read_json(rt_path)
+            rt_data['questions'] = [wagon_to_rt(q) for q in theme.get('questions', [])
+                                    if q.get('validated', True)]
+            write_json_file(rt_path, rt_data)
+            print(f"  ↑ wagon/{tid} → {sync_map[tid]}  ({len(rt_data['questions'])} questions)")
+
+    else:  # RT_AS_MAIN
+        # RT est la source → met à jour wagon/themes.json
+        modified = False
+        for theme in themes:
+            tid = theme.get('id', '')
+            if tid not in sync_map:
+                continue
+            rt_path = os.path.join(DATA_DIR, sync_map[tid] + '.json')
+            if not os.path.exists(rt_path):
+                print(f"  /!\\ Source RT introuvable : {rt_path}")
+                continue
+            rt_data = read_json(rt_path)
+            new_qs  = [rt_to_wagon_q(q) for q in rt_data.get('questions', [])
+                       if q.get('validated', True)]
+            new_qs.sort(key=lambda q: q.get('difficulty', 1))
+            theme['questions'] = new_qs
+            modified = True
+            print(f"  ↓ {sync_map[tid]} → wagon/{tid}  ({len(new_qs)} questions)")
+
+        if modified:
+            write_json_file(themes_path, themes)
+            print(f"  ✓ data/wagon/themes.json mis à jour")
 
 
 def to_game_path(path):
@@ -134,11 +242,15 @@ def build_wagon():
     themes_raw = read_json(themes_file)
     themes = []
     for theme in themes_raw:
-        validated_questions = [
-            {"q": q['q'], "a": q['a']}
-            for q in theme.get('questions', [])
-            if q.get('validated', True)
-        ]
+        validated_questions = []
+        for q in theme.get('questions', []):
+            if not q.get('validated', True):
+                continue
+            qobj = {"q": q['q'], "a": q['a']}
+            if 'type' in q:       qobj['type']       = q['type']
+            if 'file' in q:       qobj['file']        = q['file']
+            if 'difficulty' in q: qobj['difficulty']  = q['difficulty']
+            validated_questions.append(qobj)
         t = {k: v for k, v in theme.items() if k != 'questions'}
         t['questions'] = validated_questions
         themes.append(t)
@@ -225,6 +337,9 @@ if __name__ == '__main__':
     print("=" * 60)
     print(f"  MEF Trivia Night — Build ({mode_label})")
     print("=" * 60)
+
+    # ── Sync Wagon ↔ RT (si activé) ──────────────────────────────
+    sync_themes()
 
     print("\n[1/4] Le Risque Tout...")
     build_risque_tout()
