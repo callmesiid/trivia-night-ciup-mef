@@ -43,13 +43,16 @@
         .team-input-row { display: flex; gap: 5px; align-items: center; margin-bottom: 6px; }
         .team-input-row input[type=text] { flex: 1; }
 
-        .team-item { display: flex; align-items: center; gap: 6px; background: #1e1e1e; padding: 6px 8px; margin-bottom: 4px; border-radius: 4px; border: 2px solid transparent; transition: border-color .2s, background .2s; cursor: pointer; }
+        .team-item { display: flex; align-items: center; gap: 6px; background: #1e1e1e; padding: 6px 8px; margin-bottom: 4px; border-radius: 4px; border: 2px solid transparent; transition: border-color .2s, background .2s; cursor: pointer; flex-wrap: wrap; }
         .team-item.active-hand { border-color: #d4af37; background: #2a2400; }
         .team-item.qualified   { border-color: #27ae60; }
         .team-dot  { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; }
         .team-name-d  { flex: 1; font-weight: bold; font-size: .85em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .team-score-d { font-family: monospace; font-size: 1.15em; color: #d4af37; min-width: 30px; text-align: right; }
         .team-actions { display: flex; gap: 3px; flex-shrink: 0; }
+        .kit-setup { width: 100%; margin-top: 5px; padding-top: 5px; border-top: 1px solid #333; display: grid; gap: 4px; cursor: default; }
+        .kit-setup label { display: grid; grid-template-columns: 58px 1fr; gap: 5px; align-items: center; color: #888; font-size: .72em; }
+        .kit-setup select { width: 100%; min-width: 0; font-size: .75em; padding: 3px 5px; }
 
         /* Mise */
         .mise-display {
@@ -156,6 +159,13 @@
                     <input type="text" id="team-name-in" placeholder="Nom de l'équipe" style="flex:1" onkeydown="if(event.key==='Enter')addTeam()">
                     <input type="color" id="team-color-in" value="#e74c3c">
                     <button type="button" class="btn-green btn-sm" onclick="addTeam()">+</button>
+                </div>
+                <div style="margin-bottom:6px;">
+                    <select id="cfg-kit-mode-surenchere" onchange="renderTeamsList()" title="Choisir comment distribuer les bonus/malus">
+                        <option value="fixed" selected>Bonus fixes pour tous</option>
+                        <option value="random">Bonus aléatoires</option>
+                        <option value="manual">Choisis par équipe</option>
+                    </select>
                 </div>
                 <div style="display:flex;gap:5px;margin-bottom:5px;">
                     <button type="button" class="btn-gray btn-sm" style="flex:1" onclick="randomizeTeams()">🎲 Ordre aléatoire</button>
@@ -325,6 +335,8 @@ const MALUS_POOL = [
     { id: 'notime',   name: 'PAS DE TEMPS',  emoji: '⏩',  desc: '-15 secondes au chrono de l\'adversaire.' },
     { id: 'plusmise', name: '+5 MISE',        emoji: '📈',  desc: '+5 à la mise de l\'adversaire (jusqu\'au max des réponses dispo). Annulé par Coup de Pouce.' }
 ];
+const RANDOM_BONUS_COUNT = 2;
+const RANDOM_MALUS_COUNT = 2;
 
 // ================================================================
 // ÉTAT GLOBAL
@@ -386,16 +398,84 @@ function addTeam() {
     const name  = document.getElementById('team-name-in').value.trim();
     const color = document.getElementById('team-color-in').value;
     if (!name) return;
-    // Toutes les équipes ont les MÊMES bonus et malus (pool complet)
-    const bonuses = BONUS_POOL.map(b => ({ id: b.id, used: false }));
-    const malus   = MALUS_POOL.map(m => ({ id: m.id, used: false }));
-    teams.push({ name, color, score: 0, bonuses, malus });
+    const kit = makeFixedKit();
+    teams.push({
+        name, color, score: 0, bonuses: kit.bonuses, malus: kit.malus,
+        bonusSelections: kit.bonuses.map(b => b.id),
+        malusSelections: kit.malus.map(m => m.id)
+    });
     document.getElementById('team-name-in').value = '';
     document.getElementById('team-color-in').value = randomColor();
     document.getElementById('btn-validate-teams').disabled = teams.length < 2;
     renderTeamsList();
     updatePlayingTeamSelect();
     log(`+ ${name} ajouté`);
+}
+
+function makeFixedKit() {
+    return {
+        bonuses: BONUS_POOL.map(b => ({ id: b.id, used: false })),
+        malus: MALUS_POOL.map(m => ({ id: m.id, used: false }))
+    };
+}
+
+function makeRandomKit() {
+    return {
+        bonuses: BONUS_POOL.map(b => b.id).sort(() => Math.random() - .5).slice(0, RANDOM_BONUS_COUNT).map(id => ({ id, used: false })),
+        malus: MALUS_POOL.map(m => m.id).sort(() => Math.random() - .5).slice(0, RANDOM_MALUS_COUNT).map(id => ({ id, used: false }))
+    };
+}
+
+function optionHTML(pool, selectedId) {
+    return pool.map(x => `<option value="${x.id}" ${String(x.id)===String(selectedId)?'selected':''}>${x.emoji} ${x.name}</option>`).join('');
+}
+
+function renderKitSetup(t, i) {
+    const mode = document.getElementById('cfg-kit-mode-surenchere')?.value || 'fixed';
+    if (mode !== 'manual') return '';
+    if (!t.bonusSelections || !t.bonusSelections.length) t.bonusSelections = BONUS_POOL.map(b => b.id).slice(0, RANDOM_BONUS_COUNT);
+    if (!t.malusSelections || !t.malusSelections.length) t.malusSelections = MALUS_POOL.map(m => m.id).slice(0, RANDOM_MALUS_COUNT);
+    while (t.bonusSelections.length < RANDOM_BONUS_COUNT) t.bonusSelections.push(BONUS_POOL[t.bonusSelections.length % BONUS_POOL.length].id);
+    while (t.malusSelections.length < RANDOM_MALUS_COUNT) t.malusSelections.push(MALUS_POOL[t.malusSelections.length % MALUS_POOL.length].id);
+    const bonusRows = t.bonusSelections.slice(0, RANDOM_BONUS_COUNT).map((id, bi) => `<label>Bonus ${bi+1}<select onchange="setTeamKitSelection(${i},'bonus',${bi},this.value)">${optionHTML(BONUS_POOL, id)}</select></label>`).join('');
+    const malusRows = t.malusSelections.slice(0, RANDOM_MALUS_COUNT).map((id, mi) => `<label>Malus ${mi+1}<select onchange="setTeamKitSelection(${i},'malus',${mi},this.value)">${optionHTML(MALUS_POOL, id)}</select></label>`).join('');
+    return `<div class="kit-setup" onclick="event.stopPropagation()">${bonusRows}${malusRows}</div>`;
+}
+
+function setTeamKitSelection(teamIdx, kind, slot, value) {
+    const t = teams[teamIdx];
+    if (!t) return;
+    if (kind === 'bonus') {
+        if (!t.bonusSelections) t.bonusSelections = [];
+        t.bonusSelections[slot] = value;
+    } else {
+        if (!t.malusSelections) t.malusSelections = [];
+        t.malusSelections[slot] = value;
+    }
+}
+
+function applyKitModeToTeams() {
+    const mode = document.getElementById('cfg-kit-mode-surenchere')?.value || 'fixed';
+    teams.forEach(t => {
+        if (mode === 'fixed') {
+            const kit = makeFixedKit();
+            t.bonuses = kit.bonuses;
+            t.malus = kit.malus;
+            t.bonusSelections = kit.bonuses.map(b => b.id);
+            t.malusSelections = kit.malus.map(m => m.id);
+        } else if (mode === 'random') {
+            const kit = makeRandomKit();
+            t.bonuses = kit.bonuses;
+            t.malus = kit.malus;
+            t.bonusSelections = kit.bonuses.map(b => b.id);
+            t.malusSelections = kit.malus.map(m => m.id);
+        } else {
+            if (!t.bonusSelections || !t.bonusSelections.length) t.bonusSelections = BONUS_POOL.map(b => b.id).slice(0, RANDOM_BONUS_COUNT);
+            if (!t.malusSelections || !t.malusSelections.length) t.malusSelections = MALUS_POOL.map(m => m.id).slice(0, RANDOM_MALUS_COUNT);
+            t.bonuses = t.bonusSelections.slice(0, RANDOM_BONUS_COUNT).map(id => ({ id, used: false }));
+            t.malus = t.malusSelections.slice(0, RANDOM_MALUS_COUNT).map(id => ({ id, used: false }));
+        }
+    });
 }
 
 function removeTeam(i) {
@@ -415,6 +495,7 @@ function randomizeTeams() { teams.sort(() => Math.random() - .5); renderTeamsLis
 
 function validateTeams() {
     if (teams.length < 2) { alert('Ajoutez au moins 2 équipes !'); return; }
+    applyKitModeToTeams();
     phase = 'GAME';
     document.getElementById('team-setup-area').style.display = 'none';
     document.getElementById('team-locked-area').style.display = 'block';
@@ -449,7 +530,8 @@ function renderTeamsList() {
                 <button type="button" class="btn-sm" onclick="event.stopPropagation();moveTeam(${i},-1)" ${i===0?'disabled':''}>↑</button>
                 <button type="button" class="btn-sm" onclick="event.stopPropagation();moveTeam(${i},1)"  ${i===teams.length-1?'disabled':''}>↓</button>
                 <button type="button" class="btn-sm btn-red" onclick="event.stopPropagation();removeTeam(${i})">✕</button>
-            </div>`}`;
+            </div>
+            ${renderKitSetup(t, i)}`}`;
         el.appendChild(div);
     });
 }

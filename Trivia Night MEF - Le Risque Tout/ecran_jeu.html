@@ -331,7 +331,6 @@
             '../assets/Images/-3.png', '../assets/Images/-4.png', '../assets/Images/-5.png', '../assets/Images/+1.png',
             '../assets/Images/+2.png', '../assets/Images/+3.png', '../assets/Images/+5.png',
         ];
-        const MAX_SPINS = 5;
 
         // DOM Elements
         const retroOverlay = document.getElementById('retro-overlay');
@@ -382,7 +381,7 @@
         let totalBuckets = 0, removedBuckets = 0;
         let currentAudio = null;
         let gameMode = 'NORMAL'; 
-        let spinsNeeded = 5;    
+        let spinsNeeded = 7;    
 
         // VARIABLES ROUE
         let currentRotation = 0, isSpinning = false;
@@ -496,7 +495,7 @@
             } 
             else { // NORMAL
                 document.body.classList.remove('mode-quick', 'mode-hard');
-                spinsNeeded = 5;
+                spinsNeeded = 7;
                 wheelCont.style.display = 'block'; 
                 quickSlots.style.display = 'none'; 
                 hardBtn.style.display = 'none';

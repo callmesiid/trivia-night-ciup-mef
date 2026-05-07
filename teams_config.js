@@ -4,8 +4,9 @@
 //  Laissez le tableau vide ([]) pour une saisie manuelle.
 // ═══════════════════════════════════════════════════════════
 const TEAMS_CONFIG = [
-  { "name": "Équipe A", "color": "#e74c3c" },
-  { "name": "Équipe B", "color": "#3498db" },
-  { "name": "Équipe C", "color": "#27ae60" },
-  { "name": "Équipe D", "color": "#f39c12" }
+  { "name": "Les Crocodiles Du Nil🐊", "color": "#096e00" },
+  { "name": "Rafa Jódar Vamos 🏓", "color": "#3498db" },
+  { "name": "Just The Girls 💅🏽", "color": "#d400ff" },
+  { "name": "Les Pastafaristes 🍝", "color": "#f31212" },
+  { "name": "Idk 🥸", "color": "#f39c12" }
 ];

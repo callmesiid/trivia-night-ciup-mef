@@ -6351,7 +6351,7 @@ const QUESTION_DATABASE = {
           "answer": "Timon"
         },
         {
-          "file": "../data/assets/images/Woody.webp",
+          "file": "../data/assets/images/Woody.png",
           "question": "Qui est-ce ?",
           "answer": "Woody"
         }
@@ -6605,7 +6605,7 @@ const QUESTION_DATABASE = {
           "answer": "Jasmine"
         },
         {
-          "file": "../data/assets/images/Jessie.webp",
+          "file": "../data/assets/images/Jessie.png",
           "question": "Qui est-ce ?",
           "answer": "Jessie"
         },
@@ -6830,7 +6830,7 @@ const QUESTION_DATABASE = {
           "answer": "Degout"
         },
         {
-          "file": "../data/assets/images/Edna_Mode.webp",
+          "file": "../data/assets/images/Edna_Mode.png",
           "question": "Qui est-ce ?",
           "answer": "Edna Mode"
         },

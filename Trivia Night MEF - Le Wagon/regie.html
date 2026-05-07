@@ -27,7 +27,7 @@
         input[type=color] { width: 36px; height: 28px; border: 1px solid #444; border-radius: 4px; cursor: pointer; padding: 1px; }
         input[type=number] { width: 70px; } input[type=text] { flex: 1; }
         .input-row { display: flex; gap: 5px; align-items: center; margin-bottom: 6px; }
-        .team-item { display: flex; align-items: center; gap: 6px; background: #222; padding: 6px 8px; margin-bottom: 4px; border-radius: 4px; border: 1px solid #333; transition: border-color .2s; }
+        .team-item { display: flex; align-items: center; gap: 6px; background: #222; padding: 6px 8px; margin-bottom: 4px; border-radius: 4px; border: 1px solid #333; transition: border-color .2s; flex-wrap: wrap; }
         .team-item.active-turn { border-color: #d4af37; background: #2a2400; }
         .team-item.qualified   { border-color: #27ae60; }
         .team-dot  { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
@@ -156,6 +156,9 @@
         .replace-theme-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 10px 0; }
         .replace-theme-opt  { padding: 8px; background: #222; border: 1px solid #444; border-radius: 4px; cursor: pointer; text-align: center; font-size: .8em; }
         .replace-theme-opt:hover { border-color: #e67e22; background: #2a2000; }
+        .kit-setup { width: 100%; margin-top: 6px; padding-top: 6px; border-top: 1px solid #333; display: grid; gap: 4px; }
+        .kit-setup label { display: grid; grid-template-columns: 58px 1fr; gap: 5px; align-items: center; color: #888; font-size: .72em; }
+        .kit-setup select { width: 100%; min-width: 0; font-size: .75em; padding: 3px 5px; }
         #right-col { display: flex; flex-direction: column; overflow-y: auto; }
         .main-btn-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
         ::-webkit-scrollbar { width: 5px; }
@@ -183,6 +186,7 @@
         <div class="cfg-row"><span class="cfg-label">Profondeur wagons :</span><input type="number" id="cfg-depth" min="4" max="10" value="10"><span style="color:#aaa">questions</span></div>
         <div class="cfg-row"><span class="cfg-label">Seuil qualification :</span><input type="number" id="cfg-threshold" min="5" max="200" value="50"><span style="color:#aaa">pts</span></div>
         <div class="cfg-row"><span class="cfg-label">Timer par défaut :</span><input type="number" id="cfg-timer" min="10" max="90" value="30"><span style="color:#aaa">sec</span></div>
+        <div class="cfg-row"><span class="cfg-label">Bonus / malus :</span><select id="cfg-kit-mode" onchange="renderTeamsList()"><option value="random" selected>Aléatoire</option><option value="manual">Choisi par équipe</option></select></div>
         <div style="display:flex;gap:6px;margin-top:8px;">
             <button type="button" class="btn-gold" style="flex:1" onclick="sendIntro()">🎬 INTRO</button>
             <button type="button" class="btn-blue" style="flex:1" onclick="skipIntro()">⏭ SKIP</button>
@@ -488,19 +492,78 @@ function addTeam() {
     const name = document.getElementById('team-name-in').value.trim();
     if (!name) return;
     const color = document.getElementById('team-color-in').value;
-    // Assigner 3 bonus + 2 malus aléatoires
-    const allBonusIds = BONUSES.map(b => b.id).sort(() => Math.random() - 0.5);
-    const bonuses = allBonusIds.slice(0, GAME_CONFIG.bonusPerTeam).map(id => ({ id, used: false }));
-    const allMalusIds = MALUS.map(m => m.id).sort(() => Math.random() - 0.5);
-    const malusItems = allMalusIds.slice(0, GAME_CONFIG.malusPerTeam).map(id => ({ id, used: false }));
+    const kit = makeRandomKit();
     gameState.teams.push({
-        name, color, score: 0, bonuses, malus: malusItems, qualified: false,
+        name, color, score: 0, bonuses: kit.bonuses, malus: kit.malus,
+        bonusSelections: kit.bonuses.map(b => b.id), malusSelections: kit.malus.map(m => m.id),
+        qualified: false,
         skipNextTurn: false, bankBlocked: false, timerReduction: 0, banqueVoleePar: null
     });
     document.getElementById('team-name-in').value = '';
     document.getElementById('team-color-in').value = randomColor();
     renderTeamsList(); updateManualSelect();
     addLog(`+ ${name}`, 'ok');
+}
+
+function makeRandomKit() {
+    const allBonusIds = BONUSES.map(b => b.id).sort(() => Math.random() - 0.5);
+    const allMalusIds = MALUS.map(m => m.id).sort(() => Math.random() - 0.5);
+    return {
+        bonuses: allBonusIds.slice(0, GAME_CONFIG.bonusPerTeam).map(id => ({ id, used: false })),
+        malus: allMalusIds.slice(0, GAME_CONFIG.malusPerTeam).map(id => ({ id, used: false }))
+    };
+}
+
+function kitOptionHTML(items, selectedId) {
+    return items.map(x => `<option value="${x.id}" ${String(x.id)===String(selectedId)?'selected':''}>${x.emoji} ${x.name}</option>`).join('');
+}
+
+function renderKitSetup(t, i) {
+    if ((document.getElementById('cfg-kit-mode')?.value || 'random') !== 'manual') return '';
+    if (!t.bonusSelections || t.bonusSelections.length !== GAME_CONFIG.bonusPerTeam) {
+        t.bonusSelections = (t.bonuses || []).map(b => b.id).slice(0, GAME_CONFIG.bonusPerTeam);
+        while (t.bonusSelections.length < GAME_CONFIG.bonusPerTeam) t.bonusSelections.push(BONUSES[t.bonusSelections.length % BONUSES.length].id);
+    }
+    if (!t.malusSelections || t.malusSelections.length !== GAME_CONFIG.malusPerTeam) {
+        t.malusSelections = (t.malus || []).map(m => m.id).slice(0, GAME_CONFIG.malusPerTeam);
+        while (t.malusSelections.length < GAME_CONFIG.malusPerTeam) t.malusSelections.push(MALUS[t.malusSelections.length % MALUS.length].id);
+    }
+    const bonusRows = t.bonusSelections.map((id, bi) => `<label>Bonus ${bi+1}<select onchange="setTeamKitSelection(${i},'bonus',${bi},this.value)">${kitOptionHTML(BONUSES, id)}</select></label>`).join('');
+    const malusRows = t.malusSelections.map((id, mi) => `<label>Malus ${mi+1}<select onchange="setTeamKitSelection(${i},'malus',${mi},this.value)">${kitOptionHTML(MALUS, id)}</select></label>`).join('');
+    return `<div class="kit-setup">${bonusRows}${malusRows}</div>`;
+}
+
+function setTeamKitSelection(teamIdx, kind, slot, value) {
+    const t = gameState.teams[teamIdx];
+    if (!t) return;
+    const id = parseInt(value);
+    if (kind === 'bonus') {
+        if (!t.bonusSelections) t.bonusSelections = [];
+        t.bonusSelections[slot] = id;
+    } else {
+        if (!t.malusSelections) t.malusSelections = [];
+        t.malusSelections[slot] = id;
+    }
+}
+
+function applyKitModeToTeams() {
+    const mode = document.getElementById('cfg-kit-mode')?.value || 'random';
+    gameState.teams.forEach(t => {
+        if (mode === 'manual') {
+            if (!t.bonusSelections) t.bonusSelections = (t.bonuses || []).map(b => b.id);
+            if (!t.malusSelections) t.malusSelections = (t.malus || []).map(m => m.id);
+            while (t.bonusSelections.length < GAME_CONFIG.bonusPerTeam) t.bonusSelections.push(BONUSES[t.bonusSelections.length % BONUSES.length].id);
+            while (t.malusSelections.length < GAME_CONFIG.malusPerTeam) t.malusSelections.push(MALUS[t.malusSelections.length % MALUS.length].id);
+            t.bonuses = t.bonusSelections.slice(0, GAME_CONFIG.bonusPerTeam).map(id => ({ id: parseInt(id), used: false }));
+            t.malus = t.malusSelections.slice(0, GAME_CONFIG.malusPerTeam).map(id => ({ id: parseInt(id), used: false }));
+        } else {
+            const kit = makeRandomKit();
+            t.bonuses = kit.bonuses;
+            t.malus = kit.malus;
+            t.bonusSelections = kit.bonuses.map(b => b.id);
+            t.malusSelections = kit.malus.map(m => m.id);
+        }
+    });
 }
 
 function removeTeam(i) {
@@ -517,6 +580,7 @@ function moveTeam(i, dir) {
 function randomizeTeams() { gameState.teams.sort(() => Math.random() - 0.5); renderTeamsList(); }
 function validateTeams() {
     if (gameState.teams.length < 2) { alert('Ajoutez au moins 2 équipes !'); return; }
+    applyKitModeToTeams();
     gameState.phase = 'THEMES';
     document.getElementById('team-setup-area').classList.add('hidden');
     document.getElementById('team-locked-area').classList.remove('hidden');
@@ -557,7 +621,8 @@ function renderTeamsList() {
                     <button type="button" class="btn-sm" onclick="moveTeam(${i},1)"  ${i===gameState.teams.length-1?'disabled':''}>↓</button>
                     <button type="button" class="btn-sm btn-red" onclick="removeTeam(${i})">✕</button>
                 ` : `<button type="button" class="btn-sm btn-orange" onclick="editScore(${i})">✎</button>`}
-            </div>`;
+            </div>
+            ${gameState.phase === 'SETUP' ? renderKitSetup(t, i) : ''}`;
         el.appendChild(div);
     });
 }
@@ -1073,10 +1138,10 @@ function bankPoints() {
     }
     scoreRecipient.score += total; w.pendingPoints=0; gameState.sessionPoints=0;
     const threshold = parseInt(document.getElementById('cfg-threshold').value)||50;
-    if (team.score >= threshold && !team.qualified) {
-        team.qualified=true;
-        channel.postMessage({ type:'TEAM_QUALIFIED', data:{teamName:team.name,teamColor:team.color,score:team.score} });
-        addLog(`🎉 ${team.name} QUALIFIÉ !`, 'gold');
+    if (scoreRecipient.score >= threshold && !scoreRecipient.qualified) {
+        scoreRecipient.qualified=true;
+        channel.postMessage({ type:'TEAM_QUALIFIED', data:{teamName:scoreRecipient.name,teamColor:scoreRecipient.color,score:scoreRecipient.score} });
+        addLog(`🎉 ${scoreRecipient.name} QUALIFIÉ !`, 'gold');
     }
     if (w.currentLevel >= w.depth) { w.completed=true; addLog(`🏁 Wagon "${w.theme}" COMPLÉTÉ !`, 'gold'); }
     channel.postMessage({ type:'BANK_POINTS', data:{wagonIndex,teamName:scoreRecipient.name,teamColor:scoreRecipient.color,points:total,score:scoreRecipient.score,windowStates:w.windowStates,currentLevel:w.currentLevel} });

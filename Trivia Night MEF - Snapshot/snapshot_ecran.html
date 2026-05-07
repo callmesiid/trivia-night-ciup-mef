@@ -209,7 +209,7 @@
             const container = document.getElementById('grid-container');
             container.innerHTML = '';
             const grid = document.createElement('div');
-            grid.className = `photo-grid ${mode === 'NORMAL' ? 'grid-normal' : 'grid-hard'}`;
+            grid.className = 'photo-grid grid-normal';
             photos.forEach((photo, index) => {
                 const card = document.createElement('div');
                 card.className = 'card';
@@ -225,8 +225,7 @@
             const timerEl = document.getElementById('memo-timer');
             overlay.style.display = 'block';
             
-            // MODIF : 15s en Hard
-            let timeLeft = (mode === 'NORMAL') ? 20 : 15;
+            let timeLeft = 20;
             timerEl.innerText = timeLeft;
 
             if(memoInterval) clearInterval(memoInterval);
