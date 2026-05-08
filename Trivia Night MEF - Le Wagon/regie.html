@@ -241,6 +241,7 @@
         <button type="button" class="btn-red"    id="btn-reset-wagon"   onclick="resetSelectedWagon()"  disabled>🔄 Reset wagon</button>
         <button type="button" class="btn-orange" id="btn-replace-wagon" onclick="openReplaceModal()"    disabled>🔀 Remplacer</button>
         <button type="button" class="btn-gold"   onclick="showResults()">🏆 RÉSULTATS</button>
+        <button type="button" class="btn-red btn-sm" onclick="resetSessionLogs()" title="Vide les logs de questions vues (RT, Wagon, Surenchère, Snapshot)">🗑 Reset logs session</button>
         <button type="button" class="btn-purple btn-sm" id="btn-reroll" onclick="rerollQuestion()" disabled>♻ Changer Q</button>
     </div>
 
@@ -1590,6 +1591,12 @@ function startGame() {
 function showResults() {
     const sorted=[...gameState.teams].sort((a,b)=>b.score-a.score).map((t,i)=>({...t,rank:i+1,eliminated:i===gameState.teams.length-1}));
     channel.postMessage({ type:'SHOW_RESULTS', data:{results:sorted} }); addLog('🏆 Résultats affichés','gold');
+}
+
+function resetSessionLogs() {
+    if (!confirm('Vider tous les logs de questions vues (RT, Wagon, Surenchère, Snapshot) ?')) return;
+    ['mef_rt_seen','mef_cross_game_seen','mef_surenchere_seen','mef_snap_rotation'].forEach(k => localStorage.removeItem(k));
+    addLog('🗑 Logs session réinitialisés — toutes les questions sont à nouveau disponibles', 'gold');
 }
 
 // ================================================================

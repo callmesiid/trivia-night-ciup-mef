@@ -142,6 +142,7 @@
     <div style="flex:1;"></div>
     <button type="button" class="btn-gold btn-sm" onclick="showScoreOverlay()">🏆 SCORES</button>
     <button type="button" class="btn-gray btn-sm" onclick="resetRound()">🔄 NOUVEAU ROUND</button>
+    <button type="button" class="btn-red btn-sm" onclick="resetSessionLogs()" title="Vide les logs de questions vues (RT, Wagon, Surenchère, Snapshot)">🗑 Reset logs</button>
 </div>
 
 <!-- ═══ MAIN ═══ -->
@@ -966,6 +967,13 @@ function playLose() { const s = loseSounds[Math.floor(Math.random() * loseSounds
 function resetRound() {
     if (!confirm('Préparer un nouveau round ?')) return;
     doResetRound();
+}
+
+function resetSessionLogs() {
+    if (!confirm('Vider tous les logs de questions vues (RT, Wagon, Surenchère, Snapshot) ?')) return;
+    ['mef_rt_seen','mef_cross_game_seen','mef_surenchere_seen','mef_snap_rotation'].forEach(k => localStorage.removeItem(k));
+    availableThemes = sessionLog_buildAvailable(THEMES_DATA);
+    log('🗑 Logs session réinitialisés — toutes les questions sont à nouveau disponibles', 'gold');
 }
 
 // Reset automatique (appelé après awardPoints ou manuellement)

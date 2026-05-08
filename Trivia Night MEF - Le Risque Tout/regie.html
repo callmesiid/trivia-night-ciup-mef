@@ -192,6 +192,7 @@
                     <option value="99">Tous qualifiés</option>
                 </select>
                 <button class="btn-warn" onclick="sendScores()">🏆 PODIUM</button>
+                <button class="btn-danger btn-icon" onclick="resetSessionLogs()" title="Vide les logs de questions vues (RT, Wagon, Surenchère, Snapshot)" style="font-size:0.7em">🗑 Reset logs</button>
             </div>
         </div>
 
@@ -542,6 +543,12 @@
             if(currentBucketId) return alert("Fermez la question d'abord");
             const threshold = parseInt(document.getElementById('qualify-threshold').value) || 3;
             send('SHOW_SCORES_FINAL', {teams: teams, threshold: threshold});
+        }
+
+        function resetSessionLogs() {
+            if (!confirm('Vider tous les logs de questions vues (RT, Wagon, Surenchère, Snapshot) ?')) return;
+            ['mef_rt_seen','mef_cross_game_seen','mef_surenchere_seen','mef_snap_rotation'].forEach(k => localStorage.removeItem(k));
+            addLog('🗑 Logs session réinitialisés — toutes les questions sont à nouveau disponibles', 'edit');
         }
 
         renderTeamsList();
