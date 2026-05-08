@@ -732,7 +732,7 @@ function createWagons() {
         while (qs.length < depth) qs.push({ q: `Q${qs.length+1}`, a: 'N/A' });
         return {
             themeId: theme.id, theme: theme.name, themeColor: theme.color,
-            questions: qs, depth,
+            questions: qs, sourcePool: sourceQuestions, depth,
             currentLevel: 0, pendingPoints: 0,
             windowStates: Array(depth).fill(null).map(() => ({ reached: false, banked: false, teamColor: null, teamName: null })),
             completed: false, blockedForTurn: false
@@ -1206,14 +1206,17 @@ function rerollQuestion() {
     if (!gameState.currentQuestion) return;
     const { wagonIndex, level } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
-    const theme = AVAILABLE_THEMES.find(t => t.id === w.themeId);
-    if (!theme) return;
 
-    // Filtrer par même difficulté que le niveau courant
+    // Pour les wagons mystère, piocher dans sourcePool (pool dynamique original) plutôt que
+    // dans AVAILABLE_THEMES qui ne contient que le thème "mystère" vide.
+    const fullPool = w.sourcePool || (AVAILABLE_THEMES.find(t => t.id === w.themeId) || {}).questions;
+    if (!fullPool || !fullPool.length) return;
+
+    const currentQ = w.questions[level];
     const targetDiff = getDifficultyForLevel(level, w.depth);
-    let pool = theme.questions.filter((q, i) => i !== level && (q.difficulty || 1) === targetDiff);
-    // Fallback : toutes les questions sauf la courante
-    if (!pool.length) pool = theme.questions.filter((_, i) => i !== level);
+    let pool = fullPool.filter(q => q !== currentQ && (q.difficulty || 1) === targetDiff);
+    // Fallback : tout le sourcePool sauf la question courante
+    if (!pool.length) pool = fullPool.filter(q => q !== currentQ);
     if (!pool.length) return;
 
     const newQ = pool[Math.floor(Math.random() * pool.length)];
@@ -1435,8 +1438,16 @@ function applyBonusImmediate(bonus, teamIdx) {
     const team=gameState.teams[teamIdx];
     switch(bonus.id) {
         case 9: { // VOL DE BAGAGE -3 au leader
-            const leader=[...gameState.teams].sort((a,b)=>b.score-a.score)[0];
-            if (leader&&leader!==team) { leader.score=Math.max(0,leader.score-3); broadcastState(); addLog(`🧳 -3pts à ${leader.name}`,'bad'); }
+            const sorted=[...gameState.teams].sort((a,b)=>b.score-a.score);
+            const leader=sorted[0];
+            if (!leader || leader===team) {
+                // Activant est déjà leader ou seul — ne pas consommer
+                gameState.teams[teamIdx].bonuses.find(b=>b.id===9 && b.used).used = false;
+                renderBonusPanel();
+                addLog('🧳 VOL DE BAGAGE : vous êtes déjà leader (ou seul) — chip restauré', 'bad');
+            } else {
+                leader.score=Math.max(0,leader.score-3); broadcastState(); addLog(`🧳 -3pts à ${leader.name}`,'bad');
+            }
             break; }
         case 11: // WAGON BAR +5
             team.score+=5; broadcastState(); addLog(`🍸 +5pts pour ${team.name}`,'gold'); break;
@@ -1449,22 +1460,13 @@ function applyBonusImmediate(bonus, teamIdx) {
                 renderWagonsGrid();
                 addLog(`🔒 Wagon "${gameState.wagons[gameState.selectedWagonIndex].theme}" bloqué pour ce tour`, 'bad');
             } else {
-                // Pas de wagon sélectionné → restaurer le chip
-                const { teamIdx: gti, itemIdx: gii } = pendingBonusActivation || {};
-                if (gti !== undefined && gii !== undefined) {
-                    gameState.teams[gti].bonuses[gii].used = false; renderBonusPanel();
-                }
+                // Aucun wagon sélectionné : restaurer le chip directement via teamIdx/bonus.id
+                const chip = gameState.teams[teamIdx].bonuses.find(b => b.id === 12 && b.used);
+                if (chip) { chip.used = false; renderBonusPanel(); }
                 addLog('⚠ GRIÈVE : sélectionnez d\'abord un wagon (cliquez dessus) puis activez le bonus', 'bad');
             }
             break;
         }
-            break;
-        case 4: { // CONTRÔLEUR — affiche banner dans la régie
-            const banner = document.getElementById('controleur-banner');
-            if (banner) { banner.textContent = `🎫 CONTRÔLEUR: une équipe adverse répond à la place de ${team.name} — gérez les points manuellement`; banner.style.display='block'; setTimeout(()=>banner.style.display='none', 15000); }
-            channel.postMessage({ type:'SHOW_BONUS', data:{bonus, teamName:team.name, teamColor:team.color} });
-            addLog(`🎫 CONTRÔLEUR actif pour ${team.name} — désignez l'adversaire verbalement`,'gold');
-            break; }
         default:
             addLog(`Manuel: ${bonus.how}`,'info');
     }

@@ -385,6 +385,9 @@
         function prevTurn() {
             activeTeamIndex--;
             if(activeTeamIndex < 0) activeTeamIndex = teams.length - 1;
+            // Inverser la direction du snake pour rester cohérent après un retour manuel
+            snakeDirection = -snakeDirection;
+            document.getElementById('snake-dir-display').textContent = snakeDirection === 1 ? '→' : '←';
             renderTeamsList();
         }
 
@@ -523,6 +526,8 @@
         function cancelQuestion() {
             send('CLOSE_QUESTION');
             if(currentBucketId) document.getElementById(`regie-${currentBucketId}`).classList.remove('selected');
+            isAnimating = false;
+            document.getElementById('overlay-grid').classList.add('hidden');
             closeQuestionPanel();
             addLog("Question annulée", 'edit');
         }

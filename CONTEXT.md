@@ -411,6 +411,17 @@ Trivia Night MEF - Snapshot/
 
 ---
 
+## Dernières modifications (2026-05-08)
+
+### Surenchère + Wagon : option "Aucun bonus/malus"
+- Ajout `<option value="none">Aucun bonus/malus</option>` dans le sélecteur de mode kit des deux jeux
+- `applyKitModeToTeams()` gère le cas `none` : `bonuses=[]`, `malus=[]`, slots remplis de `''`
+- Kit manuel : `optionHTML()` / `kitOptionHTML()` ajoutent une option vide "Aucun" en tête de liste
+- Fix `renderKitSetup()` : slots initialisés à `''` (pas à un ID aléatoire) si manquants
+- Fix `applyKitModeToTeams()` mode manual : filtre les slots `''` avant de construire les tableaux `bonuses`/`malus`
+
+---
+
 ## Notes techniques importantes
 
 ### Chemins de fichiers

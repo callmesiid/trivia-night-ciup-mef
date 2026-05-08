@@ -673,18 +673,16 @@ function updateBmPanel() {
         card.className = 'bm-team-card';
         const isHand = (ti === playingTeamIdx);
 
-        // Bonus chips (activables si c'est l'équipe qui a la main)
+        // Bonus chips (équipe qui a la main, avant chrono)
         const bonusChips = t.bonuses.map((b, bi) => {
             const def = BONUS_POOL.find(x => x.id === b.id);
-            const canActivate = isHand && !b.used && !answersLocked; // avant chrono
             const cls = `chip chip-bonus${b.used?' used':''}`;
             return `<span class="${cls}" title="${def.desc}" onclick="activateBonus(${ti},${bi})">${def.emoji} ${def.name}</span>`;
         }).join('');
 
-        // Malus chips (activables si c'est PAS l'équipe qui a la main)
+        // Malus chips (adversaires, avant chrono)
         const malusChips = t.malus.map((m, mi) => {
             const def = MALUS_POOL.find(x => x.id === m.id);
-            const canActivate = !isHand && playingTeamIdx >= 0 && !m.used && !answersLocked;
             const cls = `chip chip-malus${m.used?' used':''}`;
             return `<span class="${cls}" title="${def.desc}" onclick="activateMalus(${ti},${mi})">${def.emoji} ${def.name}</span>`;
         }).join('');
@@ -711,9 +709,9 @@ function updateBmPanel() {
 
 // ── Activation BONUS ──
 function activateBonus(teamIdx, bonusIdx) {
+    if (playingTeamIdx < 0) { log('Sélectionnez l\'équipe qui a la main', 'bad'); return; }
     if (teamIdx !== playingTeamIdx) { log('Ce bonus est réservé à l\'équipe qui a la main', 'bad'); return; }
     if (!answersLocked) { log('Trop tard — le chrono a déjà démarré', 'bad'); return; }
-    if (playingTeamIdx < 0) { log('Sélectionnez l\'équipe qui a la main', 'bad'); return; }
     const b   = teams[teamIdx].bonuses[bonusIdx];
     if (b.used) return;
     const def = BONUS_POOL.find(x => x.id === b.id);
@@ -731,8 +729,8 @@ function activateBonus(teamIdx, bonusIdx) {
 
 // ── Activation MALUS ──
 function activateMalus(teamIdx, malusIdx) {
-    if (teamIdx === playingTeamIdx) { log('Ne pouvez pas vous appliquer un malus à vous-même', 'bad'); return; }
     if (playingTeamIdx < 0) { log('Sélectionnez d\'abord l\'équipe qui a la main', 'bad'); return; }
+    if (teamIdx === playingTeamIdx) { log('Ne pouvez pas vous appliquer un malus à vous-même', 'bad'); return; }
     if (!answersLocked) { log('Trop tard — le chrono a déjà démarré', 'bad'); return; }
     const m   = teams[teamIdx].malus[malusIdx];
     if (m.used) return;
@@ -892,15 +890,15 @@ function toggleAnswer(btn, idx) {
 }
 
 function undoLastAnswer() {
-    if (!lastValidatedBtn) return;
-    const idx = parseInt(lastValidatedBtn.querySelector('.ans-num').textContent.replace('#','')) - 1;
-    lastValidatedBtn.classList.remove('validated');
+    if (!validatedIndices.length) return;
+    const idx = validatedIndices.pop();
+    const btn = document.querySelectorAll('#answers-grid .answer-btn')[idx];
+    if (btn) btn.classList.remove('validated');
     currentScore--;
-    validatedIndices = validatedIndices.filter(i => i !== idx);
+    lastValidatedBtn = null;
     document.getElementById('score-big').textContent = currentScore;
     document.getElementById('grid-count').textContent = `${currentScore} / ${currentTheme.answers.length}`;
-    lastValidatedBtn = null;
-    document.getElementById('btn-undo').disabled = true;
+    document.getElementById('btn-undo').disabled = validatedIndices.length === 0;
     channel.postMessage({ type: 'UPDATE_SCORE', count: currentScore, total: currentTheme.answers.length });
     updateDeltaPreview();
     log('↩ Dernière réponse annulée');

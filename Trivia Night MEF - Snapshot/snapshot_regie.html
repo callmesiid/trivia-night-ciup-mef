@@ -509,7 +509,13 @@ function initGame() {
   stopSoundTimer();
   canAnswer = false;
   if (memoTimeout) clearTimeout(memoTimeout);
-  const count = 24;
+  const wanted = 24;
+  const available = MIX_PHOTOS.filter(p => p.validated !== false).length;
+  if (available < wanted) {
+    console.warn(`Snapshot : seulement ${available} photos disponibles (${wanted} demandées) — grille réduite`);
+  }
+  const count = Math.min(wanted, available);
+  if (count === 0) { alert('Aucune photo disponible dans la base !'); return; }
   const selectedPhotos = snapLog_pickPhotos(MIX_PHOTOS, count);
 
   const container = document.getElementById('grid-container');
