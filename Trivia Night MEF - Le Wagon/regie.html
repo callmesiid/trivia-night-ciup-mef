@@ -729,8 +729,24 @@ function createWagons() {
 
         // Exclure les questions déjà vues dans n'importe quel jeu cette session
         const filtered = crossLog_filterPool([...sourceQuestions]);
-        const qs = filtered.slice(0, depth);
-        while (qs.length < depth) qs.push({ q: `Q${qs.length+1}`, a: 'N/A' });
+        // Sélectionner les questions en respectant la difficulté cible par niveau
+        const qs = [];
+        const usedIdxs = new Set();
+        for (let lvl = 0; lvl < depth; lvl++) {
+            const targetDiff = getDifficultyForLevel(lvl, depth);
+            // Chercher une question de la bonne difficulté non encore utilisée
+            let idx = filtered.findIndex((q, i) => !usedIdxs.has(i) && (q.difficulty || 1) === targetDiff);
+            if (idx === -1) {
+                // Fallback : n'importe quelle question non utilisée
+                idx = filtered.findIndex((q, i) => !usedIdxs.has(i));
+            }
+            if (idx !== -1) {
+                usedIdxs.add(idx);
+                qs.push(filtered[idx]);
+            } else {
+                qs.push({ q: `Q${lvl+1}`, a: 'N/A' });
+            }
+        }
         return {
             themeId: theme.id, theme: theme.name, themeColor: theme.color,
             questions: qs, sourcePool: sourceQuestions, depth,
@@ -1335,8 +1351,15 @@ function replaceWagon(wagonIdx,themeIdx) {
     }
 
     const filtered = crossLog_filterPool([...sourcePool]);
-    const qs = filtered.slice(0, depth);
-    while (qs.length<depth) qs.push({q:`Q${qs.length+1}`,a:'N/A'});
+    const qs = [];
+    const _usedIdxs = new Set();
+    for (let lvl = 0; lvl < depth; lvl++) {
+        const targetDiff = getDifficultyForLevel(lvl, depth);
+        let idx = filtered.findIndex((q, i) => !_usedIdxs.has(i) && (q.difficulty || 1) === targetDiff);
+        if (idx === -1) idx = filtered.findIndex((q, i) => !_usedIdxs.has(i));
+        if (idx !== -1) { _usedIdxs.add(idx); qs.push(filtered[idx]); }
+        else qs.push({q:`Q${lvl+1}`,a:'N/A'});
+    }
 
     gameState.wagons[wagonIdx]={themeId:theme.id,theme:theme.name,themeColor:theme.color,questions:qs,sourcePool,depth,currentLevel:0,pendingPoints:0,windowStates:Array(depth).fill(null).map(()=>({reached:false,banked:false,teamColor:null,teamName:null})),completed:false,blockedForTurn:false};
     saveHistory(`Remplacement wagon → ${theme.name}`); closeModal('replace-modal'); renderWagonsGrid(); broadcastState();

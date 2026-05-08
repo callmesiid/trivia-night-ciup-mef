@@ -320,6 +320,13 @@ function sessionLog_markPlayed(themeId) {
         seen.push(themeId);
         sessionLog_save(seen);
     }
+    // Sync avec le cross-log partagé (Wagon, Risque Tout, Snapshot)
+    try {
+        const cross = JSON.parse(localStorage.getItem('mef_cross_game_seen') || '{}');
+        const fp = themeId + '§surenchere';
+        cross[fp] = (cross[fp] || 0) + 1;
+        localStorage.setItem('mef_cross_game_seen', JSON.stringify(cross));
+    } catch {}
 }
 // ─────────────────────────────────────────────────────────────────────────
 
@@ -811,6 +818,10 @@ function stopAutoSpin() {
     document.getElementById('btn-reveal').disabled  = true;
     document.getElementById('btn-timer').disabled   = true;
     renderAnswersGrid(currentTheme);
+    // Adapter le max de la mise au nombre réel de réponses du thème
+    const miseInput = document.getElementById('mise-input');
+    miseInput.max = currentTheme.answers.length;
+    miseInput.value = '0';
     log(`Thème : ${currentTheme.title} (${currentTheme.answers.length} réponses)`);
     document.getElementById('bottom-info').textContent = `${currentTheme.title} — ${currentTheme.answers.length} réponses possibles`;
 }
@@ -834,6 +845,12 @@ function startTimer() {
     // Re-lire la mise depuis l'input (en cas de non-déclenchement de oninput)
     mise = Math.max(0, parseInt(document.getElementById('mise-input').value) || 0);
     if (mise <= 0) { alert('⚠️ Déclarez la mise avant de lancer le chrono !'); return; }
+    // Vérifier que la mise ne dépasse pas le nombre de réponses disponibles
+    if (currentTheme && mise > currentTheme.answers.length) {
+        mise = currentTheme.answers.length;
+        document.getElementById('mise-input').value = mise;
+        log(`⚠️ Mise réduite à ${mise} (maximum pour ce thème)`, 'bad');
+    }
     const raw = 30 + timerBonus;
     const duration = Math.max(5, raw); // minimum 5s même si malus empilés
     if (raw <= 0) { log(`⚠️ Temps cumulé négatif (${raw}s) → durée minimale de 5s`, 'bad'); }

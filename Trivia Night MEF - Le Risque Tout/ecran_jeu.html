@@ -862,6 +862,9 @@
                     let all = [];
                     if(pool.text) pool.text.forEach(x => all.push({...x, type:'text'}));
                     if(pool.images) pool.images.forEach(x => all.push({...x, type:'image'}));
+                    // Exclure questions déjà vues (même logique que la sélection initiale)
+                    all = rtLog_filterQuestions(safeId, String(level), all);
+                    all = crossLog_filterPool(all, 'question', 'answer');
                     if(all.length > 0) newQ = all[Math.floor(Math.random() * all.length)];
                 }
             }

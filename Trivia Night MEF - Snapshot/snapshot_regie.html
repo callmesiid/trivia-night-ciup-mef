@@ -256,8 +256,20 @@ function snapLog_pickPhotos(allPhotos, count) {
   const valid = allPhotos.filter(p => p.validated !== false);
   let seen = snapLog_load().filter(f => valid.some(p => p.file === f));
   const unseen = valid.filter(p => !seen.includes(p.file));
-  const pool = unseen.length >= count ? unseen : valid;
-  if (unseen.length < count) seen = [];
+  // Compléter avec des vues si pas assez de non-vues, sans réinitialiser tout
+  let pool;
+  if (unseen.length >= count) {
+    pool = unseen;
+  } else {
+    // Prendre tout ce qui n'est pas encore vu + compléter avec les vues
+    const needed = count - unseen.length;
+    const seenObjs = valid.filter(p => seen.includes(p.file));
+    const seenShuffled = [...seenObjs].sort(() => Math.random() - 0.5);
+    pool = [...unseen, ...seenShuffled.slice(0, needed)];
+    // Retirer du log les vues qu'on va rejouer
+    const replayed = seenShuffled.slice(0, needed).map(p => p.file);
+    seen = seen.filter(f => !replayed.includes(f));
+  }
   const shuffled = [...pool].sort(() => Math.random() - 0.5);
   const picks = shuffled.slice(0, count);
   snapLog_save([...seen, ...picks.map(p => p.file)]);
@@ -380,6 +392,7 @@ function startGame() {
 // GAME STATE
 // ══════════════════════════════════════════════════════════════════════════════
 let gs = {};
+let selectedPhotos = [];
 
 function initGameState(teams, totalRounds, threshold) {
   gs = {
@@ -436,6 +449,16 @@ function markCorrect(cardIdx) {
   gs.history.push({ type: 'correct', teamIdx: p.teamIdx, cardIdx, pos: gs.pos, prevSnake: [...gs.snake] });
   // Award point
   gs.teams[p.teamIdx].score += 1;
+  // Marquer la photo dans le cross-log inter-jeux
+  const photo = selectedPhotos[cardIdx];
+  if (photo) {
+    try {
+      const cross = JSON.parse(localStorage.getItem('mef_cross_game_seen') || '{}');
+      const fp = String(photo.name || photo.file || '').toLowerCase().trim() + '§snapshot';
+      cross[fp] = (cross[fp] || 0) + 1;
+      localStorage.setItem('mef_cross_game_seen', JSON.stringify(cross));
+    } catch {}
+  }
   // Remove card visually
   const card = document.getElementById(`card-${cardIdx}`);
   if (card) { card.classList.add('removed', 'correct-flash'); setTimeout(() => card.classList.remove('correct-flash'), 300); }
@@ -517,7 +540,7 @@ function initGame() {
   }
   const count = Math.min(wanted, available);
   if (count === 0) { alert('Aucune photo disponible dans la base !'); return; }
-  const selectedPhotos = snapLog_pickPhotos(MIX_PHOTOS, count);
+  selectedPhotos = snapLog_pickPhotos(MIX_PHOTOS, count);
 
   const container = document.getElementById('grid-container');
   container.innerHTML = '';
