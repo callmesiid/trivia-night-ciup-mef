@@ -723,7 +723,15 @@ function activateBonus(teamIdx, bonusIdx) {
     switch (def.id) {
         // 'double' est maintenant un malus — pas de case ici
         case 'time':   timerBonus += 25;    log(`⏰ +25s au chrono activé par ${teams[teamIdx].name}`, 'gold'); break;
-        case 'pouce':  coupDePouce = true;  log(`👍 Coup de pouce activé (+5 citées) — annule aussi un malus +5 MISE`, 'gold'); break;
+        case 'pouce':
+            coupDePouce = true;
+            if (plusMiseMalus > 0) {
+                log(`👍 Coup de pouce activé (+5 citées) — annule le malus +${plusMiseMalus} MISE`, 'gold');
+                plusMiseMalus = 0;
+            } else {
+                log(`👍 Coup de pouce activé (+5 citées)`, 'gold');
+            }
+            break;
         case 'adeux':  log(`👫 À DEUX activé par ${teams[teamIdx].name} — réponse en binôme autorisée !`, 'gold'); break;
     }
     channel.postMessage({ type: 'SHOW_BONUS', bonus: def, teamName: teams[teamIdx].name });

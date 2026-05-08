@@ -1224,9 +1224,13 @@ function rerollQuestion() {
     if (!fullPool || !fullPool.length) return;
 
     const currentQ = w.questions[level];
+    // Exclure toutes les questions déjà présentes dans ce wagon (pas seulement la courante)
+    const usedInWagon = new Set(w.questions);
     const targetDiff = getDifficultyForLevel(level, w.depth);
-    let pool = fullPool.filter(q => q !== currentQ && (q.difficulty || 1) === targetDiff);
-    // Fallback : tout le sourcePool sauf la question courante
+    let pool = fullPool.filter(q => !usedInWagon.has(q) && (q.difficulty || 1) === targetDiff);
+    // Fallback difficulté : exclure seulement les questions du wagon, toutes difficultés
+    if (!pool.length) pool = fullPool.filter(q => !usedInWagon.has(q));
+    // Dernier fallback : si toutes déjà utilisées, exclure seulement la courante
     if (!pool.length) pool = fullPool.filter(q => q !== currentQ);
     if (!pool.length) return;
 
@@ -1329,9 +1333,24 @@ function openReplaceModal() {
 }
 function replaceWagon(wagonIdx,themeIdx) {
     const theme=AVAILABLE_THEMES[themeIdx]; const depth=gameState.config.depth;
-    const qs=[...theme.questions].slice(0,depth);
+
+    // Construire sourcePool (même logique que createWagons)
+    let sourcePool;
+    if (theme.id === 'mystere') {
+        const usedIds = gameState.wagons.filter((_,i)=>i!==wagonIdx).map(w=>w.themeId);
+        const pool = [];
+        AVAILABLE_THEMES.forEach(t => { if (!usedIds.includes(t.id) && t.id !== 'mystere') pool.push(...t.questions); });
+        pool.sort(() => Math.random() - 0.5);
+        sourcePool = pool;
+    } else {
+        sourcePool = theme.questions;
+    }
+
+    const filtered = crossLog_filterPool([...sourcePool]);
+    const qs = filtered.slice(0, depth);
     while (qs.length<depth) qs.push({q:`Q${qs.length+1}`,a:'N/A'});
-    gameState.wagons[wagonIdx]={themeId:theme.id,theme:theme.name,themeColor:theme.color,questions:qs,depth,currentLevel:0,pendingPoints:0,windowStates:Array(depth).fill(null).map(()=>({reached:false,banked:false,teamColor:null,teamName:null})),completed:false,blockedForTurn:false};
+
+    gameState.wagons[wagonIdx]={themeId:theme.id,theme:theme.name,themeColor:theme.color,questions:qs,sourcePool,depth,currentLevel:0,pendingPoints:0,windowStates:Array(depth).fill(null).map(()=>({reached:false,banked:false,teamColor:null,teamName:null})),completed:false,blockedForTurn:false};
     saveHistory(`Remplacement wagon → ${theme.name}`); closeModal('replace-modal'); renderWagonsGrid(); broadcastState();
     addLog(`🔀 Wagon remplacé par ${theme.name}`,'info');
 }
@@ -1431,13 +1450,22 @@ function confirmBonus() {
 
     // Bonus IMMEDIATE
     if (def.timing==='IMMEDIATE') {
-        applyBonusImmediate(def, teamIdx);
-        channel.postMessage({ type:'SHOW_BONUS', data:{bonus:def,teamName:team.name,teamColor:team.color} });
-        addLog(`🎁 "${def.name}" activé par ${team.name}`,'gold');
-        saveHistory(`Bonus ${def.name}`); renderBonusPanel(); pendingBonusActivation=null; return;
+        const applied = applyBonusImmediate(def, teamIdx);
+        if (applied) {
+            channel.postMessage({ type:'SHOW_BONUS', data:{bonus:def,teamName:team.name,teamColor:team.color} });
+            addLog(`🎁 "${def.name}" activé par ${team.name}`,'gold');
+            saveHistory(`Bonus ${def.name}`);
+        }
+        renderBonusPanel(); pendingBonusActivation=null; return;
     }
 
     // Bonus QUEUED (PRE_QUESTION ou POST_CORRECT)
+    // Bloquer si un bonus est déjà en attente — restaurer le nouveau chip
+    if (gameState.pendingBonus) {
+        item.used = false;
+        addLog(`⚠ Bonus déjà en attente (${gameState.pendingBonus.bonus.name}) — activez-le d'abord ou annulez-le`, 'bad');
+        renderBonusPanel(); pendingBonusActivation=null; return;
+    }
     gameState.pendingBonus = { bonus: def, teamIdx, itemIdx };
     updatePendingBonusBar();
     channel.postMessage({ type:'SHOW_BONUS', data:{bonus:def,teamName:team.name,teamColor:team.color} });
@@ -1445,6 +1473,8 @@ function confirmBonus() {
     saveHistory(`Bonus ${def.name}`); renderBonusPanel(); pendingBonusActivation=null;
 }
 
+// Retourne true si le bonus a été effectivement appliqué (→ SHOW_BONUS + log dans confirmBonus),
+// false si annulé/inapplicable (le chip a déjà été restauré ici).
 function applyBonusImmediate(bonus, teamIdx) {
     const team=gameState.teams[teamIdx];
     switch(bonus.id) {
@@ -1452,18 +1482,16 @@ function applyBonusImmediate(bonus, teamIdx) {
             const sorted=[...gameState.teams].sort((a,b)=>b.score-a.score);
             const leader=sorted[0];
             if (!leader || leader===team) {
-                // Activant est déjà leader ou seul — ne pas consommer
                 const chip9 = gameState.teams[teamIdx].bonuses.find(b=>b.id===9 && b.used);
                 if (chip9) chip9.used = false;
-                renderBonusPanel();
                 addLog('🧳 VOL DE BAGAGE : vous êtes déjà leader (ou seul) — chip restauré', 'bad');
-            } else {
-                leader.score=Math.max(0,leader.score-3); broadcastState(); addLog(`🧳 -3pts à ${leader.name}`,'bad');
+                renderTeamsList(); return false;
             }
+            leader.score=Math.max(0,leader.score-3); broadcastState(); addLog(`🧳 -3pts à ${leader.name}`,'bad');
             break; }
         case 11: // WAGON BAR +5
             team.score+=5; broadcastState(); addLog(`🍸 +5pts pour ${team.name}`,'gold'); break;
-        case 18: // BILLET DE RETOUR — maintenant PRE_QUESTION (géré dans answerWrong)
+        case 18: // BILLET DE RETOUR — PRE_QUESTION (géré dans answerWrong)
             addLog('🎫 BILLET DE RETOUR queued — activez AVANT le timer', 'gold');
             break;
         case 12: { // GRIÈVE — bloque le wagon actuellement sélectionné
@@ -1472,10 +1500,10 @@ function applyBonusImmediate(bonus, teamIdx) {
                 renderWagonsGrid();
                 addLog(`🔒 Wagon "${gameState.wagons[gameState.selectedWagonIndex].theme}" bloqué pour ce tour`, 'bad');
             } else {
-                // Aucun wagon sélectionné : restaurer le chip directement via teamIdx/bonus.id
                 const chip = gameState.teams[teamIdx].bonuses.find(b => b.id === 12 && b.used);
                 if (chip) { chip.used = false; renderBonusPanel(); }
                 addLog('⚠ GRIÈVE : sélectionnez d\'abord un wagon (cliquez dessus) puis activez le bonus', 'bad');
+                renderTeamsList(); return false;
             }
             break;
         }
@@ -1483,6 +1511,7 @@ function applyBonusImmediate(bonus, teamIdx) {
             addLog(`Manuel: ${bonus.how}`,'info');
     }
     renderTeamsList();
+    return true;
 }
 
 function showTargetModal(def, activatingTeamIdx) {
