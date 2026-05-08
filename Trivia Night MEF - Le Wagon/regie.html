@@ -334,7 +334,7 @@
                 <div class="doc-scenario"><strong>Si mauvaise réponse → bonus PERDU, rien ne se passe.</strong></div>
                 <div class="doc-scenario"><strong>TCHOU TCHOU :</strong> Équipe en Q4 (+2pts). Activez → si correct : +4pts (×2) en session. Si faux : bonus perdu.</div>
                 <div class="doc-scenario"><strong>CHARBON :</strong> Si bonne réponse → +3pts bonus ajoutés à la session en plus du gain normal.</div>
-                <div class="doc-scenario"><strong>PREMIÈRE CLASSE :</strong> Si Q3 est correcte (fin P1) → Q4 validée d'office, points de Q4 ajoutés. L'équipe peut banker ou continuer depuis Q5.</div>
+
                 <div class="doc-scenario"><strong>FREIN D'URGENCE :</strong> Si correct hors palier (ex: Q2) → le bouton BANQUER apparaît quand même. L'équipe peut sécuriser ses points.</div>
                 <div class="doc-scenario"><strong>TERMINUS :</strong> Si correct → bank forcé automatiquement, même hors palier.</div>
             </div>
@@ -839,7 +839,7 @@ function startTimerRegie() {
                 addLog(`🎫 BILLET DE RETOUR actif — si raté, question changée automatiquement`, 'gold');
             }
             // Autres PRE_QUESTION (sauf POST_CORRECT et billet de retour) → consommés maintenant
-            if (b.id !== 5 && b.id !== 1 && b.id !== 2 && b.id !== 6 && b.id !== 10 && b.id !== 18) {
+            if (b.id !== 5 && b.id !== 1 && b.id !== 2 && b.id !== 10 && b.id !== 18) {
                 gameState.pendingBonus = null;
                 updatePendingBonusBar();
             }
@@ -984,7 +984,6 @@ function answerCorrect() {
     // ── Appliquer les bonus POST_CORRECT ──
     let allowBankAnywhere = false;
     let forceBank         = false;
-    let autoNextQ         = false;
     let pendingBonusOwner = gameState.pendingBonus ? { teamIdx: gameState.pendingBonus.teamIdx, itemIdx: gameState.pendingBonus.itemIdx } : null;
 
     if (gameState.pendingBonus && gameState.pendingBonus.bonus.timing === 'POST_CORRECT') {
@@ -998,10 +997,6 @@ function answerCorrect() {
             case 5: // CHARBON +3
                 gameState.sessionPoints += 3;
                 addLog(`⛏ CHARBON: +3 pts bonus — session: ${gameState.sessionPoints}pts`, 'gold');
-                break;
-            case 6: // PREMIÈRE CLASSE
-                autoNextQ = true;
-                addLog(`👑 PREMIÈRE CLASSE: prochaine question validée d'office !`, 'gold');
                 break;
             case 2: // FREIN D'URGENCE
                 allowBankAnywhere = true;
@@ -1037,24 +1032,6 @@ function answerCorrect() {
     isAtPalierEnd = isBankingAllowed(w.currentLevel, w.depth) || allowBankAnywhere;
     if (w.currentLevel >= w.depth) isAtPalierEnd = true;
 
-    // PREMIÈRE CLASSE : auto-valide la prochaine question
-    if (autoNextQ && w.currentLevel >= w.depth) {
-        // Fin de wagon — bonus non applicable, chip restauré (owner capturé avant pendingBonus=null)
-        if (pendingBonusOwner) {
-            gameState.teams[pendingBonusOwner.teamIdx].bonuses[pendingBonusOwner.itemIdx].used = false;
-        }
-        addLog('👑 PREMIÈRE CLASSE: fin du wagon, chip restauré', 'info');
-    } else if (autoNextQ && w.currentLevel < w.depth) {
-        const nextLevel = w.currentLevel;
-        const nextPts   = getPointsForLevel(nextLevel + 1);
-        w.windowStates[nextLevel].reached = true;
-        w.currentLevel++;
-        gameState.sessionPoints += nextPts;
-        channel.postMessage({ type: 'PREMIERE_CLASSE', data: { wagonIndex, level: nextLevel, pts: nextPts } });
-        addLog(`👑 Q${nextLevel+1} validée d'office +${nextPts}pts — session: ${gameState.sessionPoints}pts`, 'gold');
-        // Recalcul palier
-        isAtPalierEnd = isBankingAllowed(w.currentLevel, w.depth) || (w.currentLevel >= w.depth);
-    }
 
     // Vérifier si le bank est bloqué par un malus
     if (isAtPalierEnd) {

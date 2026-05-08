@@ -576,7 +576,6 @@ channel.onmessage = (e) => {
             } else { _rEl.textContent = data.question; }
             break;
         }
-        case 'PREMIERE_CLASSE':  handlePremiereClasse(data); break;
         case 'SKIP_TURN':        showSkipTurnBanner(data); break;
         case 'NEXT_TURN':       handleNextTurn(data); break;
         case 'START_TIMER':     startTimer(data.seconds); break;
@@ -1295,20 +1294,6 @@ function createRain(container) {
     }
 }
 
-// Première Classe : allume automatiquement la fenêtre suivante
-function handlePremiereClasse(data) {
-    if (localState.wagons[data.wagonIndex]) {
-        const ws = localState.wagons[data.wagonIndex].windowStates;
-        if (ws[data.level]) { ws[data.level].reached = true; }
-        localState.wagons[data.wagonIndex].currentLevel = data.level + 1;
-    }
-    // Petit flash doré
-    const flash = document.createElement('div');
-    flash.style.cssText = 'position:fixed;inset:0;background:rgba(212,175,55,.15);z-index:550;pointer-events:none;animation:flashGold .6s ease-out forwards;';
-    document.body.appendChild(flash);
-    setTimeout(() => flash.remove(), 700);
-    renderWagons();
-}
 
 // Skip turn banner
 function showSkipTurnBanner(data) {
