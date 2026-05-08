@@ -677,6 +677,7 @@ function updateBmPanel() {
         // Bonus chips (équipe qui a la main, avant chrono)
         const bonusChips = t.bonuses.map((b, bi) => {
             const def = BONUS_POOL.find(x => x.id === b.id);
+            if (!def) return '';
             const cls = `chip chip-bonus${b.used?' used':''}`;
             return `<span class="${cls}" title="${def.desc}" onclick="activateBonus(${ti},${bi})">${def.emoji} ${def.name}</span>`;
         }).join('');
@@ -684,6 +685,7 @@ function updateBmPanel() {
         // Malus chips (adversaires, avant chrono)
         const malusChips = t.malus.map((m, mi) => {
             const def = MALUS_POOL.find(x => x.id === m.id);
+            if (!def) return '';
             const cls = `chip chip-malus${m.used?' used':''}`;
             return `<span class="${cls}" title="${def.desc}" onclick="activateMalus(${ti},${mi})">${def.emoji} ${def.name}</span>`;
         }).join('');

@@ -588,7 +588,8 @@ channel.onmessage = (e) => {
         case 'PING':            channel.postMessage({type:'PONG'}); break;
     }
 };
-setInterval(() => channel.postMessage({type:'PING'}), 4000);
+const pingInterval = setInterval(() => channel.postMessage({type:'PING'}), 4000);
+window.addEventListener('unload', () => { pingInterval && clearInterval(pingInterval); channel.close(); });
 channel.postMessage({type:'REQUEST_STATE'});
 
 // ── STATE UPDATE ──

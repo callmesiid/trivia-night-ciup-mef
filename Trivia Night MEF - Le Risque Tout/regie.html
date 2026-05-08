@@ -439,15 +439,18 @@
             if(!isTeamsValidated) return alert("Validez les équipes !");
             if(isAnimating) return alert("Animation en cours...");
             if(currentBucketId) return alert("Question déjà ouverte !");
-            
+
             const btn = document.getElementById(`regie-${id}`);
+            if(!btn) return;
             if(btn.classList.contains('used')) return;
+
+            const data = bucketsMap[id];
+            if(!data || !data.qData) return;
 
             currentBucketId = id;
             btn.classList.add('selected');
-            
+
             // UI
-            const data = bucketsMap[id];
             document.getElementById('question-panel').style.display = 'block';
             document.getElementById('q-text-display').innerText = data.qData.question;
             document.getElementById('a-text-display').innerText = data.qData.answer;

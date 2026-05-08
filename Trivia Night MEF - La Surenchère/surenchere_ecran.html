@@ -379,8 +379,7 @@ channel.onmessage = (event) => {
             document.getElementById('score-val').textContent = data.count;
             if (data.total) document.getElementById('score-total').textContent = ` / ${data.total}`;
             const sc = document.querySelector('.score-display');
-            sc.style.transform = 'scale(1.15)';
-            setTimeout(() => sc.style.transform = 'scale(1)', 200);
+            if (sc) { sc.style.transform = 'scale(1.15)'; setTimeout(() => sc.style.transform = 'scale(1)', 200); }
             break;
         case 'UPDATE_TEAMS':
             teamsData = data.teams || [];
