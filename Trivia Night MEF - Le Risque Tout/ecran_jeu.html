@@ -899,10 +899,10 @@
             const container = document.getElementById('question-text');
             container.innerHTML = "";
 
-            if (data.type === 'image') {
+            if (data.type === 'image' && data.file) {
                 container.innerHTML = `<img src="${data.file}" style="max-width:80%; max-height:50vh; border:5px solid white; display:block; margin:0 auto 20px; box-shadow: 0 0 30px black;">`;
                 container.innerHTML += `<div style="font-size:40px; text-shadow: 2px 2px 0 #000;">${data.question}</div>`;
-            } else if (data.type === 'audio') {
+            } else if (data.type === 'audio' && data.file) {
                 container.innerHTML = `<div style="font-size:100px; animation:pulse 1s infinite">🔊</div>`;
                 container.innerHTML += `<div style="font-size:40px">${data.question}</div>`;
                 if(currentAudio) currentAudio.pause();

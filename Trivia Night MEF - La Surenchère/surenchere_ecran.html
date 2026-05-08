@@ -639,17 +639,19 @@ function showRevealGrid(answers, validatedIndices, total) {
     audioTimer.pause();
     audioReveal.play();
 
+    const safeValidated = Array.isArray(validatedIndices) ? validatedIndices : [];
     revealOverlay.style.display = 'flex';
     revealGrid.innerHTML = '';
 
-    const found = validatedIndices.length;
-    const tot   = total || answers.length;
+    const found = safeValidated.length;
+    const tot   = total || (answers ? answers.length : 0);
     document.getElementById('reveal-score-badge').textContent = `${found} / ${tot} trouvées`;
 
+    if (!answers || !answers.length) return;
     const items = [];
     answers.forEach((ans, index) => {
         const div = document.createElement('div');
-        div.className = 'reveal-item' + (validatedIndices.includes(index) ? ' correct' : '');
+        div.className = 'reveal-item' + (safeValidated.includes(index) ? ' correct' : '');
         div.textContent = ans;
         revealGrid.appendChild(div);
         items.push(div);

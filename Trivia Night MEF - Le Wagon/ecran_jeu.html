@@ -557,6 +557,8 @@ channel.onmessage = (e) => {
         case 'QUESTION_LOADED':  showQuestionReady(data); break;
         case 'REROLL_QUESTION': {
             const _rEl = document.getElementById('question-text-el');
+            // Stopper tout audio en cours avant de remplacer la question
+            _rEl.querySelectorAll('audio').forEach(a => { a.pause(); a.currentTime = 0; });
             if (data.questionType === 'image' && data.questionFile) {
                 _rEl.innerHTML = '';
                 const _ri = document.createElement('img');

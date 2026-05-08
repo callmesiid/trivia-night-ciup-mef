@@ -188,7 +188,8 @@
                 if (card) card.classList.remove('removed');
             }
             else if (data.type === 'SHOW_RESULTS') {
-                showResultsScreen(data.data.results);
+                const results = data.data && Array.isArray(data.data.results) ? data.data.results : (Array.isArray(data.results) ? data.results : []);
+                showResultsScreen(results);
             }
             else if (data.type === 'START_TIMER') {
                 document.getElementById('game-timer-display').style.display = 'block';
@@ -277,6 +278,7 @@
         }
 
         function showResultsScreen(results) {
+            if (!Array.isArray(results) || !results.length) return;
             const medals = ['🥇','🥈','🥉'];
             const rClasses = ['r1','r2','r3','rn'];
             const table = document.getElementById('res-table');

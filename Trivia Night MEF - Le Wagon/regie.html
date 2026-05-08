@@ -1174,7 +1174,16 @@ function continueWagon() {
 }
 
 function cancelQuestion() {
-    if (gameState.currentQuestion) { gameState.sessionPoints=0; channel.postMessage({ type:'HIDE_QUESTION' }); }
+    if (gameState.currentQuestion) {
+        gameState.sessionPoints=0;
+        // Nettoyer banqueVoleePar pour éviter qu'un vol de banque stale s'applique au prochain wagon
+        const curTeam = gameState.teams[gameState.currentTeamIndex];
+        if (curTeam && curTeam.banqueVoleePar !== null && curTeam.banqueVoleePar !== undefined) {
+            addLog(`🦹 VOL DE BANQUE annulé — question abandonnée`, 'info');
+            curTeam.banqueVoleePar = null;
+        }
+        channel.postMessage({ type:'HIDE_QUESTION' });
+    }
     closeQuestionPanel(); addLog('Question annulée', 'info');
 }
 
@@ -1205,6 +1214,7 @@ function getDifficultyForLevel(level, depth) {
 
 function rerollQuestion() {
     if (!gameState.currentQuestion) return;
+    if (timerState === 'RUNNING') { addLog('⚠ Stoppez le timer avant de changer la question', 'bad'); return; }
     const { wagonIndex, level } = gameState.currentQuestion;
     const w = gameState.wagons[wagonIndex];
 
@@ -1443,7 +1453,8 @@ function applyBonusImmediate(bonus, teamIdx) {
             const leader=sorted[0];
             if (!leader || leader===team) {
                 // Activant est déjà leader ou seul — ne pas consommer
-                gameState.teams[teamIdx].bonuses.find(b=>b.id===9 && b.used).used = false;
+                const chip9 = gameState.teams[teamIdx].bonuses.find(b=>b.id===9 && b.used);
+                if (chip9) chip9.used = false;
                 renderBonusPanel();
                 addLog('🧳 VOL DE BAGAGE : vous êtes déjà leader (ou seul) — chip restauré', 'bad');
             } else {
@@ -1496,10 +1507,14 @@ function applyMalusOnTarget(targetIdx) {
     const {def, teamIdx, itemIdx} = pendingMalusActivation;
     const targetTeam=gameState.teams[targetIdx];
     const activatingTeam=gameState.teams[teamIdx];
+    if (!targetTeam || !activatingTeam) {
+        closeModal('target-modal'); pendingMalusActivation=null; return;
+    }
 
     // Bloquer le ciblage de sa propre équipe
     if (targetIdx === teamIdx) {
-        gameState.teams[teamIdx].malus[itemIdx].used = false;
+        const selfChip = gameState.teams[teamIdx]?.malus[itemIdx];
+        if (selfChip) selfChip.used = false;
         renderBonusPanel();
         addLog('Impossible de cibler votre propre équipe — chip restauré', 'bad');
         closeModal('target-modal'); pendingMalusActivation=null; return;
