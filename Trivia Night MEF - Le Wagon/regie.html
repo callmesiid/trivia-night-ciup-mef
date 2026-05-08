@@ -985,6 +985,7 @@ function answerCorrect() {
     let allowBankAnywhere = false;
     let forceBank         = false;
     let autoNextQ         = false;
+    let pendingBonusOwner = gameState.pendingBonus ? { teamIdx: gameState.pendingBonus.teamIdx, itemIdx: gameState.pendingBonus.itemIdx } : null;
 
     if (gameState.pendingBonus && gameState.pendingBonus.bonus.timing === 'POST_CORRECT') {
         const b = gameState.pendingBonus.bonus;
@@ -1020,7 +1021,11 @@ function answerCorrect() {
                     addLog(`💼 CLASSE AFFAIRES: Q${nextLvl + 1} grillée automatiquement (+${nextPts}pts)`, 'gold');
                     channel.postMessage({ type: 'SHOW_BONUS', data: { bonus: b, teamName: gameState.teams[gameState.currentTeamIndex].name, teamColor: gameState.teams[gameState.currentTeamIndex].color } });
                 } else {
-                    addLog('💼 CLASSE AFFAIRES: fin du wagon, bonus non applicable', 'info');
+                    // Fin de wagon — bonus non applicable, chip restauré
+                    if (pendingBonusOwner) {
+                        gameState.teams[pendingBonusOwner.teamIdx].bonuses[pendingBonusOwner.itemIdx].used = false;
+                    }
+                    addLog('💼 CLASSE AFFAIRES: fin du wagon, chip restauré', 'info');
                 }
                 break;
             }
@@ -1033,7 +1038,13 @@ function answerCorrect() {
     if (w.currentLevel >= w.depth) isAtPalierEnd = true;
 
     // PREMIÈRE CLASSE : auto-valide la prochaine question
-    if (autoNextQ && w.currentLevel < w.depth) {
+    if (autoNextQ && w.currentLevel >= w.depth) {
+        // Fin de wagon — bonus non applicable, chip restauré (owner capturé avant pendingBonus=null)
+        if (pendingBonusOwner) {
+            gameState.teams[pendingBonusOwner.teamIdx].bonuses[pendingBonusOwner.itemIdx].used = false;
+        }
+        addLog('👑 PREMIÈRE CLASSE: fin du wagon, chip restauré', 'info');
+    } else if (autoNextQ && w.currentLevel < w.depth) {
         const nextLevel = w.currentLevel;
         const nextPts   = getPointsForLevel(nextLevel + 1);
         w.windowStates[nextLevel].reached = true;
