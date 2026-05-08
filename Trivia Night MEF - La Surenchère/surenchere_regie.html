@@ -165,6 +165,7 @@
                         <option value="fixed" selected>Bonus fixes pour tous</option>
                         <option value="random">Bonus aléatoires</option>
                         <option value="manual">Choisis par équipe</option>
+                        <option value="none">Aucun bonus/malus</option>
                     </select>
                 </div>
                 <div style="display:flex;gap:5px;margin-bottom:5px;">
@@ -427,18 +428,19 @@ function makeRandomKit() {
 }
 
 function optionHTML(pool, selectedId) {
-    return pool.map(x => `<option value="${x.id}" ${String(x.id)===String(selectedId)?'selected':''}>${x.emoji} ${x.name}</option>`).join('');
+    const none = `<option value="" ${selectedId===''||selectedId===null||selectedId===undefined?'selected':''}>Aucun</option>`;
+    return none + pool.map(x => `<option value="${x.id}" ${String(x.id)===String(selectedId)?'selected':''}>${x.emoji} ${x.name}</option>`).join('');
 }
 
 function renderKitSetup(t, i) {
     const mode = document.getElementById('cfg-kit-mode-surenchere')?.value || 'fixed';
     if (mode !== 'manual') return '';
-    if (!t.bonusSelections || !t.bonusSelections.length) t.bonusSelections = BONUS_POOL.map(b => b.id).slice(0, RANDOM_BONUS_COUNT);
-    if (!t.malusSelections || !t.malusSelections.length) t.malusSelections = MALUS_POOL.map(m => m.id).slice(0, RANDOM_MALUS_COUNT);
-    while (t.bonusSelections.length < RANDOM_BONUS_COUNT) t.bonusSelections.push(BONUS_POOL[t.bonusSelections.length % BONUS_POOL.length].id);
-    while (t.malusSelections.length < RANDOM_MALUS_COUNT) t.malusSelections.push(MALUS_POOL[t.malusSelections.length % MALUS_POOL.length].id);
-    const bonusRows = t.bonusSelections.slice(0, RANDOM_BONUS_COUNT).map((id, bi) => `<label>Bonus ${bi+1}<select onchange="setTeamKitSelection(${i},'bonus',${bi},this.value)">${optionHTML(BONUS_POOL, id)}</select></label>`).join('');
-    const malusRows = t.malusSelections.slice(0, RANDOM_MALUS_COUNT).map((id, mi) => `<label>Malus ${mi+1}<select onchange="setTeamKitSelection(${i},'malus',${mi},this.value)">${optionHTML(MALUS_POOL, id)}</select></label>`).join('');
+    if (!t.bonusSelections || t.bonusSelections.length !== BONUS_POOL.length) t.bonusSelections = (t.bonuses || []).map(b => b.id).slice(0, BONUS_POOL.length);
+    if (!t.malusSelections || t.malusSelections.length !== MALUS_POOL.length) t.malusSelections = (t.malus || []).map(m => m.id).slice(0, MALUS_POOL.length);
+    while (t.bonusSelections.length < BONUS_POOL.length) t.bonusSelections.push('');
+    while (t.malusSelections.length < MALUS_POOL.length) t.malusSelections.push('');
+    const bonusRows = t.bonusSelections.slice(0, BONUS_POOL.length).map((id, bi) => `<label>Bonus ${bi+1}<select onchange="setTeamKitSelection(${i},'bonus',${bi},this.value)">${optionHTML(BONUS_POOL, id)}</select></label>`).join('');
+    const malusRows = t.malusSelections.slice(0, MALUS_POOL.length).map((id, mi) => `<label>Malus ${mi+1}<select onchange="setTeamKitSelection(${i},'malus',${mi},this.value)">${optionHTML(MALUS_POOL, id)}</select></label>`).join('');
     return `<div class="kit-setup" onclick="event.stopPropagation()">${bonusRows}${malusRows}</div>`;
 }
 
@@ -469,11 +471,18 @@ function applyKitModeToTeams() {
             t.malus = kit.malus;
             t.bonusSelections = kit.bonuses.map(b => b.id);
             t.malusSelections = kit.malus.map(m => m.id);
+        } else if (mode === 'none') {
+            t.bonuses = [];
+            t.malus = [];
+            t.bonusSelections = Array(BONUS_POOL.length).fill('');
+            t.malusSelections = Array(MALUS_POOL.length).fill('');
         } else {
             if (!t.bonusSelections || !t.bonusSelections.length) t.bonusSelections = BONUS_POOL.map(b => b.id).slice(0, RANDOM_BONUS_COUNT);
             if (!t.malusSelections || !t.malusSelections.length) t.malusSelections = MALUS_POOL.map(m => m.id).slice(0, RANDOM_MALUS_COUNT);
-            t.bonuses = t.bonusSelections.slice(0, RANDOM_BONUS_COUNT).map(id => ({ id, used: false }));
-            t.malus = t.malusSelections.slice(0, RANDOM_MALUS_COUNT).map(id => ({ id, used: false }));
+            while (t.bonusSelections.length < BONUS_POOL.length) t.bonusSelections.push('');
+            while (t.malusSelections.length < MALUS_POOL.length) t.malusSelections.push('');
+            t.bonuses = t.bonusSelections.slice(0, BONUS_POOL.length).filter(id => id !== '' && id !== null && id !== undefined).map(id => ({ id, used: false }));
+            t.malus = t.malusSelections.slice(0, MALUS_POOL.length).filter(id => id !== '' && id !== null && id !== undefined).map(id => ({ id, used: false }));
         }
     });
 }
