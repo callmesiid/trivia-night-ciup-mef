@@ -662,6 +662,7 @@ function renderQAPanel() {
   document.getElementById('main').innerHTML = `
     <div id="content-header">
       <span id="content-title">${label}</span>
+      <button onclick="renameTheme()" title="Renommer ce thème" style="background:none;border:1px solid #444;color:#d4af37;padding:3px 8px;border-radius:3px;cursor:pointer;font-size:.8rem;margin-left:6px;flex-shrink:0">✏️ Renommer</button>
       <div class="filter-bar">
         <button class="filter-btn ${filterType==='all'?'active':''}" onclick="setFilter('type','all')">Tout</button>
         <button class="filter-btn ${filterType==='text'?'active':''}" onclick="setFilter('type','text')">Texte</button>
@@ -767,6 +768,7 @@ function renderSurencherePanel() {
   document.getElementById('main').innerHTML = `
     <div id="content-header">
       <span id="content-title">${escHtml(theme.label)}</span>
+      <button onclick="renameTheme()" title="Renommer ce thème" style="background:none;border:1px solid #444;color:#d4af37;padding:3px 8px;border-radius:3px;cursor:pointer;font-size:.8rem;margin-left:6px;flex-shrink:0">✏️ Renommer</button>
       <span id="content-subtitle">${validated}/${answers.length} réponses validées</span>
     </div>
     <div id="stats-bar">
@@ -1211,6 +1213,50 @@ async function playAssetSound(assetPath) {
   if (!url) { showToast('Fichier audio introuvable', true); return; }
   currentAudio = new Audio(url);
   currentAudio.play();
+}
+
+function renameTheme() {
+  if (!currentThemeId) return;
+  const theme = currentGame === 'risque_tout' ? gameData.risque_tout[currentThemeId]
+              : currentGame === 'surenchere'   ? gameData.surenchere[currentThemeId]
+              : currentGame === 'wagon'        ? gameData.wagon.themes.find(t => t.id === currentThemeId)
+              : null;
+  if (!theme) return;
+
+  const currentLabel = currentGame === 'wagon' ? theme.name : theme.label;
+  const titleEl = document.getElementById('content-title');
+  if (!titleEl) return;
+
+  // Remplacer le span par un input inline
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.value = currentLabel;
+  input.style.cssText = 'font-family:"Bebas Neue";font-size:1.6rem;color:#d4af37;background:#1a1a1a;border:1px solid #d4af37;border-radius:3px;padding:2px 8px;width:280px;';
+  titleEl.replaceWith(input);
+  input.focus();
+  input.select();
+
+  async function applyRename() {
+    const newName = input.value.trim();
+    if (!newName) { renderMain(); return; }
+    if (newName === currentLabel) { renderMain(); return; }
+
+    if (currentGame === 'wagon') {
+      theme.name = newName;
+    } else {
+      theme.label = newName;
+      if (currentGame === 'surenchere' && theme.prompt === currentLabel) theme.prompt = newName;
+    }
+    await saveTheme(currentGame, currentThemeId);
+    renderSidebar();
+    renderMain();
+  }
+
+  input.addEventListener('blur', applyRename);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); input.blur(); }
+    if (e.key === 'Escape') { input.removeEventListener('blur', applyRename); renderMain(); }
+  });
 }
 
 function escHtml(s) {
