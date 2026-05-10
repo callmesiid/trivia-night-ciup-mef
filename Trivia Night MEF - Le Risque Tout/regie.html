@@ -428,15 +428,35 @@
                 cb.value = t;
                 cb.id = 'excl-' + t.replace(/\s/g,'_');
                 cb.style.cssText = 'accent-color:#e74c3c;cursor:pointer;';
+                cb.addEventListener('change', updateNormalConfigState);
                 label.appendChild(cb);
                 label.appendChild(document.createTextNode(t));
                 container.appendChild(label);
             });
+            document.getElementById('spins-needed-select').addEventListener('change', updateNormalConfigState);
         })();
+
+        function updateNormalConfigState() {
+            const spins = parseInt(document.getElementById('spins-needed-select').value) || 7;
+            const excluded = ALL_WHEEL_THEMES.filter(t => document.getElementById('excl-'+t.replace(/\s/g,'_')).checked);
+            const available = ALL_WHEEL_THEMES.length - excluded.length;
+            const btn = document.querySelector('#normal-config .btn-action');
+            const valid = available >= spins;
+            btn.style.background = valid ? '' : '#c0392b';
+            btn.textContent = valid
+                ? `✓ APPLIQUER (${available} thèmes dispo)`
+                : `✗ INVALIDE — ${available} dispo < ${spins} requis`;
+            btn.disabled = !valid;
+        }
 
         function applyNormalConfig() {
             const spins = parseInt(document.getElementById('spins-needed-select').value) || 7;
             const excluded = ALL_WHEEL_THEMES.filter(t => document.getElementById('excl-'+t.replace(/\s/g,'_')).checked);
+            const available = ALL_WHEEL_THEMES.length - excluded.length;
+            if (available < spins) {
+                alert(`Impossible : ${available} thème(s) disponible(s) sur la roue, mais ${spins} thèmes à tirer.\nRéduis le nombre de thèmes ou retire moins d'exclusions.`);
+                return;
+            }
             send('SET_MODE', { mode: 'NORMAL', spinsNeeded: spins, excludedThemes: excluded });
             document.getElementById('overlay-launch').classList.add('hidden');
             document.getElementById('grid-container').innerHTML = '';
