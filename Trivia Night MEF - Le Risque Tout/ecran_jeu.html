@@ -280,7 +280,7 @@
 
             switch(data.type) {
                 // 1. CONFIG & INTRO
-                case 'SET_MODE': setGameMode(data.mode); break;
+                case 'SET_MODE': setGameMode(data.mode, { spinsNeeded: data.spinsNeeded, excludedThemes: data.excludedThemes }); break;
                 case 'START_INTRO': runIntro(); break;
                 case 'SKIP_INTRO': skipIntro(); break;
 
@@ -453,7 +453,7 @@
         }
 
         // --- FONCTIONS DES MODES DE JEU ---
-        function setGameMode(mode) {
+        function setGameMode(mode, options) {
             gameMode = mode;
             document.body.className = ""; 
             
@@ -496,12 +496,16 @@
             } 
             else { // NORMAL
                 document.body.classList.remove('mode-quick', 'mode-hard');
-                spinsNeeded = 7;
-                wheelCont.style.display = 'block'; 
-                quickSlots.style.display = 'none'; 
+                spinsNeeded = (options && options.spinsNeeded) ? options.spinsNeeded : 7;
+                const excluded = (options && options.excludedThemes) ? options.excludedThemes : [];
+                activeWheelThemes = WHEEL_THEMES.filter(t => !excluded.includes(t));
+                selectedThemesList = [];
+                wheelCont.style.display = 'block';
+                quickSlots.style.display = 'none';
                 hardBtn.style.display = 'none';
                 spinB.style.display = 'block';
                 title.innerText = "SÉLECTION DES THÈMES";
+                drawWheel();
             }
             playSound(audioSelected);
         }

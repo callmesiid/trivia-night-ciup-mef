@@ -135,6 +135,27 @@
                 <button id="mode-quick" style="flex:1; font-size:0.7em" onclick="setMode('QUICK')">Rapide</button>
                 <button id="mode-hard" style="flex:1; font-size:0.7em" onclick="setMode('HARD')">Hard</button>
             </div>
+
+            <div id="normal-config" style="margin-top:8px; border-top:1px solid #444; padding-top:8px; display:none;">
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                    <label style="color:#aaa; font-size:0.8em; white-space:nowrap;">Nb thèmes :</label>
+                    <select id="spins-needed-select" style="background:#333;color:#fff;border:1px solid #555;padding:3px 6px;border-radius:3px;font-size:0.85em;">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7" selected>7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <div style="color:#aaa; font-size:0.8em; margin-bottom:4px;">Exclure de la roue :</div>
+                    <div id="theme-exclusion-list" style="display:grid; grid-template-columns:1fr 1fr; gap:2px 8px; max-height:120px; overflow-y:auto; background:#111; border:1px solid #333; padding:6px; border-radius:3px;"></div>
+                </div>
+                <button class="btn-action" style="width:100%; margin-top:6px; font-size:0.75em;" onclick="applyNormalConfig()">✓ APPLIQUER</button>
+            </div>
         </div>
 
         <div class="panel" style="flex:1;">
@@ -395,10 +416,43 @@
         // --- COMMUNICATION ---
         function send(type, data={}) { channel.postMessage({ type: type, ...data }); }
 
+        // Construit la liste des checkboxes d'exclusion (une fois au chargement)
+        const ALL_WHEEL_THEMES = ["Animaux","Années 2000","Art","Célébrités","Cinéma","Cuisine","Disney","Géographie","Harry Potter","Histoire","Jeux Vidéo","Littérature","Musique","Sciences","Sport"];
+        (function buildExclusionList() {
+            const container = document.getElementById('theme-exclusion-list');
+            ALL_WHEEL_THEMES.forEach(t => {
+                const label = document.createElement('label');
+                label.style.cssText = 'display:flex;align-items:center;gap:4px;font-size:0.78em;cursor:pointer;color:#ddd;';
+                const cb = document.createElement('input');
+                cb.type = 'checkbox';
+                cb.value = t;
+                cb.id = 'excl-' + t.replace(/\s/g,'_');
+                cb.style.cssText = 'accent-color:#e74c3c;cursor:pointer;';
+                label.appendChild(cb);
+                label.appendChild(document.createTextNode(t));
+                container.appendChild(label);
+            });
+        })();
+
+        function applyNormalConfig() {
+            const spins = parseInt(document.getElementById('spins-needed-select').value) || 7;
+            const excluded = ALL_WHEEL_THEMES.filter(t => document.getElementById('excl-'+t.replace(/\s/g,'_')).checked);
+            send('SET_MODE', { mode: 'NORMAL', spinsNeeded: spins, excludedThemes: excluded });
+            document.getElementById('overlay-launch').classList.add('hidden');
+            document.getElementById('grid-container').innerHTML = '';
+            document.getElementById('overlay-grid').classList.remove('hidden');
+            document.getElementById('overlay-grid').innerText = "Mode changé. Lancez la grille.";
+            bucketsMap = {};
+            addLog(`Mode Normal : ${spins} thèmes${excluded.length ? ', exclus: '+excluded.join(', ') : ''}`, 'edit');
+        }
+
         function setMode(mode) {
             ['normal','quick','hard'].forEach(m => document.getElementById(`mode-${m}`).style.borderColor = '#555');
             document.getElementById(`mode-${mode.toLowerCase()}`).style.borderColor = '#f1c40f';
-            
+            document.getElementById('normal-config').style.display = mode === 'NORMAL' ? 'block' : 'none';
+
+            if (mode === 'NORMAL') return; // attend applyNormalConfig()
+
             send('SET_MODE', {mode: mode});
             document.getElementById('overlay-launch').classList.add('hidden');
             document.getElementById('grid-container').innerHTML = '';
