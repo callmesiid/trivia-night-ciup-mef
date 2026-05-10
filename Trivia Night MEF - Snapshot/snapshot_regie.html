@@ -474,7 +474,6 @@ function markCorrect(cardIdx) {
 // fromTimer=true : appelé par expiration automatique du chrono (ignore les gardes manuels)
 // fromTimer=false (défaut) : bouton FAUX ou clavier → vérifications strictes
 function markWrong(fromTimer = false) {
-  if (!canAnswer) return;
   if (!fromTimer && (timerState !== 'RUNNING' || gs.snake.length <= 1)) return;
   const p = currentPlayer();
   if (!p) return;
@@ -584,7 +583,7 @@ function renderAll() {
 }
 
 function renderButtons() {
-  const canFaux = canAnswer && timerState === 'RUNNING' && gs.snake.length > 1;
+  const canFaux = timerState === 'RUNNING' && gs.snake.length > 1;
   document.getElementById('btn-faux').disabled = !canFaux;
 }
 
