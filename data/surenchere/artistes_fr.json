@@ -13,11 +13,15 @@
       "validated": true
     },
     {
-      "value": "Serge Gainsbourg",
+      "value": "Jacques Brel",
       "validated": true
     },
     {
-      "value": "Jacques Brel",
+      "value": "Georges Brassens",
+      "validated": true
+    },
+    {
+      "value": "Serge Gainsbourg",
       "validated": true
     },
     {
@@ -25,7 +29,19 @@
       "validated": true
     },
     {
-      "value": "Jean-Jacques Goldman",
+      "value": "Juliette Gréco",
+      "validated": true
+    },
+    {
+      "value": "Gilbert Bécaud",
+      "validated": true
+    },
+    {
+      "value": "Yves Montand",
+      "validated": true
+    },
+    {
+      "value": "Joe Dassin",
       "validated": true
     },
     {
@@ -33,15 +49,7 @@
       "validated": true
     },
     {
-      "value": "Claude François",
-      "validated": true
-    },
-    {
       "value": "Michel Sardou",
-      "validated": true
-    },
-    {
-      "value": "Renaud",
       "validated": true
     },
     {
@@ -49,43 +57,31 @@
       "validated": true
     },
     {
-      "value": "Vanessa Paradis",
+      "value": "Jean-Jacques Goldman",
       "validated": true
     },
     {
-      "value": "Stromae",
+      "value": "Patrick Bruel",
       "validated": true
     },
     {
-      "value": "Angèle",
+      "value": "Véronique Sanson",
       "validated": true
     },
     {
-      "value": "Aya Nakamura",
+      "value": "Mylène Farmer",
       "validated": true
     },
     {
-      "value": "Jul",
+      "value": "Florent Pagny",
       "validated": true
     },
     {
-      "value": "Orelsan",
+      "value": "Patricia Kaas",
       "validated": true
     },
     {
-      "value": "Maître Gims",
-      "validated": true
-    },
-    {
-      "value": "Soprano",
-      "validated": true
-    },
-    {
-      "value": "Nekfeu",
-      "validated": true
-    },
-    {
-      "value": "PNL",
+      "value": "Céline Dion",
       "validated": true
     },
     {
@@ -93,11 +89,39 @@
       "validated": true
     },
     {
-      "value": "M",
+      "value": "Téléphone",
+      "validated": true
+    },
+    {
+      "value": "Calogero",
       "validated": true
     },
     {
       "value": "Zazie",
+      "validated": true
+    },
+    {
+      "value": "Christophe Maé",
+      "validated": true
+    },
+    {
+      "value": "Amir",
+      "validated": true
+    },
+    {
+      "value": "Clara Luciani",
+      "validated": true
+    },
+    {
+      "value": "Vianney",
+      "validated": true
+    },
+    {
+      "value": "Louane",
+      "validated": true
+    },
+    {
+      "value": "Zaz",
       "validated": true
     },
     {
@@ -109,23 +133,75 @@
       "validated": true
     },
     {
-      "value": "Daft Punk",
+      "value": "MC Solaar",
       "validated": true
     },
     {
-      "value": "Air",
+      "value": "Booba",
       "validated": true
     },
     {
-      "value": "Christine and the Queens",
+      "value": "Jul",
       "validated": true
     },
     {
-      "value": "Vald",
+      "value": "Orelsan",
+      "validated": true
+    },
+    {
+      "value": "SCH",
+      "validated": true
+    },
+    {
+      "value": "Ninho",
       "validated": true
     },
     {
       "value": "Damso",
+      "validated": true
+    },
+    {
+      "value": "PNL",
+      "validated": true
+    },
+    {
+      "value": "Aya Nakamura",
+      "validated": true
+    },
+    {
+      "value": "Angèle",
+      "validated": true
+    },
+    {
+      "value": "Pierre de Maere",
+      "validated": true
+    },
+    {
+      "value": "Slimane",
+      "validated": true
+    },
+    {
+      "value": "Vitaa",
+      "validated": true
+    },
+    {
+      "value": "Dadju",
+      "validated": true
+    },
+    {
+      "value": "Tayc",
+      "validated": true
+    },
+    {
+      "value": "Gims",
+      "validated": true
+    },
+    {
+      "value": "Kendji Girac",
+      "validated": true
+    },
+    {
+      "value": "Soprano",
       "validated": true
     }
   ]

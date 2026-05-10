@@ -1,0 +1,96 @@
+{
+  "id": "arrets_metro_ligne_5",
+  "label": "ARRETS METRO LIGNE 5",
+  "icon": "assets/Images/geographie.png",
+  "prompt": "ARRETS METRO LIGNE 5",
+  "answers": [
+    {
+      "value": "Place d'Italie",
+      "validated": true
+    },
+    {
+      "value": "Campo-Formio",
+      "validated": true
+    },
+    {
+      "value": "Saint-Marcel",
+      "validated": true
+    },
+    {
+      "value": "Gare d'Austerlitz",
+      "validated": true
+    },
+    {
+      "value": "Quai de la Rapée",
+      "validated": true
+    },
+    {
+      "value": "Bastille",
+      "validated": true
+    },
+    {
+      "value": "Bréguet-Sabin",
+      "validated": true
+    },
+    {
+      "value": "Richard-Lenoir",
+      "validated": true
+    },
+    {
+      "value": "Oberkampf",
+      "validated": true
+    },
+    {
+      "value": "République",
+      "validated": true
+    },
+    {
+      "value": "Jacques Bonsergent",
+      "validated": true
+    },
+    {
+      "value": "Gare de l'Est",
+      "validated": true
+    },
+    {
+      "value": "Gare du Nord",
+      "validated": true
+    },
+    {
+      "value": "Stalingrad",
+      "validated": true
+    },
+    {
+      "value": "Jaurès",
+      "validated": true
+    },
+    {
+      "value": "Laumière",
+      "validated": true
+    },
+    {
+      "value": "Ourcq",
+      "validated": true
+    },
+    {
+      "value": "Porte de Pantin",
+      "validated": true
+    },
+    {
+      "value": "Hiche",
+      "validated": true
+    },
+    {
+      "value": "Eglise de Pantin",
+      "validated": true
+    },
+    {
+      "value": "Bobigny-Pantin Raymon Q.",
+      "validated": true
+    },
+    {
+      "value": "Bobigny-Pablo Picasso",
+      "validated": true
+    }
+  ]
+}

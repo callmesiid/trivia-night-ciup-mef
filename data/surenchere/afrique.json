@@ -33,15 +33,15 @@
       "validated": true
     },
     {
+      "value": "Cabo Verde",
+      "validated": true
+    },
+    {
       "value": "Cameroun",
       "validated": true
     },
     {
-      "value": "Cap-Vert",
-      "validated": true
-    },
-    {
-      "value": "Centrafrique",
+      "value": "République centrafricaine",
       "validated": true
     },
     {
@@ -49,11 +49,15 @@
       "validated": true
     },
     {
-      "value": "Congo",
+      "value": "République du Congo",
       "validated": true
     },
     {
-      "value": "Côte d'Ivoire",
+      "value": "République démocratique du Congo",
+      "validated": true
+    },
+    {
+      "value": "Côte d’Ivoire",
       "validated": true
     },
     {
@@ -66,6 +70,10 @@
     },
     {
       "value": "Érythrée",
+      "validated": true
+    },
+    {
+      "value": "Eswatini",
       "validated": true
     },
     {
@@ -89,7 +97,23 @@
       "validated": true
     },
     {
+      "value": "Guinée-Bissau",
+      "validated": true
+    },
+    {
+      "value": "Guinée équatoriale",
+      "validated": true
+    },
+    {
       "value": "Kenya",
+      "validated": true
+    },
+    {
+      "value": "Lesotho",
+      "validated": true
+    },
+    {
+      "value": "Liberia",
       "validated": true
     },
     {
@@ -101,6 +125,10 @@
       "validated": true
     },
     {
+      "value": "Malawi",
+      "validated": true
+    },
+    {
       "value": "Mali",
       "validated": true
     },
@@ -109,11 +137,19 @@
       "validated": true
     },
     {
+      "value": "Maurice",
+      "validated": true
+    },
+    {
       "value": "Mauritanie",
       "validated": true
     },
     {
       "value": "Mozambique",
+      "validated": true
+    },
+    {
+      "value": "Namibie",
       "validated": true
     },
     {
@@ -133,7 +169,19 @@
       "validated": true
     },
     {
+      "value": "Sao Tomé-et-Principe",
+      "validated": true
+    },
+    {
       "value": "Sénégal",
+      "validated": true
+    },
+    {
+      "value": "Seychelles",
+      "validated": true
+    },
+    {
+      "value": "Sierra Leone",
       "validated": true
     },
     {
@@ -142,6 +190,10 @@
     },
     {
       "value": "Soudan",
+      "validated": true
+    },
+    {
+      "value": "Soudan du Sud",
       "validated": true
     },
     {

@@ -143,6 +143,34 @@
     {
       "value": "Triathlon",
       "validated": true
+    },
+    {
+      "value": "Courses (100 m, marathon, relais…)",
+      "validated": true
+    },
+    {
+      "value": "Sauts (longueur, hauteur, perche…)",
+      "validated": true
+    },
+    {
+      "value": "Lancers (poids, javelot, disque…)",
+      "validated": true
+    },
+    {
+      "value": "Natation synchronisée (artistique)",
+      "validated": true
+    },
+    {
+      "value": "Tir à l’arc",
+      "validated": true
+    },
+    {
+      "value": "Canoë-kayak",
+      "validated": true
+    },
+    {
+      "value": "Escalade sportive",
+      "validated": true
     }
   ]
 }

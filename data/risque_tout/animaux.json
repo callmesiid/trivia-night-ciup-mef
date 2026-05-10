@@ -3044,8 +3044,8 @@
     },
     {
       "type": "text",
-      "question": "Note: Souvent appelé \"Prince\" ou simplement \"Mâle ailé\".",
-      "answer": "Mâle (ou Prince)",
+      "question": "Quel est le terme entomologique désignant le mâle reproducteur chez les abeilles ?",
+      "answer": "Faux-bourdon",
       "difficulty": 5,
       "validated": true
     },

@@ -49,7 +49,7 @@
       "type": "text",
       "question": "Qui est la mère de Blue Ivy ?",
       "answer": "Beyoncé",
-      "difficulty": 1,
+      "difficulty": 4,
       "validated": true
     },
     {
@@ -70,13 +70,6 @@
       "type": "text",
       "question": "Quelle chanteuse a débuté dans la série \"Hannah Montana\" ?",
       "answer": "Miley Cyrus",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Qui forme un couple célèbre avec Jay-Z ?",
-      "answer": "Beyoncé",
       "difficulty": 1,
       "validated": true
     },
@@ -313,7 +306,7 @@
     },
     {
       "type": "text",
-      "question": "Quelle chanteuse a été en couple avec Justin Timberlake (Britney ou...). Remplacé : Qui a chanté \"Toxic\" ?",
+      "question": "Qui a chanté \"Toxic\" en 2003 ?",
       "answer": "Britney Spears",
       "difficulty": 1,
       "validated": true
@@ -376,13 +369,6 @@
     },
     {
       "type": "text",
-      "question": "Quel chanteur est mort le 25 juin 2009 ?",
-      "answer": "Michael Jackson",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Qui a joué \"Neo\" dans Matrix ?",
       "answer": "Keanu Reeves",
       "difficulty": 1,
@@ -425,7 +411,7 @@
     },
     {
       "type": "text",
-      "question": "Quel chanteur français a chanté \"Allumer le feu\" ?",
+      "question": "Quel chanteur français surnommé \"l'Idole des jeunes\" a vendu plus de 110 millions de disques ?",
       "answer": "Johnny Hallyday",
       "difficulty": 1,
       "validated": true
@@ -474,13 +460,6 @@
     },
     {
       "type": "text",
-      "question": "Quelle star de télé-réalité a pour soeurs Kourtney et Khloé ?",
-      "answer": "Kim Kardashian",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel acteur français a joué dans \"Intouchables\" ?",
       "answer": "Omar Sy",
       "difficulty": 1,
@@ -495,13 +474,6 @@
     },
     {
       "type": "text",
-      "question": "Quel acteur a joué \"Forrest Gump\" ?",
-      "answer": "Tom Hanks",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Qui est la femme de Nicolas Sarkozy ?",
       "answer": "Carla Bruni",
       "difficulty": 1,
@@ -509,7 +481,7 @@
     },
     {
       "type": "text",
-      "question": "Qui est le créateur de la série \"Kaamelott\" ?",
+      "question": "Qui est le créateur et acteur principal de la série médiévale comique \"Kaamelott\" ?",
       "answer": "Alexandre Astier",
       "difficulty": 1,
       "validated": true
@@ -523,29 +495,8 @@
     },
     {
       "type": "text",
-      "question": "Quelle chanteuse a chanté \"Baby One More Time\" ?",
-      "answer": "Britney Spears",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Qui a chanté \"Les Lacs du Connemara\" ?",
       "answer": "Michel Sardou",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quelle actrice a joué \"Amélie Poulain\" ?",
-      "answer": "Audrey Tautou",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Qui est le père de Enrique Iglesias ?",
-      "answer": "Julio Iglesias",
       "difficulty": 1,
       "validated": true
     },
@@ -684,7 +635,7 @@
     },
     {
       "type": "text",
-      "question": "Quel acteur français est célèbre pour ses colères dans les films (De Funès ou...). Remplacé : Qui joue Astérix dans le film de Guillaume Canet ?",
+      "question": "Qui joue Astérix dans le film \"Astérix et Obélix : L'Empire du Milieu\" (2023) ?",
       "answer": "Guillaume Canet",
       "difficulty": 2,
       "validated": true
@@ -699,13 +650,6 @@
     {
       "type": "text",
       "question": "Quelle chanteuse a fait le show à la mi-temps du Super Bowl 2023 enceinte ?",
-      "answer": "Rihanna",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quelle star a lancé la marque de cosmétiques \"Fenty Beauty\" ?",
       "answer": "Rihanna",
       "difficulty": 2,
       "validated": true
@@ -861,13 +805,6 @@
       "type": "text",
       "question": "Quelle star a joué dans \"Hunger Games\" ?",
       "answer": "Jennifer Lawrence",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Qui a été le compagnon de Selena Gomez et Hailey Baldwin ?",
-      "answer": "Justin Bieber",
       "difficulty": 2,
       "validated": true
     },
@@ -1071,13 +1008,6 @@
       "type": "text",
       "question": "Quelle chanteuse a chanté \"California Gurls\" ?",
       "answer": "Katy Perry",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quelle star française a joué dans \"Inception\" ?",
-      "answer": "Marion Cotillard",
       "difficulty": 2,
       "validated": true
     },
@@ -1449,13 +1379,6 @@
       "type": "text",
       "question": "Quel acteur français est surnommé \"Dewaere\" ?",
       "answer": "Patrick Dewaere",
-      "difficulty": 4,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quelle star a pour ex-mari Russell Brand ?",
-      "answer": "Katy Perry",
       "difficulty": 4,
       "validated": true
     },

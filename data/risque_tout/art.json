@@ -166,7 +166,7 @@
     },
     {
       "type": "text",
-      "question": "Note pour le quiz: Accepter Rembrandt comme réponse simple.",
+      "question": "Quel peintre néerlandais du XVIIe siècle est célèbre pour ses portraits et son utilisation du clair-obscur ?",
       "answer": "Rembrandt",
       "difficulty": 1,
       "validated": true
@@ -1293,7 +1293,7 @@
     },
     {
       "type": "text",
-      "question": "Note: Question remplacée: Qui a peint \"La Madeleine à la veilleuse\" ?",
+      "question": "Qui a peint \"La Madeleine à la veilleuse\" ?",
       "answer": "Georges de La Tour",
       "difficulty": 5,
       "validated": true

@@ -119,6 +119,34 @@
     {
       "value": "Pistou",
       "validated": true
+    },
+    {
+      "value": "Choucroute garnie",
+      "validated": true
+    },
+    {
+      "value": "Soupe à l’oignon",
+      "validated": true
+    },
+    {
+      "value": "Croque-monsieur",
+      "validated": true
+    },
+    {
+      "value": "Salade niçoise",
+      "validated": true
+    },
+    {
+      "value": "Crêpes",
+      "validated": true
+    },
+    {
+      "value": "Soufflé au fromage",
+      "validated": true
+    },
+    {
+      "value": "Coquilles Saint-Jacques",
+      "validated": true
     }
   ]
 }

@@ -1881,8 +1881,8 @@ const QUESTION_DATABASE = {
           "answer": "Il n'a pas de nom spécifique (Mâle)"
         },
         {
-          "question": "Note: Souvent appelé \"Prince\" ou simplement \"Mâle ailé\".",
-          "answer": "Mâle (ou Prince)"
+          "question": "Quel est le terme entomologique désignant le mâle reproducteur chez les abeilles ?",
+          "answer": "Faux-bourdon"
         },
         {
           "question": "Quel animal est un \"Lépidoptère\" ?",
@@ -2109,10 +2109,6 @@ const QUESTION_DATABASE = {
           "answer": "Fast and Furious"
         },
         {
-          "question": "Quel film a pour héros un poisson clown nommé Nemo ?",
-          "answer": "Le Monde de Nemo"
-        },
-        {
           "question": "Qui a gagné la première saison de Loft Story (avec Christophe) ?",
           "answer": "Loana"
         },
@@ -2173,7 +2169,7 @@ const QUESTION_DATABASE = {
           "answer": "Dr House"
         },
         {
-          "question": "Note: Question remplacée: Quel jeu de sport sur Wii a été un phénomène ?",
+          "question": "Quel jeu Nintendo sorti en 2006 était inclus avec la console et permettait de jouer au tennis, bowling ou golf en bougeant la manette ?",
           "answer": "Wii Sports"
         },
         {
@@ -2205,10 +2201,6 @@ const QUESTION_DATABASE = {
           "answer": "Beyoncé"
         },
         {
-          "question": "Quel jeu de gestion de vie (Maxis) est sorti en 2000 ?",
-          "answer": "Les Sims"
-        },
-        {
           "question": "Quel film d'animation a pour héros un rat cuisinier (2007) ?",
           "answer": "Ratatouille"
         },
@@ -2217,20 +2209,12 @@ const QUESTION_DATABASE = {
           "answer": "Audrey Tautou"
         },
         {
-          "question": "Quel film a pour héros un panda roux (ah non ça c'est 2022). Remplacé : Quel film d'animation a pour héros une famille de super-héros (2004) ?",
+          "question": "Quel film d'animation Pixar de 2004 met en scène une famille de super-héros contraints de vivre incognito ?",
           "answer": "Les Indestructibles"
-        },
-        {
-          "question": "Quelle série TV a pour décor Wisteria Lane ?",
-          "answer": "Desperate Housewives"
         },
         {
           "question": "Quel film a pour sujet la vie d'Edith Piaf ?",
           "answer": "La Môme"
-        },
-        {
-          "question": "Quel film d'animation a pour héros un ogre et un âne ?",
-          "answer": "Shrek"
         },
         {
           "question": "Quelle série TV suit une équipe d'experts à Las Vegas ?",
@@ -2245,10 +2229,6 @@ const QUESTION_DATABASE = {
           "answer": "Les Choristes"
         },
         {
-          "question": "Quelle série TV suit des naufragés (encore) ?",
-          "answer": "Lost"
-        },
-        {
           "question": "Quelle marque de baladeur a dominé le marché ?",
           "answer": "iPod (Apple)"
         },
@@ -2257,16 +2237,8 @@ const QUESTION_DATABASE = {
           "answer": "Matrix"
         },
         {
-          "question": "Quelle monnaie a remplacé le Mark allemand ?",
-          "answer": "Euro"
-        },
-        {
           "question": "Quel film a pour méchant le Joker (2008) ?",
           "answer": "The Dark Knight"
-        },
-        {
-          "question": "Quel film a pour héros un petit poisson clown ?",
-          "answer": "Nemo"
         },
         {
           "question": "Quelle entreprise a lancé la Xbox en 2001 ?",
@@ -2277,36 +2249,12 @@ const QUESTION_DATABASE = {
           "answer": "James Cameron"
         },
         {
-          "question": "Quelle console a introduit la Wiimote ?",
-          "answer": "Wii"
-        },
-        {
           "question": "Qui a chanté \"Whenever Wherever\" ?",
-          "answer": "Shakira"
-        },
-        {
-          "question": "Quelle chanteuse a sorti \"Hips Don't Lie\" ?",
           "answer": "Shakira"
         },
         {
           "question": "Quelle série TV a pour héros un prof de chimie (Walter White) ?",
           "answer": "Breaking Bad"
-        },
-        {
-          "question": "Qui a chanté \"Moi... Lolita\" ?",
-          "answer": "Alizée"
-        },
-        {
-          "question": "Quel film d'animation a pour héros Shrek ?",
-          "answer": "Shrek"
-        },
-        {
-          "question": "Qui a gagné le Tour de France 2000 (titre retiré) ?",
-          "answer": "Lance Armstrong"
-        },
-        {
-          "question": "Quel film a pour héros un petit robot blanc (EVE) et jaune (WALL-E) ?",
-          "answer": "WALL-E"
         },
         {
           "question": "Quelle émission de télé-réalité enfermait des candidats dans un château ?",
@@ -2555,10 +2503,6 @@ const QUESTION_DATABASE = {
           "answer": "Omar et Fred"
         },
         {
-          "question": "Quel film a pour personnage principal un poisson amnésique (Dory) ?",
-          "answer": "Le Monde de Nemo"
-        },
-        {
           "question": "Quel groupe a chanté \"Hey Ya!\" en 2003 ?",
           "answer": "OutKast"
         },
@@ -2651,24 +2595,12 @@ const QUESTION_DATABASE = {
           "answer": "Firefox"
         },
         {
-          "question": "Quelle chanteuse a sorti \"Complicated\" en 2002 ?",
-          "answer": "Avril Lavigne"
-        },
-        {
-          "question": "Quel jeu vidéo a introduit les Mii ?",
-          "answer": "Wii Sports"
-        },
-        {
           "question": "Quel réseau social a été fondé en 2003 (musique et blog) ?",
           "answer": "MySpace"
         },
         {
           "question": "Quel pilote moto a dominé les années 2000 ?",
           "answer": "Valentino Rossi"
-        },
-        {
-          "question": "Quelle série a pour héros un tueur en série de Miami ?",
-          "answer": "Dexter"
         },
         {
           "question": "Qui a réalisé \"Kill Bill\" (2003) ?",
@@ -2711,10 +2643,6 @@ const QUESTION_DATABASE = {
           "answer": "Assassin's Creed"
         },
         {
-          "question": "Quel groupe a chanté \"Viva la Vida\" en 2008 ?",
-          "answer": "Coldplay"
-        },
-        {
           "question": "Quel groupe a chanté \"Californication\" en 2000 (Single) ?",
           "answer": "Red Hot Chili Peppers"
         },
@@ -2755,10 +2683,6 @@ const QUESTION_DATABASE = {
           "answer": "Benoît XVI"
         },
         {
-          "question": "Qui a chanté \"Sk8er Boi\" en 2002 ?",
-          "answer": "Avril Lavigne"
-        },
-        {
           "question": "Quel événement a touché AZF à Toulouse en 2001 ?",
           "answer": "Explosion de l'usine"
         },
@@ -2773,10 +2697,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel groupe a chanté \"Shut Up\" en 2003 ?",
           "answer": "The Black Eyed Peas"
-        },
-        {
-          "question": "Quelle console portable avait deux écrans dont un tactile ?",
-          "answer": "Nintendo DS"
         },
         {
           "question": "Qui a chanté \"Cry Me a River\" en 2002 ?",
@@ -2953,10 +2873,6 @@ const QUESTION_DATABASE = {
           "answer": "Tennis"
         },
         {
-          "question": "Quel groupe de rock anglais a sorti \"X&Y\" en 2005 ?",
-          "answer": "Coldplay"
-        },
-        {
           "question": "Quelle chanteuse a connu le succès avec \"Fallin'\" en 2001 ?",
           "answer": "Alicia Keys"
         },
@@ -3003,10 +2919,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel groupe de rock a chanté \"Take Me Out\" en 2004 ?",
           "answer": "Franz Ferdinand"
-        },
-        {
-          "question": "Quel groupe a chanté \"Clocks\" en 2002 ?",
-          "answer": "Coldplay"
         },
         {
           "question": "Quel groupe a chanté \"How to Save a Life\" en 2005 ?",
@@ -3073,11 +2985,11 @@ const QUESTION_DATABASE = {
           "answer": "Mad Men"
         },
         {
-          "question": "Quel film français a eu du succès avec des marionnettes (Le Bébête Show non). Remplacé : Quel film a pour titre \"Être et Avoir\" ?",
-          "answer": "Documentaire sur l'école"
+          "question": "Quel documentaire français de 2002 suit une classe unique dans une école rurale auvergnate ?",
+          "answer": "Être et Avoir"
         },
         {
-          "question": "Quelle série TV suit un père de famille trafiquant de drogue (déjà vu). Remplacé : Quelle série suit des vampires en Louisiane (2008) ?",
+          "question": "Quelle série HBO lancée en 2008 se déroule en Louisiane et met en scène des vampires sortis de l'ombre ?",
           "answer": "True Blood"
         },
         {
@@ -3192,7 +3104,7 @@ const QUESTION_DATABASE = {
         },
         {
           "question": "Quelle émission de TF1 faisait passer le permis de conduire à des stars ?",
-          "answer": "Le Grand Concours (Non). Remplacé : Zéro de conduite"
+          "answer": "Zéro de conduite"
         },
         {
           "question": "Qui a réalisé \"No Country for Old Men\" (2007) ?",
@@ -3237,7 +3149,7 @@ const QUESTION_DATABASE = {
           "answer": "Guitar Freaks (ou Singstar pour le chant)"
         },
         {
-          "question": "Quel pays a vu la catastrophe nucléaire de... (c'est 2011 Fukushima). Remplacé : Dans quel pays a eu lieu la prise d'otages de Beslan en 2004 ?",
+          "question": "Dans quel pays a eu lieu la prise d'otages d'une école à Beslan en septembre 2004 ?",
           "answer": "Russie"
         },
         {
@@ -3369,7 +3281,7 @@ const QUESTION_DATABASE = {
           "answer": "Pop Art"
         },
         {
-          "question": "Note pour le quiz: Accepter Rembrandt comme réponse simple.",
+          "question": "Quel peintre néerlandais du XVIIe siècle est célèbre pour ses portraits et son utilisation du clair-obscur ?",
           "answer": "Rembrandt"
         },
         {
@@ -4037,7 +3949,7 @@ const QUESTION_DATABASE = {
           "answer": "Norman Foster"
         },
         {
-          "question": "Note: Question remplacée: Qui a peint \"La Madeleine à la veilleuse\" ?",
+          "question": "Qui a peint \"La Madeleine à la veilleuse\" ?",
           "answer": "Georges de La Tour"
         },
         {
@@ -4109,10 +4021,6 @@ const QUESTION_DATABASE = {
           "answer": "Mariah Carey"
         },
         {
-          "question": "Qui est la mère de Blue Ivy ?",
-          "answer": "Beyoncé"
-        },
-        {
           "question": "Quelle princesse est décédée sous le pont de l'Alma en 1997 ?",
           "answer": "Lady Diana (Princesse Diana)"
         },
@@ -4123,10 +4031,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quelle chanteuse a débuté dans la série \"Hannah Montana\" ?",
           "answer": "Miley Cyrus"
-        },
-        {
-          "question": "Qui forme un couple célèbre avec Jay-Z ?",
-          "answer": "Beyoncé"
         },
         {
           "question": "Quel acteur a giflé Chris Rock aux Oscars 2022 ?",
@@ -4261,7 +4165,7 @@ const QUESTION_DATABASE = {
           "answer": "Alexandre Astier"
         },
         {
-          "question": "Quelle chanteuse a été en couple avec Justin Timberlake (Britney ou...). Remplacé : Qui a chanté \"Toxic\" ?",
+          "question": "Qui a chanté \"Toxic\" en 2003 ?",
           "answer": "Britney Spears"
         },
         {
@@ -4297,10 +4201,6 @@ const QUESTION_DATABASE = {
           "answer": "Stéphane Plaza"
         },
         {
-          "question": "Quel chanteur est mort le 25 juin 2009 ?",
-          "answer": "Michael Jackson"
-        },
-        {
           "question": "Qui a joué \"Neo\" dans Matrix ?",
           "answer": "Keanu Reeves"
         },
@@ -4325,7 +4225,7 @@ const QUESTION_DATABASE = {
           "answer": "Jay-Z"
         },
         {
-          "question": "Quel chanteur français a chanté \"Allumer le feu\" ?",
+          "question": "Quel chanteur français surnommé \"l'Idole des jeunes\" a vendu plus de 110 millions de disques ?",
           "answer": "Johnny Hallyday"
         },
         {
@@ -4353,10 +4253,6 @@ const QUESTION_DATABASE = {
           "answer": "Margot Robbie"
         },
         {
-          "question": "Quelle star de télé-réalité a pour soeurs Kourtney et Khloé ?",
-          "answer": "Kim Kardashian"
-        },
-        {
           "question": "Quel acteur français a joué dans \"Intouchables\" ?",
           "answer": "Omar Sy"
         },
@@ -4365,15 +4261,11 @@ const QUESTION_DATABASE = {
           "answer": "John Lennon"
         },
         {
-          "question": "Quel acteur a joué \"Forrest Gump\" ?",
-          "answer": "Tom Hanks"
-        },
-        {
           "question": "Qui est la femme de Nicolas Sarkozy ?",
           "answer": "Carla Bruni"
         },
         {
-          "question": "Qui est le créateur de la série \"Kaamelott\" ?",
+          "question": "Qui est le créateur et acteur principal de la série médiévale comique \"Kaamelott\" ?",
           "answer": "Alexandre Astier"
         },
         {
@@ -4381,20 +4273,8 @@ const QUESTION_DATABASE = {
           "answer": "Dorothée"
         },
         {
-          "question": "Quelle chanteuse a chanté \"Baby One More Time\" ?",
-          "answer": "Britney Spears"
-        },
-        {
           "question": "Qui a chanté \"Les Lacs du Connemara\" ?",
           "answer": "Michel Sardou"
-        },
-        {
-          "question": "Quelle actrice a joué \"Amélie Poulain\" ?",
-          "answer": "Audrey Tautou"
-        },
-        {
-          "question": "Qui est le père de Enrique Iglesias ?",
-          "answer": "Julio Iglesias"
         },
         {
           "question": "Qui a joué \"Rocky Balboa\" ?",
@@ -4479,7 +4359,7 @@ const QUESTION_DATABASE = {
           "answer": "BTS"
         },
         {
-          "question": "Quel acteur français est célèbre pour ses colères dans les films (De Funès ou...). Remplacé : Qui joue Astérix dans le film de Guillaume Canet ?",
+          "question": "Qui joue Astérix dans le film \"Astérix et Obélix : L'Empire du Milieu\" (2023) ?",
           "answer": "Guillaume Canet"
         },
         {
@@ -4488,10 +4368,6 @@ const QUESTION_DATABASE = {
         },
         {
           "question": "Quelle chanteuse a fait le show à la mi-temps du Super Bowl 2023 enceinte ?",
-          "answer": "Rihanna"
-        },
-        {
-          "question": "Quelle star a lancé la marque de cosmétiques \"Fenty Beauty\" ?",
           "answer": "Rihanna"
         },
         {
@@ -4581,10 +4457,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quelle star a joué dans \"Hunger Games\" ?",
           "answer": "Jennifer Lawrence"
-        },
-        {
-          "question": "Qui a été le compagnon de Selena Gomez et Hailey Baldwin ?",
-          "answer": "Justin Bieber"
         },
         {
           "question": "Qui est la créatrice de la marque \"Kylie Cosmetics\" ?",
@@ -4701,10 +4573,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quelle chanteuse a chanté \"California Gurls\" ?",
           "answer": "Katy Perry"
-        },
-        {
-          "question": "Quelle star française a joué dans \"Inception\" ?",
-          "answer": "Marion Cotillard"
         },
         {
           "question": "Qui a présenté \"Ushuaïa\" ?",
@@ -4887,6 +4755,10 @@ const QUESTION_DATABASE = {
       "sounds": [],
       "text": [
         {
+          "question": "Qui est la mère de Blue Ivy ?",
+          "answer": "Beyoncé"
+        },
+        {
           "question": "Quel est le vrai nom de Lady Gaga ?",
           "answer": "Stefani Germanotta"
         },
@@ -4929,10 +4801,6 @@ const QUESTION_DATABASE = {
         {
           "question": "Quel acteur français est surnommé \"Dewaere\" ?",
           "answer": "Patrick Dewaere"
-        },
-        {
-          "question": "Quelle star a pour ex-mari Russell Brand ?",
-          "answer": "Katy Perry"
         },
         {
           "question": "Qui est le chanteur de \"Take Me to Church\" ?",
@@ -6351,7 +6219,7 @@ const QUESTION_DATABASE = {
           "answer": "Timon"
         },
         {
-          "file": "../data/assets/images/Woody.png",
+          "file": "../data/assets/images/Woody.webp",
           "question": "Qui est-ce ?",
           "answer": "Woody"
         }
@@ -6605,7 +6473,7 @@ const QUESTION_DATABASE = {
           "answer": "Jasmine"
         },
         {
-          "file": "../data/assets/images/Jessie.png",
+          "file": "../data/assets/images/Jessie.webp",
           "question": "Qui est-ce ?",
           "answer": "Jessie"
         },
@@ -6830,7 +6698,7 @@ const QUESTION_DATABASE = {
           "answer": "Degout"
         },
         {
-          "file": "../data/assets/images/Edna_Mode.png",
+          "file": "../data/assets/images/Edna_Mode.webp",
           "question": "Qui est-ce ?",
           "answer": "Edna Mode"
         },
@@ -10557,7 +10425,7 @@ const QUESTION_DATABASE = {
           "answer": "Barty Croupton Jr."
         },
         {
-          "question": "Quelle créature pose des énigmes (tome 4) ?",
+          "question": "Quelle créature mythologique pose une énigme à Harry dans le labyrinthe de la Coupe de Feu ?",
           "answer": "Sphinx"
         },
         {
@@ -11968,7 +11836,7 @@ const QUESTION_DATABASE = {
           "answer": "Ellie"
         },
         {
-          "question": "Note: Question remplacée: Quel jeu de course est une exclusivité Xbox ?",
+          "question": "Quelle franchise de jeux de course automobile est une exclusivité Microsoft/Xbox ?",
           "answer": "Forza"
         },
         {
@@ -12040,8 +11908,8 @@ const QUESTION_DATABASE = {
           "answer": "Tetris"
         },
         {
-          "question": "Quelle est la devise de la Team Rocket ?",
-          "answer": "Afin de préserver le monde de la dévastation..."
+          "question": "Quelle est l'organisation criminelle que combattent les dresseurs dans Pokémon Rouge/Bleu ?",
+          "answer": "La Team Rocket"
         },
         {
           "question": "Dans quel jeu incarne-t-on un sorceleur ?",
@@ -12072,7 +11940,7 @@ const QUESTION_DATABASE = {
           "answer": "BioShock"
         },
         {
-          "question": "Quel est le nom de la petite sœur de Mario (n'existe pas officiellement). Remplacé : Qui est l'anti-Mario ?",
+          "question": "Quel personnage est le double maléfique de Mario ?",
           "answer": "Wario"
         },
         {
@@ -12132,8 +12000,8 @@ const QUESTION_DATABASE = {
           "answer": "Final Fantasy VII"
         },
         {
-          "question": "Dans quel jeu incarne-t-on un camionneur dans l'espace ?",
-          "answer": "Star Trucker (Non). Remplacé : Euro Truck Simulator"
+          "question": "Dans quel jeu de simulation incarne-t-on un camionneur sur les routes européennes ?",
+          "answer": "Euro Truck Simulator"
         },
         {
           "question": "Quel jeu de baston réunit les univers Marvel et Capcom ?",
@@ -12350,7 +12218,7 @@ const QUESTION_DATABASE = {
           "answer": "Roi Boo"
         },
         {
-          "question": "Note: Question remplacée: Quel est le FPS compétitif de Valve sorti en 2012 ?",
+          "question": "Quel jeu de tir compétitif de Valve sorti en 2012 est devenu l'un des esports les plus regardés au monde ?",
           "answer": "CS:GO"
         },
         {
@@ -12372,7 +12240,7 @@ const QUESTION_DATABASE = {
           "answer": "1994"
         },
         {
-          "question": "Quel est le nom de la planète des Zorgs dans Toy Story (Jeu tiré du film). Remplacé : Quel jeu a pour héros un ver de terre en combinaison spatiale ?",
+          "question": "Quel jeu de plateforme des années 90 met en scène un ver de terre en combinaison spatiale ?",
           "answer": "Earthworm Jim"
         },
         {

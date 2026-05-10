@@ -9,23 +9,7 @@
       "validated": true
     },
     {
-      "value": "PSG",
-      "validated": true
-    },
-    {
       "value": "Olympique de Marseille",
-      "validated": true
-    },
-    {
-      "value": "OM",
-      "validated": true
-    },
-    {
-      "value": "Olympique Lyonnais",
-      "validated": true
-    },
-    {
-      "value": "OL",
       "validated": true
     },
     {
@@ -33,7 +17,7 @@
       "validated": true
     },
     {
-      "value": "RC Lens",
+      "value": "Olympique Lyonnais",
       "validated": true
     },
     {
@@ -45,87 +29,51 @@
       "validated": true
     },
     {
-      "value": "Stade Rennais",
+      "value": "RC Lens",
       "validated": true
     },
     {
-      "value": "Montpellier",
+      "value": "Stade Rennais FC",
       "validated": true
     },
     {
-      "value": "Strasbourg",
+      "value": "Stade Brestois 29",
       "validated": true
     },
     {
-      "value": "Nantes",
+      "value": "Toulouse FC",
       "validated": true
     },
     {
-      "value": "Brest",
+      "value": "RC Strasbourg Alsace",
       "validated": true
     },
     {
-      "value": "Toulouse",
+      "value": "FC Nantes",
       "validated": true
     },
     {
-      "value": "Le Havre",
+      "value": "Montpellier HSC",
       "validated": true
     },
     {
-      "value": "Auxerre",
+      "value": "AJ Auxerre",
       "validated": true
     },
     {
-      "value": "Reims",
+      "value": "Le Havre AC",
       "validated": true
     },
     {
-      "value": "Saint-Étienne",
+      "value": "Angers SCO",
       "validated": true
     },
     {
-      "value": "Angers",
+      "value": "FC Metz",
       "validated": true
     },
     {
-      "value": "Bordeaux",
-      "validated": true
-    },
-    {
-      "value": "Valenciennes",
-      "validated": true
-    },
-    {
-      "value": "Évian",
-      "validated": true
-    },
-    {
-      "value": "Ajaccio",
-      "validated": true
-    },
-    {
-      "value": "Clermont",
-      "validated": true
-    },
-    {
-      "value": "Troyes",
-      "validated": true
-    },
-    {
-      "value": "Lorient",
-      "validated": true
-    },
-    {
-      "value": "Metz",
-      "validated": true
-    },
-    {
-      "value": "Caen",
-      "validated": true
-    },
-    {
-      "value": "Guingamp",
+      "value": "AS Saint-Étienne",
       "validated": true
     }
   ]

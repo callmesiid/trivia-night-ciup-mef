@@ -1,0 +1,100 @@
+{
+  "id": "arrets_ligne_metro_10",
+  "label": "ARRETS LIGNE METRO 10",
+  "icon": "assets/Images/geographie.png",
+  "prompt": "ARRETS LIGNE METRO 10",
+  "answers": [
+    {
+      "value": "Boulogne – Pont de Saint-Cloud",
+      "validated": true
+    },
+    {
+      "value": "Boulogne – Jean Jaurès",
+      "validated": true
+    },
+    {
+      "value": "Porte d’Auteuil",
+      "validated": true
+    },
+    {
+      "value": "Michel-Ange – Molitor",
+      "validated": true
+    },
+    {
+      "value": "Michel-Ange – Auteuil",
+      "validated": true
+    },
+    {
+      "value": "Chardon-Lagache",
+      "validated": true
+    },
+    {
+      "value": "Église d’Auteuil",
+      "validated": true
+    },
+    {
+      "value": "Javel – André Citroën",
+      "validated": true
+    },
+    {
+      "value": "Charles Michels",
+      "validated": true
+    },
+    {
+      "value": "Avenue Émile Zola",
+      "validated": true
+    },
+    {
+      "value": "La Motte-Picquet – Grenelle",
+      "validated": true
+    },
+    {
+      "value": "Ségur",
+      "validated": true
+    },
+    {
+      "value": "Duroc",
+      "validated": true
+    },
+    {
+      "value": "Vaneau",
+      "validated": true
+    },
+    {
+      "value": "Sèvres – Babylone",
+      "validated": true
+    },
+    {
+      "value": "Mabillon",
+      "validated": true
+    },
+    {
+      "value": "Odéon",
+      "validated": true
+    },
+    {
+      "value": "Cluny – La Sorbonne",
+      "validated": true
+    },
+    {
+      "value": "Maubert – Mutualité",
+      "validated": true
+    },
+    {
+      "value": "Cardinal Lemoine",
+      "validated": true
+    },
+    {
+      "value": "Jussieu",
+      "validated": true
+    },
+    {
+      "value": "Gare d’Austerlitz",
+      "validated": true
+    },
+    {
+      "value": "Mrabeau",
+      "validated": true
+    }
+  ]
+}

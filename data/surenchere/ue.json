@@ -93,6 +93,10 @@
       "validated": true
     },
     {
+      "value": "République tchèque",
+      "validated": true
+    },
+    {
       "value": "Roumanie",
       "validated": true
     },
@@ -106,10 +110,6 @@
     },
     {
       "value": "Suède",
-      "validated": true
-    },
-    {
-      "value": "Tchéquie",
       "validated": true
     }
   ]

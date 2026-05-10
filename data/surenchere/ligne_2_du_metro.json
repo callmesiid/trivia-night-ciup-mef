@@ -1,0 +1,108 @@
+{
+  "id": "ligne_2_du_metro",
+  "label": "LIGNE 2 DU METRO",
+  "icon": "assets/Images/geographie.png",
+  "prompt": "LIGNE 2 DU METRO",
+  "answers": [
+    {
+      "value": "Nation",
+      "validated": true
+    },
+    {
+      "value": "Avron",
+      "validated": true
+    },
+    {
+      "value": "Alexandre Dumas",
+      "validated": true
+    },
+    {
+      "value": "Philippe Auguste",
+      "validated": true
+    },
+    {
+      "value": "Père Lachaise",
+      "validated": true
+    },
+    {
+      "value": "Ménilmontant",
+      "validated": true
+    },
+    {
+      "value": "Couronnes",
+      "validated": true
+    },
+    {
+      "value": "Belleville",
+      "validated": true
+    },
+    {
+      "value": "Colonel Fabien",
+      "validated": true
+    },
+    {
+      "value": "Jaurès",
+      "validated": true
+    },
+    {
+      "value": "Stalingrad",
+      "validated": true
+    },
+    {
+      "value": "La chapelle",
+      "validated": true
+    },
+    {
+      "value": "Barbès-Rochechouart",
+      "validated": true
+    },
+    {
+      "value": "Anvers",
+      "validated": true
+    },
+    {
+      "value": "Pigalle",
+      "validated": true
+    },
+    {
+      "value": "Blanche",
+      "validated": true
+    },
+    {
+      "value": "Place de Clichy",
+      "validated": true
+    },
+    {
+      "value": "Rome",
+      "validated": true
+    },
+    {
+      "value": "Villiers",
+      "validated": true
+    },
+    {
+      "value": "Monceau",
+      "validated": true
+    },
+    {
+      "value": "Courcelles",
+      "validated": true
+    },
+    {
+      "value": "Ternes",
+      "validated": true
+    },
+    {
+      "value": "Charles de Gaulle Etoile",
+      "validated": true
+    },
+    {
+      "value": "Victor Hugo",
+      "validated": true
+    },
+    {
+      "value": "Porte Dauphine",
+      "validated": true
+    }
+  ]
+}

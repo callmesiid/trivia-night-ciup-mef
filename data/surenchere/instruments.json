@@ -25,7 +25,19 @@
       "validated": true
     },
     {
-      "value": "Guitare basse",
+      "value": "Guitare électrique",
+      "validated": true
+    },
+    {
+      "value": "Basse électrique",
+      "validated": true
+    },
+    {
+      "value": "Harpe",
+      "validated": true
+    },
+    {
+      "value": "Ukulélé",
       "validated": true
     },
     {
@@ -34,6 +46,94 @@
     },
     {
       "value": "Banjo",
+      "validated": true
+    },
+    {
+      "value": "Luth",
+      "validated": true
+    },
+    {
+      "value": "Flûte traversière",
+      "validated": true
+    },
+    {
+      "value": "Clarinette",
+      "validated": true
+    },
+    {
+      "value": "Hautbois",
+      "validated": true
+    },
+    {
+      "value": "Basson",
+      "validated": true
+    },
+    {
+      "value": "Saxophone",
+      "validated": true
+    },
+    {
+      "value": "Flûte à bec",
+      "validated": true
+    },
+    {
+      "value": "Trompette",
+      "validated": true
+    },
+    {
+      "value": "Trombone",
+      "validated": true
+    },
+    {
+      "value": "Tuba",
+      "validated": true
+    },
+    {
+      "value": "Cor",
+      "validated": true
+    },
+    {
+      "value": "Bugle",
+      "validated": true
+    },
+    {
+      "value": "Batterie",
+      "validated": true
+    },
+    {
+      "value": "Tambour",
+      "validated": true
+    },
+    {
+      "value": "Djembé",
+      "validated": true
+    },
+    {
+      "value": "Conga",
+      "validated": true
+    },
+    {
+      "value": "Bongo",
+      "validated": true
+    },
+    {
+      "value": "Xylophone",
+      "validated": true
+    },
+    {
+      "value": "Marimba",
+      "validated": true
+    },
+    {
+      "value": "Triangle",
+      "validated": true
+    },
+    {
+      "value": "Cymbales",
+      "validated": true
+    },
+    {
+      "value": "Castagnettes",
       "validated": true
     },
     {
@@ -53,71 +153,23 @@
       "validated": true
     },
     {
-      "value": "Flûte traversière",
+      "value": "Synthétiseur",
       "validated": true
     },
     {
-      "value": "Flûte à bec",
+      "value": "Boîte à rythmes",
       "validated": true
     },
     {
-      "value": "Hautbois",
+      "value": "Theremin",
       "validated": true
     },
     {
-      "value": "Clarinette",
+      "value": "Sampler",
       "validated": true
     },
     {
-      "value": "Saxophone",
-      "validated": true
-    },
-    {
-      "value": "Basson",
-      "validated": true
-    },
-    {
-      "value": "Cor",
-      "validated": true
-    },
-    {
-      "value": "Trompette",
-      "validated": true
-    },
-    {
-      "value": "Trombone",
-      "validated": true
-    },
-    {
-      "value": "Tuba",
-      "validated": true
-    },
-    {
-      "value": "Euphonium",
-      "validated": true
-    },
-    {
-      "value": "Batterie",
-      "validated": true
-    },
-    {
-      "value": "Xylophone",
-      "validated": true
-    },
-    {
-      "value": "Marimba",
-      "validated": true
-    },
-    {
-      "value": "Vibraphone",
-      "validated": true
-    },
-    {
-      "value": "Harpe",
-      "validated": true
-    },
-    {
-      "value": "Luth",
+      "value": "MPC",
       "validated": true
     },
     {
@@ -129,19 +181,27 @@
       "validated": true
     },
     {
+      "value": "Balalaïka",
+      "validated": true
+    },
+    {
       "value": "Didgeridoo",
       "validated": true
     },
     {
-      "value": "Balafon",
+      "value": "Shamisen",
       "validated": true
     },
     {
-      "value": "Djembé",
+      "value": "Oud",
       "validated": true
     },
     {
-      "value": "Bongo",
+      "value": "Bouzouki",
+      "validated": true
+    },
+    {
+      "value": "Kalimba",
       "validated": true
     }
   ]

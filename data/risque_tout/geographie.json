@@ -582,13 +582,6 @@
     },
     {
       "type": "text",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "answer": "Japon",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quelle mer sépare l'Europe de l'Afrique ?",
       "answer": "Méditerranée",
       "difficulty": 2,
@@ -598,13 +591,6 @@
       "type": "text",
       "question": "Quel est le plus haut sommet du monde ?",
       "answer": "Mont Everest",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Dans quel pays se trouve le Taj Mahal ?",
-      "answer": "Inde",
       "difficulty": 2,
       "validated": true
     },
@@ -624,22 +610,8 @@
     },
     {
       "type": "text",
-      "question": "Dans quel pays se trouve la ville de Marrakech ?",
-      "answer": "Maroc",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel fleuve traverse l'Égypte ?",
       "answer": "Nil",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Dans quel pays se trouve la ville de Rio de Janeiro ?",
-      "answer": "Brésil",
       "difficulty": 2,
       "validated": true
     },

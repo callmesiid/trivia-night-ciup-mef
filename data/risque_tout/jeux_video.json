@@ -488,7 +488,7 @@
     },
     {
       "type": "text",
-      "question": "Note: Question remplacée: Quel jeu de course est une exclusivité Xbox ?",
+      "question": "Quelle franchise de jeux de course automobile est une exclusivité Microsoft/Xbox ?",
       "answer": "Forza",
       "difficulty": 2,
       "validated": true
@@ -614,8 +614,8 @@
     },
     {
       "type": "text",
-      "question": "Quelle est la devise de la Team Rocket ?",
-      "answer": "Afin de préserver le monde de la dévastation...",
+      "question": "Quelle est l'organisation criminelle que combattent les dresseurs dans Pokémon Rouge/Bleu ?",
+      "answer": "La Team Rocket",
       "difficulty": 2,
       "validated": true
     },
@@ -670,7 +670,7 @@
     },
     {
       "type": "text",
-      "question": "Quel est le nom de la petite sœur de Mario (n'existe pas officiellement). Remplacé : Qui est l'anti-Mario ?",
+      "question": "Quel personnage est le double maléfique de Mario ?",
       "answer": "Wario",
       "difficulty": 2,
       "validated": true
@@ -775,8 +775,8 @@
     },
     {
       "type": "text",
-      "question": "Dans quel jeu incarne-t-on un camionneur dans l'espace ?",
-      "answer": "Star Trucker (Non). Remplacé : Euro Truck Simulator",
+      "question": "Dans quel jeu de simulation incarne-t-on un camionneur sur les routes européennes ?",
+      "answer": "Euro Truck Simulator",
       "difficulty": 2,
       "validated": true
     },
@@ -1146,7 +1146,7 @@
     },
     {
       "type": "text",
-      "question": "Note: Question remplacée: Quel est le FPS compétitif de Valve sorti en 2012 ?",
+      "question": "Quel jeu de tir compétitif de Valve sorti en 2012 est devenu l'un des esports les plus regardés au monde ?",
       "answer": "CS:GO",
       "difficulty": 3,
       "validated": true
@@ -1174,7 +1174,7 @@
     },
     {
       "type": "text",
-      "question": "Quel est le nom de la planète des Zorgs dans Toy Story (Jeu tiré du film). Remplacé : Quel jeu a pour héros un ver de terre en combinaison spatiale ?",
+      "question": "Quel jeu de plateforme des années 90 met en scène un ver de terre en combinaison spatiale ?",
       "answer": "Earthworm Jim",
       "difficulty": 4,
       "validated": true

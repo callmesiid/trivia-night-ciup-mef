@@ -1,0 +1,160 @@
+{
+  "id": "arrets_metro_ligne_7",
+  "label": "ARRETS METRO LIGNE 7",
+  "icon": "assets/Images/geographie.png",
+  "prompt": "ARRETS METRO LIGNE 7",
+  "answers": [
+    {
+      "value": "La Courneuve – 8 Mai 1945",
+      "validated": true
+    },
+    {
+      "value": "Fort d’Aubervilliers",
+      "validated": true
+    },
+    {
+      "value": "Aubervilliers – Pantin – Quatre Chemins",
+      "validated": true
+    },
+    {
+      "value": "Porte de la Villette",
+      "validated": true
+    },
+    {
+      "value": "Corentin Cariou",
+      "validated": true
+    },
+    {
+      "value": "Crimée",
+      "validated": true
+    },
+    {
+      "value": "Riquet",
+      "validated": true
+    },
+    {
+      "value": "Stalingrad",
+      "validated": true
+    },
+    {
+      "value": "Louis Blanc",
+      "validated": true
+    },
+    {
+      "value": "Château-Landon",
+      "validated": true
+    },
+    {
+      "value": "Gare de l’Est",
+      "validated": true
+    },
+    {
+      "value": "Poissonnière",
+      "validated": true
+    },
+    {
+      "value": "Cadet",
+      "validated": true
+    },
+    {
+      "value": "Le Peletier",
+      "validated": true
+    },
+    {
+      "value": "Chaussée d’Antin – La Fayette",
+      "validated": true
+    },
+    {
+      "value": "Opéra",
+      "validated": true
+    },
+    {
+      "value": "Pyramides",
+      "validated": true
+    },
+    {
+      "value": "Palais Royal – Musée du Louvre",
+      "validated": true
+    },
+    {
+      "value": "Pont Neuf",
+      "validated": true
+    },
+    {
+      "value": "Châtelet",
+      "validated": true
+    },
+    {
+      "value": "Pont Marie",
+      "validated": true
+    },
+    {
+      "value": "Sully – Morland",
+      "validated": true
+    },
+    {
+      "value": "Jussieu",
+      "validated": true
+    },
+    {
+      "value": "Place Monge",
+      "validated": true
+    },
+    {
+      "value": "Censier – Daubenton",
+      "validated": true
+    },
+    {
+      "value": "Les Gobelins",
+      "validated": true
+    },
+    {
+      "value": "Place d’Italie",
+      "validated": true
+    },
+    {
+      "value": "Tolbiac",
+      "validated": true
+    },
+    {
+      "value": "Maison Blanche",
+      "validated": true
+    },
+    {
+      "value": "Le Kremlin-Bicêtre",
+      "validated": true
+    },
+    {
+      "value": "Villejuif – Léo Lagrange",
+      "validated": true
+    },
+    {
+      "value": "Villejuif – Paul Vaillant-Couturier",
+      "validated": true
+    },
+    {
+      "value": "Villejuif – Louis Aragon",
+      "validated": true
+    },
+    {
+      "value": "Porte d’Italie",
+      "validated": true
+    },
+    {
+      "value": "Porte de Choisy",
+      "validated": true
+    },
+    {
+      "value": "Porte d’Ivry",
+      "validated": true
+    },
+    {
+      "value": "Pierre et Marie Curie",
+      "validated": true
+    },
+    {
+      "value": "Mairie d’Ivry",
+      "validated": true
+    }
+  ]
+}

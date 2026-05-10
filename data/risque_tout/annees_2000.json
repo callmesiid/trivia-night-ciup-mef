@@ -348,13 +348,6 @@
     },
     {
       "type": "text",
-      "question": "Quel film a pour héros un poisson clown nommé Nemo ?",
-      "answer": "Le Monde de Nemo",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Qui a gagné la première saison de Loft Story (avec Christophe) ?",
       "answer": "Loana",
       "difficulty": 1,
@@ -460,7 +453,7 @@
     },
     {
       "type": "text",
-      "question": "Note: Question remplacée: Quel jeu de sport sur Wii a été un phénomène ?",
+      "question": "Quel jeu Nintendo sorti en 2006 était inclus avec la console et permettait de jouer au tennis, bowling ou golf en bougeant la manette ?",
       "answer": "Wii Sports",
       "difficulty": 1,
       "validated": true
@@ -516,13 +509,6 @@
     },
     {
       "type": "text",
-      "question": "Quel jeu de gestion de vie (Maxis) est sorti en 2000 ?",
-      "answer": "Les Sims",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel film d'animation a pour héros un rat cuisinier (2007) ?",
       "answer": "Ratatouille",
       "difficulty": 1,
@@ -537,15 +523,8 @@
     },
     {
       "type": "text",
-      "question": "Quel film a pour héros un panda roux (ah non ça c'est 2022). Remplacé : Quel film d'animation a pour héros une famille de super-héros (2004) ?",
+      "question": "Quel film d'animation Pixar de 2004 met en scène une famille de super-héros contraints de vivre incognito ?",
       "answer": "Les Indestructibles",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quelle série TV a pour décor Wisteria Lane ?",
-      "answer": "Desperate Housewives",
       "difficulty": 1,
       "validated": true
     },
@@ -553,13 +532,6 @@
       "type": "text",
       "question": "Quel film a pour sujet la vie d'Edith Piaf ?",
       "answer": "La Môme",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel film d'animation a pour héros un ogre et un âne ?",
-      "answer": "Shrek",
       "difficulty": 1,
       "validated": true
     },
@@ -586,13 +558,6 @@
     },
     {
       "type": "text",
-      "question": "Quelle série TV suit des naufragés (encore) ?",
-      "answer": "Lost",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quelle marque de baladeur a dominé le marché ?",
       "answer": "iPod (Apple)",
       "difficulty": 1,
@@ -607,22 +572,8 @@
     },
     {
       "type": "text",
-      "question": "Quelle monnaie a remplacé le Mark allemand ?",
-      "answer": "Euro",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel film a pour méchant le Joker (2008) ?",
       "answer": "The Dark Knight",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel film a pour héros un petit poisson clown ?",
-      "answer": "Nemo",
       "difficulty": 1,
       "validated": true
     },
@@ -642,21 +593,7 @@
     },
     {
       "type": "text",
-      "question": "Quelle console a introduit la Wiimote ?",
-      "answer": "Wii",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Qui a chanté \"Whenever Wherever\" ?",
-      "answer": "Shakira",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quelle chanteuse a sorti \"Hips Don't Lie\" ?",
       "answer": "Shakira",
       "difficulty": 1,
       "validated": true
@@ -665,34 +602,6 @@
       "type": "text",
       "question": "Quelle série TV a pour héros un prof de chimie (Walter White) ?",
       "answer": "Breaking Bad",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Qui a chanté \"Moi... Lolita\" ?",
-      "answer": "Alizée",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel film d'animation a pour héros Shrek ?",
-      "answer": "Shrek",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Qui a gagné le Tour de France 2000 (titre retiré) ?",
-      "answer": "Lance Armstrong",
-      "difficulty": 1,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel film a pour héros un petit robot blanc (EVE) et jaune (WALL-E) ?",
-      "answer": "WALL-E",
       "difficulty": 1,
       "validated": true
     },
@@ -1118,13 +1027,6 @@
     },
     {
       "type": "text",
-      "question": "Quel film a pour personnage principal un poisson amnésique (Dory) ?",
-      "answer": "Le Monde de Nemo",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel groupe a chanté \"Hey Ya!\" en 2003 ?",
       "answer": "OutKast",
       "difficulty": 2,
@@ -1286,20 +1188,6 @@
     },
     {
       "type": "text",
-      "question": "Quelle chanteuse a sorti \"Complicated\" en 2002 ?",
-      "answer": "Avril Lavigne",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quel jeu vidéo a introduit les Mii ?",
-      "answer": "Wii Sports",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel réseau social a été fondé en 2003 (musique et blog) ?",
       "answer": "MySpace",
       "difficulty": 2,
@@ -1309,13 +1197,6 @@
       "type": "text",
       "question": "Quel pilote moto a dominé les années 2000 ?",
       "answer": "Valentino Rossi",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
-      "question": "Quelle série a pour héros un tueur en série de Miami ?",
-      "answer": "Dexter",
       "difficulty": 2,
       "validated": true
     },
@@ -1391,13 +1272,6 @@
     },
     {
       "type": "text",
-      "question": "Quel groupe a chanté \"Viva la Vida\" en 2008 ?",
-      "answer": "Coldplay",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel groupe a chanté \"Californication\" en 2000 (Single) ?",
       "answer": "Red Hot Chili Peppers",
       "difficulty": 2,
@@ -1468,13 +1342,6 @@
     },
     {
       "type": "text",
-      "question": "Qui a chanté \"Sk8er Boi\" en 2002 ?",
-      "answer": "Avril Lavigne",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
-      "type": "text",
       "question": "Quel événement a touché AZF à Toulouse en 2001 ?",
       "answer": "Explosion de l'usine",
       "difficulty": 2,
@@ -1503,12 +1370,6 @@
     },
     {
       "type": "text",
-      "question": "Quelle console portable avait deux écrans dont un tactile ?",
-      "answer": "Nintendo DS",
-      "difficulty": 2,
-      "validated": true
-    },
-    {
       "type": "text",
       "question": "Qui a chanté \"Cry Me a River\" en 2002 ?",
       "answer": "Justin Timberlake",
@@ -1804,12 +1665,6 @@
     },
     {
       "type": "text",
-      "question": "Quel groupe de rock anglais a sorti \"X&Y\" en 2005 ?",
-      "answer": "Coldplay",
-      "difficulty": 3,
-      "validated": true
-    },
-    {
       "type": "text",
       "question": "Quelle chanteuse a connu le succès avec \"Fallin'\" en 2001 ?",
       "answer": "Alicia Keys",
@@ -1895,12 +1750,6 @@
     },
     {
       "type": "text",
-      "question": "Quel groupe a chanté \"Clocks\" en 2002 ?",
-      "answer": "Coldplay",
-      "difficulty": 3,
-      "validated": true
-    },
-    {
       "type": "text",
       "question": "Quel groupe a chanté \"How to Save a Life\" en 2005 ?",
       "answer": "The Fray",
@@ -2014,14 +1863,14 @@
     },
     {
       "type": "text",
-      "question": "Quel film français a eu du succès avec des marionnettes (Le Bébête Show non). Remplacé : Quel film a pour titre \"Être et Avoir\" ?",
-      "answer": "Documentaire sur l'école",
+      "question": "Quel documentaire français de 2002 suit une classe unique dans une école rurale auvergnate ?",
+      "answer": "Être et Avoir",
       "difficulty": 3,
       "validated": true
     },
     {
       "type": "text",
-      "question": "Quelle série TV suit un père de famille trafiquant de drogue (déjà vu). Remplacé : Quelle série suit des vampires en Louisiane (2008) ?",
+      "question": "Quelle série HBO lancée en 2008 se déroule en Louisiane et met en scène des vampires sortis de l'ombre ?",
       "answer": "True Blood",
       "difficulty": 3,
       "validated": true
@@ -2211,7 +2060,7 @@
     {
       "type": "text",
       "question": "Quelle émission de TF1 faisait passer le permis de conduire à des stars ?",
-      "answer": "Le Grand Concours (Non). Remplacé : Zéro de conduite",
+      "answer": "Zéro de conduite",
       "difficulty": 4,
       "validated": true
     },
@@ -2280,7 +2129,7 @@
     },
     {
       "type": "text",
-      "question": "Quel pays a vu la catastrophe nucléaire de... (c'est 2011 Fukushima). Remplacé : Dans quel pays a eu lieu la prise d'otages de Beslan en 2004 ?",
+      "question": "Dans quel pays a eu lieu la prise d'otages d'une école à Beslan en septembre 2004 ?",
       "answer": "Russie",
       "difficulty": 5,
       "validated": true

@@ -229,7 +229,7 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Woody.png",
+      "file": "data/assets/images/Woody.webp",
       "question": "Qui est-ce ?",
       "answer": "Woody",
       "difficulty": 1,
@@ -653,7 +653,7 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Jessie.png",
+      "file": "data/assets/images/Jessie.webp",
       "question": "Qui est-ce ?",
       "answer": "Jessie",
       "difficulty": 2,
@@ -1018,7 +1018,7 @@
     },
     {
       "type": "image",
-      "file": "data/assets/images/Edna_Mode.png",
+      "file": "data/assets/images/Edna_Mode.webp",
       "question": "Qui est-ce ?",
       "answer": "Edna Mode",
       "difficulty": 3,

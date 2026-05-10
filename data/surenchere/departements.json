@@ -17,6 +17,14 @@
       "validated": true
     },
     {
+      "value": "Alpes-de-Haute-Provence",
+      "validated": true
+    },
+    {
+      "value": "Hautes-Alpes",
+      "validated": true
+    },
+    {
       "value": "Alpes-Maritimes",
       "validated": true
     },
@@ -61,6 +69,10 @@
       "validated": true
     },
     {
+      "value": "Charente-Maritime",
+      "validated": true
+    },
+    {
       "value": "Cher",
       "validated": true
     },
@@ -69,7 +81,11 @@
       "validated": true
     },
     {
-      "value": "Corse",
+      "value": "Corse-du-Sud",
+      "validated": true
+    },
+    {
+      "value": "Haute-Corse",
       "validated": true
     },
     {
@@ -97,11 +113,11 @@
       "validated": true
     },
     {
-      "value": "Essonne",
+      "value": "Eure",
       "validated": true
     },
     {
-      "value": "Eure",
+      "value": "Eure-et-Loir",
       "validated": true
     },
     {
@@ -110,6 +126,10 @@
     },
     {
       "value": "Gard",
+      "validated": true
+    },
+    {
+      "value": "Haute-Garonne",
       "validated": true
     },
     {
@@ -133,6 +153,10 @@
       "validated": true
     },
     {
+      "value": "Indre-et-Loire",
+      "validated": true
+    },
+    {
       "value": "Isère",
       "validated": true
     },
@@ -145,7 +169,15 @@
       "validated": true
     },
     {
+      "value": "Loir-et-Cher",
+      "validated": true
+    },
+    {
       "value": "Loire",
+      "validated": true
+    },
+    {
+      "value": "Haute-Loire",
       "validated": true
     },
     {
@@ -154,6 +186,14 @@
     },
     {
       "value": "Loiret",
+      "validated": true
+    },
+    {
+      "value": "Lot",
+      "validated": true
+    },
+    {
+      "value": "Lot-et-Garonne",
       "validated": true
     },
     {
@@ -173,7 +213,23 @@
       "validated": true
     },
     {
+      "value": "Haute-Marne",
+      "validated": true
+    },
+    {
       "value": "Mayenne",
+      "validated": true
+    },
+    {
+      "value": "Meurthe-et-Moselle",
+      "validated": true
+    },
+    {
+      "value": "Meuse",
+      "validated": true
+    },
+    {
+      "value": "Morbihan",
       "validated": true
     },
     {
@@ -205,7 +261,31 @@
       "validated": true
     },
     {
+      "value": "Pyrénées-Atlantiques",
+      "validated": true
+    },
+    {
+      "value": "Hautes-Pyrénées",
+      "validated": true
+    },
+    {
+      "value": "Pyrénées-Orientales",
+      "validated": true
+    },
+    {
+      "value": "Bas-Rhin",
+      "validated": true
+    },
+    {
+      "value": "Haut-Rhin",
+      "validated": true
+    },
+    {
       "value": "Rhône",
+      "validated": true
+    },
+    {
+      "value": "Haute-Saône",
       "validated": true
     },
     {
@@ -218,6 +298,10 @@
     },
     {
       "value": "Savoie",
+      "validated": true
+    },
+    {
+      "value": "Haute-Savoie",
       "validated": true
     },
     {
@@ -237,11 +321,19 @@
       "validated": true
     },
     {
+      "value": "Deux-Sèvres",
+      "validated": true
+    },
+    {
       "value": "Somme",
       "validated": true
     },
     {
       "value": "Tarn",
+      "validated": true
+    },
+    {
+      "value": "Tarn-et-Garonne",
       "validated": true
     },
     {
@@ -261,11 +353,23 @@
       "validated": true
     },
     {
+      "value": "Haute-Vienne",
+      "validated": true
+    },
+    {
       "value": "Vosges",
       "validated": true
     },
     {
       "value": "Yonne",
+      "validated": true
+    },
+    {
+      "value": "Territoire de Belfort",
+      "validated": true
+    },
+    {
+      "value": "Essonne",
       "validated": true
     },
     {
@@ -282,6 +386,26 @@
     },
     {
       "value": "Val-d'Oise",
+      "validated": true
+    },
+    {
+      "value": "Guadeloupe",
+      "validated": true
+    },
+    {
+      "value": "Martinique",
+      "validated": true
+    },
+    {
+      "value": "Guyane",
+      "validated": true
+    },
+    {
+      "value": "La Réunion",
+      "validated": true
+    },
+    {
+      "value": "Mayotte",
       "validated": true
     }
   ]

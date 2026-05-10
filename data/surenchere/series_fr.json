@@ -107,6 +107,22 @@
     {
       "value": "Un village français",
       "validated": true
+    },
+    {
+      "value": "Hippocrate",
+      "validated": true
+    },
+    {
+      "value": "Le Bureau des Légendes",
+      "validated": true
+    },
+    {
+      "value": "Astrid et Raphaëlle",
+      "validated": true
+    },
+    {
+      "value": "Call My Agent!",
+      "validated": true
     }
   ]
 }

@@ -1,87 +1,91 @@
 {
-  "id": "amerique_latine",
-  "label": "PAYS D'AMÉRIQUE LATINE",
-  "icon": "../assets/Images/géographie.png",
-  "prompt": "Citez un maximum de pays d'Amérique latine.",
+  "id": "fleuves",
+  "label": "Fleuves",
+  "icon": "assets/Images/geographie.png",
+  "prompt": "Fleuves",
   "answers": [
     {
-      "value": "Argentine",
+      "value": "Seine",
       "validated": true
     },
     {
-      "value": "Bolivie",
+      "value": "Loire",
       "validated": true
     },
     {
-      "value": "Brésil",
+      "value": "Rhin",
       "validated": true
     },
     {
-      "value": "Chili",
+      "value": "Danube",
       "validated": true
     },
     {
-      "value": "Colombie",
+      "value": "Volga",
       "validated": true
     },
     {
-      "value": "Costa Rica",
+      "value": "Tamise",
       "validated": true
     },
     {
-      "value": "Cuba",
+      "value": "Nil",
       "validated": true
     },
     {
-      "value": "République dominicaine",
+      "value": "Congo",
       "validated": true
     },
     {
-      "value": "Équateur",
+      "value": "Niger",
       "validated": true
     },
     {
-      "value": "Salvador",
+      "value": "Zambèze",
       "validated": true
     },
     {
-      "value": "Guatemala",
+      "value": "Amazone",
       "validated": true
     },
     {
-      "value": "Haïti",
+      "value": "Mississippi",
       "validated": true
     },
     {
-      "value": "Honduras",
+      "value": "Saint-Laurent",
       "validated": true
     },
     {
-      "value": "Mexique",
+      "value": "Paraná",
       "validated": true
     },
     {
-      "value": "Nicaragua",
+      "value": "Yangtsé",
       "validated": true
     },
     {
-      "value": "Panama",
+      "value": "Gange",
       "validated": true
     },
     {
-      "value": "Paraguay",
+      "value": "Mékong",
       "validated": true
     },
     {
-      "value": "Pérou",
+      "value": "Indus",
       "validated": true
     },
     {
-      "value": "Uruguay",
+      "value": "Tigre",
       "validated": true
     },
     {
-      "value": "Venezuela",
+      "value": "Euphrate",
+      "validated": true
+    },
+    {
+      "value": "Murray",
       "validated": true
     }
   ]

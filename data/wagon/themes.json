@@ -81,6 +81,349 @@
         "a": "Les Rosacées",
         "difficulty": 5,
         "validated": true
+      },
+      {
+        "q": "Quelle fleur est associée à la Provence et utilisée en parfumerie ?",
+        "a": "La lavande",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est souvent offerte à la Saint-Valentin ?",
+        "a": "La rose rouge",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur suit la course du soleil ?",
+        "a": "Le tournesol",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est utilisée pour produire le safran ?",
+        "a": "Le crocus",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est traditionnellement associée au souvenir des soldats ?",
+        "a": "Le coquelicot",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est emblématique des Pays-Bas ?",
+        "a": "La tulipe",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur japonaise célèbre la beauté éphémère ?",
+        "a": "Le sakura (cerisier)",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est utilisée pour faire des tisanes relaxantes ?",
+        "a": "La camomille",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est le symbole national de l’Écosse ?",
+        "a": "Le chardon",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est utilisée dans la fabrication de certaines huiles essentielles apaisantes ?",
+        "a": "La lavande",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur violette est utilisée dans certains bonbons ?",
+        "a": "La violette",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est parfois appelée « dent-de-lion » ?",
+        "a": "Le pissenlit",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur tropicale est souvent portée à Hawaï en collier ?",
+        "a": "L’hibiscus",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur a donné son nom à un célèbre peintre néerlandais ?",
+        "a": "Le tournesol",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur produit parfois des capsules contenant de l’opium ?",
+        "a": "Le pavot somnifère",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur rouge pousse souvent dans les champs de blé ?",
+        "a": "Le coquelicot",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est cultivée pour produire de la vanille ?",
+        "a": "L’orchidée",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est connue pour se refermer la nuit ?",
+        "a": "La belle-de-nuit",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur a une odeur rappelant le chocolat ?",
+        "a": "Le cosmos chocolat",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est utilisée pour parfumer certains thés asiatiques ?",
+        "a": "Le jasmin",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur attire particulièrement les abeilles ?",
+        "a": "La lavande",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur a des pétales bleus très rares dans la nature ?",
+        "a": "Le bleuet",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur possède un nom lié à une couleur et un animal ?",
+        "a": "Gueule-de-loup",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur carnivore utilise des urnes pour piéger ses proies ?",
+        "a": "La népenthès",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est souvent représentée dans les tableaux de Van Gogh ?",
+        "a": "Le tournesol",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est utilisée pour produire certaines infusions digestives ?",
+        "a": "La camomille",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est emblématique de la Toscane ?",
+        "a": "L’iris",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur possède une odeur rappelant le citron ?",
+        "a": "La mélisse en fleur",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est surnommée « soleil des jardins » ?",
+        "a": "Le tournesol",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est connue pour sa symétrie parfaite ?",
+        "a": "L’orchidée",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est associée à la déesse grecque Aphrodite ?",
+        "a": "La rose",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est réputée pour attirer les colibris ?",
+        "a": "La sauge rouge",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur bleue est symbole de mémoire en France ?",
+        "a": "Le bleuet",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est utilisée dans certaines salades méditerranéennes ?",
+        "a": "La fleur de courgette",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est connue pour ses longues grappes violettes pendantes ?",
+        "a": "La glycine",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est célébrée lors de la fête symbolisant la lutte contre le cancer organisée par l’Institut Curie en France ?",
+        "a": "La jonquille",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur possède le plus grand génome connu parmi les plantes à fleurs ?",
+        "a": "Le Paris japonica",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur rare du Sri Lanka fleurit une seule nuit avant de mourir ?",
+        "a": "avant de mourir ? Le kadupul",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur possède des feuilles créant “l’effet lotus” qui repousse l’eau ?",
+        "a": "Le lotus",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur rare fleurit parfois seulement une nuit ?",
+        "a": "Le kadupul",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur carnivore utilise des urnes pour piéger les insectes ?",
+        "a": "La népenthès",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur a inspiré les célèbres tableaux de Claude Monet ?",
+        "a": "Le nénuphar",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur produit l’épice la plus chère du monde ?",
+        "a": "Le crocus à safran",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur sert de symbole à la ville de Florence en Italie ?",
+        "a": "Le lys rouge",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur attire particulièrement les abeilles ?",
+        "a": "La lavande",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur a des pétales comestibles souvent utilisés en salade ?",
+        "a": "La capucine",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur est la plus vendue dans le monde ?",
+        "a": "La rose",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle fleur symbolise la modestie ?",
+        "a": "La violette",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel nom porte le phénomène où certaines fleurs s’ouvrent uniquement à une heure précise de la journée ?",
+        "a": "La nyctinastie",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
       }
     ]
   },
@@ -147,6 +490,279 @@
         "q": "Qui a inventé le Rubik's Cube ?",
         "a": "Ernő Rubik (en 1974)",
         "difficulty": 5,
+        "validated": true
+      },
+      {
+        "q": "Dans quel jeu achète-t-on et vend-on des maisons et des hôtels ?",
+        "a": "Monopoly",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu utilise des lettres pour former des mots ?",
+        "a": "Scrabble",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel jeu les pièces sont un roi, une reine et des cavaliers ?",
+        "a": "Les échecs",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu consiste à résoudre un meurtre dans un manoir ?",
+        "a": "Cluedo",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de cartes utilise des cartes +4 et changement de couleur ?",
+        "a": "Uno",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu demande de faire deviner des mots sans certains termes interdits ?",
+        "a": "Taboo",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle couleur joue en premier aux échecs ?",
+        "a": "Blanc",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel jeu peut-on être “Mr. White” ?",
+        "a": "Loups-Garous",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel jeu place-t-on des navires sur une grille ?",
+        "a": "Bataille navale",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu d’ambiance demande de mentir avec assurance ?",
+        "a": "Bluff",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu demande de construire une cité antique avec des cartes ?",
+        "a": "7 Wonders",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de propriétés vertes existe-t-il au Monopoly classique ?",
+        "a": "3",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le seul pion qui peut sauter par-dessus les autres aux échecs ?",
+        "a": "Le cavalier",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Uno, que permet une carte “Reverse” ?",
+        "a": "Inverser le sens du jeu",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom du pion principal aux échecs ?",
+        "a": "Le roi",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pion vaut généralement le plus aux échecs après la reine ?",
+        "a": "La tour",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de cases compte un plateau d’échecs ?",
+        "a": "64",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle lettre vaut le moins de points au Scrabble ?",
+        "a": "Le E",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle pièce d’échecs peut se déplacer en diagonale uniquement ?",
+        "a": "Le fou",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Time’s Up, combien de manches différentes y a-t-il ?",
+        "a": "3",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu consiste à capturer le roi adverse ?",
+        "a": "Les échecs",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de cartes utilise des suites et des brelans ?",
+        "a": "Poker",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu consiste à construire une civilisation antique ?",
+        "a": "7 Wonders",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de cartes est basé sur des monstres invoqués ?",
+        "a": "Yu-Gi-Oh!",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu consiste à faire exploser ses adversaires avec des chatons ?",
+        "a": "Exploding Kittens",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu de rôle médiéval fantastique est le plus célèbre ?",
+        "a": "Donjons et Dragons",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Catan, combien de dés sont lancés à chaque tour ?",
+        "a": "2",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de tuiles contient un jeu de domino double-six",
+        "a": "28",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le but principal du jeu Ludo ?",
+        "a": "Arriver au centre",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "uel jeu utilise des rôles cachés et du bluff politique ?",
+        "a": "Secret Hitler",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle pièce vaut le plus aux échecs après la reine ?",
+        "a": "Tour",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Risk, quel continent donne le plus de renforts ?",
+        "a": "Asie",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Scrabble français, combien de lettres contient le sac ?",
+        "a": "102",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Que signifie HP en Donjons & Dragons ?",
+        "a": "Points de vie",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Citadelles, combien de personnages sont choisis par manche ?",
+        "a": "8",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle faction est basée sur la guérilla dans Root ?",
+        "a": "La Canopée",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel personnage agit en dernier dans citadelles ?",
+        "a": "L'assassin",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel personnage permet de voler de l’or dans Citadelles ?",
+        "a": "Le voleur",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui gagne si Hitler est élu chancelier après 3 lois fascistes dans Secret Hitler ?",
+        "a": "Les fascistes",
+        "difficulty": 5,
+        "type": "text",
         "validated": true
       }
     ]
@@ -318,6 +934,286 @@
         "a": "La Grèce",
         "difficulty": 4,
         "validated": true
+      },
+      {
+        "q": "Quelle est la durée d’un match de football ?",
+        "a": "90 minutes",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de joueurs par équipe sur le terrain ?",
+        "a": "11 joueurs",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment s’appelle le fait de marquer 3 buts ?",
+        "a": "Hat-trick",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de remplacements sont autorisés ?",
+        "a": "5 remplacements",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a gagné la première coupe du monde dans l'histoire du football ?",
+        "a": "L'Uruguay",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a gagné la Coupe du Monde 2006 ?",
+        "a": "Italie",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a marqué en finale 2014 côté Allemagne ?",
+        "a": "Götze",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a gagné la Ligue des Champions 2019 ?",
+        "a": "Liverpool",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a perdu 7-1 en 2014 ?",
+        "a": "3",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle nation a organisé le Mondial 1998 ?",
+        "a": "France",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle couleur pour la carte d'avertissement ?",
+        "a": "Jaune",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle couleur pour un carton d’expulsion ?",
+        "a": "Rouge",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur est surnommé La Pulga ?",
+        "a": "Messi",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a gagné le Ballon d’Or 2018 ?",
+        "a": "Luka Modrić",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel club joue au stade Old Trafford ?",
+        "a": "Manchester United",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a gagné Ballon d’Or 2007 ?",
+        "a": "Kaká",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a marqué la main de Dieu ?",
+        "a": "Maradona",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel club est invaincu en Premier League 2004 ?",
+        "a": "Arsenal",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "En quelle année la France a-t-elle remporté l'Euro pour la première fois ?",
+        "a": "1984",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle équipe africaine fut la première à atteindre les demi-finales d'un Mondial ?",
+        "a": "Le Maroc",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui est le meilleur buteur de l'histoire de la sélection allemande ?",
+        "a": "Miroslav Klose",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a perdu trois finales de Coupe du Monde sans jamais en gagner une ?",
+        "a": "Les Pays-Bas",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel club détient le record de victoires consécutives en Ligue des Champions ?",
+        "a": "Le Real Madrid (3 de suite)",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment appelle-t-il le derby entre le Celtic et les Rangers à Glasgow ?",
+        "a": "Le Old Firm",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel club anglais est surnommé \"The Gunners\" ?",
+        "a": "Arsenal",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel entraîneur a remporté la Ligue des Champions avec trois clubs différents ?",
+        "a": "Carlo Ancelotti",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel club italien joue ses matchs à domicile au stade Luigi-Ferraris ?",
+        "a": "La Sampdoria ou le Genoa",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur est surnommé \"Le Hollandais Volant\" ?",
+        "a": "Johan Cruyff",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur a porté le numéro 7 à Manchester United juste avant Cristiano Ronaldo ?",
+        "a": "David Beckham",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur est le meilleur buteur de l'histoire du PSG ?",
+        "a": "Kylian Mbappé",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle technologie aide l'arbitre à vérifier si le ballon a franchi la ligne ?",
+        "a": "La Goal-Line Technology",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel événement historique a provoqué l'arrêt de la Coupe du Monde entre 1938 et 1950 ?",
+        "a": "La Seconde Guerre mondiale",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle équipe a refusé de jouer un barrage de CDM 1974 en URSS pour protester contre le régime soviétique ?",
+        "a": "Le Chili",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a été le premier pays africain à se qualifier pour une phase finale de CDM (1934) ?",
+        "a": "L'Égypte",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pays accueille la finale de la Coupe du Monde 2026 (Stade MetLife) ?",
+        "a": "Les États-Unis",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui est devenu le meilleur buteur de l'histoire de l'Équipe de France en 2024 ?",
+        "a": "Olivier Giroud",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeune prodige espagnol est devenu le plus jeune buteur de l'histoire de l'Euro en 2024 ?",
+        "a": "Lamine Yamal",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel entraîneur emblématique a quitté Liverpool en mai 2024 après 9 ans au club ?",
+        "a": "Jürgen Klopp",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel club saoudien a recruté Neymar Jr en provenance du PSG ?",
+        "a": "Al-Hilal",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel stade français a accueilli la finale de la Ligue des Champions 2022 suite au retrait de la Russie ?",
+        "a": "Le Stade de France",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
       }
     ]
   },
@@ -402,6 +1298,230 @@
         "q": "En quelle année est sorti le premier jeu Donkey Kong en arcade (première apparition de Mario) ?",
         "a": "1981",
         "difficulty": 5,
+        "validated": true
+      },
+      {
+        "q": "Dans God of War, comment s'appelle le fils de Kratos ?",
+        "a": "Atreus",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans The Last of Us, quel est le nom de famille de Joel ?",
+        "a": "Miller",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Street Fighter, de quel pays est originaire Chun-Li ?",
+        "a": "Chine",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel studio a été obligé de détruire tous ses jeux suite à un procès contre Epic Games en 2012 ?",
+        "a": "Silicon Knights",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "par quel nom a été remplacé Counter-Strike: Global Offensive en 2023 ?",
+        "a": "Counter-Strike 2.",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu consiste à empiler des blocs ?",
+        "a": "Tetris",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle console est créée par Sony ?",
+        "a": "PlayStation",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu se joue avec des cartes et des champions de Riot ?",
+        "a": "League of Legends",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle entreprise a créé Xbox ?",
+        "a": "Microsoft",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel héros utilise un bouclier dans Zelda ?",
+        "a": "Link",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom du frère de Mario ?",
+        "a": "Luigi",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu utilise des agents comme Jett et Sage ?",
+        "a": "Valorant",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu mobile utilise des villageois et des clans ?",
+        "a": "Clash of Clans",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu a popularisé le mode battle royale moderne ?",
+        "a": "PUBG",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu contient Steve comme personnage principal ?",
+        "a": "Minecraft",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu est célèbre pour ses “fatalities” ?",
+        "a": "Mortal Kombat",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu utilise des cartes appelées Poké Balls ?",
+        "a": "Pokémon",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu contient les personnages Scorpion et Sub-Zero ?",
+        "a": "Mortal Kombat",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu mobile utilise des cartes et des arènes ?",
+        "a": "Clash Royale",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu d’horreur contient Nemesis ?",
+        "a": "Resident Evil 3",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu a pour mascotte un hérisson bleu ?",
+        "a": "Sonic",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment appelle-t-on trois éliminations d’affilée dans un FPS ?",
+        "a": "Triple kill",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle entreprise développe League of Legends ?",
+        "a": "Riot Games",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui accompagne souvent Ellie dans The Last of Us ?",
+        "a": "Joel",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel métal permet de fabriquer une enclume dans Minecraft ?",
+        "a": "Fer",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle série contient les personnages Ryu et Ken ?",
+        "a": "Street Fighter",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle arme est souvent utilisée par les snipers dans FPS ?",
+        "a": "AWP",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu possède la map Summoner’s Rift ?",
+        "a": "League of Legends",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel studio développe Overwatch ?",
+        "a": "Blizzard",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel mode de jeu permet de créer son équipe avec des cartes dans Fifa ?",
+        "a": "Ultimate Team",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans Tomb Raider, que recherche souvent Lara ?",
+        "a": "Artefacts anciens",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel jeu a un personnage nommé Arthur Morgan ?",
+        "a": "Red Dead Redemption 2",
+        "difficulty": 4,
+        "type": "text",
         "validated": true
       }
     ]
@@ -9548,6 +10668,895 @@
         "type": "image",
         "file": "data/assets/images/logos/5/SonarQube.png",
         "difficulty": 5,
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "paris",
+    "name": "🗼 Paris",
+    "color": "#3498db",
+    "questions": [
+      {
+        "q": "Quel monument a été construit pour le centenaire de la Révolution française en 1889 ?",
+        "a": "La Tour Eiffel",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de marches y a-t-il environ pour monter au sommet de la Tour Eiffel à pied ?",
+        "a": "1 665 marches",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel célèbre monument se trouve au centre de la place Charles-de-Gaulle ?",
+        "a": "L'Arc de Triomphe",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel monument blanc surplombe la butte Montmartre ?",
+        "a": "Le Sacré-Cœur",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel bâtiment ultra-moderne est célèbre pour ses tuyaux colorés à l'extérieur ?",
+        "a": "Le Centre Pompidou",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pont est célèbre pour avoir été recouvert de \"cadenas d'amour\" ?",
+        "a": "Le Pont des Arts",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le plus vieux pont de Paris ?",
+        "a": "Le Pont Neuf",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Sur quelle avenue se juge traditionnellement l'arrivée du Tour de France ?",
+        "a": "Les Champs-Élysées",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel stade est le jardin historique du club de football PSG ?",
+        "a": "Le Parc des Princes",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel fleuve se sont déroulées les épreuves de triathlon des JO 2024 ?",
+        "a": "La Seine",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel monument a accueilli les épreuves d'escrime sous sa verrière en 2024 ?",
+        "a": "Le Grand Palais",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel tournoi de tennis du Grand Chelem se joue chaque année à la Porte d'Auteuil ?",
+        "a": "Roland-Garros",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment s'appelle la plus grande enceinte sportive de France, située à Saint-Denis ?",
+        "a": "Le Stade de France",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel était le nom de Paris à l'époque gallo-romaine ?",
+        "a": "Lutèce",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel était le nom de Paris à l'époque gallo-romaine ?Lutèce1Quel roi de France a fait construire le château de Versailles pour quitter Paris ?",
+        "a": "Louis XIV",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel personnage historique a été sacré empereur à Notre-Dame en 1804 ?",
+        "a": "Napoléon Ier",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "En quelle année a eu lieu la grande crue de la Seine qui a inondé Paris ?",
+        "a": "1910",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel ancien président a inauguré la Pyramide du Louvre en 1989 ?",
+        "a": "François Mitterrand",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel saint patron (décapité) aurait marché avec sa tête sous le bras jusqu'à Saint-Denis ?",
+        "a": "Saint Denis",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pâtissier parisien est célèbre pour ses macarons et sa boutique rue Royale ?",
+        "a": "Ladurée",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel gâteau en forme de couronne de vélo a été créé pour une course cycliste ?",
+        "a": "Le Paris-Brest",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel sandwich chaud composé de jambon et fromage est un classique des brasseries ?",
+        "a": "Le Croque-monsieur",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien y a-t-il d'arrondissements à Paris ?",
+        "a": "20",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel quartier est célèbre pour ses cabarets comme le Moulin Rouge ?",
+        "a": "Pigalle (ou Montmartre)",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel quartier historique est le centre de la communauté juive et du design ?",
+        "a": "Le Marais",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment s'appelle le quartier où se trouve l'Université de la Sorbonne ?",
+        "a": "Le Quartier Latin",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel bois se trouve à l'extrémité ouest de Paris (16e arrondissement) ?",
+        "a": "Le Bois de Boulogne",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel cimetière est le plus visité de Paris ?",
+        "a": "Le Père-Lachaise",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel musée peut-on admirer \"La Joconde\" de Léonard de Vinci ?",
+        "a": "Le Louvre",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel sculpteur français a son propre musée dans le 7e arrondissement ?",
+        "a": "Auguste Rodin",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel peintre est l'âme de Montmartre et a peint \"Le Moulin de la Galette\" ?",
+        "a": "Renoir",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle ligne de métro est entièrement automatique (sans conducteur) depuis sa création en 1998 ?",
+        "a": "La ligne 14",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle station de métro, aujourd'hui fermée au public, est surnommée \"station fantôme\" ?",
+        "a": "Croix-Rouge",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle est la ligne de métro la plus longue du réseau parisien ?",
+        "a": "La ligne 8 (Balard - Créteil)",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment appelle-t-on le transport qui fait le tour de Paris au-delà du périphérique (inauguré en 2006) ?",
+        "a": "Le Tramway (T3)",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle place circulaire abrite 12 avenues qui rayonnent en forme d'étoile ?",
+        "a": "Place de l'Étoile (Charles-de-Gaulle)",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom du plus grand parc de Paris situé dans le 19e arrondissement ?",
+        "a": "Parc de la Villette",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel passage couvert du 9e arrondissement abrite le Musée Grévin ?",
+        "a": "Le Passage Jouffroy",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom de la plus grande salle de cinéma de Paris ?",
+        "a": "Le Grand Rex",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel monument parisien a servi de décor pour le départ du Marathon pour Tous ?",
+        "a": "L'Hôtel de Ville",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pont de Paris, orné de statues dorées, était au cœur de la cérémonie d'ouverture des JO 2024 ?",
+        "a": "Le Pont Alexandre III",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel célèbre parc parisien se trouve juste en face de l'entrée principale de la cité internationale universitaire de Paris ?",
+        "a": "Le Parc Montsouris",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "sport",
+    "name": "🤾‍♂️ Sport",
+    "color": "#3498db",
+    "questions": [
+      {
+        "q": "Combien de joueurs y a-t-il dans une équipe de basket sur le terrain ?",
+        "a": "5 joueurs",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a remporté la Coupe du Monde de Rugby 2023 ?",
+        "a": "L'Afrique du Sud",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "En quelle année l'équipe de France de Handball masculine a-t-elle remporté son premier titre mondial ?",
+        "a": "1995",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel poste au volley-ball porte un maillot de couleur différente et ne peut pas attaquer ?",
+        "a": "Le Libero",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de temps dure un match de rugby à XV (hors arrêts de jeu) ?",
+        "a": "80 minutes (2x40)",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Au baseball, comment appelle-t-on le fait de frapper la balle hors des limites du terrain ?",
+        "a": "Un Home Run",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur détient le record de victoires à Roland-Garros ?",
+        "a": "Rafael Nadal (14 titres)",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Au tennis, comment appelle-t-on un service que l'adversaire ne parvient pas à toucher ?",
+        "a": "Un Ace",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le score minimum pour gagner un \"Tie-break\" au tennis ?",
+        "a": "7 points (avec 2 points d'écart)",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel sport de raquette se joue avec un volant et non une balle ?",
+        "a": "Le Badminton",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur serbe détient le record masculin de titres en Grand Chelem ?",
+        "a": "Novak Djokovic",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Au tennis de table, combien de points faut-il pour gagner une manche (depuis 2001) ?",
+        "a": "11 points",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pilote de F1 détient le record de 7 titres mondiaux (à égalité avec Hamilton) ?",
+        "a": "Michael Schumacher",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle est la couleur du maillot porté par le leader du classement général du Tour de France ?",
+        "a": "Jaune",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle est la durée maximale d'un round en boxe anglaise professionnelle ?",
+        "a": "3 minutes",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel art martial porte-t-on un \"judogi\" ?",
+        "a": "Le Judo",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom de la cage octogonale où se déroulent les combats de l'UFC ?",
+        "a": "L'Octogone",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui est considéré comme \"The Greatest\" dans l'histoire de la boxe poids lourds ?",
+        "a": "Mohamed Ali",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel sport de combat utilise-t-on des \"touches\" avec un fleuret ou une épée ?",
+        "a": "L'Escrime",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel athlète jamaïcain détient le record du monde du 100m et 200m ?",
+        "a": "Usain Bolt",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel nageur américain est l'athlète le plus médaillé de l'histoire des JO ?",
+        "a": "Michael Phelps (28 médailles)",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle ville a accueilli les premiers Jeux Olympiques de l'ère moderne en 1896 ?",
+        "a": "Athènes",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel sport peut-on réaliser un \"Birdie\", un \"Eagle\" ou un \"Albatros\" ?",
+        "a": "Le Golf",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom du stade mythique de cricket à Londres ?",
+        "a": "Lord's Cricket Ground",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment appelle-t-on le fait de faire tomber toutes les quilles d'un coup au bowling ?",
+        "a": "Un Strike",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quelle ville française ont eu lieu les premiers JO d'hiver en 1924 ?",
+        "a": "Chamonix",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de joueurs (gardiens inclus) composent une équipe de hockey sur glace sur la patinoire ?",
+        "a": "6 joueurs",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle est la longueur d'une piste de bobsleigh (environ) ?",
+        "a": "1 500 mètres",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom de la tenue portée par les pratiquants de Karaté ?",
+        "a": "Un Karatégi",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel art martial afro-brésilien mélange danse et techniques de combat ?",
+        "a": "La Capoeira",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien d'essais un sauteur en hauteur a-t-il le droit de rater à une même hauteur ?",
+        "a": "3 essais",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel sport utilise le terme \"Love\" pour désigner un score de zéro ?",
+        "a": "Le Tennis",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom du tournoi du Grand Chelem qui se déroule à New York ?",
+        "a": "L'US Open",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "De quel pays est originaire le joueur Roger Federer ?",
+        "a": "Suisse",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel tournoi du Grand Chelem impose aux joueurs de s'habiller presque entièrement en blanc ?",
+        "a": "Wimbledon",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Combien de pas un joueur peut-il faire au maximum sans dribbler le ballon ?",
+        "a": "3 pas",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom de la finale du championnat de football américain (NFL) ?",
+        "a": "Le Super Bowl",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Dans quel sport peut-on réaliser un \"Birdie\" ?",
+        "a": "Le Golf",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel joueur a disputé le match le plus long de l'histoire de tennis (11h05) contre Nicolas Mahut en 2010 ?",
+        "a": "John Isner",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel club de handball détient le record de victoires en Ligue des Champions masculine ?",
+        "a": "FC Barcelone",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a été banni des JO pendant 28 ans (de 1964 à 1992) à cause de sa politique d'Apartheid ?",
+        "a": "L'Afrique du Sud",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      }
+    ]
+  },
+  {
+    "id": "histoire",
+    "name": "📖 Histoire",
+    "color": "#3498db",
+    "questions": [
+      {
+        "q": "Quel peuple a construit les pyramides de Gizeh ?",
+        "a": "Les Égyptiens",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel général carthaginois a traversé les Alpes avec des éléphants ?",
+        "a": "Hannibal Barca",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui est le dieu de la foudre dans la mythologie grecque ?",
+        "a": "Zeus",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle cité grecque était la rivale d'Athènes lors de la guerre du Péloponnèse ?",
+        "a": "Sparte",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment s'appelle l'écriture sacrée des Égyptiens ?",
+        "a": "Les hiéroglyphes",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pharaon dont la tombe fut découverte intacte en 1922 ?",
+        "a": "Toutânkhamon",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a conquis un immense empire allant de la Grèce à l'Inde avant ses 30 ans ?",
+        "a": "Alexandre le Grand",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel philosophe grec fut le précepteur d'Alexandre le Grand ?",
+        "a": "Aristote",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel peuple a inventé l'alphabet dont dérive le nôtre ?",
+        "a": "Les Phéniciens",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a été sacré empereur d'Occident en l'an 800 ?",
+        "a": "Charlemagne",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "omment appelle-t-on l'épidémie qui a tué un tiers de l'Europe au XIVe siècle ?",
+        "a": "Peste Noire",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle jeune femme a aidé à sacrer Charles VII à Reims ?",
+        "a": "Jeanne d'Arc",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel est le nom de la guerre qui a opposé la France et l'Angleterre de 1337 à 1453 ?",
+        "a": "La guerre de Cent Ans",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui est le prophète de l'Islam dont l'Hégire marque le début du calendrier musulman ?",
+        "a": "Prophète Muhammad",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel explorateur vénitien s'est rendu à la cour de Kubilai Khan en Chine ?",
+        "a": "Marco Polo",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle ville était la capitale de l'Empire byzantin ?",
+        "a": "Constantinople",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "En quelle année Christophe Colomb atteint-il l'Amérique ?",
+        "a": "1492",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel roi de France est surnommé le « Roi-Soleil » ?",
+        "a": "Louis XIV",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel savant a été condamné pour avoir soutenu que la Terre tourne autour du Soleil ?",
+        "a": "Galilée",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel événement marque le début de la Révolution française le 14 juillet 1789 ?",
+        "a": "prise de la Bastille",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel navigateur français a découvert le Canada (Gaspé) en 1534 ?",
+        "a": "Jacques Cartier",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel général corse devient empereur des Français en 1804 ?",
+        "a": "Napoléon Bonaparte",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle défaite marque la fin définitive du règne de Napoléon Ier en 1815 ?",
+        "a": "Waterloo",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel président américain a aboli l'esclavage ?",
+        "a": "Abraham Lincoln",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel naturaliste a publié L'Origine des espèces en 1859 ?",
+        "a": "Charles Darwin",
+        "difficulty": 5,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel officier français juif a été injustement accusé d'espionnage en 1894 ?",
+        "a": "Alfred Dreyfus",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "En quelle année a commencé la Première Guerre mondiale ?",
+        "a": "1914",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel traité a mis fin à la Première Guerre mondiale en 1919 ?",
+        "a": "Le traité de Versailles",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui était le leader de l'Allemagne nazie ?",
+        "a": "Adolf Hitler",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel événement déclenche la Seconde Guerre mondiale en septembre 1939 ?",
+        "a": "L'invasion de la Pologne",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Comment s'appelle l'attaque japonaise qui fait entrer les USA en guerre en 1941 ?",
+        "a": "Pearl Harbor",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Sur quelles villes japonaises les bombes atomiques ont-elles été lancées ? (une ville suffit)",
+        "a": "Hiroshima et Nagasaki",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle organisation internationale est créée en 1945 pour maintenir la paix ?",
+        "a": "L'ONU",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle année marque la chute du mur de Berlin ?",
+        "a": "1989",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel leader indien a prôné la non-violence pour l'indépendance de son pays ?",
+        "a": "Mahatma Gandhi",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "En quelle année a eu lieu le premier pas de l'homme sur la Lune ?",
+        "a": "1969",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Qui a mené la lutte contre l'Apartheid en Afrique du Sud ?",
+        "a": "Nelson Mandela",
+        "difficulty": 2,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel était le nom du dernier dirigeant de l'URSS ?",
+        "a": "Mikhaïl Gorbatchev",
+        "difficulty": 3,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quelle guerre a opposé le Nord communiste et le Sud soutenu par les USA (1955-1975) ?",
+        "a": "La guerre du Vietnam",
+        "difficulty": 4,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel événement marque la fin symbolique de la Guerre froide en 1989 ?",
+        "a": "La chute du mur de Berlin",
+        "difficulty": 1,
+        "type": "text",
+        "validated": true
+      },
+      {
+        "q": "Quel pays a offert la Statue de la Liberté aux États-Unis ?",
+        "a": "La France",
+        "difficulty": 1,
+        "type": "text",
         "validated": true
       }
     ]

@@ -91,6 +91,66 @@
     {
       "value": "Parc de Sceaux",
       "validated": true
+    },
+    {
+      "value": "Coulée verte René-Dumont",
+      "validated": true
+    },
+    {
+      "value": "Square du Vert-Galant",
+      "validated": true
+    },
+    {
+      "value": "Square des Arènes de Lutèce",
+      "validated": true
+    },
+    {
+      "value": "Parc Floral de Paris",
+      "validated": true
+    },
+    {
+      "value": "Jardin alpin du Jardin des Plantes",
+      "validated": true
+    },
+    {
+      "value": "Jardin d’agronomie tropicale René-Dumont",
+      "validated": true
+    },
+    {
+      "value": "Place des Vosges",
+      "validated": true
+    },
+    {
+      "value": "Jardin du Palais-Royal",
+      "validated": true
+    },
+    {
+      "value": "Champ-de-Mars",
+      "validated": true
+    },
+    {
+      "value": "Jardins du Trocadéro",
+      "validated": true
+    },
+    {
+      "value": "Jardin Catherine-Labouré",
+      "validated": true
+    },
+    {
+      "value": "Jardin des Serres d'Auteuil",
+      "validated": true
+    },
+    {
+      "value": "Jardin Atlantique",
+      "validated": true
+    },
+    {
+      "value": "Parc André-Citroën",
+      "validated": true
+    },
+    {
+      "value": "Parc Martin-Luther-King",
+      "validated": true
     }
   ]
 }

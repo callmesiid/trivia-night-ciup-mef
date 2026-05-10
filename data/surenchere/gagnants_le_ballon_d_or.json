@@ -1,191 +1,187 @@
 {
-  "id": "europe",
-  "label": "PAYS D'EUROPE",
-  "icon": "../assets/Images/géographie.png",
-  "prompt": "Citez un maximum de pays du continent européen.",
+  "id": "gagnants_le_ballon_d_or",
+  "label": "Gagnants le ballon d or",
+  "icon": "assets/Images/geographie.png",
+  "prompt": "Gagnants le ballon d or",
   "answers": [
     {
-      "value": "Albanie",
+      "value": "Stanley Matthews",
       "validated": true
     },
     {
-      "value": "Allemagne",
+      "value": "Alfredo Di Stéfano",
       "validated": true
     },
     {
-      "value": "Andorre",
+      "value": "Raymond Kopa",
       "validated": true
     },
     {
-      "value": "Autriche",
+      "value": "Luis Suárez",
       "validated": true
     },
     {
-      "value": "Belgique",
+      "value": "Omar Sívori",
       "validated": true
     },
     {
-      "value": "Biélorussie",
+      "value": "Josef Masopust",
       "validated": true
     },
     {
-      "value": "Bosnie-Herzégovine",
+      "value": "Lev Yachine",
       "validated": true
     },
     {
-      "value": "Bulgarie",
+      "value": "Denis Law",
       "validated": true
     },
     {
-      "value": "Chypre",
+      "value": "Eusébio",
       "validated": true
     },
     {
-      "value": "Croatie",
+      "value": "Bobby Charlton",
       "validated": true
     },
     {
-      "value": "Danemark",
+      "value": "Flórián Albert",
       "validated": true
     },
     {
-      "value": "Espagne",
+      "value": "George Best",
       "validated": true
     },
     {
-      "value": "Estonie",
+      "value": "Gianni Rivera",
       "validated": true
     },
     {
-      "value": "Finlande",
+      "value": "Gerd Müller",
       "validated": true
     },
     {
-      "value": "France",
+      "value": "Johan Cruyff",
       "validated": true
     },
     {
-      "value": "Grèce",
+      "value": "Franz Beckenbauer",
       "validated": true
     },
     {
-      "value": "Hongrie",
+      "value": "Allan Simonsen",
       "validated": true
     },
     {
-      "value": "Irlande",
+      "value": "Kevin Keegan",
       "validated": true
     },
     {
-      "value": "Islande",
+      "value": "Karl-Heinz Rummenigge",
       "validated": true
     },
     {
-      "value": "Italie",
+      "value": "Paolo Rossi",
       "validated": true
     },
     {
-      "value": "Kosovo",
+      "value": "Michel Platini",
       "validated": true
     },
     {
-      "value": "Lettonie",
+      "value": "Igor Belanov",
       "validated": true
     },
     {
-      "value": "Liechtenstein",
+      "value": "Ruud Gullit",
       "validated": true
     },
     {
-      "value": "Lituanie",
+      "value": "Marco van Basten",
       "validated": true
     },
     {
-      "value": "Luxembourg",
+      "value": "Lothar Matthäus",
       "validated": true
     },
     {
-      "value": "Macédoine du Nord",
+      "value": "Jean-Pierre Papin",
       "validated": true
     },
     {
-      "value": "Malte",
+      "value": "Roberto Baggio",
       "validated": true
     },
     {
-      "value": "Moldavie",
+      "value": "Hristo Stoichkov",
       "validated": true
     },
     {
-      "value": "Monaco",
+      "value": "George Weah",
       "validated": true
     },
     {
-      "value": "Monténégro",
+      "value": "Matthias Sammer",
       "validated": true
     },
     {
-      "value": "Norvège",
+      "value": "Ronaldo",
       "validated": true
     },
     {
-      "value": "Pays-Bas",
+      "value": "Zinedine Zidane",
       "validated": true
     },
     {
-      "value": "Pologne",
+      "value": "Rivaldo",
       "validated": true
     },
     {
-      "value": "Portugal",
+      "value": "Luis Figo",
       "validated": true
     },
     {
-      "value": "République tchèque",
+      "value": "Michael Owen",
       "validated": true
     },
     {
-      "value": "Roumanie",
+      "value": "Pavel Nedvěd",
       "validated": true
     },
     {
-      "value": "Royaume-Uni",
+      "value": "Andriy Shevchenko",
       "validated": true
     },
     {
-      "value": "Russie",
+      "value": "Ronaldinho",
       "validated": true
     },
     {
-      "value": "Saint-Marin",
+      "value": "Fabio Cannavaro",
       "validated": true
     },
     {
-      "value": "Serbie",
+      "value": "Kaká",
       "validated": true
     },
     {
-      "value": "Slovaquie",
+      "value": "Cristiano Ronaldo",
       "validated": true
     },
     {
-      "value": "Slovénie",
+      "value": "Lionel Messi",
       "validated": true
     },
     {
-      "value": "Suède",
+      "value": "Luka Modrić",
       "validated": true
     },
     {
-      "value": "Suisse",
+      "value": "Karim Benzema",
       "validated": true
     },
     {
-      "value": "Ukraine",
-      "validated": true
-    },
-    {
-      "value": "Vatican",
+      "value": "Ousmane Dembélé",
       "validated": true
     }
   ]

@@ -5,67 +5,35 @@
   "prompt": "Citez les présidents de la Cinquième République française avec leur nom ou prénom.",
   "answers": [
     {
-      "value": "De Gaulle",
+      "value": "Charles de Gaulle (1959–1969)",
       "validated": true
     },
     {
-      "value": "Charles de Gaulle",
+      "value": "Georges Pompidou (1969–1974)",
       "validated": true
     },
     {
-      "value": "Pompidou",
+      "value": "Valéry Giscard d’Estaing (1974–1981)",
       "validated": true
     },
     {
-      "value": "Georges Pompidou",
+      "value": "François Mitterrand (1981–1995)",
       "validated": true
     },
     {
-      "value": "Giscard d'Estaing",
+      "value": "Jacques Chirac (1995–2007)",
       "validated": true
     },
     {
-      "value": "Valéry Giscard d'Estaing",
+      "value": "Nicolas Sarkozy (2007–2012)",
       "validated": true
     },
     {
-      "value": "Mitterrand",
+      "value": "François Hollande (2012–2017)",
       "validated": true
     },
     {
-      "value": "François Mitterrand",
-      "validated": true
-    },
-    {
-      "value": "Chirac",
-      "validated": true
-    },
-    {
-      "value": "Jacques Chirac",
-      "validated": true
-    },
-    {
-      "value": "Sarkozy",
-      "validated": true
-    },
-    {
-      "value": "Nicolas Sarkozy",
-      "validated": true
-    },
-    {
-      "value": "Hollande",
-      "validated": true
-    },
-    {
-      "value": "François Hollande",
-      "validated": true
-    },
-    {
-      "value": "Macron",
-      "validated": true
-    },
-    {
-      "value": "Emmanuel Macron",
+      "value": "Emmanuel Macron (2017–présent)",
       "validated": true
     }
   ]

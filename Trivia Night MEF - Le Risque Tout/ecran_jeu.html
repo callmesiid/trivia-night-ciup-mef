@@ -41,6 +41,7 @@
     <audio id="sfx-pavard" src="../assets/effets_sonores/pavard.mp3" preload="auto"></audio>
     <audio id="sfx-ohlecon" src="../assets/effets_sonores/oh_le_con.mp3" preload="auto"></audio>
     <audio id="sfx-souffrir" src="../assets/effets_sonores/souffrir_ok.mp3" preload="auto"></audio>
+    <audio id="sfx-gate" src="../assets/effets_sonores/c un gaté ca.mp3" preload="auto"></audio>
 
     <div id="bg-game-marquee">
         <div class="game-marquee-row">
@@ -844,30 +845,60 @@
             const btn = document.getElementById(bucketId);
             if(!btn) return;
 
-            // Logique de recherche dans la DB
-            let newQ = { type: 'text', question: `Question de secours (${themeTitle})`, answer: 'Réponse secours' };
-            
-            if(typeof QUESTION_DATABASE !== 'undefined') {
-                let safeId = normalizeId(themeTitle);
-                if(safeId === "sports") safeId = "sport";
-                
-                // Gestion Mystère / Hardcore : On pioche un thème random
-                if(themeTitle === "MYSTÈRE" || themeTitle === "HARDCORE") {
-                    const keys = Object.keys(QUESTION_DATABASE);
-                    safeId = keys[Math.floor(Math.random() * keys.length)];
-                }
+            let newQ = null;
 
-                if(QUESTION_DATABASE[safeId] && QUESTION_DATABASE[safeId][level]) {
-                    const pool = QUESTION_DATABASE[safeId][level];
-                    let all = [];
-                    if(pool.text) pool.text.forEach(x => all.push({...x, type:'text'}));
-                    if(pool.images) pool.images.forEach(x => all.push({...x, type:'image'}));
-                    // Exclure questions déjà vues (même logique que la sélection initiale)
-                    all = rtLog_filterQuestions(safeId, String(level), all);
-                    all = crossLog_filterPool(all, 'question', 'answer');
-                    if(all.length > 0) newQ = all[Math.floor(Math.random() * all.length)];
+            if(typeof QUESTION_DATABASE !== 'undefined') {
+                if(themeTitle === "MYSTÈRE" || themeTitle === "HARDCORE") {
+                    // Bucket mystère : piocher dans TOUTE la DB toutes difficultés confondues
+                    const MYST_WEIGHTS = {
+                        6:  [60, 20, 10,  9,  1],
+                        7:  [50, 30, 10,  9,  1],
+                        8:  [20, 20, 50,  9,  1],
+                        9:  [10, 10, 15, 60,  5],
+                        10: [ 1,  9, 15, 25, 50]
+                    };
+                    let fullPool = [];
+                    for(const [tKey, tLevels] of Object.entries(QUESTION_DATABASE)) {
+                        for(const [lvl, content] of Object.entries(tLevels)) {
+                            if(content.images) content.images.forEach(obj => { if(tKey !== 'harry_potter') fullPool.push({type:'image', ...obj, level: parseInt(lvl), theme: tKey}); });
+                            if(content.sounds) content.sounds.forEach(obj => fullPool.push({type:'audio', ...obj, level: parseInt(lvl), theme: tKey}));
+                            if(content.text)   content.text.forEach(t   => fullPool.push({type:'text',  ...t,   level: parseInt(lvl), theme: tKey}));
+                        }
+                    }
+                    fullPool = crossLog_filterPool(fullPool, 'question', 'answer');
+                    if(fullPool.length > 0) {
+                        const poolByDiff = {1:[], 2:[], 3:[], 4:[], 5:[]};
+                        fullPool.forEach(q => { const d = q.level || 1; if(poolByDiff[d]) poolByDiff[d].push(q); });
+                        const bucketVal = (level >= 6 && level <= 10) ? level : 8;
+                        const w = MYST_WEIGHTS[bucketVal] || [20,20,20,20,20];
+                        const total = w.reduce((a,b) => a+b, 0);
+                        let r = Math.random() * total, chosen = 1;
+                        for(let d=1; d<=5; d++) { r -= w[d-1]; if(r <= 0) { chosen = d; break; } }
+                        for(let off=0; off<5; off++) {
+                            const d = ((chosen - 1 + off) % 5) + 1;
+                            if(poolByDiff[d] && poolByDiff[d].length > 0) {
+                                newQ = poolByDiff[d][Math.floor(Math.random() * poolByDiff[d].length)];
+                                break;
+                            }
+                        }
+                    }
+                } else {
+                    let safeId = normalizeId(themeTitle);
+                    if(safeId === "sports") safeId = "sport";
+                    if(QUESTION_DATABASE[safeId] && QUESTION_DATABASE[safeId][level]) {
+                        const pool = QUESTION_DATABASE[safeId][level];
+                        let all = [];
+                        if(pool.text)   pool.text.forEach(x   => all.push({...x, type:'text'}));
+                        if(pool.images) pool.images.forEach(x => all.push({...x, type:'image'}));
+                        if(pool.sounds) pool.sounds.forEach(x => all.push({...x, type:'audio'}));
+                        all = rtLog_filterQuestions(safeId, String(level), all);
+                        all = crossLog_filterPool(all, 'question', 'answer');
+                        if(all.length > 0) newQ = all[Math.floor(Math.random() * all.length)];
+                    }
                 }
             }
+
+            if(!newQ) newQ = { type: 'text', question: `Aucune question disponible`, answer: '...' };
 
             // Appliquer nouvelle question
             btn._qData = newQ;
@@ -1037,40 +1068,84 @@
             }
         }
 
-        // --- TES MESSAGES SPÉCIFIQUES ---
+        // --- Rotation sounds & messages (évite répétition pendant la partie) ---
+        const _winSoundQueues = {
+            1: ['sfx-win', 'sfx-gate'],
+            2: ['sfx-win', 'sfx-gate'],
+            3: ['sfx-win', 'sfx-gate'],
+            4: ['sfx-f1', 'sfx-gate', 'sfx-win'],
+            5: ['sfx-f1', 'sfx-pavard', 'sfx-gate'],
+            mystere: ['sfx-f1', 'sfx-win', 'sfx-gate', 'sfx-pavard']
+        };
+        const _winMsgQueues = {
+            1: ['GG !', 'BIEN JOUÉ !', 'C\'EST DANS LA POCHE !'],
+            2: ['BIEN JOUÉ !', 'PAS MAL DU TOUT !', 'C\'EST GAGNÉ !'],
+            3: ['T\'ES CHAUD(E) !', 'SOLIDE !', 'BELLE RÉPONSE !'],
+            4: ['TIÉ UN TIGRE', 'TIÉ UN ORNYTHORINQUE', 'TIÉ UN DON', 'TIÉ UN MONSTRE'],
+            5: ['POINT FAIBLE ? TROP FORT(E) !', 'IMPRESSIONNANT(E) !', 'T\'ES UN MONSTRE !'],
+            6: ['MYSTÈRE RÉSOLU !', 'INCROYABLE !', 'T\'ES TROP FORT(E) !', 'WOW !'],
+            7: ['MYSTÈRE RÉSOLU !', 'INCROYABLE !', 'CHAUD(E) COMME LA BRAISE !', 'ÉNORME !'],
+            8: ['INCROYABLE !', 'T\'ES EN FEU !', 'NIVEAU EXPERT !', 'CHAPEAU !'],
+            9: ['EXCEPTIONNEL(LE) !', 'T\'ES UN GÉNIE !', 'INCROYABLE !', 'NIVEAU DIEU !'],
+            10: ['LÉGENDAIRE !', 'T\'ES INARRÊTABLE !', 'PERSONNE NE PEUT TE STOPPER !', 'ULTIME !']
+        };
+        const _loseSoundQueues = {
+            1: ['sfx-wrong', 'sfx-nope'],
+            2: ['sfx-wrong', 'sfx-nope'],
+            3: ['sfx-nope', 'sfx-tmauvais'],
+            4: ['sfx-tmauvais', 'sfx-wasted'],
+            high: ['sfx-ciao', 'sfx-wasted', 'sfx-ohlecon', 'sfx-souffrir', 'sfx-k']
+        };
+        const _loseMsgQueues = {
+            1: ['HMMM...', 'PAS GRAVE !', 'DOMMAGE !'],
+            2: ['AÏE AÏE AÏE...', 'RATÉ !', 'PRESQUE !'],
+            3: ['C\'EST CHAUD !', 'TROP DUR ?', 'DOMMAGE !'],
+            4: ['TIÉ UN FADA TOI', 'TIÉ UN CON', 'SIMPLE POURTANT...', 'AÏÏÏE !'],
+            5: ['C\'EST CIAO !', 'T\'ES MORT(E) DANS LE FILM', 'OH LE COING !', 'T\'AIMES SOUFFRIR C\'EST ÇA ?!', 'POINT FORT ? TROP COING !'],
+            6: ['C\'EST CIAO !', 'T\'ES MORT(E) DANS LE FILM', 'OH LE COING !', 'T\'AIMES SOUFFRIR C\'EST ÇA ?!', 'VILAIN(E) MYSTÈRE !'],
+            7: ['OH LE COING !', 'C\'EST CIAO !', 'LE MYSTÈRE T\'A EU !', 'T\'AIMES SOUFFRIR C\'EST ÇA ?!'],
+            8: ['OH LE COING !', 'T\'ES MORT(E) DANS LE FILM', 'LE MYSTÈRE T\'A DÉTRUIT(E) !', 'T\'AIMES SOUFFRIR C\'EST ÇA ?!'],
+            9: ['OH LE COING !', 'LE MYSTÈRE T\'A PULVÉRISÉ(E) !', 'T\'ES MORT(E) DANS LE FILM', 'NIVEAU ELITE... RATÉ !'],
+            10: ['LÉGENDAIRE... RATÉ !', 'T\'ÉTAIS SI PROCHE !', 'LE BOSS T\'A EU !', 'OH LE COING !']
+        };
+        const _queueIdxWinSound = {};
+        const _queueIdxWinMsg   = {};
+        const _queueIdxLoseSound = {};
+        const _queueIdxLoseMsg   = {};
+
+        function _rotate(queues, idxMap, key) {
+            if (!queues[key]) return queues[Object.keys(queues)[0]][0];
+            if (idxMap[key] === undefined) idxMap[key] = 0;
+            const val = queues[key][idxMap[key] % queues[key].length];
+            idxMap[key]++;
+            return val;
+        }
+
+        // --- ANIMATIONS WIN / LOSE ---
         function triggerWin(points) {
-            state = 'ANIMATING'; 
+            state = 'ANIMATING';
             document.getElementById('overlay').style.display = 'none';
-            // Coupe Timer
-            stopSound(audioTimer); 
-            
-            const winTitle = document.getElementById('win-message');
+            stopSound(audioTimer);
+
+            const winTitle  = document.getElementById('win-message');
             const winPoints = document.getElementById('win-points');
-            const lvl = currentLevel; 
-            let soundId = 'sfx-win';
-            let message = "GG";
+            const lvl = currentLevel;
 
-            if (lvl === 1) { message = "GG"; soundId = 'sfx-win'; }
-            else if (lvl === 2) { message = "BIEN JOUÉ"; soundId = 'sfx-win'; }
-            else if (lvl === 3) { message = "T'ES CHAUD"; soundId = 'sfx-win'; }
-            else if (lvl === 4) {
-                const phrases = ["TIÉ UN TIGRE", "TIÉ UN ORNYTHORINQUE", "TIÉ UN DON", "TIÉ UN MONSTRE"];
-                message = phrases[Math.floor(Math.random() * phrases.length)];
-                soundId = 'sfx-f1';
-            }
-            else if (lvl === 5) {
-                message = "POINT FAIBLE ? TROP FORT(E)";
-                soundId = 'sfx-f1';
-            }
-            else if (lvl > 5) { // Mystère +
-                message = "INCROYABLE !";
-                soundId = Math.random() > 0.5 ? 'sfx-win' : 'sfx-f1';
+            let soundKey, msgKey;
+            if (lvl >= 6) {
+                soundKey = 'mystere';
+                msgKey   = String(Math.min(lvl, 10));
+            } else {
+                soundKey = lvl;
+                msgKey   = String(lvl);
             }
 
-            winTitle.innerText = message;
+            const soundId = _rotate(_winSoundQueues, _queueIdxWinSound, soundKey);
+            const message = _rotate(_winMsgQueues,   _queueIdxWinMsg,   msgKey);
+
+            winTitle.innerText  = message;
             winPoints.innerText = "+" + (points || lvl);
-            
-            winScreen.style.display = 'flex'; 
+            winScreen.style.display = 'flex';
             createConfetti(confettiContainer);
             playSound(soundId);
 
@@ -1082,49 +1157,36 @@
         }
 
         function triggerLose(points) {
-            state = 'ANIMATING'; 
+            state = 'ANIMATING';
             document.getElementById('overlay').style.display = 'none';
-            // Coupe Timer
             stopSound(audioTimer);
 
-            const loseTitle = document.getElementById('lose-message');
+            const loseTitle  = document.getElementById('lose-message');
             const losePoints = document.getElementById('lose-points');
-            const rainCont = document.getElementById('rain-container');
+            const rainCont   = document.getElementById('rain-container');
             const lvl = currentLevel;
-            let soundId = 'sfx-break';
-            let message = "PERDU !";
 
-            if (lvl === 1) { message = "HMMM..."; soundId = 'sfx-wrong'; }
-            else if (lvl === 2) { message = "AÏE AÏE AÏE..."; soundId = 'sfx-wrong'; }
-            else if (lvl === 3) { message = "C'EST CHAUD !"; soundId = 'sfx-nope'; }
-            else if (lvl === 4) {
-                const phrases = ["TIÉ UN FADA TOI", "TIÉ UN CON", "SIMPLE POURTANT..."];
-                message = phrases[Math.floor(Math.random() * phrases.length)];
-                soundId = Math.random() > 0.5 ? 'sfx-tmauvais' : 'sfx-wasted';
-            }
-            else if (lvl >= 5) {
-                const options = [
-                    { text: "C'EST CIAO !", sound: 'sfx-ciao' },
-                    { text: "T'ES MORT(E) DANS LE FILM", sound: 'sfx-wasted'},
-                    { text: "OH LE COING !", sound: 'sfx-ohlecon' },
-                    { text: "POINT FORT ? TROP COING !", sound: 'sfx-ohlecon'},
-                    { text: "T'AIMES SOUFFRIR C'EST ÇA ?!", sound: 'sfx-souffrir'}
-                ];    
-                const choice = options[Math.floor(Math.random() * options.length)];   
-                message = choice.text;
-                soundId = choice.sound;
+            let soundKey, msgKey;
+            if (lvl >= 5) {
+                soundKey = 'high';
+                msgKey   = String(Math.min(lvl, 10));
+            } else {
+                soundKey = lvl;
+                msgKey   = String(lvl);
             }
 
-            loseTitle.innerText = message;
+            const soundId = _rotate(_loseSoundQueues, _queueIdxLoseSound, soundKey);
+            const message = _rotate(_loseMsgQueues,   _queueIdxLoseMsg,   msgKey);
+
+            loseTitle.innerText  = message;
             losePoints.innerText = "-" + (points || lvl);
-            
-            loseScreen.style.display = 'flex'; 
-            createRain(rainCont); 
+            loseScreen.style.display = 'flex';
+            createRain(rainCont);
             playSound(soundId);
 
             if(winLoseTimeout) clearTimeout(winLoseTimeout);
             winLoseTimeout = setTimeout(() => {
-                loseScreen.style.display = 'none'; 
+                loseScreen.style.display = 'none';
                 returnToBoard();
             }, 4000);
         }

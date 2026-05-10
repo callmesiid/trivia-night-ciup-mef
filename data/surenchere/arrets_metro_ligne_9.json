@@ -1,0 +1,156 @@
+{
+  "id": "arrets_metro_ligne_9",
+  "label": "ARRETS METRO LIGNE 9",
+  "icon": "assets/Images/geographie.png",
+  "prompt": "ARRETS METRO LIGNE 9",
+  "answers": [
+    {
+      "value": "Pont de Sèvres",
+      "validated": true
+    },
+    {
+      "value": "Billancourt",
+      "validated": true
+    },
+    {
+      "value": "Marcel Sembat",
+      "validated": true
+    },
+    {
+      "value": "Porte de Saint-Cloud",
+      "validated": true
+    },
+    {
+      "value": "Exelmans",
+      "validated": true
+    },
+    {
+      "value": "Michel-Ange – Molitor",
+      "validated": true
+    },
+    {
+      "value": "Michel-Ange – Auteuil",
+      "validated": true
+    },
+    {
+      "value": "Jasmin",
+      "validated": true
+    },
+    {
+      "value": "Ranelagh",
+      "validated": true
+    },
+    {
+      "value": "La Muette",
+      "validated": true
+    },
+    {
+      "value": "Rue de la Pompe",
+      "validated": true
+    },
+    {
+      "value": "Trocadéro",
+      "validated": true
+    },
+    {
+      "value": "Iéna",
+      "validated": true
+    },
+    {
+      "value": "Alma – Marceau",
+      "validated": true
+    },
+    {
+      "value": "Franklin D. Roosevelt",
+      "validated": true
+    },
+    {
+      "value": "Saint-Philippe du Roule",
+      "validated": true
+    },
+    {
+      "value": "Miromesnil",
+      "validated": true
+    },
+    {
+      "value": "Saint-Augustin",
+      "validated": true
+    },
+    {
+      "value": "Havre – Caumartin",
+      "validated": true
+    },
+    {
+      "value": "Chaussée d’Antin – La Fayette",
+      "validated": true
+    },
+    {
+      "value": "Richelieu – Drouot",
+      "validated": true
+    },
+    {
+      "value": "Grands Boulevards",
+      "validated": true
+    },
+    {
+      "value": "Bonne Nouvelle",
+      "validated": true
+    },
+    {
+      "value": "Strasbourg – Saint-Denis",
+      "validated": true
+    },
+    {
+      "value": "République",
+      "validated": true
+    },
+    {
+      "value": "Oberkampf",
+      "validated": true
+    },
+    {
+      "value": "Saint-Ambroise",
+      "validated": true
+    },
+    {
+      "value": "Voltaire",
+      "validated": true
+    },
+    {
+      "value": "Charonne",
+      "validated": true
+    },
+    {
+      "value": "Rue des Boulets",
+      "validated": true
+    },
+    {
+      "value": "Nation",
+      "validated": true
+    },
+    {
+      "value": "Buzenval",
+      "validated": true
+    },
+    {
+      "value": "Maraîchers",
+      "validated": true
+    },
+    {
+      "value": "Porte de Montreuil",
+      "validated": true
+    },
+    {
+      "value": "Robespierre",
+      "validated": true
+    },
+    {
+      "value": "Croix de Chavaux",
+      "validated": true
+    },
+    {
+      "value": "Mairie de Montreuil",
+      "validated": true
+    }
+  ]
+}

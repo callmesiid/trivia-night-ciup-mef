@@ -5,39 +5,35 @@
   "prompt": "Citez un maximum de maisons de la Cité Internationale Universitaire de Paris.",
   "answers": [
     {
-      "value": "Fondation Deutsch de la Meurthe",
+      "value": "Fondation Rosa Abreu de Grancher",
       "validated": true
     },
     {
-      "value": "Maison Internationale",
+      "value": "Résidence André Honnorat",
       "validated": true
     },
     {
-      "value": "Maison des Provinces de France",
+      "value": "Maison de l’Argentine",
       "validated": true
     },
     {
-      "value": "Maison du Maroc",
+      "value": "Maison des étudiants arméniens",
       "validated": true
     },
     {
-      "value": "Maison de la Tunisie",
+      "value": "Maison des Arts et Métiers",
       "validated": true
     },
     {
-      "value": "Maison du Cambodge",
+      "value": "Maison de l’Asie du Sud-Est",
       "validated": true
     },
     {
-      "value": "Maison du Liban",
+      "value": "Fondation Avicenne / L’Oblique",
       "validated": true
     },
     {
-      "value": "Maison de l'Inde",
-      "validated": true
-    },
-    {
-      "value": "Maison du Japon",
+      "value": "Fondation Biermans-Lapôtre",
       "validated": true
     },
     {
@@ -45,39 +41,67 @@
       "validated": true
     },
     {
-      "value": "Maison de la Suède",
+      "value": "Maison du Cambodge",
       "validated": true
     },
     {
-      "value": "Maison de la Suisse",
+      "value": "Maison des étudiants canadiens",
       "validated": true
     },
     {
-      "value": "Maison de la Norvège",
+      "value": "Fondation danoise",
       "validated": true
     },
     {
-      "value": "Maison du Portugal",
+      "value": "Fondation Deutsch de la Meurthe",
       "validated": true
     },
     {
-      "value": "Collège Néerlandais",
+      "value": "Collège d’Espagne",
       "validated": true
     },
     {
-      "value": "Maison des États-Unis",
+      "value": "Fondation des États-Unis",
       "validated": true
     },
     {
-      "value": "Maison de l'Allemagne",
+      "value": "Collège franco-britannique",
       "validated": true
     },
     {
-      "value": "Maison de la Corée",
+      "value": "Fondation hellénique",
       "validated": true
     },
     {
-      "value": "Maison de l'Argentine",
+      "value": "Maison Heinrich Heine",
+      "validated": true
+    },
+    {
+      "value": "Maison de l’Inde",
+      "validated": true
+    },
+    {
+      "value": "Maison de l’Italie",
+      "validated": true
+    },
+    {
+      "value": "Maison du Japon",
+      "validated": true
+    },
+    {
+      "value": "Maison du Liban",
+      "validated": true
+    },
+    {
+      "value": "Résidence Lila",
+      "validated": true
+    },
+    {
+      "value": "Résidence Lucien Paye",
+      "validated": true
+    },
+    {
+      "value": "Maison du Maroc",
       "validated": true
     },
     {
@@ -85,19 +109,67 @@
       "validated": true
     },
     {
-      "value": "Maison du Canada",
+      "value": "Fondation de Monaco",
       "validated": true
     },
     {
-      "value": "Maison des Étudiants de la Francophonie",
+      "value": "Collège néerlandais",
       "validated": true
     },
     {
-      "value": "Maison de l'Île-de-France",
+      "value": "Maison de Norvège",
       "validated": true
     },
     {
-      "value": "Maison de l'Italie",
+      "value": "Maison des Provinces de France",
+      "validated": true
+    },
+    {
+      "value": "Résidence Quai de la Loire",
+      "validated": true
+    },
+    {
+      "value": "Résidence Robert Garric",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Suède",
+      "validated": true
+    },
+    {
+      "value": "Pavillon suisse",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Tunisie",
+      "validated": true
+    },
+    {
+      "value": "Fondation Victor Lyon",
+      "validated": true
+    },
+    {
+      "value": "Maison de la Corée",
+      "validated": true
+    },
+    {
+      "value": "Maison de l’Égypte",
+      "validated": true
+    },
+    {
+      "value": "Maison de l’Île-de-France",
+      "validated": true
+    },
+    {
+      "value": "Maison de l’Ukraine",
+      "validated": true
+    },
+    {
+      "value": "Maison internationale AgroParisTech",
+      "validated": true
+    },
+    {
+      "value": "Maison des étudiants de la francophonie",
       "validated": true
     }
   ]
