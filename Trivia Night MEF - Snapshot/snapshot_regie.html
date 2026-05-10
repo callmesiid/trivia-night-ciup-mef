@@ -474,7 +474,7 @@ function markCorrect(cardIdx) {
 // fromTimer=true : appelé par expiration automatique du chrono (ignore les gardes manuels)
 // fromTimer=false (défaut) : bouton FAUX ou clavier → vérifications strictes
 function markWrong(fromTimer = false) {
-  if (!fromTimer && (timerState !== 'RUNNING' || gs.snake.length <= 1)) return;
+  if (!fromTimer && ((timerState !== 'RUNNING' && timerState !== 'PAUSED') || gs.snake.length <= 1)) return;
   const p = currentPlayer();
   if (!p) return;
   // Sauvegarde pour undo — on ne modifie PAS gs.teams, juste le snake
@@ -583,7 +583,7 @@ function renderAll() {
 }
 
 function renderButtons() {
-  const canFaux = timerState === 'RUNNING' && gs.snake.length > 1;
+  const canFaux = (timerState === 'RUNNING' || timerState === 'PAUSED') && gs.snake.length > 1;
   document.getElementById('btn-faux').disabled = !canFaux;
 }
 
