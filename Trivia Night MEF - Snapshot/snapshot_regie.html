@@ -298,6 +298,7 @@ function toggleTurnTimer() {
     clearInterval(timerInterval); timerState = 'PAUSED'; stopSoundTimer();
     document.getElementById('btn-play-pause').textContent = 'RESUME ▶';
     channel.postMessage({ type: 'PAUSE_TIMER' });
+    renderButtons();
   } else {
     if (timerState === 'STOPPED') currentTime = turnDuration;
     timerState = 'RUNNING';
