@@ -1,8 +1,8 @@
 {
   "id": "arrets_metro_ligne_9",
-  "label": "ARRETS METRO LIGNE 9",
+  "label": "ARRÊTS LIGNE 9 DU MÉTRO",
   "icon": "assets/Images/geographie.png",
-  "prompt": "ARRETS METRO LIGNE 9",
+  "prompt": "ARRÊTS LIGNE 9 DU MÉTRO",
   "answers": [
     {
       "value": "Pont de Sèvres",

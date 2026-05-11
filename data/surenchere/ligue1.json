@@ -1,8 +1,8 @@
 {
   "id": "ligue1",
-  "label": "CLUBS DE LIGUE 1",
+  "label": "CLUBS DE LIGUE 1 (championnat français)",
   "icon": "../assets/Images/sport.png",
-  "prompt": "Citez un maximum de clubs ayant joué en Ligue 1 depuis 2010.",
+  "prompt": "Citez un maximum de clubs ayant joué en Ligue 1",
   "answers": [
     {
       "value": "Paris Saint-Germain",

@@ -1,8 +1,8 @@
 {
   "id": "gagnants_le_ballon_d_or",
-  "label": "Gagnants le ballon d or",
+  "label": "GAGNATS BALLONS D'OR (Football)",
   "icon": "assets/Images/geographie.png",
-  "prompt": "Gagnants le ballon d or",
+  "prompt": "GAGNATS BALLONS D'OR (Football)",
   "answers": [
     {
       "value": "Stanley Matthews",

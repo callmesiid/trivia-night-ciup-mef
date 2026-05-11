@@ -1,8 +1,8 @@
 {
   "id": "arrets_ligne_metro_10",
-  "label": "ARRETS LIGNE METRO 10",
+  "label": "ARRÊTS LIGNE 10 DU MÉTRO",
   "icon": "assets/Images/geographie.png",
-  "prompt": "ARRETS LIGNE METRO 10",
+  "prompt": "ARRÊTS LIGNE 10 DU MÉTRO",
   "answers": [
     {
       "value": "Boulogne – Pont de Saint-Cloud",

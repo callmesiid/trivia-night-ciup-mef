@@ -2,7 +2,7 @@
   "id": "ligne13",
   "label": "ARRÊTS LIGNE 13 DU MÉTRO",
   "icon": "../assets/Images/geographie.png",
-  "prompt": "Citez un maximum d'arrêts de la ligne 13 du métro (Saint-Denis / Les Courtilles — Châtillon-Montrouge).",
+  "prompt": "Citez un maximum d'arrêts de la ligne 13 du métro.",
   "answers": [
     {
       "value": "Saint-Denis - Université",

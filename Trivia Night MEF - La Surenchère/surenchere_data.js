@@ -129,9 +129,9 @@ const THEMES_DATA = [
   },
   {
     "id": "arrets_ligne_metro_10",
-    "title": "ARRETS LIGNE METRO 10",
+    "title": "ARRÊTS LIGNE 10 DU MÉTRO",
     "icon": "assets/Images/geographie.png",
-    "question": "ARRETS LIGNE METRO 10",
+    "question": "ARRÊTS LIGNE 10 DU MÉTRO",
     "answers": [
       "Boulogne – Pont de Saint-Cloud",
       "Boulogne – Jean Jaurès",
@@ -160,9 +160,9 @@ const THEMES_DATA = [
   },
   {
     "id": "arrets_metro_ligne_5",
-    "title": "ARRETS METRO LIGNE 5",
+    "title": "ARRÊTS LIGNE 5 DU MÉTRO",
     "icon": "assets/Images/geographie.png",
-    "question": "ARRETS METRO LIGNE 5",
+    "question": "ARRÊTS LIGNE 5 DU MÉTRO",
     "answers": [
       "Place d'Italie",
       "Campo-Formio",
@@ -190,9 +190,9 @@ const THEMES_DATA = [
   },
   {
     "id": "arrets_metro_ligne_7",
-    "title": "ARRETS METRO LIGNE 7",
+    "title": "ARRÊTS LIGNE 7 DU MÉTRO",
     "icon": "assets/Images/geographie.png",
-    "question": "ARRETS METRO LIGNE 7",
+    "question": "ARRÊTS LIGNE 7 DU MÉTRO",
     "answers": [
       "La Courneuve – 8 Mai 1945",
       "Fort d’Aubervilliers",
@@ -236,9 +236,9 @@ const THEMES_DATA = [
   },
   {
     "id": "arrets_metro_ligne_9",
-    "title": "ARRETS METRO LIGNE 9",
+    "title": "ARRÊTS LIGNE 9 DU MÉTRO",
     "icon": "assets/Images/geographie.png",
-    "question": "ARRETS METRO LIGNE 9",
+    "question": "ARRÊTS LIGNE 9 DU MÉTRO",
     "answers": [
       "Pont de Sèvres",
       "Billancourt",
@@ -281,7 +281,7 @@ const THEMES_DATA = [
   },
   {
     "id": "artistes_fr",
-    "title": "CHANTEURS / ARTISTES FRANÇAIS",
+    "title": "CHANTEURS FRANÇAIS",
     "icon": "../assets/Images/musique.png",
     "question": "Citez un maximum d'artistes ou chanteurs français (solo ou groupe).",
     "answers": [
@@ -305,8 +305,6 @@ const THEMES_DATA = [
       "Florent Pagny",
       "Patricia Kaas",
       "Céline Dion",
-      "Indochine",
-      "Téléphone",
       "Calogero",
       "Zazie",
       "Christophe Maé",
@@ -662,9 +660,9 @@ const THEMES_DATA = [
   },
   {
     "id": "fleuves",
-    "title": "Fleuves",
+    "title": "FLEUVES",
     "icon": "assets/Images/geographie.png",
-    "question": "Fleuves",
+    "question": "FLEUVES",
     "answers": [
       "Seine",
       "Loire",
@@ -714,14 +712,15 @@ const THEMES_DATA = [
       "Royaume-Uni",
       "Russie",
       "Turquie",
-      "Union Européenne"
+      "Union Européenne",
+      "Union africaine"
     ]
   },
   {
     "id": "gagnants_le_ballon_d_or",
-    "title": "Gagnants le ballon d or",
+    "title": "GAGNATS BALLONS D'OR (Football)",
     "icon": "assets/Images/geographie.png",
-    "question": "Gagnants le ballon d or",
+    "question": "GAGNATS BALLONS D'OR (Football)",
     "answers": [
       "Stanley Matthews",
       "Alfredo Di Stéfano",
@@ -774,7 +773,7 @@ const THEMES_DATA = [
     "id": "grandes_villes_fr",
     "title": "GRANDES VILLES FRANÇAISES",
     "icon": "../assets/Images/géographie.png",
-    "question": "Citez un maximum de grandes villes françaises (communes de +100 000 hab.).",
+    "question": "Citez un maximum de grandes villes françaises.",
     "answers": [
       "Paris",
       "Marseille",
@@ -958,7 +957,7 @@ const THEMES_DATA = [
     "id": "ligne1",
     "title": "ARRÊTS LIGNE 1 DU MÉTRO",
     "icon": "../assets/Images/geographie.png",
-    "question": "Citez un maximum d'arrêts de la ligne 1 du métro (La Défense — Château de Vincennes).",
+    "question": "Citez un maximum d'arrêts de la ligne 1 du métro ",
     "answers": [
       "La Défense",
       "Esplanade de la Défense",
@@ -991,7 +990,7 @@ const THEMES_DATA = [
     "id": "ligne13",
     "title": "ARRÊTS LIGNE 13 DU MÉTRO",
     "icon": "../assets/Images/geographie.png",
-    "question": "Citez un maximum d'arrêts de la ligne 13 du métro (Saint-Denis / Les Courtilles — Châtillon-Montrouge).",
+    "question": "Citez un maximum d'arrêts de la ligne 13 du métro.",
     "answers": [
       "Saint-Denis - Université",
       "Saint-Denis - Porte de Paris",
@@ -1037,7 +1036,7 @@ const THEMES_DATA = [
     "id": "ligne3",
     "title": "ARRÊTS LIGNE 3 DU MÉTRO",
     "icon": "../assets/Images/geographie.png",
-    "question": "Citez un maximum d'arrêts de la ligne 3 du métro (Pont de Levallois-Bécon — Gallieni).",
+    "question": "Citez un maximum d'arrêts de la ligne 3 du métro.",
     "answers": [
       "Pont de Levallois - Bécon",
       "Anatole France",
@@ -1068,7 +1067,7 @@ const THEMES_DATA = [
     "id": "ligne4",
     "title": "ARRÊTS LIGNE 4 DU MÉTRO",
     "icon": "../assets/Images/geographie.png",
-    "question": "Citez un maximum d'arrêts de la ligne 4 du métro (Montrouge — Montrouge / Clignancourt — Bagneux).",
+    "question": "Citez un maximum d'arrêts de la ligne 4 du métro",
     "answers": [
       "Bagneux - Lucie Aubrac",
       "Barbara",
@@ -1105,7 +1104,7 @@ const THEMES_DATA = [
     "id": "ligne6",
     "title": "ARRÊTS LIGNE 6 DU MÉTRO",
     "icon": "../assets/Images/geographie.png",
-    "question": "Citez un maximum d'arrêts de la ligne 6 du métro (Charles de Gaulle - Étoile — Nation).",
+    "question": "Citez un maximum d'arrêts de la ligne 6 du métro.",
     "answers": [
       "Charles de Gaulle - Étoile",
       "Kléber",
@@ -1141,7 +1140,7 @@ const THEMES_DATA = [
     "id": "ligne8",
     "title": "ARRÊTS LIGNE 8 DU MÉTRO",
     "icon": "../assets/Images/géographie.png",
-    "question": "Citez un maximum d'arrêts de la ligne 8 du métro (Balard — Créteil-Pointe du Lac).",
+    "question": "Citez un maximum d'arrêts de la ligne 8 du métro ",
     "answers": [
       "Balard",
       "Lourmel",
@@ -1184,9 +1183,9 @@ const THEMES_DATA = [
   },
   {
     "id": "ligne_2_du_metro",
-    "title": "LIGNE 2 DU METRO",
+    "title": "ARRÊTS LIGNE 2 DU MÉTRO",
     "icon": "assets/Images/geographie.png",
-    "question": "LIGNE 2 DU METRO",
+    "question": "ARRÊTS LIGNE 2 DU MÉTRO",
     "answers": [
       "Nation",
       "Avron",
@@ -1217,9 +1216,9 @@ const THEMES_DATA = [
   },
   {
     "id": "ligue1",
-    "title": "CLUBS DE LIGUE 1",
+    "title": "CLUBS DE LIGUE 1 (championnat français)",
     "icon": "../assets/Images/sport.png",
-    "question": "Citez un maximum de clubs ayant joué en Ligue 1 depuis 2010.",
+    "question": "Citez un maximum de clubs ayant joué en Ligue 1",
     "answers": [
       "Paris Saint-Germain",
       "Olympique de Marseille",
@@ -1239,40 +1238,6 @@ const THEMES_DATA = [
       "Angers SCO",
       "FC Metz",
       "AS Saint-Étienne"
-    ]
-  },
-  {
-    "id": "metro_lignes",
-    "title": "LIGNES DU MÉTRO PARISIEN",
-    "icon": "../assets/Images/géographie.png",
-    "question": "Citez un maximum de lignes du métro parisien (numéros et/ou noms de terminus).",
-    "answers": [
-      "Ligne 1",
-      "Ligne 2",
-      "Ligne 3",
-      "Ligne 3bis",
-      "Ligne 4",
-      "Ligne 5",
-      "Ligne 6",
-      "Ligne 7",
-      "Ligne 7bis",
-      "Ligne 8",
-      "Ligne 9",
-      "Ligne 10",
-      "Ligne 11",
-      "Ligne 12",
-      "Ligne 13",
-      "Ligne 14",
-      "La Défense",
-      "Château de Vincennes",
-      "Nation",
-      "Mairie des Lilas",
-      "Porte Dauphine",
-      "Bobigny",
-      "Balard",
-      "Créteil-Préfecture",
-      "Saint-Denis-Pleyel",
-      "Olympiades"
     ]
   },
   {
@@ -1368,7 +1333,7 @@ const THEMES_DATA = [
     "id": "presidents_fr",
     "title": "PRÉSIDENTS DE LA Ve RÉPUBLIQUE",
     "icon": "../assets/Images/histoire.png",
-    "question": "Citez les présidents de la Cinquième République française avec leur nom ou prénom.",
+    "question": "Citez les présidents de la Cinquième République française",
     "answers": [
       "Charles de Gaulle (1959–1969)",
       "Georges Pompidou (1969–1974)",
@@ -1384,7 +1349,7 @@ const THEMES_DATA = [
     "id": "series_fr",
     "title": "SÉRIES FRANÇAISES",
     "icon": "../assets/Images/cinema.png",
-    "question": "Citez un maximum de séries françaises (tous supports : TV, streaming, etc.).",
+    "question": "Citez un maximum de séries françaises.",
     "answers": [
       "Lupin",
       "Kaamelott",
@@ -1422,7 +1387,7 @@ const THEMES_DATA = [
     "id": "ue",
     "title": "PAYS DE L'UNION EUROPÉENNE",
     "icon": "../assets/Images/histoire.png",
-    "question": "Citez un maximum de pays membres de l'Union Européenne (27 membres).",
+    "question": "Citez un maximum de pays membres de l'Union Européenne.",
     "answers": [
       "Allemagne",
       "Autriche",
@@ -1455,9 +1420,9 @@ const THEMES_DATA = [
   },
   {
     "id": "vinqueurs_grands_chelems_h_et_f",
-    "title": "Vinqueurs Grands Chelems H et F",
+    "title": "VINQEURS  GRANDS CHELEMS H&F - TENNIS",
     "icon": "assets/Images/geographie.png",
-    "question": "Vinqueurs Grands Chelems H et F",
+    "question": "VINQEURS  GRANDS CHELEMS H&F - TENNIS",
     "answers": [
       "Novak Djokovic",
       "Rafael Nadal",

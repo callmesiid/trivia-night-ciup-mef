@@ -1112,6 +1112,11 @@ function answerWrong() {
     }
 
     // Mauvaise réponse normale
+    const curTeam = gameState.teams[gameState.currentTeamIndex];
+    if (curTeam && curTeam.banqueVoleePar !== null && curTeam.banqueVoleePar !== undefined) {
+        addLog(`🦹 VOL DE BANQUE perdu — ${curTeam.name} a raté sa question`, 'info');
+        curTeam.banqueVoleePar = null;
+    }
     w.pendingPoints += gameState.sessionPoints;
     gameState.sessionPoints = 0;
     isAtPalierEnd = false;

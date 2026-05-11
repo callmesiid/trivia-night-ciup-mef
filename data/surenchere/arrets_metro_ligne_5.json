@@ -1,8 +1,8 @@
 {
   "id": "arrets_metro_ligne_5",
-  "label": "ARRETS METRO LIGNE 5",
+  "label": "ARRÊTS LIGNE 5 DU MÉTRO",
   "icon": "assets/Images/geographie.png",
-  "prompt": "ARRETS METRO LIGNE 5",
+  "prompt": "ARRÊTS LIGNE 5 DU MÉTRO",
   "answers": [
     {
       "value": "Place d'Italie",

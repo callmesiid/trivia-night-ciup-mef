@@ -83,6 +83,10 @@
     {
       "value": "Union Européenne",
       "validated": true
+    },
+    {
+      "value": "Union africaine",
+      "validated": true
     }
   ]
 }

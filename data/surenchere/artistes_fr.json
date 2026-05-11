@@ -1,6 +1,6 @@
 {
   "id": "artistes_fr",
-  "label": "CHANTEURS / ARTISTES FRANÇAIS",
+  "label": "CHANTEURS FRANÇAIS",
   "icon": "../assets/Images/musique.png",
   "prompt": "Citez un maximum d'artistes ou chanteurs français (solo ou groupe).",
   "answers": [
@@ -82,14 +82,6 @@
     },
     {
       "value": "Céline Dion",
-      "validated": true
-    },
-    {
-      "value": "Indochine",
-      "validated": true
-    },
-    {
-      "value": "Téléphone",
       "validated": true
     },
     {

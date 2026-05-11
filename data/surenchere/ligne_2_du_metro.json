@@ -1,8 +1,8 @@
 {
   "id": "ligne_2_du_metro",
-  "label": "LIGNE 2 DU METRO",
+  "label": "ARRÊTS LIGNE 2 DU MÉTRO",
   "icon": "assets/Images/geographie.png",
-  "prompt": "LIGNE 2 DU METRO",
+  "prompt": "ARRÊTS LIGNE 2 DU MÉTRO",
   "answers": [
     {
       "value": "Nation",

@@ -2,7 +2,7 @@
   "id": "ligne3",
   "label": "ARRÊTS LIGNE 3 DU MÉTRO",
   "icon": "../assets/Images/geographie.png",
-  "prompt": "Citez un maximum d'arrêts de la ligne 3 du métro (Pont de Levallois-Bécon — Gallieni).",
+  "prompt": "Citez un maximum d'arrêts de la ligne 3 du métro.",
   "answers": [
     { "value": "Pont de Levallois - Bécon", "validated": true },
     { "value": "Anatole France", "validated": true },

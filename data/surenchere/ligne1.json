@@ -2,7 +2,7 @@
   "id": "ligne1",
   "label": "ARRÊTS LIGNE 1 DU MÉTRO",
   "icon": "../assets/Images/geographie.png",
-  "prompt": "Citez un maximum d'arrêts de la ligne 1 du métro (La Défense — Château de Vincennes).",
+  "prompt": "Citez un maximum d'arrêts de la ligne 1 du métro ",
   "answers": [
     { "value": "La Défense", "validated": true },
     { "value": "Esplanade de la Défense", "validated": true },

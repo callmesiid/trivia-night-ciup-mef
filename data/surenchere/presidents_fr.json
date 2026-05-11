@@ -2,7 +2,7 @@
   "id": "presidents_fr",
   "label": "PRÉSIDENTS DE LA Ve RÉPUBLIQUE",
   "icon": "../assets/Images/histoire.png",
-  "prompt": "Citez les présidents de la Cinquième République française avec leur nom ou prénom.",
+  "prompt": "Citez les présidents de la Cinquième République française",
   "answers": [
     {
       "value": "Charles de Gaulle (1959–1969)",

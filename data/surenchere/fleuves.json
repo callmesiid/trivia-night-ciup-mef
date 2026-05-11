@@ -1,8 +1,8 @@
 {
   "id": "fleuves",
-  "label": "Fleuves",
+  "label": "FLEUVES",
   "icon": "assets/Images/geographie.png",
-  "prompt": "Fleuves",
+  "prompt": "FLEUVES",
   "answers": [
     {
       "value": "Seine",

@@ -2,7 +2,7 @@
   "id": "ue",
   "label": "PAYS DE L'UNION EUROPÉENNE",
   "icon": "../assets/Images/histoire.png",
-  "prompt": "Citez un maximum de pays membres de l'Union Européenne (27 membres).",
+  "prompt": "Citez un maximum de pays membres de l'Union Européenne.",
   "answers": [
     {
       "value": "Allemagne",

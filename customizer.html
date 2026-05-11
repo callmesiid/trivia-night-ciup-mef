@@ -776,6 +776,10 @@ function renderSurencherePanel() {
       <div class="stat-item"><div class="stat-dot red"></div>${answers.length - validated} non validées</div>
       <div class="stat-item" style="color:#777;font-size:.72rem;margin-left:auto">Cliquez sur un tag pour valider/invalider</div>
     </div>
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:6px;">
+      <label style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Question posée</label>
+      <textarea id="surenchere-prompt" class="form-textarea form-input" style="min-height:60px;font-size:.85rem;line-height:1.4" onchange="updatePrompt(this.value)">${escHtml(theme.prompt || '')}</textarea>
+    </div>
     <div id="answers-container">
       ${answers.map((a, i) => `
         <div class="answer-tag ${a.validated?'validated':'invalidated'}" onclick="toggleAnswer(${i})">
@@ -994,6 +998,13 @@ document.getElementById('modal-save').onclick = () => {
 // ════════════════════════════════════════════════════════════════
 // ACTIONS — SURENCHÈRE
 // ════════════════════════════════════════════════════════════════
+function updatePrompt(val) {
+  const theme = gameData.surenchere[currentThemeId];
+  if (!theme) return;
+  theme.prompt = val;
+  saveTheme('surenchere', currentThemeId);
+}
+
 function toggleAnswer(idx) {
   const theme = gameData.surenchere[currentThemeId];
   if (!theme) return;

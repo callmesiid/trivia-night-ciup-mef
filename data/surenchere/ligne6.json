@@ -2,7 +2,7 @@
   "id": "ligne6",
   "label": "ARRÊTS LIGNE 6 DU MÉTRO",
   "icon": "../assets/Images/geographie.png",
-  "prompt": "Citez un maximum d'arrêts de la ligne 6 du métro (Charles de Gaulle - Étoile — Nation).",
+  "prompt": "Citez un maximum d'arrêts de la ligne 6 du métro.",
   "answers": [
     { "value": "Charles de Gaulle - Étoile", "validated": true },
     { "value": "Kléber", "validated": true },

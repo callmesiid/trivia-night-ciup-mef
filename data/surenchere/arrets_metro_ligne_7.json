@@ -1,8 +1,8 @@
 {
   "id": "arrets_metro_ligne_7",
-  "label": "ARRETS METRO LIGNE 7",
+  "label": "ARRÊTS LIGNE 7 DU MÉTRO",
   "icon": "assets/Images/geographie.png",
-  "prompt": "ARRETS METRO LIGNE 7",
+  "prompt": "ARRÊTS LIGNE 7 DU MÉTRO",
   "answers": [
     {
       "value": "La Courneuve – 8 Mai 1945",

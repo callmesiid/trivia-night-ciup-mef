@@ -2,7 +2,7 @@
   "id": "series_fr",
   "label": "SÉRIES FRANÇAISES",
   "icon": "../assets/Images/cinema.png",
-  "prompt": "Citez un maximum de séries françaises (tous supports : TV, streaming, etc.).",
+  "prompt": "Citez un maximum de séries françaises.",
   "answers": [
     {
       "value": "Lupin",

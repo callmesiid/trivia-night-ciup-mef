@@ -7480,20 +7480,12 @@ const QUESTION_DATABASE = {
           "answer": "Sahara"
         },
         {
-          "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-          "answer": "Japon"
-        },
-        {
           "question": "Quelle mer sépare l'Europe de l'Afrique ?",
           "answer": "Méditerranée"
         },
         {
           "question": "Quel est le plus haut sommet du monde ?",
           "answer": "Mont Everest"
-        },
-        {
-          "question": "Dans quel pays se trouve le Taj Mahal ?",
-          "answer": "Inde"
         },
         {
           "question": "Quel est le plus petit pays du monde ?",
@@ -7504,16 +7496,8 @@ const QUESTION_DATABASE = {
           "answer": "New York"
         },
         {
-          "question": "Dans quel pays se trouve la ville de Marrakech ?",
-          "answer": "Maroc"
-        },
-        {
           "question": "Quel fleuve traverse l'Égypte ?",
           "answer": "Nil"
-        },
-        {
-          "question": "Dans quel pays se trouve la ville de Rio de Janeiro ?",
-          "answer": "Brésil"
         },
         {
           "question": "Quel est le point culminant de l'Europe occidentale ?",
