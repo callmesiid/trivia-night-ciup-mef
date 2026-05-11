@@ -76,6 +76,7 @@ Interface web pour éditer les données sans toucher aux JSON. File System Acces
 - **Onglets :** Le Risque Tout · Le Wagon · La Surenchère · Snapshot
 - **Actions :** Ajouter/éditer/supprimer questions, valider, filtrer, importer en masse
 - **Ajouter un thème :** Modale inline (pas de `prompt()`), ID auto-sanitisé
+- **Surenchère :** textarea "Question posée" pour lire/écrire `theme.prompt` directement
 - **Bug corrigé :** Wagon utilise `q`/`a` (pas `question`/`answer`) — le modal lit les deux
 - **Après chaque modification wagon :** relancer `python build.py` pour mettre à jour `data.js`
 
@@ -411,9 +412,18 @@ Trivia Night MEF - Snapshot/
 
 ---
 
-## Dernières modifications (2026-05-08)
+## Dernières modifications (2026-05-11)
 
-### Surenchère + Wagon : option "Aucun bonus/malus"
+### Le Wagon : fix VOL DE BANQUE persistant
+- `answerWrong()` dans `regie.html` : clear `banqueVoleePar` sur l'équipe courante en cas de mauvaise réponse
+- Sans ce fix : si l'équipe ciblée ratait sa question, le malus restait et s'appliquait au tour suivant
+
+### Customizer : édition du prompt Surenchère
+- `renderSurencherePanel()` : ajout d'un textarea "Question posée" au-dessus de la liste de réponses
+- Nouveau `updatePrompt(val)` : écrit `theme.prompt` et sauvegarde immédiatement
+- Le champ `prompt` était déjà dans les JSON mais inaccessible depuis l'interface
+
+### Surenchère + Wagon : option "Aucun bonus/malus" (2026-05-08)
 - Ajout `<option value="none">Aucun bonus/malus</option>` dans le sélecteur de mode kit des deux jeux
 - `applyKitModeToTeams()` gère le cas `none` : `bonuses=[]`, `malus=[]`, slots remplis de `''`
 - Kit manuel : `optionHTML()` / `kitOptionHTML()` ajoutent une option vide "Aucun" en tête de liste
